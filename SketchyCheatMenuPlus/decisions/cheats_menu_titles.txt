@@ -1,0 +1,360 @@
+title_decisions = { 
+    add_claim = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+			NOT = {owns = ROOT}
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = BARON
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		add_claim = FROM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    take_title = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+			NOT = {owns = ROOT}
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		gain_title = FROM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_primogeniture = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = succ_primogeniture}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		succession = primogeniture
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_gavelkind = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = succ_gavelkind}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		succession = gavelkind
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_elective_gavelkind = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = succ_elective_gavelkind}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		succession = elective_gavelkind
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_seniority = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = succ_seniority}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		succession = seniority
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_open = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = succ_turkish_succession}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		succession = turkish_succession
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_ultimogeniture = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = succ_ultimogeniture}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		succession = ultimogeniture
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_tanistry = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = succ_tanistry}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		succession = tanistry
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_elective = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = succ_feudal_elective}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		succession = feudal_elective
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_agnatic = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = agnatic_succession}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		gender_succ = agnatic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_cognatic = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = cognatic_succession}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		gender_succ = cognatic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_true_cognatic = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = true_cognatic_succession}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		gender_succ = true_cognatic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_enatic = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = enatic_succession}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		gender_succ = enatic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+
+    make_enatic_cognatic = {
+		filter = owned
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            is_titular = no
+            temporary = no
+            higher_tier_than = COUNT
+            NOT = { has_law = enatic_cognatic_succession}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		gender_succ = enatic_cognatic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+    }
+}

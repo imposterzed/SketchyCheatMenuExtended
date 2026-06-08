@@ -1,0 +1,164 @@
+cheats_enable;Enable Cheats;;;;;;;;;;;;;x
+cheats_enable_desc;Enables the Sketchy Cheat Menu.;;;;;;;;;;;;;x
+
+cheats_disable;Disable Cheats;;;;;;;;;;;;;x
+cheats_disable_desc;Disables the Sketchy Cheat Menu.;;;;;;;;;;;;;x
+
+force_marry;Marry Them;;;;;;;;;;;;;x
+force_marry_desc;Force this individual to marry you.;;;;;;;;;;;;;x
+
+end_marry;End Marriage;;;;;;;;;;;;;x
+end_marry_desc;End this characters marriage.;;;;;;;;;;;;;x
+
+get_favor;Get A Favor;;;;;;;;;;;;;x
+get_favor_desc;Force this individual to owe you a favor.;;;;;;;;;;;;;x
+
+vassalize;Vassalize Them;;;;;;;;;;;;;x
+vassalize_desc;Force this individual to become your vassal.;;;;;;;;;;;;;x
+
+back_plot;Back My Plot;;;;;;;;;;;;;x
+back_plot_desc;Force this individual to back your plots.;;;;;;;;;;;;;x
+
+impregnate;Impregnate Them;;;;;;;;;;;;;x
+impregnate_desc;Force this individual to have your child.;;;;;;;;;;;;;x
+
+kill_them;Kill Them;;;;;;;;;;;;;x
+kill_them_desc;Kill this individual without anyone knowing.;;;;;;;;;;;;;x
+
+fall_on_sword;Fall On Your Sword;;;;;;;;;;;;;x
+fall_on_sword_desc;Kill yourself.;;;;;;;;;;;;;x
+
+make_loyal;Make Them Loyal;;;;;;;;;;;;;x
+make_loyal_desc;Make this invidiual loyal to you.;;;;;;;;;;;;;x
+
+imprison_them;Imprison Them;;;;;;;;;;;;;x
+imprison_them_desc;Force this individual to go jail.;;;;;;;;;;;;;x
+
+make_consort;Take As Concubine;;;;;;;;;;;;;x
+make_consort_desc;Force this individual to become your concubine.;;;;;;;;;;;;;x
+
+convert_religion;Convert To My Religion;;;;;;;;;;;;;x
+convert_religion_desc;Force this individual to convert to your religion.;;;;;;;;;;;;;x
+
+convert_culture;Convert To My Culture;;;;;;;;;;;;;x
+convert_culture_desc;Force this individual to convert to your culture.;;;;;;;;;;;;;x
+
+change_ethnicity;Convert To My Ethnicity;;;;;;;;;;;;;x
+change_ethnicity_desc;Force this individual to convert to your ethnicity.;;;;;;;;;;;;;x
+
+befriend;Make Friend;;;;;;;;;;;;;x
+befriend_desc;Force this individual to be your friend.;;;;;;;;;;;;;x
+
+defriend;Remove Friend;;;;;;;;;;;;;x
+defriend_desc;Force this individual to stop being your friend.;;;;;;;;;;;;;x
+
+make_rival;Make Rival;;;;;;;;;;;;;x
+make_rival_desc;Force this individual to be your rival.;;;;;;;;;;;;;x
+
+remove_rival;Remove Rival;;;;;;;;;;;;;x
+remove_rival_desc;Force this individual to stop being your rival.;;;;;;;;;;;;;x
+
+make_lover;Make Lover;;;;;;;;;;;;;x
+make_lover_desc;Force this individual to be your lover.;;;;;;;;;;;;;x
+
+divorce_them;Divorce Them;;;;;;;;;;;;;x
+divorce_them_desc;Force this individual to divorce you.;;;;;;;;;;;;;x
+
+move_them;Move Them;;;;;;;;;;;;;x
+move_them_desc;Force this individual to join your court.;;;;;;;;;;;;;x
+
+increase_stats;Increase Stats;;;;;;;;;;;;;x
+increase_stats_desc;Increase this characters stats.;;;;;;;;;;;;;x
+
+self_stats;Increase Stats;;;;;;;;;;;;;x
+self_stats_desc;Increase this characters stats.;;;;;;;;;;;;;x
+
+self_stats2;Decrease Stats;;;;;;;;;;;;;x
+self_stats2_desc;Decrease this characters stats.;;;;;;;;;;;;;x
+
+decrease_stats;Decrease Stats;;;;;;;;;;;;;x
+decrease_stats_desc;Decrease this characters stats back to normal.;;;;;;;;;;;;;x
+
+remove_nickname;Remove Nickname;;;;;;;;;;;;;x
+remove_nickname_desc;Removes this character's nickname.;;;;;;;;;;;;;x
+
+self_nickname;Remove Nickname;;;;;;;;;;;;;x
+self_nickname_desc;Removes this character's nickname.;;;;;;;;;;;;;x
+
+fix_genes;Improve Genes;;;;;;;;;;;;;x
+fix_genes_desc;Removes negative congenital traits and adds all positive congenital traits to this character.;;;;;;;;;;;;;x
+
+self_genes;Improve Genes;;;;;;;;;;;;;x
+self_genes_desc;Removes negative congenital traits and adds all positive congenital traits to this character.;;;;;;;;;;;;;x
+
+heal_them;Heal Them;;;;;;;;;;;;;x
+heal_them_desc;Removes all illnesses, diseases and wounds from this character.;;;;;;;;;;;;;x
+
+self_heals;Heal Them;;;;;;;;;;;;;x
+self_heals_desc;Removes all illnesses, diseases and wounds from this character.;;;;;;;;;;;;;x
+
+abdicate;Abdicate To Me;;;;;;;;;;;;;x
+abdicate_desc;Force this individual to abdicate their titles to you.;;;;;;;;;;;;;x
+
+kill_dynasty;Exterminate Dynasty;;;;;;;;;;;;;x
+kill_dynasty_desc;Wipes this characters entire dynasty out.;;;;;;;;;;;;;x
+
+adopt_them;Adopt Them;;;;;;;;;;;;;x
+adopt_them_desc;Adopt them as your child.;;;;;;;;;;;;;x
+
+disown_them;Disown Them;;;;;;;;;;;;;x
+disown_them_desc;Disown them as our child.;;;;;;;;;;;;;x
+
+mind_control_disable;Disable Mind Control;;;;;;;;;;;;;x
+mind_control_disable_desc;Disables mind control.;;;;;;;;;;;;;x
+
+mind_control_enable;Enable Mind Control;;;;;;;;;;;;;x
+mind_control_enable_desc;Enables mind control.;;;;;;;;;;;;;x
+
+control_mind;Control Mind;;;;;;;;;;;;;x
+control_mind_desc;Take control of this individuals mind, allowing you to command them.;;;;;;;;;;;;;x
+
+mc_imprison;Mind Control: Imprison Them;;;;;;;;;;;;;x
+mc_imprison_desc;Force your mind controlled target to imprison this individual.;;;;;;;;;;;;;x
+
+mc_marry;Mind Control: Marry Them;;;;;;;;;;;;;x
+mc_marry_desc;Force your mind controlled target to marry this individual.;;;;;;;;;;;;;x
+
+mc_impregnate;Mind Control: Impregnate Them;;;;;;;;;;;;;x
+mc_impregnate_desc;Force your mind controlled target to impregnate this individual.;;;;;;;;;;;;;x
+
+mc_vassalize;Mind Control: Vassalize Them;;;;;;;;;;;;;x
+mc_vassalize_desc;Force your mind controlled target to vassalize this individual.;;;;;;;;;;;;;x
+
+mc_lover;Mind Control: Make Lover;;;;;;;;;;;;;x
+mc_lover_desc;Force your mind controlled target to become this individual's lover.;;;;;;;;;;;;;x
+
+mc_friend;Mind Control: Make Friend;;;;;;;;;;;;;x
+mc_friend_desc;Force your mind controlled target to become this individual's friend.;;;;;;;;;;;;;x
+
+mc_rival;Mind Control: Make Rival;;;;;;;;;;;;;x
+mc_rival_desc;Force your mind controlled target to become this individual's rival.;;;;;;;;;;;;;x
+
+mc_abdicate;Mind Control: Abdicate To Me;;;;;;;;;;;;;x
+mc_abdicate_desc;Force this individual to abdicate to your mind controlled target.;;;;;;;;;;;;;x
+
+mc_abdicate_them;Mind Control: Abdicate To Them;;;;;;;;;;;;;x
+mc_abdicate_them_desc;Force your mind controlled target to abdicate to this individual.;;;;;;;;;;;;;x
+
+join_their_dynasty;Join Their Dynasty;;;;;;;;;;;;;x
+join_their_dynasty_desc;Join this individual's dynasty as their child.;;;;;;;;;;;;;x
+
+clear_your_focus;Clear Your Focus;;;;;;;;;;;;;x
+clear_your_focus_desc;Cancel your current focus, allowing you to set a new one.;;;;;;;;;;;;;x
+
+clear_your_ambition;Clear Your Ambition;;;;;;;;;;;;;x
+clear_your_ambition_desc;Cancel your current ambition, allowing you to set a new one.;;;;;;;;;;;;;x
+
+clear_your_ambition;Clear Your Ambition;;;;;;;;;;;;;x
+clear_your_ambition_desc;Cancel your current ambition, allowing you to set a new one.;;;;;;;;;;;;;x
+
+make_immortal;Make Immortal;;;;;;;;;;;;;x
+make_immortal_desc;Make them immortal like you.;;;;;;;;;;;;;x
+
+make_mortal;Remove Immortality;;;;;;;;;;;;;x
+make_mortal_desc;Make them mortal again.;;;;;;;;;;;;;x

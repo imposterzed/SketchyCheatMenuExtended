@@ -1,0 +1,830 @@
+decisions = { 
+
+    show_cheats = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            NOT = { has_character_flag = show_cheats }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_cheats
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    hide_cheats = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_cheats
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_gold = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    wealth = 10000
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_prestige = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    prestige = 10000
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    add_piety = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    piety = 10000
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_tech = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    culture_techpoints = 10000
+		    military_techpoints = 10000
+		    economy_techpoints = 10000
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    add_grace = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    add_offmap_currency = { offmap = offmap_china value = 5000 }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_society_points = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+            is_in_society = yes
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+	    	change_society_currency = 5000
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	increase_society_rank = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+            is_in_society = yes
+            society_rank < 4
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+	        society_rank_up = 1
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	spawn_army_10k = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						disband_on_peace = no
+						troops = {
+							horse_archers = { 5000 5000 }
+							knights = { 2500 2500 }
+							light_cavalry = { 1500 1500  }
+							light_infantry = { 1000 1000  }
+						}
+					}
+				}
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	spawn_army_100k = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			capital_scope = {
+				ROOT = {
+					spawn_unit = {
+						province = PREV
+						owner = ROOT
+						disband_on_peace = no
+						troops = {
+							horse_archers = { 50000 50000 }
+							knights = { 25000 25000 }
+							light_cavalry = { 15000 15000  }
+							light_infantry = { 10000 10000  }
+						}
+					}
+				}
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	spawn_fleet = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			hidden_tooltip = {
+				capital_scope = {
+					ROOT = {
+						spawn_fleet = {
+							province = closest
+							owner = ROOT
+							disband_on_peace = no
+							troops = {
+								galleys = { 1000 1000 }
+							}
+						}
+					}
+				}
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	enable_quick_move = {
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+            NOT = { has_character_flag = quick_move }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			hidden_tooltip = {
+		        set_character_flag = quick_move
+		        capital_holding = {
+			        add_building = ca_quick_move
+			        add_building = tb_quick_move
+		        }
+		    }
+        }
+	}
+
+	disable_quick_move = {
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+            has_character_flag = quick_move
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			hidden_tooltip = {
+		        clr_character_flag = quick_move
+		        capital_holding = {
+			        remove_building = ca_quick_move
+			        remove_building = tb_quick_move
+		        }
+		    }
+        }
+	}
+
+	enable_triple_levies = {
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+            NOT = { has_character_flag = triple_levies }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			add_character_modifier = { name = triple_levies duration = -1 }
+			hidden_tooltip = {
+		        set_character_flag = triple_levies
+                
+		    }
+        }
+	}
+
+	disable_triple_levies = {
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+            has_character_flag = triple_levies
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			remove_character_modifier = triple_levies
+			hidden_tooltip = {
+		        clr_character_flag = triple_levies
+		    }
+        }
+	}
+
+	world_culture = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+			    any_character = {
+				    culture = ROOT
+			    }
+			    any_province = {
+				    culture = ROOT
+			    }
+
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	world_religion = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+			    any_character = {
+				    religion = ROOT
+			    }
+			    any_province = {
+				    religion = ROOT
+			    }
+
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	world_ethnicity = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+			    any_character = {
+				    set_graphical_culture = ROOT
+			    }
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	convert_realm_culture = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+			    top_liege = {
+				    any_realm_character = {
+					    culture = ROOT
+				    }
+				    any_realm_province = {
+					    culture = ROOT
+				    }
+				}
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	convert_realm_religion = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+			    top_liege = {
+				    any_realm_character = {
+					    religion = ROOT
+				    }
+				    any_realm_province = {
+					    religion = ROOT
+				    }
+				}
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	convert_realm_ethnicity = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+			    top_liege = {
+				    any_realm_character = {
+					    set_graphical_culture = ROOT
+				    }
+				}
+			}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	raise_rel_authority = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+            NOT = { religion_authority = 1}
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+	        religion_authority = { modifier = god_amongst_men }
+        }
+	}
+
+	become_independent = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+            independent = no
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+	        set_defacto_liege = THIS
+        }
+	}
+
+	set_feudal = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+            NOT = { government = feudal_government }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+	        set_government_type = feudal_government
+        }
+	}
+
+	revoke_all_titles = {
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			any_vassal = {
+				limit = { 
+					NOT = { tier = baron }
+					is_nomadic = no 
+				}
+				any_demesne_title = {
+					limit = { 
+						is_patrician = no
+						mercenary = no
+						holy_order = no
+						is_landless_type_title = no 
+					}
+					gain_title = FROM
+				}
+			}
+        }
+	}
+
+	lower_threat_level = {
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			ROOT = { 
+			    change_infamy = {
+				    value = -10000
+				    localisation = Cheated
+			    }
+			}
+        }
+	}
+
+	kill_all_courtiers = {
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+	        any_courtier = {
+		        limit = {
+			        NOR = { 
+			        dynasty = ROOT
+			        is_married = ROOT
+			        is_consort = ROOT
+			        is_friend = ROOT
+			        is_lover = ROOT
+			        is_ruler = yes
+			        is_mother = ROOT
+			        is_father = ROOT
+
+			        }
+		        }
+		        death = { death_reason = death_murder_unknown killer = FROM } 
+	        }
+        }
+	}
+
+    cheat_trait_cleaner = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+	        hidden_tooltip = {
+		        any_character = {
+		            limit = { 
+			            ai = yes
+		            }
+					remove_trait = immortal
+					remove_trait = landlord
+					remove_trait = beloved
+					remove_trait = mastermind
+					remove_trait = builder
+					remove_trait = conspirator
+				}
+	        }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	reveal_realm_plots = {
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = show_cheats
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			liege = {
+				any_realm_character = {
+		            reveal_plot = ROOT
+		        }
+			}
+        }
+	}
+}
+
+
+
+

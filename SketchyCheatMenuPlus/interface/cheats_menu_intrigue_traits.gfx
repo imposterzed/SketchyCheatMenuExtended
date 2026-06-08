@@ -1,0 +1,98 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_traits_enable"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_traits_disable"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_show_cheat_traits"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_cheat_traits"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_show_virtues"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_virtues"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_show_sins"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_sins"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_show_education"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_education"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_show_personality"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_personality"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_show_misc"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_misc"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_show_health"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_health"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_show_lifestyle"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_lifestyle"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_show_leadership"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_leadership"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_show_vassal"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_vassal"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_show_dynasty"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_dynasty"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+}

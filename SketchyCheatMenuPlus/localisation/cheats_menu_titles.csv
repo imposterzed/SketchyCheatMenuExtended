@@ -1,0 +1,44 @@
+add_claim;Add Claim;;;;;;;;;;;;;x
+add_claim_desc;Adds a claim to this title to your character.;;;;;;;;;;;;;x
+
+take_title;Take Title;;;;;;;;;;;;;x
+take_title_desc;Take this title for yourself.;;;;;;;;;;;;;x
+
+make_primogeniture;Succession Law: Primogeniture;;;;;;;;;;;;;x
+make_primogeniture_desc;Changes the succession law of this title to primogeniture.;;;;;;;;;;;;;x
+
+make_gavelkind;Succession Law: Gavelkind;;;;;;;;;;;;;x
+make_gavelkind_desc;Changes the succession law of this title to gavelkind.;;;;;;;;;;;;;x
+
+make_elective_gavelkind;Succession Law: Elective Gavelkind;;;;;;;;;;;;;x
+make_elective_gavelkind_desc;Changes the succession law of this title to elective gavelkind.;;;;;;;;;;;;;x
+
+make_seniority;Succession Law: Seniority;;;;;;;;;;;;;x
+make_seniority_desc;Changes the succession law of this title to seniority.;;;;;;;;;;;;;x
+
+make_ultimogeniture;Succession Law: Ultimogeniture;;;;;;;;;;;;;x
+make_ultimogeniture_desc;Changes the succession law of this title to ultimogeniture.;;;;;;;;;;;;;x
+
+make_tanistry;Succession Law: Tanistry;;;;;;;;;;;;;x
+make_tanistry_desc;Changes the succession law of this title to tanistry.;;;;;;;;;;;;;x
+
+make_elective;Succession Law: Elective;;;;;;;;;;;;;x
+make_elective_desc;Changes the succession law of this title to elective.;;;;;;;;;;;;;x
+
+make_open;Succession Law: Open;;;;;;;;;;;;;x
+make_open_desc;Changes the succession law of this title to open.;;;;;;;;;;;;;x
+
+make_agnatic;Gender Law: Agnatic;;;;;;;;;;;;;x
+make_agnatic_desc;Changes the gender succession law of this title to agnatic.;;;;;;;;;;;;;x
+
+make_enatic;Gender Law: Enatic;;;;;;;;;;;;;x
+make_enatic_desc;Changes the gender succession law of this title to enatic.;;;;;;;;;;;;;x
+
+make_cognatic;Gender Law: Agnatic-Cognatic;;;;;;;;;;;;;x
+make_cognatic_desc;Changes the gender succession law of this title to agnatic-cognatic.;;;;;;;;;;;;;x
+
+make_true_cognatic;Gender Law: Absolute Cognatic;;;;;;;;;;;;;x
+make_true_cognatic_desc;Changes the gender succession law of this title to absolute cognatic.;;;;;;;;;;;;;x
+
+make_enatic_cognatic;Gender Law: Enatic-Cognatic;;;;;;;;;;;;;x
+make_enatic_cognatic_desc;Changes the gender succession law of this title to enatic-cognatic.;;;;;;;;;;;;;x

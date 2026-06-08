@@ -1,0 +1,6581 @@
+decisions = {
+
+	traits_enable = {
+		
+		potential = {
+			ai = no
+			NOT = {has_character_flag = traits_enabled}
+			has_character_flag = cheats_enabled
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 set_character_flag = traits_enabled
+			 clr_character_flag = traits_disabled
+		}
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	traits_disable = {
+		
+		potential = {
+			ai = no
+			has_character_flag = traits_enabled
+			has_character_flag = cheats_enabled
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 clr_character_flag = traits_enabled
+			 set_character_flag = traits_disabled
+		}
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    ################
+    ##CHEAT TRAITS##
+	################
+	show_cheat_traits = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_cheat_traits }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_cheat_traits
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_cheat_traits = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_cheat_traits
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_beloved = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            NOT = { trait = beloved }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = beloved
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_beloved = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            trait = beloved
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = beloved
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_landlord = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            NOT = { trait = landlord }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = landlord
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_landlord = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            trait = landlord
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = landlord
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_mastermind = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            NOT = { trait = mastermind }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = mastermind
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_mastermind = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            trait = mastermind
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = mastermind
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_builder = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            NOT = { trait = builder }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = builder
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_builder = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            trait = builder
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = builder
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_conspirator = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            NOT = { trait = conspirator }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = conspirator
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_conspirator = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            trait = conspirator
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = conspirator
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_immortal = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            NOT = { trait = immortal }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = immortal
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_immortal = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_cheat_traits
+            trait = immortal
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = immortal
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+
+    ###########
+    ##VIRTUES##
+	###########
+	show_virtues = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_virtues }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_virtues
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_virtues = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_virtues
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_chaste = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            trait = chaste
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = chaste
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_chaste = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            NOT = { trait = chaste }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = chaste
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_temperate = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            trait = temperate
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = temperate
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_temperate = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            NOT = { trait = temperate }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = temperate
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_kind = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            trait = kind
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = kind
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_kind = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            NOT = { trait = kind }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = kind
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_charitable = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            trait = charitable
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = charitable
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_charitable = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            NOT = { trait = charitable }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = charitable
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_patient = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            trait = patient
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = patient
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_patient = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            NOT = { trait = patient }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = patient
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_diligent = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            trait = diligent
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = diligent
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_diligent = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            NOT = { trait = diligent }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = diligent
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_humble = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            trait = humble
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = humble
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_humble = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_virtues
+            NOT = { trait = humble }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = humble
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+
+    ########
+    ##SINS##
+	########
+	show_sins = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_sins }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_sins
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_sins = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_sins
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_lustful = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            trait = lustful
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = lustful
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_lustful = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            NOT = { trait = lustful }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = lustful
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_greedy = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            trait = greedy
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = greedy
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_greedy = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            NOT = { trait = greedy }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = greedy
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_slothful = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            trait = slothful
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = slothful
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_slothful = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            NOT = { trait = slothful }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = slothful
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_gluttonous = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            trait = gluttonous
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = gluttonous
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_gluttonous = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            NOT = { trait = gluttonous }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = gluttonous
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_wroth = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            trait = wroth
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = wroth
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_wroth = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            NOT = { trait = wroth }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = wroth
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_proud = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            trait = proud
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = proud
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_proud = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            NOT = { trait = proud }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = proud
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_envious = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            trait = envious
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = envious
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_envious = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_sins
+            NOT = { trait = envious }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = envious
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    ###############
+    ##PERSONALITY##
+	###############
+	show_personality = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_personality }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_personality
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_personality = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_personality
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_shrewd = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = shrewd
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = shrewd
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_shrewd = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = shrewd }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = shrewd
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_erudite = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = erudite
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = erudite
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_erudite = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = erudite }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = erudite
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_stubborn = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = stubborn
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = stubborn
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_stubborn = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = stubborn }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = stubborn
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_dull = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = dull
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = dull
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_dull = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = dull }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = dull
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_feeble = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = feeble
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = feeble
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_feeble = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = feeble }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = feeble
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_robust = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = robust
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = robust
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_robust = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = robust }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = robust
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_craven = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = craven
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = craven
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_craven = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = craven }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = craven
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_brave = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = brave
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = brave
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_brave = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = brave }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = brave
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_gregarious = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = gregarious
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = gregarious
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_gregarious = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = gregarious }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = gregarious
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_shy = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = shy
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = shy
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_shy = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = shy }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = shy
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_honest = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = honest
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = honest
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_honest = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = honest }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = honest
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_deceitful = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = deceitful
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = deceitful
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_deceitful = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = deceitful }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = deceitful
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_arbitrary = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = arbitrary
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = arbitrary
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_arbitrary = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = arbitrary }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = arbitrary
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_just = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = just
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = just
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_just = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = just }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = just
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_ambitious = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = ambitious
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = ambitious
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_ambitious = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = ambitious }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = ambitious
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_content = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = content
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = content
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_content = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = content }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = content
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_zealous = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = zealous
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = zealous
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_zealous = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = zealous }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = zealous
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_cynical = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = cynical
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = cynical
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_cynical = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = cynical }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = cynical
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_paranoid = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = paranoid
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = paranoid
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_paranoid = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = paranoid }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = paranoid
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_trusting = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = trusting
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = trusting
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_trusting = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = trusting }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = trusting
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_cruel = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            trait = cruel
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = cruel
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_cruel = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_personality
+            NOT = { trait = cruel }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = cruel
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    #############
+    ##EDUCATION##
+	#############
+	show_education = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_education }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_education
+		}
+
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_education = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_education
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_education
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	set_martial_education = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_education
+            NOT = { trait = brilliant_strategist }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = brilliant_strategist
+
+            hidden_tooltip = {
+
+	            remove_trait = amateurish_plotter 
+	            remove_trait = flamboyant_schemer 
+	            remove_trait = intricate_webweaver 
+	            remove_trait = elusive_shadow
+
+	            remove_trait = naive_appeaser 
+	            remove_trait = underhanded_rogue 
+	            remove_trait = charismatic_negotiator 
+	            remove_trait = grey_eminence
+
+	            remove_trait = indulgent_wastrel 
+	            remove_trait = thrifty_clerk 
+	            remove_trait = fortune_builder	
+	            remove_trait = midas_touched
+
+	            remove_trait = misguided_warrior 
+	            remove_trait = tough_soldier 
+	            remove_trait = skilled_tactician 
+	            #remove_trait = brilliant_strategist
+
+	            remove_trait = detached_priest
+	            remove_trait = martial_cleric
+	            remove_trait = scholarly_theologian 
+	            remove_trait = mastermind_theologian
+            }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	set_learning_education = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_education
+            NOT = { trait = mastermind_theologian }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = mastermind_theologian
+
+            hidden_tooltip = {
+
+	            remove_trait = amateurish_plotter 
+	            remove_trait = flamboyant_schemer 
+	            remove_trait = intricate_webweaver 
+	            remove_trait = elusive_shadow
+
+	            remove_trait = naive_appeaser 
+	            remove_trait = underhanded_rogue 
+	            remove_trait = charismatic_negotiator 
+	            remove_trait = grey_eminence
+
+	            remove_trait = indulgent_wastrel 
+	            remove_trait = thrifty_clerk 
+	            remove_trait = fortune_builder	
+	            remove_trait = midas_touched
+
+	            remove_trait = misguided_warrior 
+	            remove_trait = tough_soldier 
+	            remove_trait = skilled_tactician 
+	            remove_trait = brilliant_strategist
+
+	            remove_trait = detached_priest
+	            remove_trait = martial_cleric
+	            remove_trait = scholarly_theologian 
+	            #remove_trait = mastermind_theologian
+            }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	set_stewardship_education = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_education
+            NOT = { trait = midas_touched }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = midas_touched
+
+            hidden_tooltip = {
+
+	            remove_trait = amateurish_plotter 
+	            remove_trait = flamboyant_schemer 
+	            remove_trait = intricate_webweaver 
+	            remove_trait = elusive_shadow
+
+	            remove_trait = naive_appeaser 
+	            remove_trait = underhanded_rogue 
+	            remove_trait = charismatic_negotiator 
+	            remove_trait = grey_eminence
+
+	            remove_trait = indulgent_wastrel 
+	            remove_trait = thrifty_clerk 
+	            remove_trait = fortune_builder	
+	            #remove_trait = midas_touched
+
+	            remove_trait = misguided_warrior 
+	            remove_trait = tough_soldier 
+	            remove_trait = skilled_tactician 
+	            remove_trait = brilliant_strategist
+
+	            remove_trait = detached_priest
+	            remove_trait = martial_cleric
+	            remove_trait = scholarly_theologian 
+	            remove_trait = mastermind_theologian
+            }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	set_intrigue_education = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_education
+            NOT = { trait = elusive_shadow }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = elusive_shadow
+
+            hidden_tooltip = {
+
+	            remove_trait = amateurish_plotter 
+	            remove_trait = flamboyant_schemer 
+	            remove_trait = intricate_webweaver 
+	            #remove_trait = elusive_shadow
+
+	            remove_trait = naive_appeaser 
+	            remove_trait = underhanded_rogue 
+	            remove_trait = charismatic_negotiator 
+	            remove_trait = grey_eminence
+
+	            remove_trait = indulgent_wastrel 
+	            remove_trait = thrifty_clerk 
+	            remove_trait = fortune_builder	
+	            remove_trait = midas_touched
+
+	            remove_trait = misguided_warrior 
+	            remove_trait = tough_soldier 
+	            remove_trait = skilled_tactician 
+	            remove_trait = brilliant_strategist
+
+	            remove_trait = detached_priest
+	            remove_trait = martial_cleric
+	            remove_trait = scholarly_theologian 
+	            remove_trait = mastermind_theologian
+            }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	set_diplomacy_education = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_education
+            NOT = { trait = grey_eminence }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = grey_eminence
+
+            hidden_tooltip = {
+
+	            remove_trait = amateurish_plotter 
+	            remove_trait = flamboyant_schemer 
+	            remove_trait = intricate_webweaver 
+	            remove_trait = elusive_shadow
+
+	            remove_trait = naive_appeaser 
+	            remove_trait = underhanded_rogue 
+	            remove_trait = charismatic_negotiator 
+	            #remove_trait = grey_eminence
+
+	            remove_trait = indulgent_wastrel 
+	            remove_trait = thrifty_clerk 
+	            remove_trait = fortune_builder	
+	            remove_trait = midas_touched
+
+	            remove_trait = misguided_warrior 
+	            remove_trait = tough_soldier 
+	            remove_trait = skilled_tactician 
+	            remove_trait = brilliant_strategist
+
+	            remove_trait = detached_priest
+	            remove_trait = martial_cleric
+	            remove_trait = scholarly_theologian 
+	            remove_trait = mastermind_theologian
+            }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    #######################
+    ##HEALTH & CONGENITAL##
+	#######################
+	show_health = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_health }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_health
+		}
+
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_health = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_health
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_defects = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+            OR = {
+				trait = inbred
+				trait = harelip
+				trait = clubfooted
+				trait = hunchback
+				trait = lisp
+				trait = stutter
+				trait = ugly
+				trait = dwarf
+				trait = slow
+				trait = imbecile
+				trait = weak
+            }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+			remove_trait = inbred
+			remove_trait = harelip
+			remove_trait = clubfooted
+			remove_trait = hunchback
+			remove_trait = lisp
+			remove_trait = stutter
+			remove_trait = ugly
+			remove_trait = dwarf
+			remove_trait = slow
+			remove_trait = imbecile
+			remove_trait = weak
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_diseases = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+	        OR = {
+		        trait = ill
+		        trait = has_tuberculosis
+		        trait = stressed
+		        trait = lunatic
+		        trait = possessed
+		        trait = depressed
+		        trait = wounded
+		        trait = maimed
+		        trait = pneumonic
+		        trait = leper
+		        trait = syphilitic
+		        trait = infirm
+		        trait = incapable
+		        trait = drunkard
+		        trait = scarred
+		        trait = has_typhoid_fever
+		        trait = has_typhus
+		        trait = has_bubonic_plague
+		        trait = has_measles
+		        trait = has_small_pox
+		        trait = sickly
+		        trait = has_aztec_disease
+                trait = cancer
+                trait = dancing_plague
+                trait = scurvy
+                trait = rabies
+                trait = food_poisoning
+                trait = gout
+                trait = dysentery
+                trait = flu
+                trait = cough
+                trait = fever
+                trait = diarrhea
+                trait = vomiting
+                trait = chest_pain
+                trait = cramps
+                trait = rash
+                trait = headache
+                trait = abdominal_pain
+                trait = fatigue
+                trait = malaise
+                trait = infection
+                trait = one_eyed
+                trait = one_handed
+                trait = one_legged
+                trait = disfigured
+                trait = mangled
+                trait = severely_injured
+	        }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		        remove_trait = ill
+		        remove_trait = has_tuberculosis
+		        remove_trait = stressed
+		        remove_trait = lunatic
+		        remove_trait = possessed
+		        remove_trait = depressed
+		        remove_trait = wounded
+		        remove_trait = maimed
+		        remove_trait = pneumonic
+		        remove_trait = leper
+		        remove_trait = syphilitic
+		        remove_trait = infirm
+		        remove_trait = incapable
+		        remove_trait = drunkard
+		        remove_trait = scarred
+		        remove_trait = has_typhoid_fever
+		        remove_trait = has_typhus
+		        remove_trait = has_bubonic_plague
+		        remove_trait = has_measles
+		        remove_trait = has_small_pox
+		        remove_trait = sickly
+		        remove_trait = has_aztec_disease
+                remove_trait = cancer
+                remove_trait = dancing_plague
+                remove_trait = scurvy
+                remove_trait = rabies
+                remove_trait = food_poisoning
+                remove_trait = gout
+                remove_trait = dysentery
+                remove_trait = flu
+                remove_trait = cough
+                remove_trait = fever
+                remove_trait = diarrhea
+                remove_trait = vomiting
+                remove_trait = chest_pain
+                remove_trait = cramps
+                remove_trait = rash
+                remove_trait = headache
+                remove_trait = abdominal_pain
+                remove_trait = fatigue
+                remove_trait = malaise
+                remove_trait = infection
+                remove_trait = one_eyed
+                remove_trait = one_handed
+                remove_trait = one_legged
+                remove_trait = disfigured
+                remove_trait = mangled
+                remove_trait = severely_injured
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_genius = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+            trait = genius
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = genius
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_genius = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+            NOT = { trait = genius }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = genius
+            hidden_tooltip = { remove_trait = quick}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_quick = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+            trait = quick
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = quick
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_quick = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+            NOT = { trait = quick }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = quick
+            hidden_tooltip = { remove_trait = genius}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_strong = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+            trait = strong
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = strong
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_strong = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+            NOT = { trait = strong }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = strong
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_fair = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+            trait = fair
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = fair
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_fair = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_health
+            NOT = { trait = fair }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = fair
+            hidden_tooltip = { remove_trait = quick}
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+
+	##############
+    ##LEADERSHIP##
+	##############
+	show_leadership = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_leadership }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_leadership
+		}
+
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_leadership = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_leadership
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_light_foot_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = light_foot_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = light_foot_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_light_foot_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = light_foot_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = light_foot_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_heavy_infantry_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = heavy_infantry_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = heavy_infantry_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_heavy_infantry_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = heavy_infantry_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = heavy_infantry_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_cavalry_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = cavalry_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = cavalry_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_cavalry_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = cavalry_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = cavalry_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_inspiring_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = inspiring_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = inspiring_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_inspiring_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = inspiring_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = inspiring_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_trickster = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = trickster
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = trickster
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_trickster = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = trickster }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = trickster
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_organizer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = organizer
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = organizer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_organizer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = organizer }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = organizer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_defensive_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = defensive_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = defensive_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_defensive_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = defensive_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = defensive_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_aggressive_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = aggressive_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = aggressive_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_aggressive_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = aggressive_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = aggressive_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_flanker = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = flanker
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = flanker
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_flanker = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = flanker }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = flanker
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_experimenter = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = experimenter
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = experimenter
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_experimenter = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = experimenter }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = experimenter
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+		remove_siege_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = siege_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = siege_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_siege_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = siege_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = siege_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_flat_terrain_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = flat_terrain_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = flat_terrain_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_flat_terrain_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = flat_terrain_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = flat_terrain_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_rough_terrain_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = rough_terrain_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = rough_terrain_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_rough_terrain_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = rough_terrain_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = rough_terrain_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_desert_terrain_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = desert_terrain_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = desert_terrain_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_desert_terrain_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = desert_terrain_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = desert_terrain_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_unyielding_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = unyielding_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = unyielding_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_unyielding_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = unyielding_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = unyielding_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_holy_warrior = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = holy_warrior
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = holy_warrior
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_holy_warrior = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = holy_warrior }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = holy_warrior
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_narrow_flank_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = narrow_flank_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = narrow_flank_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_narrow_flank_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = narrow_flank_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = narrow_flank_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_war_elephant_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = war_elephant_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = war_elephant_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_war_elephant_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = war_elephant_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = war_elephant_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_jungle_terrain_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = jungle_terrain_leader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = jungle_terrain_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_jungle_terrain_leader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = jungle_terrain_leader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = jungle_terrain_leader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_winter_soldier = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            trait = winter_soldier
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = winter_soldier
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_winter_soldier = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_leadership
+            NOT = { trait = winter_soldier }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = winter_soldier
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	##############
+    ##LIFESTYLES##
+	##############
+	show_lifestyle = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_lifestyle }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_lifestyle
+		}
+
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_lifestyle = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_lifestyle
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_physician = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = physician
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = physician
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_physician = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = physician }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = physician
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_mystic = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = mystic
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = mystic
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_mystic = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = mystic }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = mystic
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_scholar = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = scholar
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = scholar
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_scholar = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = scholar }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = scholar
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_theologian = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = theologian
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = theologian
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_theologian = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = theologian }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = theologian
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_schemer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = schemer
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = schemer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_schemer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = schemer }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = schemer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_impaler = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = impaler
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = impaler
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_impaler = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = impaler }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = impaler
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_seducer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            is_female = no
+            trait = seducer
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = seducer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_seducer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            is_female = no
+            NOT = { trait = seducer }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = seducer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_seductress = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            is_female = yes
+            trait = seductress
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = seductress
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_seductress = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            is_female = yes
+            NOT = { trait = seductress }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = seductress
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_gardener = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = gardener
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = gardener
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_gardener = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = gardener }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = gardener
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_architect = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = architect
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = architect
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_architect = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = architect }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = architect
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_administrator = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = administrator
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = administrator
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_administrator = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = administrator }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = administrator
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_hunter = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = hunter
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = hunter
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_hunter = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = hunter }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = hunter
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_duelist = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = duelist
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = duelist
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_duelist = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = duelist }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = duelist
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_strategist = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = strategist
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = strategist
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_strategist = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = strategist }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = strategist
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_gamer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = gamer
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = gamer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_gamer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = gamer }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = gamer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_hedonist = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = hedonist
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = hedonist
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_hedonist = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = hedonist }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = hedonist
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    remove_socializer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            trait = socializer
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = socializer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_socializer = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_lifestyle
+            NOT = { trait = socializer }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = socializer
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    ###############
+    ##MISC TRAITS##
+	###############
+	show_misc = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_misc }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_misc
+		}
+
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_misc = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_misc
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_scarred = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            trait = scarred
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = scarred
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_scarred = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            NOT = { trait = scarred }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = scarred
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_homosexual = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            trait = homosexual
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = homosexual
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_homosexual = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            NOT = { trait = homosexual }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = homosexual
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_child_of_concubine = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            trait = child_of_consort
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = child_of_consort
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_crusader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            trait = crusader
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = crusader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_crusader = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            NOT = { trait = crusader }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = crusader
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_lunatic = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            trait = lunatic
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = lunatic
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_lunatic = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            NOT = { trait = lunatic }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = lunatic
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_possessed = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            trait = possessed
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = possessed
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_possessed = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            NOT = { trait = possessed }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = possessed
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_blinded = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            trait = blinded
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            remove_trait = blinded
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_blinded = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_misc
+            NOT = { trait = blinded }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            add_trait = blinded
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    #################
+    ##VASSAL TRAITS##
+	#################
+	show_vassal = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_vassal }
+		}
+
+		allow = {
+			always = yes
+	    }
+
+		effect = {
+            set_character_flag = show_vassal
+		}
+
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_vassal = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_vassal
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_vassal
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_vassal_content = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_vassal
+            any_realm_character = {
+		        NOT = { trait = content }
+            }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+	            any_realm_character = {
+					limit = {
+						NOT = { is_married = ROOT}
+						NOT = { is_child_of = ROOT}
+					}
+			        add_trait = content
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_vassal_trusting = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_vassal
+            any_realm_character = {
+		        NOT = { trait = trusting }
+            }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+	            any_realm_character = {
+					limit = {
+						NOT = { is_married = ROOT}
+						NOT = { is_child_of = ROOT}
+					}
+			        add_trait = trusting
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_vassal_honest = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_vassal
+            any_realm_character = {
+		        NOT = { trait = honest }
+            }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+	            any_realm_character = {
+					limit = {
+						NOT = { is_married = ROOT}
+						NOT = { is_child_of = ROOT}
+					}
+			        add_trait = honest
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_vassal_sins = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_vassal
+            any_realm_character = {
+		        OR = {
+			        trait = greedy
+			        trait = lustful
+			        trait = proud
+			        trait = envious
+			        trait = gluttonous
+			        trait = slothful
+			        trait = wroth
+		        }
+            }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+	            any_realm_character = {
+					limit = {
+						NOT = { is_married = ROOT}
+						NOT = { is_child_of = ROOT}
+					}
+			        remove_trait = greedy
+			        remove_trait = lustful
+			        remove_trait = proud
+			        remove_trait = envious
+			        remove_trait = gluttonous
+			        remove_trait = slothful
+			        remove_trait = wroth
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_vassal_virtues = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_vassal
+            any_realm_character = {
+		        OR = {
+			        trait = charitable
+			        trait = chaste
+			        trait = humble
+			        trait = kind
+			        trait = temperate
+			        trait = diligent
+			        trait = patient
+		        }
+            }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+	            any_realm_character = {
+					limit = {
+						NOT = { is_married = ROOT}
+						NOT = { is_child_of = ROOT}
+					}
+			        add_trait = charitable
+			        add_trait = chaste
+			        add_trait = humble
+			        add_trait = kind
+			        add_trait = temperate
+			        add_trait = diligent
+			        add_trait = patient
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+    ###########################
+    ##DYNASTY & SPOUSE TRAITS##
+	###########################
+
+	show_dynasty = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            NOT = { has_character_flag = show_dynasty }
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            set_character_flag = show_dynasty
+		}
+
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	hide_dynasty = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_dynasty
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+            clr_character_flag = show_dynasty
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_dynasty_content = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_dynasty
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+				any_dynasty_member = {
+			        add_trait = content
+	            }
+	            any_spouse = {
+			        add_trait = content
+	            }
+	            any_consort = {
+			        add_trait = content
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_dynasty_trusting = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_dynasty
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+				any_dynasty_member = {
+			        add_trait = trusting
+	            }
+	            any_spouse = {
+			        add_trait = trusting
+	            }
+	            any_consort = {
+			        add_trait = trusting
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_dynasty_honest = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_dynasty
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+				any_dynasty_member = {
+			        add_trait = honest
+	            }
+	            any_spouse = {
+			        add_trait = honest
+	            }
+	            any_consort = {
+			        add_trait = honest
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	remove_dynasty_sins = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_dynasty
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+	            any_dynasty_member = {
+			        remove_trait = greedy
+			        remove_trait = lustful
+			        remove_trait = proud
+			        remove_trait = envious
+			        remove_trait = gluttonous
+			        remove_trait = slothful
+			        remove_trait = wroth
+	            }
+	            any_spouse = {
+			        remove_trait = greedy
+			        remove_trait = lustful
+			        remove_trait = proud
+			        remove_trait = envious
+			        remove_trait = gluttonous
+			        remove_trait = slothful
+			        remove_trait = wroth
+	            }
+	            any_consort = {
+			        remove_trait = greedy
+			        remove_trait = lustful
+			        remove_trait = proud
+			        remove_trait = envious
+			        remove_trait = gluttonous
+			        remove_trait = slothful
+			        remove_trait = wroth
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_dynasty_virtues = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_dynasty
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+	            any_dynasty_member = {
+			        add_trait = charitable
+			        add_trait = humble
+			        add_trait = kind
+			        add_trait = temperate
+			        add_trait = diligent
+			        add_trait = patient
+	            }
+	            any_spouse = {
+			        add_trait = charitable
+			        add_trait = humble
+			        add_trait = kind
+			        add_trait = temperate
+			        add_trait = diligent
+			        add_trait = patient
+	            }
+	            any_consort = {
+			        add_trait = charitable
+			        add_trait = humble
+			        add_trait = kind
+			        add_trait = temperate
+			        add_trait = diligent
+			        add_trait = patient
+	            }
+		    }
+		}
+
+		revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+
+	add_dynasty_genetics = {
+
+
+		potential = {
+		    ai = no
+            has_character_flag = cheats_enabled
+            has_character_flag = traits_enabled
+            has_character_flag = show_dynasty
+		}
+
+		allow = {
+			always = yes
+		}
+
+		effect = {
+		    hidden_tooltip = {
+				any_dynasty_member = {
+			        add_trait = genius
+			        add_trait = strong
+			        add_trait = fair
+	            }
+	            any_spouse = {
+			        add_trait = genius
+			        add_trait = strong
+			        add_trait = fair
+	            }
+	            any_consort = {
+			        add_trait = genius
+			        add_trait = strong
+			        add_trait = fair
+	            }
+		    }
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+	}
+}
+
+
+

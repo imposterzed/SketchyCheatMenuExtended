@@ -1,0 +1,34 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_cspawn_enable"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_cspawn_disable"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_hide_spawn_child"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_show_spawn_child"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_hide_spawn_sibling"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_show_spawn_sibling"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_hide_spawn_courtier"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+   spriteType = {
+    name = "GFX_show_spawn_courtier"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+}

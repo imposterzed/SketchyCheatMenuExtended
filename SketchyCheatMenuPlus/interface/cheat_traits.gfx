@@ -1,0 +1,38 @@
+
+spriteTypes = {
+  spriteType = {
+   name = "GFX_trait_beloved"
+   texturefile = "gfx/traits/beloved.dds"
+   noOfFrames = 1
+   norefcount = yes
+   effectFile = "gfx/FX/buttonstate.lua"
+  }
+  spriteType = {
+   name = "GFX_trait_conspirator"
+   texturefile = "gfx/traits/conspirator.dds"
+   noOfFrames = 1
+   norefcount = yes
+   effectFile = "gfx/FX/buttonstate.lua"
+  }
+  spriteType = {
+   name = "GFX_trait_builder"
+   texturefile = "gfx/traits/builder.dds"
+   noOfFrames = 1
+   norefcount = yes
+   effectFile = "gfx/FX/buttonstate.lua"
+  }
+  spriteType = {
+   name = "GFX_trait_mastermind"
+   texturefile = "gfx/traits/mastermind.dds"
+   noOfFrames = 1
+   norefcount = yes
+   effectFile = "gfx/FX/buttonstate.lua"
+  }
+  spriteType = {
+   name = "GFX_trait_landlord"
+   texturefile = "gfx/traits/landlord.dds"
+   noOfFrames = 1
+   norefcount = yes
+   effectFile = "gfx/FX/buttonstate.lua"
+  }
+}

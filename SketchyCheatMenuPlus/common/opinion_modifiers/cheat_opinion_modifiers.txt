@@ -1,0 +1,4 @@
+opinion_cheat_loyal = {
+  opinion = 1000
+  months = 1200
+}

@@ -1,0 +1,554 @@
+settlement_decisions = {
+
+    upgrade_castle = {
+        filter = realm_owned
+        
+        from_potential = {
+            ai = no
+            has_character_flag = cheats_enabled
+        }
+        potential = {
+
+            holding_type = castle
+            NOT = {
+                AND = {
+                    has_building = ca_wall_5
+                    has_building = ca_wall_q_5
+                    has_building = ca_training_grounds_3
+                    has_building = ca_barracks_6
+                    has_building = ca_militia_barracks_4
+                    has_building = ca_town_6
+                    has_building = ca_keep_6
+                    has_building = ca_stable_6
+                    has_building = ca_shipyard_4
+                }
+            }
+
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            add_building = ca_wall_1
+            add_building = ca_wall_2
+            add_building = ca_wall_3
+            add_building = ca_wall_4
+            add_building = ca_wall_5
+            add_building = ca_wall_q_1
+            add_building = ca_wall_q_2
+            add_building = ca_wall_q_3
+            add_building = ca_wall_q_4
+            add_building = ca_wall_q_5
+            add_building = ca_training_grounds_1
+            add_building = ca_training_grounds_2
+            add_building = ca_training_grounds_3
+            add_building = ca_barracks_1
+            add_building = ca_barracks_2
+            add_building = ca_barracks_3
+            add_building = ca_barracks_4
+            add_building = ca_barracks_5
+            add_building = ca_barracks_6
+            add_building = ca_militia_barracks_1
+            add_building = ca_militia_barracks_2
+            add_building = ca_militia_barracks_3
+            add_building = ca_militia_barracks_4
+            add_building = ca_keep_1
+            add_building = ca_keep_2
+            add_building = ca_keep_3
+            add_building = ca_keep_4
+            add_building = ca_keep_5
+            add_building = ca_keep_6
+            add_building = ca_stable_1
+            add_building = ca_stable_2
+            add_building = ca_stable_3
+            add_building = ca_stable_4
+            add_building = ca_stable_5
+            add_building = ca_stable_6
+            add_building = ca_town_1
+            add_building = ca_town_2
+            add_building = ca_town_3
+            add_building = ca_town_4
+            add_building = ca_town_5
+            add_building = ca_town_6
+            add_building = ca_shipyard_1
+            add_building = ca_shipyard_2
+            add_building = ca_shipyard_3
+            add_building = ca_shipyard_4
+            add_building = ca_culture_saxon_english_1
+            add_building = ca_culture_saxon_english_2
+            add_building = ca_culture_saxon_english_3
+            add_building = ca_culture_saxon_english_4
+            add_building = ca_culture_scottish_1
+            add_building = ca_culture_scottish_2
+            add_building = ca_culture_scottish_3
+            add_building = ca_culture_scottish_4
+            add_building = ca_culture_group_baltic_1
+            add_building = ca_culture_group_baltic_2
+            add_building = ca_culture_group_baltic_3
+            add_building = ca_culture_group_baltic_4
+            add_building = ca_culture_group_altaic_1
+            add_building = ca_culture_group_altaic_2
+            add_building = ca_culture_group_altaic_3
+            add_building = ca_culture_group_altaic_4
+            add_building = ca_culture_frank_norman_german_1
+            add_building = ca_culture_frank_norman_german_2
+            add_building = ca_culture_frank_norman_german_3
+            add_building = ca_culture_frank_norman_german_4
+            add_building = ca_culture_group_iberian_1
+            add_building = ca_culture_group_iberian_2
+            add_building = ca_culture_group_iberian_3
+            add_building = ca_culture_group_iberian_4
+            add_building = ca_culture_italian_1
+            add_building = ca_culture_italian_2
+            add_building = ca_culture_italian_3
+            add_building = ca_culture_italian_4
+            add_building = ca_culture_russian_1
+            add_building = ca_culture_russian_2
+            add_building = ca_culture_russian_3
+            add_building = ca_culture_russian_4
+            add_building = ca_culture_group_north_germanic_1
+            add_building = ca_culture_group_north_germanic_2
+            add_building = ca_culture_group_north_germanic_3
+            add_building = ca_culture_group_north_germanic_4
+            add_building = ca_culture_hungarian_1
+            add_building = ca_culture_hungarian_2
+            add_building = ca_culture_hungarian_3
+            add_building = ca_culture_hungarian_4
+            add_building = ca_culture_group_arabic_1
+            add_building = ca_culture_group_arabic_2
+            add_building = ca_culture_group_arabic_3
+            add_building = ca_culture_group_arabic_4
+            add_building = ca_culture_group_byzantine_1
+            add_building = ca_culture_group_byzantine_2
+            add_building = ca_culture_group_byzantine_3
+            add_building = ca_culture_group_byzantine_4
+            add_building = ca_culture_irish_1
+            add_building = ca_culture_irish_2
+            add_building = ca_culture_irish_3
+            add_building = ca_culture_irish_4
+            add_building = ca_culture_ethiopian_1
+            add_building = ca_culture_ethiopian_2
+            add_building = ca_culture_ethiopian_3
+            add_building = ca_culture_ethiopian_4
+            add_building = ca_culture_somali_1
+            add_building = ca_culture_somali_2
+            add_building = ca_culture_somali_3
+            add_building = ca_culture_somali_4
+            add_building = ca_culture_west_african_1
+            add_building = ca_culture_west_african_2
+            add_building = ca_culture_west_african_3
+            add_building = ca_culture_west_african_4
+            add_building = ca_culture_group_south_slavic_1
+            add_building = ca_culture_group_south_slavic_2
+            add_building = ca_culture_group_south_slavic_3
+            add_building = ca_culture_group_south_slavic_4
+            add_building = ca_culture_dutch_1
+            add_building = ca_culture_dutch_2
+            add_building = ca_culture_dutch_3
+            add_building = ca_culture_dutch_4
+            add_building = ca_culture_nahuatl_1
+            add_building = ca_culture_nahuatl_2
+            add_building = ca_culture_nahuatl_3
+            add_building = ca_culture_nahuatl_4
+            add_building = ca_culture_jewish_1
+            add_building = ca_culture_jewish_2
+            add_building = ca_culture_jewish_3
+            add_building = ca_culture_jewish_4
+            add_building = ca_culture_indian_1
+            add_building = ca_culture_indian_2
+            add_building = ca_culture_indian_3
+            add_building = ca_culture_indian_4
+            add_building = ca_culture_nubian_1
+            add_building = ca_culture_nubian_2
+            add_building = ca_culture_nubian_3
+            add_building = ca_culture_nubian_4
+            add_building = ca_culture_germanic_1
+            add_building = ca_culture_germanic_2
+            add_building = ca_culture_germanic_3
+            add_building = ca_culture_germanic_4
+            add_building = ca_culture_pictish_1
+            add_building = ca_culture_pictish_2
+            add_building = ca_culture_pictish_3
+            add_building = ca_culture_pictish_4
+            add_building = ca_culture_suebi_1
+            add_building = ca_culture_suebi_2
+            add_building = ca_culture_suebi_3
+            add_building = ca_culture_suebi_4
+            add_building = ca_culture_moors_1
+            add_building = ca_culture_moors_2
+            add_building = ca_culture_moors_3
+            add_building = ca_culture_moors_4
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+
+    upgrade_temple = {
+        filter = realm_owned
+        
+        from_potential = {
+            ai = no
+            has_character_flag = cheats_enabled
+        }
+        potential = {
+
+            holding_type = temple
+
+            NOT = {
+                AND = {
+                    has_building = tp_wall_5
+                    has_building = tp_wall_q_5
+                    has_building = tp_barracks_6
+                    has_building = tp_elite_barracks_6
+                    has_building = tp_town_6
+                    has_building = tp_shipyard_4
+                    has_building = tp_school_2
+                    has_building = tp_monastery_6
+                }
+            }
+
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            add_building = tp_wall_1
+            add_building = tp_wall_2
+            add_building = tp_wall_3
+            add_building = tp_wall_4
+            add_building = tp_wall_5
+            add_building = tp_wall_q_1
+            add_building = tp_wall_q_2
+            add_building = tp_wall_q_3
+            add_building = tp_wall_q_4
+            add_building = tp_wall_q_5
+            add_building = tp_monastery_1
+            add_building = tp_monastery_2
+            add_building = tp_monastery_3
+            add_building = tp_monastery_4
+            add_building = tp_monastery_5
+            add_building = tp_monastery_6
+            add_building = tp_barracks_1
+            add_building = tp_barracks_2
+            add_building = tp_barracks_3
+            add_building = tp_barracks_4
+            add_building = tp_barracks_5
+            add_building = tp_barracks_6
+            add_building = tp_elite_barracks_1
+            add_building = tp_elite_barracks_2
+            add_building = tp_elite_barracks_3
+            add_building = tp_elite_barracks_4
+            add_building = tp_elite_barracks_5
+            add_building = tp_elite_barracks_6
+            add_building = tp_town_1
+            add_building = tp_town_2
+            add_building = tp_town_3
+            add_building = tp_town_4
+            add_building = tp_town_5
+            add_building = tp_town_6
+            add_building = tp_shipyard_1
+            add_building = tp_shipyard_2
+            add_building = tp_shipyard_3
+            add_building = tp_shipyard_4
+            add_building = tp_school_1
+            add_building = tp_school_2
+
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    upgrade_city = {
+        filter = realm_owned
+        
+        from_potential = {
+            ai = no
+            has_character_flag = cheats_enabled
+        }
+        potential = {
+
+            holding_type = city
+            NOT = {
+                AND = {
+                    has_building = ct_wall_5
+                    has_building = ct_wall_q_5
+                    has_building = ct_training_grounds_6
+                    has_building = ct_barracks_6
+                    has_building = ct_marketplace_6
+                    has_building = ct_guard_5
+                    has_building = ct_port_5
+                    has_building = ct_shipyard_4
+                    has_building = ct_university_3
+                }
+            }
+
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            add_building = ct_wall_1
+            add_building = ct_wall_2
+            add_building = ct_wall_3
+            add_building = ct_wall_4
+            add_building = ct_wall_5
+            add_building = ct_wall_q_1
+            add_building = ct_wall_q_2
+            add_building = ct_wall_q_3
+            add_building = ct_wall_q_4
+            add_building = ct_wall_q_5
+            add_building = ct_training_grounds_1
+            add_building = ct_training_grounds_2
+            add_building = ct_training_grounds_3
+            add_building = ct_training_grounds_4
+            add_building = ct_training_grounds_5
+            add_building = ct_training_grounds_6
+            add_building = ct_barracks_1
+            add_building = ct_barracks_2
+            add_building = ct_barracks_3
+            add_building = ct_barracks_4
+            add_building = ct_barracks_5
+            add_building = ct_barracks_6
+            add_building = ct_marketplace_1
+            add_building = ct_marketplace_2
+            add_building = ct_marketplace_3
+            add_building = ct_marketplace_4
+            add_building = ct_marketplace_5
+            add_building = ct_marketplace_6
+            add_building = ct_guard_1
+            add_building = ct_guard_2
+            add_building = ct_guard_3
+            add_building = ct_guard_4
+            add_building = ct_guard_5
+            add_building = ct_port_1
+            add_building = ct_port_2
+            add_building = ct_port_3
+            add_building = ct_port_4
+            add_building = ct_port_5
+            add_building = ct_shipyard_1
+            add_building = ct_shipyard_2
+            add_building = ct_shipyard_3
+            add_building = ct_shipyard_4
+            add_building = ct_university_1
+            add_building = ct_university_2
+            add_building = ct_university_3
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    upgrade_tribal = {
+        filter = realm_owned
+        
+        from_potential = {
+            ai = no
+            has_character_flag = cheats_enabled
+        }
+        potential = {
+
+            holding_type = tribal
+
+            NOT = {
+                AND = {
+                    has_building = tb_hillfort_4
+                    has_building = tb_market_town_4
+                    has_building = tb_training_grounds_4
+                    has_building = tb_war_camp_4
+                    has_building = tb_shipyard_4
+                    has_building = tb_practice_range_4
+                    has_building = tb_steppe_barracks_4
+                    has_building = tb_steppe_stable_4
+                    has_building = tb_arsenal_4
+                }
+            }
+
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            add_building = tb_hillfort_1
+            add_building = tb_hillfort_2
+            add_building = tb_hillfort_3
+            add_building = tb_hillfort_4
+            add_building = tb_market_town_1
+            add_building = tb_market_town_2
+            add_building = tb_market_town_3
+            add_building = tb_market_town_4
+            add_building = tb_training_grounds_1
+            add_building = tb_training_grounds_2
+            add_building = tb_training_grounds_3
+            add_building = tb_training_grounds_4
+            add_building = tb_war_camp_1
+            add_building = tb_war_camp_2
+            add_building = tb_war_camp_3
+            add_building = tb_war_camp_4
+            add_building = tb_shipyard_1
+            add_building = tb_shipyard_2
+            add_building = tb_shipyard_3
+            add_building = tb_shipyard_4
+            add_building = tb_practice_range_1
+            add_building = tb_practice_range_2
+            add_building = tb_practice_range_3
+            add_building = tb_practice_range_4
+            add_building = tb_steppe_barracks_1
+            add_building = tb_steppe_barracks_2
+            add_building = tb_steppe_barracks_3
+            add_building = tb_steppe_barracks_4
+            add_building = tb_steppe_stable_1
+            add_building = tb_steppe_stable_2
+            add_building = tb_steppe_stable_3
+            add_building = tb_steppe_stable_4
+            add_building = tb_arsenal_1
+            add_building = tb_arsenal_2
+            add_building = tb_arsenal_3
+            add_building = tb_arsenal_4
+
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    delete_holding = {
+        filter = realm_owned
+
+        from_potential = {
+            ai = no
+            has_character_flag = cheats_enabled
+        }
+        potential = {
+            NOT = {
+                is_capital = yes
+            }
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            destroy_settlement = ROOT
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    convert_castle = {
+        filter = realm_owned
+        
+        from_potential = {
+            ai = no
+            has_character_flag = cheats_enabled
+        }
+        potential = {
+            NOT = {
+                is_capital = yes
+                holding_type = castle
+            }
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            convert_to = CASTLE
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    convert_temple = {
+        filter = realm_owned
+        
+        from_potential = {
+            ai = no
+            has_character_flag = cheats_enabled
+        }
+        potential = {
+            NOT = {
+                is_capital = yes
+                holding_type = temple
+            }
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            convert_to = TEMPLE
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    convert_city = {
+        filter = realm_owned
+        
+        from_potential = {
+            ai = no
+            has_character_flag = cheats_enabled
+        }
+        potential = {
+            NOT = {
+                is_capital = yes
+                holding_type = city
+            }
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            convert_to = CITY
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    upgrade_hospital_fully = {
+        filter = owned
+
+        from_potential = {
+            ai = no
+            has_character_flag = cheats_enabled
+        }
+        potential = {
+            is_capital = yes
+            location = {
+                has_hospital = yes
+            }
+        }
+        allow = {
+            always = yes
+        }
+        effect = {
+            hidden_tooltip = {
+                location = {
+                    add_to_extra_holding = { type = hospital building = hospital_building_1 }
+                    add_to_extra_holding = { type = hospital building = hospital_building_2 }
+                    add_to_extra_holding = { type = hospital building = hospital_building_3 }
+                    add_to_extra_holding = { type = hospital building = hospital_building_4 }
+                    add_to_extra_holding = { type = hospital building = hospital_building_5 }
+                    add_to_extra_holding = { type = hospital building = leper_colony_1 }
+                    add_to_extra_holding = { type = hospital building = soup_kitchen_1 }
+                    add_to_extra_holding = { type = hospital building = chapel_1 }
+                    add_to_extra_holding = { type = hospital building = translation_house_1 }
+                    add_to_extra_holding = { type = hospital building = pilgrims_inn_1 }
+                    add_to_extra_holding = { type = hospital building = library_1 }
+                    add_to_extra_holding = { type = hospital building = pharmacology_laboratory_1 }
+                    add_to_extra_holding = { type = hospital building = medical_academy_1 }
+                    add_to_extra_holding = { type = hospital building = observatory_1 }
+                }
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}
+
+

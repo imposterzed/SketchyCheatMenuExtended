@@ -1,0 +1,4 @@
+triple_levies = {
+  global_levy_size = 3
+  icon = 13
+}

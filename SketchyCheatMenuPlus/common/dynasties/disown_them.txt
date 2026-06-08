@@ -1,0 +1,4 @@
+777777 = {
+	name = Lowborn
+    used_for_random=no
+}

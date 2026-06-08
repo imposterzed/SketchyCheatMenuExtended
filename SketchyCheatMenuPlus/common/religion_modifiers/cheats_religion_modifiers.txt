@@ -1,0 +1,4 @@
+god_amongst_men = {
+  authority = 100
+  years = 2016
+}

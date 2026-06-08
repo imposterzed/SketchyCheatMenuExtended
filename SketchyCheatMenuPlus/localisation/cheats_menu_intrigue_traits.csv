@@ -1,0 +1,671 @@
+#CODE;NAME;;;;;;;;;;;;;x
+#CODE_desc;DESCRIPTION;;;;;;;;;;;;;x
+
+traits_enable;Show Traits Menu;;;;;;;;;;;;;x
+traits_enable_desc;Show the traits menu.;;;;;;;;;;;;;x
+
+traits_disable;Hide Traits Menu;;;;;;;;;;;;;x
+traits_disable_desc;Hide the traits menu.;;;;;;;;;;;;;x
+
+show_cheat_traits;----Show Cheat Traits;;;;;;;;;;;;;x
+show_cheat_traits_desc;Show Cheat Traits;;;;;;;;;;;;;x
+
+hide_cheat_traits;----Hide Cheat Traits;;;;;;;;;;;;;x
+hide_cheat_traits_desc;Hide Cheat Traits;;;;;;;;;;;;;x
+
+show_virtues;----Show Virtue Traits;;;;;;;;;;;;;x
+show_virtues_desc;Show Virtue Traits;;;;;;;;;;;;;x
+
+hide_virtues;----Hide Virtue Traits;;;;;;;;;;;;;x
+hide_virtues_desc;Hide Virtue Traits;;;;;;;;;;;;;x
+
+show_sins;----Show Sin Traits;;;;;;;;;;;;;x
+show_sins_desc;Show Sin Traits;;;;;;;;;;;;;x
+
+hide_sins;----Hide Sin Traits;;;;;;;;;;;;;x
+hide_sins_desc;Hide Sin Traits;;;;;;;;;;;;;x
+
+show_personality;----Show Personality Traits;;;;;;;;;;;;;x
+show_personality_desc;Show Personality Traits;;;;;;;;;;;;;x
+
+hide_personality;----Hide Personality Traits;;;;;;;;;;;;;x
+hide_personality_desc;Hide Personality Traits;;;;;;;;;;;;;x
+
+show_education;----Show Education Traits;;;;;;;;;;;;;x
+show_education_desc;Show Education Traits;;;;;;;;;;;;;x
+
+hide_education;----Hide Education Traits;;;;;;;;;;;;;x
+hide_education_desc;Hide Education Traits;;;;;;;;;;;;;x
+
+show_health;----Show Health & Congenital Traits;;;;;;;;;;;;;x
+show_health_desc;Show Health & Congenital Traits;;;;;;;;;;;;;x
+
+hide_health;----Hide Health & Congenital Traits;;;;;;;;;;;;;x
+hide_health_desc;Hide Health & Congenital Traits;;;;;;;;;;;;;x
+
+show_lifestyle;----Show Lifestyle Traits;;;;;;;;;;;;;x
+show_lifestyle_desc;Show Lifestyle Traits;;;;;;;;;;;;;x
+
+hide_lifestyle;----Hide Lifestyle Traits;;;;;;;;;;;;;x
+hide_lifestyle_desc;Hide Lifestyle Traits;;;;;;;;;;;;;x
+
+show_leadership;----Show Leadership Traits;;;;;;;;;;;;;x
+show_leadership_desc;Show Leadership Traits;;;;;;;;;;;;;x
+
+hide_leadership;----Hide Leadership Traits;;;;;;;;;;;;;x
+hide_leadership_desc;Hide Leadership Traits;;;;;;;;;;;;;x
+
+show_misc;----Show Misc Traits;;;;;;;;;;;;;x
+show_misc_desc;Show Misc Traits;;;;;;;;;;;;;x
+
+hide_misc;----Hide Misc Traits;;;;;;;;;;;;;x
+hide_misc_desc;Hide Misc Traits;;;;;;;;;;;;;x
+
+show_vassal;----Show Traits For Vassals;;;;;;;;;;;;;x
+show_vassal_desc;Show Traits For Vassals;;;;;;;;;;;;;x
+
+hide_vassal;----Hide Traits For Vassals;;;;;;;;;;;;;x
+hide_vassal_desc;Hide Traits For Vassals;;;;;;;;;;;;;x
+
+show_dynasty;----Show Traits For Dynasty/Spouses;;;;;;;;;;;;;x
+show_dynasty_desc;Show Traits For Dynasty/Spouses;;;;;;;;;;;;;x
+
+hide_dynasty;----Hide Traits For Dynasty/Spouses;;;;;;;;;;;;;x
+hide_dynasty_desc;Hide Traits For Dynasty/Spouses;;;;;;;;;;;;;x
+
+add_chaste;--------Add Chaste;;;;;;;;;;;;;x
+add_chaste_desc;Add Chaste;;;;;;;;;;;;;x
+
+remove_chaste;--------Remove Chaste;;;;;;;;;;;;;x
+remove_chaste_desc;Remove Chaste;;;;;;;;;;;;;x
+
+add_temperate;--------Add Temperate;;;;;;;;;;;;;x
+add_temperate_desc;Add Temperate;;;;;;;;;;;;;x
+
+remove_temperate;--------Remove Temperate;;;;;;;;;;;;;x
+remove_temperate_desc;Remove Temperate;;;;;;;;;;;;;x
+
+add_charitable;--------Add Charitable;;;;;;;;;;;;;x
+add_charitable_desc;Add Charitable;;;;;;;;;;;;;x
+
+remove_charitable;--------Remove Charitable;;;;;;;;;;;;;x
+remove_charitable_desc;Remove Charitable;;;;;;;;;;;;;x
+
+add_patient;--------Add Patient;;;;;;;;;;;;;x
+add_patient_desc;Add Patient;;;;;;;;;;;;;x
+
+remove_patient;--------Remove Patient;;;;;;;;;;;;;x
+remove_patient_desc;Remove Patient;;;;;;;;;;;;;x
+
+add_diligent;--------Add Diligent;;;;;;;;;;;;;x
+add_diligent_desc;Add Diligent;;;;;;;;;;;;;x
+
+remove_diligent;--------Remove Diligent;;;;;;;;;;;;;x
+remove_diligent_desc;Remove Diligent;;;;;;;;;;;;;x
+
+add_humble;--------Add Humble;;;;;;;;;;;;;x
+add_humble_desc;Add Humble;;;;;;;;;;;;;x
+
+remove_humble;--------Remove Humble;;;;;;;;;;;;;x
+remove_humble_desc;Remove Humble;;;;;;;;;;;;;x
+
+add_kind;--------Add Kind;;;;;;;;;;;;;x
+add_kind_desc;Add Kind;;;;;;;;;;;;;x
+
+remove_kind;--------Remove Kind;;;;;;;;;;;;;x
+remove_kind_desc;Remove Kind;;;;;;;;;;;;;x
+
+add_envious;--------Add Envious;;;;;;;;;;;;;x
+add_envious_desc;Add Envious;;;;;;;;;;;;;x
+
+remove_envious;--------Remove Envious;;;;;;;;;;;;;x
+remove_envious_desc;Remove Envious;;;;;;;;;;;;;x
+
+add_greedy;--------Add Greedy;;;;;;;;;;;;;x
+add_greedy_desc;Add Greedy;;;;;;;;;;;;;x
+
+remove_greedy;--------Remove Greedy;;;;;;;;;;;;;x
+remove_greedy_desc;Remove Greedy;;;;;;;;;;;;;x
+
+add_lustful;--------Add Lustful;;;;;;;;;;;;;x
+add_lustful_desc;Add Lustful;;;;;;;;;;;;;x
+
+remove_lustful;--------Remove Lustful;;;;;;;;;;;;;x
+remove_lustful_desc;Remove Lustful;;;;;;;;;;;;;x
+
+add_slothful;--------Add Slothful;;;;;;;;;;;;;x
+add_slothful_desc;Add Slothful;;;;;;;;;;;;;x
+
+remove_slothful;--------Remove Slothful;;;;;;;;;;;;;x
+remove_slothful_desc;Remove Slothful;;;;;;;;;;;;;x
+
+add_gluttonous;--------Add Gluttonous;;;;;;;;;;;;;x
+add_gluttonous_desc;Add Gluttonous;;;;;;;;;;;;;x
+
+remove_gluttonous;--------Remove Gluttonous;;;;;;;;;;;;;x
+remove_gluttonous_desc;Remove Gluttonous;;;;;;;;;;;;;x
+
+add_wroth;--------Add Wroth;;;;;;;;;;;;;x
+add_wroth_desc;Add Wroth;;;;;;;;;;;;;x
+
+remove_wroth;--------Remove Wroth;;;;;;;;;;;;;x
+remove_wroth_desc;Remove Wroth;;;;;;;;;;;;;x
+
+add_proud;--------Add Proud;;;;;;;;;;;;;x
+add_proud_desc;Add Proud;;;;;;;;;;;;;x
+
+remove_proud;--------Remove Proud;;;;;;;;;;;;;x
+remove_proud_desc;Remove Proud;;;;;;;;;;;;;x
+
+add_cruel;--------Add Cruel;;;;;;;;;;;;;x
+add_cruel_desc;Add Cruel;;;;;;;;;;;;;x
+
+remove_cruel;--------Remove Cruel;;;;;;;;;;;;;x
+remove_cruel_desc;Remove Cruel;;;;;;;;;;;;;x
+
+add_honest;--------Add Honest;;;;;;;;;;;;;x
+add_honest_desc;Add Honest;;;;;;;;;;;;;x
+
+remove_honest;--------Remove Honest;;;;;;;;;;;;;x
+remove_honest_desc;Remove Honest;;;;;;;;;;;;;x
+
+add_deceitful;--------Add Deceitful;;;;;;;;;;;;;x
+add_deceitful_desc;Add Deceitful;;;;;;;;;;;;;x
+
+remove_deceitful;--------Remove Deceitful;;;;;;;;;;;;;x
+remove_deceitful_desc;Remove Deceitful;;;;;;;;;;;;;x
+
+add_shy;--------Add Shy;;;;;;;;;;;;;x
+add_shy_desc;Add Shy;;;;;;;;;;;;;x
+
+remove_shy;--------Remove Shy;;;;;;;;;;;;;x
+remove_shy_desc;Remove Shy;;;;;;;;;;;;;x
+
+add_gregarious;--------Add Gregarious;;;;;;;;;;;;;x
+add_gregarious_desc;Add Gregarious;;;;;;;;;;;;;x
+
+remove_gregarious;--------Remove Gregarious;;;;;;;;;;;;;x
+remove_gregarious_desc;Remove Gregarious;;;;;;;;;;;;;x
+
+add_trusting;--------Add Trusting;;;;;;;;;;;;;x
+add_trusting_desc;Add Trusting;;;;;;;;;;;;;x
+
+remove_trusting;--------Remove Trusting;;;;;;;;;;;;;x
+remove_trusting_desc;Remove Trusting;;;;;;;;;;;;;x
+
+add_paranoid;--------Add Paranoid;;;;;;;;;;;;;x
+add_paranoid_desc;Add Paranoid;;;;;;;;;;;;;x
+
+remove_paranoid;--------Remove Paranoid;;;;;;;;;;;;;x
+remove_paranoid_desc;Remove Paranoid;;;;;;;;;;;;;x
+
+add_content;--------Add Content;;;;;;;;;;;;;x
+add_content_desc;Add Content;;;;;;;;;;;;;x
+
+remove_content;--------Remove Content;;;;;;;;;;;;;x
+remove_content_desc;Remove Content;;;;;;;;;;;;;x
+
+add_ambitious;--------Add Ambitious;;;;;;;;;;;;;x
+add_ambitious_desc;Add Ambitious;;;;;;;;;;;;;x
+
+remove_ambitious;--------Remove Ambitious;;;;;;;;;;;;;x
+remove_ambitious_desc;Remove Ambitious;;;;;;;;;;;;;x
+
+add_just;--------Add Just;;;;;;;;;;;;;x
+add_just_desc;Add Just;;;;;;;;;;;;;x
+
+remove_just;--------Remove Just;;;;;;;;;;;;;x
+remove_just_desc;Remove Just;;;;;;;;;;;;;x
+
+add_arbitrary;--------Add Arbitrary;;;;;;;;;;;;;x
+add_arbitrary_desc;Add Arbitrary;;;;;;;;;;;;;x
+
+remove_arbitrary;--------Remove Arbitrary;;;;;;;;;;;;;x
+remove_arbitrary_desc;Remove Arbitrary;;;;;;;;;;;;;x
+
+add_brave;--------Add Brave;;;;;;;;;;;;;x
+add_brave_desc;Add Brave;;;;;;;;;;;;;x
+
+remove_brave;--------Remove Brave;;;;;;;;;;;;;x
+remove_brave_desc;Remove Brave;;;;;;;;;;;;;x
+
+add_craven;--------Add Craven;;;;;;;;;;;;;x
+add_craven_desc;Add Craven;;;;;;;;;;;;;x
+
+remove_craven;--------Remove Craven;;;;;;;;;;;;;x
+remove_craven_desc;Remove Craven;;;;;;;;;;;;;x
+
+add_shrewd;--------Add Shrewd;;;;;;;;;;;;;x
+add_shrewd_desc;Add Shrewd;;;;;;;;;;;;;x
+
+remove_shrewd;--------Remove Shrewd;;;;;;;;;;;;;x
+remove_shrewd_desc;Remove Shrewd;;;;;;;;;;;;;x
+
+add_dull;--------Add Dull;;;;;;;;;;;;;x
+add_dull_desc;Add Dull;;;;;;;;;;;;;x
+
+remove_dull;--------Remove Dull;;;;;;;;;;;;;x
+remove_dull_desc;Remove Dull;;;;;;;;;;;;;x
+
+add_feeble;--------Add Frail;;;;;;;;;;;;;x
+add_feeble_desc;Add Frail;;;;;;;;;;;;;x
+
+remove_feeble;--------Remove Frail;;;;;;;;;;;;;x
+remove_feeble_desc;Remove Frail;;;;;;;;;;;;;x
+
+add_robust;--------Add Brawny;;;;;;;;;;;;;x
+add_robust_desc;Add Brawny;;;;;;;;;;;;;x
+
+remove_robust;--------Remove Brawny;;;;;;;;;;;;;x
+remove_robust_desc;Remove Brawny;;;;;;;;;;;;;x
+
+add_stubborn;--------Add Stubborn;;;;;;;;;;;;;x
+add_stubborn_desc;Add Stubborn;;;;;;;;;;;;;x
+
+remove_stubborn;--------Remove Stubborn;;;;;;;;;;;;;x
+remove_stubborn_desc;Remove Stubborn;;;;;;;;;;;;;x
+
+add_erudite;--------Add Erudite;;;;;;;;;;;;;x
+add_erudite_desc;Add Erudite;;;;;;;;;;;;;x
+
+remove_erudite;--------Remove Erudite;;;;;;;;;;;;;x
+remove_erudite_desc;Remove Erudite;;;;;;;;;;;;;x
+
+add_zealous;--------Add Zealous;;;;;;;;;;;;;x
+add_zealous_desc;Add Zealous;;;;;;;;;;;;;x
+
+remove_zealous;--------Remove Zealous;;;;;;;;;;;;;x
+remove_zealous_desc;Remove Zealous;;;;;;;;;;;;;x
+
+add_cynical;--------Add Cynical;;;;;;;;;;;;;x
+add_cynical_desc;Add Cynical;;;;;;;;;;;;;x
+
+remove_cynical;--------Remove Cynical;;;;;;;;;;;;;x
+remove_cynical_desc;Remove Cynical;;;;;;;;;;;;;x
+
+set_martial_education;--------Martial Education;;;;;;;;;;;;;x
+set_martial_education_desc;Gives you the highest martial education trait.;;;;;;;;;;;;;x
+
+set_learning_education;--------Learning Education;;;;;;;;;;;;;x
+set_learning_education_desc;Gives you the highest learning education trait.;;;;;;;;;;;;;x
+
+set_stewardship_education;--------Stewardship Education;;;;;;;;;;;;;x
+set_stewardship_education_desc;Gives you the highest stewardship education trait.;;;;;;;;;;;;;x
+
+set_intrigue_education;--------Intrigue Education;;;;;;;;;;;;;x
+set_intrigue_education_desc;Gives you the highest intrigue education trait.;;;;;;;;;;;;;x
+
+set_diplomacy_education;--------Diplomacy Education;;;;;;;;;;;;;x
+set_diplomacy_education_desc;Gives you the highest diplomacy education trait.;;;;;;;;;;;;;x
+
+add_fair;--------Add Attractive;;;;;;;;;;;;;x
+add_fair_desc;Add Attractive;;;;;;;;;;;;;x
+
+remove_fair;--------Remove Attractive;;;;;;;;;;;;;x
+remove_fair_desc;Remove Attractive;;;;;;;;;;;;;x
+
+add_strong;--------Add Strong;;;;;;;;;;;;;x
+add_strong_desc;Add Strong;;;;;;;;;;;;;x
+
+remove_strong;--------Remove Strong;;;;;;;;;;;;;x
+remove_strong_desc;Remove Strong;;;;;;;;;;;;;x
+
+add_quick;--------Add Quick;;;;;;;;;;;;;x
+add_quick_desc;Add Quick;;;;;;;;;;;;;x
+
+remove_quick;--------Remove Quick;;;;;;;;;;;;;x
+remove_quick_desc;Remove Quick;;;;;;;;;;;;;x
+
+add_genius;--------Add Genius;;;;;;;;;;;;;x
+add_genius_desc;Add Genius;;;;;;;;;;;;;x
+
+remove_genius;--------Remove Genius;;;;;;;;;;;;;x
+remove_genius_desc;Remove Genius;;;;;;;;;;;;;x
+
+remove_diseases;--------Remove Wounds, Illnesses & Diseases;;;;;;;;;;;;;x
+remove_diseases_desc;Remove Wounds, Illnesses & Diseases;;;;;;;;;;;;;x
+
+remove_defects;--------Remove Birth Defects;;;;;;;;;;;;;x
+remove_defects_desc;Remove Birth Defects;;;;;;;;;;;;;x
+
+add_homosexual;--------Add Homosexual;;;;;;;;;;;;;x
+add_homosexual_desc;Add Homosexual;;;;;;;;;;;;;x
+
+remove_homosexual;--------Remove Homosexual;;;;;;;;;;;;;x
+remove_homosexual_desc;Remove Homosexual;;;;;;;;;;;;;x
+
+add_crusader;--------Add Crusader;;;;;;;;;;;;;x
+add_crusader_desc;Add Crusader;;;;;;;;;;;;;x
+
+remove_crusader;--------Remove Crusader;;;;;;;;;;;;;x
+remove_crusader_desc;Remove Crusader;;;;;;;;;;;;;x
+
+add_scarred;--------Add Scarred;;;;;;;;;;;;;x
+add_scarred_desc;Add Scarred;;;;;;;;;;;;;x
+
+remove_scarred;--------Remove Scarred;;;;;;;;;;;;;x
+remove_scarred_desc;Remove Scarred;;;;;;;;;;;;;x
+
+remove_child_of_concubine;--------Remove Child Of Concubine;;;;;;;;;;;;;x
+remove_child_of_concubine_desc;Remove Child Of Concubine;;;;;;;;;;;;;x
+
+add_mystic;--------Add Mystic;;;;;;;;;;;;;x
+add_mystic_desc;Add Mystic;;;;;;;;;;;;;x
+
+remove_mystic;--------Remove Mystic;;;;;;;;;;;;;x
+remove_mystic_desc;Remove Mystic;;;;;;;;;;;;;x
+
+add_seducer;--------Add Master Seducer;;;;;;;;;;;;;x
+add_seducer_desc;Add Master Seducer;;;;;;;;;;;;;x
+
+remove_seducer;--------Remove Master Seducer;;;;;;;;;;;;;x
+remove_seducer_desc;Remove Master Seducer;;;;;;;;;;;;;x
+
+add_seductress;--------Add Master Seductress;;;;;;;;;;;;;x
+add_seductress_desc;Add Master Seductress;;;;;;;;;;;;;x
+
+remove_seductress;--------Remove Master Seductress;;;;;;;;;;;;;x
+remove_seductress_desc;Remove Master Seductress;;;;;;;;;;;;;x
+
+add_schemer;--------Add Master Schemer;;;;;;;;;;;;;x
+add_schemer_desc;Add Master Schemer;;;;;;;;;;;;;x
+
+remove_schemer;--------Remove Master Schemer;;;;;;;;;;;;;x
+remove_schemer_desc;Remove Master Schemer;;;;;;;;;;;;;x
+
+add_hedonist;--------Add Hedonist;;;;;;;;;;;;;x
+add_hedonist_desc;Add Hedonist;;;;;;;;;;;;;x
+
+remove_hedonist;--------Remove Hedonist;;;;;;;;;;;;;x
+remove_hedonist_desc;Remove Hedonist;;;;;;;;;;;;;x
+
+add_socializer;--------Add Socializer;;;;;;;;;;;;;x
+add_socializer_desc;Add Socializer;;;;;;;;;;;;;x
+
+remove_socializer;--------Remove Socializer;;;;;;;;;;;;;x
+remove_socializer_desc;Remove Socializer;;;;;;;;;;;;;x
+
+add_gamer;--------Add Gamer;;;;;;;;;;;;;x
+add_gamer_desc;Add Gamer;;;;;;;;;;;;;x
+
+remove_gamer;--------Remove Gamer;;;;;;;;;;;;;x
+remove_gamer_desc;Remove Gamer;;;;;;;;;;;;;x
+
+add_impaler;--------Add Impaler;;;;;;;;;;;;;x
+add_impaler_desc;Add Impaler;;;;;;;;;;;;;x
+
+remove_impaler;--------Remove Impaler;;;;;;;;;;;;;x
+remove_impaler_desc;Remove Impaler;;;;;;;;;;;;;x
+
+add_hunter;--------Add Hunter;;;;;;;;;;;;;x
+add_hunter_desc;Add Hunter;;;;;;;;;;;;;x
+
+remove_hunter;--------Remove Hunter;;;;;;;;;;;;;x
+remove_hunter_desc;Remove Hunter;;;;;;;;;;;;;x
+
+add_duelist;--------Add Duelist;;;;;;;;;;;;;x
+add_duelist_desc;Add Duelist;;;;;;;;;;;;;x
+
+remove_duelist;--------Remove Duelist;;;;;;;;;;;;;x
+remove_duelist_desc;Remove Duelist;;;;;;;;;;;;;x
+
+add_strategist;--------Add Strategist;;;;;;;;;;;;;x
+add_strategist_desc;Add Strategist;;;;;;;;;;;;;x
+
+remove_strategist;--------Remove Strategist;;;;;;;;;;;;;x
+remove_strategist_desc;Remove Strategist;;;;;;;;;;;;;x
+
+add_architect;--------Add Architect;;;;;;;;;;;;;x
+add_architect_desc;Add Architect;;;;;;;;;;;;;x
+
+remove_architect;--------Remove Architect;;;;;;;;;;;;;x
+remove_architect_desc;Remove Architect;;;;;;;;;;;;;x
+
+add_gardener;--------Add Gardener;;;;;;;;;;;;;x
+add_gardener_desc;Add Gardener;;;;;;;;;;;;;x
+
+remove_gardener;--------Remove Gardener;;;;;;;;;;;;;x
+remove_gardener_desc;Remove Gardener;;;;;;;;;;;;;x
+
+add_administrator;--------Add Administrator;;;;;;;;;;;;;x
+add_administrator_desc;Add Administrator;;;;;;;;;;;;;x
+
+remove_administrator;--------Remove Administrator;;;;;;;;;;;;;x
+remove_administrator_desc;Remove Administrator;;;;;;;;;;;;;x
+
+add_scholar;--------Add Scholar;;;;;;;;;;;;;x
+add_scholar_desc;Add Scholar;;;;;;;;;;;;;x
+
+add_physician;--------Add Physician;;;;;;;;;;;;;x
+add_physician_desc;Add Physician;;;;;;;;;;;;;x
+
+remove_physician;--------Remove Physician;;;;;;;;;;;;;x
+remove_physician_desc;Remove Physician;;;;;;;;;;;;;x
+
+remove_scholar;--------Remove Scholar;;;;;;;;;;;;;x
+remove_scholar_desc;Remove Scholar;;;;;;;;;;;;;x
+
+add_theologian;--------Add Theologian;;;;;;;;;;;;;x
+add_theologian_desc;Add Theologian;;;;;;;;;;;;;x
+
+remove_theologian;--------Remove Theologian;;;;;;;;;;;;;x
+remove_theologian_desc;Remove Theologian;;;;;;;;;;;;;x
+
+add_winter_leader;--------Add Winter Leader;;;;;;;;;;;;;x
+add_winter_leader_desc;Add Winter Leader;;;;;;;;;;;;;x
+
+remove_winter_leader;--------Remove Winter Leader;;;;;;;;;;;;;x
+remove_winter_leader_desc;Remove Winter Leader;;;;;;;;;;;;;x
+
+add_cavalry_leader;--------Add Cavalry Leader;;;;;;;;;;;;;x
+add_cavalry_leader_desc;Add Cavalry Leader;;;;;;;;;;;;;x
+
+remove_cavalry_leader;--------Remove Cavalry Leader;;;;;;;;;;;;;x
+remove_cavalry_leader_desc;Remove Cavalry Leader;;;;;;;;;;;;;x
+
+add_light_foot_leader;--------Add Light Foot Leader;;;;;;;;;;;;;x
+add_light_foot_leader_desc;Add Light Foot Leader;;;;;;;;;;;;;x
+
+remove_light_foot_leader;--------Remove Light Foot Leader;;;;;;;;;;;;;x
+remove_light_foot_leader_desc;Remove Light Foot Leader;;;;;;;;;;;;;x
+
+add_heavy_infantry_leader;--------Add Heavy Infantry Leader;;;;;;;;;;;;;x
+add_heavy_infantry_leader_desc;Add Heavy Infantry Leader;;;;;;;;;;;;;x
+
+remove_heavy_infantry_leader;--------Remove Heavy Infantry Leader;;;;;;;;;;;;;x
+remove_heavy_infantry_leader_desc;Remove Heavy Infantry Leader;;;;;;;;;;;;;x
+
+add_inspiring_leader;--------Add Inspiring Leader;;;;;;;;;;;;;x
+add_inspiring_leader_desc;Add Inspiring Leader;;;;;;;;;;;;;x
+
+remove_inspiring_leader;--------Remove Inspiring Leader;;;;;;;;;;;;;x
+remove_inspiring_leader_desc;Remove Inspiring Leader;;;;;;;;;;;;;x
+
+add_defensive_leader;--------Add Defender;;;;;;;;;;;;;x
+add_defensive_leader_desc;Add Defender;;;;;;;;;;;;;x
+
+remove_defensive_leader;--------Remove Defender;;;;;;;;;;;;;x
+remove_defensive_leader_desc;Remove Defender;;;;;;;;;;;;;x
+
+add_aggressive_leader;--------Add Aggressive Leader;;;;;;;;;;;;;x
+add_aggressive_leader_desc;Add Aggressive Leader;;;;;;;;;;;;;x
+
+remove_aggressive_leader;--------Remove Aggressive Leader;;;;;;;;;;;;;x
+remove_aggressive_leader_desc;Remove Aggressive Leader;;;;;;;;;;;;;x
+
+add_trickster;--------Add Trickster;;;;;;;;;;;;;x
+add_trickster_desc;Add Trickster;;;;;;;;;;;;;x
+
+remove_trickster;--------Remove Trickster;;;;;;;;;;;;;x
+remove_trickster_desc;Remove Trickster;;;;;;;;;;;;;x
+
+add_organizer;--------Add Organizer;;;;;;;;;;;;;x
+add_organizer_desc;Add Organizer;;;;;;;;;;;;;x
+
+remove_organizer;--------Remove Organizer;;;;;;;;;;;;;x
+remove_organizer_desc;Remove Organizer;;;;;;;;;;;;;x
+
+add_flanker;--------Add Flanker;;;;;;;;;;;;;x
+add_flanker_desc;Add Flanker;;;;;;;;;;;;;x
+
+remove_flanker;--------Remove Flanker;;;;;;;;;;;;;x
+remove_flanker_desc;Remove Flanker;;;;;;;;;;;;;x
+
+add_experimenter;--------Add Direct Leader;;;;;;;;;;;;;x
+add_experimenter_desc;Add Direct Leader;;;;;;;;;;;;;x
+
+remove_experimenter;--------Remove Direct Leader;;;;;;;;;;;;;x
+remove_experimenter_desc;Remove Direct Leader;;;;;;;;;;;;;x
+
+add_siege_leader;--------Add Siege Leader;;;;;;;;;;;;;x
+add_siege_leader_desc;Add Siege Leader;;;;;;;;;;;;;x
+
+remove_siege_leader;--------Remove Siege Leader;;;;;;;;;;;;;x
+remove_siege_leader_desc;Remove Siege Leader;;;;;;;;;;;;;x
+
+add_flat_terrain_leader;--------Add Flat Terrain Expert;;;;;;;;;;;;;x
+add_flat_terrain_leader_desc;Add Flat Terrain Expert;;;;;;;;;;;;;x
+
+remove_flat_terrain_leader;--------Remove Flat Terrain Expert;;;;;;;;;;;;;x
+remove_flat_terrain_leader_desc;Remove Flat Terrain Expert;;;;;;;;;;;;;x
+
+add_rough_terrain_leader;--------Add Rough Terrain Expert;;;;;;;;;;;;;x
+add_rough_terrain_leader_desc;Add Rough Terrain Expert;;;;;;;;;;;;;x
+
+remove_rough_terrain_leader;--------Remove Rough Terrain Expert;;;;;;;;;;;;;x
+remove_rough_terrain_leader_desc;Remove Rough Terrain Expert;;;;;;;;;;;;;x
+
+add_mountain_terrain_leader;--------Add Mountain Terrain Expert;;;;;;;;;;;;;x
+add_mountain_terrain_leader_desc;Add Mountain Terrain Expert;;;;;;;;;;;;;x
+
+remove_mountain_terrain_leader;--------Remove Mountain Terrain Expert;;;;;;;;;;;;;x
+remove_mountain_terrain_leader_desc;Remove Mountain Terrain Expert;;;;;;;;;;;;;x
+
+add_desert_terrain_leader;--------Add Desert Expert;;;;;;;;;;;;;x
+add_desert_terrain_leader_desc;Add Desert Expert;;;;;;;;;;;;;x
+
+remove_desert_terrain_leader;--------Remove Desert Expert;;;;;;;;;;;;;x
+remove_desert_terrain_leader_desc;Remove Desert Expert;;;;;;;;;;;;;x
+
+add_unyielding_leader;--------Add Unyielding;;;;;;;;;;;;;x
+add_unyielding_leader_desc;Add Unyielding;;;;;;;;;;;;;x
+
+remove_unyielding_leader;--------Remove Unyielding;;;;;;;;;;;;;x
+remove_unyielding_leader_desc;Remove Unyielding;;;;;;;;;;;;;x
+
+add_narrow_flank_leader;--------Add BattlefIeld Terrain Master;;;;;;;;;;;;;x
+add_narrow_flank_leader_desc;Add BattlefIeld Terrain Master;;;;;;;;;;;;;x
+
+remove_narrow_flank_leader;--------Remove Battlefield Terrain Master;;;;;;;;;;;;;x
+remove_narrow_flank_leader_desc;Remove Battlefield Terrain Master;;;;;;;;;;;;;x
+
+add_holy_warrior;--------Add Holy Warrior;;;;;;;;;;;;;x
+add_holy_warrior_desc;Add Holy Warrior;;;;;;;;;;;;;x
+
+remove_holy_warrior;--------Remove Holy Warrior;;;;;;;;;;;;;x
+remove_holy_warrior_desc;Remove Holy Warrior;;;;;;;;;;;;;x
+
+add_war_elephant_leader;--------Add War Elephant Leader;;;;;;;;;;;;;x
+add_war_elephant_leader_desc;Add War Elephant Leader;;;;;;;;;;;;;x
+
+remove_war_elephant_leader;--------Remove War Elephant Leader;;;;;;;;;;;;;x
+remove_war_elephant_leader_desc;Remove War Elephant Leader;;;;;;;;;;;;;x
+
+add_jungle_terrain_leader;--------Add Jungle Expert;;;;;;;;;;;;;x
+add_jungle_terrain_leader_desc;Add Jungle Expert;;;;;;;;;;;;;x
+
+remove_jungle_terrain_leader;--------Remove Jungle Expert;;;;;;;;;;;;;x
+remove_jungle_terrain_leader_desc;Remove Jungle Expert;;;;;;;;;;;;;x
+
+add_winter_soldier;--------Add Winter Soldier;;;;;;;;;;;;;x
+add_winter_soldier_desc;Add Winter Soldier;;;;;;;;;;;;;x
+
+remove_winter_soldier;--------Remove Winter Soldier;;;;;;;;;;;;;x
+remove_winter_soldier_desc;Remove Winter Soldier;;;;;;;;;;;;;x
+
+add_vassal_content;--------Vassals: Add Content;;;;;;;;;;;;;x
+add_vassal_content_desc;Vassals & Courtiers: Add Content;;;;;;;;;;;;;x
+
+add_vassal_trusting;--------Vassals: Add Trusting;;;;;;;;;;;;;x
+add_vassal_trusting_desc;Vassals & Courtiers: Add Trusting;;;;;;;;;;;;;x
+
+add_vassal_honest;--------Vassals: Add Honest;;;;;;;;;;;;;x
+add_vassal_honest_desc;Vassals & Courtiers: Add Honest;;;;;;;;;;;;;x
+
+add_vassal_virtues;--------Vassals: Add All Virtues;;;;;;;;;;;;;x
+add_vassal_virtues_desc;Vassals & Courtiers: Add All Virtues;;;;;;;;;;;;;x
+
+remove_vassal_sins;--------Vassals: Remove All Sins;;;;;;;;;;;;;x
+remove_vassal_sins_desc;Vassals & Courtiers: Remove All Sins;;;;;;;;;;;;;x
+
+add_lunatic;--------Add Lunatic;;;;;;;;;;;;;x
+add_lunatic_desc;Add Lunatic;;;;;;;;;;;;;x
+
+remove_lunatic;--------Remove Lunatic;;;;;;;;;;;;;x
+remove_lunatic_desc;Remove Lunatic;;;;;;;;;;;;;x
+
+add_possessed;--------Add Possessed;;;;;;;;;;;;;x
+add_possessed_desc;Add Possessed;;;;;;;;;;;;;x
+
+remove_possessed;--------Remove Possessed;;;;;;;;;;;;;x
+remove_possessed_desc;Remove Possessed;;;;;;;;;;;;;x
+
+add_blinded;--------Add Blinded;;;;;;;;;;;;;x
+add_blinded_desc;Add Blinded;;;;;;;;;;;;;x
+
+remove_blinded;--------Remove Blinded;;;;;;;;;;;;;x
+remove_blinded_desc;Remove Blinded;;;;;;;;;;;;;x
+
+add_dynasty_content;--------Dynasty: Add Content;;;;;;;;;;;;;x
+add_dynasty_content_desc;Dynasty & Spouses: Add Content;;;;;;;;;;;;;x
+
+add_dynasty_trusting;--------Dynasty: Add Trusting;;;;;;;;;;;;;x
+add_dynasty_trusting_desc;Dynasty & Spouses: Add Trusting;;;;;;;;;;;;;x
+
+add_dynasty_honest;--------Dynasty: Add Honest;;;;;;;;;;;;;x
+add_dynasty_honest_desc;Dynasty & Spouses: Add Honest;;;;;;;;;;;;;x
+
+add_dynasty_virtues;--------Dynasty: Add All Virtues;;;;;;;;;;;;;x
+add_dynasty_virtues_desc;Dynasty & Spouses: Add All Virtues;;;;;;;;;;;;;x
+
+remove_dynasty_sins;--------Dynasty: Remove All Sins;;;;;;;;;;;;;x
+remove_dynasty_sins_desc;Dynasty & Spouses: Remove All Sins;;;;;;;;;;;;;x
+
+add_dynasty_genetics;--------Dynasty: Add Good Congenital Traits;;;;;;;;;;;;;x
+add_dynasty_genetics_desc;Dynasty & Spouses: Add All Good Congenital Traits;;;;;;;;;;;;;x
+
+add_beloved;--------Add Beloved;;;;;;;;;;;;;x
+add_beloved_desc;Add Beloved;;;;;;;;;;;;;x
+
+remove_beloved;--------Remove Beloved;;;;;;;;;;;;;x
+remove_beloved_desc;Remove Beloved;;;;;;;;;;;;;x
+
+add_immortal;--------Add Immortal;;;;;;;;;;;;;x
+add_immortal_desc;Add Immortal;;;;;;;;;;;;;x
+
+remove_immortal;--------Remove Immortal;;;;;;;;;;;;;x
+remove_immortal_desc;Remove Immortal;;;;;;;;;;;;;x
+
+add_landlord;--------Add Master Landowner;;;;;;;;;;;;;x
+add_landlord_desc;Add Master Landowner;;;;;;;;;;;;;x
+
+remove_landlord;--------Remove Master Landowner;;;;;;;;;;;;;x
+remove_landlord_desc;Remove Master Landowner;;;;;;;;;;;;;x
+
+add_conspirator;--------Add Master Plotter;;;;;;;;;;;;;x
+add_conspirator_desc;Add Master Plotter;;;;;;;;;;;;;x
+
+remove_conspirator;--------Remove Master Plotter;;;;;;;;;;;;;x
+remove_conspirator_desc;Remove Master Plotter;;;;;;;;;;;;;x
+
+add_mastermind;--------Add Master Commander;;;;;;;;;;;;;x
+add_mastermind_desc;Add Master Commander;;;;;;;;;;;;;x
+
+remove_mastermind;--------Remove Master Commander;;;;;;;;;;;;;x
+remove_mastermind_desc;Remove Master Commander;;;;;;;;;;;;;x
+
+add_builder;--------Add Master Builder;;;;;;;;;;;;;x
+add_builder_desc;Add Master Builder;;;;;;;;;;;;;x
+
+remove_builder;--------Remove Master Builder;;;;;;;;;;;;;x
+remove_builder_desc;Remove Master Builder;;;;;;;;;;;;;x

@@ -1,0 +1,122 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_show_cheats"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_cheats"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_add_gold"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_add_piety"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_add_prestige"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_add_grace"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_add_society_points"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_increase_society_rank"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_enable_triple_levies"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_disable_triple_levies"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_add_tech"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_convert_realm_culture"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_convert_realm_religion"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_convert_realm_ethnicity"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_spawn_army_10k"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_spawn_army_100k"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_spawn_fleet"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_raise_rel_authority"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+    spriteType = {
+    name = "GFX_become_independent"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+    spriteType = {
+    name = "GFX_set_feudal"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+    spriteType = {
+    name = "GFX_revoke_all_titles"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+    spriteType = {
+    name = "GFX_kill_all_courtiers"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+      spriteType = {
+    name = "GFX_lower_threat_level"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+      spriteType = {
+    name = "GFX_world_religion"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+      spriteType = {
+    name = "GFX_world_culture"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+      spriteType = {
+    name = "GFX_world_ethnicity"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+      spriteType = {
+    name = "GFX_cheat_trait_cleaner"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+      spriteType = {
+    name = "GFX_reveal_realm_plots"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+      spriteType = {
+    name = "GFX_enable_quick_move"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+      spriteType = {
+    name = "GFX_disable_quick_move"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+}

@@ -1,0 +1,101 @@
+#CODE;NAME;;;;;;;;;;;;;x
+#CODE_desc;DESCRIPTION;;;;;;;;;;;;;x
+
+cspawn_enable;Show Character Spawn Menu;;;;;;;;;;;;;x
+cspawn_enable_desc;Show Character Spawn Menu;;;;;;;;;;;;;x
+
+cspawn_disable;Hide Character Spawn Menu;;;;;;;;;;;;;x
+cspawn_disable_desc;Hide Character Spawn Menu;;;;;;;;;;;;;x
+
+hide_spawn_child;----Hide Child Menu;;;;;;;;;;;;;x
+hide_spawn_child_desc;Hide Child Menu;;;;;;;;;;;;;x
+
+show_spawn_child;----Show Child Menu;;;;;;;;;;;;;x
+show_spawn_child_desc;Show Child Menu;;;;;;;;;;;;;x
+
+hide_spawn_sibling;----Hide Sibling Menu;;;;;;;;;;;;;x
+hide_spawn_sibling_desc;Hide Sibling Menu;;;;;;;;;;;;;x
+
+show_spawn_sibling;----Show Sibling Menu;;;;;;;;;;;;;x
+show_spawn_sibling_desc;Show Sibling Menu;;;;;;;;;;;;;x
+
+hide_spawn_courtier;----Hide Courtier Menu;;;;;;;;;;;;;x
+hide_spawn_courtier_desc;Hide Courtier Menu;;;;;;;;;;;;;x
+
+show_spawn_courtier;----Show Courtier Menu;;;;;;;;;;;;;x
+show_spawn_courtier_desc;Show Courtier Menu;;;;;;;;;;;;;x
+
+spawn_female_child_0;--------Create Daughter (Age 0);;;;;;;;;;;;;x
+spawn_female_child_0_desc;Create a newborn daughter.;;;;;;;;;;;;;x
+
+spawn_male_child_0;--------Create Son (Age 0);;;;;;;;;;;;;x
+spawn_male_child_0_desc;Create a newborn son.;;;;;;;;;;;;;x
+
+spawn_female_child_6;--------Create Daughter (Age 6);;;;;;;;;;;;;x
+spawn_female_child_6_desc;Create a 6 year old daughter.;;;;;;;;;;;;;x
+
+spawn_male_child_6;--------Create Son (Age 6);;;;;;;;;;;;;x
+spawn_male_child_6_desc;Create a 6 year old son.;;;;;;;;;;;;;x
+
+spawn_female_child_16;--------Create Daughter (Age 16);;;;;;;;;;;;;x
+spawn_female_child_16_desc;Create a 16 year old daughter.;;;;;;;;;;;;;x
+
+spawn_male_child_16;--------Create Son (Age 16);;;;;;;;;;;;;x
+spawn_male_child_16_desc;Create a 16 year old son.;;;;;;;;;;;;;x
+
+spawn_male_sibling_6;--------Create Brother (Age 6);;;;;;;;;;;;;x
+spawn_male_sibling_6_desc;Create a 6 year old brother.;;;;;;;;;;;;;x
+
+spawn_male_sibling_16;--------Create Brother (Age 16);;;;;;;;;;;;;x
+spawn_male_sibling_16_desc;Create a 16 year old brother.;;;;;;;;;;;;;x
+
+spawn_male_sibling_24;--------Create Brother (Age 24);;;;;;;;;;;;;x
+spawn_male_sibling_24_desc;Create a 24 year old brother.;;;;;;;;;;;;;x
+
+spawn_male_sibling_30;--------Create Brother (Age 30);;;;;;;;;;;;;x
+spawn_male_sibling_30_desc;Create a 30 year old brother.;;;;;;;;;;;;;x
+
+spawn_male_sibling_40;--------Create Brother (Age 40);;;;;;;;;;;;;x
+spawn_male_sibling_40_desc;Create a 40 year old brother.;;;;;;;;;;;;;x
+
+spawn_female_sibling_6;--------Create Sister (Age 6);;;;;;;;;;;;;x
+spawn_female_sibling_6_desc;Create a 6 year old sister.;;;;;;;;;;;;;x
+
+spawn_female_sibling_16;--------Create Sister (Age 16);;;;;;;;;;;;;x
+spawn_female_sibling_16_desc;Create a 16 year old sister.;;;;;;;;;;;;;x
+
+spawn_female_sibling_24;--------Create Sister (Age 24);;;;;;;;;;;;;x
+spawn_female_sibling_24_desc;Create a 24 year old sister.;;;;;;;;;;;;;x
+
+spawn_female_sibling_30;--------Create Sister (Age 30);;;;;;;;;;;;;x
+spawn_female_sibling_30_desc;Create a 30 year old sister.;;;;;;;;;;;;;x
+
+spawn_female_sibling_40;--------Create Sister (Age 40);;;;;;;;;;;;;x
+spawn_female_sibling_40_desc;Create a 40 year old sister.;;;;;;;;;;;;;x
+
+spawn_marshal;--------Create A Skilled Marshal;;;;;;;;;;;;;x
+spawn_marshal_desc;Create A Skilled Marshal.;;;;;;;;;;;;;x
+
+spawn_steward;--------Create A Skilled Steward;;;;;;;;;;;;;x
+spawn_steward_desc;Create A Skilled Steward.;;;;;;;;;;;;;x
+
+spawn_chancellor;--------Create A Skilled Chancellor;;;;;;;;;;;;;x
+spawn_chancellor_desc;Create A Skilled Chancellor.;;;;;;;;;;;;;x
+
+spawn_spymaster;--------Create A Skilled Spymaster;;;;;;;;;;;;;x
+spawn_spymaster_desc;Create A Skilled Spymaster.;;;;;;;;;;;;;x
+
+spawn_priest;--------Create A Skilled Priest;;;;;;;;;;;;;x
+spawn_priest_desc;Create A Skilled Priest.;;;;;;;;;;;;;x
+
+spawn_vassal;--------Create A Loyal Vassal;;;;;;;;;;;;;x
+spawn_vassal_desc;Create A Loyal Vassal.;;;;;;;;;;;;;x
+
+spawn_wife;--------Create A Debutante;;;;;;;;;;;;;x
+spawn_wife_desc;Create A Debutante.;;;;;;;;;;;;;x
+
+spawn_commander;--------Create A Skilled Commander;;;;;;;;;;;;;x
+spawn_commander_desc;Create A Skilled Commander.;;;;;;;;;;;;;x
+
+spawn_physician;--------Create A Skilled Physician;;;;;;;;;;;;;x
+spawn_physician_desc;Create A Skilled Physician.;;;;;;;;;;;;;x

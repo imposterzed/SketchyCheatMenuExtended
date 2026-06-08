@@ -1,0 +1,1920 @@
+targetted_decisions = {
+
+    cheats_disable = {
+		filter = self
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            ai = no
+
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 clr_character_flag = cheats_enabled
+			 set_character_flag = cheats_disabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    cheats_enable = {
+		filter = self
+		
+		from_potential = {
+			ai = no
+			NOT = {has_character_flag = cheats_enabled}
+		}
+		potential = {
+            ai = no
+
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 set_character_flag = cheats_enabled
+			 clr_character_flag = cheats_disabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mind_control_disable = {
+		filter = self
+		
+		from_potential = {
+			ai = no
+			has_character_flag = mind_control_enabled
+		}
+		potential = {
+            ai = no
+
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 clr_character_flag = mind_control_enabled
+			 set_character_flag = mind_control_disabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    mind_control_enable = {
+		filter = self
+		
+		from_potential = {
+			ai = no
+			NOT = {has_character_flag = mind_control_enabled}
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+            ai = no
+
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 set_character_flag = mind_control_enabled
+			 clr_character_flag = mind_control_disabled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	self_heals = {
+		filter = self
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+
+		potential = {
+		    ai = no
+		    OR  = {
+				trait = ill
+				trait = has_tuberculosis
+				trait = stressed
+				trait = lunatic
+				trait = possessed
+				trait = depressed
+				trait = wounded
+				trait = maimed
+				trait = pneumonic
+				trait = leper
+				trait = syphilitic
+				trait = infirm
+				trait = incapable
+				trait = drunkard
+				trait = scarred
+				trait = has_typhoid_fever
+				trait = has_typhus
+				trait = has_bubonic_plague
+				trait = has_measles
+				trait = has_small_pox
+				trait = sickly
+				trait = has_aztec_disease
+				trait = cancer
+				trait = dancing_plague
+				trait = scurvy
+				trait = rabies
+				trait = food_poisoning
+				trait = gout
+				trait = dysentery
+				trait = flu
+				trait = cough
+				trait = fever
+				trait = diarrhea
+				trait = vomiting
+				trait = chest_pain
+				trait = cramps
+				trait = rash
+				trait = headache
+				trait = abdominal_pain
+				trait = fatigue
+				trait = malaise
+				trait = infection
+				trait = one_eyed
+				trait = one_handed
+				trait = one_legged
+				trait = disfigured
+				trait = mangled
+				trait = severely_injured
+		    }
+
+		}
+		
+		allow = {
+			always = yes
+		}
+
+		effect = {	
+			ROOT = { 
+		        remove_trait = ill
+		        remove_trait = has_tuberculosis
+		        remove_trait = stressed
+		        remove_trait = lunatic
+		        remove_trait = possessed
+		        remove_trait = depressed
+		        remove_trait = wounded
+		        remove_trait = maimed
+		        remove_trait = pneumonic
+		        remove_trait = leper
+		        remove_trait = syphilitic
+		        remove_trait = infirm
+		        remove_trait = incapable
+		        remove_trait = drunkard
+		        remove_trait = scarred
+		        remove_trait = has_typhoid_fever
+		        remove_trait = has_typhus
+		        remove_trait = has_bubonic_plague
+		        remove_trait = has_measles
+		        remove_trait = has_small_pox
+		        remove_trait = sickly
+		        remove_trait = has_aztec_disease
+                remove_trait = cancer
+                remove_trait = dancing_plague
+                remove_trait = scurvy
+                remove_trait = rabies
+                remove_trait = food_poisoning
+                remove_trait = gout
+                remove_trait = dysentery
+                remove_trait = flu
+                remove_trait = cough
+                remove_trait = fever
+                remove_trait = diarrhea
+                remove_trait = vomiting
+                remove_trait = chest_pain
+                remove_trait = cramps
+                remove_trait = rash
+                remove_trait = headache
+                remove_trait = abdominal_pain
+                remove_trait = fatigue
+                remove_trait = malaise
+                remove_trait = infection
+                remove_trait = one_eyed
+                remove_trait = one_handed
+                remove_trait = one_legged
+                remove_trait = disfigured
+                remove_trait = mangled
+                remove_trait = severely_injured
+			}
+		} 
+
+
+		revoke_allowed = { always = no }
+		ai_will_do = { factor = 0 }
+	}
+
+	self_genes = {
+		filter = self
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+
+		potential = {
+		    ai = no
+		    NOT = {trait = strong}
+		    NOT = {trait = fair}
+		    NOT = {trait = genius}
+		}
+		
+		allow = {
+			always = yes
+		}
+
+		effect = {	
+			ROOT = { 
+			 add_trait = genius
+			 add_trait = fair
+			 add_trait = strong
+			 remove_trait = inbred
+			 remove_trait = harelip
+			 remove_trait = clubfooted
+			 remove_trait = hunchback
+			 remove_trait = lisp
+			 remove_trait = stutter
+			 remove_trait = ugly
+			 remove_trait = dwarf
+			 remove_trait = slow
+			 remove_trait = imbecile
+			 remove_trait = weak
+			}
+		}
+
+
+		revoke_allowed = { always = no }
+		ai_will_do = { factor = 0 }
+	}
+
+
+	force_marry = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+			age = 12
+			NOT = {is_married = yes}
+			NOT = {is_married_matrilineally = yes}
+		}
+		potential = {
+		    ai = yes
+		    age = 12
+		    NOT = {same_sex = FROM}
+			NOT = {is_married = yes}
+			NOT = {is_married_matrilineally = yes}
+
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+
+			if = {
+				limit = {
+					FROM = {
+						is_female = no
+					}
+				}
+			  add_spouse = FROM
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_female = yes
+					}
+				}
+			  add_spouse_matrilineal = FROM
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    end_marry = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+			OR = {
+				is_married = yes
+			    is_married_matrilineally = yes
+		    }
+
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			remove_spouse = spouse
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	impregnate = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+			age = 12
+			is_pregnant = no
+		}
+		potential = {
+		    ai = yes
+		    age = 12
+		    NOT = {same_sex = FROM}
+            is_pregnant = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 impregnate = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	imprison_them = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+                        ai = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 IMPRISON = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	kill_them = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			death = { death_reason = death_murder_unknown killer = FROM } 
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	disown_them = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            is_child_of = FROM
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			hidden_tooltip = {
+				if = {
+					limit = {
+						FROM = { 
+							is_female = no 
+						}
+					}
+					mother_even_if_dead = {
+					    ROOT = {
+		                    dynasty = PREV
+					    }
+				    }
+				    set_father = none
+				}
+				if = {
+					limit = {
+						FROM = {
+							is_female = yes
+						}
+					}
+					father_even_if_dead = {
+					    ROOT = {
+		                    dynasty = PREV
+					    }
+				    }
+				    set_mother = none
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	move_them = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+		    ai = yes
+		    NOT = { liege = { character = FROM } is_adult = no }
+		    is_landed = no
+		    is_ruler = no
+		    OR = {
+                is_married = no
+	            AND = {
+		            is_married = yes
+		            spouse = {
+			            is_landed = no
+			            is_ruler = no
+		            }
+	            }
+		    }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 move_character = FROM
+			 spouse = { move_character = FROM }
+			 any_child = {
+			    if = {
+					limit = { 
+					    is_adult = no
+					    is_ruler = no 
+					    is_landed = no
+					}
+					move_character = FROM
+				}
+		    }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	make_loyal = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+			NOT = { has_opinion_modifier = { who = FROM  modifier = opinion_cheat_loyal } }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			ROOT = {
+				opinion = {
+					modifier = opinion_cheat_loyal
+					who = FROM
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	convert_religion = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            NOT = {religion = FROM}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			religion = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	convert_culture = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            NOT = {culture = FROM}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			culture = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	change_ethnicity = {
+		filter = all
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+		    NOT = { graphical_culture = FROM }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		set_graphical_culture = FROM
+
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	back_plot = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+
+		}
+		potential = {
+                        ai = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 back_plot = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	get_favor = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_dlc = "Zeus"
+			ai = no
+			NOT = {holds_favor_on = ROOT}
+
+		}
+		potential = {
+            ai = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 FROM = { add_favor = ROOT }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	make_consort = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+			age = 12
+            has_concubinage = yes
+		}
+		potential = {
+		    ai = yes
+		    age = 12
+		    NOT = {same_sex = FROM}
+			NOT = {is_married = yes}
+			NOT = {is_married_matrilineally = yes}
+			NOT = {is_consort = yes}
+			is_landed = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 FROM { add_consort = ROOT }
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    befriend = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            NOT = { is_friend = FROM }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 add_friend = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	defriend = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            is_friend = FROM
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 remove_friend = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	make_rival = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            NOT = { is_rival = FROM }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 add_rival = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    remove_rival = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            is_rival = FROM
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 remove_rival = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    make_lover = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            NOT = {is_lover = FROM}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 add_lover = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	increase_stats = {
+		filter = all
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+		    NOT = { has_character_flag = stats_increased }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 change_diplomacy = 70
+			 change_intrigue = 70
+			 change_martial = 70
+			 change_learning = 70
+			 change_stewardship = 70
+			 set_character_flag = stats_increased
+
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	decrease_stats = {
+		filter = all
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+		    has_character_flag = stats_increased
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 change_diplomacy = -70
+			 change_intrigue = -70
+			 change_martial = -70
+			 change_learning = -70
+			 change_stewardship = -70
+			 clr_character_flag = stats_increased
+
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	self_stats = {
+		filter = self
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+
+		potential = {
+		    NOT = { has_character_flag = stats_increased }
+		}
+		
+		allow = {
+			always = yes
+		}
+
+		effect = {	
+			ROOT = { 
+			 change_diplomacy = 70
+			 change_intrigue = 70
+			 change_martial = 70
+			 change_learning = 70
+			 change_stewardship = 70
+			 set_character_flag = stats_increased
+			}
+		}
+
+
+		revoke_allowed = { always = no }
+		ai_will_do = { factor = 0 }
+	}
+
+	self_stats2 = {
+		filter = self
+		
+		from_potential = {
+			ai = no
+			has_character_flag = cheats_enabled
+		}
+		potential = {
+		    has_character_flag = stats_increased
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 change_diplomacy = -70
+			 change_intrigue = -70
+			 change_martial = -70
+			 change_learning = -70
+			 change_stewardship = -70
+			 clr_character_flag = stats_increased
+
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	remove_nickname = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+		    has_nickname = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+            remove_nickname = yes
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	self_nickname = {
+		filter = self
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+		    has_nickname = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+            remove_nickname = yes
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	abdicate = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            is_ruler = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 abdicate_to = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	vassalize = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            is_ruler = yes
+            lower_real_tier_than = FROM
+            NOT = {vassal_of = FROM}
+
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 set_defacto_liege = FROM
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	kill_dynasty = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            NOT = { dynasty = FROM}
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		    death = { death_reason = death_murder_unknown killer = FROM } 
+			any_dynasty_member = { 
+			    death = { death_reason = death_murder_unknown killer = FROM } 
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	fix_genes = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+		    ai = yes
+	        OR = {
+		        NOT = { trait = genius }
+		        NOT = { trait = strong }
+		        NOT = { trait = fair }
+	        }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			 add_trait = genius
+			 add_trait = fair
+			 add_trait = strong
+			 remove_trait = inbred
+			 remove_trait = harelip
+			 remove_trait = clubfooted
+			 remove_trait = hunchback
+			 remove_trait = lisp
+			 remove_trait = stutter
+			 remove_trait = ugly
+			 remove_trait = dwarf
+			 remove_trait = slow
+			 remove_trait = imbecile
+			 remove_trait = weak
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    heal_them = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+		    ai = yes
+	        OR = {
+		        trait = ill
+		        trait = has_tuberculosis
+		        trait = stressed
+		        trait = lunatic
+		        trait = possessed
+		        trait = depressed
+		        trait = wounded
+		        trait = maimed
+		        trait = pneumonic
+		        trait = leper
+		        trait = syphilitic
+		        trait = infirm
+		        trait = incapable
+		        trait = drunkard
+		        trait = scarred
+		        trait = has_typhoid_fever
+		        trait = has_typhus
+		        trait = has_bubonic_plague
+		        trait = has_measles
+		        trait = has_small_pox
+		        trait = sickly
+		        trait = has_aztec_disease
+                trait = cancer
+                trait = dancing_plague
+                trait = scurvy
+                trait = rabies
+                trait = food_poisoning
+                trait = gout
+                trait = dysentery
+                trait = flu
+                trait = cough
+                trait = fever
+                trait = diarrhea
+                trait = vomiting
+                trait = chest_pain
+                trait = cramps
+                trait = rash
+                trait = headache
+                trait = abdominal_pain
+                trait = fatigue
+                trait = malaise
+                trait = infection
+                trait = one_eyed
+                trait = one_handed
+                trait = one_legged
+                trait = disfigured
+                trait = mangled
+                trait = severely_injured
+	        }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+		        remove_trait = ill
+		        remove_trait = has_tuberculosis
+		        remove_trait = stressed
+		        remove_trait = lunatic
+		        remove_trait = possessed
+		        remove_trait = depressed
+		        remove_trait = wounded
+		        remove_trait = maimed
+		        remove_trait = pneumonic
+		        remove_trait = leper
+		        remove_trait = syphilitic
+		        remove_trait = infirm
+		        remove_trait = incapable
+		        remove_trait = drunkard
+		        remove_trait = scarred
+		        remove_trait = has_typhoid_fever
+		        remove_trait = has_typhus
+		        remove_trait = has_bubonic_plague
+		        remove_trait = has_measles
+		        remove_trait = has_small_pox
+		        remove_trait = sickly
+		        remove_trait = has_aztec_disease
+                remove_trait = cancer
+                remove_trait = dancing_plague
+                remove_trait = scurvy
+                remove_trait = rabies
+                remove_trait = food_poisoning
+                remove_trait = gout
+                remove_trait = dysentery
+                remove_trait = flu
+                remove_trait = cough
+                remove_trait = fever
+                remove_trait = diarrhea
+                remove_trait = vomiting
+                remove_trait = chest_pain
+                remove_trait = cramps
+                remove_trait = rash
+                remove_trait = headache
+                remove_trait = abdominal_pain
+                remove_trait = fatigue
+                remove_trait = malaise
+                remove_trait = infection
+                remove_trait = one_eyed
+                remove_trait = one_handed
+                remove_trait = one_legged
+                remove_trait = disfigured
+                remove_trait = mangled
+                remove_trait = severely_injured
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	adopt_them = {
+		filter = all
+		
+		from_potential = {
+			has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+			NOT = { is_child_of = FROM }
+			NOT = { is_older_than = FROM }
+			ROOT = { age_diff = {who = FROM years = 13} }
+			ai = yes
+		}
+		allow = {
+		    always = yes
+		}
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						NOT = {
+							is_female = yes
+						}
+					}
+				}
+				hidden_tooltip = {
+					father = { ROOT = { set_real_father = PREV } }
+					set_mother = 0
+				}
+				set_father = FROM
+				dynasty = FROM
+				hidden_tooltip = {
+					any_child = {
+						limit = { is_child_of = THIS }
+						dynasty = ROOT
+
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+
+							any_child = {
+								limit = { is_child_of = THIS }
+								dynasty = ROOT
+							}
+					    } 
+				    }
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_female = yes
+					}
+				}
+				set_mother = FROM
+				dynasty = FROM
+				hidden_tooltip = {
+					any_child = {
+						limit = { is_child_of = THIS }
+						dynasty = ROOT
+
+						any_child = {
+							limit = { is_child_of = THIS }
+							dynasty = ROOT
+
+							any_child = {
+								limit = { is_child_of = THIS }
+								dynasty = ROOT
+							}
+					    } 
+				    }
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	fall_on_sword = {
+		filter = self
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			death = { death_reason = death_suicide killer = FROM } 
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	control_mind = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            NOT = { has_character_flag = mind_controlled }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+				clr_character_flag = mind_controlled
+			}
+			set_character_flag = mind_controlled
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mc_imprison = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            prisoner = no
+		}
+		allow = {
+			any_character = {
+				has_character_flag = mind_controlled
+				is_ruler = yes
+			}
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+			    ROOT = {
+				    IMPRISON = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mc_marry = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+		}
+		allow = {
+			ROOT = { 
+				age = 16
+			}
+			any_character = {
+				has_character_flag = mind_controlled
+				age = 16
+				NOT = { is_spouse = ROOT }
+				OR = {
+					AND = {
+						is_female = no
+						ROOT = { is_female = yes}
+					}
+					AND = {
+						is_female = yes
+						ROOT = { is_female = no}
+					}
+				}
+			}
+
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+				add_spouse = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mc_impregnate = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            is_pregnant = no
+			is_adult = yes
+		}
+		allow = {
+			any_character = {
+				has_character_flag = mind_controlled
+				is_pregnant = no
+				age = 12
+				NOT = { same_sex = ROOT }
+			}
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+				impregnate = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mc_lover = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+		}
+		allow = {
+			ROOT = { 
+				age = 16 
+			}
+			any_character = {
+				has_character_flag = mind_controlled
+				age = 16
+				NOT = { is_lover = ROOT}
+				OR = {
+					AND = {
+						is_female = no
+						ROOT = { is_female = yes}
+					}
+					AND = {
+						is_female = yes
+						ROOT = { is_female = no}
+					}
+					AND = {
+						trait = homosexual
+						ROOT = { trait = homosexual }
+					}
+				}
+			}
+
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+				add_lover = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mc_friend = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+		}
+		allow = {
+			any_character = {
+				has_character_flag = mind_controlled
+				NOT = { is_friend = ROOT}
+			}
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+				add_friend = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mc_rival = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+		}
+		allow = {
+			any_character = {
+				has_character_flag = mind_controlled
+				NOT = { is_rival = ROOT}
+			}
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+				add_rival = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mc_vassalize = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            is_ruler = yes
+		}
+		allow = {
+			any_character = {
+				has_character_flag = mind_controlled
+                higher_tier_than = ROOT
+                ROOT = {
+	                NOT = {
+		                defacto_liege = PREV
+	                }
+                }
+			}
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+				ROOT = {
+					set_defacto_liege = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mc_abdicate = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            is_ruler = yes
+		}
+		allow = {
+			any_character = {
+				has_character_flag = mind_controlled
+			}
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+				ROOT = {
+					abdicate_to = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	mc_abdicate_them = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+		    has_character_flag = mind_control_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+		}
+		allow = {
+			any_character = {
+				has_character_flag = mind_controlled
+				is_ruler = yes
+			}
+		}
+		effect = {
+			any_character = {
+				limit = {
+					has_character_flag = mind_controlled
+				}
+				abdicate_to = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	clear_your_focus = {
+		filter = self
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = no
+		}
+		allow = {
+	        always = yes
+		}
+		effect = {
+	        hidden_tooltip = { 
+		        clear_focus = yes
+		    }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	clear_your_ambition = {
+		filter = self
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = no
+		}
+		allow = {
+	        always = yes
+		}
+		effect = {
+	        cancel_ambition = yes
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+    join_their_dynasty = {
+		filter = all
+		
+		from_potential = {
+			has_character_flag = cheats_enabled
+			ai = no
+			NOT = { is_child_of = ROOT }
+		}
+
+		potential = {
+			ROOT = { age_diff = {who = FROM years = 16} }
+			is_older_than = FROM
+			ai = yes
+		}
+
+		allow = {
+		    always = yes
+		}
+
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						NOT = {
+							is_female = yes
+						}
+					}
+				}
+				FROM = { 
+					set_father = ROOT
+					if = {
+						limit = {
+							is_married = yes
+						}
+						ROOT = {
+							spouse_even_if_dead = {
+								FROM = {
+									set_mother = PREV
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							is_married = no
+						}
+						ROOT = {
+							spouse_even_if_dead = {
+								FROM = {
+									set_mother = 0
+								}
+							}
+						}
+					}
+					dynasty = ROOT
+					hidden_tooltip = {
+						any_child = {
+							dynasty = ROOT
+
+							any_child = {
+								limit = { is_child_of = THIS }
+								dynasty = ROOT
+
+								any_child = {
+									limit = { is_child_of = THIS }
+									dynasty = ROOT
+								}
+						    } 
+					    }
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						NOT = {
+							is_female = no
+						}
+					}
+				}
+				FROM = { 
+					set_mother = ROOT
+					if = {
+						limit = {
+							is_married = yes
+						}
+						ROOT = {
+							spouse_even_if_dead = {
+								FROM = {
+									set_father = PREV
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							is_married = yes
+						}
+						ROOT = {
+							spouse_even_if_dead = {
+								FROM = {
+									set_father = 0
+								}
+							}
+						}
+					}
+					dynasty = ROOT
+					hidden_tooltip = {
+						any_child = {
+							dynasty = ROOT
+
+							any_child = {
+								limit = { is_child_of = THIS }
+								dynasty = ROOT
+
+								any_child = {
+									limit = { is_child_of = THIS }
+									dynasty = ROOT
+								}
+						    } 
+					    }
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	make_immortal = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+			trait = immortal
+		}
+		potential = {
+            ai = yes
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			add_trait = immortal
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	make_mortal = {
+		filter = all
+		
+		from_potential = {
+		    has_character_flag = cheats_enabled
+			ai = no
+		}
+		potential = {
+            ai = yes
+            trait = immortal
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			remove_trait = immortal
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

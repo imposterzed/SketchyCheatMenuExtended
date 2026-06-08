@@ -1,0 +1,58 @@
+mastermind = {
+    customizer = no
+	random = no
+	combat_rating = 100
+	leader = yes
+	leadership_traits = 1
+	command_modifier = {
+	    morale_offence = 5
+	    morale_defence = 5
+	    defence = 5
+	    speed = 5
+	    retreat = 5
+	    damage = 5
+	    siege = 5
+	    flank = 5
+	    center = 5
+	    cavalry = 5
+	    religious_enemy = 5
+	    narrow_flank = 5
+	}
+}
+
+builder = {
+	customizer = no
+	random = no
+	build_time_modifier = -1
+	build_cost_modifier = -0.99
+	local_build_time_modifier = -1
+	local_build_cost_modifier = -0.99
+}
+
+landlord = {
+
+	customizer = no
+	random = no
+
+	demesne_size = 100
+	global_tax_modifier = 10
+}
+
+conspirator = {
+
+	customizer = no
+	random = no
+
+	plot_power_modifier = 10
+	arrest_chance_modifier = 10
+
+}
+
+beloved = {
+
+	customizer = no
+	random = no
+
+	general_opinion = 10000
+
+}

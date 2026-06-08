@@ -1,0 +1,27 @@
+delete_holding;Destroy Holding;;;;;;;;;;;;;x
+delete_holding_desc;Destroys this holding.;;;;;;;;;;;;;x
+
+convert_castle;Convert To Castle;;;;;;;;;;;;;x
+convert_castle_desc;Converts this holding to a castle.;;;;;;;;;;;;;x
+
+convert_city;Convert To City;;;;;;;;;;;;;x
+convert_city_desc;Converts this holding to a city.;;;;;;;;;;;;;x
+
+convert_temple;Convert To Temple;;;;;;;;;;;;;x
+convert_temple_desc;Converts this holding to a temple.;;;;;;;;;;;;;x
+
+upgrade_temple;Fully Upgrade;;;;;;;;;;;;;x
+upgrade_temple_desc;Fully upgrades this temple with all buildings.;;;;;;;;;;;;;x
+
+upgrade_city;Fully Upgrade;;;;;;;;;;;;;x
+upgrade_city_desc;Fully upgrades this city with all buildings.;;;;;;;;;;;;;x
+
+upgrade_castle;Fully Upgrade;;;;;;;;;;;;;x
+upgrade_castle_desc;Fully upgrades this castle with all buildings.;;;;;;;;;;;;;x
+
+upgrade_tribal;Fully Upgrade;;;;;;;;;;;;;x
+upgrade_tribal_desc;Fully upgrades this tribal holding with all buildings.;;;;;;;;;;;;;x
+
+upgrade_hospital_fully;Fully Upgrade Hospital;;;;;;;;;;;;;x
+upgrade_hospital_fully_desc;Fully upgrades hospital with all buildings.;;;;;;;;;;;;;x
+

@@ -1,0 +1,94 @@
+#CODE;NAME;;;;;;;;;;;;;x
+#CODE_desc;DESCRIPTION;;;;;;;;;;;;;x
+
+show_cheats;Show Cheats;;;;;;;;;;;;;x
+show_cheats_desc;Makes the intrigue cheat menu visible.;;;;;;;;;;;;;x
+
+hide_cheats;Hide Cheats;;;;;;;;;;;;;x
+hide_cheats_desc;Hides the intrigue cheat menu from view.;;;;;;;;;;;;;x
+
+add_gold;----Add 10k Gold;;;;;;;;;;;;;x
+add_gold_desc;Give yourself 10000 gold.;;;;;;;;;;;;;x
+
+add_prestige;----Add 10k Prestige;;;;;;;;;;;;;x
+add_prestige_desc;Give yourself 10000 prestige.;;;;;;;;;;;;;x
+
+add_piety;----Add 10k Piety;;;;;;;;;;;;;x
+add_piety_desc;Give yourself 10000 Piety.;;;;;;;;;;;;;x
+
+add_grace;----Add 5k Grace;;;;;;;;;;;;;x
+add_grace_desc;Give yourself 5000 Grace with China.;;;;;;;;;;;;;x
+
+add_society_points;----Add 5k Society Points;;;;;;;;;;;;;x
+add_society_points_desc;Give yourself 5000 points in your society.;;;;;;;;;;;;;x
+
+increase_society_rank;----Increase Society Rank;;;;;;;;;;;;;x
+increase_society_rank_desc;Increase your rank in your society.;;;;;;;;;;;;;x
+
+add_tech;----Add 10k Tech;;;;;;;;;;;;;x
+add_tech_desc;Give yourself 10000 of each type of techpoints.;;;;;;;;;;;;;x
+
+convert_realm_culture;----Convert Realm To Your Culture;;;;;;;;;;;;;x
+convert_realm_culture_desc;Converts all courtiers, lords and provinces in your realm to your culture.;;;;;;;;;;;;;x
+
+convert_realm_religion;----Convert Realm To Your Religion;;;;;;;;;;;;;x
+convert_realm_religion_desc;Converts all courtiers, lords and provinces in your realm to your religion.;;;;;;;;;;;;;x
+
+convert_realm_ethnicity;----Convert Realm To Your Ethnicity;;;;;;;;;;;;;x
+convert_realm_ethnicity_desc;Converts all people in your realm to your ethnicity.;;;;;;;;;;;;;x
+
+spawn_army_10k;----Spawn 10k Troops;;;;;;;;;;;;;x
+spawn_army_10k_desc;Spawn a 10000-man army at your capital.;;;;;;;;;;;;;x
+
+spawn_army_100k;----Spawn 100k Troops;;;;;;;;;;;;;x
+spawn_army_100k_desc;Spawn a 100000-man army at your capital.;;;;;;;;;;;;;x
+
+spawn_fleet;----Spawn Fleet;;;;;;;;;;;;;x
+spawn_fleet_desc;Spawn a 1000 ships for your fleet.;;;;;;;;;;;;;x
+
+raise_rel_authority;----Raise Religious Authority;;;;;;;;;;;;;x
+raise_rel_authority_desc;Raises religious authority to 100%.;;;;;;;;;;;;;x
+
+become_independent;----Become Independent;;;;;;;;;;;;;x
+become_independent_desc;Makes you become independent.;;;;;;;;;;;;;x
+
+set_feudal;----Change to Feudalism;;;;;;;;;;;;;x
+set_feudal_desc;Changes your government type to Feudalism.;;;;;;;;;;;;;x
+
+revoke_all_titles;----Revoke all Vassal Titles;;;;;;;;;;;;;x
+revoke_all_titles_desc;Revokes all Vassal titles.;;;;;;;;;;;;;x
+
+cheat_lower_threat_level;Threat Level Lowered;;;;;;;;;;;;;x
+
+lower_threat_level;----Lower Threat Level;;;;;;;;;;;;;x
+lower_threat_level_desc;Lower Threat Level;;;;;;;;;;;;;x
+
+kill_all_courtiers;----Kill All Courtiers;;;;;;;;;;;;;x
+kill_all_courtiers_desc;Kill All Courtiers;;;;;;;;;;;;;x
+
+world_religion;----World Religion;;;;;;;;;;;;;x
+world_religion_desc;Converts all characters and provinces to your religion.;;;;;;;;;;;;;x
+
+world_culture;----World Culture;;;;;;;;;;;;;x
+world_culture_desc;Converts all characters and provinces to your culture (Doesn't work on nomads).;;;;;;;;;;;;;x
+
+world_ethnicity;----World Ethnicity;;;;;;;;;;;;;x
+world_ethnicity_desc;Converts all characters to your ethnicity.;;;;;;;;;;;;;x
+
+cheat_trait_cleaner;----Cheat Trait Cleaner;;;;;;;;;;;;;x
+cheat_trait_cleaner_desc;Removes cheat traits from all characters besides you.;;;;;;;;;;;;;x
+
+reveal_realm_plots;----Reveal Realm Plots;;;;;;;;;;;;;x
+reveal_realm_plots_desc;Reveal all plots in your realm.;;;;;;;;;;;;;x
+
+enable_quick_move;----Enable Quick Move;;;;;;;;;;;;;x
+enable_quick_move_desc;All units can move provinces in 1 day.;;;;;;;;;;;;;x
+
+disable_quick_move;----Disable Quick Move;;;;;;;;;;;;;x
+disable_quick_move_desc;Disables quick move.;;;;;;;;;;;;;x
+
+enable_triple_levies;----Enable Triple Levies;;;;;;;;;;;;;x
+enable_triple_levies_desc;Triples the levy size..;;;;;;;;;;;;;x
+
+disable_triple_levies;----Disable Triple Levies;;;;;;;;;;;;;x
+disable_triple_levies_desc;Disables triple levies.;;;;;;;;;;;;;x
