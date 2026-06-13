@@ -259,6 +259,24 @@ add_robust_desc;Add Brawny;;;;;;;;;;;;;x
 remove_robust;--------Remove Brawny;;;;;;;;;;;;;x
 remove_robust_desc;Remove Brawny;;;;;;;;;;;;;x
 
+add_sturdy;--------Add Sturdy;;;;;;;;;;;;;x
+add_sturdy_desc;Add Sturdy;;;;;;;;;;;;;x
+
+remove_sturdy;--------Remove Sturdy;;;;;;;;;;;;;x
+remove_sturdy_desc;Remove Sturdy;;;;;;;;;;;;;x
+
+add_groomed;--------Add Groomed;;;;;;;;;;;;;x
+add_groomed_desc;Add Groomed;;;;;;;;;;;;;x
+
+remove_groomed;--------Remove Groomed;;;;;;;;;;;;;x
+remove_groomed_desc;Remove Groomed;;;;;;;;;;;;;x
+
+add_uncouth;--------Add Uncouth;;;;;;;;;;;;;x
+add_uncouth_desc;Add Uncouth;;;;;;;;;;;;;x
+
+remove_uncouth;--------Remove Uncouth;;;;;;;;;;;;;x
+remove_uncouth_desc;Remove Uncouth;;;;;;;;;;;;;x
+
 add_stubborn;--------Add Stubborn;;;;;;;;;;;;;x
 add_stubborn_desc;Add Stubborn;;;;;;;;;;;;;x
 
@@ -310,6 +328,48 @@ add_strong_desc;Add Strong;;;;;;;;;;;;;x
 remove_strong;--------Remove Strong;;;;;;;;;;;;;x
 remove_strong_desc;Remove Strong;;;;;;;;;;;;;x
 
+add_depressed;--------Add Depressed;;;;;;;;;;;;;x
+add_depressed_desc;Add Depressed;;;;;;;;;;;;;x
+
+remove_depressed;--------Remove Depressed;;;;;;;;;;;;;x
+remove_depressed_desc;Remove Depressed;;;;;;;;;;;;;x
+
+add_drunkard;--------Add Drunkard;;;;;;;;;;;;;x
+add_drunkard_desc;Add Drunkard;;;;;;;;;;;;;x
+
+remove_drunkard;--------Remove Drunkard;;;;;;;;;;;;;x
+remove_drunkard_desc;Remove Drunkard;;;;;;;;;;;;;x
+
+add_infirm;--------Add Infirm;;;;;;;;;;;;;x
+add_infirm_desc;Add Infirm;;;;;;;;;;;;;x
+
+remove_infirm;--------Remove Infirm;;;;;;;;;;;;;x
+remove_infirm_desc;Remove Infirm;;;;;;;;;;;;;x
+
+add_stressed;--------Add Stressed;;;;;;;;;;;;;x
+add_stressed_desc;Add Stressed;;;;;;;;;;;;;x
+
+remove_stressed;--------Remove Stressed;;;;;;;;;;;;;x
+remove_stressed_desc;Remove Stressed;;;;;;;;;;;;;x
+
+add_wounded;--------Add Wounded;;;;;;;;;;;;;x
+add_wounded_desc;Add Wounded;;;;;;;;;;;;;x
+
+remove_wounded;--------Remove Wounded;;;;;;;;;;;;;x
+remove_wounded_desc;Remove Wounded;;;;;;;;;;;;;x
+
+add_fat;--------Add Fat;;;;;;;;;;;;;x
+add_fat_desc;Add Fat;;;;;;;;;;;;;x
+
+remove_fat;--------Remove Fat;;;;;;;;;;;;;x
+remove_fat_desc;Remove Fat;;;;;;;;;;;;;x
+
+add_malnourished;--------Add Malnourished;;;;;;;;;;;;;x
+add_malnourished_desc;Add Malnourished;;;;;;;;;;;;;x
+
+remove_malnourished;--------Remove Malnourished;;;;;;;;;;;;;x
+remove_malnourished_desc;Remove Malnourished;;;;;;;;;;;;;x
+
 add_quick;--------Add Quick;;;;;;;;;;;;;x
 add_quick_desc;Add Quick;;;;;;;;;;;;;x
 
@@ -327,6 +387,18 @@ remove_diseases_desc;Remove Wounds, Illnesses & Diseases;;;;;;;;;;;;;x
 
 remove_defects;--------Remove Birth Defects;;;;;;;;;;;;;x
 remove_defects_desc;Remove Birth Defects;;;;;;;;;;;;;x
+
+add_giant;--------Add Giant;;;;;;;;;;;;;x
+add_giant_desc;Add Giant;;;;;;;;;;;;;x
+
+remove_giant;--------Remove Giant;;;;;;;;;;;;;x
+remove_giant_desc;Remove Giant;;;;;;;;;;;;;x
+
+add_lefthanded;--------Add Left-Handed;;;;;;;;;;;;;x
+add_lefthanded_desc;Add Left-Handed;;;;;;;;;;;;;x
+
+remove_lefthanded;--------Remove Left-Handed;;;;;;;;;;;;;x
+remove_lefthanded_desc;Remove Left-Handed;;;;;;;;;;;;;x
 
 add_homosexual;--------Add Homosexual;;;;;;;;;;;;;x
 add_homosexual_desc;Add Homosexual;;;;;;;;;;;;;x
@@ -445,11 +517,35 @@ remove_physician_desc;Remove Physician;;;;;;;;;;;;;x
 remove_scholar;--------Remove Scholar;;;;;;;;;;;;;x
 remove_scholar_desc;Remove Scholar;;;;;;;;;;;;;x
 
+add_faqih;--------Add Faqih;;;;;;;;;;;;;x
+add_faqih_desc;Add Faqih;;;;;;;;;;;;;x
+
+remove_faqih;--------Remove Faqih;;;;;;;;;;;;;x
+remove_faqih_desc;Remove Faqih;;;;;;;;;;;;;x
+
 add_theologian;--------Add Theologian;;;;;;;;;;;;;x
 add_theologian_desc;Add Theologian;;;;;;;;;;;;;x
 
 remove_theologian;--------Remove Theologian;;;;;;;;;;;;;x
 remove_theologian_desc;Remove Theologian;;;;;;;;;;;;;x
+
+add_celibate;--------Add Celibate;;;;;;;;;;;;;x
+add_celibate_desc;Add Celibate;;;;;;;;;;;;;x
+
+remove_celibate;--------Remove Celibate;;;;;;;;;;;;;x
+remove_celibate_desc;Remove Celibate;;;;;;;;;;;;;x
+
+add_falconer;--------Add Falconer;;;;;;;;;;;;;x
+add_falconer_desc;Add Falconer;;;;;;;;;;;;;x
+
+remove_falconer;--------Remove Falconer;;;;;;;;;;;;;x
+remove_falconer_desc;Remove Falconer;;;;;;;;;;;;;x
+
+add_poet;--------Add Poet;;;;;;;;;;;;;x
+add_poet_desc;Add Poet;;;;;;;;;;;;;x
+
+remove_poet;--------Remove Poet;;;;;;;;;;;;;x
+remove_poet_desc;Remove Poet;;;;;;;;;;;;;x
 
 add_winter_leader;--------Add Winter Leader;;;;;;;;;;;;;x
 add_winter_leader_desc;Add Winter Leader;;;;;;;;;;;;;x
@@ -546,6 +642,12 @@ add_desert_terrain_leader_desc;Add Desert Expert;;;;;;;;;;;;;x
 
 remove_desert_terrain_leader;--------Remove Desert Expert;;;;;;;;;;;;;x
 remove_desert_terrain_leader_desc;Remove Desert Expert;;;;;;;;;;;;;x
+
+add_mountain_terrain_leader;--------Add Mountain Expert;;;;;;;;;;;;;x
+add_mountain_terrain_leader_desc;Add Mountain Expert;;;;;;;;;;;;;x
+
+remove_mountain_terrain_leader;--------Remove Mountain Expert;;;;;;;;;;;;;x
+remove_mountain_terrain_leader_desc;Remove Mountain Expert;;;;;;;;;;;;;x
 
 add_unyielding_leader;--------Add Unyielding;;;;;;;;;;;;;x
 add_unyielding_leader_desc;Add Unyielding;;;;;;;;;;;;;x

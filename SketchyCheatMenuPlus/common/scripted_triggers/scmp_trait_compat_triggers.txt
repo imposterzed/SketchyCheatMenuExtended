@@ -36,6 +36,28 @@ has_beauty_trait_trigger = {
   }
 }
 
+# Fat
+has_fat_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = fat
+  }
+  trigger_else = {
+    trait = is_fat
+  }
+}
+
+# Malnourished
+has_malnourished_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = malnourished
+  }
+  trigger_else = {
+    trait = is_malnourished
+  }
+}
+
 # Schemer
 has_schemer_trait_trigger = {
   trigger_if = {
@@ -133,6 +155,17 @@ has_jungle_terrain_trait_trigger = {
   }
   trigger_else = {
     trait = jungle_terrain_leader
+  }
+}
+
+# Mountain Terrain
+has_mountain_terrain_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = mountain_expert
+  }
+  trigger_else = {
+    trait = mountain_terrain_leader
   }
 }
 

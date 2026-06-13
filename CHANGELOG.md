@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-06-13
+
+### Added
+- **17 new trait-toggle decision pairs.** Single-stack base-game traits get direct `add_trait`/`remove_trait`; CleanSlate-renamed traits route through new compat helpers in `scmp_trait_compat.txt` + `scmp_trait_compat_triggers.txt`. See diff for specifics.
+  - Lifestyles: `celibate`, `falconer`, `poet` (closes the lifestyle set to 18/18; post-WoL former-lifestyle traits, base game).
+  - Leadership / Terrain: `mountain_terrain_leader` — joins the existing flat/rough/desert/jungle compat group (CleanSlate ID `mountain_expert`).
+  - Personality / non-inheritable physique: `sturdy`, `groomed`, `uncouth`.
+  - Health & Congenital: `depressed`, `drunkard`, `infirm`, `stressed`, `wounded` (previously remove-only via `remove_health_traits_effect`); `giant` and `lefthanded` as standalone toggles (mixed-value traits with combat/intrigue upsides, so excluded from the strictly-negative `remove_defects` sweep).
+  - Physique cosmetic: `fat`, `malnourished` — CleanSlate IDs (vanilla `is_fat`/`is_malnourished`); compat helpers added.
+  - Religion-mirrored learning lifestyle: new `faqih` pair gated to Muslims; existing `add_scholar` gated to non-Muslims. Mirrors vanilla's mutual-`opposites` declaration between the two traits; parallels the existing sex-aware seducer/seductress pattern. `remove_scholar`/`remove_faqih` stay unrestricted so a character who converts between religions can clean up the now-wrong-religion trait (vanilla doesn't auto-swap on conversion).
+
 ## [0.4.2] - 2026-06-13
 
 ### Changed

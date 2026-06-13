@@ -63,6 +63,46 @@ remove_beauty_trait_effect = {
   }
 }
 
+# Fat
+add_fat_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = fat
+  }
+  else = {
+    add_trait = is_fat
+  }
+}
+remove_fat_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = fat
+  }
+  else = {
+    remove_trait = is_fat
+  }
+}
+
+# Malnourished
+add_malnourished_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = malnourished
+  }
+  else = {
+    add_trait = is_malnourished
+  }
+}
+remove_malnourished_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = malnourished
+  }
+  else = {
+    remove_trait = is_malnourished
+  }
+}
+
 # Schemer
 add_schemer_trait_effect = {
   if = {
@@ -244,6 +284,26 @@ remove_jungle_terrain_trait_effect = {
   }
   else = {
     remove_trait = jungle_terrain_leader
+  }
+}
+
+# Mountain Terrain
+add_mountain_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = mountain_expert
+  }
+  else = {
+    add_trait = mountain_terrain_leader
+  }
+}
+remove_mountain_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = mountain_expert
+  }
+  else = {
+    remove_trait = mountain_terrain_leader
   }
 }
 
