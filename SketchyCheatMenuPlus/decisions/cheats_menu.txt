@@ -575,6 +575,7 @@ targetted_decisions = {
 
     from_potential = {
       has_character_flag = cheats_enabled
+      has_dlc = "Conclave"
       ai = no
       age = 12
       has_concubinage = yes
@@ -1509,6 +1510,7 @@ targetted_decisions = {
     potential = {
       ai = no
       has_character_flag = cheats_enabled
+      has_dlc = "Zeus"
     }
     allow = {
       always = yes

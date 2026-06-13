@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.4.2] - 2026-06-13
+
+### Changed
+- **DLC gating on 2 decisions** whose backing effect is DLC-introduced and would silently fail (or log an error) without that DLC. Added `has_dlc` to the appropriate gate block of:
+  - `make_consort` → `has_dlc = "Conclave"`. `add_consort` is a Conclave scripting command (per vanilla `ChangeLog.txt`); without Conclave the effect no-ops.
+  - `clear_your_focus` → `has_dlc = "Zeus"`. `clear_focus` is used only inside WoL's own `ze_*` files in vanilla. Matches the existing `get_favor` gate.
+- **README — Optional DLC section corrected.** The inherited description claimed several decisions were "hidden, no-op, or reduced functionality" without their DLC, but most of those traits are defined in `common/traits/*.txt` (which CK2 loads regardless of DLC) and work fine as cheats. After empirical verification the section now distinguishes:
+  - DLC-effect-dependent decisions (`get_favor`, `make_consort`, `clear_your_focus`) — explicitly gated.
+  - Decisions naturally soft-gated by their own triggers (`add_society_points`/`increase_society_rank` via `is_in_society = yes`; `upgrade_hospital_fully` via `has_hospital = yes`) — no DLC gate needed.
+  - DLC-themed trait toggles whose trait IDs are in vanilla data and remain usable as cheats: the 16 Way of Life lifestyle traits, the Reaper's Due `physician` trait (`02_traits.txt:2136`), and the Rajas of India `war_elephant_leader` trait (`02_traits.txt:930`).
+
 ## [0.4.1] - 2026-06-13
 
 ### Fixed

@@ -44,13 +44,13 @@ Become independent, set your government to feudal, convert your realm or the ent
 
 ### Optional DLC
 
-Several decisions reference DLC-specific content. Without the relevant DLC the decision is either hidden, a no-op, or has reduced functionality, but the mod still loads cleanly:
+The mod works without any DLC. Some cheats are tied to DLC systems and behave differently depending on what you have installed:
 
-- **Way of Life** — `get_favor` (explicitly DLC-gated; won't appear without WoL), `clear_your_focus`, and 16 trait-toggle decisions for Way of Life lifestyle traits (schemer, impaler, seducer, seductress, gardener, architect, administrator, hunter, duelist, strategist, gamer, hedonist, socializer, mystic, scholar, theologian).
-- **Conclave** — `make_consort` (uses Conclave's `add_consort` effect).
-- **Monks and Mystics** — `add_society_points` and `increase_society_rank` use this DLC's society system.
-- **The Reaper's Due** — `add_physician` / `remove_physician`, `spawn_physician`, and the hospital max-out decision (uses the `pilgrims_inn_1` building from TRD's hospital system).
-- **Rajas of India** — `add_war_elephant_leader` / `remove_war_elephant_leader`.
+- **Way of Life** — without it, `get_favor` and `clear_your_focus` are hidden. The 16 lifestyle-trait toggles (schemer, seducer, hedonist, scholar, theologian, etc.) stay available — they grant the trait directly without needing the focus system.
+- **Conclave** — without it, `make_consort` is hidden.
+- **Monks and Mystics** — without it, the society cheats (`add_society_points`, `increase_society_rank`) don't appear, since you can't be in a society.
+- **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available.
+- **Rajas of India** — `add_war_elephant_leader` / `remove_war_elephant_leader` stay available.
 
 ## Installation
 
@@ -74,9 +74,9 @@ Save-compatible with upstream Sketchy Cheat Menu. All inherited data (custom tra
 
 Full support. This mod ships with `dependencies = { "CleanSlate" }` declared, so it works with CleanSlate enabled and on plain vanilla.
 
-Trait IDs are auto-adapted. CleanSlate renames several traits (physique, beauty, terrain-leader traits, the tier-2 cleric education, and others) and sets a `cleanslate_active` global flag at startup; when that flag is present, this mod's trait-toggle decisions use CleanSlate's trait names instead of vanilla's.
+Trait IDs are auto-adapted. CleanSlate renames several traits and sets a `cleanslate_active` global flag at startup; when that flag is present, this mod's trait-toggle decisions use CleanSlate's trait names instead of vanilla's.
 
-Aztec culture and building IDs are also auto-adapted. CleanSlate renames the Aztec culture (`nahuatl` → `nahua`) along with its cultural building IDs (`ca_culture_nahuatl_*` → `ca_culture_nahua_*`, plus the matching `tb_*` tribal counterparts); the `convert_*` strip helpers and the `upgrade_castle` culture-aware add pick the matching ID set under each stack.
+Aztec culture and building IDs are also auto-adapted. CleanSlate renames the Aztec culture and its cultural building IDs; the `convert_*` strip helpers and the `upgrade_castle` culture-aware add pick the matching ID set under each stack.
 
 **CleanSlate users — make sure you're on the latest version from [GitHub](https://github.com/ck2plus/CleanSlate)** — the startup flag is a recent addition. Without it, the mod uses vanilla IDs throughout, so trait-toggle and Aztec-building operations silently fail on a CleanSlate stack.
 
