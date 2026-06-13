@@ -1,3 +1,10 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                  Cheat Event Modifiers                 ##
+############################################################
+
+# icon = 13 is the vanilla martial/military icon (matches
+# the levy-boost theme).
 triple_levies = {
   global_levy_size = 3
   icon = 13

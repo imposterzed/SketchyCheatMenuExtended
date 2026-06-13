@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.3.1] - 2026-06-09
+
+### Changed
+- **File headers** added to all 16 legacy `.txt`/`.gfx` files. Files whose role isn't obvious from a single line get a short description block under the title.
+- **Section anchors** converted from `##SECTION##` to `## ===== Section ===== ##` (3 in `cheats_menu_intrigue_spawn.txt`, 11 in `cheats_menu_intrigue_traits.txt`).
+- **Inline `#` comments** added throughout — per-decision rationale, CK2 idioms, in-game UI labels (e.g. `death_murder_unknown` → "died under suspicious circumstances"), and clarifications of non-obvious behavior. See diff for specifics.
+
 ## [0.3.0] - 2026-06-09
 
 ### Changed

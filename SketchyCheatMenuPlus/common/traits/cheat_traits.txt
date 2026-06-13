@@ -1,3 +1,16 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                   Custom SCMP Traits                   ##
+############################################################
+##                                                        ##
+## Five custom traits granted only via the cheat menu.    ##
+## Icons live in ../../interface/cheat_traits.gfx.        ##
+## customizer = no / random = no scopes them out of Ruler ##
+## Designer and random-character generation.              ##
+##                                                        ##
+############################################################
+
+# Universal combat trait: boosts every command modifier slot.
 mastermind = {
   customizer = no
   random = no
@@ -20,6 +33,7 @@ mastermind = {
   }
 }
 
+# Instant, near-free construction (-100% build time, -99% cost).
 builder = {
   customizer = no
   random = no
@@ -29,6 +43,7 @@ builder = {
   local_build_cost_modifier = -0.99
 }
 
+# Massive direct rule (+100 demesne size) and tax flood.
 landlord = {
 
   customizer = no
@@ -38,6 +53,7 @@ landlord = {
   global_tax_modifier = 10
 }
 
+# Plots and arrests both succeed (+10 plot power / arrest chance).
 conspirator = {
 
   customizer = no
@@ -48,6 +64,7 @@ conspirator = {
 
 }
 
+# Everyone loves you (+10000 opinion from all characters).
 beloved = {
 
   customizer = no

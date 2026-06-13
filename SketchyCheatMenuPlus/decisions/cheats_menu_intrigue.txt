@@ -1,3 +1,16 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##           Cheats Menu - Top-Level Decisions            ##
+############################################################
+##                                                        ##
+## The headline cheat decisions, accessed via the         ##
+## intrigue tab. show_cheats / hide_cheats are the local  ##
+## visibility toggle (sets/clears show_cheats character   ##
+## flag, checked in every decision's potential below).    ##
+## Master cheats_enabled toggle lives in cheats_menu.txt. ##
+##                                                        ##
+############################################################
+
 decisions = {
 
   show_cheats = {
@@ -647,6 +660,8 @@ decisions = {
     }
   }
 
+  # Makes the player independent by setting their liege to
+  # themselves (set_defacto_liege = THIS). CK2 idiom.
   become_independent = {
 
     potential = {
@@ -683,6 +698,11 @@ decisions = {
     }
   }
 
+  # For every non-baron, non-nomadic vassal, grants their
+  # demesne titles to the player. Skips baron-tier (auto-
+  # owned by feudal castles), patricians (republic quirks),
+  # mercenaries, holy orders, and landless titles (titular
+  # kingdoms etc.).
   revoke_all_titles = {
 
     potential = {
@@ -714,6 +734,10 @@ decisions = {
     }
   }
 
+  # Holy Fury renamed "infamy" to "threat" in the UI but
+  # kept change_infamy as the internal effect name. The
+  # decision name reflects the UI; the engine call is
+  # unchanged.
   lower_threat_level = {
     potential = {
       ai = no
@@ -735,6 +759,11 @@ decisions = {
     }
   }
 
+  # Mass-murder of unaffiliated courtiers. Spares dynasty
+  # members, spouses/consorts/lovers, friends, parents, and
+  # any landed ruler. The player is the killer; cause is
+  # death_murder_unknown ("died under suspicious
+  # circumstances", no opinion penalties).
   kill_all_courtiers = {
     potential = {
       ai = no
@@ -766,6 +795,9 @@ decisions = {
     }
   }
 
+  # Strips SCMP-custom traits (and vanilla `immortal`) from
+  # every AI character — player and dynasty keep theirs.
+  # Useful after a `play_as` swap or random-event leak.
   cheat_trait_cleaner = {
 
 

@@ -1,3 +1,13 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                   Cheats Menu Sprites                  ##
+############################################################
+##                                                        ##
+## Every sprite below points at the same                  ##
+## decision_icon_cheats.dds red-box placeholder.          ##
+##                                                        ##
+############################################################
+
 spriteTypes = {
   spriteType = {
     name = "GFX_show_cheats"

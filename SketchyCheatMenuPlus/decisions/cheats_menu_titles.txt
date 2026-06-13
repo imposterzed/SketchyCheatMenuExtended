@@ -1,3 +1,20 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##              Cheats Menu - Title Decisions             ##
+############################################################
+##                                                        ##
+## Right-click decisions on a title (filter = owned). Two ##
+## title-grab decisions (add_claim, take_title) and 13    ##
+## law switches (8 succession + 5 gender-succession). All ##
+## gated by has_character_flag = cheats_enabled (master   ##
+## toggle in cheats_menu.txt).                            ##
+##                                                        ##
+## higher_tier_than = COUNT gates the law switches to     ##
+## Duke+ because counties inherit the de jure liege's     ##
+## laws and changing them is a no-op.                     ##
+##                                                        ##
+############################################################
+
 title_decisions = {
   add_claim = {
     filter = owned

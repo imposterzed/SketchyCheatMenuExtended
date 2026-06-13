@@ -1,3 +1,18 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##             Cheats Menu - Holding Decisions            ##
+############################################################
+##                                                        ##
+## Right-click decisions on a settlement (filter =        ##
+## realm_owned or owned). Four upgrade_<type> decisions   ##
+## fill every building slot, three convert_<type>         ##
+## decisions swap holding type, delete_holding wipes the  ##
+## slot, and upgrade_hospital_fully maxes out the         ##
+## capital's hospital. All gated by has_character_flag    ##
+## = cheats_enabled.                                      ##
+##                                                        ##
+############################################################
+
 settlement_decisions = {
 
   upgrade_castle = {
@@ -437,6 +452,14 @@ settlement_decisions = {
     }
   }
 
+  # BUG (convert_* decisions): two bugs.
+  # (1) convert_to does NOT strip the old holding's buildings — a temple
+  # converted to a castle leaves tp_* orphans that freeze the game on
+  # next read.
+  # (2) The potential block's NOT = { is_capital = yes holding_type = X }
+  # hides the decision on every county-primary holding rather than just
+  # the realm capital (is_capital at settlement scope returns yes for any
+  # primary).
   convert_castle = {
     filter = realm_owned
 

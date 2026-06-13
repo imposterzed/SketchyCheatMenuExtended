@@ -1,3 +1,25 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##             Cheats Menu - Spawn Decisions              ##
+############################################################
+##                                                        ##
+## Sketchy's spawn submenu. cspawn_enable/disable is the  ##
+## master toggle; each `## ===== Section ===== ##`        ##
+## divider below groups one section (Spawn Children,      ##
+## Spawn Siblings, Spawn Courtiers), each with its own    ##
+## show/hide_spawn_<X> visibility toggle.                 ##
+##                                                        ##
+## Every spawned character gets flag = spawned_<X> in     ##
+## create_character so finalize_scmp_spawned_character_   ##
+## effect (in common/scripted_effects/scmp_spawn_effects. ##
+## txt) can find them right after creation.               ##
+##                                                        ##
+## Children & siblings come in age variants               ##
+## (0/5/8/10/12/14/16) for each sex. Courtier templates   ##
+## cover the council roles plus a few flavor archetypes.  ##
+##                                                        ##
+############################################################
+
 decisions = {
 
   cspawn_enable = {
@@ -46,9 +68,7 @@ decisions = {
     }
   }
 
-  ##################
-  ##SPAWN CHILDREN##
-  ##################
+  ## ===== Spawn Children ===== ##
 
   show_spawn_child = {
 
@@ -626,9 +646,7 @@ decisions = {
     }
   }
 
-  #################
-  ##SPAWN SIBLING##
-  #################
+  ## ===== Spawn Siblings ===== ##
 
   show_spawn_sibling = {
 
@@ -1363,9 +1381,7 @@ decisions = {
     }
   }
 
-  ##################
-  ##SPAWN COURTIER##
-  ##################
+  ## ===== Spawn Courtiers ===== ##
 
   show_spawn_courtier = {
 
@@ -1631,6 +1647,11 @@ decisions = {
     }
   }
 
+  # Spawns a "Debutante" — a courtier who could become a
+  # wife, not an actual wife. Drops a young female with
+  # marriage-grade traits into the player's court so they
+  # can pick her via the normal marriage UI. No marriage
+  # hook here.
   spawn_wife = {
 
     potential = {

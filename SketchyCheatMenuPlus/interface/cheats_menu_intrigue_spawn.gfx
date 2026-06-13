@@ -1,3 +1,8 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                   Spawn Menu Sprites                   ##
+############################################################
+
 spriteTypes = {
   spriteType = {
     name = "GFX_cspawn_enable"

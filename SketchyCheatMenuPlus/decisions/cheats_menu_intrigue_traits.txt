@@ -1,3 +1,19 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##              Cheats Menu - Trait Decisions             ##
+############################################################
+##                                                        ##
+## The trait submenu. traits_enable/disable is the master ##
+## toggle; each `## ===== Section ===== ##` divider below ##
+## groups one trait family (Cheat Traits, Virtues, Sins,  ##
+## Personality, Education, Health & Congenital,           ##
+## Leadership, Lifestyles, Misc, Vassal, Dynasty &        ##
+## Spouse). Every section has its own show_<X>/hide_<X>   ##
+## visibility toggle and a pair of add_/remove_<trait>    ##
+## decisions per trait.                                   ##
+##                                                        ##
+############################################################
+
 decisions = {
 
   traits_enable = {
@@ -46,9 +62,7 @@ decisions = {
     }
   }
 
-  ################
-  ##CHEAT TRAITS##
-  ################
+  ## ===== Cheat Traits ===== ##
   show_cheat_traits = {
 
 
@@ -440,9 +454,7 @@ decisions = {
   }
 
 
-  ###########
-  ##VIRTUES##
-  ###########
+  ## ===== Virtues ===== ##
   show_virtues = {
 
 
@@ -890,9 +902,7 @@ decisions = {
   }
 
 
-  ########
-  ##SINS##
-  ########
+  ## ===== Sins ===== ##
   show_sins = {
 
 
@@ -1339,9 +1349,7 @@ decisions = {
     }
   }
 
-  ###############
-  ##PERSONALITY##
-  ###############
+  ## ===== Personality ===== ##
   show_personality = {
 
 
@@ -2572,9 +2580,7 @@ decisions = {
     }
   }
 
-  #############
-  ##EDUCATION##
-  #############
+  ## ===== Education ===== ##
   show_education = {
 
 
@@ -2630,6 +2636,9 @@ decisions = {
     }
   }
 
+  # set_<X>_education strips ALL 20 education traits (5
+  # paths x 4 tiers) and then grants the tier-4 trait for
+  # the chosen path.
   set_martial_education = {
 
 
@@ -2910,9 +2919,7 @@ decisions = {
     }
   }
 
-  #######################
-  ##HEALTH & CONGENITAL##
-  #######################
+  ## ===== Health & Congenital ===== ##
   show_health = {
 
 
@@ -2968,6 +2975,9 @@ decisions = {
     }
   }
 
+  # The 11-trait genetic-defect list is duplicated inline
+  # in potential + effect here, and again in self_genes /
+  # fix_genes (cheats_menu.txt).
   remove_defects = {
 
 
@@ -3274,9 +3284,7 @@ decisions = {
   }
 
 
-  ##############
-  ##LEADERSHIP##
-  ##############
+  ## ===== Leadership ===== ##
   show_leadership = {
 
 
@@ -4452,9 +4460,7 @@ decisions = {
     }
   }
 
-  ##############
-  ##LIFESTYLES##
-  ##############
+  ## ===== Lifestyles ===== ##
   show_lifestyle = {
 
 
@@ -5466,9 +5472,7 @@ decisions = {
     }
   }
 
-  ###############
-  ##MISC TRAITS##
-  ###############
+  ## ===== Misc Traits ===== ##
   show_misc = {
 
 
@@ -5888,9 +5892,7 @@ decisions = {
     }
   }
 
-  #################
-  ##VASSAL TRAITS##
-  #################
+  ## ===== Vassal Traits ===== ##
   show_vassal = {
 
 
@@ -6164,9 +6166,7 @@ decisions = {
     }
   }
 
-  ###########################
-  ##DYNASTY & SPOUSE TRAITS##
-  ###########################
+  ## ===== Dynasty & Spouse Traits ===== ##
 
   show_dynasty = {
 
