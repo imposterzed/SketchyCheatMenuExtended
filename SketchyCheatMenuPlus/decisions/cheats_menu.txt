@@ -63,6 +63,12 @@ targetted_decisions = {
 		effect = {
 			 clr_character_flag = mind_control_enabled
 			 set_character_flag = mind_control_disabled
+			 hidden_tooltip = {
+				 any_character = {
+					 limit = { has_character_flag = mind_controlled }
+					 clr_character_flag = mind_controlled
+				 }
+			 }
 		}
 		ai_will_do = {
 			factor = 0
@@ -692,7 +698,7 @@ targetted_decisions = {
 			always = yes
 		}
 		effect = {
-			 FROM { add_consort = ROOT }
+			 FROM = { add_consort = ROOT }
 		}
 		revoke_allowed = {
 			always = no
