@@ -1,15 +1,14 @@
 ############################################################
 ##                Sketchy Cheat Menu Plus                 ##
-##                    Lowborn Dynasty                     ##
+##                    Outcast Dynasty                     ##
 ############################################################
 
-# Dynasty ID 777777 named "Lowborn". Characters in this dynasty
-# show as "House Lowborn" but still register as having a dynasty,
-# unlike the vanilla lowborn state (dynasty = 0, which hides the
-# dynasty crest and triggers is_lowborn checks). used_for_random
-# = no keeps CK2 from dropping random NPCs into it during game
-# start / random-character generation.
+# Dynasty ID 777777, name "Outcast". Currently unused —
+# disown_them reverts disowned characters to the other
+# parent's dynasty. Kept for save-compat: removing it would
+# orphan any characters from earlier upstream versions still
+# assigned here. used_for_random = no keeps random NPCs out.
 777777 = {
-  name = Lowborn
+  name = "Outcast"
   used_for_random = no
 }

@@ -66,6 +66,10 @@ Documents/Paradox Interactive/Crusader Kings II/mod/
 
 Sketchy Cheat Menu Plus is a content mod that doesn't overwrite base-game files, so it should work alongside vanilla and most other mods as the original Sketchy Cheat Menu did.
 
+### Sketchy Cheat Menu (upstream)
+
+Save-compatible with upstream Sketchy Cheat Menu. All inherited data (custom traits, the dynasty-777777 "Outcast" formerly "Lowborn", event modifiers, custom buildings) keeps its original ID. Switching from upstream just requires swapping the mod selection in the launcher.
+
 ### CleanSlate
 
 Full support. This mod ships with `dependencies = { "CleanSlate" }` declared, so it works with CleanSlate enabled and on plain vanilla.
@@ -87,6 +91,8 @@ Historically incompatible with upstream; not verified for this fork.
 ## For modders
 
 **error.log notes.** CK2's static parser validates every trait ID referenced by a `scripted_trigger`, including IDs in branches that won't execute on the current stack. The CleanSlate compat triggers deliberately reference both vanilla and CleanSlate trait IDs across branches so the runtime picks the right one — but the parser flags the inactive branch's IDs as "unknown trait" warnings (~21 on either stack). These are cosmetic; runtime gating on `has_global_flag = cleanslate_active` ensures only the active stack's IDs are evaluated.
+
+**Dev/test events.** Hard-to-reach paths (e.g., verifying the dynasty 777777 "Outcast" label) have console-grant helpers in a sibling sub-mod, **Sketchy Cheat Menu Plus - Debug**. Enable it in the launcher alongside SCMP to use the `SCMPD.*` events — e.g. `event SCMPD.1 <charID>` assigns the target to dynasty 777777. The base mod doesn't ship these events.
 
 ## Development
 

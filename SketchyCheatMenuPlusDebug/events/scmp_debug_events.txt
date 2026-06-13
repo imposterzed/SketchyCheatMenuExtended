@@ -1,0 +1,34 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                      Debug Events                      ##
+############################################################
+##                                                        ##
+## Dev/test events for hard-to-reach paths. Never wired   ##
+## to a decision or on_action — fire from the in-game     ##
+## console:                                               ##
+##   event SCMPD.<id> <charID>                            ##
+##                                                        ##
+## Each event is a one-shot, no event_target deps,        ##
+## hide_window so it fires silently.                      ##
+##                                                        ##
+############################################################
+
+namespace = SCMPD
+
+
+# SCMPD.1 — Assign the target character to dynasty 777777
+# ("Outcast"). Used to verify the dynasty rename displays
+# correctly, since no in-mod decision actually assigns
+# characters to dynasty 777777 (disown_them reverts to the
+# other parent's dynasty).
+#
+# Console:  event SCMPD.1 <charID>
+character_event = {
+  id = SCMPD.1
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    dynasty = 777777
+  }
+}

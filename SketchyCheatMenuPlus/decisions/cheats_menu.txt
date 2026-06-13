@@ -16,13 +16,9 @@ targetted_decisions = {
   cheats_disable = {
     filter = self
 
-    from_potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-    }
     potential = {
       ai = no
-
+      has_character_flag = cheats_enabled
     }
     allow = {
       always = yes
@@ -39,13 +35,9 @@ targetted_decisions = {
   cheats_enable = {
     filter = self
 
-    from_potential = {
-      ai = no
-      NOT = { has_character_flag = cheats_enabled }
-    }
     potential = {
       ai = no
-
+      NOT = { has_character_flag = cheats_enabled }
     }
     allow = {
       always = yes
@@ -62,13 +54,9 @@ targetted_decisions = {
   mind_control_disable = {
     filter = self
 
-    from_potential = {
-      ai = no
-      has_character_flag = mind_control_enabled
-    }
     potential = {
       ai = no
-
+      has_character_flag = mind_control_enabled
     }
     allow = {
       always = yes
@@ -91,14 +79,10 @@ targetted_decisions = {
   mind_control_enable = {
     filter = self
 
-    from_potential = {
+    potential = {
       ai = no
       NOT = { has_character_flag = mind_control_enabled }
       has_character_flag = cheats_enabled
-    }
-    potential = {
-      ai = no
-
     }
     allow = {
       always = yes
@@ -115,15 +99,10 @@ targetted_decisions = {
   self_heals = {
     filter = self
 
-    from_potential = {
-      has_character_flag = cheats_enabled
-      ai = no
-    }
-
     potential = {
       ai = no
+      has_character_flag = cheats_enabled
       has_any_affliction_trigger = yes
-
     }
 
     allow = {
@@ -146,13 +125,9 @@ targetted_decisions = {
   self_genes = {
     filter = self
 
-    from_potential = {
-      has_character_flag = cheats_enabled
-      ai = no
-    }
-
     potential = {
       ai = no
+      has_character_flag = cheats_enabled
       NOT = { trait = strong }
       NOT = { has_beauty_trait_trigger = yes }
       NOT = { trait = genius }
@@ -817,12 +792,9 @@ targetted_decisions = {
   self_stats = {
     filter = self
 
-    from_potential = {
-      has_character_flag = cheats_enabled
-      ai = no
-    }
-
     potential = {
+      ai = no
+      has_character_flag = cheats_enabled
       NOT = { has_character_flag = stats_increased }
     }
 
@@ -849,11 +821,9 @@ targetted_decisions = {
   self_stats2 = {
     filter = self
 
-    from_potential = {
+    potential = {
       ai = no
       has_character_flag = cheats_enabled
-    }
-    potential = {
       has_character_flag = stats_increased
     }
     allow = {
@@ -903,11 +873,9 @@ targetted_decisions = {
   self_nickname = {
     filter = self
 
-    from_potential = {
-      has_character_flag = cheats_enabled
-      ai = no
-    }
     potential = {
+      ai = no
+      has_character_flag = cheats_enabled
       has_nickname = yes
     }
     allow = {
@@ -1164,12 +1132,9 @@ targetted_decisions = {
   fall_on_sword = {
     filter = self
 
-    from_potential = {
-      has_character_flag = cheats_enabled
-      ai = no
-    }
     potential = {
       ai = no
+      has_character_flag = cheats_enabled
     }
     allow = {
       always = yes
@@ -1268,7 +1233,7 @@ targetted_decisions = {
       any_character = {
         has_character_flag = mind_controlled
         age = 16
-        NOT = { is_spouse = ROOT }
+        NOT = { spouse = { character = ROOT } }
         OR = {
           AND = {
             is_female = no
@@ -1456,7 +1421,7 @@ targetted_decisions = {
         higher_tier_than = ROOT
         ROOT = {
           NOT = {
-            defacto_liege = PREV
+            de_facto_liege = PREV
           }
         }
       }
@@ -1541,12 +1506,9 @@ targetted_decisions = {
   clear_your_focus = {
     filter = self
 
-    from_potential = {
-      has_character_flag = cheats_enabled
-      ai = no
-    }
     potential = {
       ai = no
+      has_character_flag = cheats_enabled
     }
     allow = {
       always = yes
@@ -1564,12 +1526,9 @@ targetted_decisions = {
   clear_your_ambition = {
     filter = self
 
-    from_potential = {
-      has_character_flag = cheats_enabled
-      ai = no
-    }
     potential = {
       ai = no
+      has_character_flag = cheats_enabled
     }
     allow = {
       always = yes

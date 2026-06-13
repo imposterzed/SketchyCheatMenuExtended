@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.4.1] - 2026-06-13
+
+### Fixed
+- **`mc_marry` silently-failing trigger typo** — `mc_marry`'s `allow` had `NOT = { is_spouse = ROOT }`. `is_spouse` isn't a CK2 trigger, so the gate fell through silently — `mc_marry` would let the mind-controlled character marry ROOT even if they were already ROOT's spouse. Replaced with `NOT = { spouse = { character = ROOT } }` per CK2 trigger syntax.
+- **`mc_vassalize` silently-failing trigger typo** — `mc_vassalize`'s `allow` had `NOT = { defacto_liege = PREV }`. `defacto_liege` (no underscore) isn't a trigger; `de_facto_liege` is. Replaced with `NOT = { de_facto_liege = PREV }`. The "don't vassalize someone already your de facto liege" gate now actually fires.
+- **`from_potential` on 12 self-targeted decisions** — CK2 logs `[decision.cpp:752]: Usage of from potential on self targeted decision found, use potential instead!` for each `filter = self` decision using `from_potential`. Conditions merged into the existing `potential` blocks. Affected: `cheats_disable`, `cheats_enable`, `mind_control_disable`, `mind_control_enable`, `self_heals`, `self_genes`, `self_stats`, `self_stats2`, `self_nickname`, `fall_on_sword`, `clear_your_focus`, `clear_your_ambition`.
+
+### Changed
+- **Dynasty 777777 renamed from "Lowborn" to "Outcast"** (literal `name = "Outcast"` in `disown_them.txt`). The old name conflicted with vanilla CK2's display name for `dynasty = 0` (the actual lowborn state). The dynasty itself stays defined for save-compat with characters from earlier upstream versions.
+- **README** — added Compatibility subsection documenting SCM save-compat, and a Dev/test events paragraph under For modders pointing at the new debug sub-mod.
+
+### Added
+- **`SketchyCheatMenuPlus - Debug` sibling sub-mod** for hard-to-reach test paths. Ships one event at v0.4.1: `SCMPD.1` (assigns target to dynasty 777777, used to verify the Outcast rename displays correctly). Mirror of ER's `EliteRecruitmentDebug` pattern. Enable alongside SCMP in the launcher to use.
+
 ## [0.4.0] - 2026-06-12
 
 ### Fixed
