@@ -68,7 +68,9 @@ Sketchy Cheat Menu Plus is a content mod that doesn't overwrite base-game files,
 
 ### CleanSlate
 
-This mod declares `dependencies = { "CleanSlate" }` in its `.mod` descriptor so it loads after CleanSlate when present. At v0.1.0 the mod content is unchanged from upstream Sketchy and doesn't account for CleanSlate's trait renames — CleanSlate users may experience trait-toggle failures because some decisions reference vanilla trait IDs that CleanSlate has renamed.
+Full support. This mod ships with `dependencies = { "CleanSlate" }` declared, so it works with CleanSlate enabled and on plain vanilla.
+
+Trait IDs are auto-adapted. CleanSlate renames several traits (physique, beauty, terrain-leader traits, the tier-2 cleric education, and others) and sets a `cleanslate_active` global flag at startup; when that flag is present, this mod's trait-toggle decisions use CleanSlate's trait names instead of vanilla's. **CleanSlate users — make sure you're on the latest version from [GitHub](https://github.com/ck2plus/CleanSlate)** — the startup flag is a recent addition. On an older CleanSlate that lacks the flag, trait toggles for renamed traits silently fail because the mod still references vanilla trait IDs.
 
 ### CK2+
 
@@ -77,6 +79,10 @@ Historically OK with upstream; not verified for this fork.
 ### AGOT (A Game of Thrones)
 
 Historically incompatible with upstream; not verified for this fork.
+
+## For modders
+
+**error.log notes.** CK2's static parser validates every trait ID referenced by a `scripted_trigger`, including IDs in branches that won't execute on the current stack. The CleanSlate compat triggers deliberately reference both vanilla and CleanSlate trait IDs across branches so the runtime picks the right one — but the parser flags the inactive branch's IDs as "unknown trait" warnings (~21 on either stack). These are cosmetic; runtime gating on `has_global_flag = cleanslate_active` ensures only the active stack's IDs are evaluated.
 
 ## Development
 

@@ -1,0 +1,110 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                   Affliction Effects                   ##
+############################################################
+##                                                        ##
+## Five remove utilities split by category (Health /      ##
+## Diseases / Symptoms / Maimed / Special), plus an       ##
+## orchestrator that clears every category.               ##
+##                                                        ##
+############################################################
+
+# Health: general status states (mental, drunkard, wounds, battle scars).
+remove_health_traits_effect = {
+  remove_trait = depressed
+  remove_trait = drunkard
+  remove_trait = incapable
+  remove_trait = infirm
+  remove_trait = lunatic
+  remove_trait = possessed
+  remove_trait = stressed
+  remove_trait = wounded
+  remove_trait = scarred
+  remove_trait = scarred_mid
+  remove_trait = scarred_high
+  remove_trait = maimed
+}
+
+# Diseases: named illnesses plus the 8 epidemics CleanSlate renames.
+remove_disease_traits_effect = {
+  # Shared (same ID in vanilla and CleanSlate)
+  remove_trait = ill
+  remove_trait = leper
+  remove_trait = pneumonic
+  remove_trait = sickly
+  remove_trait = cancer
+  remove_trait = dancing_plague
+  remove_trait = scurvy
+  remove_trait = rabies
+  remove_trait = gout
+  remove_trait = food_poisoning
+  remove_trait = dysentery
+  remove_trait = flu
+
+  # Renamed by CleanSlate
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = consumption
+    remove_trait = slow_fever
+    remove_trait = camp_fever
+    remove_trait = aztec_disease
+    remove_trait = bubonic_plague
+    remove_trait = measles
+    remove_trait = smallpox
+    remove_trait = great_pox
+  }
+  else = {
+    remove_trait = has_tuberculosis
+    remove_trait = has_typhoid_fever
+    remove_trait = has_typhus
+    remove_trait = has_aztec_disease
+    remove_trait = has_bubonic_plague
+    remove_trait = has_measles
+    remove_trait = has_small_pox
+    remove_trait = syphilitic
+  }
+}
+
+# Symptoms: transient minor conditions.
+remove_symptom_traits_effect = {
+  remove_trait = abdominal_pain
+  remove_trait = chest_pain
+  remove_trait = cough
+  remove_trait = cramps
+  remove_trait = diarrhea
+  remove_trait = fatigue
+  remove_trait = fever
+  remove_trait = headache
+  remove_trait = infection
+  remove_trait = malaise
+  remove_trait = rash
+  remove_trait = vomiting
+}
+
+# Maimed: permanent battle injuries (the wound-progression terminal
+# states + the per-limb/feature loss variants).
+remove_maimed_traits_effect = {
+  remove_trait = disfigured
+  remove_trait = mangled
+  remove_trait = one_eyed
+  remove_trait = one_handed
+  remove_trait = one_legged
+  remove_trait = severely_injured
+}
+
+# Special: blindness, hidden severe-illness, and STDs that don't fall
+# into the other categories.
+remove_special_traits_effect = {
+  remove_trait = blinded
+  remove_trait = sick_incapable
+  remove_trait = lovers_pox
+}
+
+# Orchestrator: clears every category.
+remove_all_afflictions_effect = {
+  remove_health_traits_effect = yes
+  remove_disease_traits_effect = yes
+  remove_symptom_traits_effect = yes
+  remove_maimed_traits_effect = yes
+  remove_special_traits_effect = yes
+}

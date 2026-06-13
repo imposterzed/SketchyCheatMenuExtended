@@ -109,56 +109,7 @@ targetted_decisions = {
 
 		potential = {
 		    ai = no
-		    OR  = {
-				trait = ill
-				trait = has_tuberculosis
-				trait = stressed
-				trait = lunatic
-				trait = possessed
-				trait = depressed
-				trait = wounded
-				trait = maimed
-				trait = pneumonic
-				trait = leper
-				trait = syphilitic
-				trait = infirm
-				trait = incapable
-				trait = drunkard
-				trait = scarred
-				trait = has_typhoid_fever
-				trait = has_typhus
-				trait = has_bubonic_plague
-				trait = has_measles
-				trait = has_small_pox
-				trait = sickly
-				trait = has_aztec_disease
-				trait = cancer
-				trait = dancing_plague
-				trait = scurvy
-				trait = rabies
-				trait = food_poisoning
-				trait = gout
-				trait = dysentery
-				trait = flu
-				trait = cough
-				trait = fever
-				trait = diarrhea
-				trait = vomiting
-				trait = chest_pain
-				trait = cramps
-				trait = rash
-				trait = headache
-				trait = abdominal_pain
-				trait = fatigue
-				trait = malaise
-				trait = infection
-				trait = one_eyed
-				trait = one_handed
-				trait = one_legged
-				trait = disfigured
-				trait = mangled
-				trait = severely_injured
-		    }
+		    has_any_affliction_trigger = yes
 
 		}
 		
@@ -167,56 +118,7 @@ targetted_decisions = {
 		}
 
 		effect = {	
-			ROOT = { 
-		        remove_trait = ill
-		        remove_trait = has_tuberculosis
-		        remove_trait = stressed
-		        remove_trait = lunatic
-		        remove_trait = possessed
-		        remove_trait = depressed
-		        remove_trait = wounded
-		        remove_trait = maimed
-		        remove_trait = pneumonic
-		        remove_trait = leper
-		        remove_trait = syphilitic
-		        remove_trait = infirm
-		        remove_trait = incapable
-		        remove_trait = drunkard
-		        remove_trait = scarred
-		        remove_trait = has_typhoid_fever
-		        remove_trait = has_typhus
-		        remove_trait = has_bubonic_plague
-		        remove_trait = has_measles
-		        remove_trait = has_small_pox
-		        remove_trait = sickly
-		        remove_trait = has_aztec_disease
-                remove_trait = cancer
-                remove_trait = dancing_plague
-                remove_trait = scurvy
-                remove_trait = rabies
-                remove_trait = food_poisoning
-                remove_trait = gout
-                remove_trait = dysentery
-                remove_trait = flu
-                remove_trait = cough
-                remove_trait = fever
-                remove_trait = diarrhea
-                remove_trait = vomiting
-                remove_trait = chest_pain
-                remove_trait = cramps
-                remove_trait = rash
-                remove_trait = headache
-                remove_trait = abdominal_pain
-                remove_trait = fatigue
-                remove_trait = malaise
-                remove_trait = infection
-                remove_trait = one_eyed
-                remove_trait = one_handed
-                remove_trait = one_legged
-                remove_trait = disfigured
-                remove_trait = mangled
-                remove_trait = severely_injured
-			}
+			ROOT = { remove_all_afflictions_effect = yes }
 		} 
 
 
@@ -235,7 +137,7 @@ targetted_decisions = {
 		potential = {
 		    ai = no
 		    NOT = {trait = strong}
-		    NOT = {trait = fair}
+		    NOT = { has_beauty_trait_trigger = yes }
 		    NOT = {trait = genius}
 		}
 		
@@ -246,7 +148,7 @@ targetted_decisions = {
 		effect = {	
 			ROOT = { 
 			 add_trait = genius
-			 add_trait = fair
+			 add_beauty_trait_effect = yes
 			 add_trait = strong
 			 remove_trait = inbred
 			 remove_trait = harelip
@@ -1098,7 +1000,7 @@ targetted_decisions = {
 	        OR = {
 		        NOT = { trait = genius }
 		        NOT = { trait = strong }
-		        NOT = { trait = fair }
+		        NOT = { has_beauty_trait_trigger = yes }
 	        }
 		}
 		allow = {
@@ -1106,7 +1008,7 @@ targetted_decisions = {
 		}
 		effect = {
 			 add_trait = genius
-			 add_trait = fair
+			 add_beauty_trait_effect = yes
 			 add_trait = strong
 			 remove_trait = inbred
 			 remove_trait = harelip
@@ -1137,109 +1039,13 @@ targetted_decisions = {
 		}
 		potential = {
 		    ai = yes
-	        OR = {
-		        trait = ill
-		        trait = has_tuberculosis
-		        trait = stressed
-		        trait = lunatic
-		        trait = possessed
-		        trait = depressed
-		        trait = wounded
-		        trait = maimed
-		        trait = pneumonic
-		        trait = leper
-		        trait = syphilitic
-		        trait = infirm
-		        trait = incapable
-		        trait = drunkard
-		        trait = scarred
-		        trait = has_typhoid_fever
-		        trait = has_typhus
-		        trait = has_bubonic_plague
-		        trait = has_measles
-		        trait = has_small_pox
-		        trait = sickly
-		        trait = has_aztec_disease
-                trait = cancer
-                trait = dancing_plague
-                trait = scurvy
-                trait = rabies
-                trait = food_poisoning
-                trait = gout
-                trait = dysentery
-                trait = flu
-                trait = cough
-                trait = fever
-                trait = diarrhea
-                trait = vomiting
-                trait = chest_pain
-                trait = cramps
-                trait = rash
-                trait = headache
-                trait = abdominal_pain
-                trait = fatigue
-                trait = malaise
-                trait = infection
-                trait = one_eyed
-                trait = one_handed
-                trait = one_legged
-                trait = disfigured
-                trait = mangled
-                trait = severely_injured
-	        }
+	        has_any_affliction_trigger = yes
 		}
 		allow = {
 			always = yes
 		}
 		effect = {
-		        remove_trait = ill
-		        remove_trait = has_tuberculosis
-		        remove_trait = stressed
-		        remove_trait = lunatic
-		        remove_trait = possessed
-		        remove_trait = depressed
-		        remove_trait = wounded
-		        remove_trait = maimed
-		        remove_trait = pneumonic
-		        remove_trait = leper
-		        remove_trait = syphilitic
-		        remove_trait = infirm
-		        remove_trait = incapable
-		        remove_trait = drunkard
-		        remove_trait = scarred
-		        remove_trait = has_typhoid_fever
-		        remove_trait = has_typhus
-		        remove_trait = has_bubonic_plague
-		        remove_trait = has_measles
-		        remove_trait = has_small_pox
-		        remove_trait = sickly
-		        remove_trait = has_aztec_disease
-                remove_trait = cancer
-                remove_trait = dancing_plague
-                remove_trait = scurvy
-                remove_trait = rabies
-                remove_trait = food_poisoning
-                remove_trait = gout
-                remove_trait = dysentery
-                remove_trait = flu
-                remove_trait = cough
-                remove_trait = fever
-                remove_trait = diarrhea
-                remove_trait = vomiting
-                remove_trait = chest_pain
-                remove_trait = cramps
-                remove_trait = rash
-                remove_trait = headache
-                remove_trait = abdominal_pain
-                remove_trait = fatigue
-                remove_trait = malaise
-                remove_trait = infection
-                remove_trait = one_eyed
-                remove_trait = one_handed
-                remove_trait = one_legged
-                remove_trait = disfigured
-                remove_trait = mangled
-                remove_trait = severely_injured
+		        remove_all_afflictions_effect = yes
 		}
 		revoke_allowed = {
 			always = no

@@ -139,7 +139,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -188,6 +187,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -226,7 +226,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -275,6 +274,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -313,7 +313,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -362,6 +361,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -400,7 +400,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -449,6 +448,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -487,7 +487,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -536,6 +535,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -574,7 +574,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -623,6 +622,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 	
@@ -719,7 +719,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -748,6 +747,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -787,7 +787,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -816,6 +815,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -855,7 +855,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -884,6 +883,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -923,7 +923,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -952,6 +951,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -991,7 +991,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -1020,6 +1019,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -1059,7 +1059,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -1088,6 +1087,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -1127,7 +1127,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -1156,6 +1155,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -1195,7 +1195,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -1224,6 +1223,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -1263,7 +1263,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -1292,6 +1291,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -1331,7 +1331,6 @@ decisions = {
 				fertility = 1
 				trait = genius
 				trait = strong
-				trait = fair
 			}
             
             hidden_tooltip = {
@@ -1360,6 +1359,7 @@ decisions = {
 				    }
 			    }
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -1653,6 +1653,7 @@ decisions = {
 				race = ROOT
 				female = yes
 				age = 16
+				flag = spawned_wife
 				attributes = {
 					martial = 50
 					diplomacy = 50
@@ -1667,10 +1668,10 @@ decisions = {
 				trait = content
                 trait = genius
                 trait = strong
-                trait = fair
                 trait = kind
                 trait = temperate
 			}
+		finalize_scmp_spawned_character_effect = yes
         }
 	}
 
@@ -1710,7 +1711,6 @@ decisions = {
 				trait = trusting
                 trait = genius
                 trait = strong
-                trait = fair
                 trait = kind
                 trait = temperate
 			}
@@ -1725,6 +1725,7 @@ decisions = {
 						who = ROOT
 					}
 				}
+				finalize_scmp_spawned_character_effect = yes
 		    }
         }
 	}

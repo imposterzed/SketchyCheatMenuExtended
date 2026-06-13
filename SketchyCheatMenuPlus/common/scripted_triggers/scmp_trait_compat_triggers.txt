@@ -1,0 +1,148 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                 Trait Rename Triggers                  ##
+############################################################
+
+# Physique
+has_physique_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = brawny
+  }
+  trigger_else = {
+    trait = robust
+  }
+}
+
+# Feeble
+has_feeble_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = frail
+  }
+  trigger_else = {
+    trait = feeble
+  }
+}
+
+# Beauty
+has_beauty_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = attractive
+  }
+  trigger_else = {
+    trait = fair
+  }
+}
+
+# Schemer
+has_schemer_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = master_schemer
+  }
+  trigger_else = {
+    trait = schemer
+  }
+}
+
+# Seducer (sex-aware)
+has_seducer_trait_trigger = {
+  trigger_if = {
+    limit = { is_female = yes }
+    trigger_if = {
+      limit = { has_global_flag = cleanslate_active }
+      trait = master_seductress
+    }
+    trigger_else = {
+      trait = seductress
+    }
+  }
+  trigger_else = {
+    trigger_if = {
+      limit = { has_global_flag = cleanslate_active }
+      trait = master_seducer
+    }
+    trigger_else = {
+      trait = seducer
+    }
+  }
+}
+
+# Gamer
+has_gamer_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = game_master
+  }
+  trigger_else = {
+    trait = gamer
+  }
+}
+
+# Direct Leader
+has_direct_leader_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = direct_leader
+  }
+  trigger_else = {
+    trait = experimenter
+  }
+}
+
+# Battlefield Terrain Master
+has_battlefield_terrain_master_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = battlefield_terrain_master
+  }
+  trigger_else = {
+    trait = narrow_flank_leader
+  }
+}
+
+# Desert Terrain
+has_desert_terrain_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = desert_expert
+  }
+  trigger_else = {
+    trait = desert_terrain_leader
+  }
+}
+
+# Flat Terrain
+has_flat_terrain_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = flat_terrain_expert
+  }
+  trigger_else = {
+    trait = flat_terrain_leader
+  }
+}
+
+# Jungle Terrain
+has_jungle_terrain_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = jungle_expert
+  }
+  trigger_else = {
+    trait = jungle_terrain_leader
+  }
+}
+
+# Rough Terrain
+has_rough_terrain_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = rough_terrain_expert
+  }
+  trigger_else = {
+    trait = rough_terrain_leader
+  }
+}

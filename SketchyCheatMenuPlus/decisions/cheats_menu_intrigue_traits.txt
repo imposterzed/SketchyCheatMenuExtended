@@ -1628,7 +1628,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_personality
-            trait = feeble
+            has_feeble_trait_trigger = yes
 		}
 
 		allow = {
@@ -1636,7 +1636,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = feeble
+            remove_feeble_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -1656,7 +1656,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_personality
-            NOT = { trait = feeble }
+            NOT = { has_feeble_trait_trigger = yes }
 		}
 
 		allow = {
@@ -1664,7 +1664,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = feeble
+            add_feeble_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -1684,7 +1684,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_personality
-            trait = robust
+            has_physique_trait_trigger = yes
 		}
 
 		allow = {
@@ -1692,7 +1692,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = robust
+            remove_physique_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -1712,7 +1712,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_personality
-            NOT = { trait = robust }
+            NOT = { has_physique_trait_trigger = yes }
 		}
 
 		allow = {
@@ -1720,7 +1720,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = robust
+            add_physique_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -2671,7 +2671,7 @@ decisions = {
 	            #remove_trait = brilliant_strategist
 
 	            remove_trait = detached_priest
-	            remove_trait = martial_cleric
+	            remove_martial_cleric_trait_effect = yes
 	            remove_trait = scholarly_theologian 
 	            remove_trait = mastermind_theologian
             }
@@ -2727,7 +2727,7 @@ decisions = {
 	            remove_trait = brilliant_strategist
 
 	            remove_trait = detached_priest
-	            remove_trait = martial_cleric
+	            remove_martial_cleric_trait_effect = yes
 	            remove_trait = scholarly_theologian 
 	            #remove_trait = mastermind_theologian
             }
@@ -2783,7 +2783,7 @@ decisions = {
 	            remove_trait = brilliant_strategist
 
 	            remove_trait = detached_priest
-	            remove_trait = martial_cleric
+	            remove_martial_cleric_trait_effect = yes
 	            remove_trait = scholarly_theologian 
 	            remove_trait = mastermind_theologian
             }
@@ -2839,7 +2839,7 @@ decisions = {
 	            remove_trait = brilliant_strategist
 
 	            remove_trait = detached_priest
-	            remove_trait = martial_cleric
+	            remove_martial_cleric_trait_effect = yes
 	            remove_trait = scholarly_theologian 
 	            remove_trait = mastermind_theologian
             }
@@ -2895,7 +2895,7 @@ decisions = {
 	            remove_trait = brilliant_strategist
 
 	            remove_trait = detached_priest
-	            remove_trait = martial_cleric
+	            remove_martial_cleric_trait_effect = yes
 	            remove_trait = scholarly_theologian 
 	            remove_trait = mastermind_theologian
             }
@@ -3026,56 +3026,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_health
-	        OR = {
-		        trait = ill
-		        trait = has_tuberculosis
-		        trait = stressed
-		        trait = lunatic
-		        trait = possessed
-		        trait = depressed
-		        trait = wounded
-		        trait = maimed
-		        trait = pneumonic
-		        trait = leper
-		        trait = syphilitic
-		        trait = infirm
-		        trait = incapable
-		        trait = drunkard
-		        trait = scarred
-		        trait = has_typhoid_fever
-		        trait = has_typhus
-		        trait = has_bubonic_plague
-		        trait = has_measles
-		        trait = has_small_pox
-		        trait = sickly
-		        trait = has_aztec_disease
-                trait = cancer
-                trait = dancing_plague
-                trait = scurvy
-                trait = rabies
-                trait = food_poisoning
-                trait = gout
-                trait = dysentery
-                trait = flu
-                trait = cough
-                trait = fever
-                trait = diarrhea
-                trait = vomiting
-                trait = chest_pain
-                trait = cramps
-                trait = rash
-                trait = headache
-                trait = abdominal_pain
-                trait = fatigue
-                trait = malaise
-                trait = infection
-                trait = one_eyed
-                trait = one_handed
-                trait = one_legged
-                trait = disfigured
-                trait = mangled
-                trait = severely_injured
-	        }
+            has_any_affliction_trigger = yes
 		}
 
 		allow = {
@@ -3083,54 +3034,7 @@ decisions = {
 		}
 
 		effect = {
-		        remove_trait = ill
-		        remove_trait = has_tuberculosis
-		        remove_trait = stressed
-		        remove_trait = lunatic
-		        remove_trait = possessed
-		        remove_trait = depressed
-		        remove_trait = wounded
-		        remove_trait = maimed
-		        remove_trait = pneumonic
-		        remove_trait = leper
-		        remove_trait = syphilitic
-		        remove_trait = infirm
-		        remove_trait = incapable
-		        remove_trait = drunkard
-		        remove_trait = scarred
-		        remove_trait = has_typhoid_fever
-		        remove_trait = has_typhus
-		        remove_trait = has_bubonic_plague
-		        remove_trait = has_measles
-		        remove_trait = has_small_pox
-		        remove_trait = sickly
-		        remove_trait = has_aztec_disease
-                remove_trait = cancer
-                remove_trait = dancing_plague
-                remove_trait = scurvy
-                remove_trait = rabies
-                remove_trait = food_poisoning
-                remove_trait = gout
-                remove_trait = dysentery
-                remove_trait = flu
-                remove_trait = cough
-                remove_trait = fever
-                remove_trait = diarrhea
-                remove_trait = vomiting
-                remove_trait = chest_pain
-                remove_trait = cramps
-                remove_trait = rash
-                remove_trait = headache
-                remove_trait = abdominal_pain
-                remove_trait = fatigue
-                remove_trait = malaise
-                remove_trait = infection
-                remove_trait = one_eyed
-                remove_trait = one_handed
-                remove_trait = one_legged
-                remove_trait = disfigured
-                remove_trait = mangled
-                remove_trait = severely_injured
+            remove_all_afflictions_effect = yes
 		}
 
 		revoke_allowed = {
@@ -3320,7 +3224,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_health
-            trait = fair
+            has_beauty_trait_trigger = yes
 		}
 
 		allow = {
@@ -3328,7 +3232,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = fair
+            remove_beauty_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -3348,7 +3252,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_health
-            NOT = { trait = fair }
+            NOT = { has_beauty_trait_trigger = yes }
 		}
 
 		allow = {
@@ -3356,7 +3260,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = fair
+            add_beauty_trait_effect = yes
             hidden_tooltip = { remove_trait = quick}
 		}
 
@@ -3940,7 +3844,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            trait = experimenter
+            has_direct_leader_trait_trigger = yes
 		}
 
 		allow = {
@@ -3948,7 +3852,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = experimenter
+            remove_direct_leader_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -3968,7 +3872,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            NOT = { trait = experimenter }
+            NOT = { has_direct_leader_trait_trigger = yes }
 		}
 
 		allow = {
@@ -3976,7 +3880,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = experimenter
+            add_direct_leader_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4052,7 +3956,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            trait = flat_terrain_leader
+            has_flat_terrain_trait_trigger = yes
 		}
 
 		allow = {
@@ -4060,7 +3964,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = flat_terrain_leader
+            remove_flat_terrain_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4080,7 +3984,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            NOT = { trait = flat_terrain_leader }
+            NOT = { has_flat_terrain_trait_trigger = yes }
 		}
 
 		allow = {
@@ -4088,7 +3992,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = flat_terrain_leader
+            add_flat_terrain_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4108,7 +4012,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            trait = rough_terrain_leader
+            has_rough_terrain_trait_trigger = yes
 		}
 
 		allow = {
@@ -4116,7 +4020,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = rough_terrain_leader
+            remove_rough_terrain_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4136,7 +4040,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            NOT = { trait = rough_terrain_leader }
+            NOT = { has_rough_terrain_trait_trigger = yes }
 		}
 
 		allow = {
@@ -4144,7 +4048,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = rough_terrain_leader
+            add_rough_terrain_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4164,7 +4068,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            trait = desert_terrain_leader
+            has_desert_terrain_trait_trigger = yes
 		}
 
 		allow = {
@@ -4172,7 +4076,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = desert_terrain_leader
+            remove_desert_terrain_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4192,7 +4096,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            NOT = { trait = desert_terrain_leader }
+            NOT = { has_desert_terrain_trait_trigger = yes }
 		}
 
 		allow = {
@@ -4200,7 +4104,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = desert_terrain_leader
+            add_desert_terrain_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4332,7 +4236,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            trait = narrow_flank_leader
+            has_battlefield_terrain_master_trait_trigger = yes
 		}
 
 		allow = {
@@ -4340,7 +4244,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = narrow_flank_leader
+            remove_battlefield_terrain_master_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4360,7 +4264,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            NOT = { trait = narrow_flank_leader }
+            NOT = { has_battlefield_terrain_master_trait_trigger = yes }
 		}
 
 		allow = {
@@ -4368,7 +4272,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = narrow_flank_leader
+            add_battlefield_terrain_master_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4444,7 +4348,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            trait = jungle_terrain_leader
+            has_jungle_terrain_trait_trigger = yes
 		}
 
 		allow = {
@@ -4452,7 +4356,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = jungle_terrain_leader
+            remove_jungle_terrain_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4472,7 +4376,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_leadership
-            NOT = { trait = jungle_terrain_leader }
+            NOT = { has_jungle_terrain_trait_trigger = yes }
 		}
 
 		allow = {
@@ -4480,7 +4384,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = jungle_terrain_leader
+            add_jungle_terrain_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4838,7 +4742,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_lifestyle
-            trait = schemer
+            has_schemer_trait_trigger = yes
 		}
 
 		allow = {
@@ -4846,7 +4750,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = schemer
+            remove_schemer_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4866,7 +4770,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_lifestyle
-            NOT = { trait = schemer }
+            NOT = { has_schemer_trait_trigger = yes }
 		}
 
 		allow = {
@@ -4874,7 +4778,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = schemer
+            add_schemer_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4951,7 +4855,7 @@ decisions = {
             has_character_flag = traits_enabled
             has_character_flag = show_lifestyle
             is_female = no
-            trait = seducer
+            has_seducer_trait_trigger = yes
 		}
 
 		allow = {
@@ -4959,7 +4863,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = seducer
+            remove_seducer_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -4980,7 +4884,7 @@ decisions = {
             has_character_flag = traits_enabled
             has_character_flag = show_lifestyle
             is_female = no
-            NOT = { trait = seducer }
+            NOT = { has_seducer_trait_trigger = yes }
 		}
 
 		allow = {
@@ -4988,7 +4892,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = seducer
+            add_seducer_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -5009,7 +4913,7 @@ decisions = {
             has_character_flag = traits_enabled
             has_character_flag = show_lifestyle
             is_female = yes
-            trait = seductress
+            has_seducer_trait_trigger = yes
 		}
 
 		allow = {
@@ -5017,7 +4921,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = seductress
+            remove_seducer_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -5038,7 +4942,7 @@ decisions = {
             has_character_flag = traits_enabled
             has_character_flag = show_lifestyle
             is_female = yes
-            NOT = { trait = seductress }
+            NOT = { has_seducer_trait_trigger = yes }
 		}
 
 		allow = {
@@ -5046,7 +4950,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = seductress
+            add_seducer_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -5402,7 +5306,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_lifestyle
-            trait = gamer
+            has_gamer_trait_trigger = yes
 		}
 
 		allow = {
@@ -5410,7 +5314,7 @@ decisions = {
 		}
 
 		effect = {
-            remove_trait = gamer
+            remove_gamer_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -5430,7 +5334,7 @@ decisions = {
             has_character_flag = cheats_enabled
             has_character_flag = traits_enabled
             has_character_flag = show_lifestyle
-            NOT = { trait = gamer }
+            NOT = { has_gamer_trait_trigger = yes }
 		}
 
 		allow = {
@@ -5438,7 +5342,7 @@ decisions = {
 		}
 
 		effect = {
-            add_trait = gamer
+            add_gamer_trait_effect = yes
 		}
 
 		revoke_allowed = {
@@ -6556,17 +6460,17 @@ decisions = {
 				any_dynasty_member = {
 			        add_trait = genius
 			        add_trait = strong
-			        add_trait = fair
+			        add_beauty_trait_effect = yes
 	            }
 	            any_spouse = {
 			        add_trait = genius
 			        add_trait = strong
-			        add_trait = fair
+			        add_beauty_trait_effect = yes
 	            }
 	            any_consort = {
 			        add_trait = genius
 			        add_trait = strong
-			        add_trait = fair
+			        add_beauty_trait_effect = yes
 	            }
 		    }
 		}

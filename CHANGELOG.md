@@ -6,6 +6,22 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-06-08
+
+### Added
+- **CleanSlate trait-ID compat hooks** for the 22 vanilla trait IDs CleanSlate renames that SCMP touches, routed via `has_global_flag = cleanslate_active`. Two new directories: `common/scripted_effects/` (`scmp_trait_compat.txt`, `scmp_spawn_effects.txt`, `scmp_health_effects.txt`) and `common/scripted_triggers/` (`scmp_trait_compat_triggers.txt`, `scmp_health_triggers.txt`).
+- **Expanded illness/wound coverage** beyond Sketchy's original list: `scarred_mid`, `scarred_high` (Holy Fury battle-scar variants), `blinded`, `sick_incapable`, `lovers_pox`.
+
+### Fixed
+- **13 trait-toggle decision pairs** in `cheats_menu_intrigue_traits.txt` now correctly add/remove on both stacks (previously silent failures under CleanSlate — the add_trait pointed at the vanilla ID that CleanSlate had renamed). Affected: `robust`/`brawny`, `feeble`/`frail`, `fair`/`attractive`, `schemer`/`master_schemer`, `seducer`/`master_seducer`, `seductress`/`master_seductress`, `gamer`/`game_master`, `experimenter`/`direct_leader`, `narrow_flank_leader`/`battlefield_terrain_master`, and the four terrain leaders (desert/flat/jungle/rough).
+- **5 `set_<X>_education` decisions** correctly strip `martial_cleric` / `dutiful_cleric` (the tier-2 learning education trait CleanSlate renamed).
+- **Disease decisions** (`self_heals`, `heal_them`, `remove_diseases`) correctly detect and remove the 8 renamed disease traits (`has_tuberculosis`/`consumption`, the 7-trait epidemic family, `syphilitic`/`great_pox`).
+- **Composite decisions** (`self_genes`, `fix_genes`, `add_dynasty_genetics`) route the beauty-trait grant through the compat hook.
+- **18 spawn templates** (children, siblings, wife, vassal) previously granted the beauty trait via inline `trait = fair` in `create_character` (silently failed on CleanSlate). Now route through a post-create finalization hook that applies the rename-aware grant; `spawn_wife` also gained a `flag = spawned_wife` so the hook can find her.
+
+### Changed
+- **`remove_diseases` orchestrator restructured** as 5 wiki-categorized utilities (Health / Diseases / Symptoms / Maimed / Special) + a `remove_all_afflictions_effect` orchestrator, replacing ~250 lines of inline trait-list duplication across `self_heals` / `heal_them` / `remove_diseases` × potential+effect.
+
 ## [0.1.1] - 2026-06-08
 
 ### Fixed

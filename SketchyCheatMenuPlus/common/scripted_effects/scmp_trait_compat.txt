@@ -1,0 +1,280 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                  Trait Rename Effects                  ##
+############################################################
+
+# Physique
+add_physique_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = brawny
+  }
+  else = {
+    add_trait = robust
+  }
+}
+remove_physique_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = brawny
+  }
+  else = {
+    remove_trait = robust
+  }
+}
+
+# Feeble
+add_feeble_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = frail
+  }
+  else = {
+    add_trait = feeble
+  }
+}
+remove_feeble_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = frail
+  }
+  else = {
+    remove_trait = feeble
+  }
+}
+
+# Beauty
+add_beauty_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = attractive
+  }
+  else = {
+    add_trait = fair
+  }
+}
+remove_beauty_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = attractive
+  }
+  else = {
+    remove_trait = fair
+  }
+}
+
+# Schemer
+add_schemer_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = master_schemer
+  }
+  else = {
+    add_trait = schemer
+  }
+}
+remove_schemer_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = master_schemer
+  }
+  else = {
+    remove_trait = schemer
+  }
+}
+
+# Seducer (sex-aware)
+add_seducer_trait_effect = {
+  if = {
+    limit = { is_female = yes }
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      add_trait = master_seductress
+    }
+    else = {
+      add_trait = seductress
+    }
+  }
+  else = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      add_trait = master_seducer
+    }
+    else = {
+      add_trait = seducer
+    }
+  }
+}
+remove_seducer_trait_effect = {
+  if = {
+    limit = { is_female = yes }
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      remove_trait = master_seductress
+    }
+    else = {
+      remove_trait = seductress
+    }
+  }
+  else = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      remove_trait = master_seducer
+    }
+    else = {
+      remove_trait = seducer
+    }
+  }
+}
+
+# Gamer
+add_gamer_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = game_master
+  }
+  else = {
+    add_trait = gamer
+  }
+}
+remove_gamer_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = game_master
+  }
+  else = {
+    remove_trait = gamer
+  }
+}
+
+# Direct Leader
+add_direct_leader_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = direct_leader
+  }
+  else = {
+    add_trait = experimenter
+  }
+}
+remove_direct_leader_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = direct_leader
+  }
+  else = {
+    remove_trait = experimenter
+  }
+}
+
+# Battlefield Terrain Master
+add_battlefield_terrain_master_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = battlefield_terrain_master
+  }
+  else = {
+    add_trait = narrow_flank_leader
+  }
+}
+remove_battlefield_terrain_master_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = battlefield_terrain_master
+  }
+  else = {
+    remove_trait = narrow_flank_leader
+  }
+}
+
+# Desert Terrain
+add_desert_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = desert_expert
+  }
+  else = {
+    add_trait = desert_terrain_leader
+  }
+}
+remove_desert_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = desert_expert
+  }
+  else = {
+    remove_trait = desert_terrain_leader
+  }
+}
+
+# Flat Terrain
+add_flat_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = flat_terrain_expert
+  }
+  else = {
+    add_trait = flat_terrain_leader
+  }
+}
+remove_flat_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = flat_terrain_expert
+  }
+  else = {
+    remove_trait = flat_terrain_leader
+  }
+}
+
+# Jungle Terrain
+add_jungle_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = jungle_expert
+  }
+  else = {
+    add_trait = jungle_terrain_leader
+  }
+}
+remove_jungle_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = jungle_expert
+  }
+  else = {
+    remove_trait = jungle_terrain_leader
+  }
+}
+
+# Rough Terrain
+add_rough_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = rough_terrain_expert
+  }
+  else = {
+    add_trait = rough_terrain_leader
+  }
+}
+remove_rough_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = rough_terrain_expert
+  }
+  else = {
+    remove_trait = rough_terrain_leader
+  }
+}
+
+# Martial Cleric (tier-2 learning)
+# Only the remove side is used (by the 5 set_<X>_education decisions).
+remove_martial_cleric_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = dutiful_cleric
+  }
+  else = {
+    remove_trait = martial_cleric
+  }
+}
