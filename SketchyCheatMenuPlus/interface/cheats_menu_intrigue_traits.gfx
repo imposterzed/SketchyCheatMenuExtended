@@ -3,7 +3,7 @@ spriteTypes = {
     name = "GFX_traits_enable"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-   spriteType = {
+  spriteType = {
     name = "GFX_traits_disable"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
@@ -31,7 +31,7 @@ spriteTypes = {
     name = "GFX_hide_sins"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-   spriteType = {
+  spriteType = {
     name = "GFX_show_education"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
@@ -55,7 +55,7 @@ spriteTypes = {
     name = "GFX_hide_misc"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-   spriteType = {
+  spriteType = {
     name = "GFX_show_health"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
@@ -63,7 +63,7 @@ spriteTypes = {
     name = "GFX_hide_health"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-   spriteType = {
+  spriteType = {
     name = "GFX_show_lifestyle"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
@@ -71,7 +71,7 @@ spriteTypes = {
     name = "GFX_hide_lifestyle"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-   spriteType = {
+  spriteType = {
     name = "GFX_show_leadership"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
@@ -79,7 +79,7 @@ spriteTypes = {
     name = "GFX_hide_leadership"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-   spriteType = {
+  spriteType = {
     name = "GFX_show_vassal"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }

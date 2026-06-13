@@ -71,51 +71,51 @@ spriteTypes = {
     name = "GFX_raise_rel_authority"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-    spriteType = {
+  spriteType = {
     name = "GFX_become_independent"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-    spriteType = {
+  spriteType = {
     name = "GFX_set_feudal"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-    spriteType = {
+  spriteType = {
     name = "GFX_revoke_all_titles"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-    spriteType = {
+  spriteType = {
     name = "GFX_kill_all_courtiers"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-      spriteType = {
+  spriteType = {
     name = "GFX_lower_threat_level"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-      spriteType = {
+  spriteType = {
     name = "GFX_world_religion"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-      spriteType = {
+  spriteType = {
     name = "GFX_world_culture"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-      spriteType = {
+  spriteType = {
     name = "GFX_world_ethnicity"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-      spriteType = {
+  spriteType = {
     name = "GFX_cheat_trait_cleaner"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-      spriteType = {
+  spriteType = {
     name = "GFX_reveal_realm_plots"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-      spriteType = {
+  spriteType = {
     name = "GFX_enable_quick_move"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
-      spriteType = {
+  spriteType = {
     name = "GFX_disable_quick_move"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }

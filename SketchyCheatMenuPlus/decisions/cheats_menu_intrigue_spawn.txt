@@ -1,1815 +1,1812 @@
 decisions = {
 
-	cspawn_enable = {
-		
-		potential = {
-			ai = no
-			NOT = {has_character_flag = cspawn_enabled}
-			has_character_flag = cheats_enabled
-		}
-		allow = {
-			always = yes
-		}
-		effect = {
-			 set_character_flag = cspawn_enabled
-			 clr_character_flag = cspawn_disabled
-		}
-		revoke_allowed = {
-			always = no
-		}
+  cspawn_enable = {
 
-        ai_will_do = {
-            factor = 0
+    potential = {
+      ai = no
+      NOT = { has_character_flag = cspawn_enabled }
+      has_character_flag = cheats_enabled
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      set_character_flag = cspawn_enabled
+      clr_character_flag = cspawn_disabled
+    }
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cspawn_disable = {
+
+    potential = {
+      ai = no
+      has_character_flag = cspawn_enabled
+      has_character_flag = cheats_enabled
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      clr_character_flag = cspawn_enabled
+      set_character_flag = cspawn_disabled
+    }
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ##################
+  ##SPAWN CHILDREN##
+  ##################
+
+  show_spawn_child = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      NOT = { has_character_flag = show_spawn_child }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_spawn_child
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_spawn_child = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_child
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_spawn_child
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  spawn_female_child_0 = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_child
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_child
+        female = yes
+        age = 0
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	cspawn_disable = {
-		
-		potential = {
-			ai = no
-			has_character_flag = cspawn_enabled
-			has_character_flag = cheats_enabled
-		}
-		allow = {
-			always = yes
-		}
-		effect = {
-			 clr_character_flag = cspawn_enabled
-			 set_character_flag = cspawn_disabled
-		}
-		revoke_allowed = {
-			always = no
-		}
+      hidden_tooltip = {
 
-        ai_will_do = {
-            factor = 0
+        if = {
+          limit = {
+            is_female = yes
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_mother = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_father = PREVPREV
+              }
+            }
+          }
         }
-	}
 
-	##################
-    ##SPAWN CHILDREN##
-	##################
-
-	show_spawn_child = {
-
-
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            NOT = { has_character_flag = show_spawn_child }
-		}
-
-		allow = {
-			always = yes
-		}
-
-		effect = {
-            set_character_flag = show_spawn_child
-		}
-
-		revoke_allowed = {
-			always = no
-		}
-
-        ai_will_do = {
-            factor = 0
+        if = {
+          limit = {
+            is_female = no
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_father = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_mother = PREVPREV
+              }
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-	hide_spawn_child = {
+  spawn_male_child_0 = {
 
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_child
+    }
 
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_child
-		}
+    allow = {
+      always = yes
+    }
 
-		allow = {
-			always = yes
-		}
+    effect = {
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_child
+        female = no
+        age = 0
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
 
-		effect = {
-            clr_character_flag = show_spawn_child
-		}
-
-		revoke_allowed = {
-			always = no
-		}
-
-        ai_will_do = {
-            factor = 0
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	spawn_female_child_0 = {
+      hidden_tooltip = {
 
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_child
-		}
-
-		allow = {
-	        always = yes
-		}
-
-		effect = {
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_child	
-				female = yes
-				age = 0
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-				if = {
-				    limit = {
-					    is_female = yes
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_mother = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_father = PREVPREV
-						    }
-					    }
-				    }
-			    }
-
-			    if = {
-				    limit = {
-					    is_female = no
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_father = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_mother = PREVPREV
-						    }
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+        if = {
+          limit = {
+            is_female = yes
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_mother = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_father = PREVPREV
+              }
+            }
+          }
         }
-	}
 
-	spawn_male_child_0 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_child
-		}
-
-		allow = {
-	        always = yes
-		}
-
-		effect = {
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_child	
-				female = no
-				age = 0
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-				if = {
-				    limit = {
-					    is_female = yes
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_mother = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_father = PREVPREV
-						    }
-					    }
-				    }
-			    }
-
-			    if = {
-				    limit = {
-					    is_female = no
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_father = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_mother = PREVPREV
-						    }
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+        if = {
+          limit = {
+            is_female = no
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_father = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_mother = PREVPREV
+              }
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-	spawn_female_child_6 = {
+  spawn_female_child_6 = {
 
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_child
-		}
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_child
+    }
 
-		allow = {
-	        always = yes
-		}
+    allow = {
+      always = yes
+    }
 
-		effect = {
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_child	
-				female = yes
-				age = 6
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
+    effect = {
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_child
+        female = yes
+        age = 6
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
 
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-				if = {
-				    limit = {
-					    is_female = yes
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_mother = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_father = PREVPREV
-						    }
-					    }
-				    }
-			    }
-
-			    if = {
-				    limit = {
-					    is_female = no
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_father = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_mother = PREVPREV
-						    }
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	spawn_male_child_6 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_child
-		}
+      hidden_tooltip = {
 
-		allow = {
-	        always = yes
-		}
-
-		effect = {
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_child	
-				female = no
-				age = 6
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-				if = {
-				    limit = {
-					    is_female = yes
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_mother = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_father = PREVPREV
-						    }
-					    }
-				    }
-			    }
-
-			    if = {
-				    limit = {
-					    is_female = no
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_father = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_mother = PREVPREV
-						    }
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+        if = {
+          limit = {
+            is_female = yes
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_mother = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_father = PREVPREV
+              }
+            }
+          }
         }
-	}
 
-	spawn_female_child_16 = {
-
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_child
-		}
-
-		allow = {
-	        always = yes
-		}
-
-		effect = {
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_child	
-				female = yes
-				age = 16
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-				if = {
-				    limit = {
-					    is_female = yes
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_mother = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_father = PREVPREV
-						    }
-					    }
-				    }
-			    }
-
-			    if = {
-				    limit = {
-					    is_female = no
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_father = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_mother = PREVPREV
-						    }
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+        if = {
+          limit = {
+            is_female = no
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_father = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_mother = PREVPREV
+              }
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-    spawn_male_child_16 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_child
-		}
+  spawn_male_child_6 = {
 
-		allow = {
-	        always = yes
-		}
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_child
+    }
 
-		effect = {
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_child	
-				female = no
-				age = 16
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
+    allow = {
+      always = yes
+    }
 
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
+    effect = {
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_child
+        female = no
+        age = 6
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
 
-				if = {
-				    limit = {
-					    is_female = yes
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_mother = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_father = PREVPREV
-						    }
-					    }
-				    }
-			    }
-
-			    if = {
-				    limit = {
-					    is_female = no
-				    }
-				    any_courtier = {
-						limit = {
-							has_character_flag = spawned_child
-						}
-						set_father = ROOT
-				    }
-				    spouse = {
-					    ROOT = {
-							any_courtier = {
-								limit = {
-									has_character_flag = spawned_child
-								}
-								set_mother = PREVPREV
-						    }
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
         }
-	}
-	
-	#################
-    ##SPAWN SIBLING##
-	#################
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	show_spawn_sibling = {
+      hidden_tooltip = {
 
-
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            NOT = { has_character_flag = show_spawn_sibling }
-		}
-
-		allow = {
-			always = yes
-		}
-
-		effect = {
-            set_character_flag = show_spawn_sibling
-		}
-
-		revoke_allowed = {
-			always = no
-		}
-
-        ai_will_do = {
-            factor = 0
+        if = {
+          limit = {
+            is_female = yes
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_mother = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_father = PREVPREV
+              }
+            }
+          }
         }
-	}
 
-	hide_spawn_sibling = {
-
-
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
-
-		allow = {
-			always = yes
-		}
-
-		effect = {
-            clr_character_flag = show_spawn_sibling
-		}
-
-		revoke_allowed = {
-			always = no
-		}
-
-        ai_will_do = {
-            factor = 0
+        if = {
+          limit = {
+            is_female = no
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_father = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_mother = PREVPREV
+              }
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-	spawn_male_sibling_6 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
+  spawn_female_child_16 = {
 
-		allow = {
-	        always = yes
-		}
-		effect = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_child
+    }
 
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = no
-				age = 6
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
+    allow = {
+      always = yes
+    }
 
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
+    effect = {
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_child
+        female = yes
+        age = 16
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
 
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
-
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	spawn_male_sibling_16 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
+      hidden_tooltip = {
 
-		allow = {
-	        always = yes
-		}
-
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = no
-				age = 16
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
-
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+        if = {
+          limit = {
+            is_female = yes
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_mother = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_father = PREVPREV
+              }
+            }
+          }
         }
-	}
 
-	spawn_male_sibling_24 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
-
-		allow = {
-	        always = yes
-		}
-
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = no
-				age = 24
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
-
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+        if = {
+          limit = {
+            is_female = no
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_father = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_mother = PREVPREV
+              }
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-	spawn_male_sibling_30 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
+  spawn_male_child_16 = {
 
-		allow = {
-	        always = yes
-		}
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_child
+    }
 
-		effect = {
+    allow = {
+      always = yes
+    }
 
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = no
-				age = 30
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
+    effect = {
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_child
+        female = no
+        age = 16
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
 
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
-
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	spawn_male_sibling_40 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
+      hidden_tooltip = {
 
-		allow = {
-	        always = yes
-		}
-
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = no
-				age = 40
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
-
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+        if = {
+          limit = {
+            is_female = yes
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_mother = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_father = PREVPREV
+              }
+            }
+          }
         }
-	}
 
-	spawn_female_sibling_6 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
-
-		allow = {
-	        always = yes
-		}
-
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = yes
-				age = 6
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
-
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+        if = {
+          limit = {
+            is_female = no
+          }
+          any_courtier = {
+            limit = {
+              has_character_flag = spawned_child
+            }
+            set_father = ROOT
+          }
+          spouse = {
+            ROOT = {
+              any_courtier = {
+                limit = {
+                  has_character_flag = spawned_child
+                }
+                set_mother = PREVPREV
+              }
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-	spawn_female_sibling_16 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
+  #################
+  ##SPAWN SIBLING##
+  #################
 
-		allow = {
-	        always = yes
-		}
+  show_spawn_sibling = {
 
-		effect = {
 
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = yes
-				age = 16
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      NOT = { has_character_flag = show_spawn_sibling }
+    }
 
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
+    allow = {
+      always = yes
+    }
 
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
+    effect = {
+      set_character_flag = show_spawn_sibling
+    }
 
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
+    revoke_allowed = {
+      always = no
+    }
 
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
+    ai_will_do = {
+      factor = 0
+    }
+  }
 
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+  hide_spawn_sibling = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_spawn_sibling
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  spawn_male_sibling_6 = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
+
+    allow = {
+      always = yes
+    }
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = no
+        age = 6
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	spawn_female_sibling_24 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
+      hidden_tooltip = {
 
-		allow = {
-	        always = yes
-		}
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = yes
-				age = 24
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
-
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+              set_mother = PREVPREV
+            }
+          }
         }
-	}
 
-	spawn_female_sibling_30 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-		allow = {
-	        always = yes
-		}
-
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = yes
-				age = 30
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
-
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
-
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
+              set_father = PREVPREV
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-	spawn_female_sibling_40 = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_sibling
-		}
+  spawn_male_sibling_16 = {
 
-		allow = {
-	        always = yes
-		}
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
 
-		effect = {
+    allow = {
+      always = yes
+    }
 
-			create_character = {
-				random_traits = yes
-				dynasty = ROOT
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				flag = spawned_sibling	
-				female = yes
-				age = 40
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
+    effect = {
 
-				}
-				health = 6
-				fertility = 1
-				trait = genius
-				trait = strong
-			}
-            
-            hidden_tooltip = {
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = no
+        age = 16
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
 
-			    mother_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_mother = PREVPREV
-					    }
-				    }
-			    }
-
-                father_even_if_dead = {
-				    ROOT = {
-						any_courtier = {
-							limit = {
-								has_character_flag = spawned_sibling
-							}
-
-							set_father = PREVPREV
-					    }
-				    }
-			    }
-			}
-		finalize_scmp_spawned_character_effect = yes
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	##################
-    ##SPAWN COURTIER##
-	##################
+      hidden_tooltip = {
 
-	show_spawn_courtier = {
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            NOT = { has_character_flag = show_spawn_courtier }
-		}
-
-		allow = {
-			always = yes
-		}
-
-		effect = {
-            set_character_flag = show_spawn_courtier
-		}
-
-		revoke_allowed = {
-			always = no
-		}
-
-        ai_will_do = {
-            factor = 0
+              set_mother = PREVPREV
+            }
+          }
         }
-	}
 
-	hide_spawn_courtier = {
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
-
-		allow = {
-			always = yes
-		}
-
-		effect = {
-            clr_character_flag = show_spawn_courtier
-		}
-
-		revoke_allowed = {
-			always = no
-		}
-
-        ai_will_do = {
-            factor = 0
+              set_father = PREVPREV
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-	spawn_marshal = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
+  spawn_male_sibling_24 = {
 
-		allow = {
-			always = yes
-		}
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
 
-		effect = {
+    allow = {
+      always = yes
+    }
 
-			create_character = {
-				random_traits = yes
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				female = no
-				age = 20
-				attributes = {
-					martial = 60
-					diplomacy = 10
-					stewardship = 10
-					intrigue = 10
-					learning = 10
-				}
-				health = 6
-				fertility = 1
-				trait = brilliant_strategist
-				trait = strong
-				trait = brave
-				trait = content
-				trait = honest
-				trait = trusting
-				trait = organizer
-			}
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = no
+        age = 24
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	spawn_spymaster = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
+      hidden_tooltip = {
 
-		allow = {
-			always = yes
-		}
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				female = no
-				age = 20
-				attributes = {
-					martial = 10
-					diplomacy = 10
-					stewardship = 10
-					intrigue = 60
-					learning = 10
-
-				}
-				health = 6
-				fertility = 1
-				trait = elusive_shadow
-				trait = quick
-				trait = content
-				trait = trusting
-			}
+              set_mother = PREVPREV
+            }
+          }
         }
-	}
 
-	spawn_steward = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-		allow = {
-			always = yes
-		}
-
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				female = no
-				age = 20
-				attributes = {
-					martial = 10
-					diplomacy = 10
-					stewardship = 60
-					intrigue = 10
-					learning = 10
-
-				}
-				health = 6
-				fertility = 1
-				trait = midas_touched
-				trait = quick
-				trait = content
-				trait = trusting
-			}
+              set_father = PREVPREV
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-	spawn_chancellor = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
+  spawn_male_sibling_30 = {
 
-		allow = {
-			always = yes
-		}
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
 
-		effect = {
+    allow = {
+      always = yes
+    }
 
-			create_character = {
-				random_traits = yes
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				female = no
-				age = 20
-				attributes = {
-					martial = 10
-					diplomacy = 60
-					stewardship = 10
-					intrigue = 10
-					learning = 10
+    effect = {
 
-				}
-				health = 6
-				fertility = 1
-				trait = grey_eminence
-				trait = quick
-				trait = content
-				trait = trusting
-				trait = gregarious
-			}
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = no
+        age = 30
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	spawn_priest = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
+      hidden_tooltip = {
 
-		allow = {
-			always = yes
-		}
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				female = no
-				age = 20
-				attributes = {
-					martial = 10
-					diplomacy = 10
-					stewardship = 10
-					intrigue = 10
-					learning = 60
-
-				}
-				health = 6
-				fertility = 1
-				trait = mastermind_theologian
-				trait = content
-				trait = trusting
-				trait = kind
-				trait = honest
-				trait = chaste
-				trait = humble
-				trait = charitable
-				trait = just
-				trait = temperate
-				trait = patient
-			}
+              set_mother = PREVPREV
+            }
+          }
         }
-	}
 
-    spawn_wife = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-		allow = {
-			always = yes
-		}
-
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				female = yes
-				age = 16
-				flag = spawned_wife
-				attributes = {
-					martial = 50
-					diplomacy = 50
-					stewardship = 50
-					intrigue = 50
-					learning = 50
-
-				}
-				health = 10
-				fertility = 2
-	            trait = elusive_shadow
-				trait = content
-                trait = genius
-                trait = strong
-                trait = kind
-                trait = temperate
-			}
-		finalize_scmp_spawned_character_effect = yes
+              set_father = PREVPREV
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
 
-    spawn_vassal = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
+  spawn_male_sibling_40 = {
 
-		allow = {
-			always = yes
-		}
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
 
-		effect = {
+    allow = {
+      always = yes
+    }
 
-			create_character = {
-				random_traits = yes
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				female = no
-				age = 16
-				flag = spawned_vassal
-				attributes = {
-					martial = 20
-					diplomacy = 20
-					stewardship = 20
-					intrigue = 20
-					learning = 20
-				}
-				health = 10
-				fertility = 2
-				trait = content
-				trait = trusting
-                trait = genius
-                trait = strong
-                trait = kind
-                trait = temperate
-			}
-            
-            hidden_tooltip = {
-				any_courtier = {
-					limit = {
-		                has_character_flag = spawned_vassal
-					}
-					opinion = {
-						modifier = opinion_cheat_loyal
-						who = ROOT
-					}
-				}
-				finalize_scmp_spawned_character_effect = yes
-		    }
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = no
+        age = 40
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
         }
-	}
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
 
-	spawn_commander = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
+      hidden_tooltip = {
 
-		allow = {
-			always = yes
-		}
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				female = no
-				age = 20
-				attributes = {
-					martial = 70
-					diplomacy = 10
-					stewardship = 10
-					intrigue = 10
-					learning = 10
-				}
-				health = 25
-				fertility = 1
-				trait = brilliant_strategist
-				trait = strong
-				trait = brave
-				trait = content
-				trait = honest
-				trait = trusting
-			}
+              set_mother = PREVPREV
+            }
+          }
         }
-	}
 
-	spawn_physician = {
-	
-		potential = {
-		    ai = no
-            has_character_flag = cheats_enabled
-            has_character_flag = cspawn_enabled
-            has_character_flag = show_spawn_courtier
-		}
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
 
-		allow = {
-			always = yes
-		}
-
-		effect = {
-
-			create_character = {
-				random_traits = yes
-				religion = ROOT
-				culture = ROOT
-				race = ROOT
-				female = no
-				age = 20
-				attributes = {
-					martial = 10
-					diplomacy = 10
-					stewardship = 10
-					intrigue = 10
-					learning = 50
-				}
-				health = 25
-				fertility = 1
-				trait = mastermind_theologian
-				trait = content
-				trait = trusting
-				trait = physician
-			}
+              set_father = PREVPREV
+            }
+          }
         }
-	}
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
+
+  spawn_female_sibling_6 = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = yes
+        age = 6
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
+        }
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
+
+      hidden_tooltip = {
+
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_mother = PREVPREV
+            }
+          }
+        }
+
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_father = PREVPREV
+            }
+          }
+        }
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
+
+  spawn_female_sibling_16 = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = yes
+        age = 16
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
+        }
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
+
+      hidden_tooltip = {
+
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_mother = PREVPREV
+            }
+          }
+        }
+
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_father = PREVPREV
+            }
+          }
+        }
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
+
+  spawn_female_sibling_24 = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = yes
+        age = 24
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
+        }
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
+
+      hidden_tooltip = {
+
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_mother = PREVPREV
+            }
+          }
+        }
+
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_father = PREVPREV
+            }
+          }
+        }
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
+
+  spawn_female_sibling_30 = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = yes
+        age = 30
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
+        }
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
+
+      hidden_tooltip = {
+
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_mother = PREVPREV
+            }
+          }
+        }
+
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_father = PREVPREV
+            }
+          }
+        }
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
+
+  spawn_female_sibling_40 = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_sibling
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        dynasty = ROOT
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        flag = spawned_sibling
+        female = yes
+        age = 40
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+
+        }
+        health = 6
+        fertility = 1
+        trait = genius
+        trait = strong
+      }
+
+      hidden_tooltip = {
+
+        mother_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_mother = PREVPREV
+            }
+          }
+        }
+
+        father_even_if_dead = {
+          ROOT = {
+            any_courtier = {
+              limit = {
+                has_character_flag = spawned_sibling
+              }
+
+              set_father = PREVPREV
+            }
+          }
+        }
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
+
+  ##################
+  ##SPAWN COURTIER##
+  ##################
+
+  show_spawn_courtier = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      NOT = { has_character_flag = show_spawn_courtier }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_spawn_courtier
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_spawn_courtier = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_spawn_courtier
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  spawn_marshal = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        female = no
+        age = 20
+        attributes = {
+          martial = 60
+          diplomacy = 10
+          stewardship = 10
+          intrigue = 10
+          learning = 10
+        }
+        health = 6
+        fertility = 1
+        trait = brilliant_strategist
+        trait = strong
+        trait = brave
+        trait = content
+        trait = honest
+        trait = trusting
+        trait = organizer
+      }
+    }
+  }
+
+  spawn_spymaster = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        female = no
+        age = 20
+        attributes = {
+          martial = 10
+          diplomacy = 10
+          stewardship = 10
+          intrigue = 60
+          learning = 10
+
+        }
+        health = 6
+        fertility = 1
+        trait = elusive_shadow
+        trait = quick
+        trait = content
+        trait = trusting
+      }
+    }
+  }
+
+  spawn_steward = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        female = no
+        age = 20
+        attributes = {
+          martial = 10
+          diplomacy = 10
+          stewardship = 60
+          intrigue = 10
+          learning = 10
+
+        }
+        health = 6
+        fertility = 1
+        trait = midas_touched
+        trait = quick
+        trait = content
+        trait = trusting
+      }
+    }
+  }
+
+  spawn_chancellor = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        female = no
+        age = 20
+        attributes = {
+          martial = 10
+          diplomacy = 60
+          stewardship = 10
+          intrigue = 10
+          learning = 10
+
+        }
+        health = 6
+        fertility = 1
+        trait = grey_eminence
+        trait = quick
+        trait = content
+        trait = trusting
+        trait = gregarious
+      }
+    }
+  }
+
+  spawn_priest = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        female = no
+        age = 20
+        attributes = {
+          martial = 10
+          diplomacy = 10
+          stewardship = 10
+          intrigue = 10
+          learning = 60
+
+        }
+        health = 6
+        fertility = 1
+        trait = mastermind_theologian
+        trait = content
+        trait = trusting
+        trait = kind
+        trait = honest
+        trait = chaste
+        trait = humble
+        trait = charitable
+        trait = just
+        trait = temperate
+        trait = patient
+      }
+    }
+  }
+
+  spawn_wife = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        female = yes
+        age = 16
+        flag = spawned_wife
+        attributes = {
+          martial = 50
+          diplomacy = 50
+          stewardship = 50
+          intrigue = 50
+          learning = 50
+
+        }
+        health = 10
+        fertility = 2
+        trait = elusive_shadow
+        trait = content
+        trait = genius
+        trait = strong
+        trait = kind
+        trait = temperate
+      }
+      finalize_scmp_spawned_character_effect = yes
+    }
+  }
+
+  spawn_vassal = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        female = no
+        age = 16
+        flag = spawned_vassal
+        attributes = {
+          martial = 20
+          diplomacy = 20
+          stewardship = 20
+          intrigue = 20
+          learning = 20
+        }
+        health = 10
+        fertility = 2
+        trait = content
+        trait = trusting
+        trait = genius
+        trait = strong
+        trait = kind
+        trait = temperate
+      }
+
+      hidden_tooltip = {
+        any_courtier = {
+          limit = {
+            has_character_flag = spawned_vassal
+          }
+          opinion = {
+            modifier = opinion_cheat_loyal
+            who = ROOT
+          }
+        }
+        finalize_scmp_spawned_character_effect = yes
+      }
+    }
+  }
+
+  spawn_commander = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        female = no
+        age = 20
+        attributes = {
+          martial = 70
+          diplomacy = 10
+          stewardship = 10
+          intrigue = 10
+          learning = 10
+        }
+        health = 25
+        fertility = 1
+        trait = brilliant_strategist
+        trait = strong
+        trait = brave
+        trait = content
+        trait = honest
+        trait = trusting
+      }
+    }
+  }
+
+  spawn_physician = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = cspawn_enabled
+      has_character_flag = show_spawn_courtier
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+
+      create_character = {
+        random_traits = yes
+        religion = ROOT
+        culture = ROOT
+        race = ROOT
+        female = no
+        age = 20
+        attributes = {
+          martial = 10
+          diplomacy = 10
+          stewardship = 10
+          intrigue = 10
+          learning = 50
+        }
+        health = 25
+        fertility = 1
+        trait = mastermind_theologian
+        trait = content
+        trait = trusting
+        trait = physician
+      }
+    }
+  }
 }
-
-
-

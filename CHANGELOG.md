@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-06-09
+
+### Changed
+- **Formatting pass** across all `.txt`/`.gfx` files. Mechanical normalization only:
+  - Re-indent every line to 2 spaces per brace-nesting level (was a mix of tabs, 4-space, 8-space, and tab+space hybrid).
+  - Strip trailing whitespace (~240 lines across 7 files).
+  - Fix inline spacing nits: `=no` → `= no` (1 case), `{X` → `{ X` and `X}` → `X }` (~20 cases, mostly in `cheats_menu_titles.txt`).
+- Zero semantic changes — token sequences and brace counts identical to v0.2.0.
+
 ## [0.2.0] - 2026-06-08
 
 ### Added
