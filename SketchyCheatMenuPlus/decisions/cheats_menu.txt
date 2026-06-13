@@ -1612,26 +1612,15 @@ targetted_decisions = {
         }
         FROM = {
           set_father = ROOT
+          set_mother = 0
           if = {
             limit = {
-              is_married = yes
+              ROOT = { is_married = yes }
             }
             ROOT = {
-              spouse_even_if_dead = {
+              spouse = {
                 FROM = {
                   set_mother = PREV
-                }
-              }
-            }
-          }
-          if = {
-            limit = {
-              is_married = no
-            }
-            ROOT = {
-              spouse_even_if_dead = {
-                FROM = {
-                  set_mother = 0
                 }
               }
             }
@@ -1664,33 +1653,15 @@ targetted_decisions = {
         }
         FROM = {
           set_mother = ROOT
-          # BUG: female-ROOT branch has both `if` gates set
-          # to is_married = yes (the second should be no).
-          # Beyond the typo: limit = { is_married = X } sits
-          # inside FROM = { ... }, so it tests the player's
-          # marital status, not the target's — the male-ROOT
-          # branch has the same scope issue but its correct
-          # yes/no pair masks the effect.
+          set_father = 0
           if = {
             limit = {
-              is_married = yes
+              ROOT = { is_married = yes }
             }
             ROOT = {
-              spouse_even_if_dead = {
+              spouse = {
                 FROM = {
                   set_father = PREV
-                }
-              }
-            }
-          }
-          if = {
-            limit = {
-              is_married = yes
-            }
-            ROOT = {
-              spouse_even_if_dead = {
-                FROM = {
-                  set_father = 0
                 }
               }
             }

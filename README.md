@@ -70,7 +70,11 @@ Sketchy Cheat Menu Plus is a content mod that doesn't overwrite base-game files,
 
 Full support. This mod ships with `dependencies = { "CleanSlate" }` declared, so it works with CleanSlate enabled and on plain vanilla.
 
-Trait IDs are auto-adapted. CleanSlate renames several traits (physique, beauty, terrain-leader traits, the tier-2 cleric education, and others) and sets a `cleanslate_active` global flag at startup; when that flag is present, this mod's trait-toggle decisions use CleanSlate's trait names instead of vanilla's. **CleanSlate users — make sure you're on the latest version from [GitHub](https://github.com/ck2plus/CleanSlate)** — the startup flag is a recent addition. On an older CleanSlate that lacks the flag, trait toggles for renamed traits silently fail because the mod still references vanilla trait IDs.
+Trait IDs are auto-adapted. CleanSlate renames several traits (physique, beauty, terrain-leader traits, the tier-2 cleric education, and others) and sets a `cleanslate_active` global flag at startup; when that flag is present, this mod's trait-toggle decisions use CleanSlate's trait names instead of vanilla's.
+
+Aztec culture and building IDs are also auto-adapted. CleanSlate renames the Aztec culture (`nahuatl` → `nahua`) along with its cultural building IDs (`ca_culture_nahuatl_*` → `ca_culture_nahua_*`, plus the matching `tb_*` tribal counterparts); the `convert_*` strip helpers and the `upgrade_castle` culture-aware add pick the matching ID set under each stack.
+
+**CleanSlate users — make sure you're on the latest version from [GitHub](https://github.com/ck2plus/CleanSlate)** — the startup flag is a recent addition. Without it, the mod uses vanilla IDs throughout, so trait-toggle and Aztec-building operations silently fail on a CleanSlate stack.
 
 ### CK2+
 

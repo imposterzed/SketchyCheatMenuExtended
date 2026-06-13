@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-06-12
+
+### Fixed
+- **`convert_*` orphan-building freeze** — `convert_to` leaves the old holding's buildings on the slot, which froze the game. Each `convert_*` decision now strips the source type's buildings before `convert_to` via new helpers in `common/scripted_effects/scmp_holding_effects.txt` (one `strip_<type>_buildings_effect` per source type: castle, temple, city, tribal, nomad). The Aztec rename (`ca_culture_nahuatl_*` / `ca_culture_nahua_*`) is flag-gated.
+- **`convert_*` potential over-broad capital filter** — `is_capital = yes` at settlement scope matches any county primary holding, not just the realm capital. New filter combines `is_capital = yes` with `FROM = { capital_holding = { title = ROOT } }`, so only the actual realm capital is blocked; lesser county primaries stay convertible.
+- **`join_their_dynasty` scope + duplicate-gate** (`cheats_menu.txt`) — `limit = { is_married = X }` sat inside `FROM = { ... }`, so it tested the player's marital status instead of the target's; the female-ROOT branch additionally had both `if` blocks gated on `is_married = yes`. Both branches rewritten to default the non-ROOT parent slot to 0 and conditionally override to the target's spouse when married.
+
+### Changed
+- **`upgrade_castle` is now culture-aware** (decision + potential). Previously the decision added all 26 cultural-building families unconditionally (~104 inactive entries per cast). Routed through `add_castle_culture_buildings_effect` which adds only the family matching the holding's current culture. The matching trigger `has_castle_culture_buildings_trigger` re-surfaces the decision after a culture shift until the new culture's tier-4 building is built. The Aztec rename is flag-gated end-to-end. Both helpers live in new files under `common/scripted_effects/` and `common/scripted_triggers/`. Culture checks wrap in `location = { culture = X }` to read the province's current culture; bare `culture = X` at `settlement_decisions` scope reads the settlement's stored culture, which doesn't update after province culture shifts.
+
 ## [0.3.1] - 2026-06-09
 
 ### Changed

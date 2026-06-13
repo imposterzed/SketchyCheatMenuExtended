@@ -1,0 +1,270 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##               Holding-Building Triggers                ##
+############################################################
+
+# ===== Culture-matching presence checks ===== #
+
+# Returns yes when the holding has the tier-4 cultural building
+# for its current culture (tier-4 implies 1-3 via vanilla's
+# prerequisite chain). Cultures without a cultural-building
+# family fall through to always = yes.
+
+# castle: 26 cultural families
+has_castle_culture_buildings_trigger = {
+  trigger_if = {
+    limit = { location = { culture = dutch } }
+    has_building = ca_culture_dutch_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture = ethiopian } }
+    has_building = ca_culture_ethiopian_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture = frankish
+          culture = occitan
+          culture = norman
+          culture = german
+          culture = breton
+          culture = outremer
+        }
+      }
+    }
+    has_building = ca_culture_frank_norman_german_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture = lombard
+          culture = old_frankish
+        }
+      }
+    }
+    has_building = ca_culture_germanic_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture = turkish
+          culture = pecheneg
+          culture = cuman
+          culture = khazar
+          culture = bolghar
+          culture = avar
+          culture = karluk
+          culture = kirghiz
+          culture = uyghur
+          culture = mongol
+          culture = khitan
+          culture_group = iranian
+        }
+      }
+    }
+    has_building = ca_culture_group_altaic_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture = bedouin_arabic
+          culture = levantine_arabic
+          culture = egyptian_arabic
+        }
+      }
+    }
+    has_building = ca_culture_group_arabic_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture_group = baltic
+          culture_group = finno_ugric
+        }
+      }
+    }
+    has_building = ca_culture_group_baltic_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture_group = byzantine
+          culture = coptic
+          culture = arberian
+        }
+      }
+    }
+    has_building = ca_culture_group_byzantine_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture_group = iberian } }
+    has_building = ca_culture_group_iberian_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture_group = north_germanic
+          culture = saxon
+          culture = old_saxon
+          culture = frisian
+        }
+      }
+    }
+    has_building = ca_culture_group_north_germanic_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture_group = south_slavic } }
+    has_building = ca_culture_group_south_slavic_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture_group = west_slavic
+          culture = hungarian
+        }
+      }
+    }
+    has_building = ca_culture_hungarian_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture_group = indo_aryan_group
+          culture_group = dravidian_group
+        }
+      }
+    }
+    has_building = ca_culture_indian_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture = irish } }
+    has_building = ca_culture_irish_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture = italian
+          culture = dalmatian
+        }
+      }
+    }
+    has_building = ca_culture_italian_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture_group = israelite } }
+    has_building = ca_culture_jewish_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture = andalusian_arabic
+          culture = maghreb_arabic
+        }
+      }
+    }
+    has_building = ca_culture_moors_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture = nubian } }
+    has_building = ca_culture_nubian_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture = pictish } }
+    has_building = ca_culture_pictish_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture_group = east_slavic } }
+    has_building = ca_culture_russian_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture = english
+          culture = welsh
+        }
+      }
+    }
+    has_building = ca_culture_saxon_english_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture = scottish } }
+    has_building = ca_culture_scottish_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture = somali } }
+    has_building = ca_culture_somali_4
+  }
+
+  trigger_else_if = {
+    limit = { location = { culture = suebi } }
+    has_building = ca_culture_suebi_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      location = {
+        OR = {
+          culture_group = west_african
+          culture_group = central_african
+          culture = daju
+        }
+      }
+    }
+    has_building = ca_culture_west_african_4
+  }
+
+  # Aztec (CleanSlate rename)
+  trigger_else_if = {
+    limit = {
+      has_global_flag = cleanslate_active
+      location = { culture = nahua }
+    }
+    has_building = ca_culture_nahua_4
+  }
+
+  trigger_else_if = {
+    limit = {
+      NOT = { has_global_flag = cleanslate_active }
+      location = { culture = nahuatl }
+    }
+    has_building = ca_culture_nahuatl_4
+  }
+
+  trigger_else = {
+    always = yes
+  }
+}
