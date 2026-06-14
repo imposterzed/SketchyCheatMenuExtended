@@ -6,6 +6,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.3] - 2026-06-14
+
+### Changed
+- **Trait menu sections reorganized into logical groups.** Order changed from chronological-by-add to player-intent groups: core character (Cheat Traits, Virtues, Sins, Personality, Education, Health & Congenital), combat / champion (Leadership, Warriors, Holy War Rewards, Warrior Lodge, Chinese Commander, Raiding), lifestyle / status (Lifestyles, Religious Markers, Kinslayer, Misc Traits, Memes), bulk-on-others (Vassal Traits, Dynasty & Spouse Traits). Combat cluster ordered by audience breadth (universal → religion-locked → culture-locked → DLC-locked).
+- **Within-section reorders** for sections where chronological-of-add ordering was incoherent:
+  - **Cheat Traits**: alphabetical by display name (Beloved, Immortal, Master Builder, Master Commander, Master Landowner, Master Plotter).
+  - **Personality**: alphabetical by the positive member of each trait pair, with pairs adjacent (e.g., brave/craven, gregarious/shy, just/arbitrary). Single-negative traits (cruel, stubborn) last.
+  - **Education**: canonical CK2 stat order (Diplomacy / Martial / Stewardship / Intrigue / Learning) instead of the inherited Sketchy order.
+  - **Health & Congenital**: ordered good-to-bad — sweeps first, then positive genetic alphabetical by display (Attractive / Genius / Quick / Strong), then mixed-positive (Giant / Left-Handed), then negative health states, then cosmetic-negative (Fat / Malnourished).
+  - **Leadership**: grouped (Standard 12 → Unit-specialty 4 → Terrain 5), alphabetical by user-facing display within each group.
+  - **Lifestyles**: alphabetical by display name — Master Schemer / Master Seducer / Master Seductress group with the M's (between Impaler and Mystic), and faqih placed immediately after scholar (religion-mirrored pair — the only positional exception).
+  - **Holy War Rewards**: alphabetical by primary trait display name across religions (Ares' Own → Crusader [+king/+queen] → Eagle Knight [+Sun Warrior] → Gond-i Shahanshah → Hound of Dievas → Kailash Guardian → Kanai → Mujahid → Nyame's Shield → Perun's Chosen → Skylord → Ukko's Hammer → Valhalla Bound).
+  - **Warrior Lodge**: alphabetical by user-facing display (Aeneator → Fearsome → Forest Ambusher → Marauder → Mountain Guardian → Pillar of the Plains → Scorcher → Shield of the Tundra → Spirit Warrior).
+  - **Chinese Commander**: alphabetical by display (Way of the Dog → Dragon → Leopard → Tiger).
+  - **Misc Traits**: positive traits first (Augustus, Heresiarch, Peasant Leader), then Child of Concubine as transition (remove-only birth-marker), then negative traits alphabetical (Blinded, Cannibal, Eunuch, Excommunicated, Homosexual, Lunatic, Possessed, Scarred).
+- Mechanical refactor only — zero semantic changes. Decision keys, brace counts, and token multisets verified identical to v0.6.2.
+- **README trait-toggles category list** reordered to match the new menu order (virtues / sins / personality / beauty&physique / combat&leadership / warriors / HWR / warrior lodge / chinese commander / raiding / lifestyle / religious markers / kinslayer / memes).
+- **Education group comment** ("# set_<X>_education strips ALL 20 education traits...") moved to sit before `set_diplomacy_education` (the new first set_X under DMSIL order) instead of remaining attached to set_martial_education in its post-reorder position 2.
+
 ## [0.6.2] - 2026-06-14
 
 ### Added
