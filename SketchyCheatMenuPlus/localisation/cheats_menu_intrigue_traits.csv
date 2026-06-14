@@ -1346,3 +1346,69 @@ add_zodiac_pisces;--------Add Pisces;;;;;;;;;;;;;x
 add_zodiac_pisces_desc;Add Pisces;;;;;;;;;;;;;x
 remove_zodiac_pisces;--------Remove Pisces;;;;;;;;;;;;;x
 remove_zodiac_pisces_desc;Remove Pisces;;;;;;;;;;;;;x
+
+show_childhood;----Show Childhood;;;;;;;;;;;;;x
+show_childhood_desc;Show Childhood;;;;;;;;;;;;;x
+
+hide_childhood;----Hide Childhood;;;;;;;;;;;;;x
+hide_childhood_desc;Hide Childhood;;;;;;;;;;;;;x
+add_affectionate;--------Add Affectionate;;;;;;;;;;;;;x
+add_affectionate_desc;Add Affectionate;;;;;;;;;;;;;x
+
+remove_affectionate;--------Remove Affectionate;;;;;;;;;;;;;x
+remove_affectionate_desc;Remove Affectionate;;;;;;;;;;;;;x
+add_brooding;--------Add Brooding;;;;;;;;;;;;;x
+add_brooding_desc;Add Brooding;;;;;;;;;;;;;x
+
+remove_brooding;--------Remove Brooding;;;;;;;;;;;;;x
+remove_brooding_desc;Remove Brooding;;;;;;;;;;;;;x
+add_conscientious;--------Add Conscientious;;;;;;;;;;;;;x
+add_conscientious_desc;Add Conscientious;;;;;;;;;;;;;x
+
+remove_conscientious;--------Remove Conscientious;;;;;;;;;;;;;x
+remove_conscientious_desc;Remove Conscientious;;;;;;;;;;;;;x
+add_curious;--------Add Curious;;;;;;;;;;;;;x
+add_curious_desc;Add Curious;;;;;;;;;;;;;x
+
+remove_curious;--------Remove Curious;;;;;;;;;;;;;x
+remove_curious_desc;Remove Curious;;;;;;;;;;;;;x
+add_fussy;--------Add Fussy;;;;;;;;;;;;;x
+add_fussy_desc;Add Fussy;;;;;;;;;;;;;x
+
+remove_fussy;--------Remove Fussy;;;;;;;;;;;;;x
+remove_fussy_desc;Remove Fussy;;;;;;;;;;;;;x
+add_haughty;--------Add Haughty;;;;;;;;;;;;;x
+add_haughty_desc;Add Haughty;;;;;;;;;;;;;x
+
+remove_haughty;--------Remove Haughty;;;;;;;;;;;;;x
+remove_haughty_desc;Remove Haughty;;;;;;;;;;;;;x
+add_idolizer;--------Add Idolizer;;;;;;;;;;;;;x
+add_idolizer_desc;Add Idolizer;;;;;;;;;;;;;x
+
+remove_idolizer;--------Remove Idolizer;;;;;;;;;;;;;x
+remove_idolizer_desc;Remove Idolizer;;;;;;;;;;;;;x
+add_indolent;--------Add Indolent;;;;;;;;;;;;;x
+add_indolent_desc;Add Indolent;;;;;;;;;;;;;x
+
+remove_indolent;--------Remove Indolent;;;;;;;;;;;;;x
+remove_indolent_desc;Remove Indolent;;;;;;;;;;;;;x
+add_playful;--------Add Playful;;;;;;;;;;;;;x
+add_playful_desc;Add Playful;;;;;;;;;;;;;x
+
+remove_playful;--------Remove Playful;;;;;;;;;;;;;x
+remove_playful_desc;Remove Playful;;;;;;;;;;;;;x
+add_rowdy;--------Add Rowdy;;;;;;;;;;;;;x
+add_rowdy_desc;Add Rowdy;;;;;;;;;;;;;x
+
+remove_rowdy;--------Remove Rowdy;;;;;;;;;;;;;x
+remove_rowdy_desc;Remove Rowdy;;;;;;;;;;;;;x
+add_timid;--------Add Timid;;;;;;;;;;;;;x
+add_timid_desc;Add Timid;;;;;;;;;;;;;x
+
+remove_timid;--------Remove Timid;;;;;;;;;;;;;x
+remove_timid_desc;Remove Timid;;;;;;;;;;;;;x
+add_willful;--------Add Willful;;;;;;;;;;;;;x
+add_willful_desc;Add Willful;;;;;;;;;;;;;x
+
+remove_willful;--------Remove Willful;;;;;;;;;;;;;x
+remove_willful_desc;Remove Willful;;;;;;;;;;;;;x

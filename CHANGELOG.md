@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.10] - 2026-06-14
+
+### Added
+- **Childhood section** between Zodiac and Kinslayer — 12 new add/remove pairs for vanilla's childhood trait family (affectionate, brooding, conscientious, curious, fussy, haughty, idolizer, indolent, playful, rowdy, timid, willful). Alphabetical by display name. All base-game, no DLC / religion / sex / culture gates per vanilla.
+- **Age-gated visibility** — `show_childhood` section toggle gated on `is_adult = no`, so the section button only appears for under-16 characters. Each `add_X` decision additionally carries `is_adult = no` in its own potential to handle the edge case where the show flag is set on a child who then ages up while the section is open (per-decision gate hides the toggles even with the flag still set; `hide_childhood` stays available to clean up).
+- **Engine-mutex wrap** — `rowdy ↔ timid` is the only mutually-declared opposites pair in the childhood family (the other 10 have no opposites). `add_rowdy` / `add_timid` strip the partner via if/limit before adding, matching v0.6.9's bidirectional convention.
+- **2 new GFX sprite entries** (`GFX_show_childhood`, `GFX_hide_childhood`) pointing to the existing `decision_icon_cheats.dds` placeholder.
+
+### Changed
+- **README** — trait count 204 → 216; "childhood" added to the categories list.
+
 ## [0.6.9] - 2026-06-14
 
 ### Added

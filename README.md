@@ -22,7 +22,7 @@ Right-click any character to:
 
 ### Trait toggles
 
-Paired add/remove decisions for 204 traits across virtues, sins, personality, beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese commander, raiding, lifestyle, religious markers, birth markers, zodiac, kinslayer, memes, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
+Paired add/remove decisions for 216 traits across virtues, sins, personality, beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese commander, raiding, lifestyle, religious markers, birth markers, zodiac, childhood, kinslayer, memes, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
 
 ### Spawning
 
