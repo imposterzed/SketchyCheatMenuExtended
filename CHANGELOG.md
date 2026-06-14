@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.2] - 2026-06-14
+
+### Added
+- **3 new Tier 3 DLC menu sections** = 18 new add/remove trait-toggle pairs covering vanilla's DLC-themed combat / commander / raiding trait families.
+  - **Chinese Commander** (new section, 4 traits): `logistics_expert` (Way of the Dog), `master_of_flame` (Way of the Dragon), `sapper` (Way of the Leopard), `levy_coordinator` (Way of the Tiger). Vanilla restricts natural acquisition to Han culture / Chinese-court characters; cheat menu allows free assignment per established precedent (no clean cultural alternative).
+  - **Warrior Lodge** (new section, 9 traits): `norse_leader`, `tengri_leader`, `baltic_leader`, `finnish_leader`, `slavic_leader`, `west_african_leader`, `zun_leader`, `bon_leader`, `hellenic_leader`. Each `add_*` decision gated to its associated reformed-pagan religion (matching vanilla's award religion). Section itself gated via new `has_warrior_lodge_religion_trigger` — non-lodge religions don't see the empty menu (matches Holy War Rewards section-gating pattern).
+  - **Raiding** (new section, 5 traits): `viking` (Norse-pagan gate), `pirate` (no gate — vanilla's `potential` block allows Norse pagans directly, so any character can naturally have it), `ravager` (no gate, upgrade trait), `seaking` (male sex-gate), `sea_queen` (female sex-gate). One CleanSlate compat helper added for `seaking` → `sea_king` (vanilla → CleanSlate rename).
+- **1 new trait compat helper**: `add_seaking_trait_effect` / `remove_seaking_trait_effect` / `has_seaking_trait_trigger` (routes vanilla `seaking` ↔ CleanSlate `sea_king`).
+- **1 new religion compat trigger**: `has_warrior_lodge_religion_trigger` — covers 9 reformed-pagan religions (Norse, Tengri, Baltic, Finnish, Slavic, West African, Zun, Bon via existing `is_bon_religion_trigger`, Hellenic). Used by `show_warrior_lodge` to hide the empty menu for non-lodge religions.
+
+### Changed
+- **README Optional DLC section** — added Jade Dragon entry (Chinese Commander toggles stay available) and The Old Gods entry (Viking / Pirate / Ravager raiding toggles stay available). Holy Fury entry reorganized: kinslayer behavior flows together, then Warrior Lodge leaders and Sea King / Sea Queen pair noted as staying available without HF.
+- **README modder error.log count** — bumped 30 → 31 (one new compat helper for `seaking` adds one inactive-branch `unknown trait` warning per stack).
+
 ## [0.6.1] - 2026-06-13
 
 ### Added

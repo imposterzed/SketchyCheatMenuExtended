@@ -347,6 +347,26 @@ remove_cannibal_trait_effect = {
   }
 }
 
+# Raiding
+add_seaking_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = sea_king
+  }
+  else = {
+    add_trait = seaking
+  }
+}
+remove_seaking_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = sea_king
+  }
+  else = {
+    remove_trait = seaking
+  }
+}
+
 # Holy War Veterans
 add_eagle_warrior_trait_effect = {
   if = {

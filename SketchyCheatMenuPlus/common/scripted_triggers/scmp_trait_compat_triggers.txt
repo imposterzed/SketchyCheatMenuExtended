@@ -191,6 +191,17 @@ has_cannibal_trait_trigger = {
   }
 }
 
+# Raiding
+has_seaking_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = sea_king
+  }
+  trigger_else = {
+    trait = seaking
+  }
+}
+
 # Holy War Veterans
 has_eagle_warrior_trait_trigger = {
   trigger_if = {
@@ -273,6 +284,29 @@ is_bon_religion_trigger = {
       religion = bon
       religion = bon_reformed
     }
+  }
+}
+
+# Has any Warrior Lodge religion (9 reformed-pagan religions with a Warrior Lodge leader trait)
+has_warrior_lodge_religion_trigger = {
+  OR = {
+    religion = norse_pagan
+    religion = norse_pagan_reformed
+    religion = tengri_pagan
+    religion = tengri_pagan_reformed
+    religion = baltic_pagan
+    religion = baltic_pagan_reformed
+    religion = finnish_pagan
+    religion = finnish_pagan_reformed
+    religion = slavic_pagan
+    religion = slavic_pagan_reformed
+    religion = west_african_pagan
+    religion = west_african_pagan_reformed
+    religion = zun_pagan
+    religion = zun_pagan_reformed
+    is_bon_religion_trigger = yes
+    religion = hellenic_pagan
+    religion = hellenic_pagan_reformed
   }
 }
 

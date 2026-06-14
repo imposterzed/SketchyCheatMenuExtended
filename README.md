@@ -22,7 +22,7 @@ Right-click any character to:
 
 ### Trait toggles
 
-Paired add/remove decisions for over 130 traits across virtues, sins, personality, lifestyle, combat / leadership, beauty / physique, kinslayer, holy war rewards, warriors, religious markers, memes, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
+Paired add/remove decisions for over 150 traits across virtues, sins, personality, lifestyle, combat / leadership, beauty / physique, kinslayer, holy war rewards, warriors, religious markers, memes, chinese commander, warrior lodge, raiding, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
 
 ### Spawning
 
@@ -47,9 +47,11 @@ Become independent, set your government to feudal, convert your realm or the ent
 The mod works without any DLC. Some cheats are tied to DLC systems and behave differently depending on what you have installed:
 
 - **Conclave** — without it, `make_consort` is hidden.
-- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden. The other 3 kinslayer toggles (kinslayer, familial_kinslayer, dynastic_kinslayer) stay visible for tribal characters on a no-HF setup — vanilla itself routes tribal characters to those traits when HF is absent. Removal of `tribal_kinslayer` works on any setup (handles cleanup if a character carries the trait across HF being toggled).
+- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available.
+- **Jade Dragon** — the 4 Chinese Commander toggles (Way of the Dog / Dragon / Leopard / Tiger) stay available.
 - **Monks and Mystics** — without it, the society cheats (`add_society_points`, `increase_society_rank`) don't appear, since you can't be in a society.
 - **Rajas of India** — `add_war_elephant_leader` / `remove_war_elephant_leader` stay available.
+- **The Old Gods** — the Viking / Pirate / Ravager raiding toggles stay available.
 - **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available.
 - **Way of Life** — without it, `get_favor` and `clear_your_focus` are hidden. The 16 lifestyle-trait toggles (schemer, seducer, hedonist, scholar, theologian, etc.) stay available — they grant the trait directly without needing the focus system.
 
@@ -91,7 +93,7 @@ Historically incompatible with upstream; not verified for this fork.
 
 ## For modders
 
-**error.log notes.** CK2's static parser validates every trait ID referenced by a `scripted_trigger`, including IDs in branches that won't execute on the current stack. The CleanSlate compat triggers deliberately reference both vanilla and CleanSlate trait IDs across branches so the runtime picks the right one — but the parser flags the inactive branch's IDs as "unknown trait" warnings (30 on either stack). These are cosmetic; runtime gating on `has_global_flag = cleanslate_active` ensures only the active stack's IDs are evaluated.
+**error.log notes.** CK2's static parser validates every trait ID referenced by a `scripted_trigger`, including IDs in branches that won't execute on the current stack. The CleanSlate compat triggers deliberately reference both vanilla and CleanSlate trait IDs across branches so the runtime picks the right one — but the parser flags the inactive branch's IDs as "unknown trait" warnings (31 on either stack). These are cosmetic; runtime gating on `has_global_flag = cleanslate_active` ensures only the active stack's IDs are evaluated.
 
 **Dev/test events.** Hard-to-reach paths (e.g., verifying the dynasty 777777 "Outcast" label) have console-grant helpers in a sibling sub-mod, **Sketchy Cheat Menu Plus - Debug**. Enable it in the launcher alongside SCMP to use the `SCMPD.*` events — e.g. `event SCMPD.1 <charID>` assigns the target to dynasty 777777. The base mod doesn't ship these events.
 

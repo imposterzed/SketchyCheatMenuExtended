@@ -928,6 +928,132 @@ add_horse_desc;Add Horse;;;;;;;;;;;;;x
 remove_horse;--------Remove Horse;;;;;;;;;;;;;x
 remove_horse_desc;Remove Horse;;;;;;;;;;;;;x
 
+show_chinese_commander;----Show Chinese Commander;;;;;;;;;;;;;x
+show_chinese_commander_desc;Show Chinese Commander;;;;;;;;;;;;;x
+
+hide_chinese_commander;----Hide Chinese Commander;;;;;;;;;;;;;x
+hide_chinese_commander_desc;Hide Chinese Commander;;;;;;;;;;;;;x
+
+add_levy_coordinator;--------Add Way of the Tiger;;;;;;;;;;;;;x
+add_levy_coordinator_desc;Add Way of the Tiger;;;;;;;;;;;;;x
+
+remove_levy_coordinator;--------Remove Way of the Tiger;;;;;;;;;;;;;x
+remove_levy_coordinator_desc;Remove Way of the Tiger;;;;;;;;;;;;;x
+
+add_logistics_expert;--------Add Way of the Dog;;;;;;;;;;;;;x
+add_logistics_expert_desc;Add Way of the Dog;;;;;;;;;;;;;x
+
+remove_logistics_expert;--------Remove Way of the Dog;;;;;;;;;;;;;x
+remove_logistics_expert_desc;Remove Way of the Dog;;;;;;;;;;;;;x
+
+add_master_of_flame;--------Add Way of the Dragon;;;;;;;;;;;;;x
+add_master_of_flame_desc;Add Way of the Dragon;;;;;;;;;;;;;x
+
+remove_master_of_flame;--------Remove Way of the Dragon;;;;;;;;;;;;;x
+remove_master_of_flame_desc;Remove Way of the Dragon;;;;;;;;;;;;;x
+
+add_sapper;--------Add Way of the Leopard;;;;;;;;;;;;;x
+add_sapper_desc;Add Way of the Leopard;;;;;;;;;;;;;x
+
+remove_sapper;--------Remove Way of the Leopard;;;;;;;;;;;;;x
+remove_sapper_desc;Remove Way of the Leopard;;;;;;;;;;;;;x
+
+show_warrior_lodge;----Show Warrior Lodge;;;;;;;;;;;;;x
+show_warrior_lodge_desc;Show Warrior Lodge;;;;;;;;;;;;;x
+
+hide_warrior_lodge;----Hide Warrior Lodge;;;;;;;;;;;;;x
+hide_warrior_lodge_desc;Hide Warrior Lodge;;;;;;;;;;;;;x
+
+add_baltic_leader;--------Add Forest Ambusher;;;;;;;;;;;;;x
+add_baltic_leader_desc;Add Forest Ambusher;;;;;;;;;;;;;x
+
+remove_baltic_leader;--------Remove Forest Ambusher;;;;;;;;;;;;;x
+remove_baltic_leader_desc;Remove Forest Ambusher;;;;;;;;;;;;;x
+
+add_bon_leader;--------Add Mountain Guardian;;;;;;;;;;;;;x
+add_bon_leader_desc;Add Mountain Guardian;;;;;;;;;;;;;x
+
+remove_bon_leader;--------Remove Mountain Guardian;;;;;;;;;;;;;x
+remove_bon_leader_desc;Remove Mountain Guardian;;;;;;;;;;;;;x
+
+add_finnish_leader;--------Add Shield of the Tundra;;;;;;;;;;;;;x
+add_finnish_leader_desc;Add Shield of the Tundra;;;;;;;;;;;;;x
+
+remove_finnish_leader;--------Remove Shield of the Tundra;;;;;;;;;;;;;x
+remove_finnish_leader_desc;Remove Shield of the Tundra;;;;;;;;;;;;;x
+
+add_hellenic_leader;--------Add Aeneator;;;;;;;;;;;;;x
+add_hellenic_leader_desc;Add Aeneator;;;;;;;;;;;;;x
+
+remove_hellenic_leader;--------Remove Aeneator;;;;;;;;;;;;;x
+remove_hellenic_leader_desc;Remove Aeneator;;;;;;;;;;;;;x
+
+add_norse_leader;--------Add Fearsome;;;;;;;;;;;;;x
+add_norse_leader_desc;Add Fearsome;;;;;;;;;;;;;x
+
+remove_norse_leader;--------Remove Fearsome;;;;;;;;;;;;;x
+remove_norse_leader_desc;Remove Fearsome;;;;;;;;;;;;;x
+
+add_slavic_leader;--------Add Pillar of the Plains;;;;;;;;;;;;;x
+add_slavic_leader_desc;Add Pillar of the Plains;;;;;;;;;;;;;x
+
+remove_slavic_leader;--------Remove Pillar of the Plains;;;;;;;;;;;;;x
+remove_slavic_leader_desc;Remove Pillar of the Plains;;;;;;;;;;;;;x
+
+add_tengri_leader;--------Add Marauder;;;;;;;;;;;;;x
+add_tengri_leader_desc;Add Marauder;;;;;;;;;;;;;x
+
+remove_tengri_leader;--------Remove Marauder;;;;;;;;;;;;;x
+remove_tengri_leader_desc;Remove Marauder;;;;;;;;;;;;;x
+
+add_west_african_leader;--------Add Spirit Warrior;;;;;;;;;;;;;x
+add_west_african_leader_desc;Add Spirit Warrior;;;;;;;;;;;;;x
+
+remove_west_african_leader;--------Remove Spirit Warrior;;;;;;;;;;;;;x
+remove_west_african_leader_desc;Remove Spirit Warrior;;;;;;;;;;;;;x
+
+add_zun_leader;--------Add Scorcher;;;;;;;;;;;;;x
+add_zun_leader_desc;Add Scorcher;;;;;;;;;;;;;x
+
+remove_zun_leader;--------Remove Scorcher;;;;;;;;;;;;;x
+remove_zun_leader_desc;Remove Scorcher;;;;;;;;;;;;;x
+
+show_raiding;----Show Raiding;;;;;;;;;;;;;x
+show_raiding_desc;Show Raiding;;;;;;;;;;;;;x
+
+hide_raiding;----Hide Raiding;;;;;;;;;;;;;x
+hide_raiding_desc;Hide Raiding;;;;;;;;;;;;;x
+
+add_viking;--------Add Viking;;;;;;;;;;;;;x
+add_viking_desc;Add Viking;;;;;;;;;;;;;x
+
+remove_viking;--------Remove Viking;;;;;;;;;;;;;x
+remove_viking_desc;Remove Viking;;;;;;;;;;;;;x
+
+add_pirate;--------Add Pirate;;;;;;;;;;;;;x
+add_pirate_desc;Add Pirate;;;;;;;;;;;;;x
+
+remove_pirate;--------Remove Pirate;;;;;;;;;;;;;x
+remove_pirate_desc;Remove Pirate;;;;;;;;;;;;;x
+
+add_ravager;--------Add Ravager;;;;;;;;;;;;;x
+add_ravager_desc;Add Ravager;;;;;;;;;;;;;x
+
+remove_ravager;--------Remove Ravager;;;;;;;;;;;;;x
+remove_ravager_desc;Remove Ravager;;;;;;;;;;;;;x
+
+add_seaking;--------Add Sea King;;;;;;;;;;;;;x
+add_seaking_desc;Add Sea King;;;;;;;;;;;;;x
+
+remove_seaking;--------Remove Sea King;;;;;;;;;;;;;x
+remove_seaking_desc;Remove Sea King;;;;;;;;;;;;;x
+
+add_sea_queen;--------Add Sea Queen;;;;;;;;;;;;;x
+add_sea_queen_desc;Add Sea Queen;;;;;;;;;;;;;x
+
+remove_sea_queen;--------Remove Sea Queen;;;;;;;;;;;;;x
+remove_sea_queen_desc;Remove Sea Queen;;;;;;;;;;;;;x
+
 show_kinslayer;----Show Kinslayer Traits;;;;;;;;;;;;;x
 show_kinslayer_desc;Show Kinslayer Traits;;;;;;;;;;;;;x
 
