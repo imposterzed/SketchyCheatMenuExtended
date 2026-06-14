@@ -22,7 +22,7 @@ Right-click any character to:
 
 ### Trait toggles
 
-Paired add/remove decisions for over 100 traits across virtues, sins, personality, lifestyle, combat / leadership, beauty / physique, kinslayer, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
+Paired add/remove decisions for over 120 traits across virtues, sins, personality, lifestyle, combat / leadership, beauty / physique, kinslayer, holy war rewards, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
 
 ### Spawning
 

@@ -347,6 +347,102 @@ remove_cannibal_trait_effect = {
   }
 }
 
+# Holy War Veterans
+add_eagle_warrior_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = eagle_knight
+  }
+  else = {
+    add_trait = eagle_warrior
+  }
+}
+remove_eagle_warrior_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = eagle_knight
+  }
+  else = {
+    remove_trait = eagle_warrior
+  }
+}
+
+add_romuvas_own_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = hound_of_dievas
+  }
+  else = {
+    add_trait = romuvas_own
+  }
+}
+remove_romuvas_own_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = hound_of_dievas
+  }
+  else = {
+    remove_trait = romuvas_own
+  }
+}
+
+add_shaddai_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = kanai
+  }
+  else = {
+    add_trait = shaddai
+  }
+}
+remove_shaddai_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = kanai
+  }
+  else = {
+    remove_trait = shaddai
+  }
+}
+
+add_tengri_warrior_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = skylord
+  }
+  else = {
+    add_trait = tengri_warrior
+  }
+}
+remove_tengri_warrior_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = skylord
+  }
+  else = {
+    remove_trait = tengri_warrior
+  }
+}
+
+add_ukkos_shield_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = ukkos_hammer
+  }
+  else = {
+    add_trait = ukkos_shield
+  }
+}
+remove_ukkos_shield_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = ukkos_hammer
+  }
+  else = {
+    remove_trait = ukkos_shield
+  }
+}
+
 # Martial Cleric (tier-2 learning)
 # Only the remove side is used (by the 5 set_<X>_education decisions).
 remove_martial_cleric_trait_effect = {

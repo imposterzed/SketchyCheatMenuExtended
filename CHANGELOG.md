@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-06-13
+
+### Added
+- **New Holy War Rewards menu section** with 16 add/remove toggle pairs covering every religion's GHW veteran trait. `crusader` moves here from Misc; new additions: `crusader_king`/`crusader_queen` (sex-mirrored Christian), `mujahid` (Muslim), `valhalla_bound` (Germanic pagan), `kailash_guardian` (Bon — vanilla `bon` / CleanSlate `bon_pagan`), `peruns_chosen` (Slavic), `ares_own` (Hellenic), `nyames_shield` (West African), `gondi_shahansha` (Zoroastrian), `eagle_warrior`/`sun_warrior` (Aztec), `romuvas_own` (Baltic), `tengri_warrior` (Tengri), `ukkos_shield` (Finnish), `shaddai` (Jewish). Religion gates on the `add_*` decisions mirror vanilla's `add_kinslayer_trait_effect`-style cascade: each religion only sees its own GHW reward as an add option. Sex split on the Christian pair. All `remove_*` decisions stay ungated for cleanup after religion changes.
+- **5 new compat helpers** for CleanSlate-renamed GHW veterans: `eagle_warrior`→`eagle_knight`, `romuvas_own`→`hound_of_dievas`, `shaddai`→`kanai`, `tengri_warrior`→`skylord`, `ukkos_shield`→`ukkos_hammer`. Decision keys use vanilla names (per existing convention); display labels show CleanSlate names (per existing convention).
+
+### Changed
+- **`add_crusader` is now religion-gated to Christians.** A non-Christian who previously could cheat-click "Add Crusader" will no longer see it; mujahid / valhalla_bound / kailash_guardian / etc. are now the religion-appropriate alternatives. `remove_crusader` stays ungated for cleanup after religion changes.
+
 ## [0.5.1] - 2026-06-13
 
 ### Added

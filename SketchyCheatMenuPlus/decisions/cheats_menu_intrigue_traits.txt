@@ -6619,62 +6619,6 @@ decisions = {
     }
   }
 
-  remove_crusader = {
-
-
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_misc
-      trait = crusader
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      remove_trait = crusader
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  add_crusader = {
-
-
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_misc
-      NOT = { trait = crusader }
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      add_trait = crusader
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
   remove_lunatic = {
 
 
@@ -7000,6 +6944,997 @@ decisions = {
 
     effect = {
       add_trait = excommunicated
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## ===== Holy War Rewards ===== ##
+  show_holy_war_rewards = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_holy_war_religion_trigger = yes
+      NOT = { has_character_flag = show_holy_war_rewards }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_holy_war_rewards
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_holy_war_rewards = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_holy_war_rewards
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_crusader = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = crusader
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = crusader
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_crusader = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      religion_group = christian
+      NOT = { trait = crusader }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = crusader
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_crusader_king = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = crusader_king
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = crusader_king
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_crusader_king = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      religion_group = christian
+      is_female = no
+      NOT = { trait = crusader_king }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = crusader_king
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_crusader_queen = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = crusader_queen
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = crusader_queen
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_crusader_queen = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      religion_group = christian
+      is_female = yes
+      NOT = { trait = crusader_queen }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = crusader_queen
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_mujahid = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = mujahid
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = mujahid
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_mujahid = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      religion_group = muslim
+      NOT = { trait = mujahid }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = mujahid
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_shaddai = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      has_shaddai_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_shaddai_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_shaddai = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      religion_group = jewish_group
+      NOT = { has_shaddai_trait_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_shaddai_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_gondi_shahansha = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = gondi_shahansha
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = gondi_shahansha
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_gondi_shahansha = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      religion_group = zoroastrian_group
+      NOT = { trait = gondi_shahansha }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = gondi_shahansha
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_kailash_guardian = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = kailash_guardian
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = kailash_guardian
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_kailash_guardian = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      is_bon_religion_trigger = yes
+      NOT = { trait = kailash_guardian }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = kailash_guardian
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_valhalla_bound = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = valhalla_bound
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = valhalla_bound
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_valhalla_bound = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      OR = {
+        religion = norse_pagan
+        religion = norse_pagan_reformed
+      }
+      NOT = { trait = valhalla_bound }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = valhalla_bound
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_peruns_chosen = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = peruns_chosen
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = peruns_chosen
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_peruns_chosen = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      OR = {
+        religion = slavic_pagan
+        religion = slavic_pagan_reformed
+      }
+      NOT = { trait = peruns_chosen }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = peruns_chosen
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_romuvas_own = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      has_romuvas_own_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_romuvas_own_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_romuvas_own = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      OR = {
+        religion = baltic_pagan
+        religion = baltic_pagan_reformed
+      }
+      NOT = { has_romuvas_own_trait_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_romuvas_own_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_ukkos_shield = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      has_ukkos_shield_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_ukkos_shield_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_ukkos_shield = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      OR = {
+        religion = finnish_pagan
+        religion = finnish_pagan_reformed
+      }
+      NOT = { has_ukkos_shield_trait_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_ukkos_shield_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_ares_own = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = ares_own
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = ares_own
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_ares_own = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      OR = {
+        religion = hellenic_pagan
+        religion = hellenic_pagan_reformed
+      }
+      NOT = { trait = ares_own }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = ares_own
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_tengri_warrior = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      has_tengri_warrior_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_tengri_warrior_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_tengri_warrior = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      OR = {
+        religion = tengri_pagan
+        religion = tengri_pagan_reformed
+      }
+      NOT = { has_tengri_warrior_trait_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_tengri_warrior_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_nyames_shield = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = nyames_shield
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = nyames_shield
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_nyames_shield = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      OR = {
+        religion = west_african_pagan
+        religion = west_african_pagan_reformed
+      }
+      NOT = { trait = nyames_shield }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = nyames_shield
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_eagle_warrior = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      has_eagle_warrior_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_eagle_warrior_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_eagle_warrior = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      is_aztec_religion_trigger = yes
+      NOT = { has_eagle_warrior_trait_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_eagle_warrior_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sun_warrior = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      trait = sun_warrior
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sun_warrior
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sun_warrior = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_holy_war_rewards
+      is_aztec_religion_trigger = yes
+      NOT = { trait = sun_warrior }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = sun_warrior
     }
 
     revoke_allowed = {

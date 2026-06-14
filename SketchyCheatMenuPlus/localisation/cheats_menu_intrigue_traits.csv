@@ -736,6 +736,102 @@ add_excommunicated_desc;Add Excommunicated;;;;;;;;;;;;;x
 remove_excommunicated;--------Remove Excommunicated;;;;;;;;;;;;;x
 remove_excommunicated_desc;Remove Excommunicated;;;;;;;;;;;;;x
 
+show_holy_war_rewards;----Show Holy War Rewards;;;;;;;;;;;;;x
+show_holy_war_rewards_desc;Show Holy War Rewards;;;;;;;;;;;;;x
+
+hide_holy_war_rewards;----Hide Holy War Rewards;;;;;;;;;;;;;x
+hide_holy_war_rewards_desc;Hide Holy War Rewards;;;;;;;;;;;;;x
+
+add_crusader_king;--------Add Crusader King;;;;;;;;;;;;;x
+add_crusader_king_desc;Add Crusader King;;;;;;;;;;;;;x
+
+remove_crusader_king;--------Remove Crusader King;;;;;;;;;;;;;x
+remove_crusader_king_desc;Remove Crusader King;;;;;;;;;;;;;x
+
+add_crusader_queen;--------Add Crusader Queen;;;;;;;;;;;;;x
+add_crusader_queen_desc;Add Crusader Queen;;;;;;;;;;;;;x
+
+remove_crusader_queen;--------Remove Crusader Queen;;;;;;;;;;;;;x
+remove_crusader_queen_desc;Remove Crusader Queen;;;;;;;;;;;;;x
+
+add_mujahid;--------Add Mujahid;;;;;;;;;;;;;x
+add_mujahid_desc;Add Mujahid;;;;;;;;;;;;;x
+
+remove_mujahid;--------Remove Mujahid;;;;;;;;;;;;;x
+remove_mujahid_desc;Remove Mujahid;;;;;;;;;;;;;x
+
+add_shaddai;--------Add Kanai;;;;;;;;;;;;;x
+add_shaddai_desc;Add Kanai;;;;;;;;;;;;;x
+
+remove_shaddai;--------Remove Kanai;;;;;;;;;;;;;x
+remove_shaddai_desc;Remove Kanai;;;;;;;;;;;;;x
+
+add_gondi_shahansha;--------Add Gond-i Shahanshah;;;;;;;;;;;;;x
+add_gondi_shahansha_desc;Add Gond-i Shahanshah;;;;;;;;;;;;;x
+
+remove_gondi_shahansha;--------Remove Gond-i Shahanshah;;;;;;;;;;;;;x
+remove_gondi_shahansha_desc;Remove Gond-i Shahanshah;;;;;;;;;;;;;x
+
+add_kailash_guardian;--------Add Kailash Guardian;;;;;;;;;;;;;x
+add_kailash_guardian_desc;Add Kailash Guardian;;;;;;;;;;;;;x
+
+remove_kailash_guardian;--------Remove Kailash Guardian;;;;;;;;;;;;;x
+remove_kailash_guardian_desc;Remove Kailash Guardian;;;;;;;;;;;;;x
+
+add_valhalla_bound;--------Add Valhalla Bound;;;;;;;;;;;;;x
+add_valhalla_bound_desc;Add Valhalla Bound;;;;;;;;;;;;;x
+
+remove_valhalla_bound;--------Remove Valhalla Bound;;;;;;;;;;;;;x
+remove_valhalla_bound_desc;Remove Valhalla Bound;;;;;;;;;;;;;x
+
+add_peruns_chosen;--------Add Perun's Chosen;;;;;;;;;;;;;x
+add_peruns_chosen_desc;Add Perun's Chosen;;;;;;;;;;;;;x
+
+remove_peruns_chosen;--------Remove Perun's Chosen;;;;;;;;;;;;;x
+remove_peruns_chosen_desc;Remove Perun's Chosen;;;;;;;;;;;;;x
+
+add_romuvas_own;--------Add Hound of Dievas;;;;;;;;;;;;;x
+add_romuvas_own_desc;Add Hound of Dievas;;;;;;;;;;;;;x
+
+remove_romuvas_own;--------Remove Hound of Dievas;;;;;;;;;;;;;x
+remove_romuvas_own_desc;Remove Hound of Dievas;;;;;;;;;;;;;x
+
+add_ukkos_shield;--------Add Ukko's Hammer;;;;;;;;;;;;;x
+add_ukkos_shield_desc;Add Ukko's Hammer;;;;;;;;;;;;;x
+
+remove_ukkos_shield;--------Remove Ukko's Hammer;;;;;;;;;;;;;x
+remove_ukkos_shield_desc;Remove Ukko's Hammer;;;;;;;;;;;;;x
+
+add_ares_own;--------Add Ares' Own;;;;;;;;;;;;;x
+add_ares_own_desc;Add Ares' Own;;;;;;;;;;;;;x
+
+remove_ares_own;--------Remove Ares' Own;;;;;;;;;;;;;x
+remove_ares_own_desc;Remove Ares' Own;;;;;;;;;;;;;x
+
+add_tengri_warrior;--------Add Skylord;;;;;;;;;;;;;x
+add_tengri_warrior_desc;Add Skylord;;;;;;;;;;;;;x
+
+remove_tengri_warrior;--------Remove Skylord;;;;;;;;;;;;;x
+remove_tengri_warrior_desc;Remove Skylord;;;;;;;;;;;;;x
+
+add_nyames_shield;--------Add Nyame's Shield;;;;;;;;;;;;;x
+add_nyames_shield_desc;Add Nyame's Shield;;;;;;;;;;;;;x
+
+remove_nyames_shield;--------Remove Nyame's Shield;;;;;;;;;;;;;x
+remove_nyames_shield_desc;Remove Nyame's Shield;;;;;;;;;;;;;x
+
+add_eagle_warrior;--------Add Eagle Knight;;;;;;;;;;;;;x
+add_eagle_warrior_desc;Add Eagle Knight;;;;;;;;;;;;;x
+
+remove_eagle_warrior;--------Remove Eagle Knight;;;;;;;;;;;;;x
+remove_eagle_warrior_desc;Remove Eagle Knight;;;;;;;;;;;;;x
+
+add_sun_warrior;--------Add Sun Warrior;;;;;;;;;;;;;x
+add_sun_warrior_desc;Add Sun Warrior;;;;;;;;;;;;;x
+
+remove_sun_warrior;--------Remove Sun Warrior;;;;;;;;;;;;;x
+remove_sun_warrior_desc;Remove Sun Warrior;;;;;;;;;;;;;x
+
 show_kinslayer;----Show Kinslayer Traits;;;;;;;;;;;;;x
 show_kinslayer_desc;Show Kinslayer Traits;;;;;;;;;;;;;x
 

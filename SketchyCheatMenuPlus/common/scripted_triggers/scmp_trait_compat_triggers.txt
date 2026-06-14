@@ -190,3 +190,114 @@ has_cannibal_trait_trigger = {
     trait = cannibal_trait
   }
 }
+
+# Holy War Veterans
+has_eagle_warrior_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = eagle_knight
+  }
+  trigger_else = {
+    trait = eagle_warrior
+  }
+}
+
+has_romuvas_own_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = hound_of_dievas
+  }
+  trigger_else = {
+    trait = romuvas_own
+  }
+}
+
+has_shaddai_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = kanai
+  }
+  trigger_else = {
+    trait = shaddai
+  }
+}
+
+has_tengri_warrior_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = skylord
+  }
+  trigger_else = {
+    trait = tengri_warrior
+  }
+}
+
+has_ukkos_shield_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = ukkos_hammer
+  }
+  trigger_else = {
+    trait = ukkos_shield
+  }
+}
+
+# Aztec religion
+is_aztec_religion_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      religion = aztec_pagan
+      religion = aztec_pagan_reformed
+    }
+  }
+  trigger_else = {
+    OR = {
+      religion = aztec
+      religion = aztec_reformed
+    }
+  }
+}
+
+# Bon religion
+is_bon_religion_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      religion = bon_pagan
+      religion = bon_pagan_reformed
+    }
+  }
+  trigger_else = {
+    OR = {
+      religion = bon
+      religion = bon_reformed
+    }
+  }
+}
+
+# Has any Holy War Reward religion (13 religions / groups with a GHW veteran trait)
+has_holy_war_religion_trigger = {
+  OR = {
+    religion_group = christian
+    religion_group = muslim
+    religion_group = jewish_group
+    religion_group = zoroastrian_group
+    is_aztec_religion_trigger = yes
+    is_bon_religion_trigger = yes
+    religion = norse_pagan
+    religion = norse_pagan_reformed
+    religion = slavic_pagan
+    religion = slavic_pagan_reformed
+    religion = baltic_pagan
+    religion = baltic_pagan_reformed
+    religion = finnish_pagan
+    religion = finnish_pagan_reformed
+    religion = hellenic_pagan
+    religion = hellenic_pagan_reformed
+    religion = tengri_pagan
+    religion = tengri_pagan_reformed
+    religion = west_african_pagan
+    religion = west_african_pagan_reformed
+  }
+}
