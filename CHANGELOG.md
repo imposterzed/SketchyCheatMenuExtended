@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.9] - 2026-06-14
+
+### Added
+- **Engine-mutex tooltip wraps** across 86 `add_*` decisions — when a trait's vanilla `opposites` (in either direction) includes another trait the character holds, the add decision's tooltip now renders "Lose Y" alongside "Gain X". Mirrors v0.6.8's if/limit pattern for the manual-mutex consort and zodiac pairs.
+- **New file** `common/scripted_effects/scmp_mutex_effects.txt` — 5 cluster helpers for the multi-way mutex groupings (intellect / scarred / kinslayer / raiding / holy war rewards). Each cluster's `add_*` decisions invoke its helper before adding the trait.
+- **Two strict compat helpers** (in `scmp_trait_compat_triggers.txt` + `scmp_trait_compat.txt`) for sex-agnostic seducer/seductress mutex — needed by `add_celibate` (strips both lifestyle sex-variants) and the cross-sex wraps on `add_seducer` / `add_seductress`. The existing sex-aware compat returns the sex-matched variant; the strict versions check / remove specifically.
+
+### Changed
+- **86 `add_*` decisions** rewritten with the engine-mutex wraps. 32 cluster-helper calls + 54 per-decision bare-or-compat wraps. See diff for full coverage.
+- **Bidirectional opposites logic** — wraps cover engine mutex in either direction. Example: adding `feeble` now strips `sturdy`, since `sturdy.opposites = { feeble robust }` declares it, even though vanilla `feeble.opposites = { robust }` doesn't declare the reverse.
+- **Raiding strict mutex** — `add_viking` now strips `pirate`, tightening vanilla's asymmetric 4-vs-3 declaration to bidirectional 5-way.
+- **Holy War Rewards cluster** — `clear_holy_war_rewards_traits_effect` strips all 16 GHW veteran traits across religions. Real engine-mutex per vanilla; tooltip lines only render for whichever GHW trait the character actually holds (typically none / one, given religion gating).
+- **README error.log paragraph updated** — count ~63 → ~67 (4 new parse-time refs from the two strict compat helpers' `else` / `trigger_else` branches).
+
 ## [0.6.8] - 2026-06-14
 
 ### Changed

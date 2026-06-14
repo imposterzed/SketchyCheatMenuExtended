@@ -618,3 +618,37 @@ remove_martial_cleric_trait_effect = {
     }
   }
 }
+
+# Seducer (strict - sex-agnostic, used by mutex wraps)
+remove_seducer_strict_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = master_seducer }
+      remove_trait = master_seducer
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = seducer }
+      remove_trait = seducer
+    }
+  }
+}
+
+# Seductress (strict - sex-agnostic, used by mutex wraps)
+remove_seductress_strict_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = master_seductress }
+      remove_trait = master_seductress
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = seductress }
+      remove_trait = seductress
+    }
+  }
+}

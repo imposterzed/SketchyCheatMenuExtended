@@ -335,3 +335,25 @@ has_holy_war_religion_trigger = {
     religion = west_african_pagan_reformed
   }
 }
+
+# Seducer (strict - sex-agnostic)
+has_seducer_strict_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = master_seducer
+  }
+  trigger_else = {
+    trait = seducer
+  }
+}
+
+# Seductress (strict - sex-agnostic)
+has_seductress_strict_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = master_seductress
+  }
+  trigger_else = {
+    trait = seductress
+  }
+}

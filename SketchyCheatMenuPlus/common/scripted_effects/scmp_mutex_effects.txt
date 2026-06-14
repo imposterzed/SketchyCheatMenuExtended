@@ -1,0 +1,107 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##              Engine-Mutex Cluster Helpers              ##
+##                                                        ##
+## Strip-all-cluster-members helpers called from each     ##
+## cluster member's add_X effect. Mirrors the engine's    ##
+## `opposites` mutex with explicit if/limit-wrapped       ##
+## removes so tooltips render `Lose Y` for the trait the  ##
+## character actually has.                                ##
+##                                                        ##
+## Self-strip in each helper is safe: every add_X decision##
+## gates on `NOT = { trait = X }` in its potential, so    ##
+## the self-line never renders in the visible tooltip.    ##
+############################################################
+
+clear_intellect_traits_effect = {
+  if = {
+    limit = { trait = genius }
+    remove_trait = genius
+  }
+  if = {
+    limit = { trait = quick }
+    remove_trait = quick
+  }
+  if = {
+    limit = { trait = slow }
+    remove_trait = slow
+  }
+  if = {
+    limit = { trait = imbecile }
+    remove_trait = imbecile
+  }
+}
+
+clear_scarred_variant_traits_effect = {
+  if = {
+    limit = { trait = scarred }
+    remove_trait = scarred
+  }
+  if = {
+    limit = { trait = scarred_mid }
+    remove_trait = scarred_mid
+  }
+  if = {
+    limit = { trait = scarred_high }
+    remove_trait = scarred_high
+  }
+}
+
+clear_kinslayer_traits_effect = {
+  if = {
+    limit = { trait = kinslayer }
+    remove_trait = kinslayer
+  }
+  if = {
+    limit = { trait = familial_kinslayer }
+    remove_trait = familial_kinslayer
+  }
+  if = {
+    limit = { trait = dynastic_kinslayer }
+    remove_trait = dynastic_kinslayer
+  }
+  if = {
+    limit = { trait = tribal_kinslayer }
+    remove_trait = tribal_kinslayer
+  }
+}
+
+clear_raiding_traits_effect = {
+  if = {
+    limit = { trait = pirate }
+    remove_trait = pirate
+  }
+  if = {
+    limit = { trait = viking }
+    remove_trait = viking
+  }
+  if = {
+    limit = { trait = ravager }
+    remove_trait = ravager
+  }
+  remove_seaking_trait_effect = yes
+  if = {
+    limit = { trait = sea_queen }
+    remove_trait = sea_queen
+  }
+}
+
+
+clear_holy_war_rewards_traits_effect = {
+  if = { limit = { trait = crusader }         remove_trait = crusader         }
+  if = { limit = { trait = crusader_king }    remove_trait = crusader_king    }
+  if = { limit = { trait = crusader_queen }   remove_trait = crusader_queen   }
+  if = { limit = { trait = mujahid }          remove_trait = mujahid          }
+  if = { limit = { trait = valhalla_bound }   remove_trait = valhalla_bound   }
+  if = { limit = { trait = sun_warrior }      remove_trait = sun_warrior      }
+  if = { limit = { trait = nyames_shield }    remove_trait = nyames_shield    }
+  if = { limit = { trait = peruns_chosen }    remove_trait = peruns_chosen    }
+  if = { limit = { trait = ares_own }         remove_trait = ares_own         }
+  if = { limit = { trait = gondi_shahansha }  remove_trait = gondi_shahansha  }
+  if = { limit = { trait = kailash_guardian } remove_trait = kailash_guardian }
+  remove_eagle_warrior_trait_effect = yes
+  remove_romuvas_own_trait_effect = yes
+  remove_shaddai_trait_effect = yes
+  remove_tengri_warrior_trait_effect = yes
+  remove_ukkos_shield_trait_effect = yes
+}

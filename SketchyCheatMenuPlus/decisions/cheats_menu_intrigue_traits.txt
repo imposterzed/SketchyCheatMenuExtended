@@ -553,6 +553,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = lustful }
+        remove_trait = lustful
+      }
       add_trait = chaste
     }
 
@@ -609,6 +613,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = gluttonous }
+        remove_trait = gluttonous
+      }
       add_trait = temperate
     }
 
@@ -665,6 +673,14 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = envious }
+        remove_trait = envious
+      }
+      if = {
+        limit = { trait = cruel }
+        remove_trait = cruel
+      }
       add_trait = kind
     }
 
@@ -721,6 +737,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = greedy }
+        remove_trait = greedy
+      }
       add_trait = charitable
     }
 
@@ -777,6 +797,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = wroth }
+        remove_trait = wroth
+      }
       add_trait = patient
     }
 
@@ -833,6 +857,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = slothful }
+        remove_trait = slothful
+      }
       add_trait = diligent
     }
 
@@ -889,6 +917,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = proud }
+        remove_trait = proud
+      }
       add_trait = humble
     }
 
@@ -1001,6 +1033,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = chaste }
+        remove_trait = chaste
+      }
       add_trait = lustful
     }
 
@@ -1057,6 +1093,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = charitable }
+        remove_trait = charitable
+      }
       add_trait = greedy
     }
 
@@ -1113,6 +1153,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = diligent }
+        remove_trait = diligent
+      }
       add_trait = slothful
     }
 
@@ -1169,6 +1213,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = temperate }
+        remove_trait = temperate
+      }
       add_trait = gluttonous
     }
 
@@ -1225,6 +1273,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = patient }
+        remove_trait = patient
+      }
       add_trait = wroth
     }
 
@@ -1281,6 +1333,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = humble }
+        remove_trait = humble
+      }
       add_trait = proud
     }
 
@@ -1337,6 +1393,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = kind }
+        remove_trait = kind
+      }
       add_trait = envious
     }
 
@@ -1448,6 +1508,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = content }
+        remove_trait = content
+      }
       add_trait = ambitious
     }
 
@@ -1504,6 +1568,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = ambitious }
+        remove_trait = ambitious
+      }
       add_trait = content
     }
 
@@ -1560,6 +1628,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = craven }
+        remove_trait = craven
+      }
       add_trait = brave
     }
 
@@ -1616,6 +1688,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = brave }
+        remove_trait = brave
+      }
       add_trait = craven
     }
 
@@ -1672,6 +1748,11 @@ decisions = {
     }
 
     effect = {
+      remove_feeble_trait_effect = yes
+      if = {
+        limit = { trait = sturdy }
+        remove_trait = sturdy
+      }
       add_physique_trait_effect = yes
     }
 
@@ -1728,6 +1809,8 @@ decisions = {
     }
 
     effect = {
+      remove_feeble_trait_effect = yes
+      remove_physique_trait_effect = yes
       add_trait = sturdy
     }
 
@@ -1784,6 +1867,11 @@ decisions = {
     }
 
     effect = {
+      remove_physique_trait_effect = yes
+      if = {
+        limit = { trait = sturdy }
+        remove_trait = sturdy
+      }
       add_feeble_trait_effect = yes
     }
 
@@ -1840,6 +1928,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = zealous }
+        remove_trait = zealous
+      }
       add_trait = cynical
     }
 
@@ -1896,6 +1988,38 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = cynical }
+        remove_trait = cynical
+      }
+      if = {
+        limit = { trait = sympathy_christendom }
+        remove_trait = sympathy_christendom
+      }
+      if = {
+        limit = { trait = sympathy_islam }
+        remove_trait = sympathy_islam
+      }
+      if = {
+        limit = { trait = sympathy_pagans }
+        remove_trait = sympathy_pagans
+      }
+      if = {
+        limit = { trait = sympathy_zoroastrianism }
+        remove_trait = sympathy_zoroastrianism
+      }
+      if = {
+        limit = { trait = sympathy_judaism }
+        remove_trait = sympathy_judaism
+      }
+      if = {
+        limit = { trait = sympathy_indian }
+        remove_trait = sympathy_indian
+      }
+      if = {
+        limit = { trait = decadent }
+        remove_trait = decadent
+      }
       add_trait = zealous
     }
 
@@ -2008,6 +2132,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = shy }
+        remove_trait = shy
+      }
       add_trait = gregarious
     }
 
@@ -2064,6 +2192,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = gregarious }
+        remove_trait = gregarious
+      }
       add_trait = shy
     }
 
@@ -2120,6 +2252,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = uncouth }
+        remove_trait = uncouth
+      }
       add_trait = groomed
     }
 
@@ -2176,6 +2312,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = groomed }
+        remove_trait = groomed
+      }
       add_trait = uncouth
     }
 
@@ -2232,6 +2372,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = deceitful }
+        remove_trait = deceitful
+      }
       add_trait = honest
     }
 
@@ -2288,6 +2432,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = honest }
+        remove_trait = honest
+      }
       add_trait = deceitful
     }
 
@@ -2344,6 +2492,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = arbitrary }
+        remove_trait = arbitrary
+      }
       add_trait = just
     }
 
@@ -2400,6 +2552,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = just }
+        remove_trait = just
+      }
       add_trait = arbitrary
     }
 
@@ -2456,6 +2612,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = dull }
+        remove_trait = dull
+      }
       add_trait = shrewd
     }
 
@@ -2512,6 +2672,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = shrewd }
+        remove_trait = shrewd
+      }
       add_trait = dull
     }
 
@@ -2568,6 +2732,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = paranoid }
+        remove_trait = paranoid
+      }
       add_trait = trusting
     }
 
@@ -2624,6 +2792,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = trusting }
+        remove_trait = trusting
+      }
       add_trait = paranoid
     }
 
@@ -2680,6 +2852,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = kind }
+        remove_trait = kind
+      }
       add_trait = cruel
     }
 
@@ -3120,6 +3296,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = ugly }
+        remove_trait = ugly
+      }
       add_beauty_trait_effect = yes
     }
 
@@ -3176,6 +3356,7 @@ decisions = {
     }
 
     effect = {
+      clear_intellect_traits_effect = yes
       add_trait = genius
     }
 
@@ -3232,6 +3413,7 @@ decisions = {
     }
 
     effect = {
+      clear_intellect_traits_effect = yes
       add_trait = quick
     }
 
@@ -3288,6 +3470,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = weak }
+        remove_trait = weak
+      }
       add_trait = strong
     }
 
@@ -3344,6 +3530,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = dwarf }
+        remove_trait = dwarf
+      }
       add_trait = giant
     }
 
@@ -3456,6 +3646,7 @@ decisions = {
     }
 
     effect = {
+      clear_scarred_variant_traits_effect = yes
       add_trait = scarred
     }
 
@@ -3513,6 +3704,7 @@ decisions = {
     }
 
     effect = {
+      clear_scarred_variant_traits_effect = yes
       add_trait = scarred_mid
     }
 
@@ -3570,6 +3762,7 @@ decisions = {
     }
 
     effect = {
+      clear_scarred_variant_traits_effect = yes
       add_trait = scarred_high
     }
 
@@ -3798,6 +3991,7 @@ decisions = {
     }
 
     effect = {
+      remove_malnourished_trait_effect = yes
       add_fat_trait_effect = yes
     }
 
@@ -3854,6 +4048,7 @@ decisions = {
     }
 
     effect = {
+      remove_fat_trait_effect = yes
       add_malnourished_trait_effect = yes
     }
 
@@ -3966,6 +4161,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = giant }
+        remove_trait = giant
+      }
       add_trait = dwarf
     }
 
@@ -4134,6 +4333,7 @@ decisions = {
     }
 
     effect = {
+      clear_intellect_traits_effect = yes
       add_trait = imbecile
     }
 
@@ -4302,6 +4502,7 @@ decisions = {
     }
 
     effect = {
+      clear_intellect_traits_effect = yes
       add_trait = slow
     }
 
@@ -4414,6 +4615,7 @@ decisions = {
     }
 
     effect = {
+      remove_beauty_trait_effect = yes
       add_trait = ugly
     }
 
@@ -4470,6 +4672,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = strong }
+        remove_trait = strong
+      }
       add_trait = weak
     }
 
@@ -4974,6 +5180,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = wounded }
+        remove_trait = wounded
+      }
       add_trait = maimed
     }
 
@@ -5478,6 +5688,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = maimed }
+        remove_trait = maimed
+      }
       add_trait = wounded
     }
 
@@ -7163,6 +7377,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = ares_own
     }
 
@@ -7220,6 +7435,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = crusader
     }
 
@@ -7278,6 +7494,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = crusader_king
     }
 
@@ -7336,6 +7553,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = crusader_queen
     }
 
@@ -7393,6 +7611,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_eagle_warrior_trait_effect = yes
     }
 
@@ -7450,6 +7669,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = sun_warrior
     }
 
@@ -7507,6 +7727,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = gondi_shahansha
     }
 
@@ -7567,6 +7788,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_romuvas_own_trait_effect = yes
     }
 
@@ -7624,6 +7846,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = kailash_guardian
     }
 
@@ -7681,6 +7904,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_shaddai_trait_effect = yes
     }
 
@@ -7738,6 +7962,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = mujahid
     }
 
@@ -7798,6 +8023,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = nyames_shield
     }
 
@@ -7858,6 +8084,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = peruns_chosen
     }
 
@@ -7918,6 +8145,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_tengri_warrior_trait_effect = yes
     }
 
@@ -7978,6 +8206,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_ukkos_shield_trait_effect = yes
     }
 
@@ -8038,6 +8267,7 @@ decisions = {
     }
 
     effect = {
+      clear_holy_war_rewards_traits_effect = yes
       add_trait = valhalla_bound
     }
 
@@ -9025,6 +9255,7 @@ decisions = {
     }
 
     effect = {
+      clear_raiding_traits_effect = yes
       add_trait = viking
     }
 
@@ -9081,6 +9312,7 @@ decisions = {
     }
 
     effect = {
+      clear_raiding_traits_effect = yes
       add_trait = pirate
     }
 
@@ -9137,6 +9369,7 @@ decisions = {
     }
 
     effect = {
+      clear_raiding_traits_effect = yes
       add_trait = ravager
     }
 
@@ -9194,6 +9427,7 @@ decisions = {
     }
 
     effect = {
+      clear_raiding_traits_effect = yes
       add_seaking_trait_effect = yes
     }
 
@@ -9251,6 +9485,7 @@ decisions = {
     }
 
     effect = {
+      clear_raiding_traits_effect = yes
       add_trait = sea_queen
     }
 
@@ -9475,6 +9710,12 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = hedonist }
+        remove_trait = hedonist
+      }
+      remove_seducer_strict_trait_effect = yes
+      remove_seductress_strict_trait_effect = yes
       add_trait = celibate
     }
 
@@ -9755,6 +9996,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = celibate }
+        remove_trait = celibate
+      }
       add_trait = hedonist
     }
 
@@ -9981,6 +10226,11 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = celibate }
+        remove_trait = celibate
+      }
+      remove_seductress_strict_trait_effect = yes
       add_seducer_trait_effect = yes
     }
 
@@ -10039,6 +10289,11 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = celibate }
+        remove_trait = celibate
+      }
+      remove_seducer_strict_trait_effect = yes
       add_seducer_trait_effect = yes
     }
 
@@ -10264,6 +10519,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = faqih }
+        remove_trait = faqih
+      }
       add_trait = scholar
     }
 
@@ -10321,6 +10580,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = scholar }
+        remove_trait = scholar
+      }
       add_trait = faqih
     }
 
@@ -10824,6 +11087,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = legit_bastard }
+        remove_trait = legit_bastard
+      }
       add_trait = bastard
     }
 
@@ -10880,6 +11147,10 @@ decisions = {
     }
 
     effect = {
+      if = {
+        limit = { trait = bastard }
+        remove_trait = bastard
+      }
       add_trait = legit_bastard
     }
 
@@ -11967,6 +12238,7 @@ decisions = {
     }
 
     effect = {
+      clear_kinslayer_traits_effect = yes
       add_trait = kinslayer
     }
 
@@ -12027,6 +12299,7 @@ decisions = {
     }
 
     effect = {
+      clear_kinslayer_traits_effect = yes
       add_trait = familial_kinslayer
     }
 
@@ -12087,6 +12360,7 @@ decisions = {
     }
 
     effect = {
+      clear_kinslayer_traits_effect = yes
       add_trait = dynastic_kinslayer
     }
 
@@ -12145,6 +12419,7 @@ decisions = {
     }
 
     effect = {
+      clear_kinslayer_traits_effect = yes
       add_trait = tribal_kinslayer
     }
 
