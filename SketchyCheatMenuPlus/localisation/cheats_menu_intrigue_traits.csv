@@ -1198,3 +1198,59 @@ add_sick_incapable_desc;Add Sick Incapable;;;;;;;;;;;;;x
 
 remove_sick_incapable;--------Remove Sick Incapable;;;;;;;;;;;;;x
 remove_sick_incapable_desc;Remove Sick Incapable;;;;;;;;;;;;;x
+
+add_clubfooted;--------Add Clubfooted;;;;;;;;;;;;;x
+add_clubfooted_desc;Add Clubfooted;;;;;;;;;;;;;x
+
+remove_clubfooted;--------Remove Clubfooted;;;;;;;;;;;;;x
+remove_clubfooted_desc;Remove Clubfooted;;;;;;;;;;;;;x
+add_dwarf;--------Add Dwarf;;;;;;;;;;;;;x
+add_dwarf_desc;Add Dwarf;;;;;;;;;;;;;x
+
+remove_dwarf;--------Remove Dwarf;;;;;;;;;;;;;x
+remove_dwarf_desc;Remove Dwarf;;;;;;;;;;;;;x
+add_harelip;--------Add Harelip;;;;;;;;;;;;;x
+add_harelip_desc;Add Harelip;;;;;;;;;;;;;x
+
+remove_harelip;--------Remove Harelip;;;;;;;;;;;;;x
+remove_harelip_desc;Remove Harelip;;;;;;;;;;;;;x
+add_hunchback;--------Add Hunchback;;;;;;;;;;;;;x
+add_hunchback_desc;Add Hunchback;;;;;;;;;;;;;x
+
+remove_hunchback;--------Remove Hunchback;;;;;;;;;;;;;x
+remove_hunchback_desc;Remove Hunchback;;;;;;;;;;;;;x
+add_imbecile;--------Add Imbecile;;;;;;;;;;;;;x
+add_imbecile_desc;Add Imbecile;;;;;;;;;;;;;x
+
+remove_imbecile;--------Remove Imbecile;;;;;;;;;;;;;x
+remove_imbecile_desc;Remove Imbecile;;;;;;;;;;;;;x
+add_inbred;--------Add Inbred;;;;;;;;;;;;;x
+add_inbred_desc;Add Inbred;;;;;;;;;;;;;x
+
+remove_inbred;--------Remove Inbred;;;;;;;;;;;;;x
+remove_inbred_desc;Remove Inbred;;;;;;;;;;;;;x
+add_lisp;--------Add Lisp;;;;;;;;;;;;;x
+add_lisp_desc;Add Lisp;;;;;;;;;;;;;x
+
+remove_lisp;--------Remove Lisp;;;;;;;;;;;;;x
+remove_lisp_desc;Remove Lisp;;;;;;;;;;;;;x
+add_slow;--------Add Slow;;;;;;;;;;;;;x
+add_slow_desc;Add Slow;;;;;;;;;;;;;x
+
+remove_slow;--------Remove Slow;;;;;;;;;;;;;x
+remove_slow_desc;Remove Slow;;;;;;;;;;;;;x
+add_stutter;--------Add Stutter;;;;;;;;;;;;;x
+add_stutter_desc;Add Stutter;;;;;;;;;;;;;x
+
+remove_stutter;--------Remove Stutter;;;;;;;;;;;;;x
+remove_stutter_desc;Remove Stutter;;;;;;;;;;;;;x
+add_ugly;--------Add Ugly;;;;;;;;;;;;;x
+add_ugly_desc;Add Ugly;;;;;;;;;;;;;x
+
+remove_ugly;--------Remove Ugly;;;;;;;;;;;;;x
+remove_ugly_desc;Remove Ugly;;;;;;;;;;;;;x
+add_weak;--------Add Weak;;;;;;;;;;;;;x
+add_weak_desc;Add Weak;;;;;;;;;;;;;x
+
+remove_weak;--------Remove Weak;;;;;;;;;;;;;x
+remove_weak_desc;Remove Weak;;;;;;;;;;;;;x

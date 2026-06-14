@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.5] - 2026-06-14
+
+### Added
+- **11 new add/remove trait-toggle pairs for the genetic birth-defect cluster**, in a new "Negative Genetic / Birth Defects" group within Health & Congenital (placed between cosmetic-negative and negative-health-states clusters). Closes the per-trait gap by the same logic as v0.6.4: every trait already covered by a bulk-clear sweep (here the inline `remove_defects` button at the top of Health & Congenital) gets an individual add/remove toggle. The 11 traits: clubfooted, dwarf, harelip, hunchback, imbecile, inbred, lisp, slow, stutter, ugly, weak. All base-game; 5 have vanilla `opposites` pairings the engine handles automatically (ugly ↔ fair, imbecile ↔ genius, slow ↔ quick, weak ↔ strong, dwarf ↔ giant).
+- **22 new SCMP localisation entries** in `cheats_menu_intrigue_traits.csv` for the 11 new decision pairs.
+
+### Changed
+- **README trait-pair count updated from "170" to "181"** — actual count of non-bulk add toggles after v0.6.5.
+
 ## [0.6.4] - 2026-06-14
 
 ### Added
