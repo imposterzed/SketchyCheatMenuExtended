@@ -1254,3 +1254,16 @@ add_weak_desc;Add Weak;;;;;;;;;;;;;x
 
 remove_weak;--------Remove Weak;;;;;;;;;;;;;x
 remove_weak_desc;Remove Weak;;;;;;;;;;;;;x
+
+cycle_freckles_none;--------Cycle Freckles (None);;;;;;;;;;;;;x
+cycle_freckles_none_desc;Cycle Freckles (None);;;;;;;;;;;;;x
+cycle_freckles_1;--------Cycle Freckles (Variant 1);;;;;;;;;;;;;x
+cycle_freckles_1_desc;Cycle Freckles (Variant 1);;;;;;;;;;;;;x
+cycle_freckles_2;--------Cycle Freckles (Variant 2);;;;;;;;;;;;;x
+cycle_freckles_2_desc;Cycle Freckles (Variant 2);;;;;;;;;;;;;x
+cycle_freckles_3;--------Cycle Freckles (Variant 3);;;;;;;;;;;;;x
+cycle_freckles_3_desc;Cycle Freckles (Variant 3);;;;;;;;;;;;;x
+cycle_freckles_4;--------Cycle Freckles (Variant 4);;;;;;;;;;;;;x
+cycle_freckles_4_desc;Cycle Freckles (Variant 4);;;;;;;;;;;;;x
+cycle_freckles_5;--------Cycle Freckles (Variant 5);;;;;;;;;;;;;x
+cycle_freckles_5_desc;Cycle Freckles (Variant 5);;;;;;;;;;;;;x

@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.6] - 2026-06-14
+
+### Added
+- **Cycle Freckles decision** in Health & Congenital — single state-aware cycling button that progresses through the 5 hidden freckle variants in vanilla trait-ID numerical order. Cycle: None → Variant 1 (`freckles`) → Variant 2 (`freckles_2`) → Variant 3 (`freckles_3`) → Variant 4 (`freckles_4`) → Variant 5 (`freckles_5`) → None. Implemented as 6 mutually-exclusive single-decision blocks (`cycle_freckles_none` / `_1` / `_2` / `_3` / `_4` / `_5`), each visible only when the player's current freckle state matches. The button label shows the CURRENT state in parens (e.g., "Cycle Freckles (Variant 2)" means the player has `freckles_2`); clicking advances to the next variant. All 5 underlying traits are vanilla `hidden = yes` cosmetic-only (no stat effect, only the 3D portrait changes). Engine mutex via vanilla `opposites` is unaffected. Lives in a new "Cosmetic / Portrait" conceptual cluster above the existing Cosmetic-Negative cluster (Fat / Malnourished).
+- **12 new SCMP localisation entries** in `cheats_menu_intrigue_traits.csv` for the 6 cycle decisions (main + desc).
+
+### Changed
+- **README trait count bumped from 181 to 186** — the 5 freckle variants are now individually accessible via the cycle button.
+
 ## [0.6.5] - 2026-06-14
 
 ### Added

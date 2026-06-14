@@ -3730,6 +3730,178 @@ decisions = {
     }
   }
 
+  cycle_freckles_none = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_health
+      NOT = { trait = freckles }
+      NOT = { trait = freckles_2 }
+      NOT = { trait = freckles_3 }
+      NOT = { trait = freckles_4 }
+      NOT = { trait = freckles_5 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = freckles
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_freckles_1 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_health
+      trait = freckles
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = freckles_2
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_freckles_2 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_health
+      trait = freckles_2
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = freckles_3
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_freckles_3 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_health
+      trait = freckles_3
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = freckles_4
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_freckles_4 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_health
+      trait = freckles_4
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = freckles_5
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_freckles_5 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_health
+      trait = freckles_5
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = freckles_5
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   remove_fat = {
 
 
