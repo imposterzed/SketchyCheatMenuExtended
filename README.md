@@ -22,7 +22,7 @@ Right-click any character to:
 
 ### Trait toggles
 
-Paired add/remove decisions for over 150 traits across virtues, sins, personality, beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese commander, raiding, lifestyle, religious markers, kinslayer, memes, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
+Paired add/remove decisions for 170 traits across virtues, sins, personality, beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese commander, raiding, lifestyle, religious markers, kinslayer, memes, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
 
 ### Spawning
 
@@ -47,12 +47,12 @@ Become independent, set your government to feudal, convert your realm or the ent
 The mod works without any DLC. Some cheats are tied to DLC systems and behave differently depending on what you have installed:
 
 - **Conclave** — without it, `make_consort` is hidden.
-- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available.
+- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available. `add_scarred_mid` (Grievously Scarred) and `add_scarred_high` (Horrifically Scarred) are hidden without HF — the vanilla traits gate themselves to HF. Base `add_scarred` and all three `remove_*` counterparts stay available for cleanup.
 - **Jade Dragon** — the 4 Chinese Commander toggles (Way of the Dog / Dragon / Leopard / Tiger) stay available.
 - **Monks and Mystics** — without it, the society cheats (`add_society_points`, `increase_society_rank`) don't appear, since you can't be in a society.
 - **Rajas of India** — `add_war_elephant_leader` / `remove_war_elephant_leader` stay available.
 - **The Old Gods** — the Viking / Pirate / Ravager raiding toggles stay available.
-- **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available.
+- **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available, as do the 6 limb-loss toggles (one_eyed / one_handed / one_legged / disfigured / mangled / severely_injured) and `sick_incapable` — the trait IDs load without RD and `add_trait` works regardless.
 - **Way of Life** — without it, `get_favor` and `clear_your_focus` are hidden. The 16 lifestyle-trait toggles (schemer, seducer, hedonist, scholar, theologian, etc.) stay available — they grant the trait directly without needing the focus system.
 
 ## Installation

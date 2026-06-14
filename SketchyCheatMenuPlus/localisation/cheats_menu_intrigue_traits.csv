@@ -1137,3 +1137,64 @@ add_builder_desc;Add Master Builder;;;;;;;;;;;;;x
 
 remove_builder;--------Remove Master Builder;;;;;;;;;;;;;x
 remove_builder_desc;Remove Master Builder;;;;;;;;;;;;;x
+
+add_disfigured;--------Add Disfigured;;;;;;;;;;;;;x
+add_disfigured_desc;Add Disfigured;;;;;;;;;;;;;x
+
+remove_disfigured;--------Remove Disfigured;;;;;;;;;;;;;x
+remove_disfigured_desc;Remove Disfigured;;;;;;;;;;;;;x
+add_scarred_mid;--------Add Grievously Scarred;;;;;;;;;;;;;x
+add_scarred_mid_desc;Add Grievously Scarred;;;;;;;;;;;;;x
+
+remove_scarred_mid;--------Remove Grievously Scarred;;;;;;;;;;;;;x
+remove_scarred_mid_desc;Remove Grievously Scarred;;;;;;;;;;;;;x
+add_scarred_high;--------Add Horrifically Scarred;;;;;;;;;;;;;x
+add_scarred_high_desc;Add Horrifically Scarred;;;;;;;;;;;;;x
+
+remove_scarred_high;--------Remove Horrifically Scarred;;;;;;;;;;;;;x
+remove_scarred_high_desc;Remove Horrifically Scarred;;;;;;;;;;;;;x
+add_incapable;--------Add Incapable;;;;;;;;;;;;;x
+add_incapable_desc;Add Incapable;;;;;;;;;;;;;x
+
+remove_incapable;--------Remove Incapable;;;;;;;;;;;;;x
+remove_incapable_desc;Remove Incapable;;;;;;;;;;;;;x
+add_lovers_pox;--------Add Lover's Pox;;;;;;;;;;;;;x
+add_lovers_pox_desc;Add Lover's Pox;;;;;;;;;;;;;x
+
+remove_lovers_pox;--------Remove Lover's Pox;;;;;;;;;;;;;x
+remove_lovers_pox_desc;Remove Lover's Pox;;;;;;;;;;;;;x
+add_maimed;--------Add Maimed;;;;;;;;;;;;;x
+add_maimed_desc;Add Maimed;;;;;;;;;;;;;x
+
+remove_maimed;--------Remove Maimed;;;;;;;;;;;;;x
+remove_maimed_desc;Remove Maimed;;;;;;;;;;;;;x
+add_mangled;--------Add Mangled;;;;;;;;;;;;;x
+add_mangled_desc;Add Mangled;;;;;;;;;;;;;x
+
+remove_mangled;--------Remove Mangled;;;;;;;;;;;;;x
+remove_mangled_desc;Remove Mangled;;;;;;;;;;;;;x
+add_one_eyed;--------Add One-Eyed;;;;;;;;;;;;;x
+add_one_eyed_desc;Add One-Eyed;;;;;;;;;;;;;x
+
+remove_one_eyed;--------Remove One-Eyed;;;;;;;;;;;;;x
+remove_one_eyed_desc;Remove One-Eyed;;;;;;;;;;;;;x
+add_one_handed;--------Add One-Handed;;;;;;;;;;;;;x
+add_one_handed_desc;Add One-Handed;;;;;;;;;;;;;x
+
+remove_one_handed;--------Remove One-Handed;;;;;;;;;;;;;x
+remove_one_handed_desc;Remove One-Handed;;;;;;;;;;;;;x
+add_one_legged;--------Add One-Legged;;;;;;;;;;;;;x
+add_one_legged_desc;Add One-Legged;;;;;;;;;;;;;x
+
+remove_one_legged;--------Remove One-Legged;;;;;;;;;;;;;x
+remove_one_legged_desc;Remove One-Legged;;;;;;;;;;;;;x
+add_severely_injured;--------Add Severely Injured;;;;;;;;;;;;;x
+add_severely_injured_desc;Add Severely Injured;;;;;;;;;;;;;x
+
+remove_severely_injured;--------Remove Severely Injured;;;;;;;;;;;;;x
+remove_severely_injured_desc;Remove Severely Injured;;;;;;;;;;;;;x
+add_sick_incapable;--------Add Sick Incapable;;;;;;;;;;;;;x
+add_sick_incapable_desc;Add Sick Incapable;;;;;;;;;;;;;x
+
+remove_sick_incapable;--------Remove Sick Incapable;;;;;;;;;;;;;x
+remove_sick_incapable_desc;Remove Sick Incapable;;;;;;;;;;;;;x

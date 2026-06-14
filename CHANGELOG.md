@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.4] - 2026-06-14
+
+### Added
+- **12 new add/remove trait-toggle pairs in Health & Congenital**, closing the gap where multiple traits in the bulk-clear sweep (`remove_diseases`, which orchestrates 5 sub-sweeps) had no individual add toggle:
+  - **Mixed-positive (scarred family)**: `scarred_mid` (Grievously Scarred), `scarred_high` (Horrifically Scarred). HF DLC gate on the `add_*` side mirrors vanilla's `potential = { has_dlc = "Holy Fury" }` on the trait. Remove side ungated. Mutex with `scarred` handled by vanilla `opposites`.
+  - **Negative health states (base game)**: `incapable`, `lovers_pox`, `maimed`.
+  - **Negative health states (Reaper's Due limb-loss family)**: `disfigured`, `mangled`, `one_eyed`, `one_handed`, `one_legged`, `severely_injured`. No DLC gate — the trait IDs load without RD and `add_trait` works regardless, so the cheat decision stays available for non-RD players.
+  - **Hidden trait**: `sick_incapable` (RD `hidden = yes`, `incapacitating = yes`). Decision exposed despite no trait icon on the character sheet — `incapacitating = yes` produces visible engine effects (bed-curtain portrait background, incapacitated icon on portrait, regent takeover for the realm) that confirm the add worked. Remove dismisses the regent and restores the normal portrait.
+- **24 new SCMP localisation entries** in `cheats_menu_intrigue_traits.csv` for the 12 new decision keys (`add_*` / `remove_*` labels plus `_desc` tooltips).
+
+### Changed
+- **4 trait-pair blocks moved from Misc to Health & Congenital**: `blinded`, `lunatic`, `possessed`, `scarred`. All members of `remove_all_afflictions_effect` (the bulk-clear orchestrator). Each block's `has_character_flag = show_misc` rewritten to `show_health` (both `add_*` and `remove_*` potentials). Decision keys unchanged, so existing localisation entries continue to apply.
+- **Cosmetic-negative cluster (Fat, Malnourished) reordered above negative-health-states** within Health & Congenital — cosmetic body-composition states are milder than event-driven death-track conditions.
+- **Misc Traits shrinks from 12 → 8 entries** — now contains Augustus, Heresiarch, Peasant Leader, Child of Concubine, Cannibal, Eunuch, Excommunicated, Homosexual.
+- **README trait-pair count bumped from "over 150" to "170"** — actual count of non-bulk add toggles after v0.6.4.
+- **README Optional DLC section updated**: Holy Fury entry notes `add_scarred_mid` / `add_scarred_high` are hidden without HF. The Reaper's Due entry notes the 6 limb-loss toggles and `sick_incapable` stay available — trait IDs load without RD.
+
 ## [0.6.3] - 2026-06-14
 
 ### Changed
