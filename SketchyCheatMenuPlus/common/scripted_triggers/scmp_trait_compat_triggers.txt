@@ -179,3 +179,14 @@ has_rough_terrain_trait_trigger = {
     trait = rough_terrain_leader
   }
 }
+
+# Cannibal
+has_cannibal_trait_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    trait = cannibal
+  }
+  trigger_else = {
+    trait = cannibal_trait
+  }
+}

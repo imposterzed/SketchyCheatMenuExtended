@@ -718,6 +718,54 @@ add_blinded_desc;Add Blinded;;;;;;;;;;;;;x
 remove_blinded;--------Remove Blinded;;;;;;;;;;;;;x
 remove_blinded_desc;Remove Blinded;;;;;;;;;;;;;x
 
+add_eunuch;--------Add Eunuch;;;;;;;;;;;;;x
+add_eunuch_desc;Add Eunuch;;;;;;;;;;;;;x
+
+remove_eunuch;--------Remove Eunuch;;;;;;;;;;;;;x
+remove_eunuch_desc;Remove Eunuch;;;;;;;;;;;;;x
+
+add_cannibal;--------Add Cannibal;;;;;;;;;;;;;x
+add_cannibal_desc;Add Cannibal;;;;;;;;;;;;;x
+
+remove_cannibal;--------Remove Cannibal;;;;;;;;;;;;;x
+remove_cannibal_desc;Remove Cannibal;;;;;;;;;;;;;x
+
+add_excommunicated;--------Add Excommunicated;;;;;;;;;;;;;x
+add_excommunicated_desc;Add Excommunicated;;;;;;;;;;;;;x
+
+remove_excommunicated;--------Remove Excommunicated;;;;;;;;;;;;;x
+remove_excommunicated_desc;Remove Excommunicated;;;;;;;;;;;;;x
+
+show_kinslayer;----Show Kinslayer Traits;;;;;;;;;;;;;x
+show_kinslayer_desc;Show Kinslayer Traits;;;;;;;;;;;;;x
+
+hide_kinslayer;----Hide Kinslayer Traits;;;;;;;;;;;;;x
+hide_kinslayer_desc;Hide Kinslayer Traits;;;;;;;;;;;;;x
+
+add_kinslayer;--------Add Kinslayer;;;;;;;;;;;;;x
+add_kinslayer_desc;Add Kinslayer;;;;;;;;;;;;;x
+
+remove_kinslayer;--------Remove Kinslayer;;;;;;;;;;;;;x
+remove_kinslayer_desc;Remove Kinslayer;;;;;;;;;;;;;x
+
+add_familial_kinslayer;--------Add Familial Kinslayer;;;;;;;;;;;;;x
+add_familial_kinslayer_desc;Add Familial Kinslayer;;;;;;;;;;;;;x
+
+remove_familial_kinslayer;--------Remove Familial Kinslayer;;;;;;;;;;;;;x
+remove_familial_kinslayer_desc;Remove Familial Kinslayer;;;;;;;;;;;;;x
+
+add_dynastic_kinslayer;--------Add Dynastic Kinslayer;;;;;;;;;;;;;x
+add_dynastic_kinslayer_desc;Add Dynastic Kinslayer;;;;;;;;;;;;;x
+
+remove_dynastic_kinslayer;--------Remove Dynastic Kinslayer;;;;;;;;;;;;;x
+remove_dynastic_kinslayer_desc;Remove Dynastic Kinslayer;;;;;;;;;;;;;x
+
+add_tribal_kinslayer;--------Add Tribal Kinslayer;;;;;;;;;;;;;x
+add_tribal_kinslayer_desc;Add Tribal Kinslayer;;;;;;;;;;;;;x
+
+remove_tribal_kinslayer;--------Remove Tribal Kinslayer;;;;;;;;;;;;;x
+remove_tribal_kinslayer_desc;Remove Tribal Kinslayer;;;;;;;;;;;;;x
+
 add_dynasty_content;--------Dynasty: Add Content;;;;;;;;;;;;;x
 add_dynasty_content_desc;Dynasty & Spouses: Add Content;;;;;;;;;;;;;x
 

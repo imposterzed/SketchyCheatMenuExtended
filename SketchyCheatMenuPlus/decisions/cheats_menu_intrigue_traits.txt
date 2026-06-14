@@ -3381,7 +3381,6 @@ decisions = {
 
     effect = {
       add_trait = genius
-      hidden_tooltip = { remove_trait = quick }
     }
 
     revoke_allowed = {
@@ -3438,7 +3437,6 @@ decisions = {
 
     effect = {
       add_trait = quick
-      hidden_tooltip = { remove_trait = genius }
     }
 
     revoke_allowed = {
@@ -3551,7 +3549,6 @@ decisions = {
 
     effect = {
       add_beauty_trait_effect = yes
-      hidden_tooltip = { remove_trait = quick }
     }
 
     revoke_allowed = {
@@ -6835,6 +6832,467 @@ decisions = {
 
     effect = {
       add_trait = blinded
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_eunuch = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_misc
+      trait = eunuch
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = eunuch
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_eunuch = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_misc
+      NOT = { trait = eunuch }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = eunuch
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_cannibal = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_misc
+      has_cannibal_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_cannibal_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_cannibal = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_misc
+      NOT = { has_cannibal_trait_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_cannibal_trait_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_excommunicated = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_misc
+      trait = excommunicated
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = excommunicated
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_excommunicated = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_misc
+      NOT = { trait = excommunicated }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = excommunicated
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## ===== Kinslayer ===== ##
+  show_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      NOT = { has_character_flag = show_kinslayer }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_kinslayer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_kinslayer
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_kinslayer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_kinslayer
+      trait = kinslayer
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = kinslayer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_kinslayer
+      OR = {
+        NOT = { has_dlc = "Holy Fury" }
+        is_tribal = no
+      }
+      NOT = { trait = kinslayer }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = kinslayer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_familial_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_kinslayer
+      trait = familial_kinslayer
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = familial_kinslayer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_familial_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_kinslayer
+      OR = {
+        NOT = { has_dlc = "Holy Fury" }
+        is_tribal = no
+      }
+      NOT = { trait = familial_kinslayer }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = familial_kinslayer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_dynastic_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_kinslayer
+      trait = dynastic_kinslayer
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = dynastic_kinslayer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_dynastic_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_kinslayer
+      OR = {
+        NOT = { has_dlc = "Holy Fury" }
+        is_tribal = no
+      }
+      NOT = { trait = dynastic_kinslayer }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = dynastic_kinslayer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_tribal_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_kinslayer
+      trait = tribal_kinslayer
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = tribal_kinslayer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_tribal_kinslayer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_kinslayer
+      has_dlc = "Holy Fury"
+      is_tribal = yes
+      NOT = { trait = tribal_kinslayer }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = tribal_kinslayer
     }
 
     revoke_allowed = {

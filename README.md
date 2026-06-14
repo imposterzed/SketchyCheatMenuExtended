@@ -22,7 +22,7 @@ Right-click any character to:
 
 ### Trait toggles
 
-Paired add/remove decisions for over 80 traits across virtues, sins, personality, lifestyle, combat / leadership, beauty / physique, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
+Paired add/remove decisions for over 100 traits across virtues, sins, personality, lifestyle, combat / leadership, beauty / physique, kinslayer, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
 
 ### Spawning
 
@@ -46,11 +46,12 @@ Become independent, set your government to feudal, convert your realm or the ent
 
 The mod works without any DLC. Some cheats are tied to DLC systems and behave differently depending on what you have installed:
 
-- **Way of Life** — without it, `get_favor` and `clear_your_focus` are hidden. The 16 lifestyle-trait toggles (schemer, seducer, hedonist, scholar, theologian, etc.) stay available — they grant the trait directly without needing the focus system.
 - **Conclave** — without it, `make_consort` is hidden.
+- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden. The other 3 kinslayer toggles (kinslayer, familial_kinslayer, dynastic_kinslayer) stay visible for tribal characters on a no-HF setup — vanilla itself routes tribal characters to those traits when HF is absent. Removal of `tribal_kinslayer` works on any setup (handles cleanup if a character carries the trait across HF being toggled).
 - **Monks and Mystics** — without it, the society cheats (`add_society_points`, `increase_society_rank`) don't appear, since you can't be in a society.
-- **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available.
 - **Rajas of India** — `add_war_elephant_leader` / `remove_war_elephant_leader` stay available.
+- **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available.
+- **Way of Life** — without it, `get_favor` and `clear_your_focus` are hidden. The 16 lifestyle-trait toggles (schemer, seducer, hedonist, scholar, theologian, etc.) stay available — they grant the trait directly without needing the focus system.
 
 ## Installation
 

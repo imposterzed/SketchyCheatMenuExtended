@@ -327,6 +327,26 @@ remove_rough_terrain_trait_effect = {
   }
 }
 
+# Cannibal
+add_cannibal_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = cannibal
+  }
+  else = {
+    add_trait = cannibal_trait
+  }
+}
+remove_cannibal_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    remove_trait = cannibal
+  }
+  else = {
+    remove_trait = cannibal_trait
+  }
+}
+
 # Martial Cleric (tier-2 learning)
 # Only the remove side is used (by the 5 set_<X>_education decisions).
 remove_martial_cleric_trait_effect = {

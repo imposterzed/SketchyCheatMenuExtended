@@ -6,6 +6,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.5.1] - 2026-06-13
+
+### Added
+- **New Kinslayer menu section** with 4 add/remove toggle pairs: `kinslayer`, `familial_kinslayer`, `dynastic_kinslayer`, `tribal_kinslayer`. Sticky-trait removal is the original Sketchy use case; previously these were only removable via console. Government gates on the `add_*` decisions mirror vanilla's `add_kinslayer_trait_effect` cascade: `add_tribal_kinslayer` is gated `has_dlc = "Holy Fury"` + `is_tribal = yes`; the other 3 are gated `OR = { NOT has_dlc = "Holy Fury" is_tribal = no }` so a tribal character on a no-HF setup still sees the non-tribal toggles (matching vanilla's fallback to those traits when HF is absent). Remove decisions stay ungated for cleanup after government changes.
+- **3 Misc Traits singletons**: `eunuch`, `cannibal`, `excommunicated`. Cannibal routes through a new compat helper (vanilla `cannibal_trait` → CleanSlate `cannibal`).
+
+### Fixed
+- **`add_fair` was silently removing the wrong trait** — the decision had `hidden_tooltip = { remove_trait = quick }`, but `quick` isn't an opposite of `fair` (vanilla declares `ugly` as fair's only opposite). Dropped the line; engine `opposites` handles fair/ugly correctly.
+
+### Changed
+- **README Optional DLC section** — added Holy Fury entry noting `add_tribal_kinslayer` is HF-gated; reordered entries alphabetically.
+- **Trait-toggle count bumped** — README mentions ~100 trait pairs now (up from "over 80") and adds kinslayer to the category list.
+- **Opposites-handling cleanup** — dropped redundant `hidden_tooltip = { remove_trait = ... }` from `add_genius` and `add_quick`. Engine `opposites` auto-removes; the explicit removes were over-defensive and inconsistent with the rest of the codebase.
+
 ## [0.5.0] - 2026-06-13
 
 ### Added
