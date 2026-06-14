@@ -1,0 +1,28 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                   Zodiac Effects                       ##
+############################################################
+##                                                        ##
+## Strict-mutex helper: vanilla declares only pair-wise   ##
+## opposites between zodiac signs (Aries<->Libra etc.),   ##
+## relying on natural in-game assignment to only set one  ##
+## sign per character. The cheat menu can bypass that, so ##
+## each add_zodiac_* effect calls this helper first to    ##
+## enforce one-zodiac-at-a-time.                          ##
+##                                                        ##
+############################################################
+
+clear_zodiac_traits_effect = {
+  remove_trait = zodiac_aries
+  remove_trait = zodiac_taurus
+  remove_trait = zodiac_gemini
+  remove_trait = zodiac_cancer
+  remove_trait = zodiac_leo
+  remove_trait = zodiac_virgo
+  remove_trait = zodiac_libra
+  remove_trait = zodiac_scorpio
+  remove_trait = zodiac_sagittarius
+  remove_trait = zodiac_capricorn
+  remove_trait = zodiac_aquarius
+  remove_trait = zodiac_pisces
+}

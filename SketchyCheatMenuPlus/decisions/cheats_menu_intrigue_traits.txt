@@ -10872,6 +10872,1140 @@ decisions = {
     }
   }
 
+
+  ## ===== Birth Markers ===== ##
+  show_birth_markers = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      NOT = { has_character_flag = show_birth_markers }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_birth_markers
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_birth_markers = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_birth_markers
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bastard = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      trait = bastard
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bastard
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bastard = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      NOT = { trait = bastard }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = bastard
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_legit_bastard = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      trait = legit_bastard
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = legit_bastard
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_legit_bastard = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      NOT = { trait = legit_bastard }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = legit_bastard
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_born_in_the_purple = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      trait = born_in_the_purple
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = born_in_the_purple
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_born_in_the_purple = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      NOT = { trait = born_in_the_purple }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = born_in_the_purple
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_child_of_concubine = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      trait = child_of_consort
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = child_of_consort
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_child_of_concubine = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      NOT = { trait = child_of_consort }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = child_of_consort_male
+      add_trait = child_of_consort
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_child_of_consort = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      trait = child_of_consort_male
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = child_of_consort_male
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_child_of_consort = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      NOT = { trait = child_of_consort_male }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = child_of_consort
+      add_trait = child_of_consort_male
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_twin = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      trait = twin
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = twin
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_twin = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_birth_markers
+      NOT = { trait = twin }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = twin
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+
+  ## ===== Zodiac ===== ##
+  show_zodiac = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      NOT = { has_character_flag = show_zodiac }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_zodiac
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_zodiac = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_zodiac
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_aries = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_aries
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_aries
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_aries = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_aries }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_aries
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_taurus = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_taurus
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_taurus
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_taurus = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_taurus }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_taurus
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_gemini = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_gemini
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_gemini
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_gemini = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_gemini }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_gemini
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_cancer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_cancer
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_cancer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_cancer = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_cancer }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_cancer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_leo = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_leo
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_leo
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_leo = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_leo }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_leo
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_virgo = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_virgo
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_virgo
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_virgo = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_virgo }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_virgo
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_libra = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_libra
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_libra
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_libra = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_libra }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_libra
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_scorpio = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_scorpio
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_scorpio
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_scorpio = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_scorpio }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_scorpio
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_sagittarius = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_sagittarius
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_sagittarius
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_sagittarius = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_sagittarius }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_sagittarius
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_capricorn = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_capricorn
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_capricorn
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_capricorn = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_capricorn }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_capricorn
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_aquarius = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_aquarius
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_aquarius
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_aquarius = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_aquarius }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_aquarius
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_zodiac_pisces = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      trait = zodiac_pisces
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = zodiac_pisces
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_zodiac_pisces = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_zodiac
+      NOT = { trait = zodiac_pisces }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_zodiac_traits_effect = yes
+      add_trait = zodiac_pisces
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   ## ===== Kinslayer ===== ##
   show_kinslayer = {
 
@@ -11378,34 +12512,6 @@ decisions = {
 
     effect = {
       add_trait = peasant_leader
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  remove_child_of_concubine = {
-
-
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_misc
-      trait = child_of_consort
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      remove_trait = child_of_consort
     }
 
     revoke_allowed = {

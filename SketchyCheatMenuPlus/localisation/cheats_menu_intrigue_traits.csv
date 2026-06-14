@@ -1267,3 +1267,82 @@ cycle_freckles_4;--------Cycle Freckles (Variant 4);;;;;;;;;;;;;x
 cycle_freckles_4_desc;Cycle Freckles (Variant 4);;;;;;;;;;;;;x
 cycle_freckles_5;--------Cycle Freckles (Variant 5);;;;;;;;;;;;;x
 cycle_freckles_5_desc;Cycle Freckles (Variant 5);;;;;;;;;;;;;x
+
+show_birth_markers;----Show Birth Markers;;;;;;;;;;;;;x
+show_birth_markers_desc;Show Birth Markers;;;;;;;;;;;;;x
+hide_birth_markers;----Hide Birth Markers;;;;;;;;;;;;;x
+hide_birth_markers_desc;Hide Birth Markers;;;;;;;;;;;;;x
+show_zodiac;----Show Zodiac;;;;;;;;;;;;;x
+show_zodiac_desc;Show Zodiac;;;;;;;;;;;;;x
+hide_zodiac;----Hide Zodiac;;;;;;;;;;;;;x
+hide_zodiac_desc;Hide Zodiac;;;;;;;;;;;;;x
+add_bastard;--------Add Bastard;;;;;;;;;;;;;x
+add_bastard_desc;Add Bastard;;;;;;;;;;;;;x
+remove_bastard;--------Remove Bastard;;;;;;;;;;;;;x
+remove_bastard_desc;Remove Bastard;;;;;;;;;;;;;x
+add_legit_bastard;--------Add Legitimized Bastard;;;;;;;;;;;;;x
+add_legit_bastard_desc;Add Legitimized Bastard;;;;;;;;;;;;;x
+remove_legit_bastard;--------Remove Legitimized Bastard;;;;;;;;;;;;;x
+remove_legit_bastard_desc;Remove Legitimized Bastard;;;;;;;;;;;;;x
+add_born_in_the_purple;--------Add Born in the Purple;;;;;;;;;;;;;x
+add_born_in_the_purple_desc;Add Born in the Purple;;;;;;;;;;;;;x
+remove_born_in_the_purple;--------Remove Born in the Purple;;;;;;;;;;;;;x
+remove_born_in_the_purple_desc;Remove Born in the Purple;;;;;;;;;;;;;x
+add_child_of_concubine;--------Add Child of Concubine;;;;;;;;;;;;;x
+add_child_of_concubine_desc;Add Child of Concubine;;;;;;;;;;;;;x
+add_child_of_consort;--------Add Child of Consort;;;;;;;;;;;;;x
+add_child_of_consort_desc;Add Child of Consort;;;;;;;;;;;;;x
+remove_child_of_consort;--------Remove Child of Consort;;;;;;;;;;;;;x
+remove_child_of_consort_desc;Remove Child of Consort;;;;;;;;;;;;;x
+add_twin;--------Add Twin;;;;;;;;;;;;;x
+add_twin_desc;Add Twin;;;;;;;;;;;;;x
+remove_twin;--------Remove Twin;;;;;;;;;;;;;x
+remove_twin_desc;Remove Twin;;;;;;;;;;;;;x
+add_zodiac_aries;--------Add Aries;;;;;;;;;;;;;x
+add_zodiac_aries_desc;Add Aries;;;;;;;;;;;;;x
+remove_zodiac_aries;--------Remove Aries;;;;;;;;;;;;;x
+remove_zodiac_aries_desc;Remove Aries;;;;;;;;;;;;;x
+add_zodiac_taurus;--------Add Taurus;;;;;;;;;;;;;x
+add_zodiac_taurus_desc;Add Taurus;;;;;;;;;;;;;x
+remove_zodiac_taurus;--------Remove Taurus;;;;;;;;;;;;;x
+remove_zodiac_taurus_desc;Remove Taurus;;;;;;;;;;;;;x
+add_zodiac_gemini;--------Add Gemini;;;;;;;;;;;;;x
+add_zodiac_gemini_desc;Add Gemini;;;;;;;;;;;;;x
+remove_zodiac_gemini;--------Remove Gemini;;;;;;;;;;;;;x
+remove_zodiac_gemini_desc;Remove Gemini;;;;;;;;;;;;;x
+add_zodiac_cancer;--------Add Cancer;;;;;;;;;;;;;x
+add_zodiac_cancer_desc;Add Cancer;;;;;;;;;;;;;x
+remove_zodiac_cancer;--------Remove Cancer;;;;;;;;;;;;;x
+remove_zodiac_cancer_desc;Remove Cancer;;;;;;;;;;;;;x
+add_zodiac_leo;--------Add Leo;;;;;;;;;;;;;x
+add_zodiac_leo_desc;Add Leo;;;;;;;;;;;;;x
+remove_zodiac_leo;--------Remove Leo;;;;;;;;;;;;;x
+remove_zodiac_leo_desc;Remove Leo;;;;;;;;;;;;;x
+add_zodiac_virgo;--------Add Virgo;;;;;;;;;;;;;x
+add_zodiac_virgo_desc;Add Virgo;;;;;;;;;;;;;x
+remove_zodiac_virgo;--------Remove Virgo;;;;;;;;;;;;;x
+remove_zodiac_virgo_desc;Remove Virgo;;;;;;;;;;;;;x
+add_zodiac_libra;--------Add Libra;;;;;;;;;;;;;x
+add_zodiac_libra_desc;Add Libra;;;;;;;;;;;;;x
+remove_zodiac_libra;--------Remove Libra;;;;;;;;;;;;;x
+remove_zodiac_libra_desc;Remove Libra;;;;;;;;;;;;;x
+add_zodiac_scorpio;--------Add Scorpio;;;;;;;;;;;;;x
+add_zodiac_scorpio_desc;Add Scorpio;;;;;;;;;;;;;x
+remove_zodiac_scorpio;--------Remove Scorpio;;;;;;;;;;;;;x
+remove_zodiac_scorpio_desc;Remove Scorpio;;;;;;;;;;;;;x
+add_zodiac_sagittarius;--------Add Sagittarius;;;;;;;;;;;;;x
+add_zodiac_sagittarius_desc;Add Sagittarius;;;;;;;;;;;;;x
+remove_zodiac_sagittarius;--------Remove Sagittarius;;;;;;;;;;;;;x
+remove_zodiac_sagittarius_desc;Remove Sagittarius;;;;;;;;;;;;;x
+add_zodiac_capricorn;--------Add Capricorn;;;;;;;;;;;;;x
+add_zodiac_capricorn_desc;Add Capricorn;;;;;;;;;;;;;x
+remove_zodiac_capricorn;--------Remove Capricorn;;;;;;;;;;;;;x
+remove_zodiac_capricorn_desc;Remove Capricorn;;;;;;;;;;;;;x
+add_zodiac_aquarius;--------Add Aquarius;;;;;;;;;;;;;x
+add_zodiac_aquarius_desc;Add Aquarius;;;;;;;;;;;;;x
+remove_zodiac_aquarius;--------Remove Aquarius;;;;;;;;;;;;;x
+remove_zodiac_aquarius_desc;Remove Aquarius;;;;;;;;;;;;;x
+add_zodiac_pisces;--------Add Pisces;;;;;;;;;;;;;x
+add_zodiac_pisces_desc;Add Pisces;;;;;;;;;;;;;x
+remove_zodiac_pisces;--------Remove Pisces;;;;;;;;;;;;;x
+remove_zodiac_pisces_desc;Remove Pisces;;;;;;;;;;;;;x

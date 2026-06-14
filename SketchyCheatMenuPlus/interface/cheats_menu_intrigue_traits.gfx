@@ -117,6 +117,22 @@ spriteTypes = {
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
   spriteType = {
+    name = "GFX_show_birth_markers"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_birth_markers"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_show_zodiac"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_zodiac"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
     name = "GFX_show_memes"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }

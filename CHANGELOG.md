@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.7] - 2026-06-14
+
+### Added
+- **Birth Markers section** between Religious Markers and Zodiac — 6 trait pairs covering vanilla's universal birth-marker traits. Pair-grouped order: Bastard / Legitimized Bastard (vanilla `opposites` mutex), Born in the Purple (singleton), Child of Concubine / Child of Consort (sex-coded-by-parent — `add_*` effects include manual mutex via inline `remove_trait` since vanilla declares no `opposites` between them), Twin (singleton). All base-game, no DLC or religion gates. Existing `remove_child_of_concubine` moves from Misc into this section; new `add_child_of_concubine` added for symmetry.
+- **Zodiac section** between Birth Markers and Kinslayer — 12 trait pairs covering the Western zodiac signs in astrological calendar order (Aries → Pisces). Ungated per established SCMP convention (v0.6.1 berserker, etc.): single-religion vanilla content with no cross-religion alternative stays ungated in the cheat menu. Strict one-zodiac-at-a-time mutex via new `clear_zodiac_traits_effect` helper invoked by each `add_zodiac_*` effect — vanilla's pair-only `opposites` (Aries↔Libra etc.) isn't strict enough when the cheat menu bypasses natural one-sign-at-birth assignment.
+- **New scripted_effects file** `scmp_zodiac_effects.txt` — contains the `clear_zodiac_traits_effect` helper (removes all 12 zodiac traits).
+
+### Changed
+- **Misc Traits shrinks from 8 → 7 entries** (lost `remove_child_of_concubine` to Birth Markers).
+- **README updated** — trait count 186 → 204; categories list + DLC notes updated for Zodiac (HF) and consort-themed birth markers (Conclave).
+
 ## [0.6.6] - 2026-06-14
 
 ### Added
