@@ -2823,35 +2823,8 @@ decisions = {
     }
 
     effect = {
+      clear_education_traits_effect = yes
       add_trait = grey_eminence
-
-      hidden_tooltip = {
-
-        remove_trait = amateurish_plotter
-        remove_trait = flamboyant_schemer
-        remove_trait = intricate_webweaver
-        remove_trait = elusive_shadow
-
-        remove_trait = naive_appeaser
-        remove_trait = underhanded_rogue
-        remove_trait = charismatic_negotiator
-        #remove_trait = grey_eminence
-
-        remove_trait = indulgent_wastrel
-        remove_trait = thrifty_clerk
-        remove_trait = fortune_builder
-        remove_trait = midas_touched
-
-        remove_trait = misguided_warrior
-        remove_trait = tough_soldier
-        remove_trait = skilled_tactician
-        remove_trait = brilliant_strategist
-
-        remove_trait = detached_priest
-        remove_martial_cleric_trait_effect = yes
-        remove_trait = scholarly_theologian
-        remove_trait = mastermind_theologian
-      }
     }
 
     revoke_allowed = {
@@ -2879,35 +2852,8 @@ decisions = {
     }
 
     effect = {
+      clear_education_traits_effect = yes
       add_trait = brilliant_strategist
-
-      hidden_tooltip = {
-
-        remove_trait = amateurish_plotter
-        remove_trait = flamboyant_schemer
-        remove_trait = intricate_webweaver
-        remove_trait = elusive_shadow
-
-        remove_trait = naive_appeaser
-        remove_trait = underhanded_rogue
-        remove_trait = charismatic_negotiator
-        remove_trait = grey_eminence
-
-        remove_trait = indulgent_wastrel
-        remove_trait = thrifty_clerk
-        remove_trait = fortune_builder
-        remove_trait = midas_touched
-
-        remove_trait = misguided_warrior
-        remove_trait = tough_soldier
-        remove_trait = skilled_tactician
-        #remove_trait = brilliant_strategist
-
-        remove_trait = detached_priest
-        remove_martial_cleric_trait_effect = yes
-        remove_trait = scholarly_theologian
-        remove_trait = mastermind_theologian
-      }
     }
 
     revoke_allowed = {
@@ -2935,35 +2881,8 @@ decisions = {
     }
 
     effect = {
+      clear_education_traits_effect = yes
       add_trait = midas_touched
-
-      hidden_tooltip = {
-
-        remove_trait = amateurish_plotter
-        remove_trait = flamboyant_schemer
-        remove_trait = intricate_webweaver
-        remove_trait = elusive_shadow
-
-        remove_trait = naive_appeaser
-        remove_trait = underhanded_rogue
-        remove_trait = charismatic_negotiator
-        remove_trait = grey_eminence
-
-        remove_trait = indulgent_wastrel
-        remove_trait = thrifty_clerk
-        remove_trait = fortune_builder
-        #remove_trait = midas_touched
-
-        remove_trait = misguided_warrior
-        remove_trait = tough_soldier
-        remove_trait = skilled_tactician
-        remove_trait = brilliant_strategist
-
-        remove_trait = detached_priest
-        remove_martial_cleric_trait_effect = yes
-        remove_trait = scholarly_theologian
-        remove_trait = mastermind_theologian
-      }
     }
 
     revoke_allowed = {
@@ -2991,35 +2910,8 @@ decisions = {
     }
 
     effect = {
+      clear_education_traits_effect = yes
       add_trait = elusive_shadow
-
-      hidden_tooltip = {
-
-        remove_trait = amateurish_plotter
-        remove_trait = flamboyant_schemer
-        remove_trait = intricate_webweaver
-        #remove_trait = elusive_shadow
-
-        remove_trait = naive_appeaser
-        remove_trait = underhanded_rogue
-        remove_trait = charismatic_negotiator
-        remove_trait = grey_eminence
-
-        remove_trait = indulgent_wastrel
-        remove_trait = thrifty_clerk
-        remove_trait = fortune_builder
-        remove_trait = midas_touched
-
-        remove_trait = misguided_warrior
-        remove_trait = tough_soldier
-        remove_trait = skilled_tactician
-        remove_trait = brilliant_strategist
-
-        remove_trait = detached_priest
-        remove_martial_cleric_trait_effect = yes
-        remove_trait = scholarly_theologian
-        remove_trait = mastermind_theologian
-      }
     }
 
     revoke_allowed = {
@@ -3047,35 +2939,8 @@ decisions = {
     }
 
     effect = {
+      clear_education_traits_effect = yes
       add_trait = mastermind_theologian
-
-      hidden_tooltip = {
-
-        remove_trait = amateurish_plotter
-        remove_trait = flamboyant_schemer
-        remove_trait = intricate_webweaver
-        remove_trait = elusive_shadow
-
-        remove_trait = naive_appeaser
-        remove_trait = underhanded_rogue
-        remove_trait = charismatic_negotiator
-        remove_trait = grey_eminence
-
-        remove_trait = indulgent_wastrel
-        remove_trait = thrifty_clerk
-        remove_trait = fortune_builder
-        remove_trait = midas_touched
-
-        remove_trait = misguided_warrior
-        remove_trait = tough_soldier
-        remove_trait = skilled_tactician
-        remove_trait = brilliant_strategist
-
-        remove_trait = detached_priest
-        remove_martial_cleric_trait_effect = yes
-        remove_trait = scholarly_theologian
-        #remove_trait = mastermind_theologian
-      }
     }
 
     revoke_allowed = {
@@ -3143,9 +3008,6 @@ decisions = {
     }
   }
 
-  # The 11-trait genetic-defect list is duplicated inline
-  # in potential + effect here, and again in self_genes /
-  # fix_genes (cheats_menu.txt).
   remove_defects = {
 
 
@@ -3174,17 +3036,7 @@ decisions = {
     }
 
     effect = {
-      remove_trait = inbred
-      remove_trait = harelip
-      remove_trait = clubfooted
-      remove_trait = hunchback
-      remove_trait = lisp
-      remove_trait = stutter
-      remove_trait = ugly
-      remove_trait = dwarf
-      remove_trait = slow
-      remove_trait = imbecile
-      remove_trait = weak
+      clear_birth_defects_effect = yes
     }
 
     revoke_allowed = {
@@ -11140,7 +10992,10 @@ decisions = {
     }
 
     effect = {
-      remove_trait = child_of_consort_male
+      if = {
+        limit = { trait = child_of_consort_male }
+        remove_trait = child_of_consort_male
+      }
       add_trait = child_of_consort
     }
 
@@ -11197,7 +11052,10 @@ decisions = {
     }
 
     effect = {
-      remove_trait = child_of_consort
+      if = {
+        limit = { trait = child_of_consort }
+        remove_trait = child_of_consort
+      }
       add_trait = child_of_consort_male
     }
 

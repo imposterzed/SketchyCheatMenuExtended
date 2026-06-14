@@ -6,6 +6,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.8] - 2026-06-14
+
+### Changed
+- **Tooltip cleanup pass** — wrapped 224 unconditional `remove_trait = X` calls in `if = { limit = { trait = X } remove_trait = X }` so tooltips only render the removes that actually fire on the target character. Mechanical refactor; identical behavior, cleaner UX. Affected sites:
+  - All 5 bulk-clear helpers in `scmp_health_effects.txt` (61 wraps)
+  - `clear_zodiac_traits_effect` in `scmp_zodiac_effects.txt` (12 wraps — fixes v0.6.7 tooltip noise on `add_zodiac_*`)
+  - All 16 compat helpers in `scmp_trait_compat.txt` (48 wraps — wrapping removes inside the CleanSlate-routed if/else branches)
+  - `remove_defects` decision (11 wraps)
+  - `add_child_of_concubine` / `add_child_of_consort` decisions (1 each — the v0.6.7 manual mutex)
+  - 5 `set_X_education` cascades — the existing `hidden_tooltip` wrappers unwrapped, each inner remove wrapped in `if/limit` for informative tooltips (90 wraps)
+- **The 55 existing `hidden_tooltip` blocks elsewhere stay untouched** — they wrap cross-character iterations (`any_character`, `any_realm_character`, etc.) or finalize-flag cleanups where per-character iteration noise is worse than tooltip silence.
+- **Consolidated two long-standing inline-duplication patterns** (flagged in code comments since v0.3.1, never deduped until now):
+  - **`clear_education_traits_effect`** — new helper in new file `scmp_education_effects.txt`. The 5 `set_X_education` cascades now call the helper instead of each carrying their own ~20 inline `if/limit` blocks. Cascade effects shrink from ~85 lines to 3. Order also normalized to remove-then-add (matching the consort-pair / zodiac convention).
+  - **`clear_birth_defects_effect`** — new helper added to `scmp_health_effects.txt`. `remove_defects`, `self_genes`, and `fix_genes` now all call the helper instead of carrying inline copies of the same 11-trait list. `self_genes` and `fix_genes` also gain filtered tooltips (their inline removes weren't wrapped in v0.6.8's first pass).
+  - Duplication-acknowledging comments at `cheats_menu.txt:121-124` and above `remove_defects` removed (the duplication they flagged is now resolved).
+- **README error.log paragraph updated** — count bumped 31 → ~63, with explanation for the doubling.
+
 ## [0.6.7] - 2026-06-14
 
 ### Added

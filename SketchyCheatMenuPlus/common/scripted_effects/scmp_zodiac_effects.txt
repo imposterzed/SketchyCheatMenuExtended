@@ -13,16 +13,52 @@
 ############################################################
 
 clear_zodiac_traits_effect = {
-  remove_trait = zodiac_aries
-  remove_trait = zodiac_taurus
-  remove_trait = zodiac_gemini
-  remove_trait = zodiac_cancer
-  remove_trait = zodiac_leo
-  remove_trait = zodiac_virgo
-  remove_trait = zodiac_libra
-  remove_trait = zodiac_scorpio
-  remove_trait = zodiac_sagittarius
-  remove_trait = zodiac_capricorn
-  remove_trait = zodiac_aquarius
-  remove_trait = zodiac_pisces
+  if = {
+    limit = { trait = zodiac_aries }
+    remove_trait = zodiac_aries
+  }
+  if = {
+    limit = { trait = zodiac_taurus }
+    remove_trait = zodiac_taurus
+  }
+  if = {
+    limit = { trait = zodiac_gemini }
+    remove_trait = zodiac_gemini
+  }
+  if = {
+    limit = { trait = zodiac_cancer }
+    remove_trait = zodiac_cancer
+  }
+  if = {
+    limit = { trait = zodiac_leo }
+    remove_trait = zodiac_leo
+  }
+  if = {
+    limit = { trait = zodiac_virgo }
+    remove_trait = zodiac_virgo
+  }
+  if = {
+    limit = { trait = zodiac_libra }
+    remove_trait = zodiac_libra
+  }
+  if = {
+    limit = { trait = zodiac_scorpio }
+    remove_trait = zodiac_scorpio
+  }
+  if = {
+    limit = { trait = zodiac_sagittarius }
+    remove_trait = zodiac_sagittarius
+  }
+  if = {
+    limit = { trait = zodiac_capricorn }
+    remove_trait = zodiac_capricorn
+  }
+  if = {
+    limit = { trait = zodiac_aquarius }
+    remove_trait = zodiac_aquarius
+  }
+  if = {
+    limit = { trait = zodiac_pisces }
+    remove_trait = zodiac_pisces
+  }
 }

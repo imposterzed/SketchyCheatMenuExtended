@@ -11,93 +11,276 @@
 
 # Health: general status states (mental, drunkard, wounds, battle scars).
 remove_health_traits_effect = {
-  remove_trait = depressed
-  remove_trait = drunkard
-  remove_trait = incapable
-  remove_trait = infirm
-  remove_trait = lunatic
-  remove_trait = possessed
-  remove_trait = stressed
-  remove_trait = wounded
-  remove_trait = scarred
-  remove_trait = scarred_mid
-  remove_trait = scarred_high
-  remove_trait = maimed
+  if = {
+    limit = { trait = depressed }
+    remove_trait = depressed
+  }
+  if = {
+    limit = { trait = drunkard }
+    remove_trait = drunkard
+  }
+  if = {
+    limit = { trait = incapable }
+    remove_trait = incapable
+  }
+  if = {
+    limit = { trait = infirm }
+    remove_trait = infirm
+  }
+  if = {
+    limit = { trait = lunatic }
+    remove_trait = lunatic
+  }
+  if = {
+    limit = { trait = possessed }
+    remove_trait = possessed
+  }
+  if = {
+    limit = { trait = stressed }
+    remove_trait = stressed
+  }
+  if = {
+    limit = { trait = wounded }
+    remove_trait = wounded
+  }
+  if = {
+    limit = { trait = scarred }
+    remove_trait = scarred
+  }
+  if = {
+    limit = { trait = scarred_mid }
+    remove_trait = scarred_mid
+  }
+  if = {
+    limit = { trait = scarred_high }
+    remove_trait = scarred_high
+  }
+  if = {
+    limit = { trait = maimed }
+    remove_trait = maimed
+  }
 }
 
 # Diseases: named illnesses plus the 8 epidemics CleanSlate renames.
 remove_disease_traits_effect = {
   # Shared (same ID in vanilla and CleanSlate)
-  remove_trait = ill
-  remove_trait = leper
-  remove_trait = pneumonic
-  remove_trait = sickly
-  remove_trait = cancer
-  remove_trait = dancing_plague
-  remove_trait = scurvy
-  remove_trait = rabies
-  remove_trait = gout
-  remove_trait = food_poisoning
-  remove_trait = dysentery
-  remove_trait = flu
+  if = {
+    limit = { trait = ill }
+    remove_trait = ill
+  }
+  if = {
+    limit = { trait = leper }
+    remove_trait = leper
+  }
+  if = {
+    limit = { trait = pneumonic }
+    remove_trait = pneumonic
+  }
+  if = {
+    limit = { trait = sickly }
+    remove_trait = sickly
+  }
+  if = {
+    limit = { trait = cancer }
+    remove_trait = cancer
+  }
+  if = {
+    limit = { trait = dancing_plague }
+    remove_trait = dancing_plague
+  }
+  if = {
+    limit = { trait = scurvy }
+    remove_trait = scurvy
+  }
+  if = {
+    limit = { trait = rabies }
+    remove_trait = rabies
+  }
+  if = {
+    limit = { trait = gout }
+    remove_trait = gout
+  }
+  if = {
+    limit = { trait = food_poisoning }
+    remove_trait = food_poisoning
+  }
+  if = {
+    limit = { trait = dysentery }
+    remove_trait = dysentery
+  }
+  if = {
+    limit = { trait = flu }
+    remove_trait = flu
+  }
 
   # Renamed by CleanSlate
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = consumption
-    remove_trait = slow_fever
-    remove_trait = camp_fever
-    remove_trait = aztec_disease
-    remove_trait = bubonic_plague
-    remove_trait = measles
-    remove_trait = smallpox
-    remove_trait = great_pox
+    if = {
+      limit = { trait = consumption }
+      remove_trait = consumption
+    }
+    if = {
+      limit = { trait = slow_fever }
+      remove_trait = slow_fever
+    }
+    if = {
+      limit = { trait = camp_fever }
+      remove_trait = camp_fever
+    }
+    if = {
+      limit = { trait = aztec_disease }
+      remove_trait = aztec_disease
+    }
+    if = {
+      limit = { trait = bubonic_plague }
+      remove_trait = bubonic_plague
+    }
+    if = {
+      limit = { trait = measles }
+      remove_trait = measles
+    }
+    if = {
+      limit = { trait = smallpox }
+      remove_trait = smallpox
+    }
+    if = {
+      limit = { trait = great_pox }
+      remove_trait = great_pox
+    }
   }
   else = {
-    remove_trait = has_tuberculosis
-    remove_trait = has_typhoid_fever
-    remove_trait = has_typhus
-    remove_trait = has_aztec_disease
-    remove_trait = has_bubonic_plague
-    remove_trait = has_measles
-    remove_trait = has_small_pox
-    remove_trait = syphilitic
+    if = {
+      limit = { trait = has_tuberculosis }
+      remove_trait = has_tuberculosis
+    }
+    if = {
+      limit = { trait = has_typhoid_fever }
+      remove_trait = has_typhoid_fever
+    }
+    if = {
+      limit = { trait = has_typhus }
+      remove_trait = has_typhus
+    }
+    if = {
+      limit = { trait = has_aztec_disease }
+      remove_trait = has_aztec_disease
+    }
+    if = {
+      limit = { trait = has_bubonic_plague }
+      remove_trait = has_bubonic_plague
+    }
+    if = {
+      limit = { trait = has_measles }
+      remove_trait = has_measles
+    }
+    if = {
+      limit = { trait = has_small_pox }
+      remove_trait = has_small_pox
+    }
+    if = {
+      limit = { trait = syphilitic }
+      remove_trait = syphilitic
+    }
   }
 }
 
 # Symptoms: transient minor conditions.
 remove_symptom_traits_effect = {
-  remove_trait = abdominal_pain
-  remove_trait = chest_pain
-  remove_trait = cough
-  remove_trait = cramps
-  remove_trait = diarrhea
-  remove_trait = fatigue
-  remove_trait = fever
-  remove_trait = headache
-  remove_trait = infection
-  remove_trait = malaise
-  remove_trait = rash
-  remove_trait = vomiting
+  if = {
+    limit = { trait = abdominal_pain }
+    remove_trait = abdominal_pain
+  }
+  if = {
+    limit = { trait = chest_pain }
+    remove_trait = chest_pain
+  }
+  if = {
+    limit = { trait = cough }
+    remove_trait = cough
+  }
+  if = {
+    limit = { trait = cramps }
+    remove_trait = cramps
+  }
+  if = {
+    limit = { trait = diarrhea }
+    remove_trait = diarrhea
+  }
+  if = {
+    limit = { trait = fatigue }
+    remove_trait = fatigue
+  }
+  if = {
+    limit = { trait = fever }
+    remove_trait = fever
+  }
+  if = {
+    limit = { trait = headache }
+    remove_trait = headache
+  }
+  if = {
+    limit = { trait = infection }
+    remove_trait = infection
+  }
+  if = {
+    limit = { trait = malaise }
+    remove_trait = malaise
+  }
+  if = {
+    limit = { trait = rash }
+    remove_trait = rash
+  }
+  if = {
+    limit = { trait = vomiting }
+    remove_trait = vomiting
+  }
 }
 
 # Maimed: permanent battle injuries (the wound-progression terminal
 # states + the per-limb/feature loss variants).
 remove_maimed_traits_effect = {
-  remove_trait = disfigured
-  remove_trait = mangled
-  remove_trait = one_eyed
-  remove_trait = one_handed
-  remove_trait = one_legged
-  remove_trait = severely_injured
+  if = {
+    limit = { trait = disfigured }
+    remove_trait = disfigured
+  }
+  if = {
+    limit = { trait = mangled }
+    remove_trait = mangled
+  }
+  if = {
+    limit = { trait = one_eyed }
+    remove_trait = one_eyed
+  }
+  if = {
+    limit = { trait = one_handed }
+    remove_trait = one_handed
+  }
+  if = {
+    limit = { trait = one_legged }
+    remove_trait = one_legged
+  }
+  if = {
+    limit = { trait = severely_injured }
+    remove_trait = severely_injured
+  }
 }
 
 # Special: blindness, hidden severe-illness, and STDs that don't fall
 # into the other categories.
 remove_special_traits_effect = {
-  remove_trait = blinded
-  remove_trait = sick_incapable
-  remove_trait = lovers_pox
+  if = {
+    limit = { trait = blinded }
+    remove_trait = blinded
+  }
+  if = {
+    limit = { trait = sick_incapable }
+    remove_trait = sick_incapable
+  }
+  if = {
+    limit = { trait = lovers_pox }
+    remove_trait = lovers_pox
+  }
 }
 
 # Orchestrator: clears every category.
@@ -107,4 +290,21 @@ remove_all_afflictions_effect = {
   remove_symptom_traits_effect = yes
   remove_maimed_traits_effect = yes
   remove_special_traits_effect = yes
+}
+
+# Birth defects: 11 negative congenital traits the remove_defects /
+# self_genes / fix_genes decisions all clear. Same IDs across vanilla
+# and CleanSlate (no compat routing).
+clear_birth_defects_effect = {
+  if = { limit = { trait = inbred } remove_trait = inbred }
+  if = { limit = { trait = harelip } remove_trait = harelip }
+  if = { limit = { trait = clubfooted } remove_trait = clubfooted }
+  if = { limit = { trait = hunchback } remove_trait = hunchback }
+  if = { limit = { trait = lisp } remove_trait = lisp }
+  if = { limit = { trait = stutter } remove_trait = stutter }
+  if = { limit = { trait = ugly } remove_trait = ugly }
+  if = { limit = { trait = dwarf } remove_trait = dwarf }
+  if = { limit = { trait = slow } remove_trait = slow }
+  if = { limit = { trait = imbecile } remove_trait = imbecile }
+  if = { limit = { trait = weak } remove_trait = weak }
 }

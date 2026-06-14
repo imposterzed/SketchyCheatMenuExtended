@@ -118,10 +118,6 @@ targetted_decisions = {
     ai_will_do = { factor = 0 }
   }
 
-  # self_genes / fix_genes both grant genius + strong + beauty
-  # (CleanSlate-aware via add_beauty_trait_effect) and inline-
-  # strip the 11 genetic-defect traits. The same 11-trait list
-  # lives in remove_defects (cheats_menu_intrigue_traits.txt).
   self_genes = {
     filter = self
 
@@ -139,20 +135,10 @@ targetted_decisions = {
 
     effect = {
       ROOT = {
+        clear_birth_defects_effect = yes
         add_trait = genius
         add_beauty_trait_effect = yes
         add_trait = strong
-        remove_trait = inbred
-        remove_trait = harelip
-        remove_trait = clubfooted
-        remove_trait = hunchback
-        remove_trait = lisp
-        remove_trait = stutter
-        remove_trait = ugly
-        remove_trait = dwarf
-        remove_trait = slow
-        remove_trait = imbecile
-        remove_trait = weak
       }
     }
 
@@ -993,20 +979,10 @@ targetted_decisions = {
       always = yes
     }
     effect = {
+      clear_birth_defects_effect = yes
       add_trait = genius
       add_beauty_trait_effect = yes
       add_trait = strong
-      remove_trait = inbred
-      remove_trait = harelip
-      remove_trait = clubfooted
-      remove_trait = hunchback
-      remove_trait = lisp
-      remove_trait = stutter
-      remove_trait = ugly
-      remove_trait = dwarf
-      remove_trait = slow
-      remove_trait = imbecile
-      remove_trait = weak
     }
     revoke_allowed = {
       always = no

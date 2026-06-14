@@ -16,10 +16,16 @@ add_physique_trait_effect = {
 remove_physique_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = brawny
+    if = {
+      limit = { trait = brawny }
+      remove_trait = brawny
+    }
   }
   else = {
-    remove_trait = robust
+    if = {
+      limit = { trait = robust }
+      remove_trait = robust
+    }
   }
 }
 
@@ -36,10 +42,16 @@ add_feeble_trait_effect = {
 remove_feeble_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = frail
+    if = {
+      limit = { trait = frail }
+      remove_trait = frail
+    }
   }
   else = {
-    remove_trait = feeble
+    if = {
+      limit = { trait = feeble }
+      remove_trait = feeble
+    }
   }
 }
 
@@ -56,10 +68,16 @@ add_beauty_trait_effect = {
 remove_beauty_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = attractive
+    if = {
+      limit = { trait = attractive }
+      remove_trait = attractive
+    }
   }
   else = {
-    remove_trait = fair
+    if = {
+      limit = { trait = fair }
+      remove_trait = fair
+    }
   }
 }
 
@@ -76,10 +94,16 @@ add_fat_trait_effect = {
 remove_fat_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = fat
+    if = {
+      limit = { trait = fat }
+      remove_trait = fat
+    }
   }
   else = {
-    remove_trait = is_fat
+    if = {
+      limit = { trait = is_fat }
+      remove_trait = is_fat
+    }
   }
 }
 
@@ -96,10 +120,16 @@ add_malnourished_trait_effect = {
 remove_malnourished_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = malnourished
+    if = {
+      limit = { trait = malnourished }
+      remove_trait = malnourished
+    }
   }
   else = {
-    remove_trait = is_malnourished
+    if = {
+      limit = { trait = is_malnourished }
+      remove_trait = is_malnourished
+    }
   }
 }
 
@@ -116,10 +146,16 @@ add_schemer_trait_effect = {
 remove_schemer_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = master_schemer
+    if = {
+      limit = { trait = master_schemer }
+      remove_trait = master_schemer
+    }
   }
   else = {
-    remove_trait = schemer
+    if = {
+      limit = { trait = schemer }
+      remove_trait = schemer
+    }
   }
 }
 
@@ -150,19 +186,31 @@ remove_seducer_trait_effect = {
     limit = { is_female = yes }
     if = {
       limit = { has_global_flag = cleanslate_active }
-      remove_trait = master_seductress
+      if = {
+        limit = { trait = master_seductress }
+        remove_trait = master_seductress
+      }
     }
     else = {
-      remove_trait = seductress
+      if = {
+        limit = { trait = seductress }
+        remove_trait = seductress
+      }
     }
   }
   else = {
     if = {
       limit = { has_global_flag = cleanslate_active }
-      remove_trait = master_seducer
+      if = {
+        limit = { trait = master_seducer }
+        remove_trait = master_seducer
+      }
     }
     else = {
-      remove_trait = seducer
+      if = {
+        limit = { trait = seducer }
+        remove_trait = seducer
+      }
     }
   }
 }
@@ -180,10 +228,16 @@ add_gamer_trait_effect = {
 remove_gamer_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = game_master
+    if = {
+      limit = { trait = game_master }
+      remove_trait = game_master
+    }
   }
   else = {
-    remove_trait = gamer
+    if = {
+      limit = { trait = gamer }
+      remove_trait = gamer
+    }
   }
 }
 
@@ -200,10 +254,16 @@ add_direct_leader_trait_effect = {
 remove_direct_leader_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = direct_leader
+    if = {
+      limit = { trait = direct_leader }
+      remove_trait = direct_leader
+    }
   }
   else = {
-    remove_trait = experimenter
+    if = {
+      limit = { trait = experimenter }
+      remove_trait = experimenter
+    }
   }
 }
 
@@ -220,10 +280,16 @@ add_battlefield_terrain_master_trait_effect = {
 remove_battlefield_terrain_master_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = battlefield_terrain_master
+    if = {
+      limit = { trait = battlefield_terrain_master }
+      remove_trait = battlefield_terrain_master
+    }
   }
   else = {
-    remove_trait = narrow_flank_leader
+    if = {
+      limit = { trait = narrow_flank_leader }
+      remove_trait = narrow_flank_leader
+    }
   }
 }
 
@@ -240,10 +306,16 @@ add_desert_terrain_trait_effect = {
 remove_desert_terrain_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = desert_expert
+    if = {
+      limit = { trait = desert_expert }
+      remove_trait = desert_expert
+    }
   }
   else = {
-    remove_trait = desert_terrain_leader
+    if = {
+      limit = { trait = desert_terrain_leader }
+      remove_trait = desert_terrain_leader
+    }
   }
 }
 
@@ -260,10 +332,16 @@ add_flat_terrain_trait_effect = {
 remove_flat_terrain_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = flat_terrain_expert
+    if = {
+      limit = { trait = flat_terrain_expert }
+      remove_trait = flat_terrain_expert
+    }
   }
   else = {
-    remove_trait = flat_terrain_leader
+    if = {
+      limit = { trait = flat_terrain_leader }
+      remove_trait = flat_terrain_leader
+    }
   }
 }
 
@@ -280,10 +358,16 @@ add_jungle_terrain_trait_effect = {
 remove_jungle_terrain_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = jungle_expert
+    if = {
+      limit = { trait = jungle_expert }
+      remove_trait = jungle_expert
+    }
   }
   else = {
-    remove_trait = jungle_terrain_leader
+    if = {
+      limit = { trait = jungle_terrain_leader }
+      remove_trait = jungle_terrain_leader
+    }
   }
 }
 
@@ -300,10 +384,16 @@ add_mountain_terrain_trait_effect = {
 remove_mountain_terrain_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = mountain_expert
+    if = {
+      limit = { trait = mountain_expert }
+      remove_trait = mountain_expert
+    }
   }
   else = {
-    remove_trait = mountain_terrain_leader
+    if = {
+      limit = { trait = mountain_terrain_leader }
+      remove_trait = mountain_terrain_leader
+    }
   }
 }
 
@@ -320,10 +410,16 @@ add_rough_terrain_trait_effect = {
 remove_rough_terrain_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = rough_terrain_expert
+    if = {
+      limit = { trait = rough_terrain_expert }
+      remove_trait = rough_terrain_expert
+    }
   }
   else = {
-    remove_trait = rough_terrain_leader
+    if = {
+      limit = { trait = rough_terrain_leader }
+      remove_trait = rough_terrain_leader
+    }
   }
 }
 
@@ -340,10 +436,16 @@ add_cannibal_trait_effect = {
 remove_cannibal_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = cannibal
+    if = {
+      limit = { trait = cannibal }
+      remove_trait = cannibal
+    }
   }
   else = {
-    remove_trait = cannibal_trait
+    if = {
+      limit = { trait = cannibal_trait }
+      remove_trait = cannibal_trait
+    }
   }
 }
 
@@ -360,10 +462,16 @@ add_seaking_trait_effect = {
 remove_seaking_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = sea_king
+    if = {
+      limit = { trait = sea_king }
+      remove_trait = sea_king
+    }
   }
   else = {
-    remove_trait = seaking
+    if = {
+      limit = { trait = seaking }
+      remove_trait = seaking
+    }
   }
 }
 
@@ -380,10 +488,16 @@ add_eagle_warrior_trait_effect = {
 remove_eagle_warrior_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = eagle_knight
+    if = {
+      limit = { trait = eagle_knight }
+      remove_trait = eagle_knight
+    }
   }
   else = {
-    remove_trait = eagle_warrior
+    if = {
+      limit = { trait = eagle_warrior }
+      remove_trait = eagle_warrior
+    }
   }
 }
 
@@ -399,10 +513,16 @@ add_romuvas_own_trait_effect = {
 remove_romuvas_own_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = hound_of_dievas
+    if = {
+      limit = { trait = hound_of_dievas }
+      remove_trait = hound_of_dievas
+    }
   }
   else = {
-    remove_trait = romuvas_own
+    if = {
+      limit = { trait = romuvas_own }
+      remove_trait = romuvas_own
+    }
   }
 }
 
@@ -418,10 +538,16 @@ add_shaddai_trait_effect = {
 remove_shaddai_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = kanai
+    if = {
+      limit = { trait = kanai }
+      remove_trait = kanai
+    }
   }
   else = {
-    remove_trait = shaddai
+    if = {
+      limit = { trait = shaddai }
+      remove_trait = shaddai
+    }
   }
 }
 
@@ -437,10 +563,16 @@ add_tengri_warrior_trait_effect = {
 remove_tengri_warrior_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = skylord
+    if = {
+      limit = { trait = skylord }
+      remove_trait = skylord
+    }
   }
   else = {
-    remove_trait = tengri_warrior
+    if = {
+      limit = { trait = tengri_warrior }
+      remove_trait = tengri_warrior
+    }
   }
 }
 
@@ -456,10 +588,16 @@ add_ukkos_shield_trait_effect = {
 remove_ukkos_shield_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = ukkos_hammer
+    if = {
+      limit = { trait = ukkos_hammer }
+      remove_trait = ukkos_hammer
+    }
   }
   else = {
-    remove_trait = ukkos_shield
+    if = {
+      limit = { trait = ukkos_shield }
+      remove_trait = ukkos_shield
+    }
   }
 }
 
@@ -468,9 +606,15 @@ remove_ukkos_shield_trait_effect = {
 remove_martial_cleric_trait_effect = {
   if = {
     limit = { has_global_flag = cleanslate_active }
-    remove_trait = dutiful_cleric
+    if = {
+      limit = { trait = dutiful_cleric }
+      remove_trait = dutiful_cleric
+    }
   }
   else = {
-    remove_trait = martial_cleric
+    if = {
+      limit = { trait = martial_cleric }
+      remove_trait = martial_cleric
+    }
   }
 }
