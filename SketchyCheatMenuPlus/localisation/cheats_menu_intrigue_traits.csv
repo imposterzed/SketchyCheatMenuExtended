@@ -832,6 +832,102 @@ add_sun_warrior_desc;Add Sun Warrior;;;;;;;;;;;;;x
 remove_sun_warrior;--------Remove Sun Warrior;;;;;;;;;;;;;x
 remove_sun_warrior_desc;Remove Sun Warrior;;;;;;;;;;;;;x
 
+add_augustus;--------Add Augustus;;;;;;;;;;;;;x
+add_augustus_desc;Add Augustus;;;;;;;;;;;;;x
+
+remove_augustus;--------Remove Augustus;;;;;;;;;;;;;x
+remove_augustus_desc;Remove Augustus;;;;;;;;;;;;;x
+
+add_heresiarch;--------Add Heresiarch;;;;;;;;;;;;;x
+add_heresiarch_desc;Add Heresiarch;;;;;;;;;;;;;x
+
+remove_heresiarch;--------Remove Heresiarch;;;;;;;;;;;;;x
+remove_heresiarch_desc;Remove Heresiarch;;;;;;;;;;;;;x
+
+add_peasant_leader;--------Add Peasant Leader;;;;;;;;;;;;;x
+add_peasant_leader_desc;Add Peasant Leader;;;;;;;;;;;;;x
+
+remove_peasant_leader;--------Remove Peasant Leader;;;;;;;;;;;;;x
+remove_peasant_leader_desc;Remove Peasant Leader;;;;;;;;;;;;;x
+
+show_warriors;----Show Warriors;;;;;;;;;;;;;x
+show_warriors_desc;Show Warriors;;;;;;;;;;;;;x
+
+hide_warriors;----Hide Warriors;;;;;;;;;;;;;x
+hide_warriors_desc;Hide Warriors;;;;;;;;;;;;;x
+
+add_adventurer;--------Add Adventurer;;;;;;;;;;;;;x
+add_adventurer_desc;Add Adventurer;;;;;;;;;;;;;x
+
+remove_adventurer;--------Remove Adventurer;;;;;;;;;;;;;x
+remove_adventurer_desc;Remove Adventurer;;;;;;;;;;;;;x
+
+add_berserker;--------Add Berserker;;;;;;;;;;;;;x
+add_berserker_desc;Add Berserker;;;;;;;;;;;;;x
+
+remove_berserker;--------Remove Berserker;;;;;;;;;;;;;x
+remove_berserker_desc;Remove Berserker;;;;;;;;;;;;;x
+
+add_gladiator;--------Add Gladiator;;;;;;;;;;;;;x
+add_gladiator_desc;Add Gladiator;;;;;;;;;;;;;x
+
+remove_gladiator;--------Remove Gladiator;;;;;;;;;;;;;x
+remove_gladiator_desc;Remove Gladiator;;;;;;;;;;;;;x
+
+add_shieldmaiden;--------Add Shieldmaiden;;;;;;;;;;;;;x
+add_shieldmaiden_desc;Add Shieldmaiden;;;;;;;;;;;;;x
+
+remove_shieldmaiden;--------Remove Shieldmaiden;;;;;;;;;;;;;x
+remove_shieldmaiden_desc;Remove Shieldmaiden;;;;;;;;;;;;;x
+
+add_varangian;--------Add Varangian;;;;;;;;;;;;;x
+add_varangian_desc;Add Varangian;;;;;;;;;;;;;x
+
+remove_varangian;--------Remove Varangian;;;;;;;;;;;;;x
+remove_varangian_desc;Remove Varangian;;;;;;;;;;;;;x
+
+show_religious_markers;----Show Religious Markers;;;;;;;;;;;;;x
+show_religious_markers_desc;Show Religious Markers;;;;;;;;;;;;;x
+
+hide_religious_markers;----Hide Religious Markers;;;;;;;;;;;;;x
+hide_religious_markers_desc;Hide Religious Markers;;;;;;;;;;;;;x
+
+add_reincarnation;--------Add Reincarnation;;;;;;;;;;;;;x
+add_reincarnation_desc;Add Reincarnation;;;;;;;;;;;;;x
+
+remove_reincarnation;--------Remove Reincarnation;;;;;;;;;;;;;x
+remove_reincarnation_desc;Remove Reincarnation;;;;;;;;;;;;;x
+
+add_saoshyant;--------Add Saoshyant;;;;;;;;;;;;;x
+add_saoshyant_desc;Add Saoshyant;;;;;;;;;;;;;x
+
+remove_saoshyant;--------Remove Saoshyant;;;;;;;;;;;;;x
+remove_saoshyant_desc;Remove Saoshyant;;;;;;;;;;;;;x
+
+add_saoshyant_descendant;--------Add Saoshyant Descendant;;;;;;;;;;;;;x
+add_saoshyant_descendant_desc;Add Saoshyant Descendant;;;;;;;;;;;;;x
+
+remove_saoshyant_descendant;--------Remove Saoshyant Descendant;;;;;;;;;;;;;x
+remove_saoshyant_descendant_desc;Remove Saoshyant Descendant;;;;;;;;;;;;;x
+
+show_memes;----Show Memes;;;;;;;;;;;;;x
+show_memes_desc;Show Memes;;;;;;;;;;;;;x
+
+hide_memes;----Hide Memes;;;;;;;;;;;;;x
+hide_memes_desc;Hide Memes;;;;;;;;;;;;;x
+
+add_cat;--------Add Cat;;;;;;;;;;;;;x
+add_cat_desc;Add Cat;;;;;;;;;;;;;x
+
+remove_cat;--------Remove Cat;;;;;;;;;;;;;x
+remove_cat_desc;Remove Cat;;;;;;;;;;;;;x
+
+add_horse;--------Add Horse;;;;;;;;;;;;;x
+add_horse_desc;Add Horse;;;;;;;;;;;;;x
+
+remove_horse;--------Remove Horse;;;;;;;;;;;;;x
+remove_horse_desc;Remove Horse;;;;;;;;;;;;;x
+
 show_kinslayer;----Show Kinslayer Traits;;;;;;;;;;;;;x
 show_kinslayer_desc;Show Kinslayer Traits;;;;;;;;;;;;;x
 

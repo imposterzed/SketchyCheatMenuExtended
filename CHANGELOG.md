@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.1] - 2026-06-13
+
+### Added
+- **3 new menu sections + 3 Misc additions** = 13 new add/remove trait-toggle pairs (all same-ID across vanilla and CleanSlate, no new compat helpers needed).
+  - **Warriors** (new section): `adventurer`, `berserker`, `gladiator`, `shieldmaiden`, `varangian`. Named combat / champion traits with real stat impact. `add_shieldmaiden` is sex-gated to female (the vanilla trait has female-only description text — `female_compliment` with no male equivalent — and looks broken on male characters). `remove_shieldmaiden` stays ungated for cross-sex cleanup. Other 4 warrior traits have no gates — vanilla's berserker (Norse) restriction has no cross-religion alternative, so cheat menu allows free assignment per established precedent.
+  - **Religious Markers** (new section): `reincarnation` (Hindu/Buddhist), `saoshyant` and `saoshyant_descendant` (Zoroastrian). No religion gates — cheat menu, no parallels.
+  - **Memes** (new section): `cat`, `horse` — vanilla joke traits with `-10` to all stats, `inherit_chance = 100`, blocked marry/inherit/hold. Useful for testing edge cases (e.g., dynasty-cat inheritance).
+  - **Misc additions**: `augustus`, `heresiarch`, `peasant_leader`. The latter two have `rebel_inherited = yes` in vanilla — sticky-trait removal is the original Sketchy use case.
+
 ## [0.6.0] - 2026-06-13
 
 ### Added
