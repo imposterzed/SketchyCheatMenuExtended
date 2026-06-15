@@ -94,6 +94,11 @@ Historically incompatible with upstream; not verified for this fork.
 
 ## For modders
 
+**Mod detection.** Two flags let other mods detect this mod and the characters it spawns:
+
+- **Detect the mod.** Sketchy Cheat Menu Plus sets the global flag `scmp_active` at `on_startup` (on new games and on every save load). Check for it with `has_global_flag = scmp_active` — the same way this mod detects CleanSlate's `cleanslate_active`.
+- **Identify a spawned character.** Each character spawned via the menu's spawn decisions is tagged with a per-character flag — `scmp_spawned_child`, `scmp_spawned_sibling`, `scmp_spawned_wife`, `scmp_spawned_vassal`, `scmp_spawned_marshal`, `scmp_spawned_spymaster`, `scmp_spawned_steward`, `scmp_spawned_chancellor`, `scmp_spawned_priest`, `scmp_spawned_commander`, or `scmp_spawned_physician` — so you can match them with `has_character_flag`.
+
 **error.log notes.** CK2's static parser validates every trait ID in a trigger context — both `scripted_trigger` bodies and `limit = { ... }` blocks inside scripted_effects. The CleanSlate compat triggers deliberately reference both vanilla and CleanSlate trait IDs across branches so the runtime picks the right one — but the parser flags the inactive branch's IDs as "unknown trait" warnings (~67 on either stack). These are cosmetic; runtime gating on `has_global_flag = cleanslate_active` ensures only the active stack's IDs are evaluated.
 
 **Dev/test events.** Hard-to-reach paths (e.g., verifying the dynasty 777777 "Outcast" label) have console-grant helpers in a sibling sub-mod, **Sketchy Cheat Menu Plus - Debug**. Enable it in the launcher alongside SCMP to use the `SCMPD.*` events — e.g. `event SCMPD.1 <charID>` assigns the target to dynasty 777777. The base mod doesn't ship these events.

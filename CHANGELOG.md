@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-06-15
+
+### Added
+- **Mod-detection global flag** `scmp_active` set at `on_startup`, parallel to Elite Recruitment's `elite_recruitment_active` and the `cleanslate_active` flag this mod reads for trait-name compatibility. New file `common/on_actions/scmp_on_startup.txt`.
+- **Persistent `scmp_spawned_<role>` flag** on every spawn-template character. 11 flag names across 25 templates — `scmp_spawned_child` (6 child templates), `scmp_spawned_sibling` (10 sibling templates), and one each for wife / vassal / marshal / spymaster / steward / chancellor / priest / commander / physician. Survives saves; not cleared by the existing finalize hook. Enables future bulk-cleanup decisions, bloodline-grant scoping, and inter-mod identification.
+
+### Changed
+- **`has_dlc = "Way of Life"`** replaces dev codename `"Zeus"` on the Get Favor and Clear Your Focus DLC gates.
+- **`set_father` / `set_mother` clear value standardized to `0`** (matches vanilla `00_scripted_effects.txt` convention). Two sites in `cheats_menu.txt` previously used the alternate `none` form; both parse identically.
+- **`cheat_trait_cleaner` description loc clarified** — lists the 6 SCMP cheat traits it strips and notes dynasty preservation.
+- **README** — new "Mod detection" subsection under "For modders" documenting `scmp_active` and the per-character `scmp_spawned_<role>` flags.
+
+### Fixed
+- **`cheat_trait_cleaner` now preserves the player's dynasty** — the limit was `ai = yes` only, so AI dynasty members (heirs etc.) were being stripped of cheat traits. Now gated on `NOT = { dynasty = ROOT }`, matching the comment's original intent.
+
 ## [0.6.15] - 2026-06-15
 
 ### Added

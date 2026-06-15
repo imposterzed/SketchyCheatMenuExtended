@@ -7,7 +7,7 @@
 ## (cheats_enable / cheats_disable) lives here; every     ##
 ## other decision gates on has_character_flag =           ##
 ## cheats_enabled. Mind-control submenu uses a flag-as-   ##
-## pointer pattern — see control_mind below.              ##
+## pointer pattern ï¿½ see control_mind below.              ##
 ##                                                        ##
 ############################################################
 
@@ -328,7 +328,7 @@ targetted_decisions = {
               dynasty = PREV
             }
           }
-          set_father = none
+          set_father = 0
         }
         if = {
           limit = {
@@ -341,7 +341,7 @@ targetted_decisions = {
               dynasty = PREV
             }
           }
-          set_mother = none
+          set_mother = 0
         }
       }
     }
@@ -534,7 +534,7 @@ targetted_decisions = {
 
     from_potential = {
       has_character_flag = cheats_enabled
-      has_dlc = "Zeus"
+      has_dlc = "Way of Life"
       ai = no
       NOT = { holds_favor_on = ROOT }
 
@@ -1021,10 +1021,10 @@ targetted_decisions = {
   # adopter branch stashes the target's biological father
   # on set_real_father (preserves "real" parentage for
   # bastardy/inheritance quirks); female adopter overwrites
-  # set_mother only — CK2 has no set_real_mother effect,
+  # set_mother only ï¿½ CK2 has no set_real_mother effect,
   # since maternity isn't tracked separately. The any_child
   # cascade walks 3 generations deep so the adopted
-  # character's whole line takes on the new dynasty —
+  # character's whole line takes on the new dynasty ï¿½
   # CK2 has no recursive "dynasty = X for descendants"
   # primitive, hence the explicit nested any_child blocks.
   adopt_them = {
@@ -1125,7 +1125,7 @@ targetted_decisions = {
   }
 
 
-  # Tags the target as the active puppet — clears any prior
+  # Tags the target as the active puppet ï¿½ clears any prior
   # mind_controlled flag first so only one character carries
   # it at a time. The mc_* decisions below act through that
   # character via any_character + limit = has_character_flag
@@ -1486,7 +1486,7 @@ targetted_decisions = {
     potential = {
       ai = no
       has_character_flag = cheats_enabled
-      has_dlc = "Zeus"
+      has_dlc = "Way of Life"
     }
     allow = {
       always = yes

@@ -734,10 +734,6 @@ decisions = {
     }
   }
 
-  # Holy Fury renamed "infamy" to "threat" in the UI but
-  # kept change_infamy as the internal effect name. The
-  # decision name reflects the UI; the engine call is
-  # unchanged.
   lower_threat_level = {
     potential = {
       ai = no
@@ -796,8 +792,8 @@ decisions = {
   }
 
   # Strips SCMP-custom traits (and vanilla `immortal`) from
-  # every AI character — player and dynasty keep theirs.
-  # Useful after a `play_as` swap or random-event leak.
+  # AI characters outside the player's dynasty. Useful
+  # after a `play_as` swap.
   cheat_trait_cleaner = {
 
 
@@ -816,6 +812,7 @@ decisions = {
         any_character = {
           limit = {
             ai = yes
+            NOT = { dynasty = ROOT }
           }
           remove_trait = immortal
           remove_trait = landlord

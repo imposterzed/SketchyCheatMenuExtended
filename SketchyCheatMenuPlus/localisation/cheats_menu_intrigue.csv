@@ -76,7 +76,7 @@ world_ethnicity;----World Ethnicity;;;;;;;;;;;;;x
 world_ethnicity_desc;Converts all characters to your ethnicity.;;;;;;;;;;;;;x
 
 cheat_trait_cleaner;----Cheat Trait Cleaner;;;;;;;;;;;;;x
-cheat_trait_cleaner_desc;Removes cheat traits from all characters besides you.;;;;;;;;;;;;;x
+cheat_trait_cleaner_desc;Strips SCMP cheat traits (Immortal, Master Builder/Commander/Landowner/Plotter, Beloved) from AI characters outside your dynasty.;;;;;;;;;;;;;x
 
 reveal_realm_plots;----Reveal Realm Plots;;;;;;;;;;;;;x
 reveal_realm_plots_desc;Reveal all plots in your realm.;;;;;;;;;;;;;x
