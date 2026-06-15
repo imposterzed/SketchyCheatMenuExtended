@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.11] - 2026-06-15
+
+### Added
+- **Religious Markers & Doctrine expansion** — section renamed from "Religious Markers", divided into 5 subsections covering 22 new add/remove pairs:
+  - **Pilgrimage Rewards** (3) — `pilgrim` / `hajjaj` / `indian_pilgrim`, per-religion gated (HWR convention)
+  - **Eschatological** (existing 3) — subsection comment added; content unchanged
+  - **Sympathy** (6) — vanilla NOT-religion-group gate mirrored on add (no self-sympathy: a Christian can't add `sympathy_christendom`, etc.)
+  - **Pagan Doctrines** (7) — 4 `pagan_branch_X` + 3 `bloodthirsty_gods_X`, ungated per the berserker convention (no cross-religion analogue), each cluster routes through a new helper
+  - **Religious Stigma** (7) — 6 new `bad_priest_X` per-religion gated; `bad_priest_aztec` routes through the existing `is_aztec_religion_trigger`; existing `excommunicated` migrated from Misc
+- **Two new cluster helpers** in `scmp_mutex_effects.txt`: `clear_bloodthirsty_gods_traits_effect` (3-way) and `clear_pagan_branch_traits_effect` (4-way).
+
+### Changed
+- **Misc section shrinks 7 → 6 entries** — `excommunicated` migrated to the new Religious Stigma subsection. Decision key unchanged (no save-compat impact); only `has_character_flag = show_misc` → `show_religious_markers` flipped in its potential. Section flag `show_religious_markers` preserved across the rename so existing player toggles carry over.
+- **README** — trait count 216 → 238; "religious markers" entry updated to "religious markers & doctrine".
+
 ## [0.6.10] - 2026-06-14
 
 ### Added

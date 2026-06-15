@@ -105,3 +105,17 @@ clear_holy_war_rewards_traits_effect = {
   remove_tengri_warrior_trait_effect = yes
   remove_ukkos_shield_trait_effect = yes
 }
+
+
+clear_bloodthirsty_gods_traits_effect = {
+  if = { limit = { trait = bloodthirsty_gods_1 } remove_trait = bloodthirsty_gods_1 }
+  if = { limit = { trait = bloodthirsty_gods_2 } remove_trait = bloodthirsty_gods_2 }
+  if = { limit = { trait = bloodthirsty_gods_3 } remove_trait = bloodthirsty_gods_3 }
+}
+
+clear_pagan_branch_traits_effect = {
+  if = { limit = { trait = pagan_branch_1 } remove_trait = pagan_branch_1 }
+  if = { limit = { trait = pagan_branch_2 } remove_trait = pagan_branch_2 }
+  if = { limit = { trait = pagan_branch_3 } remove_trait = pagan_branch_3 }
+  if = { limit = { trait = pagan_branch_4 } remove_trait = pagan_branch_4 }
+}

@@ -886,11 +886,11 @@ add_varangian_desc;Add Varangian;;;;;;;;;;;;;x
 remove_varangian;--------Remove Varangian;;;;;;;;;;;;;x
 remove_varangian_desc;Remove Varangian;;;;;;;;;;;;;x
 
-show_religious_markers;----Show Religious Markers;;;;;;;;;;;;;x
-show_religious_markers_desc;Show Religious Markers;;;;;;;;;;;;;x
+show_religious_markers;----Show Religious Markers & Doctrine;;;;;;;;;;;;;x
+show_religious_markers_desc;Show Religious Markers & Doctrine;;;;;;;;;;;;;x
 
-hide_religious_markers;----Hide Religious Markers;;;;;;;;;;;;;x
-hide_religious_markers_desc;Hide Religious Markers;;;;;;;;;;;;;x
+hide_religious_markers;----Hide Religious Markers & Doctrine;;;;;;;;;;;;;x
+hide_religious_markers_desc;Hide Religious Markers & Doctrine;;;;;;;;;;;;;x
 
 add_reincarnation;--------Add Reincarnation;;;;;;;;;;;;;x
 add_reincarnation_desc;Add Reincarnation;;;;;;;;;;;;;x
@@ -1412,3 +1412,114 @@ add_willful_desc;Add Willful;;;;;;;;;;;;;x
 
 remove_willful;--------Remove Willful;;;;;;;;;;;;;x
 remove_willful_desc;Remove Willful;;;;;;;;;;;;;x
+
+add_sympathy_christendom;--------Add Sympathy for Christendom;;;;;;;;;;;;;x
+add_sympathy_christendom_desc;Add Sympathy for Christendom;;;;;;;;;;;;;x
+
+remove_sympathy_christendom;--------Remove Sympathy for Christendom;;;;;;;;;;;;;x
+remove_sympathy_christendom_desc;Remove Sympathy for Christendom;;;;;;;;;;;;;x
+add_sympathy_indian;--------Add Sympathy for Indian;;;;;;;;;;;;;x
+add_sympathy_indian_desc;Add Sympathy for Indian;;;;;;;;;;;;;x
+
+remove_sympathy_indian;--------Remove Sympathy for Indian;;;;;;;;;;;;;x
+remove_sympathy_indian_desc;Remove Sympathy for Indian;;;;;;;;;;;;;x
+add_sympathy_islam;--------Add Sympathy for Islam;;;;;;;;;;;;;x
+add_sympathy_islam_desc;Add Sympathy for Islam;;;;;;;;;;;;;x
+
+remove_sympathy_islam;--------Remove Sympathy for Islam;;;;;;;;;;;;;x
+remove_sympathy_islam_desc;Remove Sympathy for Islam;;;;;;;;;;;;;x
+add_sympathy_judaism;--------Add Sympathy for Judaism;;;;;;;;;;;;;x
+add_sympathy_judaism_desc;Add Sympathy for Judaism;;;;;;;;;;;;;x
+
+remove_sympathy_judaism;--------Remove Sympathy for Judaism;;;;;;;;;;;;;x
+remove_sympathy_judaism_desc;Remove Sympathy for Judaism;;;;;;;;;;;;;x
+add_sympathy_pagans;--------Add Sympathy for Pagans;;;;;;;;;;;;;x
+add_sympathy_pagans_desc;Add Sympathy for Pagans;;;;;;;;;;;;;x
+
+remove_sympathy_pagans;--------Remove Sympathy for Pagans;;;;;;;;;;;;;x
+remove_sympathy_pagans_desc;Remove Sympathy for Pagans;;;;;;;;;;;;;x
+add_sympathy_zoroastrianism;--------Add Sympathy for Zoroastrians;;;;;;;;;;;;;x
+add_sympathy_zoroastrianism_desc;Add Sympathy for Zoroastrians;;;;;;;;;;;;;x
+
+remove_sympathy_zoroastrianism;--------Remove Sympathy for Zoroastrians;;;;;;;;;;;;;x
+remove_sympathy_zoroastrianism_desc;Remove Sympathy for Zoroastrians;;;;;;;;;;;;;x
+add_hajjaj;--------Add Hajjaj;;;;;;;;;;;;;x
+add_hajjaj_desc;Add Hajjaj;;;;;;;;;;;;;x
+
+remove_hajjaj;--------Remove Hajjaj;;;;;;;;;;;;;x
+remove_hajjaj_desc;Remove Hajjaj;;;;;;;;;;;;;x
+add_indian_pilgrim;--------Add Indian Pilgrim;;;;;;;;;;;;;x
+add_indian_pilgrim_desc;Add Indian Pilgrim;;;;;;;;;;;;;x
+
+remove_indian_pilgrim;--------Remove Indian Pilgrim;;;;;;;;;;;;;x
+remove_indian_pilgrim_desc;Remove Indian Pilgrim;;;;;;;;;;;;;x
+add_pilgrim;--------Add Pilgrim;;;;;;;;;;;;;x
+add_pilgrim_desc;Add Pilgrim;;;;;;;;;;;;;x
+
+remove_pilgrim;--------Remove Pilgrim;;;;;;;;;;;;;x
+remove_pilgrim_desc;Remove Pilgrim;;;;;;;;;;;;;x
+add_bad_priest_aztec;--------Add Bad Priest (Aztec);;;;;;;;;;;;;x
+add_bad_priest_aztec_desc;Add Bad Priest (Aztec);;;;;;;;;;;;;x
+
+remove_bad_priest_aztec;--------Remove Bad Priest (Aztec);;;;;;;;;;;;;x
+remove_bad_priest_aztec_desc;Remove Bad Priest (Aztec);;;;;;;;;;;;;x
+add_bad_priest_christian;--------Add Bad Priest (Christian);;;;;;;;;;;;;x
+add_bad_priest_christian_desc;Add Bad Priest (Christian);;;;;;;;;;;;;x
+
+remove_bad_priest_christian;--------Remove Bad Priest (Christian);;;;;;;;;;;;;x
+remove_bad_priest_christian_desc;Remove Bad Priest (Christian);;;;;;;;;;;;;x
+add_bad_priest_muslim;--------Add Bad Priest (Muslim);;;;;;;;;;;;;x
+add_bad_priest_muslim_desc;Add Bad Priest (Muslim);;;;;;;;;;;;;x
+
+remove_bad_priest_muslim;--------Remove Bad Priest (Muslim);;;;;;;;;;;;;x
+remove_bad_priest_muslim_desc;Remove Bad Priest (Muslim);;;;;;;;;;;;;x
+add_bad_priest_norse;--------Add Bad Priest (Norse);;;;;;;;;;;;;x
+add_bad_priest_norse_desc;Add Bad Priest (Norse);;;;;;;;;;;;;x
+
+remove_bad_priest_norse;--------Remove Bad Priest (Norse);;;;;;;;;;;;;x
+remove_bad_priest_norse_desc;Remove Bad Priest (Norse);;;;;;;;;;;;;x
+add_bad_priest_tengri;--------Add Bad Priest (Tengri);;;;;;;;;;;;;x
+add_bad_priest_tengri_desc;Add Bad Priest (Tengri);;;;;;;;;;;;;x
+
+remove_bad_priest_tengri;--------Remove Bad Priest (Tengri);;;;;;;;;;;;;x
+remove_bad_priest_tengri_desc;Remove Bad Priest (Tengri);;;;;;;;;;;;;x
+add_bad_priest_zoroastrian;--------Add Bad Priest (Zoroastrian);;;;;;;;;;;;;x
+add_bad_priest_zoroastrian_desc;Add Bad Priest (Zoroastrian);;;;;;;;;;;;;x
+
+remove_bad_priest_zoroastrian;--------Remove Bad Priest (Zoroastrian);;;;;;;;;;;;;x
+remove_bad_priest_zoroastrian_desc;Remove Bad Priest (Zoroastrian);;;;;;;;;;;;;x
+add_bloodthirsty_gods_1;--------Add Haemophiliac;;;;;;;;;;;;;x
+add_bloodthirsty_gods_1_desc;Add Haemophiliac;;;;;;;;;;;;;x
+
+remove_bloodthirsty_gods_1;--------Remove Haemophiliac;;;;;;;;;;;;;x
+remove_bloodthirsty_gods_1_desc;Remove Haemophiliac;;;;;;;;;;;;;x
+add_bloodthirsty_gods_2;--------Add Haemophant;;;;;;;;;;;;;x
+add_bloodthirsty_gods_2_desc;Add Haemophant;;;;;;;;;;;;;x
+
+remove_bloodthirsty_gods_2;--------Remove Haemophant;;;;;;;;;;;;;x
+remove_bloodthirsty_gods_2_desc;Remove Haemophant;;;;;;;;;;;;;x
+add_bloodthirsty_gods_3;--------Add Haemoarch;;;;;;;;;;;;;x
+add_bloodthirsty_gods_3_desc;Add Haemoarch;;;;;;;;;;;;;x
+
+remove_bloodthirsty_gods_3;--------Remove Haemoarch;;;;;;;;;;;;;x
+remove_bloodthirsty_gods_3_desc;Remove Haemoarch;;;;;;;;;;;;;x
+add_pagan_branch_1;--------Add Syncretist;;;;;;;;;;;;;x
+add_pagan_branch_1_desc;Add Syncretist;;;;;;;;;;;;;x
+
+remove_pagan_branch_1;--------Remove Syncretist;;;;;;;;;;;;;x
+remove_pagan_branch_1_desc;Remove Syncretist;;;;;;;;;;;;;x
+add_pagan_branch_2;--------Add Spiritualist;;;;;;;;;;;;;x
+add_pagan_branch_2_desc;Add Spiritualist;;;;;;;;;;;;;x
+
+remove_pagan_branch_2;--------Remove Spiritualist;;;;;;;;;;;;;x
+remove_pagan_branch_2_desc;Remove Spiritualist;;;;;;;;;;;;;x
+add_pagan_branch_3;--------Add Militant;;;;;;;;;;;;;x
+add_pagan_branch_3_desc;Add Militant;;;;;;;;;;;;;x
+
+remove_pagan_branch_3;--------Remove Militant;;;;;;;;;;;;;x
+remove_pagan_branch_3_desc;Remove Militant;;;;;;;;;;;;;x
+add_pagan_branch_4;--------Add Tribalist;;;;;;;;;;;;;x
+add_pagan_branch_4_desc;Add Tribalist;;;;;;;;;;;;;x
+
+remove_pagan_branch_4;--------Remove Tribalist;;;;;;;;;;;;;x
+remove_pagan_branch_4_desc;Remove Tribalist;;;;;;;;;;;;;x

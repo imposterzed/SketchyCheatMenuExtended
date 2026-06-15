@@ -10764,7 +10764,7 @@ decisions = {
     }
   }
 
-  ## ===== Religious Markers ===== ##
+  ## ===== Religious Markers & Doctrine ===== ##
   show_religious_markers = {
 
 
@@ -10819,6 +10819,179 @@ decisions = {
     }
   }
 
+  ## --- Pilgrimage Rewards --- ##
+  remove_hajjaj = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = hajjaj
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = hajjaj
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_hajjaj = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = hajjaj }
+      religion_group = muslim
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = hajjaj
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_indian_pilgrim = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = indian_pilgrim
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = indian_pilgrim
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_indian_pilgrim = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = indian_pilgrim }
+      religion_group = indian_group
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = indian_pilgrim
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_pilgrim = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = pilgrim
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = pilgrim
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_pilgrim = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = pilgrim }
+      religion_group = christian
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = pilgrim
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Eschatological --- ##
   remove_reincarnation = {
 
 
@@ -10987,6 +11160,1154 @@ decisions = {
     }
   }
 
+  ## --- Sympathy --- ##
+  remove_sympathy_christendom = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = sympathy_christendom
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sympathy_christendom
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sympathy_christendom = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = sympathy_christendom }
+      NOT = { religion_group = christian }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = sympathy_christendom
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sympathy_indian = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = sympathy_indian
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sympathy_indian
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sympathy_indian = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = sympathy_indian }
+      NOT = { religion_group = indian_group }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = sympathy_indian
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sympathy_islam = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = sympathy_islam
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sympathy_islam
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sympathy_islam = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = sympathy_islam }
+      NOT = { religion_group = muslim }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = sympathy_islam
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sympathy_judaism = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = sympathy_judaism
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sympathy_judaism
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sympathy_judaism = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = sympathy_judaism }
+      NOT = { religion_group = jewish_group }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = sympathy_judaism
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sympathy_pagans = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = sympathy_pagans
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sympathy_pagans
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sympathy_pagans = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = sympathy_pagans }
+      NOT = { religion_group = pagan_group }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = sympathy_pagans
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sympathy_zoroastrianism = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = sympathy_zoroastrianism
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sympathy_zoroastrianism
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sympathy_zoroastrianism = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = sympathy_zoroastrianism }
+      NOT = { religion_group = zoroastrian_group }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = sympathy_zoroastrianism
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Pagan Doctrines --- ##
+  remove_bloodthirsty_gods_1 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = bloodthirsty_gods_1
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bloodthirsty_gods_1
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bloodthirsty_gods_1 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = bloodthirsty_gods_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_bloodthirsty_gods_traits_effect = yes
+      add_trait = bloodthirsty_gods_1
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bloodthirsty_gods_2 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = bloodthirsty_gods_2
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bloodthirsty_gods_2
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bloodthirsty_gods_2 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = bloodthirsty_gods_2 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_bloodthirsty_gods_traits_effect = yes
+      add_trait = bloodthirsty_gods_2
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bloodthirsty_gods_3 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = bloodthirsty_gods_3
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bloodthirsty_gods_3
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bloodthirsty_gods_3 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = bloodthirsty_gods_3 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_bloodthirsty_gods_traits_effect = yes
+      add_trait = bloodthirsty_gods_3
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_pagan_branch_1 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = pagan_branch_1
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = pagan_branch_1
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_pagan_branch_1 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = pagan_branch_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_pagan_branch_traits_effect = yes
+      add_trait = pagan_branch_1
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_pagan_branch_2 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = pagan_branch_2
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = pagan_branch_2
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_pagan_branch_2 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = pagan_branch_2 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_pagan_branch_traits_effect = yes
+      add_trait = pagan_branch_2
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_pagan_branch_3 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = pagan_branch_3
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = pagan_branch_3
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_pagan_branch_3 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = pagan_branch_3 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_pagan_branch_traits_effect = yes
+      add_trait = pagan_branch_3
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_pagan_branch_4 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = pagan_branch_4
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = pagan_branch_4
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_pagan_branch_4 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = pagan_branch_4 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_pagan_branch_traits_effect = yes
+      add_trait = pagan_branch_4
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+
+  ## --- Religious Stigma --- ##
+  remove_bad_priest_aztec = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = bad_priest_aztec
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bad_priest_aztec
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bad_priest_aztec = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = bad_priest_aztec }
+      is_aztec_religion_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = bad_priest_aztec
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bad_priest_christian = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = bad_priest_christian
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bad_priest_christian
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bad_priest_christian = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = bad_priest_christian }
+      religion_group = christian
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = bad_priest_christian
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bad_priest_muslim = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = bad_priest_muslim
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bad_priest_muslim
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bad_priest_muslim = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = bad_priest_muslim }
+      religion_group = muslim
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = bad_priest_muslim
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bad_priest_norse = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = bad_priest_norse
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bad_priest_norse
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bad_priest_norse = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = bad_priest_norse }
+      OR = {
+        religion = norse_pagan
+        religion = norse_pagan_reformed
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = bad_priest_norse
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bad_priest_tengri = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = bad_priest_tengri
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bad_priest_tengri
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bad_priest_tengri = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = bad_priest_tengri }
+      OR = {
+        religion = tengri_pagan
+        religion = tengri_pagan_reformed
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = bad_priest_tengri
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bad_priest_zoroastrian = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = bad_priest_zoroastrian
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bad_priest_zoroastrian
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bad_priest_zoroastrian = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = bad_priest_zoroastrian }
+      religion_group = zoroastrian_group
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = bad_priest_zoroastrian
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_excommunicated = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = excommunicated
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = excommunicated
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_excommunicated = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = excommunicated }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = excommunicated
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
 
   ## ===== Birth Markers ===== ##
   show_birth_markers = {
@@ -13505,62 +14826,6 @@ decisions = {
 
     effect = {
       add_trait = eunuch
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  remove_excommunicated = {
-
-
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_misc
-      trait = excommunicated
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      remove_trait = excommunicated
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  add_excommunicated = {
-
-
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_misc
-      NOT = { trait = excommunicated }
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      add_trait = excommunicated
     }
 
     revoke_allowed = {
