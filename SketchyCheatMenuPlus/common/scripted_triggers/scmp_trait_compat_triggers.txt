@@ -287,55 +287,6 @@ is_bon_religion_trigger = {
   }
 }
 
-# Has any Warrior Lodge religion (9 reformed-pagan religions with a Warrior Lodge leader trait)
-has_warrior_lodge_religion_trigger = {
-  OR = {
-    religion = norse_pagan
-    religion = norse_pagan_reformed
-    religion = tengri_pagan
-    religion = tengri_pagan_reformed
-    religion = baltic_pagan
-    religion = baltic_pagan_reformed
-    religion = finnish_pagan
-    religion = finnish_pagan_reformed
-    religion = slavic_pagan
-    religion = slavic_pagan_reformed
-    religion = west_african_pagan
-    religion = west_african_pagan_reformed
-    religion = zun_pagan
-    religion = zun_pagan_reformed
-    is_bon_religion_trigger = yes
-    religion = hellenic_pagan
-    religion = hellenic_pagan_reformed
-  }
-}
-
-# Has any Holy War Reward religion (13 religions / groups with a GHW veteran trait)
-has_holy_war_religion_trigger = {
-  OR = {
-    religion_group = christian
-    religion_group = muslim
-    religion_group = jewish_group
-    religion_group = zoroastrian_group
-    is_aztec_religion_trigger = yes
-    is_bon_religion_trigger = yes
-    religion = norse_pagan
-    religion = norse_pagan_reformed
-    religion = slavic_pagan
-    religion = slavic_pagan_reformed
-    religion = baltic_pagan
-    religion = baltic_pagan_reformed
-    religion = finnish_pagan
-    religion = finnish_pagan_reformed
-    religion = hellenic_pagan
-    religion = hellenic_pagan_reformed
-    religion = tengri_pagan
-    religion = tengri_pagan_reformed
-    religion = west_african_pagan
-    religion = west_african_pagan_reformed
-  }
-}
-
 # Seducer (strict - sex-agnostic)
 has_seducer_strict_trait_trigger = {
   trigger_if = {
@@ -357,3 +308,4 @@ has_seductress_strict_trait_trigger = {
     trait = seductress
   }
 }
+

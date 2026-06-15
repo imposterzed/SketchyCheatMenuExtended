@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.12] - 2026-06-15
+
+### Added
+- **Ordained Clergy section** between Religious Markers & Doctrine and Birth Markers — 8 add/remove pairs for ordained-monk/nun traits across 4 religions: Christian (monk, nun), Buddhist (bhikkhu, bhikkhuni), Hindu (sanyasi, sanyasini), Jain (muni, aryika). Religion + sex gated on `add_X`; remove ungated for cleanup (HWR convention).
+- **`has_ordained_clergy_religion_trigger`** in new `scmp_section_triggers.txt` — gates section show toggle to the 4 religions that have ordained-clergy traits. Hide stays flag-keyed so chars who converted away can still clean up.
+- **2 new GFX sprite entries** (`GFX_show_ordained_clergy`, `GFX_hide_ordained_clergy`) pointing to the existing `decision_icon_cheats.dds` placeholder.
+
+### Changed
+- **Carved out** `common/scripted_triggers/scmp_section_triggers.txt` for religion-set section-gate triggers. Moved 3 triggers out of `scmp_trait_compat_triggers.txt` (which now holds purely CleanSlate trait/religion rename compat): `has_warrior_lodge_religion_trigger`, `has_holy_war_religion_trigger`, `has_ordained_clergy_religion_trigger`. File-level reorganization; no runtime change — scripted_triggers are global once loaded.
+- **README** — trait count 238 → 246; "ordained clergy" inserted into the category list between "religious markers & doctrine" and "birth markers".
+
 ## [0.6.11] - 2026-06-15
 
 ### Added

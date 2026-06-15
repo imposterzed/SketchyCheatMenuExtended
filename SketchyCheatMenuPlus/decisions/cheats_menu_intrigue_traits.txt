@@ -12309,6 +12309,526 @@ decisions = {
     }
   }
 
+  ## ===== Ordained Clergy ===== ##
+  show_ordained_clergy = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_ordained_clergy_religion_trigger = yes
+      NOT = { has_character_flag = show_ordained_clergy }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_ordained_clergy
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_ordained_clergy = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_ordained_clergy
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_monk = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      trait = monk
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = monk
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_monk = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      NOT = { trait = monk }
+      religion_group = christian
+      is_female = no
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = monk
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_nun = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      trait = nun
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = nun
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_nun = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      NOT = { trait = nun }
+      religion_group = christian
+      is_female = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = nun
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bhikkhu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      trait = bhikkhu
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bhikkhu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bhikkhu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      NOT = { trait = bhikkhu }
+      religion = buddhist
+      is_female = no
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = bhikkhu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_bhikkhuni = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      trait = bhikkhuni
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = bhikkhuni
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_bhikkhuni = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      NOT = { trait = bhikkhuni }
+      religion = buddhist
+      is_female = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = bhikkhuni
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sanyasi = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      trait = sanyasi
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sanyasi
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sanyasi = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      NOT = { trait = sanyasi }
+      religion = hindu
+      is_female = no
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = sanyasi
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sanyasini = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      trait = sanyasini
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sanyasini
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sanyasini = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      NOT = { trait = sanyasini }
+      religion = hindu
+      is_female = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = sanyasini
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_muni = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      trait = muni
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = muni
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_muni = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      NOT = { trait = muni }
+      religion = jain
+      is_female = no
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = muni
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_aryika = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      trait = aryika
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = aryika
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_aryika = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_ordained_clergy
+      NOT = { trait = aryika }
+      religion = jain
+      is_female = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = aryika
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   ## ===== Birth Markers ===== ##
   show_birth_markers = {
 

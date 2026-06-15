@@ -1523,3 +1523,49 @@ add_pagan_branch_4_desc;Add Tribalist;;;;;;;;;;;;;x
 
 remove_pagan_branch_4;--------Remove Tribalist;;;;;;;;;;;;;x
 remove_pagan_branch_4_desc;Remove Tribalist;;;;;;;;;;;;;x
+
+show_ordained_clergy;----Show Ordained Clergy;;;;;;;;;;;;;x
+show_ordained_clergy_desc;Show Ordained Clergy;;;;;;;;;;;;;x
+
+hide_ordained_clergy;----Hide Ordained Clergy;;;;;;;;;;;;;x
+hide_ordained_clergy_desc;Hide Ordained Clergy;;;;;;;;;;;;;x
+add_monk;--------Add Monk;;;;;;;;;;;;;x
+add_monk_desc;Add Monk;;;;;;;;;;;;;x
+
+remove_monk;--------Remove Monk;;;;;;;;;;;;;x
+remove_monk_desc;Remove Monk;;;;;;;;;;;;;x
+add_nun;--------Add Nun;;;;;;;;;;;;;x
+add_nun_desc;Add Nun;;;;;;;;;;;;;x
+
+remove_nun;--------Remove Nun;;;;;;;;;;;;;x
+remove_nun_desc;Remove Nun;;;;;;;;;;;;;x
+add_bhikkhu;--------Add Bhikkhu;;;;;;;;;;;;;x
+add_bhikkhu_desc;Add Bhikkhu;;;;;;;;;;;;;x
+
+remove_bhikkhu;--------Remove Bhikkhu;;;;;;;;;;;;;x
+remove_bhikkhu_desc;Remove Bhikkhu;;;;;;;;;;;;;x
+add_bhikkhuni;--------Add Bhikkhuni;;;;;;;;;;;;;x
+add_bhikkhuni_desc;Add Bhikkhuni;;;;;;;;;;;;;x
+
+remove_bhikkhuni;--------Remove Bhikkhuni;;;;;;;;;;;;;x
+remove_bhikkhuni_desc;Remove Bhikkhuni;;;;;;;;;;;;;x
+add_sanyasi;--------Add Sanyasi;;;;;;;;;;;;;x
+add_sanyasi_desc;Add Sanyasi;;;;;;;;;;;;;x
+
+remove_sanyasi;--------Remove Sanyasi;;;;;;;;;;;;;x
+remove_sanyasi_desc;Remove Sanyasi;;;;;;;;;;;;;x
+add_sanyasini;--------Add Sanyasini;;;;;;;;;;;;;x
+add_sanyasini_desc;Add Sanyasini;;;;;;;;;;;;;x
+
+remove_sanyasini;--------Remove Sanyasini;;;;;;;;;;;;;x
+remove_sanyasini_desc;Remove Sanyasini;;;;;;;;;;;;;x
+add_muni;--------Add Muni;;;;;;;;;;;;;x
+add_muni_desc;Add Muni;;;;;;;;;;;;;x
+
+remove_muni;--------Remove Muni;;;;;;;;;;;;;x
+remove_muni_desc;Remove Muni;;;;;;;;;;;;;x
+add_aryika;--------Add Aryika;;;;;;;;;;;;;x
+add_aryika_desc;Add Aryika;;;;;;;;;;;;;x
+
+remove_aryika;--------Remove Aryika;;;;;;;;;;;;;x
+remove_aryika_desc;Remove Aryika;;;;;;;;;;;;;x

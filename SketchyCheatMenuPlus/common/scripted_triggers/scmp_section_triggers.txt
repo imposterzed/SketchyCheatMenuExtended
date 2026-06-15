@@ -1,0 +1,68 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##           Section Gate Religion Triggers               ##
+##                                                        ##
+## Religion-set checks used by section show toggles to    ##
+## hide categories that don't apply to the character's    ##
+## current religion. Mirrors the HWR / Warrior Lodge      ##
+## convention.                                            ##
+############################################################
+
+# Has any Warrior Lodge religion (9 reformed-pagan religions with a Warrior Lodge leader trait)
+has_warrior_lodge_religion_trigger = {
+  OR = {
+    religion = norse_pagan
+    religion = norse_pagan_reformed
+    religion = tengri_pagan
+    religion = tengri_pagan_reformed
+    religion = baltic_pagan
+    religion = baltic_pagan_reformed
+    religion = finnish_pagan
+    religion = finnish_pagan_reformed
+    religion = slavic_pagan
+    religion = slavic_pagan_reformed
+    religion = west_african_pagan
+    religion = west_african_pagan_reformed
+    religion = zun_pagan
+    religion = zun_pagan_reformed
+    is_bon_religion_trigger = yes
+    religion = hellenic_pagan
+    religion = hellenic_pagan_reformed
+  }
+}
+
+# Has any Holy War Reward religion (13 religions / groups with a GHW veteran trait)
+has_holy_war_religion_trigger = {
+  OR = {
+    religion_group = christian
+    religion_group = muslim
+    religion_group = jewish_group
+    religion_group = zoroastrian_group
+    is_aztec_religion_trigger = yes
+    is_bon_religion_trigger = yes
+    religion = norse_pagan
+    religion = norse_pagan_reformed
+    religion = slavic_pagan
+    religion = slavic_pagan_reformed
+    religion = baltic_pagan
+    religion = baltic_pagan_reformed
+    religion = finnish_pagan
+    religion = finnish_pagan_reformed
+    religion = hellenic_pagan
+    religion = hellenic_pagan_reformed
+    religion = tengri_pagan
+    religion = tengri_pagan_reformed
+    religion = west_african_pagan
+    religion = west_african_pagan_reformed
+  }
+}
+
+# Has any Ordained Clergy religion (4 religion groups/religions with ordained-clergy traits)
+has_ordained_clergy_religion_trigger = {
+  OR = {
+    religion_group = christian
+    religion = buddhist
+    religion = hindu
+    religion = jain
+  }
+}

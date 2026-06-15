@@ -141,6 +141,14 @@ spriteTypes = {
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
   spriteType = {
+    name = "GFX_show_ordained_clergy"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_ordained_clergy"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
     name = "GFX_show_memes"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
