@@ -22,7 +22,7 @@ Right-click any character to:
 
 ### Trait toggles
 
-Paired add/remove decisions for 261 traits across virtues, sins, personality, beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese commander, raiding, lifestyle, religious markers & doctrine, ordained clergy, christian status, muslim status, birth markers, zodiac, childhood, kinslayer, memes, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
+Paired add/remove decisions for 271 traits across virtues, sins, personality, beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese commander, raiding, lifestyle, religious markers & doctrine, ordained clergy, christian status, muslim status, dharmic identity, birth markers, zodiac, childhood, kinslayer, memes, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
 
 ### Spawning
 
@@ -46,14 +46,15 @@ Become independent, set your government to feudal, convert your realm or the ent
 
 The mod works without any DLC. Some cheats are tied to DLC systems and behave differently depending on what you have installed:
 
-- **Conclave** — without it, `make_consort` is hidden. The 2 consort-themed birth-marker toggles (`child_of_concubine` / `child_of_consort`) stay available.
-- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available. `add_scarred_mid` (Grievously Scarred) and `add_scarred_high` (Horrifically Scarred) are hidden without HF — the vanilla traits gate themselves to HF. Base `add_scarred` and all three `remove_*` counterparts stay available for cleanup. The 12 Zodiac toggles stay available.
+- **Conclave** — without it, `make_consort` is hidden. The 2 consort-themed birth-marker toggles (`child_of_concubine` / `child_of_consort`) stay available. The 12 Childhood toggles stay available.
+- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available. `add_scarred_mid` (Grievously Scarred) and `add_scarred_high` (Horrifically Scarred) are hidden without HF — the vanilla traits gate themselves to HF. Base `add_scarred` and all three `remove_*` counterparts stay available for cleanup. The 12 Zodiac toggles stay available. The 4 Pagan Branches toggles (Syncretist / Spiritualist / Militant / Tribalist) stay available.
 - **Jade Dragon** — the 4 Chinese Commander toggles (Way of the Dog / Dragon / Leopard / Tiger) stay available.
 - **Monks and Mystics** — without it, the society cheats (`add_society_points`, `increase_society_rank`) don't appear, since you can't be in a society.
-- **Rajas of India** — `add_war_elephant_leader` / `remove_war_elephant_leader` stay available.
+- **Rajas of India** — `add_war_elephant_leader` / `remove_war_elephant_leader` stay available. The 6 Dharmic Ordained Clergy toggles (`bhikkhu` / `bhikkhuni` / `muni` / `aryika` / `sanyasi` / `sanyasini`), the 10 Dharmic Identity toggles (3 castes + 4 Hindu branches + 3 Buddhist branches), `add_indian_pilgrim`, and the Dharmic GHW reward `kailash_guardian` don't appear, since you can't be of a Dharmic religion (Hindu / Buddhist / Jain) without Rajas.
+- **Sunset Invasion** — the Aztec Holy War Reward (`eagle_warrior` / `eagle_knight`) and `bad_priest_aztec` don't appear, since you can't be Aztec without Sunset. The 3 Bloodthirsty Gods toggles (Haemophiliac / Haemophant / Haemoarch) stay available.
 - **The Old Gods** — the Viking / Pirate / Ravager raiding toggles stay available.
-- **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available, as do the 6 limb-loss toggles (one_eyed / one_handed / one_legged / disfigured / mangled / severely_injured) and `sick_incapable` — the trait IDs load without RD and `add_trait` works regardless.
-- **Way of Life** — without it, `get_favor` and `clear_your_focus` are hidden. The 16 lifestyle-trait toggles (schemer, seducer, hedonist, scholar, theologian, etc.) stay available — they grant the trait directly without needing the focus system.
+- **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available, as do the 6 limb-loss toggles (one_eyed / one_handed / one_legged / disfigured / mangled / severely_injured) and `sick_incapable`.
+- **Way of Life** — without it, `get_favor` and `clear_your_focus` are hidden. The 16 lifestyle-trait toggles (schemer, seducer, hedonist, scholar, theologian, etc.) stay available.
 
 ## Installation
 

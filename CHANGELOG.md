@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.14] - 2026-06-15
+
+### Added
+- **Dharmic Identity section** (10 add/remove pairs) between Muslim Status and Birth Markers — three subsections:
+  - **Caste** (3-way mutex via new `clear_caste_traits_effect`, `religion_group = indian_group` gate): Brahmin, Kshatriya, Vaishya. Vanilla data confirms castes apply to all 3 Dharmic religions (Hindu, Buddhist, Jain), not just Hindu.
+  - **Hindu Branches** (4-way mutex via new `clear_hindu_branch_traits_effect`, `religion = hindu` gate): Shaivist, Shaktist, Smartist, Vaishnavist.
+  - **Buddhist Branches** (3-way mutex via new `clear_buddhist_branch_traits_effect`, `religion = buddhist` gate): Mahayana Buddhist, Theravada Buddhist, Vajrayana Buddhist. Vajrayana was missing from the trait-reference doc — added during the audit.
+- **Three new cluster helpers** in `scmp_mutex_effects.txt` for the mutex groupings.
+- **2 new GFX sprite entries** (`GFX_show_dharmic_identity`, `GFX_hide_dharmic_identity`) on `decision_icon_cheats.dds`.
+
+### Changed
+- **Section show toggle gated** on `religion_group = indian_group`; each `add_X` additionally carries its own per-subsection religion gate (mirrors v0.6.10 Childhood / v0.6.13 Christian + Muslim Status per-decision pattern).
+- **README Optional DLC section** — catch-up pass covering v0.6.10–v0.6.14 content. Updated Conclave / Holy Fury / Rajas of India / Reaper's Due entries; new Sunset Invasion entry.
+- **README** — trait count 261 → 271; "dharmic identity" added to the category list between "muslim status" and "birth markers".
+
 ## [0.6.13] - 2026-06-15
 
 ### Added

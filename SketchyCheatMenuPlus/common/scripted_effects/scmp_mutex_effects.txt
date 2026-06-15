@@ -134,3 +134,23 @@ clear_baptism_traits_effect = {
   if = { limit = { trait = baptized_by_bishop }     remove_trait = baptized_by_bishop     }
   if = { limit = { trait = baptized_by_satan }      remove_trait = baptized_by_satan      }
 }
+
+
+clear_caste_traits_effect = {
+  if = { limit = { trait = brahmin }    remove_trait = brahmin    }
+  if = { limit = { trait = kshatriya }  remove_trait = kshatriya  }
+  if = { limit = { trait = vaishya }    remove_trait = vaishya    }
+}
+
+clear_hindu_branch_traits_effect = {
+  if = { limit = { trait = shaivist_hindu }     remove_trait = shaivist_hindu     }
+  if = { limit = { trait = shaktist_hindu }     remove_trait = shaktist_hindu     }
+  if = { limit = { trait = smartist_hindu }     remove_trait = smartist_hindu     }
+  if = { limit = { trait = vaishnavist_hindu }  remove_trait = vaishnavist_hindu  }
+}
+
+clear_buddhist_branch_traits_effect = {
+  if = { limit = { trait = mahayana_buddhist }   remove_trait = mahayana_buddhist   }
+  if = { limit = { trait = theravada_buddhist }  remove_trait = theravada_buddhist  }
+  if = { limit = { trait = vajrayana_buddhist }  remove_trait = vajrayana_buddhist  }
+}

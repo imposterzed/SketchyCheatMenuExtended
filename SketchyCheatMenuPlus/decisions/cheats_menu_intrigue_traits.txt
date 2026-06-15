@@ -13827,6 +13827,645 @@ decisions = {
     }
   }
 
+  ## ===== Dharmic Identity ===== ##
+  show_dharmic_identity = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      religion_group = indian_group
+      NOT = { has_character_flag = show_dharmic_identity }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_dharmic_identity
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_dharmic_identity = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_dharmic_identity
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Caste --- ##
+  remove_brahmin = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = brahmin
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = brahmin
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_brahmin = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = brahmin }
+      religion_group = indian_group
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_caste_traits_effect = yes
+      add_trait = brahmin
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_kshatriya = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = kshatriya
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = kshatriya
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_kshatriya = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = kshatriya }
+      religion_group = indian_group
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_caste_traits_effect = yes
+      add_trait = kshatriya
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_vaishya = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = vaishya
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = vaishya
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_vaishya = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = vaishya }
+      religion_group = indian_group
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_caste_traits_effect = yes
+      add_trait = vaishya
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Hindu Branches --- ##
+  remove_shaivist_hindu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = shaivist_hindu
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = shaivist_hindu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_shaivist_hindu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = shaivist_hindu }
+      religion = hindu
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_hindu_branch_traits_effect = yes
+      add_trait = shaivist_hindu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_shaktist_hindu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = shaktist_hindu
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = shaktist_hindu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_shaktist_hindu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = shaktist_hindu }
+      religion = hindu
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_hindu_branch_traits_effect = yes
+      add_trait = shaktist_hindu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_smartist_hindu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = smartist_hindu
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = smartist_hindu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_smartist_hindu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = smartist_hindu }
+      religion = hindu
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_hindu_branch_traits_effect = yes
+      add_trait = smartist_hindu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_vaishnavist_hindu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = vaishnavist_hindu
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = vaishnavist_hindu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_vaishnavist_hindu = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = vaishnavist_hindu }
+      religion = hindu
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_hindu_branch_traits_effect = yes
+      add_trait = vaishnavist_hindu
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Buddhist Branches --- ##
+  remove_mahayana_buddhist = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = mahayana_buddhist
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = mahayana_buddhist
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_mahayana_buddhist = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = mahayana_buddhist }
+      religion = buddhist
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_buddhist_branch_traits_effect = yes
+      add_trait = mahayana_buddhist
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_theravada_buddhist = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = theravada_buddhist
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = theravada_buddhist
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_theravada_buddhist = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = theravada_buddhist }
+      religion = buddhist
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_buddhist_branch_traits_effect = yes
+      add_trait = theravada_buddhist
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_vajrayana_buddhist = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      trait = vajrayana_buddhist
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = vajrayana_buddhist
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_vajrayana_buddhist = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_dharmic_identity
+      NOT = { trait = vajrayana_buddhist }
+      religion = buddhist
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_buddhist_branch_traits_effect = yes
+      add_trait = vajrayana_buddhist
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   ## ===== Birth Markers ===== ##
   show_birth_markers = {
 

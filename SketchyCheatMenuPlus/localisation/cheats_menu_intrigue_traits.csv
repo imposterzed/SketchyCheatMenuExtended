@@ -1655,3 +1655,59 @@ add_sayyid_desc;Add Sayyid;;;;;;;;;;;;;x
 
 remove_sayyid;--------Remove Sayyid;;;;;;;;;;;;;x
 remove_sayyid_desc;Remove Sayyid;;;;;;;;;;;;;x
+
+show_dharmic_identity;----Show Dharmic Identity;;;;;;;;;;;;;x
+show_dharmic_identity_desc;Show Dharmic Identity;;;;;;;;;;;;;x
+
+hide_dharmic_identity;----Hide Dharmic Identity;;;;;;;;;;;;;x
+hide_dharmic_identity_desc;Hide Dharmic Identity;;;;;;;;;;;;;x
+add_brahmin;--------Add Brahmin;;;;;;;;;;;;;x
+add_brahmin_desc;Add Brahmin;;;;;;;;;;;;;x
+
+remove_brahmin;--------Remove Brahmin;;;;;;;;;;;;;x
+remove_brahmin_desc;Remove Brahmin;;;;;;;;;;;;;x
+add_kshatriya;--------Add Kshatriya;;;;;;;;;;;;;x
+add_kshatriya_desc;Add Kshatriya;;;;;;;;;;;;;x
+
+remove_kshatriya;--------Remove Kshatriya;;;;;;;;;;;;;x
+remove_kshatriya_desc;Remove Kshatriya;;;;;;;;;;;;;x
+add_vaishya;--------Add Vaishya;;;;;;;;;;;;;x
+add_vaishya_desc;Add Vaishya;;;;;;;;;;;;;x
+
+remove_vaishya;--------Remove Vaishya;;;;;;;;;;;;;x
+remove_vaishya_desc;Remove Vaishya;;;;;;;;;;;;;x
+add_shaivist_hindu;--------Add Shaivist;;;;;;;;;;;;;x
+add_shaivist_hindu_desc;Add Shaivist;;;;;;;;;;;;;x
+
+remove_shaivist_hindu;--------Remove Shaivist;;;;;;;;;;;;;x
+remove_shaivist_hindu_desc;Remove Shaivist;;;;;;;;;;;;;x
+add_shaktist_hindu;--------Add Shaktist;;;;;;;;;;;;;x
+add_shaktist_hindu_desc;Add Shaktist;;;;;;;;;;;;;x
+
+remove_shaktist_hindu;--------Remove Shaktist;;;;;;;;;;;;;x
+remove_shaktist_hindu_desc;Remove Shaktist;;;;;;;;;;;;;x
+add_smartist_hindu;--------Add Smartist;;;;;;;;;;;;;x
+add_smartist_hindu_desc;Add Smartist;;;;;;;;;;;;;x
+
+remove_smartist_hindu;--------Remove Smartist;;;;;;;;;;;;;x
+remove_smartist_hindu_desc;Remove Smartist;;;;;;;;;;;;;x
+add_vaishnavist_hindu;--------Add Vaishnavist;;;;;;;;;;;;;x
+add_vaishnavist_hindu_desc;Add Vaishnavist;;;;;;;;;;;;;x
+
+remove_vaishnavist_hindu;--------Remove Vaishnavist;;;;;;;;;;;;;x
+remove_vaishnavist_hindu_desc;Remove Vaishnavist;;;;;;;;;;;;;x
+add_mahayana_buddhist;--------Add Mahayana Buddhist;;;;;;;;;;;;;x
+add_mahayana_buddhist_desc;Add Mahayana Buddhist;;;;;;;;;;;;;x
+
+remove_mahayana_buddhist;--------Remove Mahayana Buddhist;;;;;;;;;;;;;x
+remove_mahayana_buddhist_desc;Remove Mahayana Buddhist;;;;;;;;;;;;;x
+add_theravada_buddhist;--------Add Theravada Buddhist;;;;;;;;;;;;;x
+add_theravada_buddhist_desc;Add Theravada Buddhist;;;;;;;;;;;;;x
+
+remove_theravada_buddhist;--------Remove Theravada Buddhist;;;;;;;;;;;;;x
+remove_theravada_buddhist_desc;Remove Theravada Buddhist;;;;;;;;;;;;;x
+add_vajrayana_buddhist;--------Add Vajrayana Buddhist;;;;;;;;;;;;;x
+add_vajrayana_buddhist_desc;Add Vajrayana Buddhist;;;;;;;;;;;;;x
+
+remove_vajrayana_buddhist;--------Remove Vajrayana Buddhist;;;;;;;;;;;;;x
+remove_vajrayana_buddhist_desc;Remove Vajrayana Buddhist;;;;;;;;;;;;;x

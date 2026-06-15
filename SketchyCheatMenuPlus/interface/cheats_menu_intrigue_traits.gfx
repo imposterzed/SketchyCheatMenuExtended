@@ -165,6 +165,14 @@ spriteTypes = {
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
   spriteType = {
+    name = "GFX_show_dharmic_identity"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_dharmic_identity"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
     name = "GFX_show_memes"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
