@@ -928,11 +928,11 @@ add_horse_desc;Add Horse;;;;;;;;;;;;;x
 remove_horse;--------Remove Horse;;;;;;;;;;;;;x
 remove_horse_desc;Remove Horse;;;;;;;;;;;;;x
 
-show_chinese_commander;----Show Chinese Commander;;;;;;;;;;;;;x
-show_chinese_commander_desc;Show Chinese Commander;;;;;;;;;;;;;x
+show_chinese_commander;----Show Chinese Imperial;;;;;;;;;;;;;x
+show_chinese_commander_desc;Show Chinese Imperial;;;;;;;;;;;;;x
 
-hide_chinese_commander;----Hide Chinese Commander;;;;;;;;;;;;;x
-hide_chinese_commander_desc;Hide Chinese Commander;;;;;;;;;;;;;x
+hide_chinese_commander;----Hide Chinese Imperial;;;;;;;;;;;;;x
+hide_chinese_commander_desc;Hide Chinese Imperial;;;;;;;;;;;;;x
 
 add_levy_coordinator;--------Add Way of the Tiger;;;;;;;;;;;;;x
 add_levy_coordinator_desc;Add Way of the Tiger;;;;;;;;;;;;;x
@@ -1711,3 +1711,19 @@ add_vajrayana_buddhist_desc;Add Vajrayana Buddhist;;;;;;;;;;;;;x
 
 remove_vajrayana_buddhist;--------Remove Vajrayana Buddhist;;;;;;;;;;;;;x
 remove_vajrayana_buddhist_desc;Remove Vajrayana Buddhist;;;;;;;;;;;;;x
+
+add_kow_tow_completed_tier_1;--------Add Kowtow Complete (Tier I);;;;;;;;;;;;;x
+add_kow_tow_completed_tier_1_desc;Add Kowtow Complete (Tier I);;;;;;;;;;;;;x
+
+remove_kow_tow_completed_tier_1;--------Remove Kowtow Complete (Tier I);;;;;;;;;;;;;x
+remove_kow_tow_completed_tier_1_desc;Remove Kowtow Complete (Tier I);;;;;;;;;;;;;x
+add_kow_tow_completed_tier_2;--------Add Kowtow Complete (Tier II);;;;;;;;;;;;;x
+add_kow_tow_completed_tier_2_desc;Add Kowtow Complete (Tier II);;;;;;;;;;;;;x
+
+remove_kow_tow_completed_tier_2;--------Remove Kowtow Complete (Tier II);;;;;;;;;;;;;x
+remove_kow_tow_completed_tier_2_desc;Remove Kowtow Complete (Tier II);;;;;;;;;;;;;x
+add_kow_tow_completed_tier_3;--------Add Kowtow Complete (Tier III);;;;;;;;;;;;;x
+add_kow_tow_completed_tier_3_desc;Add Kowtow Complete (Tier III);;;;;;;;;;;;;x
+
+remove_kow_tow_completed_tier_3;--------Remove Kowtow Complete (Tier III);;;;;;;;;;;;;x
+remove_kow_tow_completed_tier_3_desc;Remove Kowtow Complete (Tier III);;;;;;;;;;;;;x

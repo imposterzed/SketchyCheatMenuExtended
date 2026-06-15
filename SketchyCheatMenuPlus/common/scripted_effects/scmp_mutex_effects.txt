@@ -154,3 +154,10 @@ clear_buddhist_branch_traits_effect = {
   if = { limit = { trait = theravada_buddhist }  remove_trait = theravada_buddhist  }
   if = { limit = { trait = vajrayana_buddhist }  remove_trait = vajrayana_buddhist  }
 }
+
+
+clear_kowtow_traits_effect = {
+  if = { limit = { trait = kow_tow_completed_tier_1 }  remove_trait = kow_tow_completed_tier_1  }
+  if = { limit = { trait = kow_tow_completed_tier_2 }  remove_trait = kow_tow_completed_tier_2  }
+  if = { limit = { trait = kow_tow_completed_tier_3 }  remove_trait = kow_tow_completed_tier_3  }
+}

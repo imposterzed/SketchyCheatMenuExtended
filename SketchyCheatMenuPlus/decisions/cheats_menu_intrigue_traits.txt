@@ -8873,7 +8873,7 @@ decisions = {
     }
   }
 
-  ## ===== Chinese Commander ===== ##
+  ## ===== Chinese Imperial ===== ##
   show_chinese_commander = {
 
 
@@ -8928,6 +8928,7 @@ decisions = {
     }
   }
 
+  ## --- Chinese Commander --- ##
   remove_logistics_expert = {
 
 
@@ -9141,6 +9142,178 @@ decisions = {
 
     effect = {
       add_trait = levy_coordinator
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Kowtow --- ##
+  remove_kow_tow_completed_tier_1 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_chinese_commander
+      trait = kow_tow_completed_tier_1
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = kow_tow_completed_tier_1
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_kow_tow_completed_tier_1 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_chinese_commander
+      NOT = { trait = kow_tow_completed_tier_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_kowtow_traits_effect = yes
+      add_trait = kow_tow_completed_tier_1
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_kow_tow_completed_tier_2 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_chinese_commander
+      trait = kow_tow_completed_tier_2
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = kow_tow_completed_tier_2
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_kow_tow_completed_tier_2 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_chinese_commander
+      NOT = { trait = kow_tow_completed_tier_2 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_kowtow_traits_effect = yes
+      add_trait = kow_tow_completed_tier_2
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_kow_tow_completed_tier_3 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_chinese_commander
+      trait = kow_tow_completed_tier_3
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = kow_tow_completed_tier_3
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_kow_tow_completed_tier_3 = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_chinese_commander
+      NOT = { trait = kow_tow_completed_tier_3 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_kowtow_traits_effect = yes
+      add_trait = kow_tow_completed_tier_3
     }
 
     revoke_allowed = {

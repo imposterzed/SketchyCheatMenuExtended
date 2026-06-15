@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.15] - 2026-06-15
+
+### Added
+- **Kowtow tier toggles** folded into the renamed Chinese Imperial section — 3 new add/remove pairs (`kow_tow_completed_tier_1` / `_tier_2` / `_tier_3`, displayed as "Kowtow Complete (Tier I / II / III)"). Ungated per berserker convention (no cross-religion analogue).
+- **New cluster helper** `clear_kowtow_traits_effect` (3-way mutex) — vanilla declares no opposites between the kowtow tiers, but SCMP tightens to strict mutex matching the raiding / bloodthirsty_gods convention.
+
+### Changed
+- **Section renamed** "Chinese Commander" → "Chinese Imperial". Section flag `show_chinese_commander` preserved across the rename for save-compat; only the display label and section divider comment changed. Two subsection dividers (`## --- Chinese Commander --- ##` and `## --- Kowtow --- ##`) added inside.
+- **README** — trait count 271 → 274; "chinese commander" entry in the category list updated to "chinese imperial"; Jade Dragon DLC entry updated to list the Kowtow toggles.
+
 ## [0.6.14] - 2026-06-15
 
 ### Added
