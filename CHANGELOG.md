@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.6.13] - 2026-06-15
+
+### Added
+- **Christian Status section** (9 add/remove pairs) between Ordained Clergy and Birth Markers — three subsections: Coronation (4-way mutex, ordered Most-to-Least Holy), Baptism (4-way mutex including the Orthodox `baptized_by_patriarch` the trait-reference doc missed), Other (beatified).
+- **Muslim Status section** (6 add/remove pairs) — ashari/mutazilite (theological schools 2-way), mirza/sayyid (lineage 2-way), hafiz, decadent. Internal order groups mutex pairs alphabetically by first member.
+- **Two new cluster helpers** in `scmp_mutex_effects.txt`: `clear_coronation_traits_effect` + `clear_baptism_traits_effect` (4-way each).
+- **`add_decadent` mutex wrap** — strips zealous if present, completing the bidirectional pair started in v0.6.9's `add_zealous` (which strips decadent).
+- **4 new GFX sprite entries** for the show/hide toggles, pointing to `decision_icon_cheats.dds` placeholder.
+
+### Changed
+- **Per-decision religion gates** — section show toggles gated on `religion_group = christian` / `religion_group = muslim`; each `add_X` inside additionally carries its own religion gate (mirrors v0.6.10 Childhood's `is_adult` per-decision pattern), so toggles disappear immediately if the char converts away from the section's religion while the section flag is set.
+- **README** — trait count 246 → 261; "christian status" and "muslim status" added to the category list between "ordained clergy" and "birth markers".
+
 ## [0.6.12] - 2026-06-15
 
 ### Added

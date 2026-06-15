@@ -1569,3 +1569,89 @@ add_aryika_desc;Add Aryika;;;;;;;;;;;;;x
 
 remove_aryika;--------Remove Aryika;;;;;;;;;;;;;x
 remove_aryika_desc;Remove Aryika;;;;;;;;;;;;;x
+
+show_christian_status;----Show Christian Status;;;;;;;;;;;;;x
+show_christian_status_desc;Show Christian Status;;;;;;;;;;;;;x
+
+hide_christian_status;----Hide Christian Status;;;;;;;;;;;;;x
+hide_christian_status_desc;Hide Christian Status;;;;;;;;;;;;;x
+add_crowned_by_bishop;--------Add Crowned by Prince-Bishop;;;;;;;;;;;;;x
+add_crowned_by_bishop_desc;Add Crowned by Prince-Bishop;;;;;;;;;;;;;x
+
+remove_crowned_by_bishop;--------Remove Crowned by Prince-Bishop;;;;;;;;;;;;;x
+remove_crowned_by_bishop_desc;Remove Crowned by Prince-Bishop;;;;;;;;;;;;;x
+add_crowned_by_myself;--------Add Self-Crowned;;;;;;;;;;;;;x
+add_crowned_by_myself_desc;Add Self-Crowned;;;;;;;;;;;;;x
+
+remove_crowned_by_myself;--------Remove Self-Crowned;;;;;;;;;;;;;x
+remove_crowned_by_myself_desc;Remove Self-Crowned;;;;;;;;;;;;;x
+add_crowned_by_pope;--------Add Crowned by Pope;;;;;;;;;;;;;x
+add_crowned_by_pope_desc;Add Crowned by Pope;;;;;;;;;;;;;x
+
+remove_crowned_by_pope;--------Remove Crowned by Pope;;;;;;;;;;;;;x
+remove_crowned_by_pope_desc;Remove Crowned by Pope;;;;;;;;;;;;;x
+add_crowned_by_priest;--------Add Crowned by Priest;;;;;;;;;;;;;x
+add_crowned_by_priest_desc;Add Crowned by Priest;;;;;;;;;;;;;x
+
+remove_crowned_by_priest;--------Remove Crowned by Priest;;;;;;;;;;;;;x
+remove_crowned_by_priest_desc;Remove Crowned by Priest;;;;;;;;;;;;;x
+add_baptized_by_bishop;--------Add Baptized by Prince-Bishop;;;;;;;;;;;;;x
+add_baptized_by_bishop_desc;Add Baptized by Prince-Bishop;;;;;;;;;;;;;x
+
+remove_baptized_by_bishop;--------Remove Baptized by Prince-Bishop;;;;;;;;;;;;;x
+remove_baptized_by_bishop_desc;Remove Baptized by Prince-Bishop;;;;;;;;;;;;;x
+add_baptized_by_patriarch;--------Add Baptized by Patriarch;;;;;;;;;;;;;x
+add_baptized_by_patriarch_desc;Add Baptized by Patriarch;;;;;;;;;;;;;x
+
+remove_baptized_by_patriarch;--------Remove Baptized by Patriarch;;;;;;;;;;;;;x
+remove_baptized_by_patriarch_desc;Remove Baptized by Patriarch;;;;;;;;;;;;;x
+add_baptized_by_pope;--------Add Baptized by Pope;;;;;;;;;;;;;x
+add_baptized_by_pope_desc;Add Baptized by Pope;;;;;;;;;;;;;x
+
+remove_baptized_by_pope;--------Remove Baptized by Pope;;;;;;;;;;;;;x
+remove_baptized_by_pope_desc;Remove Baptized by Pope;;;;;;;;;;;;;x
+add_baptized_by_satan;--------Add Baptized by Satan;;;;;;;;;;;;;x
+add_baptized_by_satan_desc;Add Baptized by Satan;;;;;;;;;;;;;x
+
+remove_baptized_by_satan;--------Remove Baptized by Satan;;;;;;;;;;;;;x
+remove_baptized_by_satan_desc;Remove Baptized by Satan;;;;;;;;;;;;;x
+add_beatified;--------Add Beatified;;;;;;;;;;;;;x
+add_beatified_desc;Add Beatified;;;;;;;;;;;;;x
+
+remove_beatified;--------Remove Beatified;;;;;;;;;;;;;x
+remove_beatified_desc;Remove Beatified;;;;;;;;;;;;;x
+show_muslim_status;----Show Muslim Status;;;;;;;;;;;;;x
+show_muslim_status_desc;Show Muslim Status;;;;;;;;;;;;;x
+
+hide_muslim_status;----Hide Muslim Status;;;;;;;;;;;;;x
+hide_muslim_status_desc;Hide Muslim Status;;;;;;;;;;;;;x
+add_ashari;--------Add Ashari;;;;;;;;;;;;;x
+add_ashari_desc;Add Ashari;;;;;;;;;;;;;x
+
+remove_ashari;--------Remove Ashari;;;;;;;;;;;;;x
+remove_ashari_desc;Remove Ashari;;;;;;;;;;;;;x
+add_decadent;--------Add Decadent;;;;;;;;;;;;;x
+add_decadent_desc;Add Decadent;;;;;;;;;;;;;x
+
+remove_decadent;--------Remove Decadent;;;;;;;;;;;;;x
+remove_decadent_desc;Remove Decadent;;;;;;;;;;;;;x
+add_hafiz;--------Add Hafiz;;;;;;;;;;;;;x
+add_hafiz_desc;Add Hafiz;;;;;;;;;;;;;x
+
+remove_hafiz;--------Remove Hafiz;;;;;;;;;;;;;x
+remove_hafiz_desc;Remove Hafiz;;;;;;;;;;;;;x
+add_mirza;--------Add Mirza;;;;;;;;;;;;;x
+add_mirza_desc;Add Mirza;;;;;;;;;;;;;x
+
+remove_mirza;--------Remove Mirza;;;;;;;;;;;;;x
+remove_mirza_desc;Remove Mirza;;;;;;;;;;;;;x
+add_mutazilite;--------Add Mutazilite;;;;;;;;;;;;;x
+add_mutazilite_desc;Add Mutazilite;;;;;;;;;;;;;x
+
+remove_mutazilite;--------Remove Mutazilite;;;;;;;;;;;;;x
+remove_mutazilite_desc;Remove Mutazilite;;;;;;;;;;;;;x
+add_sayyid;--------Add Sayyid;;;;;;;;;;;;;x
+add_sayyid_desc;Add Sayyid;;;;;;;;;;;;;x
+
+remove_sayyid;--------Remove Sayyid;;;;;;;;;;;;;x
+remove_sayyid_desc;Remove Sayyid;;;;;;;;;;;;;x

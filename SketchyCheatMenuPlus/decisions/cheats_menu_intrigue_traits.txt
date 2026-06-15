@@ -12829,6 +12829,1004 @@ decisions = {
     }
   }
 
+  ## ===== Christian Status ===== ##
+  show_christian_status = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      religion_group = christian
+      NOT = { has_character_flag = show_christian_status }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_christian_status
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_christian_status = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_christian_status
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Coronation --- ##
+  remove_crowned_by_pope = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      trait = crowned_by_pope
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = crowned_by_pope
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_crowned_by_pope = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      religion_group = christian
+      NOT = { trait = crowned_by_pope }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_coronation_traits_effect = yes
+      add_trait = crowned_by_pope
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_crowned_by_bishop = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      trait = crowned_by_bishop
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = crowned_by_bishop
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_crowned_by_bishop = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      religion_group = christian
+      NOT = { trait = crowned_by_bishop }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_coronation_traits_effect = yes
+      add_trait = crowned_by_bishop
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_crowned_by_priest = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      trait = crowned_by_priest
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = crowned_by_priest
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_crowned_by_priest = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      religion_group = christian
+      NOT = { trait = crowned_by_priest }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_coronation_traits_effect = yes
+      add_trait = crowned_by_priest
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_crowned_by_myself = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      trait = crowned_by_myself
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = crowned_by_myself
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_crowned_by_myself = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      religion_group = christian
+      NOT = { trait = crowned_by_myself }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_coronation_traits_effect = yes
+      add_trait = crowned_by_myself
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Baptism --- ##
+  remove_baptized_by_pope = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      trait = baptized_by_pope
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = baptized_by_pope
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_baptized_by_pope = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      religion_group = christian
+      NOT = { trait = baptized_by_pope }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_baptism_traits_effect = yes
+      add_trait = baptized_by_pope
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_baptized_by_patriarch = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      trait = baptized_by_patriarch
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = baptized_by_patriarch
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_baptized_by_patriarch = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      religion_group = christian
+      NOT = { trait = baptized_by_patriarch }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_baptism_traits_effect = yes
+      add_trait = baptized_by_patriarch
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_baptized_by_bishop = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      trait = baptized_by_bishop
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = baptized_by_bishop
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_baptized_by_bishop = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      religion_group = christian
+      NOT = { trait = baptized_by_bishop }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_baptism_traits_effect = yes
+      add_trait = baptized_by_bishop
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_baptized_by_satan = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      trait = baptized_by_satan
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = baptized_by_satan
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_baptized_by_satan = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      religion_group = christian
+      NOT = { trait = baptized_by_satan }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_baptism_traits_effect = yes
+      add_trait = baptized_by_satan
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Other --- ##
+  remove_beatified = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      trait = beatified
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = beatified
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_beatified = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_christian_status
+      religion_group = christian
+      NOT = { trait = beatified }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = beatified
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## ===== Muslim Status ===== ##
+  show_muslim_status = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      religion_group = muslim
+      NOT = { has_character_flag = show_muslim_status }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_muslim_status
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_muslim_status = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_muslim_status
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_ashari = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      trait = ashari
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = ashari
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_ashari = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      religion_group = muslim
+      NOT = { trait = ashari }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { trait = mutazilite }
+        remove_trait = mutazilite
+      }
+      add_trait = ashari
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_mutazilite = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      trait = mutazilite
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = mutazilite
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_mutazilite = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      religion_group = muslim
+      NOT = { trait = mutazilite }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { trait = ashari }
+        remove_trait = ashari
+      }
+      add_trait = mutazilite
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_decadent = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      trait = decadent
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = decadent
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_decadent = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      religion_group = muslim
+      NOT = { trait = decadent }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { trait = zealous }
+        remove_trait = zealous
+      }
+      add_trait = decadent
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_hafiz = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      trait = hafiz
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = hafiz
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_hafiz = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      religion_group = muslim
+      NOT = { trait = hafiz }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = hafiz
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_mirza = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      trait = mirza
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = mirza
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_mirza = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      religion_group = muslim
+      NOT = { trait = mirza }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { trait = sayyid }
+        remove_trait = sayyid
+      }
+      add_trait = mirza
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sayyid = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      trait = sayyid
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sayyid
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sayyid = {
+
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_muslim_status
+      religion_group = muslim
+      NOT = { trait = sayyid }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { trait = mirza }
+        remove_trait = mirza
+      }
+      add_trait = sayyid
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   ## ===== Birth Markers ===== ##
   show_birth_markers = {
 
