@@ -49,12 +49,6 @@ spawn_fleet_desc;Spawn a 1000 ships for your fleet.;;;;;;;;;;;;;x
 raise_rel_authority;----Raise Religious Authority;;;;;;;;;;;;;x
 raise_rel_authority_desc;Raises religious authority to 100%.;;;;;;;;;;;;;x
 
-become_independent;----Become Independent;;;;;;;;;;;;;x
-become_independent_desc;Makes you become independent.;;;;;;;;;;;;;x
-
-set_feudal;----Change to Feudalism;;;;;;;;;;;;;x
-set_feudal_desc;Changes your government type to Feudalism.;;;;;;;;;;;;;x
-
 revoke_all_titles;----Revoke all Vassal Titles;;;;;;;;;;;;;x
 revoke_all_titles_desc;Revokes all Vassal titles.;;;;;;;;;;;;;x
 

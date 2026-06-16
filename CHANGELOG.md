@@ -6,6 +6,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-06-16
+
+### Added
+- **Government sub-menu** (`show_government` / `hide_government`) — new top-level cheat sub-menu, 4th master toggle in order Cheats → Government → Spawn → Traits.
+- **Government conversions** — `set_feudal` / `set_iqta` / `set_tribal` / `set_nomadic`, each opt-in gated to source governments where the engine accepts the conversion. Plus `set_feudal_nomad` / `set_iqta_nomad` / `set_tribal_nomad` for the destructive horde-settling path from Nomad source (title carries the "(Destroy Horde)" suffix).
+- **CleanSlate compat helpers** — `is_iqta_government_trigger`, `is_monastic_feudal_government_trigger`, and `set_iqta_government_effect` handle the CleanSlate gov-type renames (`muslim_government` → `muslim_feudal_government`, `theocratic_feudal_government` → `monastic_feudal_government`).
+
+### Changed
+- **`set_feudal`** and **`become_independent`** relocated from `cheats_menu_intrigue.txt` to the new Government sub-menu.
+- **README "What it does"** — new "Government" subsection at the end of the cheat categories; "Realm-wide cheats" trimmed to drop the relocated `set_feudal` / `become_independent` mentions.
+- **README "Optional DLC"** — Horse Lords entry extended (Destroy-Horde variants); Jade Dragon entry trimmed.
+
 ## [0.7.0] - 2026-06-15
 
 ### Added

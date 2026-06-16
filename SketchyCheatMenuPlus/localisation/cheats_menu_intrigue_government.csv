@@ -1,0 +1,32 @@
+#CODE;NAME;;;;;;;;;;;;;x
+#CODE_desc;DESCRIPTION;;;;;;;;;;;;;x
+
+show_government;Show Government Menu;;;;;;;;;;;;;x
+show_government_desc;Show the government menu.;;;;;;;;;;;;;x
+
+hide_government;Hide Government Menu;;;;;;;;;;;;;x
+hide_government_desc;Hide the government menu.;;;;;;;;;;;;;x
+
+become_independent;----Become Independent;;;;;;;;;;;;;x
+become_independent_desc;Makes you become independent.;;;;;;;;;;;;;x
+
+set_feudal;----Change to Feudalism;;;;;;;;;;;;;x
+set_feudal_desc;Changes your government type to Feudalism.;;;;;;;;;;;;;x
+
+set_feudal_nomad;----Change to Feudalism (Destroy Horde);;;;;;;;;;;;;x
+set_feudal_nomad_desc;Settles your horde into a feudal realm. Your empire title is granted to a spawned successor; your nomadic capital is destroyed. Bypasses vanilla's castle-ownership prerequisite for "Settle into Feudalism".;;;;;;;;;;;;;x
+
+set_iqta;----Change to Iqta;;;;;;;;;;;;;x
+set_iqta_desc;Changes your government type to Iqta.;;;;;;;;;;;;;x
+
+set_iqta_nomad;----Change to Iqta (Destroy Horde);;;;;;;;;;;;;x
+set_iqta_nomad_desc;Settles your horde into a Muslim feudal realm. Your empire is demoted (e.g. Mongol Empire to Mongolia) and your nomadic capital is destroyed. Lighter than the Pagan equivalent (no successor spawn) but still a major realm change.;;;;;;;;;;;;;x
+
+set_nomadic;----Change to Nomadic;;;;;;;;;;;;;x
+set_nomadic_desc;Changes your government type to Nomadic. The engine restructures your realm: creates an empire-tier title in your dynasty's name if you don't already hold one, creates a new nomadic-type holding to serve as your horde's capital, changes succession to nomad_succession, and severs any liege.;;;;;;;;;;;;;x
+
+set_tribal;----Change to Tribal;;;;;;;;;;;;;x
+set_tribal_desc;Changes your government type to Tribal.;;;;;;;;;;;;;x
+
+set_tribal_nomad;----Change to Tribal (Destroy Horde);;;;;;;;;;;;;x
+set_tribal_nomad_desc;Settles your horde into a tribal realm. Your empire title is granted to a spawned successor; remaining holdings convert to tribal versions of their former nomadic structure. No vanilla equivalent player decision.;;;;;;;;;;;;;x

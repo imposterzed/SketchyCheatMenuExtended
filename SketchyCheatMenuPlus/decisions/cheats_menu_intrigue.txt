@@ -660,44 +660,6 @@ decisions = {
     }
   }
 
-  # Makes the player independent by setting their liege to
-  # themselves (set_defacto_liege = THIS). CK2 idiom.
-  become_independent = {
-
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = show_cheats
-      independent = no
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      set_defacto_liege = THIS
-    }
-  }
-
-  set_feudal = {
-
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = show_cheats
-      NOT = { government = feudal_government }
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      set_government_type = feudal_government
-    }
-  }
-
   # For every non-baron, non-nomadic vassal, grants their
   # demesne titles to the player. Skips baron-tier (auto-
   # owned by feudal castles), patricians (republic quirks),
