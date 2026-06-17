@@ -1,0 +1,77 @@
+#CODE;NAME;;;;;;;;;;;;;x
+#CODE_desc;DESCRIPTION;;;;;;;;;;;;;x
+
+show_inheritance_laws;Show Inheritance Laws;;;;;;;;;;;;;x
+show_inheritance_laws_desc;Show the inheritance laws cheat menu.;;;;;;;;;;;;;x
+
+hide_inheritance_laws;Hide Inheritance Laws;;;;;;;;;;;;;x
+hide_inheritance_laws_desc;Hide the inheritance laws cheat menu.;;;;;;;;;;;;;x
+
+set_succ_elective_gavelkind;----Set Succession: Elective Gavelkind;;;;;;;;;;;;;x
+set_succ_elective_gavelkind_desc;Sets your primary title's succession law to Elective Gavelkind. Children of the ruler vote on the heir from among themselves – remaining children inherit secondary titles.;;;;;;;;;;;;;x
+
+set_succ_feudal_elective;----Set Succession: Elective Monarchy;;;;;;;;;;;;;x
+set_succ_feudal_elective_desc;Sets your primary title's succession law to Elective Monarchy. Vassals vote on the heir – the realm stays intact across succession.;;;;;;;;;;;;;x
+
+set_succ_eldership;----Set Succession: Eldership;;;;;;;;;;;;;x
+set_succ_eldership_desc;Sets your primary title's succession law to Eldership. The eldest member of your dynasty inherits. Holy Fury content – gated to Baltic / West African pagan tribal realms in vanilla.;;;;;;;;;;;;;x
+
+set_succ_gavelkind;----Set Succession: Gavelkind;;;;;;;;;;;;;x
+set_succ_gavelkind_desc;Sets your primary title's succession law to Gavelkind. Titles divide between all eligible children – the realm fragments at succession.;;;;;;;;;;;;;x
+
+set_succ_turkish_succession;----Set Succession: Open;;;;;;;;;;;;;x
+set_succ_turkish_succession_desc;Sets your primary title's succession law to Open (Turkish). Any qualifying member of your dynasty can succeed – vassals push competing claimants. Default for Muslim realms.;;;;;;;;;;;;;x
+
+set_succ_primogeniture;----Set Succession: Primogeniture;;;;;;;;;;;;;x
+set_succ_primogeniture_desc;Sets your primary title's succession law to Primogeniture. Eldest child inherits everything. Stable succession but encourages younger siblings to rebel.;;;;;;;;;;;;;x
+
+set_succ_seniority;----Set Succession: Seniority;;;;;;;;;;;;;x
+set_succ_seniority_desc;Sets your primary title's succession law to Seniority. Eldest member of your dynasty inherits, regardless of relation.;;;;;;;;;;;;;x
+
+set_succ_tanistry;----Set Succession: Tanistry;;;;;;;;;;;;;x
+set_succ_tanistry_desc;Sets your primary title's succession law to Tanistry. Dynasty members vote on the heir. Gated to Celtic culture group in vanilla.;;;;;;;;;;;;;x
+
+set_succ_ultimogeniture;----Set Succession: Ultimogeniture;;;;;;;;;;;;;x
+set_succ_ultimogeniture_desc;Sets your primary title's succession law to Ultimogeniture. Youngest child inherits everything. Niche – engine restricts to Mongol culture or Bon religion in vanilla.;;;;;;;;;;;;;x
+
+set_true_cognatic_succession;----Set Gender: Absolute Cognatic;;;;;;;;;;;;;x
+set_true_cognatic_succession_desc;Sets your primary title's gender succession to Absolute Cognatic. Eldest child of either sex inherits equally.;;;;;;;;;;;;;x
+
+set_agnatic_succession;----Set Gender: Agnatic;;;;;;;;;;;;;x
+set_agnatic_succession_desc;Sets your primary title's gender succession to Agnatic. Males only – females cannot inherit or transmit claims.;;;;;;;;;;;;;x
+
+set_cognatic_succession;----Set Gender: Agnatic-Cognatic;;;;;;;;;;;;;x
+set_cognatic_succession_desc;Sets your primary title's gender succession to Agnatic-Cognatic. Males preferred – females inherit only if no male heirs exist.;;;;;;;;;;;;;x
+
+set_enatic_succession;----Set Gender: Enatic;;;;;;;;;;;;;x
+set_enatic_succession_desc;Sets your primary title's gender succession to Enatic. Females only – mirror of Agnatic. Requires matriarchal religion feature.;;;;;;;;;;;;;x
+
+set_enatic_cognatic_succession;----Set Gender: Enatic-Cognatic;;;;;;;;;;;;;x
+set_enatic_cognatic_succession_desc;Sets your primary title's gender succession to Enatic-Cognatic. Females preferred – males inherit only if no female heirs exist. Mirror of Agnatic-Cognatic.;;;;;;;;;;;;;x
+
+set_succ_open_elective;----Set Succession: Open Elective;;;;;;;;;;;;;x
+set_succ_open_elective_desc;Sets your primary title's succession law to Open Elective. The order's membership votes on the next leader. Default for Holy Orders.;;;;;;;;;;;;;x
+set_succ_nomad_succession;----Set Succession: Nomadic;;;;;;;;;;;;;x
+set_succ_nomad_succession_desc;Sets your primary title's succession law to Nomadic. Engine default for Nomadic government. Requires Horse Lords.;;;;;;;;;;;;;x
+
+set_succ_patrician_elective;----Set Succession: Patrician Elective;;;;;;;;;;;;;x
+set_succ_patrician_elective_desc;Sets your primary title's succession law to Patrician Elective. Patrician family heads vote. Engine default for Merchant Republics. Requires The Republic.;;;;;;;;;;;;;x
+
+set_true_cognatic_succession_hidden;----Set Gender: Absolute Cognatic (Hidden);;;;;;;;;;;;;x
+set_true_cognatic_succession_hidden_desc;Sets your primary title's gender succession to Absolute Cognatic.;;;;;;;;;;;;;x
+
+set_agnatic_succession_hidden;----Set Gender: Agnatic (Hidden);;;;;;;;;;;;;x
+set_agnatic_succession_hidden_desc;Sets your primary title's gender succession to Agnatic.;;;;;;;;;;;;;x
+
+set_cognatic_succession_hidden;----Set Gender: Agnatic-Cognatic (Hidden);;;;;;;;;;;;;x
+set_cognatic_succession_hidden_desc;Sets your primary title's gender succession to Agnatic-Cognatic.;;;;;;;;;;;;;x
+
+gender_hidden_iqta_tooltip;Iqta governments don't display gender succession in vanilla's Inheritance UI, but the engine still applies the law.;;;;;;;;;;;;;x
+gender_hidden_order_tooltip;Holy Orders don't display gender succession in vanilla's Inheritance UI, but the engine still applies the law.;;;;;;;;;;;;;x
+gender_hidden_mr_tooltip;Merchant Republics don't display gender succession in vanilla's Inheritance UI, but the engine still applies the law.;;;;;;;;;;;;;x
+
+set_enatic_succession_hidden;----Set Gender: Enatic (Hidden);;;;;;;;;;;;;x
+set_enatic_succession_hidden_desc;Sets your primary title's gender succession to Enatic.;;;;;;;;;;;;;x
+
+set_enatic_cognatic_succession_hidden;----Set Gender: Enatic-Cognatic (Hidden);;;;;;;;;;;;;x
+set_enatic_cognatic_succession_hidden_desc;Sets your primary title's gender succession to Enatic-Cognatic.;;;;;;;;;;;;;x

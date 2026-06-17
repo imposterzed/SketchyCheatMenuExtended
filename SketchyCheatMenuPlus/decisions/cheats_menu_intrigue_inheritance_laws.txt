@@ -1,0 +1,635 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##             Cheats Menu - Inheritance Laws             ##
+############################################################
+##                                                        ##
+## Right-click on self decisions for setting inheritance  ##
+## laws. show_inheritance_laws / hide_inheritance_laws is ##
+## the local visibility toggle. Master cheats_enabled     ##
+## toggle lives in cheats_menu.txt.                       ##
+##                                                        ##
+## Empirical: engine accepts add_law for every succession ##
+## and gender law on every gov in our master OR-list.     ##
+## Vanilla potentials gate the Laws-tab UI display, not   ##
+## engine add_law. So per-decision gates are minimal.     ##
+## DLC gates kept only where law genuinely requires DLC.  ##
+##                                                        ##
+############################################################
+
+decisions = {
+
+  show_inheritance_laws = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      NOT = { has_character_flag = show_inheritance_laws }
+      has_scmp_inheritance_law_eligible_government_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_inheritance_laws
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_inheritance_laws = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_inheritance_laws
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Succession (alphabetical by display label) --- ##
+
+  set_succ_eldership = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_eldership } }
+      has_dlc = "Holy Fury"
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_eldership
+      }
+    }
+  }
+
+  set_succ_elective_gavelkind = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_elective_gavelkind } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_elective_gavelkind
+      }
+    }
+  }
+
+  set_succ_feudal_elective = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_feudal_elective } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_feudal_elective
+      }
+    }
+  }
+
+  set_succ_gavelkind = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_gavelkind } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_gavelkind
+      }
+    }
+  }
+
+  set_succ_nomad_succession = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_nomad_succession } }
+      has_dlc = "Horse Lords"
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_nomad_succession
+      }
+    }
+  }
+
+  set_succ_turkish_succession = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_turkish_succession } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_turkish_succession
+      }
+    }
+  }
+
+  set_succ_open_elective = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_open_elective } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_open_elective
+      }
+    }
+  }
+
+  set_succ_patrician_elective = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_patrician_elective } }
+      has_dlc = "The Republic"
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_patrician_elective
+      }
+    }
+  }
+
+  set_succ_primogeniture = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_primogeniture } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_primogeniture
+      }
+    }
+  }
+
+  set_succ_seniority = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_seniority } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_seniority
+      }
+    }
+  }
+
+  set_succ_tanistry = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_tanistry } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_tanistry
+      }
+    }
+  }
+
+  set_succ_ultimogeniture = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_ultimogeniture } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_ultimogeniture
+      }
+    }
+  }
+
+  ## --- Gender Succession --- ##
+
+  set_true_cognatic_succession = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = true_cognatic_succession } }
+      OR = {
+        government = feudal_government
+        government = tribal_government
+        government = nomadic_government
+        is_monastic_feudal_government_trigger = yes
+        government = chinese_imperial_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = true_cognatic_succession
+      }
+    }
+  }
+
+  set_agnatic_succession = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = agnatic_succession } }
+      OR = {
+        government = feudal_government
+        government = tribal_government
+        government = nomadic_government
+        is_monastic_feudal_government_trigger = yes
+        government = chinese_imperial_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = agnatic_succession
+      }
+    }
+  }
+
+  set_cognatic_succession = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = cognatic_succession } }
+      OR = {
+        government = feudal_government
+        government = tribal_government
+        government = nomadic_government
+        is_monastic_feudal_government_trigger = yes
+        government = chinese_imperial_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = cognatic_succession
+      }
+    }
+  }
+
+  set_enatic_succession = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = enatic_succession } }
+      OR = {
+        government = feudal_government
+        government = tribal_government
+        government = nomadic_government
+        is_monastic_feudal_government_trigger = yes
+        government = chinese_imperial_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = enatic_succession
+      }
+    }
+  }
+
+  set_enatic_cognatic_succession = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = enatic_cognatic_succession } }
+      OR = {
+        government = feudal_government
+        government = tribal_government
+        government = nomadic_government
+        is_monastic_feudal_government_trigger = yes
+        government = chinese_imperial_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = enatic_cognatic_succession
+      }
+    }
+  }
+
+  ## --- Gender Succession (Hidden: Iqta / Holy Order / Merchant Republic) --- ##
+
+  set_true_cognatic_succession_hidden = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = true_cognatic_succession } }
+      OR = {
+        is_iqta_government_trigger = yes
+        government = order_government
+        government = merchant_republic_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { is_iqta_government_trigger = yes }
+        custom_tooltip = { text = gender_hidden_iqta_tooltip }
+      }
+      else_if = {
+        limit = { government = order_government }
+        custom_tooltip = { text = gender_hidden_order_tooltip }
+      }
+      else = {
+        custom_tooltip = { text = gender_hidden_mr_tooltip }
+      }
+      primary_title = {
+        add_law = true_cognatic_succession
+      }
+    }
+  }
+
+  set_agnatic_succession_hidden = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = agnatic_succession } }
+      OR = {
+        is_iqta_government_trigger = yes
+        government = order_government
+        government = merchant_republic_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { is_iqta_government_trigger = yes }
+        custom_tooltip = { text = gender_hidden_iqta_tooltip }
+      }
+      else_if = {
+        limit = { government = order_government }
+        custom_tooltip = { text = gender_hidden_order_tooltip }
+      }
+      else = {
+        custom_tooltip = { text = gender_hidden_mr_tooltip }
+      }
+      primary_title = {
+        add_law = agnatic_succession
+      }
+    }
+  }
+
+  set_cognatic_succession_hidden = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = cognatic_succession } }
+      OR = {
+        is_iqta_government_trigger = yes
+        government = order_government
+        government = merchant_republic_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { is_iqta_government_trigger = yes }
+        custom_tooltip = { text = gender_hidden_iqta_tooltip }
+      }
+      else_if = {
+        limit = { government = order_government }
+        custom_tooltip = { text = gender_hidden_order_tooltip }
+      }
+      else = {
+        custom_tooltip = { text = gender_hidden_mr_tooltip }
+      }
+      primary_title = {
+        add_law = cognatic_succession
+      }
+    }
+  }
+
+  set_enatic_succession_hidden = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = enatic_succession } }
+      OR = {
+        is_iqta_government_trigger = yes
+        government = order_government
+        government = merchant_republic_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { is_iqta_government_trigger = yes }
+        custom_tooltip = { text = gender_hidden_iqta_tooltip }
+      }
+      else_if = {
+        limit = { government = order_government }
+        custom_tooltip = { text = gender_hidden_order_tooltip }
+      }
+      else = {
+        custom_tooltip = { text = gender_hidden_mr_tooltip }
+      }
+      primary_title = {
+        add_law = enatic_succession
+      }
+    }
+  }
+
+  set_enatic_cognatic_succession_hidden = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = enatic_cognatic_succession } }
+      OR = {
+        is_iqta_government_trigger = yes
+        government = order_government
+        government = merchant_republic_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { is_iqta_government_trigger = yes }
+        custom_tooltip = { text = gender_hidden_iqta_tooltip }
+      }
+      else_if = {
+        limit = { government = order_government }
+        custom_tooltip = { text = gender_hidden_order_tooltip }
+      }
+      else = {
+        custom_tooltip = { text = gender_hidden_mr_tooltip }
+      }
+      primary_title = {
+        add_law = enatic_cognatic_succession
+      }
+    }
+  }
+}

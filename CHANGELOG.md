@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.8.1] - 2026-06-17
+
+### Added
+- **Inheritance Laws sub-menu** (`show_inheritance_laws` / `hide_inheritance_laws`) — new top-level cheat sub-menu, positioned between Government and Spawn in the master-toggle order. The show toggle hides for governments where no law decision applies (Republic / Theocracy / Roman Imperial).
+- **Succession law decisions** (12, alphabetical by display label): Eldership / Elective Gavelkind / Elective Monarchy / Gavelkind / Nomadic / Open / Open Elective / Patrician Elective / Primogeniture / Seniority / Tanistry / Ultimogeniture. Per-decision gates are minimal — engine accepts `add_law` on any master-toggle-eligible gov; DLC gates kept only where the law genuinely requires DLC.
+- **Gender succession law decisions** (5 base): `set_agnatic_succession` / `set_cognatic_succession` / `set_true_cognatic_succession` / `set_enatic_succession` / `set_enatic_cognatic_succession` — gated to govs where vanilla's Inheritance UI displays gender succession (feudal / tribal / nomadic / monastic_feudal / chinese_imperial).
+- **Gender (Hidden) variants** (5, mirroring the base) — `_hidden` suffix in the decision IDs, "(Hidden)" in the button title. Surface on Iqta / Holy Order / Merchant Republic where vanilla's Inheritance UI hides the gender row; conditional `custom_tooltip` renders a gov-specific message explaining the engine still applies the law.
+- **CleanSlate compat helper** — `has_scmp_inheritance_law_eligible_government_trigger` gates the `show_inheritance_laws` master toggle to the 8 govs SCMP has tested (feudal / tribal / nomadic / iqta / monastic_feudal / chinese_imperial / order / merchant_republic).
+
+### Changed
+- **README "What it does"** — new "Inheritance Laws" subsection after Government.
+- **README "Optional DLC"** — Holy Fury entry extended (`set_succ_eldership` requires HF); Horse Lords entry extended (`set_succ_nomad_succession` requires HL); new The Republic entry (`set_succ_patrician_elective` requires it).
+
 ## [0.8.0] - 2026-06-16
 
 ### Added

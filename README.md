@@ -48,6 +48,14 @@ Switch government types via cheat-menu shortcuts. Each conversion only appears f
 
 \* From Nomadic source, the variant carries "(Destroy Horde)" — settles the horde and demotes your realm.
 
+### Inheritance Laws
+
+Set inheritance laws on your primary title via cheat-menu shortcuts.
+
+**Succession** — Eldership (Holy Fury), Elective Gavelkind, Elective Monarchy, Gavelkind, Nomadic (Horse Lords), Open, Open Elective, Patrician Elective (The Republic), Primogeniture, Seniority, Tanistry, Ultimogeniture.
+
+**Gender succession** — Agnatic, Agnatic-Cognatic, Absolute Cognatic, Enatic, Enatic-Cognatic. On Iqta, Holy Order, and Merchant Republic sources, gender succession decisions carry "(Hidden)" suffix — vanilla's Inheritance UI doesn't display gender on those govs but the engine still applies the law.
+
 ## Requirements
 
 ### Base game
@@ -59,15 +67,16 @@ Switch government types via cheat-menu shortcuts. Each conversion only appears f
 The mod works without any DLC. Some cheats are tied to DLC systems and behave differently depending on what you have installed:
 
 - **Conclave** — without it, `make_consort` is hidden. The 2 consort-themed birth-marker toggles (`child_of_concubine` / `child_of_consort`) stay available. The 12 Childhood toggles stay available.
-- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available. `add_scarred_mid` (Grievously Scarred) and `add_scarred_high` (Horrifically Scarred) are hidden without HF — the vanilla traits gate themselves to HF. Base `add_scarred` and all three `remove_*` counterparts stay available for cleanup. The 12 Zodiac toggles stay available. The 4 Pagan Branches toggles (Syncretist / Spiritualist / Militant / Tribalist) stay available.
-- **Horse Lords** — without it, `set_nomadic` and the three `_nomad` Destroy-Horde variants (`set_feudal_nomad` / `set_iqta_nomad` / `set_tribal_nomad`) are hidden (nomadic government requires HL mechanics).
+- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available. `add_scarred_mid` (Grievously Scarred) and `add_scarred_high` (Horrifically Scarred) are hidden without HF — the vanilla traits gate themselves to HF. Base `add_scarred` and all three `remove_*` counterparts stay available for cleanup. The 12 Zodiac toggles stay available. The 4 Pagan Branches toggles (Syncretist / Spiritualist / Militant / Tribalist) stay available. `set_succ_eldership` is hidden without HF (the Eldership succession law requires HF).
+- **Horse Lords** — without it, `set_nomadic`, the three `_nomad` Destroy-Horde variants (`set_feudal_nomad` / `set_iqta_nomad` / `set_tribal_nomad`), and `set_succ_nomad_succession` are hidden.
 - **Jade Dragon** — without it, the 4 Chinese Commander toggles (Way of the Dog / Dragon / Leopard / Tiger) and the 3 Kowtow tier toggles (Tier I / II / III) stay available.
 - **Monks and Mystics** — without it, the society cheats (`add_society_points`, `increase_society_rank`) don't appear, since you can't be in a society.
 - **Rajas of India** — `add_war_elephant_leader` / `remove_war_elephant_leader` stay available. The 6 Dharmic Ordained Clergy toggles (`bhikkhu` / `bhikkhuni` / `muni` / `aryika` / `sanyasi` / `sanyasini`), the 10 Dharmic Identity toggles (3 castes + 4 Hindu branches + 3 Buddhist branches), `add_indian_pilgrim`, and the Dharmic GHW reward `kailash_guardian` don't appear, since you can't be of a Dharmic religion (Hindu / Buddhist / Jain) without Rajas.
 - **Sunset Invasion** — the Aztec Holy War Reward (`eagle_warrior` / `eagle_knight`) and `bad_priest_aztec` don't appear, since you can't be Aztec without Sunset. The 3 Bloodthirsty Gods toggles (Haemophiliac / Haemophant / Haemoarch) stay available.
-- **Sword of Islam** — `set_iqta` stays available without it (the muslim_government type is base game). Muslim-specific mechanics layered on top (polygamy, decadence, peasant revolts) require SoI to function.
+- **Sword of Islam** — `set_iqta` stays available without it. Muslim-specific mechanics layered on top (polygamy, decadence, peasant revolts) require SoI to function.
 - **The Old Gods** — `set_tribal` and the Viking / Pirate / Ravager raiding toggles stay available without it. Tribal-specific gameplay (retinues, prestige raiding, Adopt Feudalism path) requires TOG.
 - **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available, as do the 6 limb-loss toggles (one_eyed / one_handed / one_legged / disfigured / mangled / severely_injured) and `sick_incapable`.
+- **The Republic** — without it, `set_succ_patrician_elective` is hidden.
 - **Way of Life** — without it, `get_favor` and `clear_your_focus` are hidden. The 16 lifestyle-trait toggles (schemer, seducer, hedonist, scholar, theologian, etc.) stay available.
 
 ## Installation
