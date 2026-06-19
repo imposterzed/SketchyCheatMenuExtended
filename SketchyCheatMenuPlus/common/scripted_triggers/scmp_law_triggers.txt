@@ -97,3 +97,22 @@ has_scmp_obligation_law_eligible_government_trigger = {
     is_patrician = yes
   }
 }
+
+# Eligible for Council Laws sub-menu
+# Conclave + duke+ AND at least one sub-section applies. Tribal players
+# need tribal_organization_1+ for the loosest family floor (D.1/D.2).
+has_scmp_council_law_eligible_government_trigger = {
+  has_dlc = "Conclave"
+  higher_tier_than = baron
+  OR = {
+    is_tribal = no
+    primary_title = {
+      OR = {
+        has_law = tribal_organization_1
+        has_law = tribal_organization_2
+        has_law = tribal_organization_3
+        has_law = tribal_organization_4
+      }
+    }
+  }
+}

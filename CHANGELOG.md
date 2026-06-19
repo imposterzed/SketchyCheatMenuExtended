@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.4] - 2026-06-19
+
+### Added
+- **Council Laws sub-menu** (`show_council_laws` / `hide_council_laws`) — 6th top-level cheat sub-menu (between Obligation Laws and Spawn). 8 council voting power families, each set via state-named pair matching vanilla's Council Law UI:
+  - **Council Power** — Set Abolish / Set Empower. Conclave; non-baron.
+  - **War Declaration** — Set Ruler / Set Council. Conclave; non-baron.
+  - **Grant Titles** — Set Ruler / Set Council. Conclave; non-baron.
+  - **Revoke Titles** — Set Ruler / Set Council. Conclave; non-baron.
+  - **Imprisonment** — Set Ruler / Set Council. Conclave; non-baron.
+  - **Banishment** — Set Ruler / Set Council. Conclave; non-baron.
+  - **Execution** — Set Ruler / Set Council. Conclave; non-baron.
+  - **Council Authority** — Set Limited / Set Full. Conclave; feudal-family king+, not holy order.
+
+  Tribal_organization gates mirror vanilla; cascade prerequisites in `allow` are dropped per cheat-permissive convention.
+
+### Changed
+- README "What it does" — new Council Laws subsection.
+- README "Optional DLC" — Conclave entry updated.
+
 ## [0.8.3] - 2026-06-19
 
 ### Added

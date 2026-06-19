@@ -1,0 +1,57 @@
+#CODE;NAME;;;;;;;;;;;;;x
+#CODE_desc;DESCRIPTION;;;;;;;;;;;;;x
+
+show_council_laws;Show Council Laws;;;;;;;;;;;;;x
+show_council_laws_desc;Show the council voting power cheat menu.;;;;;;;;;;;;;x
+
+hide_council_laws;Hide Council Laws;;;;;;;;;;;;;x
+hide_council_laws_desc;Hide the council voting power cheat menu.;;;;;;;;;;;;;x
+
+set_law_voting_abolish;----Set Council Power: Abolish;;;;;;;;;;;;;x
+set_law_voting_abolish_desc;Sets Council Power to "Abolish".;;;;;;;;;;;;;x
+
+set_law_voting_empower;----Set Council Power: Empower;;;;;;;;;;;;;x
+set_law_voting_empower_desc;Sets Council Power to "Empower".;;;;;;;;;;;;;x
+
+set_war_voting_ruler;----Set War Declaration: Ruler;;;;;;;;;;;;;x
+set_war_voting_ruler_desc;Sets War Declaration to "Ruler".;;;;;;;;;;;;;x
+
+set_war_voting_council;----Set War Declaration: Council;;;;;;;;;;;;;x
+set_war_voting_council_desc;Sets War Declaration to "Council".;;;;;;;;;;;;;x
+
+set_grant_title_voting_ruler;----Set Grant Titles: Ruler;;;;;;;;;;;;;x
+set_grant_title_voting_ruler_desc;Sets Grant Titles to "Ruler".;;;;;;;;;;;;;x
+
+set_grant_title_voting_council;----Set Grant Titles: Council;;;;;;;;;;;;;x
+set_grant_title_voting_council_desc;Sets Grant Titles to "Council".;;;;;;;;;;;;;x
+
+set_revoke_title_voting_ruler;----Set Revoke Titles: Ruler;;;;;;;;;;;;;x
+set_revoke_title_voting_ruler_desc;Sets Revoke Titles to "Ruler".;;;;;;;;;;;;;x
+
+set_revoke_title_voting_council;----Set Revoke Titles: Council;;;;;;;;;;;;;x
+set_revoke_title_voting_council_desc;Sets Revoke Titles to "Council".;;;;;;;;;;;;;x
+
+set_imprison_voting_ruler;----Set Imprisonment: Ruler;;;;;;;;;;;;;x
+set_imprison_voting_ruler_desc;Sets Imprisonment to "Ruler".;;;;;;;;;;;;;x
+
+set_imprison_voting_council;----Set Imprisonment: Council;;;;;;;;;;;;;x
+set_imprison_voting_council_desc;Sets Imprisonment to "Council".;;;;;;;;;;;;;x
+
+set_banish_voting_ruler;----Set Banishment: Ruler;;;;;;;;;;;;;x
+set_banish_voting_ruler_desc;Sets Banishment to "Ruler".;;;;;;;;;;;;;x
+
+set_banish_voting_council;----Set Banishment: Council;;;;;;;;;;;;;x
+set_banish_voting_council_desc;Sets Banishment to "Council".;;;;;;;;;;;;;x
+
+set_execution_voting_ruler;----Set Execution: Ruler;;;;;;;;;;;;;x
+set_execution_voting_ruler_desc;Sets Execution to "Ruler".;;;;;;;;;;;;;x
+
+set_execution_voting_council;----Set Execution: Council;;;;;;;;;;;;;x
+set_execution_voting_council_desc;Sets Execution to "Council".;;;;;;;;;;;;;x
+
+set_succession_voting_limited;----Set Council Authority: Limited;;;;;;;;;;;;;x
+set_succession_voting_limited_desc;Sets Council Authority to "Limited".;;;;;;;;;;;;;x
+
+set_succession_voting_full;----Set Council Authority: Full;;;;;;;;;;;;;x
+set_succession_voting_full_desc;Sets Council Authority to "Full".;;;;;;;;;;;;;x
+
