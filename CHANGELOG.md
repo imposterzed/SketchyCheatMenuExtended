@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.3] - 2026-06-19
+
+### Added
+- **Obligation Laws sub-menu** (`show_obligation_laws` / `hide_obligation_laws`) — 5th top-level cheat sub-menu (between Realm Laws and Spawn). 5 vassal-contract families, each cycled via Shift Toward Tax / Shift Toward Levy. Each family is a 9-state slider from Heavily Tax Focused to Heavily Levy Focused; one step per click; hides at boundaries.
+  - **Noble Obligations** — castle-tier contract (non-Muslim); non-baron OR patrician.
+  - **Iqta Obligations** — castle-tier contract (Muslim); non-baron OR patrician.
+  - **Burgher Obligations** — city-tier contract; non-baron OR patrician.
+  - **Church Obligations** — temple-tier contract (non-Muslim); non-baron OR patrician.
+  - **Tribal Obligations** — tribal-tier contract; non-baron OR patrician.
+- **Stack-aware per-decision visibility** — the feudal / iqta split tracks the active stack (religion group on vanilla, government type on CleanSlate). Church Obligations admits muslim rulers on CleanSlate stack to match CleanSlate's Laws panel.
+
+### Changed
+- README "What it does" — new Obligation Laws subsection.
+- README "Optional DLC" — Conclave entry updated.
+
 ## [0.8.2] - 2026-06-19
 
 ### Added

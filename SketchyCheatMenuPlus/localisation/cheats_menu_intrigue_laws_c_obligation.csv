@@ -1,0 +1,39 @@
+#CODE;NAME;;;;;;;;;;;;;x
+#CODE_desc;DESCRIPTION;;;;;;;;;;;;;x
+
+show_obligation_laws;Show Obligation Laws;;;;;;;;;;;;;x
+show_obligation_laws_desc;Show the obligation laws cheat menu.;;;;;;;;;;;;;x
+
+hide_obligation_laws;Hide Obligation Laws;;;;;;;;;;;;;x
+hide_obligation_laws_desc;Hide the obligation laws cheat menu.;;;;;;;;;;;;;x
+
+cycle_obligations_feudal_toward_tax;----Shift Noble Obligations Toward Tax;;;;;;;;;;;;;x
+cycle_obligations_feudal_toward_tax_desc;Steps noble vassal obligations one level toward tax focus.;;;;;;;;;;;;;x
+
+cycle_obligations_feudal_toward_levy;----Shift Noble Obligations Toward Levy;;;;;;;;;;;;;x
+cycle_obligations_feudal_toward_levy_desc;Steps noble vassal obligations one level toward levy focus.;;;;;;;;;;;;;x
+
+cycle_obligations_iqta_toward_tax;----Shift Iqta Obligations Toward Tax;;;;;;;;;;;;;x
+cycle_obligations_iqta_toward_tax_desc;Steps iqta vassal obligations one level toward tax focus.;;;;;;;;;;;;;x
+
+cycle_obligations_iqta_toward_levy;----Shift Iqta Obligations Toward Levy;;;;;;;;;;;;;x
+cycle_obligations_iqta_toward_levy_desc;Steps iqta vassal obligations one level toward levy focus.;;;;;;;;;;;;;x
+
+cycle_obligations_republic_toward_tax;----Shift Burgher Obligations Toward Tax;;;;;;;;;;;;;x
+cycle_obligations_republic_toward_tax_desc;Steps burgher vassal obligations one level toward tax focus.;;;;;;;;;;;;;x
+
+cycle_obligations_republic_toward_levy;----Shift Burgher Obligations Toward Levy;;;;;;;;;;;;;x
+cycle_obligations_republic_toward_levy_desc;Steps burgher vassal obligations one level toward levy focus.;;;;;;;;;;;;;x
+
+cycle_obligations_theocracy_toward_tax;----Shift Church Obligations Toward Tax;;;;;;;;;;;;;x
+cycle_obligations_theocracy_toward_tax_desc;Steps church vassal obligations one level toward tax focus.;;;;;;;;;;;;;x
+
+cycle_obligations_theocracy_toward_levy;----Shift Church Obligations Toward Levy;;;;;;;;;;;;;x
+cycle_obligations_theocracy_toward_levy_desc;Steps church vassal obligations one level toward levy focus.;;;;;;;;;;;;;x
+
+cycle_obligations_tribal_toward_tax;----Shift Tribal Obligations Toward Tax;;;;;;;;;;;;;x
+cycle_obligations_tribal_toward_tax_desc;Steps tribal vassal obligations one level toward tax focus.;;;;;;;;;;;;;x
+
+cycle_obligations_tribal_toward_levy;----Shift Tribal Obligations Toward Levy;;;;;;;;;;;;;x
+cycle_obligations_tribal_toward_levy_desc;Steps tribal vassal obligations one level toward levy focus.;;;;;;;;;;;;;x
+

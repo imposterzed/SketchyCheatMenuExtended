@@ -80,6 +80,20 @@ Set realm laws on your primary title via cheat-menu shortcuts.
 
 **Administration** — Feudal, Late, Imperial.
 
+### Obligation Laws
+
+Shift vassal-contract obligations toward tax or toward levy via cheat-menu shortcuts. Each cycles a 9-state slider (`_0` Heavily Tax Focused → `_4` Balanced → `_8` Heavily Levy Focused) one step per click; hides at boundaries.
+
+**Noble Obligations** — castle-tier vassal contract (non-Muslim).
+
+**Iqta Obligations** — castle-tier vassal contract (Muslim).
+
+**Burgher Obligations** — city-tier vassal contract.
+
+**Church Obligations** — temple-tier vassal contract.
+
+**Tribal Obligations** — tribal-tier vassal contract.
+
 ## Requirements
 
 ### Base game
@@ -91,7 +105,7 @@ Set realm laws on your primary title via cheat-menu shortcuts.
 The mod works without any DLC. Some cheats are tied to DLC systems and behave differently depending on what you have installed:
 
 - **Charlemagne** — without it, the Viceroyalty toggle is hidden.
-- **Conclave** — without it, `make_consort` is hidden. The 2 consort-themed birth-marker toggles (`child_of_concubine` / `child_of_consort`) stay available. The 12 Childhood toggles stay available. Administration is 3-state (Feudal / Late / Imperial) with Conclave; without Conclave it's binary Feudal ↔ Imperial. The Controlled Realm Inheritance, Vassal War Declaration, Status of Women, and Revoke Title toggles are hidden without Conclave; the Crown Authority cycle is hidden with Conclave (replaced by those Conclave realm laws).
+- **Conclave** — without it, `make_consort` is hidden. The 2 consort-themed birth-marker toggles (`child_of_concubine` / `child_of_consort`) stay available. The 12 Childhood toggles stay available. Administration is 3-state (Feudal / Late / Imperial) with Conclave; without Conclave it's binary Feudal ↔ Imperial. The Controlled Realm Inheritance, Vassal War Declaration, Status of Women, Revoke Title, and all 5 Obligation Laws families are hidden without Conclave; the Crown Authority cycle is hidden with Conclave (replaced by those Conclave realm laws).
 - **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available. `add_scarred_mid` (Grievously Scarred) and `add_scarred_high` (Horrifically Scarred) are hidden without HF — the vanilla traits gate themselves to HF. Base `add_scarred` and all three `remove_*` counterparts stay available for cleanup. The 12 Zodiac toggles stay available. The 4 Pagan Branches toggles (Syncretist / Spiritualist / Militant / Tribalist) stay available. `set_succ_eldership` is hidden without HF (the Eldership succession law requires HF).
 - **Horse Lords** — without it, `set_nomadic`, the three `_nomad` Destroy-Horde variants (`set_feudal_nomad` / `set_iqta_nomad` / `set_tribal_nomad`), and `set_succ_nomad_succession` are hidden.
 - **Jade Dragon** — without it, the 4 Chinese Commander toggles (Way of the Dog / Dragon / Leopard / Tiger) and the 3 Kowtow tier toggles (Tier I / II / III) stay available.
