@@ -1,0 +1,79 @@
+#CODE;NAME;;;;;;;;;;;;;x
+#CODE_desc;DESCRIPTION;;;;;;;;;;;;;x
+
+show_realm_laws;Show Realm Laws;;;;;;;;;;;;;x
+show_realm_laws_desc;Show the realm laws cheat menu.;;;;;;;;;;;;;x
+
+hide_realm_laws;Hide Realm Laws;;;;;;;;;;;;;x
+hide_realm_laws_desc;Hide the realm laws cheat menu.;;;;;;;;;;;;;x
+
+cycle_crown_authority_up;----Cycle Crown Authority Up;;;;;;;;;;;;;x
+cycle_crown_authority_up_desc;Steps up to the next Crown Authority level (Min to Low to Medium to High to Max).;;;;;;;;;;;;;x
+
+cycle_crown_authority_down;----Cycle Crown Authority Down;;;;;;;;;;;;;x
+cycle_crown_authority_down_desc;Steps down to the previous Crown Authority level (Max to High to Medium to Low to Min).;;;;;;;;;;;;;x
+set_investiture_free;----Set Investiture: Free;;;;;;;;;;;;;x
+set_investiture_free_desc;Sets Investiture to Free (player appoints bishops – vassals with bishops gain opinion – religious head dislikes).;;;;;;;;;;;;;x
+
+set_investiture_papal;----Set Investiture: Papal;;;;;;;;;;;;;x
+set_investiture_papal_desc;Sets Investiture to Papal (religious head appoints bishops).;;;;;;;;;;;;;x
+
+set_realm_inheritance_illegal;----Set Controlled Realm Inheritance: Illegal;;;;;;;;;;;;;x
+set_realm_inheritance_illegal_desc;Sets Controlled Realm Inheritance to Illegal (vassal titles cannot pass to another realm).;;;;;;;;;;;;;x
+
+set_realm_inheritance_free;----Set Controlled Realm Inheritance: Free;;;;;;;;;;;;;x
+set_realm_inheritance_free_desc;Sets Controlled Realm Inheritance to Free (vassal titles can pass to another realm).;;;;;;;;;;;;;x
+
+set_vassal_wars_allowed;----Set Vassal War Declaration: Allowed;;;;;;;;;;;;;x
+set_vassal_wars_allowed_desc;Sets Vassal War Declaration to Allowed (vassals may freely declare war).;;;;;;;;;;;;;x
+
+set_vassal_wars_external;----Set Vassal War Declaration: External;;;;;;;;;;;;;x
+set_vassal_wars_external_desc;Sets Vassal War Declaration to External (vassals may only declare war outside the realm).;;;;;;;;;;;;;x
+
+set_vassal_wars_illegal;----Set Vassal War Declaration: Illegal;;;;;;;;;;;;;x
+set_vassal_wars_illegal_desc;Sets Vassal War Declaration to Illegal (vassals may not declare war within or outside the realm).;;;;;;;;;;;;;x
+
+cycle_centralization_up;----Cycle Centralization Up;;;;;;;;;;;;;x
+cycle_centralization_up_desc;Steps up to the next Centralization level (Min to Low to Medium to High to Max).;;;;;;;;;;;;;x
+
+cycle_centralization_down;----Cycle Centralization Down;;;;;;;;;;;;;x
+cycle_centralization_down_desc;Steps down to the previous Centralization level (Max to High to Medium to Low to Min).;;;;;;;;;;;;;x
+
+cycle_tribal_organization_up;----Cycle Tribal Organization Up;;;;;;;;;;;;;x
+cycle_tribal_organization_up_desc;Steps up to the next Tribal Organization level (Min to Low to Medium to High to Max).;;;;;;;;;;;;;x
+
+cycle_tribal_organization_down;----Cycle Tribal Organization Down;;;;;;;;;;;;;x
+cycle_tribal_organization_down_desc;Steps down to the previous Tribal Organization level (Max to High to Medium to Low to Min).;;;;;;;;;;;;;x
+
+set_viceroyalty_none;----Set Viceroyalty: None;;;;;;;;;;;;;x
+set_viceroyalty_none_desc;Sets Viceroyalty to None (no viceroyalties enabled).;;;;;;;;;;;;;x
+
+set_viceroyalty_kingdoms;----Set Viceroyalty: Kingdoms;;;;;;;;;;;;;x
+set_viceroyalty_kingdoms_desc;Sets Viceroyalty to Kingdoms (enables Kingdom viceroyalties).;;;;;;;;;;;;;x
+
+set_viceroyalty_duchies;----Set Viceroyalty: Duchies;;;;;;;;;;;;;x
+set_viceroyalty_duchies_desc;Sets Viceroyalty to Duchies (enables Kingdom and Duchy viceroyalties).;;;;;;;;;;;;;x
+
+cycle_status_of_women_up;----Cycle Status of Women Up;;;;;;;;;;;;;x
+cycle_status_of_women_up_desc;Steps up to the next Status of Women level (Tradition to Marginal to Significant to Notable to Full).;;;;;;;;;;;;;x
+
+cycle_status_of_women_down;----Cycle Status of Women Down;;;;;;;;;;;;;x
+cycle_status_of_women_down_desc;Steps down to the previous Status of Women level (Full to Notable to Significant to Marginal to Tradition).;;;;;;;;;;;;;x
+
+set_revoke_title_none;----Set Revoke Title: None;;;;;;;;;;;;;x
+set_revoke_title_none_desc;Sets Revoke Title to None (title revocation forbidden).;;;;;;;;;;;;;x
+
+set_revoke_title_allowed;----Set Revoke Title: Allowed;;;;;;;;;;;;;x
+set_revoke_title_allowed_desc;Sets Revoke Title to Allowed (vassal title revocation enabled).;;;;;;;;;;;;;x
+
+set_revoke_title_religious;----Set Revoke Title: Religious;;;;;;;;;;;;;x
+set_revoke_title_religious_desc;Sets Revoke Title to Religious (free infidel revocation).;;;;;;;;;;;;;x
+
+set_administration_feudal;----Set Administration: Feudal;;;;;;;;;;;;;x
+set_administration_feudal_desc;Sets Administration to Feudal (decentralized feudal administration).;;;;;;;;;;;;;x
+
+set_administration_late;----Set Administration: Late;;;;;;;;;;;;;x
+set_administration_late_desc;Sets Administration to Late (mid-feudal transitional administration).;;;;;;;;;;;;;x
+
+set_administration_imperial;----Set Administration: Imperial;;;;;;;;;;;;;x
+set_administration_imperial_desc;Sets Administration to Imperial (centralized imperial bureaucracy).;;;;;;;;;;;;;x

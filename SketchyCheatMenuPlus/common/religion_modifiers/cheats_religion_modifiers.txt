@@ -4,7 +4,7 @@
 ############################################################
 
 # Maxes out religion authority. years = 2016 is effectively
-# "forever" — upstream Sketchy picked the year he wrote the
+# "forever" – upstream Sketchy picked the year he wrote the
 # mod as the duration. Left as-is for fidelity.
 god_amongst_men = {
   authority = 100

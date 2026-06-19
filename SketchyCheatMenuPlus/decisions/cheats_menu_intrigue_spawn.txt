@@ -1668,7 +1668,7 @@ decisions = {
     }
   }
 
-  # Spawns a "Debutante" — a courtier who could become a
+  # Spawns a "Debutante" – a courtier who could become a
   # wife, not an actual wife. Drops a young female with
   # marriage-grade traits into the player's court so they
   # can pick her via the normal marriage UI. No marriage

@@ -4,7 +4,28 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.8.2] - 2026-06-19
+
+### Added
+- **Realm Laws sub-menu** (`show_realm_laws` / `hide_realm_laws`) — 4th top-level cheat sub-menu (between Inheritance Laws and Spawn). 10 realm-law families:
+  - **Crown Authority** cycle: Min, Low, Medium, High, Max. Conclave OFF; independent.
+  - **Investiture**: Free, Papal. Catholic / Fraticelli; not religious head; independent.
+  - **Controlled Realm Inheritance**: Free, Illegal. Conclave; non-republic, non-order; independent.
+  - **Vassal War Declaration**: Allowed, External, Illegal — stepwise via External. Conclave; non-republic, non-theocracy, non-order; independent.
+  - **Centralization** cycle: Min, Low, Medium, High, Max. Any duke+ non-nomadic ruler (vassals included).
+  - **Tribal Organization** cycle: Min, Low, Medium, High, Max. Any tribal ruler.
+  - **Viceroyalty**: None, Kingdoms, Duchies. Charlemagne; independent feudal-family emperor.
+  - **Status of Women** cycle: Tradition, Marginal, Significant, Notable, Full. Conclave; non-order; religion-feature- and gender-game-rule-aware.
+  - **Revoke Title**: None, Allowed, Religious — stepwise via Allowed. Conclave; non-nomadic, non-confucian-bureaucracy. Set Religious additionally hides for cosmopolitan religions and Chinese Imperial.
+  - **Administration**: Feudal, Late, Imperial. With Conclave: feudal-family govs. Without Conclave: independent feudal-family emperors only (binary Feudal / Imperial).
+- **Stack-aware per-decision visibility** — Status of Women and Set Revoke Title: Religious match CleanSlate's Laws panel when CleanSlate is active.
+
+### Changed
+- README "What it does" — new Realm Laws subsection.
+- README "Optional DLC" — new Charlemagne entry; Conclave entry extended.
+
+### Fixed
+- Em-dash → en-dash sweep across 5 files (`scmp_government_compat_triggers.txt`, `cheats_menu_intrigue_spawn.txt`, `disown_them.txt`, `cheats_religion_modifiers.txt`, `scmp_debug_events.txt`).
 
 ## [0.8.1] - 2026-06-17
 

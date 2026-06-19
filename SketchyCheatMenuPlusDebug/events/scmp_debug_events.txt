@@ -4,7 +4,7 @@
 ############################################################
 ##                                                        ##
 ## Dev/test events for hard-to-reach paths. Never wired   ##
-## to a decision or on_action — fire from the in-game     ##
+## to a decision or on_action – fire from the in-game     ##
 ## console:                                               ##
 ##   event SCMPD.<id> <charID>                            ##
 ##                                                        ##
@@ -16,7 +16,7 @@
 namespace = SCMPD
 
 
-# SCMPD.1 — Assign the target character to dynasty 777777
+# SCMPD.1 – Assign the target character to dynasty 777777
 # ("Outcast"). Used to verify the dynasty rename displays
 # correctly, since no in-mod decision actually assigns
 # characters to dynasty 777777 (disown_them reverts to the

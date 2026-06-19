@@ -1,0 +1,116 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##              Realm Laws Sub-Menu Sprites               ##
+############################################################
+##                                                        ##
+## Every sprite below points at the same                  ##
+## decision_icon_cheats.dds red-box placeholder.          ##
+##                                                        ##
+############################################################
+
+spriteTypes = {
+  spriteType = {
+    name = "GFX_show_realm_laws"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_realm_laws"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_cycle_crown_authority_up"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_cycle_crown_authority_down"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_investiture_free"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_investiture_papal"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_realm_inheritance_illegal"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_realm_inheritance_free"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_vassal_wars_allowed"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_vassal_wars_external"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_vassal_wars_illegal"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_cycle_centralization_up"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_cycle_centralization_down"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_cycle_tribal_organization_up"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_cycle_tribal_organization_down"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_viceroyalty_none"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_viceroyalty_kingdoms"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_viceroyalty_duchies"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_cycle_status_of_women_up"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_cycle_status_of_women_down"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_revoke_title_none"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_revoke_title_allowed"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_revoke_title_religious"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_administration_feudal"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_administration_late"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_administration_imperial"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+}

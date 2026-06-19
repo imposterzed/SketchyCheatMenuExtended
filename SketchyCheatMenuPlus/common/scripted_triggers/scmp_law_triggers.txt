@@ -1,0 +1,89 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                Law Eligibility Triggers                ##
+############################################################
+
+# Eligible for Inheritance Laws sub-menu – union of every gov where any law decision could show
+has_scmp_inheritance_law_eligible_government_trigger = {
+  OR = {
+    government = feudal_government
+    government = tribal_government
+    government = nomadic_government
+    is_iqta_government_trigger = yes
+    is_monastic_feudal_government_trigger = yes
+    government = chinese_imperial_government
+    government = order_government
+    government = merchant_republic_government
+  }
+}
+
+# Eligible for Realm Laws sub-menu
+# One OR branch per sub-section family. Per-decision potentials handle
+# button-level visibility; this trigger only decides whether the menu opens.
+has_scmp_realm_law_eligible_government_trigger = {
+  OR = {
+    AND = {
+      independent = yes
+      is_tribal = no
+      is_nomadic = no
+      OR = {
+        # Crown Authority – Conclave OFF only
+        NOT = { has_dlc = "Conclave" }
+        # Investiture – Catholic / Fraticelli, not religious head
+        AND = {
+          OR = {
+            religion = catholic
+            religion = fraticelli
+          }
+          NOT = { rightful_religious_head_scope = { character = ROOT } }
+        }
+        # Controlled Realm Inheritance + Vassal War Declaration – Conclave, non-republic, non-order
+        AND = {
+          has_dlc = "Conclave"
+          is_republic = no
+          NOT = { government = order_government }
+        }
+        # Viceroyalty – Charlemagne, emperor, feudal
+        AND = {
+          has_dlc = "Charlemagne"
+          higher_tier_than = KING
+          is_feudal = yes
+        }
+      }
+    }
+    # Centralization – duke+, non-nomadic. Also covers the Administration
+    # base-game emperor case (emperor implies duke+ non-nomadic).
+    AND = {
+      higher_tier_than = COUNT
+      is_nomadic = no
+    }
+    # Tribal Organization – tribal only
+    is_tribal = yes
+    # Status of Women – Conclave, non-order, no gender-blocking religion / game rule
+    AND = {
+      has_dlc = "Conclave"
+      NOT = { government = order_government }
+      NOR = {
+        has_status_of_women_religion_block_trigger = yes
+        has_game_rule = { name = gender value = historical }
+        has_game_rule = { name = gender value = all }
+      }
+    }
+    # Revoke Title – Conclave, non-nomadic, non-confucian-bureaucracy
+    AND = {
+      has_dlc = "Conclave"
+      is_nomadic = no
+      NOT = { government = confucian_bureaucracy }
+    }
+    # Administration – Conclave + non-theo/trib/nomad/republic. The base-game
+    # emperor case (feudal_administration / imperial_administration) is covered
+    # by the Centralization branch since emperor implies duke+ non-nomadic.
+    AND = {
+      has_dlc = "Conclave"
+      is_theocracy = no
+      is_tribal = no
+      is_nomadic = no
+      is_republic = no
+    }
+  }
+}

@@ -24,17 +24,3 @@ is_monastic_feudal_government_trigger = {
     government = theocratic_feudal_government
   }
 }
-
-# Eligible for Inheritance Laws sub-menu â€” union of every gov where any law decision could show
-has_scmp_inheritance_law_eligible_government_trigger = {
-  OR = {
-    government = feudal_government
-    government = tribal_government
-    government = nomadic_government
-    is_iqta_government_trigger = yes
-    is_monastic_feudal_government_trigger = yes
-    government = chinese_imperial_government
-    government = order_government
-    government = merchant_republic_government
-  }
-}

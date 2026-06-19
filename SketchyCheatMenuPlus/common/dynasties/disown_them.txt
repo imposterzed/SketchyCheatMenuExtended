@@ -3,7 +3,7 @@
 ##                    Outcast Dynasty                     ##
 ############################################################
 
-# Dynasty ID 777777, name "Outcast". Currently unused —
+# Dynasty ID 777777, name "Outcast". Currently unused –
 # disown_them reverts disowned characters to the other
 # parent's dynasty. Kept for save-compat: removing it would
 # orphan any characters from earlier upstream versions still
