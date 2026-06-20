@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] - 2026-06-20
+
+### Changed
+- **Helper file reorganization** — `scmp_holding_effects.txt` and `scmp_holding_triggers.txt` split by holding type. New files: `scmp_castle_effects.txt`, `scmp_temple_effects.txt`, `scmp_city_effects.txt`, `scmp_tribal_effects.txt`, `scmp_nomad_effects.txt`, `scmp_castle_triggers.txt`. Helper bodies byte-identical; no behavioral change.
+
 ## [0.8.7] - 2026-06-20
 
 ### Changed

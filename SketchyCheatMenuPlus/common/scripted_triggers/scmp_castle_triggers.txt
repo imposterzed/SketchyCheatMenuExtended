@@ -1,6 +1,6 @@
 ############################################################
 ##                Sketchy Cheat Menu Plus                 ##
-##               Holding-Building Triggers                ##
+##                Castle Building Triggers                ##
 ############################################################
 
 ## --- Culture-matching presence checks --- ##
