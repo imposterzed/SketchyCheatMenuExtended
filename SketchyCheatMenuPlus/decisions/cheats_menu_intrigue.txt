@@ -680,7 +680,7 @@ decisions = {
     effect = {
       any_vassal = {
         limit = {
-          NOT = { tier = baron }
+          NOT = { real_tier = baron }
           is_nomadic = no
         }
         any_demesne_title = {

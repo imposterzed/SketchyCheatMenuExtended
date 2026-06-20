@@ -46,7 +46,7 @@ has_scmp_realm_law_eligible_government_trigger = {
         # Viceroyalty – Charlemagne, emperor, feudal
         AND = {
           has_dlc = "Charlemagne"
-          higher_tier_than = KING
+          higher_real_tier_than = KING
           is_feudal = yes
         }
       }
@@ -54,7 +54,7 @@ has_scmp_realm_law_eligible_government_trigger = {
     # Centralization – duke+, non-nomadic. Also covers the Administration
     # base-game emperor case (emperor implies duke+ non-nomadic).
     AND = {
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       is_nomadic = no
     }
     # Tribal Organization – tribal only
@@ -93,7 +93,7 @@ has_scmp_realm_law_eligible_government_trigger = {
 has_scmp_obligation_law_eligible_government_trigger = {
   has_dlc = "Conclave"
   OR = {
-    NOT = { tier = baron }
+    NOT = { real_tier = baron }
     is_patrician = yes
   }
 }
@@ -103,7 +103,7 @@ has_scmp_obligation_law_eligible_government_trigger = {
 # need tribal_organization_1+ for the loosest family floor (D.1/D.2).
 has_scmp_council_law_eligible_government_trigger = {
   has_dlc = "Conclave"
-  higher_tier_than = baron
+  higher_real_tier_than = baron
   OR = {
     is_tribal = no
     primary_title = {

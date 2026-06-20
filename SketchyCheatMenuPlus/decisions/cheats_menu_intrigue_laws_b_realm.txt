@@ -423,7 +423,7 @@ decisions = {
       ai = no
       has_character_flag = cheats_enabled
       has_character_flag = show_realm_laws
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { government = nomadic_government }
       NOT = { primary_title = { has_law = centralization_4 } }
     }
@@ -467,7 +467,7 @@ decisions = {
       ai = no
       has_character_flag = cheats_enabled
       has_character_flag = show_realm_laws
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { government = nomadic_government }
       primary_title = {
         OR = {
@@ -618,7 +618,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = show_realm_laws
       has_dlc = "Charlemagne"
-      higher_tier_than = KING
+      higher_real_tier_than = KING
       is_feudal = yes
       independent = yes
       primary_title = {
@@ -655,7 +655,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = show_realm_laws
       has_dlc = "Charlemagne"
-      higher_tier_than = KING
+      higher_real_tier_than = KING
       is_feudal = yes
       independent = yes
       NOT = { primary_title = { has_law = vice_royalty_1 } }
@@ -687,7 +687,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = show_realm_laws
       has_dlc = "Charlemagne"
-      higher_tier_than = KING
+      higher_real_tier_than = KING
       is_feudal = yes
       independent = yes
       NOT = { primary_title = { has_law = vice_royalty_2 } }
@@ -937,7 +937,7 @@ decisions = {
         # Base-game path: emperor + independent + feudal, binary toggle from Imperial
         AND = {
           NOT = { has_dlc = "Conclave" }
-          higher_tier_than = KING
+          higher_real_tier_than = KING
           independent = yes
           is_feudal = yes
           primary_title = { has_law = imperial_administration }
@@ -1022,7 +1022,7 @@ decisions = {
         # Base-game path: emperor + independent + feudal, binary toggle from Feudal/default
         AND = {
           NOT = { has_dlc = "Conclave" }
-          higher_tier_than = KING
+          higher_real_tier_than = KING
           independent = yes
           is_feudal = yes
           NOT = { primary_title = { has_law = imperial_administration } }

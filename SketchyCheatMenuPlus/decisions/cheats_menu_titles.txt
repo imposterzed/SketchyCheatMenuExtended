@@ -9,8 +9,8 @@
 ## gated by has_character_flag = cheats_enabled (master   ##
 ## toggle in cheats_menu.txt).                            ##
 ##                                                        ##
-## higher_tier_than = COUNT gates the law switches to     ##
-## Duke+ because counties inherit the de jure liege's     ##
+## higher_real_tier_than = COUNT gates the law switches   ##
+## to Duke+ because counties inherit the de jure liege's  ##
 ## laws and changing them is a no-op.                     ##
 ##                                                        ##
 ############################################################
@@ -27,7 +27,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = BARON
+      higher_real_tier_than = BARON
     }
     allow = {
       always = yes
@@ -73,7 +73,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = succ_primogeniture }
     }
     allow = {
@@ -97,7 +97,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = succ_gavelkind }
     }
     allow = {
@@ -121,7 +121,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = succ_elective_gavelkind }
     }
     allow = {
@@ -145,7 +145,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = succ_seniority }
     }
     allow = {
@@ -169,7 +169,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = succ_turkish_succession }
     }
     allow = {
@@ -193,7 +193,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = succ_ultimogeniture }
     }
     allow = {
@@ -217,7 +217,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = succ_tanistry }
     }
     allow = {
@@ -241,7 +241,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = succ_feudal_elective }
     }
     allow = {
@@ -265,7 +265,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = agnatic_succession }
     }
     allow = {
@@ -289,7 +289,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = cognatic_succession }
     }
     allow = {
@@ -313,7 +313,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = true_cognatic_succession }
     }
     allow = {
@@ -337,7 +337,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = enatic_succession }
     }
     allow = {
@@ -361,7 +361,7 @@ title_decisions = {
     potential = {
       is_titular = no
       temporary = no
-      higher_tier_than = COUNT
+      higher_real_tier_than = COUNT
       NOT = { has_law = enatic_cognatic_succession }
     }
     allow = {

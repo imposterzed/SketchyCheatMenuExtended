@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.5] - 2026-06-19
+
+### Changed
+- **`tier` → `real_tier` modernization** — 54 character/title-scope tier checks across cheat-menu decisions and law triggers now use `higher_real_tier_than` / `real_tier = X` instead of `higher_tier_than` / `tier = X`. Behavior is identical for non-viceroy rulers; `real_tier` correctly looks past viceroyalty in the edge cases where the two diverge.
+
 ## [0.8.4] - 2026-06-19
 
 ### Added

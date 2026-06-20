@@ -73,7 +73,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       NOT = { is_iqta_contract_eligible_trigger = yes }
@@ -149,7 +149,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       NOT = { is_iqta_contract_eligible_trigger = yes }
@@ -216,7 +216,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       is_iqta_contract_eligible_trigger = yes
@@ -292,7 +292,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       is_iqta_contract_eligible_trigger = yes
@@ -359,7 +359,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       primary_title = {
@@ -434,7 +434,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       NOT = { primary_title = { has_law = tax_levy_law_republic_8 } }
@@ -500,7 +500,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       NOT = { has_theocracy_contract_block_trigger = yes }
@@ -576,7 +576,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       NOT = { has_theocracy_contract_block_trigger = yes }
@@ -643,7 +643,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       primary_title = {
@@ -718,7 +718,7 @@ decisions = {
       has_character_flag = show_obligation_laws
       has_dlc = "Conclave"
       OR = {
-        NOT = { tier = baron }
+        NOT = { real_tier = baron }
         is_patrician = yes
       }
       NOT = { primary_title = { has_law = tax_levy_law_tribal_8 } }
