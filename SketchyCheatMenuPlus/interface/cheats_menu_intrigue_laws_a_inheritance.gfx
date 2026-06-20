@@ -105,4 +105,12 @@ spriteTypes = {
     name = "GFX_set_enatic_cognatic_succession_hidden"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
+  spriteType = {
+    name = "GFX_set_succ_byzantine_elective"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_succ_hre_elective"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
 }

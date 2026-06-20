@@ -71,6 +71,26 @@ decisions = {
 
   ## --- Succession (alphabetical by display label) --- ##
 
+  set_succ_byzantine_elective = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_byzantine_elective } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_byzantine_elective
+      }
+    }
+  }
+
   set_succ_eldership = {
 
     potential = {
@@ -250,6 +270,26 @@ decisions = {
     effect = {
       primary_title = {
         add_law = succ_primogeniture
+      }
+    }
+  }
+
+  set_succ_hre_elective = {
+
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_inheritance_laws
+      NOT = { primary_title = { has_law = succ_hre_elective } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succ_hre_elective
       }
     }
   }

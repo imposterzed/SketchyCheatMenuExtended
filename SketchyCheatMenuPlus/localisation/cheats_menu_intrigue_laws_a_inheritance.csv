@@ -75,3 +75,9 @@ set_enatic_succession_hidden_desc;Sets your primary title's gender succession to
 
 set_enatic_cognatic_succession_hidden;----Set Gender: Enatic-Cognatic (Hidden);;;;;;;;;;;;;x
 set_enatic_cognatic_succession_hidden_desc;Sets your primary title's gender succession to Enatic-Cognatic.;;;;;;;;;;;;;x
+
+set_succ_byzantine_elective;----Set Succession: Byzantine Elective;;;;;;;;;;;;;x
+set_succ_byzantine_elective_desc;Sets your primary title's succession law to Byzantine Elective. Family elections decide the heir.;;;;;;;;;;;;;x
+
+set_succ_hre_elective;----Set Succession: Princely Elective;;;;;;;;;;;;;x
+set_succ_hre_elective_desc;Sets your primary title's succession law to Princely Elective. Imperial electors vote on a successor from feudal vassals.;;;;;;;;;;;;;x
