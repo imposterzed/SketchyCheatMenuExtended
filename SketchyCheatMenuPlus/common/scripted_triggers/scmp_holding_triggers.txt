@@ -3,7 +3,7 @@
 ##               Holding-Building Triggers                ##
 ############################################################
 
-# ===== Culture-matching presence checks ===== #
+## --- Culture-matching presence checks --- ##
 
 # Returns yes when the holding has the tier-4 cultural building
 # for its current culture (tier-4 implies 1-3 via vanilla's

@@ -15,10 +15,7 @@
 ############################################################
 
 decisions = {
-
   show_government = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -43,8 +40,6 @@ decisions = {
   }
 
   hide_government = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -71,7 +66,6 @@ decisions = {
   # Makes the player independent by setting their liege to
   # themselves (set_defacto_liege = THIS). CK2 idiom.
   become_independent = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -89,7 +83,6 @@ decisions = {
   }
 
   set_feudal = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -108,7 +101,6 @@ decisions = {
   }
 
   set_feudal_nomad = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -127,7 +119,6 @@ decisions = {
   }
 
   set_iqta = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -146,7 +137,6 @@ decisions = {
   }
 
   set_iqta_nomad = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -165,7 +155,6 @@ decisions = {
   }
 
   set_nomadic = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -191,7 +180,6 @@ decisions = {
   }
 
   set_tribal = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -214,7 +202,6 @@ decisions = {
   }
 
   set_tribal_nomad = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled

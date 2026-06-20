@@ -10,9 +10,7 @@
 ############################################################
 
 decisions = {
-
   show_realm_laws = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -38,7 +36,6 @@ decisions = {
   }
 
   hide_realm_laws = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -65,7 +62,6 @@ decisions = {
   ## --- Crown Authority --- ##
 
   cycle_crown_authority_up = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -111,7 +107,6 @@ decisions = {
   }
 
   cycle_crown_authority_down = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -167,7 +162,6 @@ decisions = {
   ## --- Investiture --- ##
 
   set_investiture_free = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -203,7 +197,6 @@ decisions = {
   }
 
   set_investiture_papal = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -241,7 +234,6 @@ decisions = {
   ## --- Controlled Realm Inheritance --- ##
 
   set_realm_inheritance_illegal = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -275,7 +267,6 @@ decisions = {
   }
 
   set_realm_inheritance_free = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -311,7 +302,6 @@ decisions = {
   ## --- Vassal War Declaration --- ##
 
   set_vassal_wars_allowed = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -346,7 +336,6 @@ decisions = {
   }
 
   set_vassal_wars_external = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -381,7 +370,6 @@ decisions = {
   }
 
   set_vassal_wars_illegal = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -418,7 +406,6 @@ decisions = {
   ## --- Centralization --- ##
 
   cycle_centralization_up = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -462,7 +449,6 @@ decisions = {
   }
 
   cycle_centralization_down = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -516,7 +502,6 @@ decisions = {
   ## --- Tribal Organization --- ##
 
   cycle_tribal_organization_up = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -559,7 +544,6 @@ decisions = {
   }
 
   cycle_tribal_organization_down = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -612,7 +596,6 @@ decisions = {
   ## --- Viceroyalty --- ##
 
   set_viceroyalty_none = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -649,7 +632,6 @@ decisions = {
   }
 
   set_viceroyalty_kingdoms = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -681,7 +663,6 @@ decisions = {
   }
 
   set_viceroyalty_duchies = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -715,7 +696,6 @@ decisions = {
   ## --- Status of Women --- ##
 
   cycle_status_of_women_up = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -764,7 +744,6 @@ decisions = {
   }
 
   cycle_status_of_women_down = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -823,7 +802,6 @@ decisions = {
   ## --- Revoke Title --- ##
 
   set_revoke_title_none = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -854,7 +832,6 @@ decisions = {
   }
 
   set_revoke_title_allowed = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -885,7 +862,6 @@ decisions = {
   }
 
   set_revoke_title_religious = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -919,7 +895,6 @@ decisions = {
   ## --- Administration --- ##
 
   set_administration_feudal = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -971,7 +946,6 @@ decisions = {
   }
 
   set_administration_late = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1004,7 +978,6 @@ decisions = {
   }
 
   set_administration_imperial = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled

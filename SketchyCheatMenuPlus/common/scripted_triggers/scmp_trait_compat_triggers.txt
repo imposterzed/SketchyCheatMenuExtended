@@ -308,4 +308,3 @@ has_seductress_strict_trait_trigger = {
     trait = seductress
   }
 }
-

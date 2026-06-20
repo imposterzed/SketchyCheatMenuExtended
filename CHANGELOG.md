@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.7] - 2026-06-20
+
+### Changed
+- **Style guide conformance audit** — mechanical normalizations across 21 files:
+  - §2.3 Empty lines — 1521 redundant blanks removed across all 3 sub-rules (no 2+ consecutive blanks; no blank right after `{`; no blank right before `}`). Largest contributor: 1243 blanks in `cheats_menu_intrigue_traits.txt`.
+  - §4.1 Explicit numerical comparisons — 11 `age = N` → `age >= N` in `cheats_menu.txt`.
+  - §7.3 No `;` inside CSV descriptions — 2 truncation bugs fixed in `cheats_menu_intrigue_government.csv`.
+  - §2.5 Banner format — 2 files restored to canonical 3-border structure.
+  - §2.6 Section header style — 4 outlier headers normalized to SCMP's `## --- TEXT --- ##` style.
+
 ## [0.8.6] - 2026-06-20
 
 ### Added

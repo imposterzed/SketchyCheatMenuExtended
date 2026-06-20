@@ -21,9 +21,7 @@
 ############################################################
 
 decisions = {
-
   cspawn_enable = {
-
     potential = {
       ai = no
       NOT = { has_character_flag = cspawn_enabled }
@@ -46,7 +44,6 @@ decisions = {
   }
 
   cspawn_disable = {
-
     potential = {
       ai = no
       has_character_flag = cspawn_enabled
@@ -71,8 +68,6 @@ decisions = {
   ## ===== Spawn Children ===== ##
 
   show_spawn_child = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -98,8 +93,6 @@ decisions = {
   }
 
   hide_spawn_child = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -125,7 +118,6 @@ decisions = {
   }
 
   spawn_female_child_0 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -154,7 +146,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -163,7 +154,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         if = {
           limit = {
             is_female = yes
@@ -213,7 +203,6 @@ decisions = {
   }
 
   spawn_male_child_0 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -242,7 +231,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -251,7 +239,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         if = {
           limit = {
             is_female = yes
@@ -301,7 +288,6 @@ decisions = {
   }
 
   spawn_female_child_6 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -330,7 +316,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -339,7 +324,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         if = {
           limit = {
             is_female = yes
@@ -389,7 +373,6 @@ decisions = {
   }
 
   spawn_male_child_6 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -418,7 +401,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -427,7 +409,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         if = {
           limit = {
             is_female = yes
@@ -477,7 +458,6 @@ decisions = {
   }
 
   spawn_female_child_16 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -506,7 +486,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -515,7 +494,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         if = {
           limit = {
             is_female = yes
@@ -565,7 +543,6 @@ decisions = {
   }
 
   spawn_male_child_16 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -594,7 +571,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -603,7 +579,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         if = {
           limit = {
             is_female = yes
@@ -655,8 +630,6 @@ decisions = {
   ## ===== Spawn Siblings ===== ##
 
   show_spawn_sibling = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -682,8 +655,6 @@ decisions = {
   }
 
   hide_spawn_sibling = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -709,7 +680,6 @@ decisions = {
   }
 
   spawn_male_sibling_6 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -721,7 +691,6 @@ decisions = {
       always = yes
     }
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -738,7 +707,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -747,7 +715,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -777,7 +744,6 @@ decisions = {
   }
 
   spawn_male_sibling_16 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -790,7 +756,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -807,7 +772,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -816,7 +780,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -846,7 +809,6 @@ decisions = {
   }
 
   spawn_male_sibling_24 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -859,7 +821,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -876,7 +837,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -885,7 +845,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -915,7 +874,6 @@ decisions = {
   }
 
   spawn_male_sibling_30 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -928,7 +886,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -945,7 +902,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -954,7 +910,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -984,7 +939,6 @@ decisions = {
   }
 
   spawn_male_sibling_40 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -997,7 +951,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -1014,7 +967,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -1023,7 +975,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -1053,7 +1004,6 @@ decisions = {
   }
 
   spawn_female_sibling_6 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1066,7 +1016,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -1083,7 +1032,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -1092,7 +1040,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -1122,7 +1069,6 @@ decisions = {
   }
 
   spawn_female_sibling_16 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1135,7 +1081,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -1152,7 +1097,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -1161,7 +1105,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -1191,7 +1134,6 @@ decisions = {
   }
 
   spawn_female_sibling_24 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1204,7 +1146,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -1221,7 +1162,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -1230,7 +1170,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -1260,7 +1199,6 @@ decisions = {
   }
 
   spawn_female_sibling_30 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1273,7 +1211,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -1290,7 +1227,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -1299,7 +1235,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -1329,7 +1264,6 @@ decisions = {
   }
 
   spawn_female_sibling_40 = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1342,7 +1276,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         dynasty = ROOT
@@ -1359,7 +1292,6 @@ decisions = {
           stewardship = 20
           intrigue = 20
           learning = 20
-
         }
         health = 6
         fertility = 1
@@ -1368,7 +1300,6 @@ decisions = {
       }
 
       hidden_tooltip = {
-
         mother_even_if_dead = {
           ROOT = {
             any_courtier = {
@@ -1400,8 +1331,6 @@ decisions = {
   ## ===== Spawn Courtiers ===== ##
 
   show_spawn_courtier = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1427,8 +1356,6 @@ decisions = {
   }
 
   hide_spawn_courtier = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1454,7 +1381,6 @@ decisions = {
   }
 
   spawn_marshal = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1467,7 +1393,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         religion = ROOT
@@ -1497,7 +1422,6 @@ decisions = {
   }
 
   spawn_spymaster = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1510,7 +1434,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         religion = ROOT
@@ -1525,7 +1448,6 @@ decisions = {
           stewardship = 10
           intrigue = 60
           learning = 10
-
         }
         health = 6
         fertility = 1
@@ -1538,7 +1460,6 @@ decisions = {
   }
 
   spawn_steward = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1551,7 +1472,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         religion = ROOT
@@ -1566,7 +1486,6 @@ decisions = {
           stewardship = 60
           intrigue = 10
           learning = 10
-
         }
         health = 6
         fertility = 1
@@ -1579,7 +1498,6 @@ decisions = {
   }
 
   spawn_chancellor = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1592,7 +1510,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         religion = ROOT
@@ -1607,7 +1524,6 @@ decisions = {
           stewardship = 10
           intrigue = 10
           learning = 10
-
         }
         health = 6
         fertility = 1
@@ -1621,7 +1537,6 @@ decisions = {
   }
 
   spawn_priest = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1634,7 +1549,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         religion = ROOT
@@ -1649,7 +1563,6 @@ decisions = {
           stewardship = 10
           intrigue = 10
           learning = 60
-
         }
         health = 6
         fertility = 1
@@ -1674,7 +1587,6 @@ decisions = {
   # can pick her via the normal marriage UI. No marriage
   # hook here.
   spawn_wife = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1687,7 +1599,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         religion = ROOT
@@ -1703,7 +1614,6 @@ decisions = {
           stewardship = 50
           intrigue = 50
           learning = 50
-
         }
         health = 10
         fertility = 2
@@ -1719,7 +1629,6 @@ decisions = {
   }
 
   spawn_vassal = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1732,7 +1641,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         religion = ROOT
@@ -1775,7 +1683,6 @@ decisions = {
   }
 
   spawn_commander = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1788,7 +1695,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         religion = ROOT
@@ -1817,7 +1723,6 @@ decisions = {
   }
 
   spawn_physician = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1830,7 +1735,6 @@ decisions = {
     }
 
     effect = {
-
       create_character = {
         random_traits = yes
         religion = ROOT

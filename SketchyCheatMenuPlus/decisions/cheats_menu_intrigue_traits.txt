@@ -15,9 +15,7 @@
 ############################################################
 
 decisions = {
-
   traits_enable = {
-
     potential = {
       ai = no
       NOT = { has_character_flag = traits_enabled }
@@ -40,7 +38,6 @@ decisions = {
   }
 
   traits_disable = {
-
     potential = {
       ai = no
       has_character_flag = traits_enabled
@@ -64,8 +61,6 @@ decisions = {
 
   ## ===== Cheat Traits ===== ##
   show_cheat_traits = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -91,8 +86,6 @@ decisions = {
   }
 
   hide_cheat_traits = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -118,8 +111,6 @@ decisions = {
   }
 
   remove_beloved = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -146,8 +137,6 @@ decisions = {
   }
 
   add_beloved = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -174,8 +163,6 @@ decisions = {
   }
 
   remove_immortal = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -202,8 +189,6 @@ decisions = {
   }
 
   add_immortal = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -230,8 +215,6 @@ decisions = {
   }
 
   remove_builder = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -258,8 +241,6 @@ decisions = {
   }
 
   add_builder = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -286,8 +267,6 @@ decisions = {
   }
 
   remove_mastermind = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -314,8 +293,6 @@ decisions = {
   }
 
   add_mastermind = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -342,8 +319,6 @@ decisions = {
   }
 
   remove_landlord = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -370,8 +345,6 @@ decisions = {
   }
 
   add_landlord = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -398,8 +371,6 @@ decisions = {
   }
 
   remove_conspirator = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -426,8 +397,6 @@ decisions = {
   }
 
   add_conspirator = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -453,11 +422,8 @@ decisions = {
     }
   }
 
-
   ## ===== Virtues ===== ##
   show_virtues = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -483,8 +449,6 @@ decisions = {
   }
 
   hide_virtues = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -510,8 +474,6 @@ decisions = {
   }
 
   remove_chaste = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -538,8 +500,6 @@ decisions = {
   }
 
   add_chaste = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -570,8 +530,6 @@ decisions = {
   }
 
   remove_temperate = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -598,8 +556,6 @@ decisions = {
   }
 
   add_temperate = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -630,8 +586,6 @@ decisions = {
   }
 
   remove_kind = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -658,8 +612,6 @@ decisions = {
   }
 
   add_kind = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -694,8 +646,6 @@ decisions = {
   }
 
   remove_charitable = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -722,8 +672,6 @@ decisions = {
   }
 
   add_charitable = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -754,8 +702,6 @@ decisions = {
   }
 
   remove_patient = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -782,8 +728,6 @@ decisions = {
   }
 
   add_patient = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -814,8 +758,6 @@ decisions = {
   }
 
   remove_diligent = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -842,8 +784,6 @@ decisions = {
   }
 
   add_diligent = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -874,8 +814,6 @@ decisions = {
   }
 
   remove_humble = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -902,8 +840,6 @@ decisions = {
   }
 
   add_humble = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -933,11 +869,8 @@ decisions = {
     }
   }
 
-
   ## ===== Sins ===== ##
   show_sins = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -963,8 +896,6 @@ decisions = {
   }
 
   hide_sins = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -990,8 +921,6 @@ decisions = {
   }
 
   remove_lustful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1018,8 +947,6 @@ decisions = {
   }
 
   add_lustful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1050,8 +977,6 @@ decisions = {
   }
 
   remove_greedy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1078,8 +1003,6 @@ decisions = {
   }
 
   add_greedy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1110,8 +1033,6 @@ decisions = {
   }
 
   remove_slothful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1138,8 +1059,6 @@ decisions = {
   }
 
   add_slothful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1170,8 +1089,6 @@ decisions = {
   }
 
   remove_gluttonous = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1198,8 +1115,6 @@ decisions = {
   }
 
   add_gluttonous = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1230,8 +1145,6 @@ decisions = {
   }
 
   remove_wroth = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1258,8 +1171,6 @@ decisions = {
   }
 
   add_wroth = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1290,8 +1201,6 @@ decisions = {
   }
 
   remove_proud = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1318,8 +1227,6 @@ decisions = {
   }
 
   add_proud = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1350,8 +1257,6 @@ decisions = {
   }
 
   remove_envious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1378,8 +1283,6 @@ decisions = {
   }
 
   add_envious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1411,8 +1314,6 @@ decisions = {
 
   ## ===== Personality ===== ##
   show_personality = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1438,8 +1339,6 @@ decisions = {
   }
 
   hide_personality = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1465,8 +1364,6 @@ decisions = {
   }
 
   remove_ambitious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1493,8 +1390,6 @@ decisions = {
   }
 
   add_ambitious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1525,8 +1420,6 @@ decisions = {
   }
 
   remove_content = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1553,8 +1446,6 @@ decisions = {
   }
 
   add_content = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1585,8 +1476,6 @@ decisions = {
   }
 
   remove_brave = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1613,8 +1502,6 @@ decisions = {
   }
 
   add_brave = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1645,8 +1532,6 @@ decisions = {
   }
 
   remove_craven = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1673,8 +1558,6 @@ decisions = {
   }
 
   add_craven = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1705,8 +1588,6 @@ decisions = {
   }
 
   remove_robust = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1733,8 +1614,6 @@ decisions = {
   }
 
   add_robust = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1766,8 +1645,6 @@ decisions = {
   }
 
   remove_sturdy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1794,8 +1671,6 @@ decisions = {
   }
 
   add_sturdy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1824,8 +1699,6 @@ decisions = {
   }
 
   remove_feeble = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1852,8 +1725,6 @@ decisions = {
   }
 
   add_feeble = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1885,8 +1756,6 @@ decisions = {
   }
 
   remove_cynical = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1913,8 +1782,6 @@ decisions = {
   }
 
   add_cynical = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1945,8 +1812,6 @@ decisions = {
   }
 
   remove_zealous = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -1973,8 +1838,6 @@ decisions = {
   }
 
   add_zealous = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2033,8 +1896,6 @@ decisions = {
   }
 
   remove_erudite = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2061,8 +1922,6 @@ decisions = {
   }
 
   add_erudite = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2089,8 +1948,6 @@ decisions = {
   }
 
   remove_gregarious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2117,8 +1974,6 @@ decisions = {
   }
 
   add_gregarious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2149,8 +2004,6 @@ decisions = {
   }
 
   remove_shy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2177,8 +2030,6 @@ decisions = {
   }
 
   add_shy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2209,8 +2060,6 @@ decisions = {
   }
 
   remove_groomed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2237,8 +2086,6 @@ decisions = {
   }
 
   add_groomed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2269,8 +2116,6 @@ decisions = {
   }
 
   remove_uncouth = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2297,8 +2142,6 @@ decisions = {
   }
 
   add_uncouth = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2329,8 +2172,6 @@ decisions = {
   }
 
   remove_honest = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2357,8 +2198,6 @@ decisions = {
   }
 
   add_honest = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2389,8 +2228,6 @@ decisions = {
   }
 
   remove_deceitful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2417,8 +2254,6 @@ decisions = {
   }
 
   add_deceitful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2449,8 +2284,6 @@ decisions = {
   }
 
   remove_just = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2477,8 +2310,6 @@ decisions = {
   }
 
   add_just = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2509,8 +2340,6 @@ decisions = {
   }
 
   remove_arbitrary = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2537,8 +2366,6 @@ decisions = {
   }
 
   add_arbitrary = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2569,8 +2396,6 @@ decisions = {
   }
 
   remove_shrewd = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2597,8 +2422,6 @@ decisions = {
   }
 
   add_shrewd = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2629,8 +2452,6 @@ decisions = {
   }
 
   remove_dull = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2657,8 +2478,6 @@ decisions = {
   }
 
   add_dull = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2689,8 +2508,6 @@ decisions = {
   }
 
   remove_trusting = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2717,8 +2534,6 @@ decisions = {
   }
 
   add_trusting = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2749,8 +2564,6 @@ decisions = {
   }
 
   remove_paranoid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2777,8 +2590,6 @@ decisions = {
   }
 
   add_paranoid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2809,8 +2620,6 @@ decisions = {
   }
 
   remove_cruel = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2837,8 +2646,6 @@ decisions = {
   }
 
   add_cruel = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2869,8 +2676,6 @@ decisions = {
   }
 
   remove_stubborn = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2897,8 +2702,6 @@ decisions = {
   }
 
   add_stubborn = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2926,8 +2729,6 @@ decisions = {
 
   ## ===== Education ===== ##
   show_education = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2943,7 +2744,6 @@ decisions = {
       set_character_flag = show_education
     }
 
-
     revoke_allowed = {
       always = no
     }
@@ -2954,8 +2754,6 @@ decisions = {
   }
 
   hide_education = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -2984,8 +2782,6 @@ decisions = {
   # paths x 4 tiers) and then grants the tier-4 trait for
   # the chosen path.
   set_diplomacy_education = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3013,8 +2809,6 @@ decisions = {
   }
 
   set_martial_education = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3042,8 +2836,6 @@ decisions = {
   }
 
   set_stewardship_education = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3071,8 +2863,6 @@ decisions = {
   }
 
   set_intrigue_education = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3100,8 +2890,6 @@ decisions = {
   }
 
   set_learning_education = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3130,8 +2918,6 @@ decisions = {
 
   ## ===== Health & Congenital ===== ##
   show_health = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3147,7 +2933,6 @@ decisions = {
       set_character_flag = show_health
     }
 
-
     revoke_allowed = {
       always = no
     }
@@ -3158,8 +2943,6 @@ decisions = {
   }
 
   hide_health = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3185,8 +2968,6 @@ decisions = {
   }
 
   remove_defects = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3225,8 +3006,6 @@ decisions = {
   }
 
   remove_diseases = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3253,8 +3032,6 @@ decisions = {
   }
 
   remove_fair = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3281,8 +3058,6 @@ decisions = {
   }
 
   add_fair = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3313,8 +3088,6 @@ decisions = {
   }
 
   remove_genius = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3341,8 +3114,6 @@ decisions = {
   }
 
   add_genius = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3370,8 +3141,6 @@ decisions = {
   }
 
   remove_quick = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3398,8 +3167,6 @@ decisions = {
   }
 
   add_quick = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3427,8 +3194,6 @@ decisions = {
   }
 
   remove_strong = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3455,8 +3220,6 @@ decisions = {
   }
 
   add_strong = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3487,8 +3250,6 @@ decisions = {
   }
 
   remove_giant = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3515,8 +3276,6 @@ decisions = {
   }
 
   add_giant = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3547,8 +3306,6 @@ decisions = {
   }
 
   remove_lefthanded = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3575,8 +3332,6 @@ decisions = {
   }
 
   add_lefthanded = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3603,8 +3358,6 @@ decisions = {
   }
 
   remove_scarred = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3631,8 +3384,6 @@ decisions = {
   }
 
   add_scarred = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3660,8 +3411,6 @@ decisions = {
   }
 
   remove_scarred_mid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3688,8 +3437,6 @@ decisions = {
   }
 
   add_scarred_mid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3718,8 +3465,6 @@ decisions = {
   }
 
   remove_scarred_high = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3746,8 +3491,6 @@ decisions = {
   }
 
   add_scarred_high = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3776,8 +3519,6 @@ decisions = {
   }
 
   cycle_freckles_none = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3808,8 +3549,6 @@ decisions = {
   }
 
   cycle_freckles_1 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3836,8 +3575,6 @@ decisions = {
   }
 
   cycle_freckles_2 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3864,8 +3601,6 @@ decisions = {
   }
 
   cycle_freckles_3 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3892,8 +3627,6 @@ decisions = {
   }
 
   cycle_freckles_4 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3920,8 +3653,6 @@ decisions = {
   }
 
   cycle_freckles_5 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3948,8 +3679,6 @@ decisions = {
   }
 
   remove_fat = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -3976,8 +3705,6 @@ decisions = {
   }
 
   add_fat = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4005,8 +3732,6 @@ decisions = {
   }
 
   remove_malnourished = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4033,8 +3758,6 @@ decisions = {
   }
 
   add_malnourished = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4062,8 +3785,6 @@ decisions = {
   }
 
   remove_clubfooted = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4090,8 +3811,6 @@ decisions = {
   }
 
   add_clubfooted = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4118,8 +3837,6 @@ decisions = {
   }
 
   remove_dwarf = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4146,8 +3863,6 @@ decisions = {
   }
 
   add_dwarf = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4178,8 +3893,6 @@ decisions = {
   }
 
   remove_harelip = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4206,8 +3919,6 @@ decisions = {
   }
 
   add_harelip = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4234,8 +3945,6 @@ decisions = {
   }
 
   remove_hunchback = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4262,8 +3971,6 @@ decisions = {
   }
 
   add_hunchback = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4290,8 +3997,6 @@ decisions = {
   }
 
   remove_imbecile = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4318,8 +4023,6 @@ decisions = {
   }
 
   add_imbecile = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4347,8 +4050,6 @@ decisions = {
   }
 
   remove_inbred = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4375,8 +4076,6 @@ decisions = {
   }
 
   add_inbred = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4403,8 +4102,6 @@ decisions = {
   }
 
   remove_lisp = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4431,8 +4128,6 @@ decisions = {
   }
 
   add_lisp = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4459,8 +4154,6 @@ decisions = {
   }
 
   remove_slow = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4487,8 +4180,6 @@ decisions = {
   }
 
   add_slow = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4516,8 +4207,6 @@ decisions = {
   }
 
   remove_stutter = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4544,8 +4233,6 @@ decisions = {
   }
 
   add_stutter = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4572,8 +4259,6 @@ decisions = {
   }
 
   remove_ugly = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4600,8 +4285,6 @@ decisions = {
   }
 
   add_ugly = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4629,8 +4312,6 @@ decisions = {
   }
 
   remove_weak = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4657,8 +4338,6 @@ decisions = {
   }
 
   add_weak = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4689,8 +4368,6 @@ decisions = {
   }
 
   remove_blinded = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4717,8 +4394,6 @@ decisions = {
   }
 
   add_blinded = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4745,8 +4420,6 @@ decisions = {
   }
 
   remove_depressed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4773,8 +4446,6 @@ decisions = {
   }
 
   add_depressed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4801,8 +4472,6 @@ decisions = {
   }
 
   remove_disfigured = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4829,8 +4498,6 @@ decisions = {
   }
 
   add_disfigured = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4857,8 +4524,6 @@ decisions = {
   }
 
   remove_drunkard = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4885,8 +4550,6 @@ decisions = {
   }
 
   add_drunkard = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4913,8 +4576,6 @@ decisions = {
   }
 
   remove_incapable = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4941,8 +4602,6 @@ decisions = {
   }
 
   add_incapable = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4969,8 +4628,6 @@ decisions = {
   }
 
   remove_infirm = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -4997,8 +4654,6 @@ decisions = {
   }
 
   add_infirm = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5025,8 +4680,6 @@ decisions = {
   }
 
   remove_lovers_pox = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5053,8 +4706,6 @@ decisions = {
   }
 
   add_lovers_pox = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5081,8 +4732,6 @@ decisions = {
   }
 
   remove_lunatic = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5109,8 +4758,6 @@ decisions = {
   }
 
   add_lunatic = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5137,8 +4784,6 @@ decisions = {
   }
 
   remove_maimed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5165,8 +4810,6 @@ decisions = {
   }
 
   add_maimed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5197,8 +4840,6 @@ decisions = {
   }
 
   remove_mangled = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5225,8 +4866,6 @@ decisions = {
   }
 
   add_mangled = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5253,8 +4892,6 @@ decisions = {
   }
 
   remove_one_eyed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5281,8 +4918,6 @@ decisions = {
   }
 
   add_one_eyed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5309,8 +4944,6 @@ decisions = {
   }
 
   remove_one_handed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5337,8 +4970,6 @@ decisions = {
   }
 
   add_one_handed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5365,8 +4996,6 @@ decisions = {
   }
 
   remove_one_legged = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5393,8 +5022,6 @@ decisions = {
   }
 
   add_one_legged = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5421,8 +5048,6 @@ decisions = {
   }
 
   remove_possessed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5449,8 +5074,6 @@ decisions = {
   }
 
   add_possessed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5477,8 +5100,6 @@ decisions = {
   }
 
   remove_severely_injured = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5505,8 +5126,6 @@ decisions = {
   }
 
   add_severely_injured = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5533,8 +5152,6 @@ decisions = {
   }
 
   remove_sick_incapable = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5561,8 +5178,6 @@ decisions = {
   }
 
   add_sick_incapable = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5589,8 +5204,6 @@ decisions = {
   }
 
   remove_stressed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5617,8 +5230,6 @@ decisions = {
   }
 
   add_stressed = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5645,8 +5256,6 @@ decisions = {
   }
 
   remove_wounded = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5673,8 +5282,6 @@ decisions = {
   }
 
   add_wounded = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5704,11 +5311,8 @@ decisions = {
     }
   }
 
-
   ## ===== Leadership ===== ##
   show_leadership = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5724,7 +5328,6 @@ decisions = {
       set_character_flag = show_leadership
     }
 
-
     revoke_allowed = {
       always = no
     }
@@ -5735,8 +5338,6 @@ decisions = {
   }
 
   hide_leadership = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5762,8 +5363,6 @@ decisions = {
   }
 
   remove_aggressive_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5790,8 +5389,6 @@ decisions = {
   }
 
   add_aggressive_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5818,8 +5415,6 @@ decisions = {
   }
 
   remove_narrow_flank_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5846,8 +5441,6 @@ decisions = {
   }
 
   add_narrow_flank_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5874,8 +5467,6 @@ decisions = {
   }
 
   remove_defensive_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5902,8 +5493,6 @@ decisions = {
   }
 
   add_defensive_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5930,8 +5519,6 @@ decisions = {
   }
 
   remove_experimenter = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5958,8 +5545,6 @@ decisions = {
   }
 
   add_experimenter = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -5986,8 +5571,6 @@ decisions = {
   }
 
   remove_flanker = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6014,8 +5597,6 @@ decisions = {
   }
 
   add_flanker = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6042,8 +5623,6 @@ decisions = {
   }
 
   remove_holy_warrior = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6070,8 +5649,6 @@ decisions = {
   }
 
   add_holy_warrior = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6098,8 +5675,6 @@ decisions = {
   }
 
   remove_inspiring_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6126,8 +5701,6 @@ decisions = {
   }
 
   add_inspiring_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6154,8 +5727,6 @@ decisions = {
   }
 
   remove_organizer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6182,8 +5753,6 @@ decisions = {
   }
 
   add_organizer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6210,8 +5779,6 @@ decisions = {
   }
 
   remove_siege_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6238,8 +5805,6 @@ decisions = {
   }
 
   add_siege_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6266,8 +5831,6 @@ decisions = {
   }
 
   remove_trickster = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6294,8 +5857,6 @@ decisions = {
   }
 
   add_trickster = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6322,8 +5883,6 @@ decisions = {
   }
 
   remove_unyielding_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6350,8 +5909,6 @@ decisions = {
   }
 
   add_unyielding_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6378,8 +5935,6 @@ decisions = {
   }
 
   remove_winter_soldier = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6406,8 +5961,6 @@ decisions = {
   }
 
   add_winter_soldier = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6434,8 +5987,6 @@ decisions = {
   }
 
   remove_cavalry_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6462,8 +6013,6 @@ decisions = {
   }
 
   add_cavalry_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6490,8 +6039,6 @@ decisions = {
   }
 
   remove_heavy_infantry_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6518,8 +6065,6 @@ decisions = {
   }
 
   add_heavy_infantry_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6546,8 +6091,6 @@ decisions = {
   }
 
   remove_light_foot_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6574,8 +6117,6 @@ decisions = {
   }
 
   add_light_foot_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6602,8 +6143,6 @@ decisions = {
   }
 
   remove_war_elephant_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6630,8 +6169,6 @@ decisions = {
   }
 
   add_war_elephant_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6658,8 +6195,6 @@ decisions = {
   }
 
   remove_desert_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6686,8 +6221,6 @@ decisions = {
   }
 
   add_desert_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6714,8 +6247,6 @@ decisions = {
   }
 
   remove_flat_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6742,8 +6273,6 @@ decisions = {
   }
 
   add_flat_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6770,8 +6299,6 @@ decisions = {
   }
 
   remove_jungle_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6798,8 +6325,6 @@ decisions = {
   }
 
   add_jungle_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6826,8 +6351,6 @@ decisions = {
   }
 
   remove_mountain_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6854,8 +6377,6 @@ decisions = {
   }
 
   add_mountain_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6882,8 +6403,6 @@ decisions = {
   }
 
   remove_rough_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6910,8 +6429,6 @@ decisions = {
   }
 
   add_rough_terrain_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6939,8 +6456,6 @@ decisions = {
 
   ## ===== Warriors ===== ##
   show_warriors = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6966,8 +6481,6 @@ decisions = {
   }
 
   hide_warriors = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -6993,8 +6506,6 @@ decisions = {
   }
 
   remove_adventurer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7021,8 +6532,6 @@ decisions = {
   }
 
   add_adventurer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7049,8 +6558,6 @@ decisions = {
   }
 
   remove_berserker = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7077,8 +6584,6 @@ decisions = {
   }
 
   add_berserker = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7105,8 +6610,6 @@ decisions = {
   }
 
   remove_gladiator = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7133,8 +6636,6 @@ decisions = {
   }
 
   add_gladiator = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7161,8 +6662,6 @@ decisions = {
   }
 
   remove_shieldmaiden = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7189,8 +6688,6 @@ decisions = {
   }
 
   add_shieldmaiden = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7218,8 +6715,6 @@ decisions = {
   }
 
   remove_varangian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7246,8 +6741,6 @@ decisions = {
   }
 
   add_varangian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7275,8 +6768,6 @@ decisions = {
 
   ## ===== Holy War Rewards ===== ##
   show_holy_war_rewards = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7303,8 +6794,6 @@ decisions = {
   }
 
   hide_holy_war_rewards = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7330,8 +6819,6 @@ decisions = {
   }
 
   remove_ares_own = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7358,8 +6845,6 @@ decisions = {
   }
 
   add_ares_own = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7391,8 +6876,6 @@ decisions = {
   }
 
   remove_crusader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7419,8 +6902,6 @@ decisions = {
   }
 
   add_crusader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7449,8 +6930,6 @@ decisions = {
   }
 
   remove_crusader_king = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7477,8 +6956,6 @@ decisions = {
   }
 
   add_crusader_king = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7508,8 +6985,6 @@ decisions = {
   }
 
   remove_crusader_queen = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7536,8 +7011,6 @@ decisions = {
   }
 
   add_crusader_queen = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7567,8 +7040,6 @@ decisions = {
   }
 
   remove_eagle_warrior = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7595,8 +7066,6 @@ decisions = {
   }
 
   add_eagle_warrior = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7625,8 +7094,6 @@ decisions = {
   }
 
   remove_sun_warrior = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7653,8 +7120,6 @@ decisions = {
   }
 
   add_sun_warrior = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7683,8 +7148,6 @@ decisions = {
   }
 
   remove_gondi_shahansha = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7711,8 +7174,6 @@ decisions = {
   }
 
   add_gondi_shahansha = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7741,8 +7202,6 @@ decisions = {
   }
 
   remove_romuvas_own = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7769,8 +7228,6 @@ decisions = {
   }
 
   add_romuvas_own = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7802,8 +7259,6 @@ decisions = {
   }
 
   remove_kailash_guardian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7830,8 +7285,6 @@ decisions = {
   }
 
   add_kailash_guardian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7860,8 +7313,6 @@ decisions = {
   }
 
   remove_shaddai = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7888,8 +7339,6 @@ decisions = {
   }
 
   add_shaddai = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7918,8 +7367,6 @@ decisions = {
   }
 
   remove_mujahid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7946,8 +7393,6 @@ decisions = {
   }
 
   add_mujahid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -7976,8 +7421,6 @@ decisions = {
   }
 
   remove_nyames_shield = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8004,8 +7447,6 @@ decisions = {
   }
 
   add_nyames_shield = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8037,8 +7478,6 @@ decisions = {
   }
 
   remove_peruns_chosen = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8065,8 +7504,6 @@ decisions = {
   }
 
   add_peruns_chosen = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8098,8 +7535,6 @@ decisions = {
   }
 
   remove_tengri_warrior = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8126,8 +7561,6 @@ decisions = {
   }
 
   add_tengri_warrior = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8159,8 +7592,6 @@ decisions = {
   }
 
   remove_ukkos_shield = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8187,8 +7618,6 @@ decisions = {
   }
 
   add_ukkos_shield = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8220,8 +7649,6 @@ decisions = {
   }
 
   remove_valhalla_bound = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8248,8 +7675,6 @@ decisions = {
   }
 
   add_valhalla_bound = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8282,8 +7707,6 @@ decisions = {
 
   ## ===== Warrior Lodge ===== ##
   show_warrior_lodge = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8310,8 +7733,6 @@ decisions = {
   }
 
   hide_warrior_lodge = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8337,8 +7758,6 @@ decisions = {
   }
 
   remove_hellenic_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8365,8 +7784,6 @@ decisions = {
   }
 
   add_hellenic_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8397,8 +7814,6 @@ decisions = {
   }
 
   remove_norse_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8425,8 +7840,6 @@ decisions = {
   }
 
   add_norse_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8457,8 +7870,6 @@ decisions = {
   }
 
   remove_baltic_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8485,8 +7896,6 @@ decisions = {
   }
 
   add_baltic_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8517,8 +7926,6 @@ decisions = {
   }
 
   remove_tengri_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8545,8 +7952,6 @@ decisions = {
   }
 
   add_tengri_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8577,8 +7982,6 @@ decisions = {
   }
 
   remove_bon_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8605,8 +8008,6 @@ decisions = {
   }
 
   add_bon_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8634,8 +8035,6 @@ decisions = {
   }
 
   remove_slavic_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8662,8 +8061,6 @@ decisions = {
   }
 
   add_slavic_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8694,8 +8091,6 @@ decisions = {
   }
 
   remove_zun_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8722,8 +8117,6 @@ decisions = {
   }
 
   add_zun_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8754,8 +8147,6 @@ decisions = {
   }
 
   remove_finnish_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8782,8 +8173,6 @@ decisions = {
   }
 
   add_finnish_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8814,8 +8203,6 @@ decisions = {
   }
 
   remove_west_african_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8842,8 +8229,6 @@ decisions = {
   }
 
   add_west_african_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8875,8 +8260,6 @@ decisions = {
 
   ## ===== Chinese Imperial ===== ##
   show_chinese_commander = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8902,8 +8285,6 @@ decisions = {
   }
 
   hide_chinese_commander = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8930,8 +8311,6 @@ decisions = {
 
   ## --- Chinese Commander --- ##
   remove_logistics_expert = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8958,8 +8337,6 @@ decisions = {
   }
 
   add_logistics_expert = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -8986,8 +8363,6 @@ decisions = {
   }
 
   remove_master_of_flame = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9014,8 +8389,6 @@ decisions = {
   }
 
   add_master_of_flame = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9042,8 +8415,6 @@ decisions = {
   }
 
   remove_sapper = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9070,8 +8441,6 @@ decisions = {
   }
 
   add_sapper = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9098,8 +8467,6 @@ decisions = {
   }
 
   remove_levy_coordinator = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9126,8 +8493,6 @@ decisions = {
   }
 
   add_levy_coordinator = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9155,8 +8520,6 @@ decisions = {
 
   ## --- Kowtow --- ##
   remove_kow_tow_completed_tier_1 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9183,8 +8546,6 @@ decisions = {
   }
 
   add_kow_tow_completed_tier_1 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9212,8 +8573,6 @@ decisions = {
   }
 
   remove_kow_tow_completed_tier_2 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9240,8 +8599,6 @@ decisions = {
   }
 
   add_kow_tow_completed_tier_2 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9269,8 +8626,6 @@ decisions = {
   }
 
   remove_kow_tow_completed_tier_3 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9297,8 +8652,6 @@ decisions = {
   }
 
   add_kow_tow_completed_tier_3 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9327,8 +8680,6 @@ decisions = {
 
   ## ===== Raiding ===== ##
   show_raiding = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9354,8 +8705,6 @@ decisions = {
   }
 
   hide_raiding = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9381,8 +8730,6 @@ decisions = {
   }
 
   remove_viking = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9409,8 +8756,6 @@ decisions = {
   }
 
   add_viking = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9442,8 +8787,6 @@ decisions = {
   }
 
   remove_pirate = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9470,8 +8813,6 @@ decisions = {
   }
 
   add_pirate = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9499,8 +8840,6 @@ decisions = {
   }
 
   remove_ravager = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9527,8 +8866,6 @@ decisions = {
   }
 
   add_ravager = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9556,8 +8893,6 @@ decisions = {
   }
 
   remove_seaking = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9584,8 +8919,6 @@ decisions = {
   }
 
   add_seaking = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9614,8 +8947,6 @@ decisions = {
   }
 
   remove_sea_queen = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9642,8 +8973,6 @@ decisions = {
   }
 
   add_sea_queen = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9673,8 +9002,6 @@ decisions = {
 
   ## ===== Lifestyles ===== ##
   show_lifestyle = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9690,7 +9017,6 @@ decisions = {
       set_character_flag = show_lifestyle
     }
 
-
     revoke_allowed = {
       always = no
     }
@@ -9701,8 +9027,6 @@ decisions = {
   }
 
   hide_lifestyle = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9728,8 +9052,6 @@ decisions = {
   }
 
   remove_administrator = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9756,8 +9078,6 @@ decisions = {
   }
 
   add_administrator = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9784,8 +9104,6 @@ decisions = {
   }
 
   remove_architect = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9812,8 +9130,6 @@ decisions = {
   }
 
   add_architect = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9840,8 +9156,6 @@ decisions = {
   }
 
   remove_celibate = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9868,8 +9182,6 @@ decisions = {
   }
 
   add_celibate = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9902,8 +9214,6 @@ decisions = {
   }
 
   remove_duelist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9930,8 +9240,6 @@ decisions = {
   }
 
   add_duelist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9958,8 +9266,6 @@ decisions = {
   }
 
   remove_falconer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -9986,8 +9292,6 @@ decisions = {
   }
 
   add_falconer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10014,8 +9318,6 @@ decisions = {
   }
 
   remove_gamer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10042,8 +9344,6 @@ decisions = {
   }
 
   add_gamer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10070,8 +9370,6 @@ decisions = {
   }
 
   remove_gardener = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10098,8 +9396,6 @@ decisions = {
   }
 
   add_gardener = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10126,8 +9422,6 @@ decisions = {
   }
 
   remove_hedonist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10154,8 +9448,6 @@ decisions = {
   }
 
   add_hedonist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10186,8 +9478,6 @@ decisions = {
   }
 
   remove_hunter = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10214,8 +9504,6 @@ decisions = {
   }
 
   add_hunter = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10242,8 +9530,6 @@ decisions = {
   }
 
   remove_impaler = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10270,8 +9556,6 @@ decisions = {
   }
 
   add_impaler = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10298,8 +9582,6 @@ decisions = {
   }
 
   remove_schemer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10326,8 +9608,6 @@ decisions = {
   }
 
   add_schemer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10354,8 +9634,6 @@ decisions = {
   }
 
   remove_seducer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10383,8 +9661,6 @@ decisions = {
   }
 
   add_seducer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10417,8 +9693,6 @@ decisions = {
   }
 
   remove_seductress = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10446,8 +9720,6 @@ decisions = {
   }
 
   add_seductress = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10480,8 +9752,6 @@ decisions = {
   }
 
   remove_mystic = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10508,8 +9778,6 @@ decisions = {
   }
 
   add_mystic = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10536,8 +9804,6 @@ decisions = {
   }
 
   remove_physician = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10564,8 +9830,6 @@ decisions = {
   }
 
   add_physician = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10592,8 +9856,6 @@ decisions = {
   }
 
   remove_poet = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10620,8 +9882,6 @@ decisions = {
   }
 
   add_poet = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10648,8 +9908,6 @@ decisions = {
   }
 
   remove_scholar = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10676,8 +9934,6 @@ decisions = {
   }
 
   add_scholar = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10709,8 +9965,6 @@ decisions = {
   }
 
   remove_faqih = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10737,8 +9991,6 @@ decisions = {
   }
 
   add_faqih = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10770,8 +10022,6 @@ decisions = {
   }
 
   remove_socializer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10798,8 +10048,6 @@ decisions = {
   }
 
   add_socializer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10826,8 +10074,6 @@ decisions = {
   }
 
   remove_strategist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10854,8 +10100,6 @@ decisions = {
   }
 
   add_strategist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10882,8 +10126,6 @@ decisions = {
   }
 
   remove_theologian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10910,8 +10152,6 @@ decisions = {
   }
 
   add_theologian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10939,8 +10179,6 @@ decisions = {
 
   ## ===== Religious Markers & Doctrine ===== ##
   show_religious_markers = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10966,8 +10204,6 @@ decisions = {
   }
 
   hide_religious_markers = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -10994,8 +10230,6 @@ decisions = {
 
   ## --- Pilgrimage Rewards --- ##
   remove_hajjaj = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11022,8 +10256,6 @@ decisions = {
   }
 
   add_hajjaj = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11051,8 +10283,6 @@ decisions = {
   }
 
   remove_indian_pilgrim = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11079,8 +10309,6 @@ decisions = {
   }
 
   add_indian_pilgrim = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11108,8 +10336,6 @@ decisions = {
   }
 
   remove_pilgrim = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11136,8 +10362,6 @@ decisions = {
   }
 
   add_pilgrim = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11166,8 +10390,6 @@ decisions = {
 
   ## --- Eschatological --- ##
   remove_reincarnation = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11194,8 +10416,6 @@ decisions = {
   }
 
   add_reincarnation = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11222,8 +10442,6 @@ decisions = {
   }
 
   remove_saoshyant = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11250,8 +10468,6 @@ decisions = {
   }
 
   add_saoshyant = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11278,8 +10494,6 @@ decisions = {
   }
 
   remove_saoshyant_descendant = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11306,8 +10520,6 @@ decisions = {
   }
 
   add_saoshyant_descendant = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11335,8 +10547,6 @@ decisions = {
 
   ## --- Sympathy --- ##
   remove_sympathy_christendom = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11363,8 +10573,6 @@ decisions = {
   }
 
   add_sympathy_christendom = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11392,8 +10600,6 @@ decisions = {
   }
 
   remove_sympathy_indian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11420,8 +10626,6 @@ decisions = {
   }
 
   add_sympathy_indian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11449,8 +10653,6 @@ decisions = {
   }
 
   remove_sympathy_islam = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11477,8 +10679,6 @@ decisions = {
   }
 
   add_sympathy_islam = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11506,8 +10706,6 @@ decisions = {
   }
 
   remove_sympathy_judaism = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11534,8 +10732,6 @@ decisions = {
   }
 
   add_sympathy_judaism = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11563,8 +10759,6 @@ decisions = {
   }
 
   remove_sympathy_pagans = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11591,8 +10785,6 @@ decisions = {
   }
 
   add_sympathy_pagans = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11620,8 +10812,6 @@ decisions = {
   }
 
   remove_sympathy_zoroastrianism = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11648,8 +10838,6 @@ decisions = {
   }
 
   add_sympathy_zoroastrianism = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11678,8 +10866,6 @@ decisions = {
 
   ## --- Pagan Doctrines --- ##
   remove_bloodthirsty_gods_1 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11706,8 +10892,6 @@ decisions = {
   }
 
   add_bloodthirsty_gods_1 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11735,8 +10919,6 @@ decisions = {
   }
 
   remove_bloodthirsty_gods_2 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11763,8 +10945,6 @@ decisions = {
   }
 
   add_bloodthirsty_gods_2 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11792,8 +10972,6 @@ decisions = {
   }
 
   remove_bloodthirsty_gods_3 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11820,8 +10998,6 @@ decisions = {
   }
 
   add_bloodthirsty_gods_3 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11849,8 +11025,6 @@ decisions = {
   }
 
   remove_pagan_branch_1 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11877,8 +11051,6 @@ decisions = {
   }
 
   add_pagan_branch_1 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11906,8 +11078,6 @@ decisions = {
   }
 
   remove_pagan_branch_2 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11934,8 +11104,6 @@ decisions = {
   }
 
   add_pagan_branch_2 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11963,8 +11131,6 @@ decisions = {
   }
 
   remove_pagan_branch_3 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -11991,8 +11157,6 @@ decisions = {
   }
 
   add_pagan_branch_3 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12020,8 +11184,6 @@ decisions = {
   }
 
   remove_pagan_branch_4 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12048,8 +11210,6 @@ decisions = {
   }
 
   add_pagan_branch_4 = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12076,11 +11236,8 @@ decisions = {
     }
   }
 
-
   ## --- Religious Stigma --- ##
   remove_bad_priest_aztec = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12107,8 +11264,6 @@ decisions = {
   }
 
   add_bad_priest_aztec = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12136,8 +11291,6 @@ decisions = {
   }
 
   remove_bad_priest_christian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12164,8 +11317,6 @@ decisions = {
   }
 
   add_bad_priest_christian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12193,8 +11344,6 @@ decisions = {
   }
 
   remove_bad_priest_muslim = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12221,8 +11370,6 @@ decisions = {
   }
 
   add_bad_priest_muslim = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12250,8 +11397,6 @@ decisions = {
   }
 
   remove_bad_priest_norse = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12278,8 +11423,6 @@ decisions = {
   }
 
   add_bad_priest_norse = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12310,8 +11453,6 @@ decisions = {
   }
 
   remove_bad_priest_tengri = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12338,8 +11479,6 @@ decisions = {
   }
 
   add_bad_priest_tengri = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12370,8 +11509,6 @@ decisions = {
   }
 
   remove_bad_priest_zoroastrian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12398,8 +11535,6 @@ decisions = {
   }
 
   add_bad_priest_zoroastrian = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12427,8 +11562,6 @@ decisions = {
   }
 
   remove_excommunicated = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12455,8 +11588,6 @@ decisions = {
   }
 
   add_excommunicated = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12484,8 +11615,6 @@ decisions = {
 
   ## ===== Ordained Clergy ===== ##
   show_ordained_clergy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12512,8 +11641,6 @@ decisions = {
   }
 
   hide_ordained_clergy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12539,8 +11666,6 @@ decisions = {
   }
 
   remove_monk = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12567,8 +11692,6 @@ decisions = {
   }
 
   add_monk = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12597,8 +11720,6 @@ decisions = {
   }
 
   remove_nun = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12625,8 +11746,6 @@ decisions = {
   }
 
   add_nun = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12655,8 +11774,6 @@ decisions = {
   }
 
   remove_bhikkhu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12683,8 +11800,6 @@ decisions = {
   }
 
   add_bhikkhu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12713,8 +11828,6 @@ decisions = {
   }
 
   remove_bhikkhuni = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12741,8 +11854,6 @@ decisions = {
   }
 
   add_bhikkhuni = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12771,8 +11882,6 @@ decisions = {
   }
 
   remove_sanyasi = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12799,8 +11908,6 @@ decisions = {
   }
 
   add_sanyasi = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12829,8 +11936,6 @@ decisions = {
   }
 
   remove_sanyasini = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12857,8 +11962,6 @@ decisions = {
   }
 
   add_sanyasini = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12887,8 +11990,6 @@ decisions = {
   }
 
   remove_muni = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12915,8 +12016,6 @@ decisions = {
   }
 
   add_muni = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12945,8 +12044,6 @@ decisions = {
   }
 
   remove_aryika = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -12973,8 +12070,6 @@ decisions = {
   }
 
   add_aryika = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13004,8 +12099,6 @@ decisions = {
 
   ## ===== Christian Status ===== ##
   show_christian_status = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13032,8 +12125,6 @@ decisions = {
   }
 
   hide_christian_status = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13060,8 +12151,6 @@ decisions = {
 
   ## --- Coronation --- ##
   remove_crowned_by_pope = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13088,8 +12177,6 @@ decisions = {
   }
 
   add_crowned_by_pope = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13118,8 +12205,6 @@ decisions = {
   }
 
   remove_crowned_by_bishop = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13146,8 +12231,6 @@ decisions = {
   }
 
   add_crowned_by_bishop = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13176,8 +12259,6 @@ decisions = {
   }
 
   remove_crowned_by_priest = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13204,8 +12285,6 @@ decisions = {
   }
 
   add_crowned_by_priest = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13234,8 +12313,6 @@ decisions = {
   }
 
   remove_crowned_by_myself = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13262,8 +12339,6 @@ decisions = {
   }
 
   add_crowned_by_myself = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13293,8 +12368,6 @@ decisions = {
 
   ## --- Baptism --- ##
   remove_baptized_by_pope = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13321,8 +12394,6 @@ decisions = {
   }
 
   add_baptized_by_pope = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13351,8 +12422,6 @@ decisions = {
   }
 
   remove_baptized_by_patriarch = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13379,8 +12448,6 @@ decisions = {
   }
 
   add_baptized_by_patriarch = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13409,8 +12476,6 @@ decisions = {
   }
 
   remove_baptized_by_bishop = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13437,8 +12502,6 @@ decisions = {
   }
 
   add_baptized_by_bishop = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13467,8 +12530,6 @@ decisions = {
   }
 
   remove_baptized_by_satan = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13495,8 +12556,6 @@ decisions = {
   }
 
   add_baptized_by_satan = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13526,8 +12585,6 @@ decisions = {
 
   ## --- Other --- ##
   remove_beatified = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13554,8 +12611,6 @@ decisions = {
   }
 
   add_beatified = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13584,8 +12639,6 @@ decisions = {
 
   ## ===== Muslim Status ===== ##
   show_muslim_status = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13612,8 +12665,6 @@ decisions = {
   }
 
   hide_muslim_status = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13639,8 +12690,6 @@ decisions = {
   }
 
   remove_ashari = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13667,8 +12716,6 @@ decisions = {
   }
 
   add_ashari = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13700,8 +12747,6 @@ decisions = {
   }
 
   remove_mutazilite = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13728,8 +12773,6 @@ decisions = {
   }
 
   add_mutazilite = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13761,8 +12804,6 @@ decisions = {
   }
 
   remove_decadent = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13789,8 +12830,6 @@ decisions = {
   }
 
   add_decadent = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13822,8 +12861,6 @@ decisions = {
   }
 
   remove_hafiz = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13850,8 +12887,6 @@ decisions = {
   }
 
   add_hafiz = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13879,8 +12914,6 @@ decisions = {
   }
 
   remove_mirza = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13907,8 +12940,6 @@ decisions = {
   }
 
   add_mirza = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13940,8 +12971,6 @@ decisions = {
   }
 
   remove_sayyid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -13968,8 +12997,6 @@ decisions = {
   }
 
   add_sayyid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14002,8 +13029,6 @@ decisions = {
 
   ## ===== Dharmic Identity ===== ##
   show_dharmic_identity = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14030,8 +13055,6 @@ decisions = {
   }
 
   hide_dharmic_identity = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14058,8 +13081,6 @@ decisions = {
 
   ## --- Caste --- ##
   remove_brahmin = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14086,8 +13107,6 @@ decisions = {
   }
 
   add_brahmin = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14116,8 +13135,6 @@ decisions = {
   }
 
   remove_kshatriya = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14144,8 +13161,6 @@ decisions = {
   }
 
   add_kshatriya = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14174,8 +13189,6 @@ decisions = {
   }
 
   remove_vaishya = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14202,8 +13215,6 @@ decisions = {
   }
 
   add_vaishya = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14233,8 +13244,6 @@ decisions = {
 
   ## --- Hindu Branches --- ##
   remove_shaivist_hindu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14261,8 +13270,6 @@ decisions = {
   }
 
   add_shaivist_hindu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14291,8 +13298,6 @@ decisions = {
   }
 
   remove_shaktist_hindu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14319,8 +13324,6 @@ decisions = {
   }
 
   add_shaktist_hindu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14349,8 +13352,6 @@ decisions = {
   }
 
   remove_smartist_hindu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14377,8 +13378,6 @@ decisions = {
   }
 
   add_smartist_hindu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14407,8 +13406,6 @@ decisions = {
   }
 
   remove_vaishnavist_hindu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14435,8 +13432,6 @@ decisions = {
   }
 
   add_vaishnavist_hindu = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14466,8 +13461,6 @@ decisions = {
 
   ## --- Buddhist Branches --- ##
   remove_mahayana_buddhist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14494,8 +13487,6 @@ decisions = {
   }
 
   add_mahayana_buddhist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14524,8 +13515,6 @@ decisions = {
   }
 
   remove_theravada_buddhist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14552,8 +13541,6 @@ decisions = {
   }
 
   add_theravada_buddhist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14582,8 +13569,6 @@ decisions = {
   }
 
   remove_vajrayana_buddhist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14610,8 +13595,6 @@ decisions = {
   }
 
   add_vajrayana_buddhist = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14641,8 +13624,6 @@ decisions = {
 
   ## ===== Birth Markers ===== ##
   show_birth_markers = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14668,8 +13649,6 @@ decisions = {
   }
 
   hide_birth_markers = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14695,8 +13674,6 @@ decisions = {
   }
 
   remove_bastard = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14723,8 +13700,6 @@ decisions = {
   }
 
   add_bastard = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14755,8 +13730,6 @@ decisions = {
   }
 
   remove_legit_bastard = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14783,8 +13756,6 @@ decisions = {
   }
 
   add_legit_bastard = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14815,8 +13786,6 @@ decisions = {
   }
 
   remove_born_in_the_purple = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14843,8 +13812,6 @@ decisions = {
   }
 
   add_born_in_the_purple = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14871,8 +13838,6 @@ decisions = {
   }
 
   remove_child_of_concubine = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14899,8 +13864,6 @@ decisions = {
   }
 
   add_child_of_concubine = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14931,8 +13894,6 @@ decisions = {
   }
 
   remove_child_of_consort = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14959,8 +13920,6 @@ decisions = {
   }
 
   add_child_of_consort = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -14991,8 +13950,6 @@ decisions = {
   }
 
   remove_twin = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15019,8 +13976,6 @@ decisions = {
   }
 
   add_twin = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15046,11 +14001,8 @@ decisions = {
     }
   }
 
-
   ## ===== Zodiac ===== ##
   show_zodiac = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15076,8 +14028,6 @@ decisions = {
   }
 
   hide_zodiac = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15103,8 +14053,6 @@ decisions = {
   }
 
   remove_zodiac_aries = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15131,8 +14079,6 @@ decisions = {
   }
 
   add_zodiac_aries = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15160,8 +14106,6 @@ decisions = {
   }
 
   remove_zodiac_taurus = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15188,8 +14132,6 @@ decisions = {
   }
 
   add_zodiac_taurus = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15217,8 +14159,6 @@ decisions = {
   }
 
   remove_zodiac_gemini = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15245,8 +14185,6 @@ decisions = {
   }
 
   add_zodiac_gemini = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15274,8 +14212,6 @@ decisions = {
   }
 
   remove_zodiac_cancer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15302,8 +14238,6 @@ decisions = {
   }
 
   add_zodiac_cancer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15331,8 +14265,6 @@ decisions = {
   }
 
   remove_zodiac_leo = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15359,8 +14291,6 @@ decisions = {
   }
 
   add_zodiac_leo = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15388,8 +14318,6 @@ decisions = {
   }
 
   remove_zodiac_virgo = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15416,8 +14344,6 @@ decisions = {
   }
 
   add_zodiac_virgo = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15445,8 +14371,6 @@ decisions = {
   }
 
   remove_zodiac_libra = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15473,8 +14397,6 @@ decisions = {
   }
 
   add_zodiac_libra = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15502,8 +14424,6 @@ decisions = {
   }
 
   remove_zodiac_scorpio = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15530,8 +14450,6 @@ decisions = {
   }
 
   add_zodiac_scorpio = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15559,8 +14477,6 @@ decisions = {
   }
 
   remove_zodiac_sagittarius = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15587,8 +14503,6 @@ decisions = {
   }
 
   add_zodiac_sagittarius = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15616,8 +14530,6 @@ decisions = {
   }
 
   remove_zodiac_capricorn = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15644,8 +14556,6 @@ decisions = {
   }
 
   add_zodiac_capricorn = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15673,8 +14583,6 @@ decisions = {
   }
 
   remove_zodiac_aquarius = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15701,8 +14609,6 @@ decisions = {
   }
 
   add_zodiac_aquarius = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15730,8 +14636,6 @@ decisions = {
   }
 
   remove_zodiac_pisces = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15758,8 +14662,6 @@ decisions = {
   }
 
   add_zodiac_pisces = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15788,8 +14690,6 @@ decisions = {
 
   ## ===== Childhood ===== ##
   show_childhood = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15816,8 +14716,6 @@ decisions = {
   }
 
   hide_childhood = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15843,8 +14741,6 @@ decisions = {
   }
 
   remove_affectionate = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15871,8 +14767,6 @@ decisions = {
   }
 
   add_affectionate = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15900,8 +14794,6 @@ decisions = {
   }
 
   remove_brooding = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15928,8 +14820,6 @@ decisions = {
   }
 
   add_brooding = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15957,8 +14847,6 @@ decisions = {
   }
 
   remove_conscientious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -15985,8 +14873,6 @@ decisions = {
   }
 
   add_conscientious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16014,8 +14900,6 @@ decisions = {
   }
 
   remove_curious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16042,8 +14926,6 @@ decisions = {
   }
 
   add_curious = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16071,8 +14953,6 @@ decisions = {
   }
 
   remove_fussy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16099,8 +14979,6 @@ decisions = {
   }
 
   add_fussy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16128,8 +15006,6 @@ decisions = {
   }
 
   remove_haughty = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16156,8 +15032,6 @@ decisions = {
   }
 
   add_haughty = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16185,8 +15059,6 @@ decisions = {
   }
 
   remove_idolizer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16213,8 +15085,6 @@ decisions = {
   }
 
   add_idolizer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16242,8 +15112,6 @@ decisions = {
   }
 
   remove_indolent = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16270,8 +15138,6 @@ decisions = {
   }
 
   add_indolent = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16299,8 +15165,6 @@ decisions = {
   }
 
   remove_playful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16327,8 +15191,6 @@ decisions = {
   }
 
   add_playful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16356,8 +15218,6 @@ decisions = {
   }
 
   remove_rowdy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16384,8 +15244,6 @@ decisions = {
   }
 
   add_rowdy = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16417,8 +15275,6 @@ decisions = {
   }
 
   remove_timid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16445,8 +15301,6 @@ decisions = {
   }
 
   add_timid = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16478,8 +15332,6 @@ decisions = {
   }
 
   remove_willful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16506,8 +15358,6 @@ decisions = {
   }
 
   add_willful = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16536,8 +15386,6 @@ decisions = {
 
   ## ===== Kinslayer ===== ##
   show_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16563,8 +15411,6 @@ decisions = {
   }
 
   hide_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16590,8 +15436,6 @@ decisions = {
   }
 
   remove_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16618,8 +15462,6 @@ decisions = {
   }
 
   add_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16651,8 +15493,6 @@ decisions = {
   }
 
   remove_familial_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16679,8 +15519,6 @@ decisions = {
   }
 
   add_familial_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16712,8 +15550,6 @@ decisions = {
   }
 
   remove_dynastic_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16740,8 +15576,6 @@ decisions = {
   }
 
   add_dynastic_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16773,8 +15607,6 @@ decisions = {
   }
 
   remove_tribal_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16801,8 +15633,6 @@ decisions = {
   }
 
   add_tribal_kinslayer = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16833,8 +15663,6 @@ decisions = {
 
   ## ===== Misc Traits ===== ##
   show_misc = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16850,7 +15678,6 @@ decisions = {
       set_character_flag = show_misc
     }
 
-
     revoke_allowed = {
       always = no
     }
@@ -16861,8 +15688,6 @@ decisions = {
   }
 
   hide_misc = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16888,8 +15713,6 @@ decisions = {
   }
 
   remove_augustus = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16916,8 +15739,6 @@ decisions = {
   }
 
   add_augustus = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16944,8 +15765,6 @@ decisions = {
   }
 
   remove_heresiarch = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -16972,8 +15791,6 @@ decisions = {
   }
 
   add_heresiarch = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17000,8 +15817,6 @@ decisions = {
   }
 
   remove_peasant_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17028,8 +15843,6 @@ decisions = {
   }
 
   add_peasant_leader = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17056,8 +15869,6 @@ decisions = {
   }
 
   remove_cannibal = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17084,8 +15895,6 @@ decisions = {
   }
 
   add_cannibal = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17112,8 +15921,6 @@ decisions = {
   }
 
   remove_eunuch = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17140,8 +15947,6 @@ decisions = {
   }
 
   add_eunuch = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17168,8 +15973,6 @@ decisions = {
   }
 
   remove_homosexual = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17196,8 +15999,6 @@ decisions = {
   }
 
   add_homosexual = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17225,8 +16026,6 @@ decisions = {
 
   ## ===== Memes ===== ##
   show_memes = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17252,8 +16051,6 @@ decisions = {
   }
 
   hide_memes = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17279,8 +16076,6 @@ decisions = {
   }
 
   remove_cat = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17307,8 +16102,6 @@ decisions = {
   }
 
   add_cat = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17335,8 +16128,6 @@ decisions = {
   }
 
   remove_horse = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17363,8 +16154,6 @@ decisions = {
   }
 
   add_horse = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17392,8 +16181,6 @@ decisions = {
 
   ## ===== Vassal Traits ===== ##
   show_vassal = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17409,7 +16196,6 @@ decisions = {
       set_character_flag = show_vassal
     }
 
-
     revoke_allowed = {
       always = no
     }
@@ -17420,8 +16206,6 @@ decisions = {
   }
 
   hide_vassal = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17447,8 +16231,6 @@ decisions = {
   }
 
   add_vassal_content = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17485,8 +16267,6 @@ decisions = {
   }
 
   add_vassal_trusting = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17523,8 +16303,6 @@ decisions = {
   }
 
   add_vassal_honest = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17561,8 +16339,6 @@ decisions = {
   }
 
   remove_vassal_sins = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17613,8 +16389,6 @@ decisions = {
   }
 
   add_vassal_virtues = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17667,8 +16441,6 @@ decisions = {
   ## ===== Dynasty & Spouse Traits ===== ##
 
   show_dynasty = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17684,7 +16456,6 @@ decisions = {
       set_character_flag = show_dynasty
     }
 
-
     revoke_allowed = {
       always = no
     }
@@ -17695,8 +16466,6 @@ decisions = {
   }
 
   hide_dynasty = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17722,8 +16491,6 @@ decisions = {
   }
 
   add_dynasty_content = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17759,8 +16526,6 @@ decisions = {
   }
 
   add_dynasty_trusting = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17796,8 +16561,6 @@ decisions = {
   }
 
   add_dynasty_honest = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17833,8 +16596,6 @@ decisions = {
   }
 
   remove_dynasty_sins = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17888,8 +16649,6 @@ decisions = {
   }
 
   add_dynasty_virtues = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -17940,8 +16699,6 @@ decisions = {
   }
 
   add_dynasty_genetics = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled

@@ -11,9 +11,7 @@
 ############################################################
 
 decisions = {
-
   show_council_laws = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -39,7 +37,6 @@ decisions = {
   }
 
   hide_council_laws = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -66,7 +63,6 @@ decisions = {
   ## --- Council Power --- ##
 
   set_law_voting_abolish = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -107,7 +103,6 @@ decisions = {
   }
 
   set_law_voting_empower = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -150,7 +145,6 @@ decisions = {
   ## --- War Declaration --- ##
 
   set_war_voting_ruler = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -191,7 +185,6 @@ decisions = {
   }
 
   set_war_voting_council = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -234,7 +227,6 @@ decisions = {
   ## --- Grant Titles --- ##
 
   set_grant_title_voting_ruler = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -274,7 +266,6 @@ decisions = {
   }
 
   set_grant_title_voting_council = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -316,7 +307,6 @@ decisions = {
   ## --- Revoke Titles --- ##
 
   set_revoke_title_voting_ruler = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -356,7 +346,6 @@ decisions = {
   }
 
   set_revoke_title_voting_council = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -398,7 +387,6 @@ decisions = {
   ## --- Imprisonment --- ##
 
   set_imprison_voting_ruler = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -437,7 +425,6 @@ decisions = {
   }
 
   set_imprison_voting_council = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -478,7 +465,6 @@ decisions = {
   ## --- Banishment --- ##
 
   set_banish_voting_ruler = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -517,7 +503,6 @@ decisions = {
   }
 
   set_banish_voting_council = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -558,7 +543,6 @@ decisions = {
   ## --- Execution --- ##
 
   set_execution_voting_ruler = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -597,7 +581,6 @@ decisions = {
   }
 
   set_execution_voting_council = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -638,7 +621,6 @@ decisions = {
   ## --- Council Authority --- ##
 
   set_succession_voting_limited = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -670,7 +652,6 @@ decisions = {
   }
 
   set_succession_voting_full = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -700,5 +681,4 @@ decisions = {
       factor = 0
     }
   }
-
 }

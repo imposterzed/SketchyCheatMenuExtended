@@ -12,7 +12,6 @@
 ############################################################
 
 targetted_decisions = {
-
   cheats_disable = {
     filter = self
 
@@ -113,7 +112,6 @@ targetted_decisions = {
       ROOT = { remove_all_afflictions_effect = yes }
     }
 
-
     revoke_allowed = { always = no }
     ai_will_do = { factor = 0 }
   }
@@ -142,11 +140,9 @@ targetted_decisions = {
       }
     }
 
-
     revoke_allowed = { always = no }
     ai_will_do = { factor = 0 }
   }
-
 
   force_marry = {
     filter = all
@@ -154,23 +150,21 @@ targetted_decisions = {
     from_potential = {
       has_character_flag = cheats_enabled
       ai = no
-      age = 12
+      age >= 12
       NOT = { is_married = yes }
       NOT = { is_married_matrilineally = yes }
     }
     potential = {
       ai = yes
-      age = 12
+      age >= 12
       NOT = { same_sex = FROM }
       NOT = { is_married = yes }
       NOT = { is_married_matrilineally = yes }
-
     }
     allow = {
       always = yes
     }
     effect = {
-
       if = {
         limit = {
           FROM = {
@@ -208,7 +202,6 @@ targetted_decisions = {
         is_married = yes
         is_married_matrilineally = yes
       }
-
     }
     allow = {
       always = yes
@@ -230,12 +223,12 @@ targetted_decisions = {
     from_potential = {
       has_character_flag = cheats_enabled
       ai = no
-      age = 12
+      age >= 12
       is_pregnant = no
     }
     potential = {
       ai = yes
-      age = 12
+      age >= 12
       NOT = { same_sex = FROM }
       is_pregnant = no
     }
@@ -493,7 +486,6 @@ targetted_decisions = {
     }
     effect = {
       set_graphical_culture = FROM
-
     }
     revoke_allowed = {
       always = no
@@ -509,7 +501,6 @@ targetted_decisions = {
     from_potential = {
       has_character_flag = cheats_enabled
       ai = no
-
     }
     potential = {
       ai = yes
@@ -528,7 +519,6 @@ targetted_decisions = {
     }
   }
 
-
   get_favor = {
     filter = all
 
@@ -537,7 +527,6 @@ targetted_decisions = {
       has_dlc = "Way of Life"
       ai = no
       NOT = { holds_favor_on = ROOT }
-
     }
     potential = {
       ai = yes
@@ -563,12 +552,12 @@ targetted_decisions = {
       has_character_flag = cheats_enabled
       has_dlc = "Conclave"
       ai = no
-      age = 12
+      age >= 12
       has_concubinage = yes
     }
     potential = {
       ai = yes
-      age = 12
+      age >= 12
       NOT = { same_sex = FROM }
       NOT = { is_married = yes }
       NOT = { is_married_matrilineally = yes }
@@ -714,7 +703,6 @@ targetted_decisions = {
     }
   }
 
-
   increase_stats = {
     filter = all
 
@@ -735,7 +723,6 @@ targetted_decisions = {
       change_learning = 70
       change_stewardship = 70
       set_character_flag = stats_increased
-
     }
     revoke_allowed = {
       always = no
@@ -765,7 +752,6 @@ targetted_decisions = {
       change_learning = -70
       change_stewardship = -70
       clr_character_flag = stats_increased
-
     }
     revoke_allowed = {
       always = no
@@ -774,7 +760,6 @@ targetted_decisions = {
       factor = 0
     }
   }
-
 
   self_stats = {
     filter = self
@@ -800,7 +785,6 @@ targetted_decisions = {
       }
     }
 
-
     revoke_allowed = { always = no }
     ai_will_do = { factor = 0 }
   }
@@ -823,7 +807,6 @@ targetted_decisions = {
       change_learning = -70
       change_stewardship = -70
       clr_character_flag = stats_increased
-
     }
     revoke_allowed = {
       always = no
@@ -916,7 +899,6 @@ targetted_decisions = {
       is_ruler = yes
       lower_real_tier_than = FROM
       NOT = { vassal_of = FROM }
-
     }
     allow = {
       always = yes
@@ -1124,7 +1106,6 @@ targetted_decisions = {
     }
   }
 
-
   # Tags the target as the active puppet ï¿½ clears any prior
   # mind_controlled flag first so only one character carries
   # it at a time. The mc_* decisions below act through that
@@ -1205,11 +1186,11 @@ targetted_decisions = {
     }
     allow = {
       ROOT = {
-        age = 16
+        age >= 16
       }
       any_character = {
         has_character_flag = mind_controlled
-        age = 16
+        age >= 16
         NOT = { spouse = { character = ROOT } }
         OR = {
           AND = {
@@ -1222,7 +1203,6 @@ targetted_decisions = {
           }
         }
       }
-
     }
     effect = {
       any_character = {
@@ -1254,7 +1234,7 @@ targetted_decisions = {
       any_character = {
         has_character_flag = mind_controlled
         is_pregnant = no
-        age = 12
+        age >= 12
         NOT = { same_sex = ROOT }
       }
     }
@@ -1284,11 +1264,11 @@ targetted_decisions = {
     }
     allow = {
       ROOT = {
-        age = 16
+        age >= 16
       }
       any_character = {
         has_character_flag = mind_controlled
-        age = 16
+        age >= 16
         NOT = { is_lover = ROOT }
         OR = {
           AND = {
@@ -1305,7 +1285,6 @@ targetted_decisions = {
           }
         }
       }
-
     }
     effect = {
       any_character = {

@@ -12,10 +12,7 @@
 ############################################################
 
 decisions = {
-
   show_cheats = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -40,8 +37,6 @@ decisions = {
   }
 
   hide_cheats = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -66,7 +61,6 @@ decisions = {
   }
 
   add_gold = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -91,7 +85,6 @@ decisions = {
   }
 
   add_prestige = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -116,7 +109,6 @@ decisions = {
   }
 
   add_piety = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -141,7 +133,6 @@ decisions = {
   }
 
   add_tech = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -168,7 +159,6 @@ decisions = {
   }
 
   add_grace = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -193,7 +183,6 @@ decisions = {
   }
 
   add_society_points = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -219,7 +208,6 @@ decisions = {
   }
 
   increase_society_rank = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -246,7 +234,6 @@ decisions = {
   }
 
   spawn_army_10k = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -285,7 +272,6 @@ decisions = {
   }
 
   spawn_army_100k = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -324,7 +310,6 @@ decisions = {
   }
 
   spawn_fleet = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -423,7 +408,6 @@ decisions = {
       add_character_modifier = { name = triple_levies duration = -1 }
       hidden_tooltip = {
         set_character_flag = triple_levies
-
       }
     }
   }
@@ -449,7 +433,6 @@ decisions = {
   }
 
   world_culture = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -468,7 +451,6 @@ decisions = {
         any_province = {
           culture = ROOT
         }
-
       }
     }
 
@@ -482,7 +464,6 @@ decisions = {
   }
 
   world_religion = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -501,7 +482,6 @@ decisions = {
         any_province = {
           religion = ROOT
         }
-
       }
     }
 
@@ -515,7 +495,6 @@ decisions = {
   }
 
   world_ethnicity = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -544,7 +523,6 @@ decisions = {
   }
 
   convert_realm_culture = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -578,7 +556,6 @@ decisions = {
   }
 
   convert_realm_religion = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -612,7 +589,6 @@ decisions = {
   }
 
   convert_realm_ethnicity = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -643,7 +619,6 @@ decisions = {
   }
 
   raise_rel_authority = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -666,7 +641,6 @@ decisions = {
   # mercenaries, holy orders, and landless titles (titular
   # kingdoms etc.).
   revoke_all_titles = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -745,7 +719,6 @@ decisions = {
             is_ruler = yes
             is_mother = ROOT
             is_father = ROOT
-
           }
         }
         death = { death_reason = death_murder_unknown killer = FROM }
@@ -757,8 +730,6 @@ decisions = {
   # AI characters outside the player's dynasty. Useful
   # after a `play_as` swap.
   cheat_trait_cleaner = {
-
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled

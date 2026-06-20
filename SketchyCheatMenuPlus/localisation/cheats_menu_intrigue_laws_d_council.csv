@@ -54,4 +54,3 @@ set_succession_voting_limited_desc;Sets Council Authority to "Limited".;;;;;;;;;
 
 set_succession_voting_full;----Set Council Authority: Full;;;;;;;;;;;;;x
 set_succession_voting_full_desc;Sets Council Authority to "Full".;;;;;;;;;;;;;x
-

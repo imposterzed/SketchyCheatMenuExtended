@@ -11,9 +11,7 @@
 ############################################################
 
 decisions = {
-
   show_obligation_laws = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -39,7 +37,6 @@ decisions = {
   }
 
   hide_obligation_laws = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -66,7 +63,6 @@ decisions = {
   ## --- Noble Obligations --- ##
 
   cycle_obligations_feudal_toward_tax = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -142,7 +138,6 @@ decisions = {
   }
 
   cycle_obligations_feudal_toward_levy = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -209,7 +204,6 @@ decisions = {
   ## --- Iqta Obligations --- ##
 
   cycle_obligations_iqta_toward_tax = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -285,7 +279,6 @@ decisions = {
   }
 
   cycle_obligations_iqta_toward_levy = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -352,7 +345,6 @@ decisions = {
   ## --- Burgher Obligations --- ##
 
   cycle_obligations_republic_toward_tax = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -427,7 +419,6 @@ decisions = {
   }
 
   cycle_obligations_republic_toward_levy = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -493,7 +484,6 @@ decisions = {
   ## --- Church Obligations --- ##
 
   cycle_obligations_theocracy_toward_tax = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -569,7 +559,6 @@ decisions = {
   }
 
   cycle_obligations_theocracy_toward_levy = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -636,7 +625,6 @@ decisions = {
   ## --- Tribal Obligations --- ##
 
   cycle_obligations_tribal_toward_tax = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -711,7 +699,6 @@ decisions = {
   }
 
   cycle_obligations_tribal_toward_levy = {
-
     potential = {
       ai = no
       has_character_flag = cheats_enabled
@@ -773,5 +760,4 @@ decisions = {
       factor = 0
     }
   }
-
 }

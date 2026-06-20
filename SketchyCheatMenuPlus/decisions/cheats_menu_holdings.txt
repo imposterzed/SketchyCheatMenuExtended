@@ -14,7 +14,6 @@
 ############################################################
 
 settlement_decisions = {
-
   upgrade_castle = {
     filter = realm_owned
 
@@ -23,7 +22,6 @@ settlement_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
-
       holding_type = castle
       NOT = {
         AND = {
@@ -40,7 +38,6 @@ settlement_decisions = {
           has_castle_culture_buildings_trigger = yes
         }
       }
-
     }
     allow = {
       always = yes
@@ -99,7 +96,6 @@ settlement_decisions = {
     }
   }
 
-
   upgrade_temple = {
     filter = realm_owned
 
@@ -108,7 +104,6 @@ settlement_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
-
       holding_type = temple
 
       NOT = {
@@ -123,7 +118,6 @@ settlement_decisions = {
           has_building = tp_monastery_6
         }
       }
-
     }
     allow = {
       always = yes
@@ -169,7 +163,6 @@ settlement_decisions = {
       add_building = tp_shipyard_4
       add_building = tp_school_1
       add_building = tp_school_2
-
     }
     ai_will_do = {
       factor = 0
@@ -184,7 +177,6 @@ settlement_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
-
       holding_type = city
       NOT = {
         AND = {
@@ -199,7 +191,6 @@ settlement_decisions = {
           has_building = ct_university_3
         }
       }
-
     }
     allow = {
       always = yes
@@ -264,7 +255,6 @@ settlement_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
-
       holding_type = tribal
 
       NOT = {
@@ -280,7 +270,6 @@ settlement_decisions = {
           has_building = tb_arsenal_4
         }
       }
-
     }
     allow = {
       always = yes
@@ -322,7 +311,6 @@ settlement_decisions = {
       add_building = tb_arsenal_2
       add_building = tb_arsenal_3
       add_building = tb_arsenal_4
-
     }
     ai_will_do = {
       factor = 0

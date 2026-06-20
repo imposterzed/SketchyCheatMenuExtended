@@ -1,11 +1,13 @@
 ############################################################
 ##                Sketchy Cheat Menu Plus                 ##
 ##           Section Gate Religion Triggers               ##
+############################################################
 ##                                                        ##
 ## Religion-set checks used by section show toggles to    ##
 ## hide categories that don't apply to the character's    ##
 ## current religion. Mirrors the HWR / Warrior Lodge      ##
 ## convention.                                            ##
+##                                                        ##
 ############################################################
 
 # Has any Warrior Lodge religion (9 reformed-pagan religions with a Warrior Lodge leader trait)

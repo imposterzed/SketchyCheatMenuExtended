@@ -45,7 +45,6 @@ builder = {
 
 # Massive direct rule (+100 demesne size) and tax flood.
 landlord = {
-
   customizer = no
   random = no
 
@@ -55,21 +54,17 @@ landlord = {
 
 # Plots and arrests both succeed (+10 plot power / arrest chance).
 conspirator = {
-
   customizer = no
   random = no
 
   plot_power_modifier = 10
   arrest_chance_modifier = 10
-
 }
 
 # Everyone loves you (+10000 opinion from all characters).
 beloved = {
-
   customizer = no
   random = no
 
   general_opinion = 10000
-
 }

@@ -3,7 +3,7 @@
 ##                Holding-Building Helpers                ##
 ############################################################
 
-# ===== Strip helpers ===== #
+## --- Strip helpers --- ##
 
 # convert_to leaves the old holding's buildings on the slot,
 # which leads to the game freezing. Strip every building of
@@ -728,8 +728,7 @@ strip_nomad_buildings_effect = {
   remove_building = no_yam_8
 }
 
-
-# ===== CleanSlate rename compat hooks ===== #
+## --- CleanSlate rename compat hooks --- ##
 
 # Aztec castle
 remove_aztec_castle_buildings_effect = {
@@ -765,8 +764,7 @@ remove_aztec_tribal_buildings_effect = {
   }
 }
 
-
-# ===== Add helpers ===== #
+## --- Add helpers --- ##
 
 # Add only the family matching the holding's CURRENT culture
 # to avoid bloating saves with inactive entries.
