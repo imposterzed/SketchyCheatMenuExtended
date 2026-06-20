@@ -36,6 +36,7 @@ settlement_decisions = {
           has_building = ca_shipyard_4
 
           has_castle_culture_buildings_trigger = yes
+          has_castle_special_buildings_trigger = yes
         }
       }
     }
@@ -90,6 +91,7 @@ settlement_decisions = {
       add_building = ca_shipyard_4
 
       add_castle_culture_buildings_effect = yes
+      add_castle_special_buildings_effect = yes
     }
     ai_will_do = {
       factor = 0
@@ -116,6 +118,8 @@ settlement_decisions = {
           has_building = tp_shipyard_4
           has_building = tp_school_2
           has_building = tp_monastery_6
+
+          has_temple_special_buildings_trigger = yes
         }
       }
     }
@@ -163,6 +167,8 @@ settlement_decisions = {
       add_building = tp_shipyard_4
       add_building = tp_school_1
       add_building = tp_school_2
+
+      add_temple_special_buildings_effect = yes
     }
     ai_will_do = {
       factor = 0
@@ -189,6 +195,8 @@ settlement_decisions = {
           has_building = ct_port_5
           has_building = ct_shipyard_4
           has_building = ct_university_3
+
+          has_city_special_buildings_trigger = yes
         }
       }
     }
@@ -241,6 +249,8 @@ settlement_decisions = {
       add_building = ct_university_1
       add_building = ct_university_2
       add_building = ct_university_3
+
+      add_city_special_buildings_effect = yes
     }
     ai_will_do = {
       factor = 0
@@ -268,6 +278,8 @@ settlement_decisions = {
           has_building = tb_steppe_barracks_4
           has_building = tb_steppe_stable_4
           has_building = tb_arsenal_4
+
+          has_tribal_special_buildings_trigger = yes
         }
       }
     }
@@ -311,6 +323,8 @@ settlement_decisions = {
       add_building = tb_arsenal_2
       add_building = tb_arsenal_3
       add_building = tb_arsenal_4
+
+      add_tribal_special_buildings_effect = yes
     }
     ai_will_do = {
       factor = 0

@@ -74,3 +74,119 @@ strip_temple_buildings_effect = {
   remove_building = tp_wall_q_4
   remove_building = tp_wall_q_5
 }
+
+## --- Add helpers --- ##
+
+# Add only the buildings whose vanilla potential applies
+# to avoid bloating saves with inactive entries.
+
+# temple: bloodline / religion / province-modifier conditional
+add_temple_special_buildings_effect = {
+  # Monumental Shrines (HF monumental bloodline)
+  if = {
+    limit = {
+      FROM = {
+        any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+      }
+    }
+    add_building = tp_monumental_shrines_1
+    add_building = tp_monumental_shrines_2
+    add_building = tp_monumental_shrines_3
+    add_building = tp_monumental_shrines_4
+  }
+
+  # Saint Shrine (province tomb modifier)
+  if = {
+    limit = {
+      location = {
+        OR = {
+          has_province_modifier = tomb_of_a_saint
+          has_province_modifier = pillaged_tomb_of_a_saint
+        }
+      }
+    }
+    add_building = tp_saint_shrine
+  }
+
+  # Hellenic deity shrines (one per dedication title flag; vanilla
+  # sets exactly one flag per temple via the dedication event chain).
+  # Holder must also be Hellenic â€” tp_shrine_X lacks a self-keep
+  # clause, so without a Hellenic holder the building is hidden in UI
+  # (vanilla's hellenic_dedicate_temple decision enforces the same
+  # via its allow's `holder_scope = { religion = FROM }` check).
+  if = {
+    limit = {
+      FROM = {
+        OR = {
+          religion = hellenic_pagan
+          religion = hellenic_pagan_reformed
+        }
+      }
+      holder_scope = {
+        OR = {
+          religion = hellenic_pagan
+          religion = hellenic_pagan_reformed
+        }
+      }
+    }
+    if = {
+      limit = { has_title_flag = flag_dedicated_to_aphrodite }
+      add_building = tp_shrine_aphrodite
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_apollo }
+      add_building = tp_shrine_apollo
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_ares }
+      add_building = tp_shrine_ares
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_arthemis }
+      add_building = tp_shrine_arthemis
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_athena }
+      add_building = tp_shrine_athena
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_demeter }
+      add_building = tp_shrine_demeter
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_ephaestus }
+      add_building = tp_shrine_ephaestus
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_hades }
+      add_building = tp_shrine_hades
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_hermes }
+      add_building = tp_shrine_hermes
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_hestia }
+      add_building = tp_shrine_hestia
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_poseidon }
+      add_building = tp_shrine_poseidon
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_zeus }
+      add_building = tp_shrine_zeus
+    }
+  }
+}

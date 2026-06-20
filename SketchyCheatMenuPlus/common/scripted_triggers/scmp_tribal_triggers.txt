@@ -1,0 +1,48 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                Tribal Building Triggers                ##
+############################################################
+
+## --- Special-building presence checks --- ##
+
+# Returns yes when every applicable special-buildings family is
+# at top tier.
+
+# tribal: religion / terrain conditional
+has_tribal_special_buildings_trigger = {
+  # Defensive Fortifications (Baltic / Finnish / Slavic / West African / Bon pagan)
+  trigger_if = {
+    limit = {
+      FROM = {
+        OR = {
+          religion = baltic_pagan
+          religion = baltic_pagan_reformed
+          religion = finnish_pagan
+          religion = finnish_pagan_reformed
+          religion = slavic_pagan
+          religion = slavic_pagan_reformed
+          religion = west_african_pagan
+          religion = west_african_pagan_reformed
+          is_bon_religion_trigger = yes
+        }
+      }
+    }
+    has_building = tb_defensive_fortifications_4
+  }
+
+  # Desert terrain + desert-eligible culture
+  trigger_if = {
+    limit = {
+      location = {
+        terrain = desert
+        OR = {
+          culture_group = east_african
+          culture_group = west_african
+          culture_group = arabic
+          culture_group = iranian
+        }
+      }
+    }
+    has_building = tb_desert_stable_4
+  }
+}

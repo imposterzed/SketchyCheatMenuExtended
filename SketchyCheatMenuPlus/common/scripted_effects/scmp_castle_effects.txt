@@ -246,12 +246,35 @@ remove_aztec_castle_buildings_effect = {
   }
 }
 
+# Aztec castle (stack-aware add; building IDs differ per stack)
+add_aztec_castle_buildings_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { location = { culture = nahua } }
+      add_building = ca_culture_nahua_1
+      add_building = ca_culture_nahua_2
+      add_building = ca_culture_nahua_3
+      add_building = ca_culture_nahua_4
+    }
+  }
+  else = {
+    if = {
+      limit = { location = { culture = nahuatl } }
+      add_building = ca_culture_nahuatl_1
+      add_building = ca_culture_nahuatl_2
+      add_building = ca_culture_nahuatl_3
+      add_building = ca_culture_nahuatl_4
+    }
+  }
+}
+
 ## --- Add helpers --- ##
 
 # Add only the family matching the holding's CURRENT culture
 # to avoid bloating saves with inactive entries.
 
-# castle: 26 cultural families
+# castle: 34 cultural ladders
 add_castle_culture_buildings_effect = {
   if = {
     limit = { location = { culture = dutch } }
@@ -270,18 +293,7 @@ add_castle_culture_buildings_effect = {
   }
 
   if = {
-    limit = {
-      location = {
-        OR = {
-          culture = frankish
-          culture = occitan
-          culture = norman
-          culture = german
-          culture = breton
-          culture = outremer
-        }
-      }
-    }
+    limit = { location = { is_frank_norman_german_ladder_culture_trigger = yes } }
     add_building = ca_culture_frank_norman_german_1
     add_building = ca_culture_frank_norman_german_2
     add_building = ca_culture_frank_norman_german_3
@@ -289,14 +301,7 @@ add_castle_culture_buildings_effect = {
   }
 
   if = {
-    limit = {
-      location = {
-        OR = {
-          culture = lombard
-          culture = old_frankish
-        }
-      }
-    }
+    limit = { location = { is_germanic_ladder_culture_trigger = yes } }
     add_building = ca_culture_germanic_1
     add_building = ca_culture_germanic_2
     add_building = ca_culture_germanic_3
@@ -304,24 +309,7 @@ add_castle_culture_buildings_effect = {
   }
 
   if = {
-    limit = {
-      location = {
-        OR = {
-          culture = turkish
-          culture = pecheneg
-          culture = cuman
-          culture = khazar
-          culture = bolghar
-          culture = avar
-          culture = karluk
-          culture = kirghiz
-          culture = uyghur
-          culture = mongol
-          culture = khitan
-          culture_group = iranian
-        }
-      }
-    }
+    limit = { location = { is_altaic_ladder_culture_trigger = yes } }
     add_building = ca_culture_group_altaic_1
     add_building = ca_culture_group_altaic_2
     add_building = ca_culture_group_altaic_3
@@ -329,15 +317,7 @@ add_castle_culture_buildings_effect = {
   }
 
   if = {
-    limit = {
-      location = {
-        OR = {
-          culture = bedouin_arabic
-          culture = levantine_arabic
-          culture = egyptian_arabic
-        }
-      }
-    }
+    limit = { location = { is_arabic_ladder_culture_trigger = yes } }
     add_building = ca_culture_group_arabic_1
     add_building = ca_culture_group_arabic_2
     add_building = ca_culture_group_arabic_3
@@ -359,14 +339,14 @@ add_castle_culture_buildings_effect = {
     add_building = ca_culture_group_baltic_4
   }
 
+  # Byzantine ladder excludes coptic + arberian per vanilla
+  # potential (those cultures have dedicated ladders).
   if = {
     limit = {
       location = {
-        OR = {
-          culture_group = byzantine
-          culture = coptic
-          culture = arberian
-        }
+        culture_group = byzantine
+        NOT = { culture = coptic }
+        NOT = { culture = arberian }
       }
     }
     add_building = ca_culture_group_byzantine_1
@@ -384,16 +364,7 @@ add_castle_culture_buildings_effect = {
   }
 
   if = {
-    limit = {
-      location = {
-        OR = {
-          culture_group = north_germanic
-          culture = saxon
-          culture = old_saxon
-          culture = frisian
-        }
-      }
-    }
+    limit = { location = { is_north_germanic_ladder_culture_trigger = yes } }
     add_building = ca_culture_group_north_germanic_1
     add_building = ca_culture_group_north_germanic_2
     add_building = ca_culture_group_north_germanic_3
@@ -470,14 +441,7 @@ add_castle_culture_buildings_effect = {
   }
 
   if = {
-    limit = {
-      location = {
-        OR = {
-          culture = andalusian_arabic
-          culture = maghreb_arabic
-        }
-      }
-    }
+    limit = { location = { is_moors_ladder_culture_trigger = yes } }
     add_building = ca_culture_moors_1
     add_building = ca_culture_moors_2
     add_building = ca_culture_moors_3
@@ -563,24 +527,162 @@ add_castle_culture_buildings_effect = {
     add_building = ca_culture_west_african_4
   }
 
-  # Aztec (CleanSlate rename)
+  # Aztec (CleanSlate rename ï¿½ stack-aware helper)
+  add_aztec_castle_buildings_effect = yes
+
   if = {
-    limit = { has_global_flag = cleanslate_active }
-    if = {
-      limit = { location = { culture = nahua } }
-      add_building = ca_culture_nahua_1
-      add_building = ca_culture_nahua_2
-      add_building = ca_culture_nahua_3
-      add_building = ca_culture_nahua_4
-    }
+    limit = { location = { culture = jurchen } }
+    add_building = ca_culture_altaic_jurchen_1
+    add_building = ca_culture_altaic_jurchen_2
+    add_building = ca_culture_altaic_jurchen_3
+    add_building = ca_culture_altaic_jurchen_4
   }
-  else = {
-    if = {
-      limit = { location = { culture = nahuatl } }
-      add_building = ca_culture_nahuatl_1
-      add_building = ca_culture_nahuatl_2
-      add_building = ca_culture_nahuatl_3
-      add_building = ca_culture_nahuatl_4
+
+  # Animal cultures (CleanSlate-only)
+  if = {
+    limit = { location = { is_animal_ladder_culture_trigger = yes } }
+    add_building = ca_culture_animal_1
+    add_building = ca_culture_animal_2
+    add_building = ca_culture_animal_3
+    add_building = ca_culture_animal_4
+  }
+
+  if = {
+    limit = { location = { culture = arberian } }
+    add_building = ca_culture_arberian_1
+    add_building = ca_culture_arberian_2
+    add_building = ca_culture_arberian_3
+    add_building = ca_culture_arberian_4
+  }
+
+  if = {
+    limit = { location = { culture = han } }
+    add_building = ca_culture_chinese_han_1
+    add_building = ca_culture_chinese_han_2
+    add_building = ca_culture_chinese_han_3
+    add_building = ca_culture_chinese_han_4
+  }
+
+  if = {
+    limit = { location = { culture = coptic } }
+    add_building = ca_culture_coptic_1
+    add_building = ca_culture_coptic_2
+    add_building = ca_culture_coptic_3
+    add_building = ca_culture_coptic_4
+  }
+
+  if = {
+    limit = { location = { culture = roman } }
+    add_building = ca_culture_roman_1
+    add_building = ca_culture_roman_2
+    add_building = ca_culture_roman_3
+    add_building = ca_culture_roman_4
+  }
+
+  if = {
+    limit = { location = { culture = sardinian } }
+    add_building = ca_culture_sardinian_1
+    add_building = ca_culture_sardinian_2
+    add_building = ca_culture_sardinian_3
+    add_building = ca_culture_sardinian_4
+  }
+
+  if = {
+    limit = { location = { culture_group = tibetan_group } }
+    add_building = ca_culture_tibetan_1
+    add_building = ca_culture_tibetan_2
+    add_building = ca_culture_tibetan_3
+    add_building = ca_culture_tibetan_4
+  }
+}
+
+# castle: bloodline / terrain / government / title conditional
+add_castle_special_buildings_effect = {
+  # Theodosian Walls (Constantinople-only)
+  if = {
+    limit = { title = b_constantinople }
+    add_building = ca_con_wall_6
+  }
+
+  # Oppressive Fortifications (HF blood-building bloodline)
+  if = {
+    limit = {
+      FROM = {
+        any_owned_bloodline = { has_bloodline_flag = bloodline_blood_building }
+      }
     }
+    add_building = ca_oppressive_fortifications_1
+    add_building = ca_oppressive_fortifications_2
+    add_building = ca_oppressive_fortifications_3
+    add_building = ca_oppressive_fortifications_4
+  }
+
+  # Special Fortifications (HF castellan bloodline)
+  if = {
+    limit = {
+      FROM = {
+        any_owned_bloodline = { has_bloodline_flag = bloodline_castellan }
+      }
+    }
+    add_building = ca_special_fortifications_1
+    add_building = ca_special_fortifications_2
+    add_building = ca_special_fortifications_3
+    add_building = ca_special_fortifications_4
+  }
+
+  # Steppe terrain + steppe-eligible culture
+  if = {
+    limit = {
+      location = {
+        terrain = steppe
+        OR = {
+          culture_group = altaic
+          culture_group = magyar
+          culture = alan
+          culture_group = iranian
+        }
+      }
+    }
+    add_building = ca_steppe_barracks_1
+    add_building = ca_steppe_barracks_2
+    add_building = ca_steppe_barracks_3
+    add_building = ca_steppe_barracks_4
+    add_building = ca_steppe_barracks_5
+    add_building = ca_steppe_barracks_6
+    add_building = ca_steppe_stable_1
+    add_building = ca_steppe_stable_2
+    add_building = ca_steppe_stable_3
+    add_building = ca_steppe_stable_4
+    add_building = ca_steppe_stable_5
+    add_building = ca_steppe_stable_6
+  }
+
+  # Desert terrain + desert-eligible culture
+  if = {
+    limit = {
+      location = {
+        terrain = desert
+        OR = {
+          culture_group = east_african
+          culture_group = west_african
+          culture_group = arabic
+        }
+      }
+    }
+    add_building = ca_desert_stable_1
+    add_building = ca_desert_stable_2
+    add_building = ca_desert_stable_3
+    add_building = ca_desert_stable_4
+    add_building = ca_desert_stable_5
+    add_building = ca_desert_stable_6
+  }
+
+  # Monastic-feudal government
+  if = {
+    limit = { FROM = { is_monastic_feudal_government_trigger = yes } }
+    add_building = ca_government_monastery_1
+    add_building = ca_government_monastery_2
+    add_building = ca_government_monastery_3
+    add_building = ca_government_monastery_4
   }
 }

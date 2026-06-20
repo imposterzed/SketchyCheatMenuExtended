@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.1] - 2026-06-20
+
+### Added
+- **Conditional buildings in `upgrade_X`** — 41 vanilla buildings (HF-bloodline / Hellenic / Merchant Republic / terrain / government) added to `upgrade_castle` / `upgrade_temple` / `upgrade_city` / `upgrade_tribal` via new gated helpers + paired presence triggers. Each gated to its vanilla potential.
+- **Additional castle culture-ladder coverage** — 8 more culture ladders added to `upgrade_castle` (Coptic, Arberian, Jurchen, Han Chinese, Roman, Sardinian, Tibetan, and Animal). Each matches its vanilla building potential; the Animal ladder fires only on CleanSlate (those cultures don't exist in vanilla).
+- **14 SCMPD debug events** (`SCMPD.2`-`SCMPD.15`) in the Debug sub-mod for v0.9.1 testing: HF-bloodline grants, Hellenic temple dedications, `tomb_of_a_saint` modifier, and province-culture overrides.
+
+### Changed
+- README updated for the new conditional adds and SCMPD debug events.
+- Aztec block in `add_castle_culture_buildings_effect` extracted into CleanSlate-aware helpers, mirroring the existing `remove_aztec_castle_buildings_effect` pattern.
+
+### Fixed
+- **CleanSlate culture compatibility** — `add_castle_culture_buildings_effect` and its trigger now handle both vanilla and CleanSlate culture names via new compat triggers in `scmp_culture_compat_triggers.txt`. 6 culture branches were silently failing under CleanSlate due to vanilla-only culture names. The byzantine branch now also correctly excludes Coptic and Arberian, which have dedicated buildings.
+
 ## [0.9.0] - 2026-06-20
 
 ### Changed

@@ -68,3 +68,37 @@ strip_city_buildings_effect = {
   remove_building = ct_wall_q_4
   remove_building = ct_wall_q_5
 }
+
+## --- Add helpers --- ##
+
+# Add only the buildings whose vanilla potential applies
+# to avoid bloating saves with inactive entries.
+
+# city: bloodline / merchant-republic conditional
+add_city_special_buildings_effect = {
+  # Planned Infrastructure (HF architect bloodline)
+  if = {
+    limit = {
+      FROM = {
+        any_owned_bloodline = { has_bloodline_flag = bloodline_architect }
+      }
+    }
+    add_building = ct_planned_infrastructure_1
+    add_building = ct_planned_infrastructure_2
+    add_building = ct_planned_infrastructure_3
+    add_building = ct_planned_infrastructure_4
+  }
+
+  # Merchant Republic arsenal (patrician's family palace only)
+  if = {
+    limit = {
+      FROM = {
+        is_merchant_republic = yes
+        capital_holding = { title = ROOT }
+      }
+    }
+    add_building = ct_rep_arsenal_1
+    add_building = ct_rep_arsenal_2
+    add_building = ct_rep_arsenal_3
+  }
+}
