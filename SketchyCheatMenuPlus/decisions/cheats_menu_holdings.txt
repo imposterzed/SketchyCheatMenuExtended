@@ -705,40 +705,134 @@ settlement_decisions = {
     }
   }
 
+  scmp_build_hospital = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_dlc = "Reapers"
+    }
+    potential = {
+      is_capital = yes
+      NOT = { location = { has_hospital = yes } }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      location = {
+        build_holding = {
+          type = hospital
+        }
+      }
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  build_fort = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_dlc = "Conclave"
+    }
+    potential = {
+      is_capital = yes
+      NOT = { location = { has_fort = yes } }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      location = {
+        build_holding = {
+          type = fort
+        }
+      }
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  build_trade_post = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_dlc = "The Republic"
+    }
+    potential = {
+      is_capital = yes
+      NOT = { location = { has_trade_post = yes } }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      location = {
+        build_holding = {
+          type = trade_post
+        }
+      }
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   upgrade_hospital_fully = {
     filter = owned
 
     from_potential = {
       ai = no
       has_character_flag = cheats_enabled
+      has_dlc = "Reapers"
     }
     potential = {
       is_capital = yes
       location = {
         has_hospital = yes
+        NOT = {
+          AND = {
+            hospital_has_building = hospital_building_5
+            hospital_has_building = leper_colony_1
+            hospital_has_building = soup_kitchen_1
+            hospital_has_building = chapel_1
+            hospital_has_building = translation_house_1
+            hospital_has_building = pilgrims_inn_1
+            hospital_has_building = library_1
+            hospital_has_building = pharmacology_laboratory_1
+            hospital_has_building = medical_academy_1
+            hospital_has_building = observatory_1
+          }
+        }
       }
     }
     allow = {
       always = yes
     }
     effect = {
-      hidden_tooltip = {
-        location = {
-          add_to_extra_holding = { type = hospital building = hospital_building_1 }
-          add_to_extra_holding = { type = hospital building = hospital_building_2 }
-          add_to_extra_holding = { type = hospital building = hospital_building_3 }
-          add_to_extra_holding = { type = hospital building = hospital_building_4 }
-          add_to_extra_holding = { type = hospital building = hospital_building_5 }
-          add_to_extra_holding = { type = hospital building = leper_colony_1 }
-          add_to_extra_holding = { type = hospital building = soup_kitchen_1 }
-          add_to_extra_holding = { type = hospital building = chapel_1 }
-          add_to_extra_holding = { type = hospital building = translation_house_1 }
-          add_to_extra_holding = { type = hospital building = pilgrims_inn_1 }
-          add_to_extra_holding = { type = hospital building = library_1 }
-          add_to_extra_holding = { type = hospital building = pharmacology_laboratory_1 }
-          add_to_extra_holding = { type = hospital building = medical_academy_1 }
-          add_to_extra_holding = { type = hospital building = observatory_1 }
-        }
+      location = {
+        add_to_extra_holding = { type = hospital building = hospital_building_1 }
+        add_to_extra_holding = { type = hospital building = hospital_building_2 }
+        add_to_extra_holding = { type = hospital building = hospital_building_3 }
+        add_to_extra_holding = { type = hospital building = hospital_building_4 }
+        add_to_extra_holding = { type = hospital building = hospital_building_5 }
+        add_to_extra_holding = { type = hospital building = leper_colony_1 }
+        add_to_extra_holding = { type = hospital building = soup_kitchen_1 }
+        add_to_extra_holding = { type = hospital building = chapel_1 }
+        add_to_extra_holding = { type = hospital building = translation_house_1 }
+        add_to_extra_holding = { type = hospital building = pilgrims_inn_1 }
+        add_to_extra_holding = { type = hospital building = library_1 }
+        add_to_extra_holding = { type = hospital building = pharmacology_laboratory_1 }
+        add_to_extra_holding = { type = hospital building = medical_academy_1 }
+        add_to_extra_holding = { type = hospital building = observatory_1 }
       }
     }
     ai_will_do = {

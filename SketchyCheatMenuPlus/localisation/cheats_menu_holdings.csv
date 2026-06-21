@@ -22,11 +22,20 @@ build_castle_desc;Builds a castle in an empty holding slot.;;;;;;;;;;;;;x
 build_city;Build City;;;;;;;;;;;;;x
 build_city_desc;Builds a city in an empty holding slot.;;;;;;;;;;;;;x
 
+build_fort;Build Fort;;;;;;;;;;;;;x
+build_fort_desc;Builds a fort in this county.;;;;;;;;;;;;;x
+
+scmp_build_hospital;Build Hospital;;;;;;;;;;;;;x
+scmp_build_hospital_desc;Builds a hospital in this county.;;;;;;;;;;;;;x
+
 build_nomad;Build Nomad;;;;;;;;;;;;;x
 build_nomad_desc;Builds a nomad clan in an empty holding slot.;;;;;;;;;;;;;x
 
 build_temple;Build Temple;;;;;;;;;;;;;x
 build_temple_desc;Builds a temple in an empty holding slot.;;;;;;;;;;;;;x
+
+build_trade_post;Build Trade Post;;;;;;;;;;;;;x
+build_trade_post_desc;Builds a trade post in this county.;;;;;;;;;;;;;x
 
 build_tribal;Build Tribal;;;;;;;;;;;;;x
 build_tribal_desc;Builds a tribal holding in an empty holding slot.;;;;;;;;;;;;;x
@@ -48,3 +57,6 @@ upgrade_nomad_desc;Fully upgrades this nomad holding with all buildings.;;;;;;;;
 
 upgrade_hospital_fully;Fully Upgrade Hospital;;;;;;;;;;;;;x
 upgrade_hospital_fully_desc;Fully upgrades hospital with all buildings.;;;;;;;;;;;;;x
+
+upgrade_trade_post_fully;Fully Upgrade;;;;;;;;;;;;;x
+upgrade_trade_post_fully_desc;Fully upgrades this trade post with all applicable buildings.;;;;;;;;;;;;;x

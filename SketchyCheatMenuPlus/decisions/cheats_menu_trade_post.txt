@@ -1,0 +1,48 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##           Cheats Menu - Trade Post Decisions           ##
+############################################################
+##                                                        ##
+## Right-click decisions on a trade post (trade_post_     ##
+## decisions block, distinct from settlement_decisions).  ##
+## upgrade_trade_post_fully adds every applicable vanilla ##
+## building. Gated by has_character_flag = cheats_enabled ##
+## and has_dlc = "The Republic".                          ##
+##                                                        ##
+############################################################
+
+trade_post_decisions = {
+  upgrade_trade_post_fully = {
+    only_playable = yes
+    filter = sub_realm_owned
+    ai_target_filter = sub_realm_owned
+    ai = no
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_dlc = "The Republic"
+    }
+    potential = {
+      NOT = {
+        location = {
+          has_trade_post_buildings_trigger = yes
+        }
+      }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      location = {
+        add_trade_post_buildings_effect = yes
+      }
+    }
+    revoke_allowed = {
+      always = no
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+}

@@ -34,9 +34,10 @@ Right-click any settlement to:
 
 - **Fully upgrade the holding** — every base building plus applicable culture, religion, terrain, bloodline, and title-conditional buildings (Theodosian Walls on Constantinople, HF-bloodline fortifications, Hellenic deity shrines, MR Arsenal on a patrician's family palace, Steppe / Desert / Monastic / Great Pillar buildings on matching provinces, etc.).
 - **Convert** to a different type (castle / temple / city / tribal / nomad). Strips the old holding's buildings first to avoid the game freeze that vanilla `convert_to` causes.
-- **Build** a new holding in an empty county slot (castle / temple / city / tribal / nomad). Right-click the county capital.
+- **Build** a new holding in an empty county slot (castle / temple / city / tribal / nomad), or an extra (hospital / fort / trade post). Right-click the county capital.
 - **Delete** the holding.
-- **Upgrade a hospital fully** (Reaper's Due).
+- **Upgrade a hospital fully** (Reaper's Due) — right-click the county capital.
+- **Upgrade a trade post fully** (The Republic) — right-click the trade post.
 
 ### Realm-wide cheats
 
@@ -131,7 +132,7 @@ Toggle 8 council voting powers between ruler and council on your primary title v
 The mod works without any DLC. Some cheats are tied to DLC systems and behave differently depending on what you have installed:
 
 - **Charlemagne** — without it, the Viceroyalty toggle is hidden.
-- **Conclave** — without it, `make_consort` is hidden. The 2 consort-themed birth-marker toggles (`child_of_concubine` / `child_of_consort`) stay available. The 12 Childhood toggles stay available. Administration is 3-state (Feudal / Late / Imperial) with Conclave; without Conclave it's binary Feudal ↔ Imperial. The Controlled Realm Inheritance, Vassal War Declaration, Status of Women, Revoke Title, all 5 Obligation Laws families, and all 8 Council Voting Power families are hidden without Conclave; the Crown Authority cycle is hidden with Conclave (replaced by those Conclave realm laws).
+- **Conclave** — without it, `make_consort` is hidden. The 2 consort-themed birth-marker toggles (`child_of_concubine` / `child_of_consort`) stay available. The 12 Childhood toggles stay available. Administration is 3-state (Feudal / Late / Imperial) with Conclave; without Conclave it's binary Feudal ↔ Imperial. The Controlled Realm Inheritance, Vassal War Declaration, Status of Women, Revoke Title, all 5 Obligation Laws families, all 8 Council Voting Power families, and `build_fort` are hidden without Conclave; the Crown Authority cycle is hidden with Conclave (replaced by those Conclave realm laws).
 - **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available. `add_scarred_mid` (Grievously Scarred) and `add_scarred_high` (Horrifically Scarred) are hidden without HF — the vanilla traits gate themselves to HF. Base `add_scarred` and all three `remove_*` counterparts stay available for cleanup. The 12 Zodiac toggles stay available. The 4 Pagan Branches toggles (Syncretist / Spiritualist / Militant / Tribalist) stay available. `set_succ_eldership` is hidden without HF. `set_succ_hre_elective` stays available. `upgrade_castle` / `upgrade_temple` / `upgrade_city` / `upgrade_tribal` stay available without HF. The HF-bloodline buildings inside them (Oppressive Fortifications / Special Fortifications / Monumental Shrines / Planned Infrastructure), Hellenic deity shrines, and Great Pillars require HF (the establish-pillar decision sets the province flag the building gates on).
 - **Horse Lords** — without it, `set_nomadic`, the three `_nomad` Destroy-Horde variants (`set_feudal_nomad` / `set_iqta_nomad` / `set_tribal_nomad`), `set_succ_nomad_succession`, `convert_nomad`, and `build_nomad` are hidden.
 - **Jade Dragon** — without it, the 4 Chinese Commander toggles (Way of the Dog / Dragon / Leopard / Tiger) and the 3 Kowtow tier toggles (Tier I / II / III) stay available.
@@ -141,8 +142,8 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
 - **Sunset Invasion** — the Aztec Holy War Reward (`eagle_warrior` / `eagle_knight`) and `bad_priest_aztec` don't appear, since you can't be Aztec without Sunset. The 3 Bloodthirsty Gods toggles (Haemophiliac / Haemophant / Haemoarch) stay available.
 - **Sword of Islam** — `set_iqta` stays available without it. Muslim-specific mechanics layered on top (polygamy, decadence, peasant revolts) require SoI to function.
 - **The Old Gods** — `set_tribal` and the Viking / Pirate / Ravager raiding toggles stay available without it. Tribal-specific gameplay (retinues, prestige raiding, Adopt Feudalism path) requires TOG.
-- **The Reaper's Due** — without it, `upgrade_hospital_fully` doesn't appear (no hospitals to upgrade). `add_physician` / `remove_physician` / `spawn_physician` stay available, as do the 6 limb-loss toggles (one_eyed / one_handed / one_legged / disfigured / mangled / severely_injured) and `sick_incapable`.
-- **The Republic** — without it, `set_succ_patrician_elective` is hidden. The Merchant Republic Arsenal inside `upgrade_city` requires The Republic.
+- **The Reaper's Due** — without it, `scmp_build_hospital` and `upgrade_hospital_fully` are hidden. `add_physician` / `remove_physician` / `spawn_physician` stay available, as do the 6 limb-loss toggles (one_eyed / one_handed / one_legged / disfigured / mangled / severely_injured) and `sick_incapable`.
+- **The Republic** — without it, `set_succ_patrician_elective`, `build_trade_post`, and `upgrade_trade_post_fully` are hidden. The Merchant Republic Arsenal inside `upgrade_city` requires The Republic.
 - **Way of Life** — without it, `get_favor` and `clear_your_focus` are hidden. The 16 lifestyle-trait toggles (schemer, seducer, hedonist, scholar, theologian, etc.) stay available.
 
 ## Installation

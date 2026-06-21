@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.5] - 2026-06-21
+
+### Added
+- **Build extras** — 3 new decisions (`scmp_build_hospital` / `build_fort` / `build_trade_post`) build a hospital / fort / trade post in the county. Right-click the county capital; `scmp_build_hospital` requires Reaper's Due, `build_fort` requires Conclave, `build_trade_post` requires The Republic. `scmp_build_hospital` carries the `scmp_` prefix to avoid colliding with vanilla's `title_decisions.build_hospital`.
+- **`upgrade_trade_post_fully`** — adds every applicable vanilla trade post building (29 across 7 trade-route / culture branches), each gated to its vanilla potential so saves only carry applicable buildings. Right-click the trade post itself. Requires The Republic.
+
+### Changed
+- **`upgrade_hospital_fully`** hides once fully upgraded (ceiling check on all 10 top-tier buildings).
+- README updated for the new decisions.
+
 ## [0.9.4] - 2026-06-21
 
 ### Added
