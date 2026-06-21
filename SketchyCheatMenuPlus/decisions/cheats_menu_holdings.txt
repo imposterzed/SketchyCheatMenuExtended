@@ -501,6 +501,37 @@ settlement_decisions = {
     }
   }
 
+  convert_tribal = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+    }
+    potential = {
+      NOT = {
+        AND = {
+          is_capital = yes
+          FROM = { capital_holding = { title = ROOT } }
+        }
+      }
+      NOT = { holding_type = tribal }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
+      else_if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
+      else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
+      else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
+      convert_to = TRIBAL
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   convert_nomad = {
     filter = realm_owned
 
@@ -527,6 +558,147 @@ settlement_decisions = {
       else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
       else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
       convert_to = NOMAD
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  build_castle = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+    }
+    potential = {
+      is_capital = yes
+      location = {
+        num_of_empty_holdings >= 1
+      }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      location = {
+        build_holding = {
+          type = castle
+        }
+      }
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  build_temple = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+    }
+    potential = {
+      is_capital = yes
+      location = {
+        num_of_empty_holdings >= 1
+      }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      location = {
+        build_holding = {
+          type = temple
+        }
+      }
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  build_city = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+    }
+    potential = {
+      is_capital = yes
+      location = {
+        num_of_empty_holdings >= 1
+      }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      location = {
+        build_holding = {
+          type = city
+        }
+      }
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  build_tribal = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+    }
+    potential = {
+      is_capital = yes
+      location = {
+        num_of_empty_holdings >= 1
+      }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      location = {
+        build_holding = {
+          type = tribal
+        }
+      }
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  build_nomad = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_dlc = "Horse Lords"
+    }
+    potential = {
+      is_capital = yes
+      location = {
+        num_of_empty_holdings >= 1
+      }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      location = {
+        build_holding = {
+          type = nomad
+        }
+      }
     }
     ai_will_do = {
       factor = 0

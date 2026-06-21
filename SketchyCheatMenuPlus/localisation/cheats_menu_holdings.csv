@@ -13,6 +13,24 @@ convert_nomad_desc;Converts this holding to a nomad clan.;;;;;;;;;;;;;x
 convert_temple;Convert To Temple;;;;;;;;;;;;;x
 convert_temple_desc;Converts this holding to a temple.;;;;;;;;;;;;;x
 
+convert_tribal;Convert To Tribal;;;;;;;;;;;;;x
+convert_tribal_desc;Converts this holding to a tribal holding.;;;;;;;;;;;;;x
+
+build_castle;Build Castle;;;;;;;;;;;;;x
+build_castle_desc;Builds a castle in an empty holding slot.;;;;;;;;;;;;;x
+
+build_city;Build City;;;;;;;;;;;;;x
+build_city_desc;Builds a city in an empty holding slot.;;;;;;;;;;;;;x
+
+build_nomad;Build Nomad;;;;;;;;;;;;;x
+build_nomad_desc;Builds a nomad clan in an empty holding slot.;;;;;;;;;;;;;x
+
+build_temple;Build Temple;;;;;;;;;;;;;x
+build_temple_desc;Builds a temple in an empty holding slot.;;;;;;;;;;;;;x
+
+build_tribal;Build Tribal;;;;;;;;;;;;;x
+build_tribal_desc;Builds a tribal holding in an empty holding slot.;;;;;;;;;;;;;x
+
 upgrade_temple;Fully Upgrade;;;;;;;;;;;;;x
 upgrade_temple_desc;Fully upgrades this temple with all buildings.;;;;;;;;;;;;;x
 

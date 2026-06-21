@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.4] - 2026-06-21
+
+### Added
+- **`convert_tribal`** — converts any non-tribal realm-owned holding to tribal type (not on the realm capital). Strips source-type buildings first to keep saves clean. Completes the convert_X family (castle / temple / city / tribal / nomad).
+- **Build empty holdings** — 5 new decisions (`build_castle` / `build_temple` / `build_city` / `build_tribal` / `build_nomad`) build a new holding in an empty county slot. Right-click the county capital; `build_nomad` requires Horse Lords.
+
+### Changed
+- README updated for `convert_tribal` and the 5 build decisions.
+
 ## [0.9.3] - 2026-06-21
 
 ### Added
