@@ -279,6 +279,7 @@ settlement_decisions = {
           has_building = tb_steppe_stable_4
           has_building = tb_arsenal_4
 
+          has_tribal_culture_buildings_trigger = yes
           has_tribal_special_buildings_trigger = yes
         }
       }
@@ -324,6 +325,7 @@ settlement_decisions = {
       add_building = tb_arsenal_3
       add_building = tb_arsenal_4
 
+      add_tribal_culture_buildings_effect = yes
       add_tribal_special_buildings_effect = yes
     }
     ai_will_do = {

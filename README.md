@@ -30,7 +30,12 @@ Spawn children or siblings at chosen ages, spawn a wife, or spawn specialized co
 
 ### Settlement cheats
 
-Right-click any settlement to fully upgrade the holding, convert it to a different type (castle / temple / city / tribal / nomad), delete it, or max out a hospital's facilities.
+Right-click any settlement to:
+
+- **Fully upgrade the holding** — every base building plus applicable culture, religion, terrain, bloodline, and title-conditional buildings (Theodosian Walls on Constantinople, HF-bloodline fortifications, Hellenic deity shrines, MR Arsenal on a patrician's family palace, Steppe / Desert / Monastic / Great Pillar buildings on matching provinces, etc.).
+- **Convert** to a different type (castle / temple / city). Strips the old holding's buildings first to avoid the game freeze that vanilla `convert_to` causes.
+- **Delete** the holding.
+- **Upgrade a hospital fully** (Reaper's Due).
 
 ### Realm-wide cheats
 
@@ -126,7 +131,7 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
 
 - **Charlemagne** — without it, the Viceroyalty toggle is hidden.
 - **Conclave** — without it, `make_consort` is hidden. The 2 consort-themed birth-marker toggles (`child_of_concubine` / `child_of_consort`) stay available. The 12 Childhood toggles stay available. Administration is 3-state (Feudal / Late / Imperial) with Conclave; without Conclave it's binary Feudal ↔ Imperial. The Controlled Realm Inheritance, Vassal War Declaration, Status of Women, Revoke Title, all 5 Obligation Laws families, and all 8 Council Voting Power families are hidden without Conclave; the Crown Authority cycle is hidden with Conclave (replaced by those Conclave realm laws).
-- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available. `add_scarred_mid` (Grievously Scarred) and `add_scarred_high` (Horrifically Scarred) are hidden without HF — the vanilla traits gate themselves to HF. Base `add_scarred` and all three `remove_*` counterparts stay available for cleanup. The 12 Zodiac toggles stay available. The 4 Pagan Branches toggles (Syncretist / Spiritualist / Militant / Tribalist) stay available. `set_succ_eldership` is hidden without HF. `set_succ_hre_elective` stays available. `upgrade_castle` / `upgrade_temple` / `upgrade_city` stay available without HF. The HF-bloodline buildings inside them (Oppressive Fortifications / Special Fortifications / Monumental Shrines / Planned Infrastructure) and Hellenic deity shrines require HF.
+- **Holy Fury** — without it, `add_tribal_kinslayer` is hidden; the 3 non-tribal kinslayer toggles (kinslayer / familial_kinslayer / dynastic_kinslayer) stay visible even for tribal characters, mirroring vanilla's fallback when HF is off. `remove_tribal_kinslayer` is ungated for cleanup. The 9 Warrior Lodge leader toggles and the Sea King / Sea Queen pair stay available. `add_scarred_mid` (Grievously Scarred) and `add_scarred_high` (Horrifically Scarred) are hidden without HF — the vanilla traits gate themselves to HF. Base `add_scarred` and all three `remove_*` counterparts stay available for cleanup. The 12 Zodiac toggles stay available. The 4 Pagan Branches toggles (Syncretist / Spiritualist / Militant / Tribalist) stay available. `set_succ_eldership` is hidden without HF. `set_succ_hre_elective` stays available. `upgrade_castle` / `upgrade_temple` / `upgrade_city` / `upgrade_tribal` stay available without HF. The HF-bloodline buildings inside them (Oppressive Fortifications / Special Fortifications / Monumental Shrines / Planned Infrastructure), Hellenic deity shrines, and Great Pillars require HF (the establish-pillar decision sets the province flag the building gates on).
 - **Horse Lords** — without it, `set_nomadic`, the three `_nomad` Destroy-Horde variants (`set_feudal_nomad` / `set_iqta_nomad` / `set_tribal_nomad`), and `set_succ_nomad_succession` are hidden.
 - **Jade Dragon** — without it, the 4 Chinese Commander toggles (Way of the Dog / Dragon / Leopard / Tiger) and the 3 Kowtow tier toggles (Tier I / II / III) stay available.
 - **Legacy of Rome** — `set_succ_byzantine_elective` stays available.
@@ -163,7 +168,7 @@ Full support. This mod ships with `dependencies = { "CleanSlate" }` declared, so
 
 Trait IDs are auto-adapted. CleanSlate renames several traits and sets a `cleanslate_active` global flag at startup; when that flag is present, this mod's trait-toggle decisions use CleanSlate's trait names instead of vanilla's.
 
-Aztec culture and building IDs are also auto-adapted. CleanSlate renames the Aztec culture and its cultural building IDs; the `convert_*` strip helpers and the `upgrade_castle` culture-aware add pick the matching ID set under each stack.
+Aztec culture and building IDs are also auto-adapted. CleanSlate renames the Aztec culture and its cultural building IDs; the `convert_*` strip helpers and the `upgrade_castle` / `upgrade_tribal` culture-aware adds pick the matching ID set under each stack.
 
 **CleanSlate users — make sure you're on the latest version from [GitHub](https://github.com/ck2plus/CleanSlate)** — the startup flag is a recent addition. Without it, the mod uses vanilla IDs throughout, so trait-toggle and Aztec-building operations silently fail on a CleanSlate stack.
 

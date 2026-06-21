@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.2] - 2026-06-20
+
+### Added
+- **Tribal culture-aware buildings in `upgrade_tribal`** — 132 vanilla cultural buildings across 33 culture ladders added via a new gated culture helper + paired presence trigger. Each gated to its vanilla potential so saves only carry applicable buildings.
+- **Great Pillars in `upgrade_tribal`** — 10 religion-keyed pillar buildings (Norse / Tengri / Slavic / Baltic / Finnish / West African / Aztec / Bon / Zun / Hellenic) added when the province has the matching `flag_great_pillar_X` set by the HF Establish Pillar decision.
+- **SCMPD.16 debug event** — sets a province's culture to nahua (CleanSlate) or nahuatl (vanilla); used to test the stack-aware Aztec tribal helper.
+
+### Changed
+- README — Settlement cheats section expanded to describe the conditional-building scope; Holy Fury entry adds `upgrade_tribal` + Great Pillars.
+
 ## [0.9.1] - 2026-06-20
 
 ### Added

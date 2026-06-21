@@ -357,3 +357,24 @@ province_event = {
   }
 }
 
+# SCMPD.16 ï¿½ Set this province's culture to nahua (CleanSlate
+# Aztec rename; vanilla equivalent is `nahuatl`). Tests the
+# stack-aware Aztec tribal helper added in v0.9.2.
+#
+# Console:  event SCMPD.16 <provinceID>
+province_event = {
+  id = SCMPD.16
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      culture = nahua
+    }
+    else = {
+      culture = nahuatl
+    }
+  }
+}
+
