@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.3] - 2026-06-21
+
+### Added
+- **`upgrade_nomad`** — 192 nomad buildings across 24 families added via the new `upgrade_nomad` decision, each gated to its vanilla potential so saves only carry applicable buildings. Completes the upgrade_X family (castle / temple / city / tribal / nomad).
+- **`convert_nomad`** — converts any non-nomad realm-owned holding to nomad type (Horse Lords required; not on the realm capital). Strips source-type buildings first to keep saves clean.
+
+### Changed
+- README updated for `upgrade_nomad` + `convert_nomad`.
+
 ## [0.9.2] - 2026-06-20
 
 ### Added

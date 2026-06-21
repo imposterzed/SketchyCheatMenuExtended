@@ -333,6 +333,54 @@ settlement_decisions = {
     }
   }
 
+  upgrade_nomad = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+    }
+    potential = {
+      holding_type = nomad
+
+      NOT = {
+        AND = {
+          has_building = no_airag_producer_8
+          has_building = no_baghatur_council_8
+          has_building = no_camp_fortifications_8
+          has_building = no_cattle_pens_8
+          has_building = no_composite_bow_crafter_8
+          has_building = no_felt_crafter_8
+          has_building = no_gathering_hall_8
+          has_building = no_ger_crafter_8
+          has_building = no_horse_breeder_8
+          has_building = no_hunting_parties_8
+          has_building = no_lamellar_armor_crafter_8
+          has_building = no_meat_preserver_8
+          has_building = no_minority_shrine_8
+          has_building = no_ox_wagon_8
+          has_building = no_riding_contests_8
+          has_building = no_sheep_8
+          has_building = no_shrine_8
+          has_building = no_wrestling_8
+          has_building = no_yam_8
+
+          has_nomad_special_buildings_trigger = yes
+        }
+      }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      add_nomad_buildings_effect = yes
+      add_nomad_special_buildings_effect = yes
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   delete_holding = {
     filter = realm_owned
 
@@ -447,6 +495,38 @@ settlement_decisions = {
       else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
       else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
       convert_to = CITY
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  convert_nomad = {
+    filter = realm_owned
+
+    from_potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_dlc = "Horse Lords"
+    }
+    potential = {
+      NOT = {
+        AND = {
+          is_capital = yes
+          FROM = { capital_holding = { title = ROOT } }
+        }
+      }
+      NOT = { holding_type = nomad }
+    }
+    allow = {
+      always = yes
+    }
+    effect = {
+      if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
+      else_if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
+      else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
+      else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
+      convert_to = NOMAD
     }
     ai_will_do = {
       factor = 0

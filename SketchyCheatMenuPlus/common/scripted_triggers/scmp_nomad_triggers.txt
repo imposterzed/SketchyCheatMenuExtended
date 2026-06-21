@@ -1,0 +1,50 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##                 Nomad Building Triggers                ##
+############################################################
+
+## --- Special-building presence checks --- ##
+
+# Returns yes when every applicable special-buildings family is
+# at top tier.
+
+# nomad: terrain / port / trade-post conditional
+has_nomad_special_buildings_trigger = {
+  # Desert terrain (Camel Breeder)
+  trigger_if = {
+    limit = { location = { terrain = desert } }
+    has_building = no_camel_breeder_8
+  }
+
+  # Jungle terrain (Elephant Camp)
+  trigger_if = {
+    limit = { location = { terrain = jungle } }
+    has_building = no_elephant_camp_8
+  }
+
+  # Coastal / river / lake (Fishing Village)
+  trigger_if = {
+    limit = {
+      location = {
+        OR = {
+          port = yes
+          borders_major_river = yes
+          borders_lake = yes
+        }
+      }
+    }
+    has_building = no_fishing_village_8
+  }
+
+  # Port province (Harbor)
+  trigger_if = {
+    limit = { location = { port = yes } }
+    has_building = no_harbor_8
+  }
+
+  # Trade post present (Minter)
+  trigger_if = {
+    limit = { location = { has_trade_post = yes } }
+    has_building = no_minter_8
+  }
+}
