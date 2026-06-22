@@ -44,54 +44,56 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      add_building = ca_wall_1
-      add_building = ca_wall_2
-      add_building = ca_wall_3
-      add_building = ca_wall_4
-      add_building = ca_wall_5
-      add_building = ca_wall_q_1
-      add_building = ca_wall_q_2
-      add_building = ca_wall_q_3
-      add_building = ca_wall_q_4
-      add_building = ca_wall_q_5
-      add_building = ca_training_grounds_1
-      add_building = ca_training_grounds_2
-      add_building = ca_training_grounds_3
-      add_building = ca_barracks_1
-      add_building = ca_barracks_2
-      add_building = ca_barracks_3
-      add_building = ca_barracks_4
-      add_building = ca_barracks_5
-      add_building = ca_barracks_6
-      add_building = ca_militia_barracks_1
-      add_building = ca_militia_barracks_2
-      add_building = ca_militia_barracks_3
-      add_building = ca_militia_barracks_4
-      add_building = ca_keep_1
-      add_building = ca_keep_2
-      add_building = ca_keep_3
-      add_building = ca_keep_4
-      add_building = ca_keep_5
-      add_building = ca_keep_6
-      add_building = ca_stable_1
-      add_building = ca_stable_2
-      add_building = ca_stable_3
-      add_building = ca_stable_4
-      add_building = ca_stable_5
-      add_building = ca_stable_6
-      add_building = ca_town_1
-      add_building = ca_town_2
-      add_building = ca_town_3
-      add_building = ca_town_4
-      add_building = ca_town_5
-      add_building = ca_town_6
-      add_building = ca_shipyard_1
-      add_building = ca_shipyard_2
-      add_building = ca_shipyard_3
-      add_building = ca_shipyard_4
+      hidden_tooltip = {
+        add_building = ca_wall_1
+        add_building = ca_wall_2
+        add_building = ca_wall_3
+        add_building = ca_wall_4
+        add_building = ca_wall_5
+        add_building = ca_wall_q_1
+        add_building = ca_wall_q_2
+        add_building = ca_wall_q_3
+        add_building = ca_wall_q_4
+        add_building = ca_wall_q_5
+        add_building = ca_training_grounds_1
+        add_building = ca_training_grounds_2
+        add_building = ca_training_grounds_3
+        add_building = ca_barracks_1
+        add_building = ca_barracks_2
+        add_building = ca_barracks_3
+        add_building = ca_barracks_4
+        add_building = ca_barracks_5
+        add_building = ca_barracks_6
+        add_building = ca_militia_barracks_1
+        add_building = ca_militia_barracks_2
+        add_building = ca_militia_barracks_3
+        add_building = ca_militia_barracks_4
+        add_building = ca_keep_1
+        add_building = ca_keep_2
+        add_building = ca_keep_3
+        add_building = ca_keep_4
+        add_building = ca_keep_5
+        add_building = ca_keep_6
+        add_building = ca_stable_1
+        add_building = ca_stable_2
+        add_building = ca_stable_3
+        add_building = ca_stable_4
+        add_building = ca_stable_5
+        add_building = ca_stable_6
+        add_building = ca_town_1
+        add_building = ca_town_2
+        add_building = ca_town_3
+        add_building = ca_town_4
+        add_building = ca_town_5
+        add_building = ca_town_6
+        add_building = ca_shipyard_1
+        add_building = ca_shipyard_2
+        add_building = ca_shipyard_3
+        add_building = ca_shipyard_4
 
-      add_castle_culture_buildings_effect = yes
-      add_castle_special_buildings_effect = yes
+        add_castle_culture_buildings_effect = yes
+        add_castle_special_buildings_effect = yes
+      }
     }
     ai_will_do = {
       factor = 0
@@ -127,48 +129,50 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      add_building = tp_wall_1
-      add_building = tp_wall_2
-      add_building = tp_wall_3
-      add_building = tp_wall_4
-      add_building = tp_wall_5
-      add_building = tp_wall_q_1
-      add_building = tp_wall_q_2
-      add_building = tp_wall_q_3
-      add_building = tp_wall_q_4
-      add_building = tp_wall_q_5
-      add_building = tp_monastery_1
-      add_building = tp_monastery_2
-      add_building = tp_monastery_3
-      add_building = tp_monastery_4
-      add_building = tp_monastery_5
-      add_building = tp_monastery_6
-      add_building = tp_barracks_1
-      add_building = tp_barracks_2
-      add_building = tp_barracks_3
-      add_building = tp_barracks_4
-      add_building = tp_barracks_5
-      add_building = tp_barracks_6
-      add_building = tp_elite_barracks_1
-      add_building = tp_elite_barracks_2
-      add_building = tp_elite_barracks_3
-      add_building = tp_elite_barracks_4
-      add_building = tp_elite_barracks_5
-      add_building = tp_elite_barracks_6
-      add_building = tp_town_1
-      add_building = tp_town_2
-      add_building = tp_town_3
-      add_building = tp_town_4
-      add_building = tp_town_5
-      add_building = tp_town_6
-      add_building = tp_shipyard_1
-      add_building = tp_shipyard_2
-      add_building = tp_shipyard_3
-      add_building = tp_shipyard_4
-      add_building = tp_school_1
-      add_building = tp_school_2
+      hidden_tooltip = {
+        add_building = tp_wall_1
+        add_building = tp_wall_2
+        add_building = tp_wall_3
+        add_building = tp_wall_4
+        add_building = tp_wall_5
+        add_building = tp_wall_q_1
+        add_building = tp_wall_q_2
+        add_building = tp_wall_q_3
+        add_building = tp_wall_q_4
+        add_building = tp_wall_q_5
+        add_building = tp_monastery_1
+        add_building = tp_monastery_2
+        add_building = tp_monastery_3
+        add_building = tp_monastery_4
+        add_building = tp_monastery_5
+        add_building = tp_monastery_6
+        add_building = tp_barracks_1
+        add_building = tp_barracks_2
+        add_building = tp_barracks_3
+        add_building = tp_barracks_4
+        add_building = tp_barracks_5
+        add_building = tp_barracks_6
+        add_building = tp_elite_barracks_1
+        add_building = tp_elite_barracks_2
+        add_building = tp_elite_barracks_3
+        add_building = tp_elite_barracks_4
+        add_building = tp_elite_barracks_5
+        add_building = tp_elite_barracks_6
+        add_building = tp_town_1
+        add_building = tp_town_2
+        add_building = tp_town_3
+        add_building = tp_town_4
+        add_building = tp_town_5
+        add_building = tp_town_6
+        add_building = tp_shipyard_1
+        add_building = tp_shipyard_2
+        add_building = tp_shipyard_3
+        add_building = tp_shipyard_4
+        add_building = tp_school_1
+        add_building = tp_school_2
 
-      add_temple_special_buildings_effect = yes
+        add_temple_special_buildings_effect = yes
+      }
     }
     ai_will_do = {
       factor = 0
@@ -204,53 +208,55 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      add_building = ct_wall_1
-      add_building = ct_wall_2
-      add_building = ct_wall_3
-      add_building = ct_wall_4
-      add_building = ct_wall_5
-      add_building = ct_wall_q_1
-      add_building = ct_wall_q_2
-      add_building = ct_wall_q_3
-      add_building = ct_wall_q_4
-      add_building = ct_wall_q_5
-      add_building = ct_training_grounds_1
-      add_building = ct_training_grounds_2
-      add_building = ct_training_grounds_3
-      add_building = ct_training_grounds_4
-      add_building = ct_training_grounds_5
-      add_building = ct_training_grounds_6
-      add_building = ct_barracks_1
-      add_building = ct_barracks_2
-      add_building = ct_barracks_3
-      add_building = ct_barracks_4
-      add_building = ct_barracks_5
-      add_building = ct_barracks_6
-      add_building = ct_marketplace_1
-      add_building = ct_marketplace_2
-      add_building = ct_marketplace_3
-      add_building = ct_marketplace_4
-      add_building = ct_marketplace_5
-      add_building = ct_marketplace_6
-      add_building = ct_guard_1
-      add_building = ct_guard_2
-      add_building = ct_guard_3
-      add_building = ct_guard_4
-      add_building = ct_guard_5
-      add_building = ct_port_1
-      add_building = ct_port_2
-      add_building = ct_port_3
-      add_building = ct_port_4
-      add_building = ct_port_5
-      add_building = ct_shipyard_1
-      add_building = ct_shipyard_2
-      add_building = ct_shipyard_3
-      add_building = ct_shipyard_4
-      add_building = ct_university_1
-      add_building = ct_university_2
-      add_building = ct_university_3
+      hidden_tooltip = {
+        add_building = ct_wall_1
+        add_building = ct_wall_2
+        add_building = ct_wall_3
+        add_building = ct_wall_4
+        add_building = ct_wall_5
+        add_building = ct_wall_q_1
+        add_building = ct_wall_q_2
+        add_building = ct_wall_q_3
+        add_building = ct_wall_q_4
+        add_building = ct_wall_q_5
+        add_building = ct_training_grounds_1
+        add_building = ct_training_grounds_2
+        add_building = ct_training_grounds_3
+        add_building = ct_training_grounds_4
+        add_building = ct_training_grounds_5
+        add_building = ct_training_grounds_6
+        add_building = ct_barracks_1
+        add_building = ct_barracks_2
+        add_building = ct_barracks_3
+        add_building = ct_barracks_4
+        add_building = ct_barracks_5
+        add_building = ct_barracks_6
+        add_building = ct_marketplace_1
+        add_building = ct_marketplace_2
+        add_building = ct_marketplace_3
+        add_building = ct_marketplace_4
+        add_building = ct_marketplace_5
+        add_building = ct_marketplace_6
+        add_building = ct_guard_1
+        add_building = ct_guard_2
+        add_building = ct_guard_3
+        add_building = ct_guard_4
+        add_building = ct_guard_5
+        add_building = ct_port_1
+        add_building = ct_port_2
+        add_building = ct_port_3
+        add_building = ct_port_4
+        add_building = ct_port_5
+        add_building = ct_shipyard_1
+        add_building = ct_shipyard_2
+        add_building = ct_shipyard_3
+        add_building = ct_shipyard_4
+        add_building = ct_university_1
+        add_building = ct_university_2
+        add_building = ct_university_3
 
-      add_city_special_buildings_effect = yes
+        add_city_special_buildings_effect = yes
+      }
     }
     ai_will_do = {
       factor = 0
@@ -288,45 +294,47 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      add_building = tb_hillfort_1
-      add_building = tb_hillfort_2
-      add_building = tb_hillfort_3
-      add_building = tb_hillfort_4
-      add_building = tb_market_town_1
-      add_building = tb_market_town_2
-      add_building = tb_market_town_3
-      add_building = tb_market_town_4
-      add_building = tb_training_grounds_1
-      add_building = tb_training_grounds_2
-      add_building = tb_training_grounds_3
-      add_building = tb_training_grounds_4
-      add_building = tb_war_camp_1
-      add_building = tb_war_camp_2
-      add_building = tb_war_camp_3
-      add_building = tb_war_camp_4
-      add_building = tb_shipyard_1
-      add_building = tb_shipyard_2
-      add_building = tb_shipyard_3
-      add_building = tb_shipyard_4
-      add_building = tb_practice_range_1
-      add_building = tb_practice_range_2
-      add_building = tb_practice_range_3
-      add_building = tb_practice_range_4
-      add_building = tb_steppe_barracks_1
-      add_building = tb_steppe_barracks_2
-      add_building = tb_steppe_barracks_3
-      add_building = tb_steppe_barracks_4
-      add_building = tb_steppe_stable_1
-      add_building = tb_steppe_stable_2
-      add_building = tb_steppe_stable_3
-      add_building = tb_steppe_stable_4
-      add_building = tb_arsenal_1
-      add_building = tb_arsenal_2
-      add_building = tb_arsenal_3
-      add_building = tb_arsenal_4
+      hidden_tooltip = {
+        add_building = tb_hillfort_1
+        add_building = tb_hillfort_2
+        add_building = tb_hillfort_3
+        add_building = tb_hillfort_4
+        add_building = tb_market_town_1
+        add_building = tb_market_town_2
+        add_building = tb_market_town_3
+        add_building = tb_market_town_4
+        add_building = tb_training_grounds_1
+        add_building = tb_training_grounds_2
+        add_building = tb_training_grounds_3
+        add_building = tb_training_grounds_4
+        add_building = tb_war_camp_1
+        add_building = tb_war_camp_2
+        add_building = tb_war_camp_3
+        add_building = tb_war_camp_4
+        add_building = tb_shipyard_1
+        add_building = tb_shipyard_2
+        add_building = tb_shipyard_3
+        add_building = tb_shipyard_4
+        add_building = tb_practice_range_1
+        add_building = tb_practice_range_2
+        add_building = tb_practice_range_3
+        add_building = tb_practice_range_4
+        add_building = tb_steppe_barracks_1
+        add_building = tb_steppe_barracks_2
+        add_building = tb_steppe_barracks_3
+        add_building = tb_steppe_barracks_4
+        add_building = tb_steppe_stable_1
+        add_building = tb_steppe_stable_2
+        add_building = tb_steppe_stable_3
+        add_building = tb_steppe_stable_4
+        add_building = tb_arsenal_1
+        add_building = tb_arsenal_2
+        add_building = tb_arsenal_3
+        add_building = tb_arsenal_4
 
-      add_tribal_culture_buildings_effect = yes
-      add_tribal_special_buildings_effect = yes
+        add_tribal_culture_buildings_effect = yes
+        add_tribal_special_buildings_effect = yes
+      }
     }
     ai_will_do = {
       factor = 0
@@ -373,8 +381,10 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      add_nomad_buildings_effect = yes
-      add_nomad_special_buildings_effect = yes
+      hidden_tooltip = {
+        add_nomad_buildings_effect = yes
+        add_nomad_special_buildings_effect = yes
+      }
     }
     ai_will_do = {
       factor = 0
@@ -405,9 +415,9 @@ settlement_decisions = {
   }
 
   # Strip source-type buildings before convert_to to avoid
-  # the orphan-building freeze. Potential blocks only the
-  # realm capital; `is_capital = yes` alone matches any
-  # county primary holding, not just the realm capital.
+  # the orphan-building freeze. Potential blocks any realm
+  # capital (own or vassal's); `is_capital = yes` alone
+  # matches any county primary, not just realm capitals.
   convert_castle = {
     filter = realm_owned
 
@@ -419,7 +429,7 @@ settlement_decisions = {
       NOT = {
         AND = {
           is_capital = yes
-          FROM = { capital_holding = { title = ROOT } }
+          owner = { capital_holding = { title = ROOT } }
         }
       }
       NOT = { holding_type = castle }
@@ -428,11 +438,13 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
-      else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
-      else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
-      else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
-      convert_to = CASTLE
+      hidden_tooltip = {
+        if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
+        else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
+        else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
+        else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
+        convert_to = CASTLE
+      }
     }
     ai_will_do = {
       factor = 0
@@ -450,7 +462,7 @@ settlement_decisions = {
       NOT = {
         AND = {
           is_capital = yes
-          FROM = { capital_holding = { title = ROOT } }
+          owner = { capital_holding = { title = ROOT } }
         }
       }
       NOT = { holding_type = temple }
@@ -459,11 +471,13 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
-      else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
-      else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
-      else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
-      convert_to = TEMPLE
+      hidden_tooltip = {
+        if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
+        else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
+        else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
+        else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
+        convert_to = TEMPLE
+      }
     }
     ai_will_do = {
       factor = 0
@@ -481,7 +495,7 @@ settlement_decisions = {
       NOT = {
         AND = {
           is_capital = yes
-          FROM = { capital_holding = { title = ROOT } }
+          owner = { capital_holding = { title = ROOT } }
         }
       }
       NOT = { holding_type = city }
@@ -490,11 +504,13 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
-      else_if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
-      else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
-      else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
-      convert_to = CITY
+      hidden_tooltip = {
+        if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
+        else_if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
+        else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
+        else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
+        convert_to = CITY
+      }
     }
     ai_will_do = {
       factor = 0
@@ -512,7 +528,7 @@ settlement_decisions = {
       NOT = {
         AND = {
           is_capital = yes
-          FROM = { capital_holding = { title = ROOT } }
+          owner = { capital_holding = { title = ROOT } }
         }
       }
       NOT = { holding_type = tribal }
@@ -521,11 +537,13 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
-      else_if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
-      else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
-      else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
-      convert_to = TRIBAL
+      hidden_tooltip = {
+        if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
+        else_if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
+        else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
+        else_if = { limit = { holding_type = nomad } strip_nomad_buildings_effect = yes }
+        convert_to = TRIBAL
+      }
     }
     ai_will_do = {
       factor = 0
@@ -544,7 +562,7 @@ settlement_decisions = {
       NOT = {
         AND = {
           is_capital = yes
-          FROM = { capital_holding = { title = ROOT } }
+          owner = { capital_holding = { title = ROOT } }
         }
       }
       NOT = { holding_type = nomad }
@@ -553,11 +571,13 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
-      else_if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
-      else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
-      else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
-      convert_to = NOMAD
+      hidden_tooltip = {
+        if = { limit = { holding_type = castle } strip_castle_buildings_effect = yes }
+        else_if = { limit = { holding_type = temple } strip_temple_buildings_effect = yes }
+        else_if = { limit = { holding_type = city } strip_city_buildings_effect = yes }
+        else_if = { limit = { holding_type = tribal } strip_tribal_buildings_effect = yes }
+        convert_to = NOMAD
+      }
     }
     ai_will_do = {
       factor = 0
@@ -818,21 +838,23 @@ settlement_decisions = {
       always = yes
     }
     effect = {
-      location = {
-        add_to_extra_holding = { type = hospital building = hospital_building_1 }
-        add_to_extra_holding = { type = hospital building = hospital_building_2 }
-        add_to_extra_holding = { type = hospital building = hospital_building_3 }
-        add_to_extra_holding = { type = hospital building = hospital_building_4 }
-        add_to_extra_holding = { type = hospital building = hospital_building_5 }
-        add_to_extra_holding = { type = hospital building = leper_colony_1 }
-        add_to_extra_holding = { type = hospital building = soup_kitchen_1 }
-        add_to_extra_holding = { type = hospital building = chapel_1 }
-        add_to_extra_holding = { type = hospital building = translation_house_1 }
-        add_to_extra_holding = { type = hospital building = pilgrims_inn_1 }
-        add_to_extra_holding = { type = hospital building = library_1 }
-        add_to_extra_holding = { type = hospital building = pharmacology_laboratory_1 }
-        add_to_extra_holding = { type = hospital building = medical_academy_1 }
-        add_to_extra_holding = { type = hospital building = observatory_1 }
+      hidden_tooltip = {
+        location = {
+          add_to_extra_holding = { type = hospital building = hospital_building_1 }
+          add_to_extra_holding = { type = hospital building = hospital_building_2 }
+          add_to_extra_holding = { type = hospital building = hospital_building_3 }
+          add_to_extra_holding = { type = hospital building = hospital_building_4 }
+          add_to_extra_holding = { type = hospital building = hospital_building_5 }
+          add_to_extra_holding = { type = hospital building = leper_colony_1 }
+          add_to_extra_holding = { type = hospital building = soup_kitchen_1 }
+          add_to_extra_holding = { type = hospital building = chapel_1 }
+          add_to_extra_holding = { type = hospital building = translation_house_1 }
+          add_to_extra_holding = { type = hospital building = pilgrims_inn_1 }
+          add_to_extra_holding = { type = hospital building = library_1 }
+          add_to_extra_holding = { type = hospital building = pharmacology_laboratory_1 }
+          add_to_extra_holding = { type = hospital building = medical_academy_1 }
+          add_to_extra_holding = { type = hospital building = observatory_1 }
+        }
       }
     }
     ai_will_do = {

@@ -12,14 +12,23 @@
 has_city_special_buildings_trigger = {
   # Planned Infrastructure (HF architect bloodline)
   trigger_if = {
-    limit = { FROM = { any_owned_bloodline = { has_bloodline_flag = bloodline_architect } } }
+    limit = {
+      owner = {
+        OR = {
+          any_owned_bloodline = { has_bloodline_flag = bloodline_architect }
+          any_liege = {
+            any_owned_bloodline = { has_bloodline_flag = bloodline_architect }
+          }
+        }
+      }
+    }
     has_building = ct_planned_infrastructure_4
   }
 
   # Merchant Republic arsenal (patrician's family palace only)
   trigger_if = {
     limit = {
-      FROM = {
+      owner = {
         is_merchant_republic = yes
         capital_holding = { title = ROOT }
       }

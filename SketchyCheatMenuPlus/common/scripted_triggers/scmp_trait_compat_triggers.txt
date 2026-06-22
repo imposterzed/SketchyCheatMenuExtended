@@ -287,6 +287,28 @@ is_bon_religion_trigger = {
   }
 }
 
+# Aztec religion (unreformed only)
+is_aztec_unreformed_religion_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    religion = aztec_pagan
+  }
+  trigger_else = {
+    religion = aztec
+  }
+}
+
+# Bon religion (unreformed only)
+is_bon_unreformed_religion_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    religion = bon_pagan
+  }
+  trigger_else = {
+    religion = bon
+  }
+}
+
 # Seducer (strict - sex-agnostic)
 has_seducer_strict_trait_trigger = {
   trigger_if = {

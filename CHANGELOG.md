@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.6] - 2026-06-22
+
+### Changed
+- **Confirmation popup tightened** — the 12 upgrade and convert decisions wrap their effect in `hidden_tooltip` so the right-click preview no longer floods with per-building "X gains Y" lines.
+- **`convert_X` realm capital protection** — now hides on any realm's capital across the map (yours, vassals', and foreign realms'), not just your own.
+- README updated for the convert capital protection.
+
+### Fixed
+- **Great Pillars in `upgrade_tribal`** — previously gated on the province flag set by the vanilla establish-pillar decision (which already builds the pillar), making the SCMP branch a no-op. The cheat now sets the flag inline and gates on the owner + liege religion + tribal status, using 2 new compat triggers (`is_aztec_unreformed_religion_trigger` / `is_bon_unreformed_religion_trigger`) for CleanSlate's `aztec_pagan` / `bon_pagan` renames.
+- **Owner-side gating across 8 conditional branches** — HF-bloodline / Hellenic shrines / MR Arsenal / pagan religion / monastic-feudal government branches in `upgrade_castle / temple / city / tribal` now check the holding's owner instead of the decision-runner. Previously, running `upgrade_X` on a vassal-owned holding could add buildings the vassal couldn't activate.
+
 ## [0.9.5] - 2026-06-21
 
 ### Added

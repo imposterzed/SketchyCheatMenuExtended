@@ -34,8 +34,10 @@ trade_post_decisions = {
       always = yes
     }
     effect = {
-      location = {
-        add_trade_post_buildings_effect = yes
+      hidden_tooltip = {
+        location = {
+          add_trade_post_buildings_effect = yes
+        }
       }
     }
     revoke_allowed = {

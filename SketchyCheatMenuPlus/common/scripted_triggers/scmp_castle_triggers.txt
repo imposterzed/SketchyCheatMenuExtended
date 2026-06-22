@@ -271,13 +271,31 @@ has_castle_special_buildings_trigger = {
 
   # Oppressive Fortifications (HF blood-building bloodline)
   trigger_if = {
-    limit = { FROM = { any_owned_bloodline = { has_bloodline_flag = bloodline_blood_building } } }
+    limit = {
+      owner = {
+        OR = {
+          any_owned_bloodline = { has_bloodline_flag = bloodline_blood_building }
+          any_liege = {
+            any_owned_bloodline = { has_bloodline_flag = bloodline_blood_building }
+          }
+        }
+      }
+    }
     has_building = ca_oppressive_fortifications_4
   }
 
   # Special Fortifications (HF castellan bloodline)
   trigger_if = {
-    limit = { FROM = { any_owned_bloodline = { has_bloodline_flag = bloodline_castellan } } }
+    limit = {
+      owner = {
+        OR = {
+          any_owned_bloodline = { has_bloodline_flag = bloodline_castellan }
+          any_liege = {
+            any_owned_bloodline = { has_bloodline_flag = bloodline_castellan }
+          }
+        }
+      }
+    }
     has_building = ca_special_fortifications_4
   }
 
@@ -315,7 +333,7 @@ has_castle_special_buildings_trigger = {
 
   # Monastic-feudal government
   trigger_if = {
-    limit = { FROM = { is_monastic_feudal_government_trigger = yes } }
+    limit = { owner = { is_monastic_feudal_government_trigger = yes } }
     has_building = ca_government_monastery_4
   }
 }

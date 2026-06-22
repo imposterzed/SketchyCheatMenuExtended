@@ -12,7 +12,16 @@
 has_temple_special_buildings_trigger = {
   # Monumental Shrines (HF monumental bloodline)
   trigger_if = {
-    limit = { FROM = { any_owned_bloodline = { has_bloodline_flag = bloodline_monumental } } }
+    limit = {
+      owner = {
+        OR = {
+          any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+          any_liege = {
+            any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+          }
+        }
+      }
+    }
     has_building = tp_monumental_shrines_4
   }
 
@@ -30,17 +39,11 @@ has_temple_special_buildings_trigger = {
   }
 
   # Hellenic deity shrines (matches the dedication title flag).
-  # Mirrors the helper's holder-Hellenic gate so the trigger only
+  # Mirrors the helper's owner-Hellenic gate so the trigger only
   # asserts shrine presence when the shrine could actually be visible.
   trigger_if = {
     limit = {
-      FROM = {
-        OR = {
-          religion = hellenic_pagan
-          religion = hellenic_pagan_reformed
-        }
-      }
-      holder_scope = {
+      owner = {
         OR = {
           religion = hellenic_pagan
           religion = hellenic_pagan_reformed

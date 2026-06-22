@@ -562,12 +562,12 @@ add_tribal_culture_buildings_effect = {
   }
 }
 
-# tribal: religion / terrain / pillar-flag conditional
+# tribal: religion / terrain conditional
 add_tribal_special_buildings_effect = {
   # Defensive Fortifications (Baltic / Finnish / Slavic / West African / Bon pagan)
   if = {
     limit = {
-      FROM = {
+      owner = {
         OR = {
           religion = baltic_pagan
           religion = baltic_pagan_reformed
@@ -606,54 +606,154 @@ add_tribal_special_buildings_effect = {
     add_building = tb_desert_stable_4
   }
 
-  # Great Pillar (per-religion province flag set by HF Establish Pillar)
+  # Great Pillar (owner + liege religion + tribal; flag set inline)
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_aztec } }
+    limit = {
+      owner = {
+        is_aztec_unreformed_religion_trigger = yes
+        is_tribal = yes
+        liege = {
+          is_aztec_unreformed_religion_trigger = yes
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_aztec }
     add_building = tb_great_pillar_aztec
   }
 
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_baltic } }
+    limit = {
+      owner = {
+        religion = baltic_pagan
+        is_tribal = yes
+        liege = {
+          religion = baltic_pagan
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_baltic }
     add_building = tb_great_pillar_baltic
   }
 
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_bon } }
+    limit = {
+      owner = {
+        is_bon_unreformed_religion_trigger = yes
+        is_tribal = yes
+        liege = {
+          is_bon_unreformed_religion_trigger = yes
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_bon }
     add_building = tb_great_pillar_bon
   }
 
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_finnish } }
+    limit = {
+      owner = {
+        religion = finnish_pagan
+        is_tribal = yes
+        liege = {
+          religion = finnish_pagan
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_finnish }
     add_building = tb_great_pillar_finnish
   }
 
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_hellenic } }
+    limit = {
+      owner = {
+        religion = hellenic_pagan
+        is_tribal = yes
+        liege = {
+          religion = hellenic_pagan
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_hellenic }
     add_building = tb_great_pillar_hellenic
   }
 
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_norse } }
+    limit = {
+      owner = {
+        religion = norse_pagan
+        is_tribal = yes
+        liege = {
+          religion = norse_pagan
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_norse }
     add_building = tb_great_pillar_norse
   }
 
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_slavic } }
+    limit = {
+      owner = {
+        religion = slavic_pagan
+        is_tribal = yes
+        liege = {
+          religion = slavic_pagan
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_slavic }
     add_building = tb_great_pillar_slavic
   }
 
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_tengri } }
+    limit = {
+      owner = {
+        religion = tengri_pagan
+        is_tribal = yes
+        liege = {
+          religion = tengri_pagan
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_tengri }
     add_building = tb_great_pillar_tengri
   }
 
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_west_african } }
+    limit = {
+      owner = {
+        religion = west_african_pagan
+        is_tribal = yes
+        liege = {
+          religion = west_african_pagan
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_west_african }
     add_building = tb_great_pillar_west_african
   }
 
   if = {
-    limit = { location = { has_province_flag = flag_great_pillar_zun } }
+    limit = {
+      owner = {
+        religion = zun_pagan
+        is_tribal = yes
+        liege = {
+          religion = zun_pagan
+          is_tribal = yes
+        }
+      }
+    }
+    location = { set_province_flag = flag_great_pillar_zun }
     add_building = tb_great_pillar_zun
   }
 }

@@ -85,8 +85,13 @@ add_temple_special_buildings_effect = {
   # Monumental Shrines (HF monumental bloodline)
   if = {
     limit = {
-      FROM = {
-        any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+      owner = {
+        OR = {
+          any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+          any_liege = {
+            any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+          }
+        }
       }
     }
     add_building = tp_monumental_shrines_1
@@ -110,19 +115,11 @@ add_temple_special_buildings_effect = {
 
   # Hellenic deity shrines (one per dedication title flag; vanilla
   # sets exactly one flag per temple via the dedication event chain).
-  # Holder must also be Hellenic â€” tp_shrine_X lacks a self-keep
-  # clause, so without a Hellenic holder the building is hidden in UI
-  # (vanilla's hellenic_dedicate_temple decision enforces the same
-  # via its allow's `holder_scope = { religion = FROM }` check).
+  # Owner must be Hellenic â€” tp_shrine_X lacks a self-keep clause,
+  # so without a Hellenic owner the building hides in UI.
   if = {
     limit = {
-      FROM = {
-        OR = {
-          religion = hellenic_pagan
-          religion = hellenic_pagan_reformed
-        }
-      }
-      holder_scope = {
+      owner = {
         OR = {
           religion = hellenic_pagan
           religion = hellenic_pagan_reformed

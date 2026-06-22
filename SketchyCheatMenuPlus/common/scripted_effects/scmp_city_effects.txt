@@ -79,8 +79,13 @@ add_city_special_buildings_effect = {
   # Planned Infrastructure (HF architect bloodline)
   if = {
     limit = {
-      FROM = {
-        any_owned_bloodline = { has_bloodline_flag = bloodline_architect }
+      owner = {
+        OR = {
+          any_owned_bloodline = { has_bloodline_flag = bloodline_architect }
+          any_liege = {
+            any_owned_bloodline = { has_bloodline_flag = bloodline_architect }
+          }
+        }
       }
     }
     add_building = ct_planned_infrastructure_1
@@ -92,7 +97,7 @@ add_city_special_buildings_effect = {
   # Merchant Republic arsenal (patrician's family palace only)
   if = {
     limit = {
-      FROM = {
+      owner = {
         is_merchant_republic = yes
         capital_holding = { title = ROOT }
       }
