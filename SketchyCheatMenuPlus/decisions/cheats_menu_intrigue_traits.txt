@@ -473,6 +473,65 @@ decisions = {
     }
   }
 
+  add_all_virtues = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_virtues
+      NOT = { has_all_virtues_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_virtue_mutex_effect = yes
+      if = { limit = { NOT = { trait = chaste } }     add_trait = chaste     }
+      if = { limit = { NOT = { trait = temperate } }  add_trait = temperate  }
+      if = { limit = { NOT = { trait = kind } }       add_trait = kind       }
+      if = { limit = { NOT = { trait = charitable } } add_trait = charitable }
+      if = { limit = { NOT = { trait = patient } }    add_trait = patient    }
+      if = { limit = { NOT = { trait = diligent } }   add_trait = diligent   }
+      if = { limit = { NOT = { trait = humble } }     add_trait = humble     }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_all_virtues = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_virtues
+      has_any_virtue_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_virtue_traits_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   remove_chaste = {
     potential = {
       ai = no
@@ -909,6 +968,65 @@ decisions = {
 
     effect = {
       clr_character_flag = show_sins
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_all_sins = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_sins
+      NOT = { has_all_sins_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_virtue_traits_effect = yes
+      if = { limit = { NOT = { trait = lustful } }    add_trait = lustful    }
+      if = { limit = { NOT = { trait = greedy } }     add_trait = greedy     }
+      if = { limit = { NOT = { trait = slothful } }   add_trait = slothful   }
+      if = { limit = { NOT = { trait = gluttonous } } add_trait = gluttonous }
+      if = { limit = { NOT = { trait = wroth } }      add_trait = wroth      }
+      if = { limit = { NOT = { trait = proud } }      add_trait = proud      }
+      if = { limit = { NOT = { trait = envious } }    add_trait = envious    }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_all_sins = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_sins
+      has_any_sin_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_sin_traits_effect = yes
     }
 
     revoke_allowed = {

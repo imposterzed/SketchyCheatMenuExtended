@@ -1,0 +1,37 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##               Bulk Section Strip Helpers               ##
+############################################################
+##                                                        ##
+## Section-level strip helpers used by the add_all_X /    ##
+## remove_all_X bulk decisions. clear_X_traits_effect     ##
+## strips one category; clear_X_mutex_effect adds         ##
+## asymmetric engine-mutex extras beyond the category.    ##
+##                                                        ##
+############################################################
+
+clear_virtue_traits_effect = {
+  if = { limit = { trait = chaste }     remove_trait = chaste     }
+  if = { limit = { trait = temperate }  remove_trait = temperate  }
+  if = { limit = { trait = kind }       remove_trait = kind       }
+  if = { limit = { trait = charitable } remove_trait = charitable }
+  if = { limit = { trait = patient }    remove_trait = patient    }
+  if = { limit = { trait = diligent }   remove_trait = diligent   }
+  if = { limit = { trait = humble }     remove_trait = humble     }
+}
+
+clear_sin_traits_effect = {
+  if = { limit = { trait = lustful }    remove_trait = lustful    }
+  if = { limit = { trait = greedy }     remove_trait = greedy     }
+  if = { limit = { trait = slothful }   remove_trait = slothful   }
+  if = { limit = { trait = gluttonous } remove_trait = gluttonous }
+  if = { limit = { trait = wroth }      remove_trait = wroth      }
+  if = { limit = { trait = proud }      remove_trait = proud      }
+  if = { limit = { trait = envious }    remove_trait = envious    }
+}
+
+clear_virtue_mutex_effect = {
+  clear_sin_traits_effect = yes
+  # kind opposes cruel
+  if = { limit = { trait = cruel } remove_trait = cruel }
+}

@@ -1,0 +1,54 @@
+############################################################
+##                Sketchy Cheat Menu Plus                 ##
+##            Trait Section Visibility Triggers           ##
+############################################################
+##                                                        ##
+## Visibility gates for add_all_X / remove_all_X bulk     ##
+## decisions. has_any_X is true if any trait in section X ##
+## is held; has_all_X is true if every trait is held.     ##
+##                                                        ##
+############################################################
+
+has_any_virtue_trigger = {
+  OR = {
+    trait = chaste
+    trait = temperate
+    trait = kind
+    trait = charitable
+    trait = patient
+    trait = diligent
+    trait = humble
+  }
+}
+
+has_all_virtues_trigger = {
+  trait = chaste
+  trait = temperate
+  trait = kind
+  trait = charitable
+  trait = patient
+  trait = diligent
+  trait = humble
+}
+
+has_any_sin_trigger = {
+  OR = {
+    trait = lustful
+    trait = greedy
+    trait = slothful
+    trait = gluttonous
+    trait = wroth
+    trait = proud
+    trait = envious
+  }
+}
+
+has_all_sins_trigger = {
+  trait = lustful
+  trait = greedy
+  trait = slothful
+  trait = gluttonous
+  trait = wroth
+  trait = proud
+  trait = envious
+}

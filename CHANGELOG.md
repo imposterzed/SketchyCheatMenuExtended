@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2026-06-23
+
+### Added
+- **Bulk add/remove in Virtues and Sins sections** — `Add All Virtues` / `Remove All Virtues` / `Add All Sins` / `Remove All Sins` decisions. Add variants gain missing traits and strip opposites; Remove variants clear every section trait held.
+- 3 new section-bulk scripted_effects in `scmp_bulk_effects.txt` (`clear_virtue_traits_effect`, `clear_sin_traits_effect`, `clear_virtue_mutex_effect`) and 4 new visibility scripted_triggers in `scmp_trait_section_triggers.txt` (`has_any_virtue_trigger`, `has_all_virtues_trigger`, `has_any_sin_trigger`, `has_all_sins_trigger`).
+- 4 new GFX sprite entries in `cheats_menu_intrigue_traits.gfx` for the new decisions.
+
+### Changed
+- Virtue and sin entries in `cheats_menu_intrigue_traits.csv` reordered to match the in-game menu order from the decisions file (kind moved to position 3 of virtues; envious moved to last sin).
+
 ## [0.9.6] - 2026-06-22
 
 ### Changed

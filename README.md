@@ -22,7 +22,15 @@ Right-click any character to:
 
 ### Trait toggles
 
-Paired add/remove decisions for 274 traits across virtues, sins, personality, beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese imperial, raiding, lifestyle, religious markers & doctrine, ordained clergy, christian status, muslim status, dharmic identity, birth markers, zodiac, childhood, kinslayer, memes, and other categories. Bulk operations apply virtues or remove sins from all your vassals or dynasty members at once.
+Paired add/remove decisions for 274 traits, organized by category.
+
+**Virtues** — Chaste, Temperate, Kind, Charitable, Patient, Diligent, Humble. `Add All` / `Remove All`.
+
+**Sins** — Lustful, Greedy, Slothful, Gluttonous, Wroth, Proud, Envious. `Add All` / `Remove All`.
+
+Other categories: personality, beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese imperial, raiding, lifestyle, religious markers & doctrine, ordained clergy, christian status, muslim status, dharmic identity, birth markers, zodiac, childhood, kinslayer, memes.
+
+Vassal and Dynasty submenus carry separate bulk decisions that apply virtues or remove sins across many characters at once.
 
 ### Spawning
 

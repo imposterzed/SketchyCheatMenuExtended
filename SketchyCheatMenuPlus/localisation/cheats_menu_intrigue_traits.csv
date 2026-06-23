@@ -73,6 +73,12 @@ show_dynasty_desc;Show Traits For Dynasty/Spouses;;;;;;;;;;;;;x
 hide_dynasty;----Hide Traits For Dynasty/Spouses;;;;;;;;;;;;;x
 hide_dynasty_desc;Hide Traits For Dynasty/Spouses;;;;;;;;;;;;;x
 
+add_all_virtues;--------Add All Virtues;;;;;;;;;;;;;x
+add_all_virtues_desc;Add All Virtues;;;;;;;;;;;;;x
+
+remove_all_virtues;--------Remove All Virtues;;;;;;;;;;;;;x
+remove_all_virtues_desc;Remove All Virtues;;;;;;;;;;;;;x
+
 add_chaste;--------Add Chaste;;;;;;;;;;;;;x
 add_chaste_desc;Add Chaste;;;;;;;;;;;;;x
 
@@ -84,6 +90,12 @@ add_temperate_desc;Add Temperate;;;;;;;;;;;;;x
 
 remove_temperate;--------Remove Temperate;;;;;;;;;;;;;x
 remove_temperate_desc;Remove Temperate;;;;;;;;;;;;;x
+
+add_kind;--------Add Kind;;;;;;;;;;;;;x
+add_kind_desc;Add Kind;;;;;;;;;;;;;x
+
+remove_kind;--------Remove Kind;;;;;;;;;;;;;x
+remove_kind_desc;Remove Kind;;;;;;;;;;;;;x
 
 add_charitable;--------Add Charitable;;;;;;;;;;;;;x
 add_charitable_desc;Add Charitable;;;;;;;;;;;;;x
@@ -109,29 +121,23 @@ add_humble_desc;Add Humble;;;;;;;;;;;;;x
 remove_humble;--------Remove Humble;;;;;;;;;;;;;x
 remove_humble_desc;Remove Humble;;;;;;;;;;;;;x
 
-add_kind;--------Add Kind;;;;;;;;;;;;;x
-add_kind_desc;Add Kind;;;;;;;;;;;;;x
+add_all_sins;--------Add All Sins;;;;;;;;;;;;;x
+add_all_sins_desc;Add All Sins;;;;;;;;;;;;;x
 
-remove_kind;--------Remove Kind;;;;;;;;;;;;;x
-remove_kind_desc;Remove Kind;;;;;;;;;;;;;x
-
-add_envious;--------Add Envious;;;;;;;;;;;;;x
-add_envious_desc;Add Envious;;;;;;;;;;;;;x
-
-remove_envious;--------Remove Envious;;;;;;;;;;;;;x
-remove_envious_desc;Remove Envious;;;;;;;;;;;;;x
-
-add_greedy;--------Add Greedy;;;;;;;;;;;;;x
-add_greedy_desc;Add Greedy;;;;;;;;;;;;;x
-
-remove_greedy;--------Remove Greedy;;;;;;;;;;;;;x
-remove_greedy_desc;Remove Greedy;;;;;;;;;;;;;x
+remove_all_sins;--------Remove All Sins;;;;;;;;;;;;;x
+remove_all_sins_desc;Remove All Sins;;;;;;;;;;;;;x
 
 add_lustful;--------Add Lustful;;;;;;;;;;;;;x
 add_lustful_desc;Add Lustful;;;;;;;;;;;;;x
 
 remove_lustful;--------Remove Lustful;;;;;;;;;;;;;x
 remove_lustful_desc;Remove Lustful;;;;;;;;;;;;;x
+
+add_greedy;--------Add Greedy;;;;;;;;;;;;;x
+add_greedy_desc;Add Greedy;;;;;;;;;;;;;x
+
+remove_greedy;--------Remove Greedy;;;;;;;;;;;;;x
+remove_greedy_desc;Remove Greedy;;;;;;;;;;;;;x
 
 add_slothful;--------Add Slothful;;;;;;;;;;;;;x
 add_slothful_desc;Add Slothful;;;;;;;;;;;;;x
@@ -156,6 +162,12 @@ add_proud_desc;Add Proud;;;;;;;;;;;;;x
 
 remove_proud;--------Remove Proud;;;;;;;;;;;;;x
 remove_proud_desc;Remove Proud;;;;;;;;;;;;;x
+
+add_envious;--------Add Envious;;;;;;;;;;;;;x
+add_envious_desc;Add Envious;;;;;;;;;;;;;x
+
+remove_envious;--------Remove Envious;;;;;;;;;;;;;x
+remove_envious_desc;Remove Envious;;;;;;;;;;;;;x
 
 add_cruel;--------Add Cruel;;;;;;;;;;;;;x
 add_cruel_desc;Add Cruel;;;;;;;;;;;;;x
