@@ -35,3 +35,67 @@ clear_virtue_mutex_effect = {
   # kind opposes cruel
   if = { limit = { trait = cruel } remove_trait = cruel }
 }
+
+clear_positive_personality_effect = {
+  if = { limit = { trait = ambitious }  remove_trait = ambitious  }
+  if = { limit = { trait = brave }      remove_trait = brave      }
+  remove_physique_trait_effect = yes
+  if = { limit = { trait = sturdy }     remove_trait = sturdy     }
+  if = { limit = { trait = zealous }    remove_trait = zealous    }
+  if = { limit = { trait = erudite }    remove_trait = erudite    }
+  if = { limit = { trait = gregarious } remove_trait = gregarious }
+  if = { limit = { trait = groomed }    remove_trait = groomed    }
+  if = { limit = { trait = honest }     remove_trait = honest     }
+  if = { limit = { trait = just }       remove_trait = just       }
+  if = { limit = { trait = shrewd }     remove_trait = shrewd     }
+  if = { limit = { trait = trusting }   remove_trait = trusting   }
+}
+
+clear_negative_personality_effect = {
+  if = { limit = { trait = content }   remove_trait = content   }
+  if = { limit = { trait = craven }    remove_trait = craven    }
+  remove_feeble_trait_effect = yes
+  if = { limit = { trait = cynical }   remove_trait = cynical   }
+  if = { limit = { trait = shy }       remove_trait = shy       }
+  if = { limit = { trait = uncouth }   remove_trait = uncouth   }
+  if = { limit = { trait = deceitful } remove_trait = deceitful }
+  if = { limit = { trait = arbitrary } remove_trait = arbitrary }
+  if = { limit = { trait = dull }      remove_trait = dull      }
+  if = { limit = { trait = paranoid }  remove_trait = paranoid  }
+  if = { limit = { trait = cruel }     remove_trait = cruel     }
+  if = { limit = { trait = stubborn }  remove_trait = stubborn  }
+}
+
+clear_childhood_traits_effect = {
+  if = { limit = { trait = affectionate }  remove_trait = affectionate  }
+  if = { limit = { trait = brooding }      remove_trait = brooding      }
+  if = { limit = { trait = conscientious } remove_trait = conscientious }
+  if = { limit = { trait = curious }       remove_trait = curious       }
+  if = { limit = { trait = fussy }         remove_trait = fussy         }
+  if = { limit = { trait = haughty }       remove_trait = haughty       }
+  if = { limit = { trait = idolizer }      remove_trait = idolizer      }
+  if = { limit = { trait = indolent }      remove_trait = indolent      }
+  if = { limit = { trait = playful }       remove_trait = playful       }
+  if = { limit = { trait = rowdy }         remove_trait = rowdy         }
+  if = { limit = { trait = timid }         remove_trait = timid         }
+  if = { limit = { trait = willful }       remove_trait = willful       }
+}
+
+clear_positive_personality_mutex_effect = {
+  clear_negative_personality_effect = yes
+  # zealous strips faith sympathies
+  if = { limit = { trait = sympathy_christendom }    remove_trait = sympathy_christendom    }
+  if = { limit = { trait = sympathy_islam }          remove_trait = sympathy_islam          }
+  if = { limit = { trait = sympathy_pagans }         remove_trait = sympathy_pagans         }
+  if = { limit = { trait = sympathy_zoroastrianism } remove_trait = sympathy_zoroastrianism }
+  if = { limit = { trait = sympathy_judaism }        remove_trait = sympathy_judaism        }
+  if = { limit = { trait = sympathy_indian }         remove_trait = sympathy_indian         }
+  # brawny strips sturdy via engine mutex; explicit for tooltip clarity (engine-mutex strips don't render in hover)
+  if = { limit = { trait = sturdy } remove_trait = sturdy }
+}
+
+clear_negative_personality_mutex_effect = {
+  clear_positive_personality_effect = yes
+  # cruel opposes kind
+  if = { limit = { trait = kind } remove_trait = kind }
+}

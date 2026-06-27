@@ -52,3 +52,96 @@ has_all_sins_trigger = {
   trait = proud
   trait = envious
 }
+
+has_any_positive_personality_trait_trigger = {
+  OR = {
+    trait = ambitious
+    trait = brave
+    has_physique_trait_trigger = yes
+    trait = sturdy
+    trait = zealous
+    trait = erudite
+    trait = gregarious
+    trait = groomed
+    trait = honest
+    trait = just
+    trait = shrewd
+    trait = trusting
+  }
+}
+
+has_all_positive_personality_traits_trigger = {
+  trait = ambitious
+  trait = brave
+  has_physique_trait_trigger = yes
+  trait = zealous
+  trait = erudite
+  trait = gregarious
+  trait = groomed
+  trait = honest
+  trait = just
+  trait = shrewd
+  trait = trusting
+}
+
+has_any_negative_personality_trait_trigger = {
+  OR = {
+    trait = content
+    trait = craven
+    has_feeble_trait_trigger = yes
+    trait = cynical
+    trait = shy
+    trait = uncouth
+    trait = deceitful
+    trait = arbitrary
+    trait = dull
+    trait = paranoid
+    trait = cruel
+    trait = stubborn
+  }
+}
+
+has_all_negative_personality_traits_trigger = {
+  trait = content
+  trait = craven
+  has_feeble_trait_trigger = yes
+  trait = cynical
+  trait = shy
+  trait = uncouth
+  trait = deceitful
+  trait = arbitrary
+  trait = dull
+  trait = paranoid
+  trait = cruel
+  trait = stubborn
+}
+
+has_any_childhood_trait_trigger = {
+  OR = {
+    trait = affectionate
+    trait = brooding
+    trait = conscientious
+    trait = curious
+    trait = fussy
+    trait = haughty
+    trait = idolizer
+    trait = indolent
+    trait = playful
+    trait = rowdy
+    trait = timid
+    trait = willful
+  }
+}
+
+has_all_childhood_traits_trigger = {
+  trait = affectionate
+  trait = brooding
+  trait = conscientious
+  trait = curious
+  trait = fussy
+  trait = haughty
+  trait = idolizer
+  trait = indolent
+  trait = playful
+  trait = willful
+}

@@ -1481,6 +1481,133 @@ decisions = {
     }
   }
 
+  add_positive_personality = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_personality
+      NOT = { has_all_positive_personality_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_positive_personality_mutex_effect = yes
+      if = { limit = { NOT = { trait = ambitious } }              add_trait = ambitious            }
+      if = { limit = { NOT = { trait = brave } }                  add_trait = brave                }
+      if = { limit = { NOT = { has_physique_trait_trigger = yes } } add_physique_trait_effect = yes }
+      if = { limit = { NOT = { trait = zealous } }                add_trait = zealous              }
+      if = { limit = { NOT = { trait = erudite } }                add_trait = erudite              }
+      if = { limit = { NOT = { trait = gregarious } }             add_trait = gregarious           }
+      if = { limit = { NOT = { trait = groomed } }                add_trait = groomed              }
+      if = { limit = { NOT = { trait = honest } }                 add_trait = honest               }
+      if = { limit = { NOT = { trait = just } }                   add_trait = just                 }
+      if = { limit = { NOT = { trait = shrewd } }                 add_trait = shrewd               }
+      if = { limit = { NOT = { trait = trusting } }               add_trait = trusting             }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_positive_personality = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_personality
+      has_any_positive_personality_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_positive_personality_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_negative_personality = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_personality
+      NOT = { has_all_negative_personality_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_negative_personality_mutex_effect = yes
+      if = { limit = { NOT = { trait = content } }                add_trait = content            }
+      if = { limit = { NOT = { trait = craven } }                 add_trait = craven             }
+      if = { limit = { NOT = { has_feeble_trait_trigger = yes } } add_feeble_trait_effect = yes  }
+      if = { limit = { NOT = { trait = cynical } }                add_trait = cynical            }
+      if = { limit = { NOT = { trait = shy } }                    add_trait = shy                }
+      if = { limit = { NOT = { trait = uncouth } }                add_trait = uncouth            }
+      if = { limit = { NOT = { trait = deceitful } }              add_trait = deceitful          }
+      if = { limit = { NOT = { trait = arbitrary } }              add_trait = arbitrary          }
+      if = { limit = { NOT = { trait = dull } }                   add_trait = dull               }
+      if = { limit = { NOT = { trait = paranoid } }               add_trait = paranoid           }
+      if = { limit = { NOT = { trait = cruel } }                  add_trait = cruel              }
+      if = { limit = { NOT = { trait = stubborn } }               add_trait = stubborn           }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_negative_personality = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_personality
+      has_any_negative_personality_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_negative_personality_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   remove_ambitious = {
     potential = {
       ai = no
@@ -14847,6 +14974,68 @@ decisions = {
 
     effect = {
       clr_character_flag = show_childhood
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_all_childhood = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_childhood
+      is_adult = no
+      NOT = { has_all_childhood_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = { limit = { NOT = { trait = affectionate } }  add_trait = affectionate  }
+      if = { limit = { NOT = { trait = brooding } }      add_trait = brooding      }
+      if = { limit = { NOT = { trait = conscientious } } add_trait = conscientious }
+      if = { limit = { NOT = { trait = curious } }       add_trait = curious       }
+      if = { limit = { NOT = { trait = fussy } }         add_trait = fussy         }
+      if = { limit = { NOT = { trait = haughty } }       add_trait = haughty       }
+      if = { limit = { NOT = { trait = idolizer } }      add_trait = idolizer      }
+      if = { limit = { NOT = { trait = indolent } }      add_trait = indolent      }
+      if = { limit = { NOT = { trait = playful } }       add_trait = playful       }
+      if = { limit = { NOT = { trait = willful } }       add_trait = willful       }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_all_childhood = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_childhood
+      has_any_childhood_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_childhood_traits_effect = yes
     }
 
     revoke_allowed = {

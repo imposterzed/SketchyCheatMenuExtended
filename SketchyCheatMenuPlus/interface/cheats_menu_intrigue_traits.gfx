@@ -236,4 +236,28 @@ spriteTypes = {
     name = "GFX_remove_all_sins"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
+  spriteType = {
+    name = "GFX_add_positive_personality"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_remove_positive_personality"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_add_negative_personality"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_remove_negative_personality"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_add_all_childhood"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_remove_all_childhood"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
 }

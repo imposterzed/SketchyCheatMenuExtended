@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.1] - 2026-06-24
+
+### Added
+- **Bulk add/remove in Personality section** — `Add All Positive Personality` / `Remove All Positive Personality` / `Add All Negative Personality` / `Remove All Negative Personality`. Positive bucket (11): Ambitious, Brave, Brawny, Zealous, Erudite, Gregarious, Groomed, Honest, Just, Shrewd, Trusting. Negative bucket (12): Content, Craven, Frail, Cynical, Shy, Uncouth, Deceitful, Arbitrary, Dull, Paranoid, Cruel, Stubborn. Add variants strip the opposing bucket; Zealous additionally strips faith sympathies, Cruel additionally strips Kind. Add All Positive adds Brawny over Sturdy; Remove All Positive also strips Sturdy.
+- **Bulk add/remove in Childhood section** — `Add All Childhood Traits` / `Remove All Childhood Traits`. Add grants 10 traits (skipping the Timid/Rowdy mutex pair); Remove strips all 12.
+- 5 new section-bulk scripted_effects in `scmp_bulk_effects.txt` (`clear_positive_personality_effect`, `clear_negative_personality_effect`, `clear_childhood_traits_effect`, `clear_positive_personality_mutex_effect`, `clear_negative_personality_mutex_effect`) and 6 new visibility scripted_triggers in `scmp_trait_section_triggers.txt`.
+- 6 new GFX sprite entries in `cheats_menu_intrigue_traits.gfx` for the new decisions.
+
 ## [0.10.0] - 2026-06-23
 
 ### Added

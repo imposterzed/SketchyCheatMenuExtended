@@ -169,6 +169,18 @@ add_envious_desc;Add Envious;;;;;;;;;;;;;x
 remove_envious;--------Remove Envious;;;;;;;;;;;;;x
 remove_envious_desc;Remove Envious;;;;;;;;;;;;;x
 
+add_positive_personality;--------Add All Positive Personality;;;;;;;;;;;;;x
+add_positive_personality_desc;Adds the positive personality traits. Sturdy is added in place of Robust. Zealous also strips faith sympathies.;;;;;;;;;;;;;x
+
+remove_positive_personality;--------Remove All Positive Personality;;;;;;;;;;;;;x
+remove_positive_personality_desc;Strips every positive personality trait the character holds, including Robust.;;;;;;;;;;;;;x
+
+add_negative_personality;--------Add All Negative Personality;;;;;;;;;;;;;x
+add_negative_personality_desc;Adds the negative personality traits, including Stubborn. Cruel also strips Kind.;;;;;;;;;;;;;x
+
+remove_negative_personality;--------Remove All Negative Personality;;;;;;;;;;;;;x
+remove_negative_personality_desc;Strips every negative personality trait the character holds.;;;;;;;;;;;;;x
+
 add_cruel;--------Add Cruel;;;;;;;;;;;;;x
 add_cruel_desc;Add Cruel;;;;;;;;;;;;;x
 
@@ -1364,6 +1376,13 @@ show_childhood_desc;Show Childhood;;;;;;;;;;;;;x
 
 hide_childhood;----Hide Childhood;;;;;;;;;;;;;x
 hide_childhood_desc;Hide Childhood;;;;;;;;;;;;;x
+
+add_all_childhood;--------Add All Childhood Traits;;;;;;;;;;;;;x
+add_all_childhood_desc;Adds the childhood traits except Timid and Rowdy.;;;;;;;;;;;;;x
+
+remove_all_childhood;--------Remove All Childhood Traits;;;;;;;;;;;;;x
+remove_all_childhood_desc;Strips every childhood trait the character holds, including Timid and Rowdy.;;;;;;;;;;;;;x
+
 add_affectionate;--------Add Affectionate;;;;;;;;;;;;;x
 add_affectionate_desc;Add Affectionate;;;;;;;;;;;;;x
 
