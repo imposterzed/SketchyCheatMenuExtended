@@ -30,9 +30,11 @@ Paired add/remove decisions for 274 traits, organized by category.
 
 **Personality** — Positive: Ambitious, Brave, Brawny, Zealous, Erudite, Gregarious, Groomed, Honest, Just, Shrewd, Trusting. Negative: Content, Craven, Frail, Cynical, Shy, Uncouth, Deceitful, Arbitrary, Dull, Paranoid, Cruel, Stubborn. `Add All Positive` / `Remove All Positive` / `Add All Negative` / `Remove All Negative`.
 
+**Lifestyles** — Administrator, Architect, Celibate, Duelist, Falconer, Game Master, Gardener, Hedonist, Hunter, Impaler, Master Schemer, Master Seducer, Master Seductress, Mystic, Poet, Renowned Physician, Scholar, Faqih, Socializer, Strategist, Theologian. `Add All` / `Remove All`.
+
 **Childhood** — Affectionate, Brooding, Conscientious, Curious, Fussy, Haughty, Idolizer, Indolent, Playful, Rowdy, Timid, Willful. `Add All` / `Remove All`.
 
-Other categories: beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese imperial, raiding, lifestyle, religious markers & doctrine, ordained clergy, christian status, muslim status, dharmic identity, birth markers, zodiac, kinslayer, memes.
+Other categories: beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese imperial, raiding, religious markers & doctrine, ordained clergy, christian status, muslim status, dharmic identity, birth markers, zodiac, kinslayer, memes.
 
 Vassal and Dynasty submenus carry separate bulk decisions that apply virtues or remove sins across many characters at once.
 

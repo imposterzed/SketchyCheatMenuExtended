@@ -445,6 +445,12 @@ remove_scarred_desc;Remove Scarred;;;;;;;;;;;;;x
 remove_child_of_concubine;--------Remove Child Of Concubine;;;;;;;;;;;;;x
 remove_child_of_concubine_desc;Remove Child Of Concubine;;;;;;;;;;;;;x
 
+add_all_lifestyles;--------Add All Lifestyles;;;;;;;;;;;;;x
+add_all_lifestyles_desc;Adds the lifestyle traits. Scholar or Faqih per religion, Master Seducer or Master Seductress per sex. Hedonist is added in place of Celibate.;;;;;;;;;;;;;x
+
+remove_all_lifestyles;--------Remove All Lifestyles;;;;;;;;;;;;;x
+remove_all_lifestyles_desc;Strips every lifestyle trait the character holds, including Celibate.;;;;;;;;;;;;;x
+
 add_mystic;--------Add Mystic;;;;;;;;;;;;;x
 add_mystic_desc;Add Mystic;;;;;;;;;;;;;x
 
@@ -481,11 +487,11 @@ add_socializer_desc;Add Socializer;;;;;;;;;;;;;x
 remove_socializer;--------Remove Socializer;;;;;;;;;;;;;x
 remove_socializer_desc;Remove Socializer;;;;;;;;;;;;;x
 
-add_gamer;--------Add Gamer;;;;;;;;;;;;;x
-add_gamer_desc;Add Gamer;;;;;;;;;;;;;x
+add_gamer;--------Add Game Master;;;;;;;;;;;;;x
+add_gamer_desc;Add Game Master;;;;;;;;;;;;;x
 
-remove_gamer;--------Remove Gamer;;;;;;;;;;;;;x
-remove_gamer_desc;Remove Gamer;;;;;;;;;;;;;x
+remove_gamer;--------Remove Game Master;;;;;;;;;;;;;x
+remove_gamer_desc;Remove Game Master;;;;;;;;;;;;;x
 
 add_impaler;--------Add Impaler;;;;;;;;;;;;;x
 add_impaler_desc;Add Impaler;;;;;;;;;;;;;x
@@ -532,11 +538,11 @@ remove_administrator_desc;Remove Administrator;;;;;;;;;;;;;x
 add_scholar;--------Add Scholar;;;;;;;;;;;;;x
 add_scholar_desc;Add Scholar;;;;;;;;;;;;;x
 
-add_physician;--------Add Physician;;;;;;;;;;;;;x
-add_physician_desc;Add Physician;;;;;;;;;;;;;x
+add_physician;--------Add Renowned Physician;;;;;;;;;;;;;x
+add_physician_desc;Add Renowned Physician;;;;;;;;;;;;;x
 
-remove_physician;--------Remove Physician;;;;;;;;;;;;;x
-remove_physician_desc;Remove Physician;;;;;;;;;;;;;x
+remove_physician;--------Remove Renowned Physician;;;;;;;;;;;;;x
+remove_physician_desc;Remove Renowned Physician;;;;;;;;;;;;;x
 
 remove_scholar;--------Remove Scholar;;;;;;;;;;;;;x
 remove_scholar_desc;Remove Scholar;;;;;;;;;;;;;x

@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.2] - 2026-06-27
+
+### Added
+- **Bulk add/remove in Lifestyles section** — `Add All Lifestyles` / `Remove All Lifestyles`. Add grants 18 lifestyles — 16 always-stackable: Administrator, Architect, Duelist, Falconer, Game Master, Gardener, Hedonist, Hunter, Impaler, Mystic, Poet, Renowned Physician, Master Schemer, Socializer, Strategist, Theologian; plus Scholar or Faqih (religion-routed) and Master Seducer or Master Seductress (sex-routed). Add All Lifestyles adds Hedonist over Celibate; Remove All Lifestyles also strips Celibate.
+- 2 new section-bulk scripted_effects in `scmp_bulk_effects.txt` (`clear_lifestyle_traits_effect`, `clear_lifestyle_mutex_effect`) and 2 new visibility scripted_triggers in `scmp_trait_section_triggers.txt`.
+- 2 new GFX sprite entries in `cheats_menu_intrigue_traits.gfx` for the new decisions.
+
+### Changed
+- Individual Lifestyles decision labels updated to match the in-game trait display names: `Gamer` → `Game Master`, `Physician` → `Renowned Physician`. The Renowned Physician pair moved between Poet and Scholar in the menu order.
+
 ## [0.10.1] - 2026-06-24
 
 ### Added

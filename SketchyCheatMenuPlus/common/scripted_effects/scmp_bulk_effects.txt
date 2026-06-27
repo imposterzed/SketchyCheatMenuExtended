@@ -99,3 +99,32 @@ clear_negative_personality_mutex_effect = {
   # cruel opposes kind
   if = { limit = { trait = kind } remove_trait = kind }
 }
+
+clear_lifestyle_traits_effect = {
+  if = { limit = { trait = administrator } remove_trait = administrator }
+  if = { limit = { trait = architect }     remove_trait = architect     }
+  if = { limit = { trait = celibate }      remove_trait = celibate      }
+  if = { limit = { trait = duelist }       remove_trait = duelist       }
+  if = { limit = { trait = falconer }      remove_trait = falconer      }
+  if = { limit = { trait = faqih }         remove_trait = faqih         }
+  remove_gamer_trait_effect = yes
+  if = { limit = { trait = gardener }      remove_trait = gardener      }
+  if = { limit = { trait = hedonist }      remove_trait = hedonist      }
+  if = { limit = { trait = hunter }        remove_trait = hunter        }
+  if = { limit = { trait = impaler }       remove_trait = impaler       }
+  if = { limit = { trait = mystic }        remove_trait = mystic        }
+  if = { limit = { trait = physician }     remove_trait = physician     }
+  if = { limit = { trait = poet }          remove_trait = poet          }
+  remove_schemer_trait_effect = yes
+  if = { limit = { trait = scholar }       remove_trait = scholar       }
+  if = { limit = { trait = socializer }    remove_trait = socializer    }
+  if = { limit = { trait = strategist }    remove_trait = strategist    }
+  if = { limit = { trait = theologian }    remove_trait = theologian    }
+  remove_seducer_strict_trait_effect = yes
+  remove_seductress_strict_trait_effect = yes
+}
+
+clear_lifestyle_mutex_effect = {
+  # hedonist / seducer / seductress all oppose celibate; drop celibate to keep all three
+  if = { limit = { trait = celibate } remove_trait = celibate }
+}

@@ -145,3 +145,52 @@ has_all_childhood_traits_trigger = {
   trait = playful
   trait = willful
 }
+
+has_any_lifestyle_trait_trigger = {
+  OR = {
+    trait = administrator
+    trait = architect
+    trait = celibate
+    trait = duelist
+    trait = falconer
+    trait = faqih
+    has_gamer_trait_trigger = yes
+    trait = gardener
+    trait = hedonist
+    trait = hunter
+    trait = impaler
+    trait = mystic
+    trait = physician
+    trait = poet
+    has_schemer_trait_trigger = yes
+    trait = scholar
+    trait = socializer
+    trait = strategist
+    trait = theologian
+    has_seducer_trait_trigger = yes
+  }
+}
+
+has_all_lifestyle_traits_trigger = {
+  trait = administrator
+  trait = architect
+  trait = duelist
+  trait = falconer
+  has_gamer_trait_trigger = yes
+  trait = gardener
+  trait = hedonist
+  trait = hunter
+  trait = impaler
+  trait = mystic
+  trait = physician
+  trait = poet
+  has_schemer_trait_trigger = yes
+  trait = socializer
+  trait = strategist
+  trait = theologian
+  OR = {
+    trait = scholar
+    trait = faqih
+  }
+  has_seducer_trait_trigger = yes
+}

@@ -9296,6 +9296,96 @@ decisions = {
     }
   }
 
+  add_all_lifestyles = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_lifestyle
+      NOT = { has_all_lifestyle_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_lifestyle_mutex_effect = yes
+      if = { limit = { NOT = { trait = administrator } } add_trait = administrator }
+      if = { limit = { NOT = { trait = architect } }     add_trait = architect     }
+      if = { limit = { NOT = { trait = duelist } }       add_trait = duelist       }
+      if = { limit = { NOT = { trait = falconer } }      add_trait = falconer      }
+      if = { limit = { NOT = { has_gamer_trait_trigger = yes } } add_gamer_trait_effect = yes }
+      if = { limit = { NOT = { trait = gardener } }      add_trait = gardener      }
+      if = { limit = { NOT = { trait = hedonist } }      add_trait = hedonist      }
+      if = { limit = { NOT = { trait = hunter } }        add_trait = hunter        }
+      if = { limit = { NOT = { trait = impaler } }       add_trait = impaler       }
+      if = { limit = { NOT = { trait = mystic } }        add_trait = mystic        }
+      if = { limit = { NOT = { trait = physician } }     add_trait = physician     }
+      if = { limit = { NOT = { trait = poet } }          add_trait = poet          }
+      if = { limit = { NOT = { has_schemer_trait_trigger = yes } } add_schemer_trait_effect = yes }
+      if = { limit = { NOT = { trait = socializer } }    add_trait = socializer    }
+      if = { limit = { NOT = { trait = strategist } }    add_trait = strategist    }
+      if = { limit = { NOT = { trait = theologian } }    add_trait = theologian    }
+      if = {
+        limit = {
+          religion_group = muslim
+          NOT = { trait = faqih }
+        }
+        if = { limit = { trait = scholar } remove_trait = scholar }
+        add_trait = faqih
+      }
+      if = {
+        limit = {
+          NOT = { religion_group = muslim }
+          NOT = { trait = scholar }
+        }
+        if = { limit = { trait = faqih } remove_trait = faqih }
+        add_trait = scholar
+      }
+      if = {
+        limit = { NOT = { has_seducer_trait_trigger = yes } }
+        remove_seducer_strict_trait_effect = yes
+        remove_seductress_strict_trait_effect = yes
+        add_seducer_trait_effect = yes
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_all_lifestyles = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_lifestyle
+      has_any_lifestyle_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_lifestyle_traits_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   remove_administrator = {
     potential = {
       ai = no
@@ -10048,58 +10138,6 @@ decisions = {
     }
   }
 
-  remove_physician = {
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_lifestyle
-      trait = physician
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      remove_trait = physician
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  add_physician = {
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_lifestyle
-      NOT = { trait = physician }
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      add_trait = physician
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
   remove_poet = {
     potential = {
       ai = no
@@ -10141,6 +10179,58 @@ decisions = {
 
     effect = {
       add_trait = poet
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_physician = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_lifestyle
+      trait = physician
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = physician
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_physician = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_lifestyle
+      NOT = { trait = physician }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      add_trait = physician
     }
 
     revoke_allowed = {
