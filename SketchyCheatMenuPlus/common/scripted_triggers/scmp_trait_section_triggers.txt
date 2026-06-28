@@ -264,3 +264,96 @@ has_all_sympathy_traits_trigger = {
     trait = sympathy_zoroastrianism
   }
 }
+
+has_any_leadership_trait_trigger = {
+  OR = {
+    trait = aggressive_leader
+    trait = defensive_leader
+    trait = flanker
+    trait = holy_warrior
+    trait = inspiring_leader
+    trait = organizer
+    trait = siege_leader
+    trait = trickster
+    trait = unyielding_leader
+    trait = winter_soldier
+    trait = cavalry_leader
+    trait = heavy_infantry_leader
+    trait = light_foot_leader
+    trait = war_elephant_leader
+    has_battlefield_terrain_master_trait_trigger = yes
+    has_desert_terrain_trait_trigger = yes
+    has_direct_leader_trait_trigger = yes
+    has_flat_terrain_trait_trigger = yes
+    has_jungle_terrain_trait_trigger = yes
+    has_mountain_terrain_trait_trigger = yes
+    has_rough_terrain_trait_trigger = yes
+  }
+}
+
+has_all_leadership_traits_trigger = {
+  trait = aggressive_leader
+  trait = defensive_leader
+  trait = flanker
+  trait = holy_warrior
+  trait = inspiring_leader
+  trait = organizer
+  trait = siege_leader
+  trait = trickster
+  trait = unyielding_leader
+  trait = winter_soldier
+  trait = cavalry_leader
+  trait = heavy_infantry_leader
+  trait = light_foot_leader
+  trait = war_elephant_leader
+  has_battlefield_terrain_master_trait_trigger = yes
+  has_desert_terrain_trait_trigger = yes
+  has_direct_leader_trait_trigger = yes
+  has_flat_terrain_trait_trigger = yes
+  has_jungle_terrain_trait_trigger = yes
+  has_mountain_terrain_trait_trigger = yes
+  has_rough_terrain_trait_trigger = yes
+}
+
+has_any_warriors_trait_trigger = {
+  OR = {
+    trait = adventurer
+    trait = berserker
+    trait = gladiator
+    trait = shieldmaiden
+    trait = varangian
+  }
+}
+
+has_all_warriors_traits_trigger = {
+  trait = adventurer
+  trait = berserker
+  trait = gladiator
+  trait = varangian
+  trigger_if = {
+    limit = { is_female = yes }
+    trait = shieldmaiden
+  }
+}
+
+has_any_chinese_imperial_trait_trigger = {
+  OR = {
+    trait = logistics_expert
+    trait = master_of_flame
+    trait = sapper
+    trait = levy_coordinator
+    trait = kow_tow_completed_tier_1
+    trait = kow_tow_completed_tier_2
+    trait = kow_tow_completed_tier_3
+  }
+}
+
+has_all_chinese_imperial_traits_trigger = {
+  trait = logistics_expert
+  trait = master_of_flame
+  trait = sapper
+  trait = levy_coordinator
+  trait = kow_tow_completed_tier_3
+  NOT = { trait = kow_tow_completed_tier_1 }
+  NOT = { trait = kow_tow_completed_tier_2 }
+}

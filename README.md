@@ -32,6 +32,18 @@ Paired add/remove decisions for 274 traits, organized by category.
 
 **Health & Congenital** — Fair, Genius, Quick, Strong, Giant, Lefthanded, Scarred, Scarred Mid, Scarred High, Freckles, Freckles 2, Freckles 3, Freckles 4, Freckles 5, Fat, Malnourished, Clubfooted, Dwarf, Harelip, Hunchback, Imbecile, Inbred, Lisp, Slow, Stutter, Ugly, Weak, Blinded, Depressed, Disfigured, Drunkard, Incapable, Infirm, Lover's Pox, Lunatic, Maimed, Mangled, One-Eyed, One-Handed, One-Legged, Possessed, Severely Injured, Sick Incapable, Stressed, Wounded. `Remove Defects` and `Remove Diseases` cover the 11 birth defects and disease cluster respectively.
 
+**Leadership** — Aggressive Leader, Battlefield Terrain Master, Defensive Leader, Direct Leader, Flanker, Holy Warrior, Inspiring Leader, Organizer, Siege Leader, Trickster, Unyielding Leader, Winter Soldier, Cavalry Leader, Heavy Infantry Leader, Light Foot Leader, War Elephant Leader, Desert Expert, Flat Terrain Expert, Jungle Expert, Mountain Expert, Rough Terrain Expert. `Add All` / `Remove All`.
+
+**Warriors** — Adventurer, Berserker, Gladiator, Shieldmaiden, Varangian. `Add All` / `Remove All`.
+
+**Holy War Rewards** — Ares' Own, Crusader, Crusader King, Crusader Queen, Eagle Knight, Sun Warrior, Gond-i Shahanshah, Hound of Dievas, Kailash Guardian, Kanai, Mujahid, Nyame's Shield, Perun's Chosen, Skylord, Ukko's Hammer, Valhalla Bound.
+
+**Warrior Lodge** — Aeneator, Fearsome, Forest Ambusher, Marauder, Mountain Guardian, Pillar of the Plains, Scorcher, Shield of the Tundra, Spirit Warrior.
+
+**Chinese Imperial** — Way of the Dog, Way of the Dragon, Way of the Leopard, Way of the Tiger, Kowtow Complete (Tier I), Kowtow Complete (Tier II), Kowtow Complete (Tier III). `Add All` / `Remove All`.
+
+**Raiding** — Viking, Pirate, Ravager, Sea King, Sea Queen.
+
 **Lifestyles** — Administrator, Architect, Celibate, Duelist, Falconer, Game Master, Gardener, Hedonist, Hunter, Impaler, Master Schemer, Master Seducer, Master Seductress, Mystic, Poet, Renowned Physician, Scholar, Faqih, Socializer, Strategist, Theologian. `Add All` / `Remove All`.
 
 **Religious Markers & Doctrine** — Hajjaj, Indian Pilgrim, Pilgrim, Reincarnation, Saoshyant, Saoshyant Descendant, Sympathy for Christian Religions, Sympathy for Eastern Religions, Sympathy for Israelite Religions, Sympathy for Mazdan Religions, Sympathy for Muslim Religions, Sympathy for Pagan Religions, Haemophiliac, Haemophant, Haemoarch, Syncretist, Spiritualist, Militant, Tribalist, Bad Priest (Aztec / Christian / Muslim / Norse / Tengri / Zoroastrian), Excommunicated. `Add All Sympathies` / `Remove All Sympathies`.
@@ -48,7 +60,7 @@ Paired add/remove decisions for 274 traits, organized by category.
 
 **Childhood** — Affectionate, Brooding, Conscientious, Curious, Fussy, Haughty, Idolizer, Indolent, Playful, Rowdy, Timid, Willful. `Add All` / `Remove All`.
 
-Other categories: combat / leadership, warriors, holy war rewards, warrior lodge, chinese imperial, raiding, zodiac, kinslayer, memes.
+Other categories: zodiac, kinslayer, memes.
 
 Vassal and Dynasty submenus carry separate bulk decisions that apply virtues or remove sins across many characters at once.
 

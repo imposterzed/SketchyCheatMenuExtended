@@ -142,3 +142,43 @@ clear_sympathy_mutex_effect = {
   # sympathies oppose zealous
   if = { limit = { trait = zealous } remove_trait = zealous }
 }
+
+clear_leadership_traits_effect = {
+  if = { limit = { trait = aggressive_leader }     remove_trait = aggressive_leader     }
+  if = { limit = { trait = defensive_leader }      remove_trait = defensive_leader      }
+  if = { limit = { trait = flanker }               remove_trait = flanker               }
+  if = { limit = { trait = holy_warrior }          remove_trait = holy_warrior          }
+  if = { limit = { trait = inspiring_leader }      remove_trait = inspiring_leader      }
+  if = { limit = { trait = organizer }             remove_trait = organizer             }
+  if = { limit = { trait = siege_leader }          remove_trait = siege_leader          }
+  if = { limit = { trait = trickster }             remove_trait = trickster             }
+  if = { limit = { trait = unyielding_leader }     remove_trait = unyielding_leader     }
+  if = { limit = { trait = winter_soldier }        remove_trait = winter_soldier        }
+  if = { limit = { trait = cavalry_leader }        remove_trait = cavalry_leader        }
+  if = { limit = { trait = heavy_infantry_leader } remove_trait = heavy_infantry_leader }
+  if = { limit = { trait = light_foot_leader }     remove_trait = light_foot_leader     }
+  if = { limit = { trait = war_elephant_leader }   remove_trait = war_elephant_leader   }
+  remove_battlefield_terrain_master_trait_effect = yes
+  remove_desert_terrain_trait_effect = yes
+  remove_direct_leader_trait_effect = yes
+  remove_flat_terrain_trait_effect = yes
+  remove_jungle_terrain_trait_effect = yes
+  remove_mountain_terrain_trait_effect = yes
+  remove_rough_terrain_trait_effect = yes
+}
+
+clear_warriors_traits_effect = {
+  if = { limit = { trait = adventurer }   remove_trait = adventurer   }
+  if = { limit = { trait = berserker }    remove_trait = berserker    }
+  if = { limit = { trait = gladiator }    remove_trait = gladiator    }
+  if = { limit = { trait = shieldmaiden } remove_trait = shieldmaiden }
+  if = { limit = { trait = varangian }    remove_trait = varangian    }
+}
+
+clear_chinese_imperial_traits_effect = {
+  if = { limit = { trait = logistics_expert } remove_trait = logistics_expert }
+  if = { limit = { trait = master_of_flame }  remove_trait = master_of_flame  }
+  if = { limit = { trait = sapper }           remove_trait = sapper           }
+  if = { limit = { trait = levy_coordinator } remove_trait = levy_coordinator }
+  clear_kowtow_traits_effect = yes
+}

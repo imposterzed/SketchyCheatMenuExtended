@@ -607,14 +607,20 @@ add_inspiring_leader_desc;Add Inspiring Leader;;;;;;;;;;;;;x
 remove_inspiring_leader;--------Remove Inspiring Leader;;;;;;;;;;;;;x
 remove_inspiring_leader_desc;Remove Inspiring Leader;;;;;;;;;;;;;x
 
-add_defensive_leader;--------Add Defender;;;;;;;;;;;;;x
-add_defensive_leader_desc;Add Defender;;;;;;;;;;;;;x
+add_defensive_leader;--------Add Defensive Leader;;;;;;;;;;;;;x
+add_defensive_leader_desc;Add Defensive Leader;;;;;;;;;;;;;x
 
-remove_defensive_leader;--------Remove Defender;;;;;;;;;;;;;x
-remove_defensive_leader_desc;Remove Defender;;;;;;;;;;;;;x
+remove_defensive_leader;--------Remove Defensive Leader;;;;;;;;;;;;;x
+remove_defensive_leader_desc;Remove Defensive Leader;;;;;;;;;;;;;x
 
 add_aggressive_leader;--------Add Aggressive Leader;;;;;;;;;;;;;x
 add_aggressive_leader_desc;Add Aggressive Leader;;;;;;;;;;;;;x
+
+add_all_leadership;--------Add All Leadership;;;;;;;;;;;;;x
+add_all_leadership_desc;Adds every Leadership trait the character is missing.;;;;;;;;;;;;;x
+
+remove_all_leadership;--------Remove All Leadership;;;;;;;;;;;;;x
+remove_all_leadership_desc;Strips every Leadership trait the character holds.;;;;;;;;;;;;;x
 
 remove_aggressive_leader;--------Remove Aggressive Leader;;;;;;;;;;;;;x
 remove_aggressive_leader_desc;Remove Aggressive Leader;;;;;;;;;;;;;x
@@ -661,12 +667,6 @@ add_rough_terrain_leader_desc;Add Rough Terrain Expert;;;;;;;;;;;;;x
 remove_rough_terrain_leader;--------Remove Rough Terrain Expert;;;;;;;;;;;;;x
 remove_rough_terrain_leader_desc;Remove Rough Terrain Expert;;;;;;;;;;;;;x
 
-add_mountain_terrain_leader;--------Add Mountain Terrain Expert;;;;;;;;;;;;;x
-add_mountain_terrain_leader_desc;Add Mountain Terrain Expert;;;;;;;;;;;;;x
-
-remove_mountain_terrain_leader;--------Remove Mountain Terrain Expert;;;;;;;;;;;;;x
-remove_mountain_terrain_leader_desc;Remove Mountain Terrain Expert;;;;;;;;;;;;;x
-
 add_desert_terrain_leader;--------Add Desert Expert;;;;;;;;;;;;;x
 add_desert_terrain_leader_desc;Add Desert Expert;;;;;;;;;;;;;x
 
@@ -679,11 +679,11 @@ add_mountain_terrain_leader_desc;Add Mountain Expert;;;;;;;;;;;;;x
 remove_mountain_terrain_leader;--------Remove Mountain Expert;;;;;;;;;;;;;x
 remove_mountain_terrain_leader_desc;Remove Mountain Expert;;;;;;;;;;;;;x
 
-add_unyielding_leader;--------Add Unyielding;;;;;;;;;;;;;x
-add_unyielding_leader_desc;Add Unyielding;;;;;;;;;;;;;x
+add_unyielding_leader;--------Add Unyielding Leader;;;;;;;;;;;;;x
+add_unyielding_leader_desc;Add Unyielding Leader;;;;;;;;;;;;;x
 
-remove_unyielding_leader;--------Remove Unyielding;;;;;;;;;;;;;x
-remove_unyielding_leader_desc;Remove Unyielding;;;;;;;;;;;;;x
+remove_unyielding_leader;--------Remove Unyielding Leader;;;;;;;;;;;;;x
+remove_unyielding_leader_desc;Remove Unyielding Leader;;;;;;;;;;;;;x
 
 add_narrow_flank_leader;--------Add BattlefIeld Terrain Master;;;;;;;;;;;;;x
 add_narrow_flank_leader_desc;Add BattlefIeld Terrain Master;;;;;;;;;;;;;x
@@ -886,6 +886,12 @@ show_warriors_desc;Show Warriors;;;;;;;;;;;;;x
 hide_warriors;----Hide Warriors;;;;;;;;;;;;;x
 hide_warriors_desc;Hide Warriors;;;;;;;;;;;;;x
 
+add_all_warriors;--------Add All Warriors;;;;;;;;;;;;;x
+add_all_warriors_desc;Adds the Warriors traits. Shieldmaiden is added only for female characters.;;;;;;;;;;;;;x
+
+remove_all_warriors;--------Remove All Warriors;;;;;;;;;;;;;x
+remove_all_warriors_desc;Strips every Warriors trait the character holds.;;;;;;;;;;;;;x
+
 add_adventurer;--------Add Adventurer;;;;;;;;;;;;;x
 add_adventurer_desc;Add Adventurer;;;;;;;;;;;;;x
 
@@ -963,6 +969,12 @@ show_chinese_commander_desc;Show Chinese Imperial;;;;;;;;;;;;;x
 
 hide_chinese_commander;----Hide Chinese Imperial;;;;;;;;;;;;;x
 hide_chinese_commander_desc;Hide Chinese Imperial;;;;;;;;;;;;;x
+
+add_all_chinese_imperial;--------Add All Chinese Imperial;;;;;;;;;;;;;x
+add_all_chinese_imperial_desc;Adds the four commander traits and Kowtow Complete (Tier III). Tier III replaces Tier I or Tier II if present.;;;;;;;;;;;;;x
+
+remove_all_chinese_imperial;--------Remove All Chinese Imperial;;;;;;;;;;;;;x
+remove_all_chinese_imperial_desc;Strips every commander trait and Kowtow Complete tier the character holds.;;;;;;;;;;;;;x
 
 add_levy_coordinator;--------Add Way of the Tiger;;;;;;;;;;;;;x
 add_levy_coordinator_desc;Add Way of the Tiger;;;;;;;;;;;;;x

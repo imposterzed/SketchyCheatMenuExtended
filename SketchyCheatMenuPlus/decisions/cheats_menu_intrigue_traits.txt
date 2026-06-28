@@ -5607,6 +5607,78 @@ decisions = {
     }
   }
 
+  add_all_leadership = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_leadership
+      NOT = { has_all_leadership_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = { limit = { NOT = { trait = aggressive_leader } }     add_trait = aggressive_leader     }
+      if = { limit = { NOT = { has_battlefield_terrain_master_trait_trigger = yes } } add_battlefield_terrain_master_trait_effect = yes }
+      if = { limit = { NOT = { trait = defensive_leader } }      add_trait = defensive_leader      }
+      if = { limit = { NOT = { has_direct_leader_trait_trigger = yes } } add_direct_leader_trait_effect = yes }
+      if = { limit = { NOT = { trait = flanker } }               add_trait = flanker               }
+      if = { limit = { NOT = { trait = holy_warrior } }          add_trait = holy_warrior          }
+      if = { limit = { NOT = { trait = inspiring_leader } }      add_trait = inspiring_leader      }
+      if = { limit = { NOT = { trait = organizer } }             add_trait = organizer             }
+      if = { limit = { NOT = { trait = siege_leader } }          add_trait = siege_leader          }
+      if = { limit = { NOT = { trait = trickster } }             add_trait = trickster             }
+      if = { limit = { NOT = { trait = unyielding_leader } }     add_trait = unyielding_leader     }
+      if = { limit = { NOT = { trait = winter_soldier } }        add_trait = winter_soldier        }
+      if = { limit = { NOT = { trait = cavalry_leader } }        add_trait = cavalry_leader        }
+      if = { limit = { NOT = { trait = heavy_infantry_leader } } add_trait = heavy_infantry_leader }
+      if = { limit = { NOT = { trait = light_foot_leader } }     add_trait = light_foot_leader     }
+      if = { limit = { NOT = { trait = war_elephant_leader } }   add_trait = war_elephant_leader   }
+      if = { limit = { NOT = { has_desert_terrain_trait_trigger = yes } } add_desert_terrain_trait_effect = yes }
+      if = { limit = { NOT = { has_flat_terrain_trait_trigger = yes } } add_flat_terrain_trait_effect = yes }
+      if = { limit = { NOT = { has_jungle_terrain_trait_trigger = yes } } add_jungle_terrain_trait_effect = yes }
+      if = { limit = { NOT = { has_mountain_terrain_trait_trigger = yes } } add_mountain_terrain_trait_effect = yes }
+      if = { limit = { NOT = { has_rough_terrain_trait_trigger = yes } } add_rough_terrain_trait_effect = yes }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_all_leadership = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_leadership
+      has_any_leadership_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_leadership_traits_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   remove_aggressive_leader = {
     potential = {
       ai = no
@@ -6739,6 +6811,62 @@ decisions = {
 
     effect = {
       clr_character_flag = show_warriors
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_all_warriors = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_warriors
+      NOT = { has_all_warriors_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = { limit = { NOT = { trait = adventurer } } add_trait = adventurer }
+      if = { limit = { NOT = { trait = berserker } }  add_trait = berserker  }
+      if = { limit = { NOT = { trait = gladiator } }  add_trait = gladiator  }
+      if = { limit = { is_female = yes NOT = { trait = shieldmaiden } } add_trait = shieldmaiden }
+      if = { limit = { NOT = { trait = varangian } }  add_trait = varangian  }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_all_warriors = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_warriors
+      has_any_warriors_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_warriors_traits_effect = yes
     }
 
     revoke_allowed = {
@@ -8543,6 +8671,64 @@ decisions = {
 
     effect = {
       clr_character_flag = show_chinese_commander
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_all_chinese_imperial = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_chinese_commander
+      NOT = { has_all_chinese_imperial_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = { limit = { NOT = { trait = logistics_expert } } add_trait = logistics_expert }
+      if = { limit = { NOT = { trait = master_of_flame } }  add_trait = master_of_flame  }
+      if = { limit = { NOT = { trait = sapper } }           add_trait = sapper           }
+      if = { limit = { NOT = { trait = levy_coordinator } } add_trait = levy_coordinator }
+      if = { limit = { trait = kow_tow_completed_tier_1 } remove_trait = kow_tow_completed_tier_1 }
+      if = { limit = { trait = kow_tow_completed_tier_2 } remove_trait = kow_tow_completed_tier_2 }
+      if = { limit = { NOT = { trait = kow_tow_completed_tier_3 } } add_trait = kow_tow_completed_tier_3 }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_all_chinese_imperial = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_chinese_commander
+      has_any_chinese_imperial_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_chinese_imperial_traits_effect = yes
     }
 
     revoke_allowed = {

@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.4] - 2026-06-28
+
+### Added
+- **Bulk add/remove in Leadership section** — `Add All Leadership` / `Remove All Leadership`. Add grants every Leadership trait the character is missing; Remove clears every Leadership trait held.
+- **Bulk add/remove in Warriors section** — `Add All Warriors` / `Remove All Warriors`. Add grants Adventurer, Berserker, Gladiator, Varangian, and Shieldmaiden (female only); Remove clears every Warriors trait held.
+- **Bulk add/remove in Chinese Imperial section** — `Add All Chinese Imperial` / `Remove All Chinese Imperial`. Add grants Way of the Dog, Way of the Dragon, Way of the Leopard, Way of the Tiger, and Kowtow Complete (Tier III), replacing lower kowtow tiers. Remove clears the commanders and all three kowtow tiers.
+- 3 new section-bulk scripted_effects in `scmp_bulk_effects.txt` (`clear_leadership_traits_effect`, `clear_warriors_traits_effect`, `clear_chinese_imperial_traits_effect`) and 6 new visibility scripted_triggers in `scmp_trait_section_triggers.txt`.
+- 6 new GFX sprite entries in `cheats_menu_intrigue_traits.gfx`.
+
+### Changed
+- README Trait toggles section: Leadership, Warriors, Holy War Rewards, Warrior Lodge, Chinese Imperial, and Raiding added as explicit sub-sections with their full trait inventory, replacing the catch-all "Other categories" lump for these six sections. Order matches in-game file order.
+- Individual Leadership decision labels updated for clarity: `Defender` → `Defensive Leader`, `Unyielding` → `Unyielding Leader`.
+
+### Fixed
+- Duplicate `add_mountain_terrain_leader` / `remove_mountain_terrain_leader` loc entries collapsed to a single pair (Mountain Expert).
+
 ## [0.10.3] - 2026-06-27
 
 ### Added
