@@ -1450,36 +1450,42 @@ add_willful_desc;Add Willful;;;;;;;;;;;;;x
 remove_willful;--------Remove Willful;;;;;;;;;;;;;x
 remove_willful_desc;Remove Willful;;;;;;;;;;;;;x
 
-add_sympathy_christendom;--------Add Sympathy for Christendom;;;;;;;;;;;;;x
-add_sympathy_christendom_desc;Add Sympathy for Christendom;;;;;;;;;;;;;x
+add_all_sympathies;--------Add All Sympathies;;;;;;;;;;;;;x
+add_all_sympathies_desc;Adds the religious sympathies for the 5 other religion groups. Strips Zealous.;;;;;;;;;;;;;x
 
-remove_sympathy_christendom;--------Remove Sympathy for Christendom;;;;;;;;;;;;;x
-remove_sympathy_christendom_desc;Remove Sympathy for Christendom;;;;;;;;;;;;;x
-add_sympathy_indian;--------Add Sympathy for Indian;;;;;;;;;;;;;x
-add_sympathy_indian_desc;Add Sympathy for Indian;;;;;;;;;;;;;x
+remove_all_sympathies;--------Remove All Sympathies;;;;;;;;;;;;;x
+remove_all_sympathies_desc;Strips every religious sympathy the character holds.;;;;;;;;;;;;;x
 
-remove_sympathy_indian;--------Remove Sympathy for Indian;;;;;;;;;;;;;x
-remove_sympathy_indian_desc;Remove Sympathy for Indian;;;;;;;;;;;;;x
-add_sympathy_islam;--------Add Sympathy for Islam;;;;;;;;;;;;;x
-add_sympathy_islam_desc;Add Sympathy for Islam;;;;;;;;;;;;;x
+add_sympathy_christendom;--------Add Sympathy for Christian Religions;;;;;;;;;;;;;x
+add_sympathy_christendom_desc;Add Sympathy for Christian Religions;;;;;;;;;;;;;x
 
-remove_sympathy_islam;--------Remove Sympathy for Islam;;;;;;;;;;;;;x
-remove_sympathy_islam_desc;Remove Sympathy for Islam;;;;;;;;;;;;;x
-add_sympathy_judaism;--------Add Sympathy for Judaism;;;;;;;;;;;;;x
-add_sympathy_judaism_desc;Add Sympathy for Judaism;;;;;;;;;;;;;x
+remove_sympathy_christendom;--------Remove Sympathy for Christian Religions;;;;;;;;;;;;;x
+remove_sympathy_christendom_desc;Remove Sympathy for Christian Religions;;;;;;;;;;;;;x
+add_sympathy_indian;--------Add Sympathy for Eastern Religions;;;;;;;;;;;;;x
+add_sympathy_indian_desc;Add Sympathy for Eastern Religions;;;;;;;;;;;;;x
 
-remove_sympathy_judaism;--------Remove Sympathy for Judaism;;;;;;;;;;;;;x
-remove_sympathy_judaism_desc;Remove Sympathy for Judaism;;;;;;;;;;;;;x
-add_sympathy_pagans;--------Add Sympathy for Pagans;;;;;;;;;;;;;x
-add_sympathy_pagans_desc;Add Sympathy for Pagans;;;;;;;;;;;;;x
+remove_sympathy_indian;--------Remove Sympathy for Eastern Religions;;;;;;;;;;;;;x
+remove_sympathy_indian_desc;Remove Sympathy for Eastern Religions;;;;;;;;;;;;;x
+add_sympathy_islam;--------Add Sympathy for Muslim Religions;;;;;;;;;;;;;x
+add_sympathy_islam_desc;Add Sympathy for Muslim Religions;;;;;;;;;;;;;x
 
-remove_sympathy_pagans;--------Remove Sympathy for Pagans;;;;;;;;;;;;;x
-remove_sympathy_pagans_desc;Remove Sympathy for Pagans;;;;;;;;;;;;;x
-add_sympathy_zoroastrianism;--------Add Sympathy for Zoroastrians;;;;;;;;;;;;;x
-add_sympathy_zoroastrianism_desc;Add Sympathy for Zoroastrians;;;;;;;;;;;;;x
+remove_sympathy_islam;--------Remove Sympathy for Muslim Religions;;;;;;;;;;;;;x
+remove_sympathy_islam_desc;Remove Sympathy for Muslim Religions;;;;;;;;;;;;;x
+add_sympathy_judaism;--------Add Sympathy for Israelite Religions;;;;;;;;;;;;;x
+add_sympathy_judaism_desc;Add Sympathy for Israelite Religions;;;;;;;;;;;;;x
 
-remove_sympathy_zoroastrianism;--------Remove Sympathy for Zoroastrians;;;;;;;;;;;;;x
-remove_sympathy_zoroastrianism_desc;Remove Sympathy for Zoroastrians;;;;;;;;;;;;;x
+remove_sympathy_judaism;--------Remove Sympathy for Israelite Religions;;;;;;;;;;;;;x
+remove_sympathy_judaism_desc;Remove Sympathy for Israelite Religions;;;;;;;;;;;;;x
+add_sympathy_pagans;--------Add Sympathy for Pagan Religions;;;;;;;;;;;;;x
+add_sympathy_pagans_desc;Add Sympathy for Pagan Religions;;;;;;;;;;;;;x
+
+remove_sympathy_pagans;--------Remove Sympathy for Pagan Religions;;;;;;;;;;;;;x
+remove_sympathy_pagans_desc;Remove Sympathy for Pagan Religions;;;;;;;;;;;;;x
+add_sympathy_zoroastrianism;--------Add Sympathy for Mazdan Religions;;;;;;;;;;;;;x
+add_sympathy_zoroastrianism_desc;Add Sympathy for Mazdan Religions;;;;;;;;;;;;;x
+
+remove_sympathy_zoroastrianism;--------Remove Sympathy for Mazdan Religions;;;;;;;;;;;;;x
+remove_sympathy_zoroastrianism_desc;Remove Sympathy for Mazdan Religions;;;;;;;;;;;;;x
 add_hajjaj;--------Add Hajjaj;;;;;;;;;;;;;x
 add_hajjaj_desc;Add Hajjaj;;;;;;;;;;;;;x
 

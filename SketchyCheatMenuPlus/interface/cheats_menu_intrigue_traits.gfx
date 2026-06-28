@@ -268,4 +268,12 @@ spriteTypes = {
     name = "GFX_remove_all_lifestyles"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
+  spriteType = {
+    name = "GFX_add_all_sympathies"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_remove_all_sympathies"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
 }

@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.3] - 2026-06-27
+
+### Added
+- **Bulk add/remove in Sympathies sub-section of Religious Markers & Doctrine** — `Add All Sympathies` / `Remove All Sympathies`. Add grants the 5 cross-religion sympathies applicable to the character (own-religion sympathy is engine-blocked via potential) and strips Zealous as cross-section cleanup. Remove strips every sympathy held.
+- 2 new scripted_effects in `scmp_bulk_effects.txt` (`clear_sympathy_traits_effect`, `clear_sympathy_mutex_effect`) and 2 new visibility scripted_triggers in `scmp_trait_section_triggers.txt` (`has_any_sympathy_trait_trigger`, `has_all_sympathy_traits_trigger` — religion-aware via trigger_if branches per religion_group).
+- 2 new GFX sprite entries in `cheats_menu_intrigue_traits.gfx`.
+
+### Changed
+- README Trait toggles section restructured: previously-evaluated categories without bulk decisions (Health & Congenital, Religious Markers & Doctrine, Ordained Clergy, Christian Status, Muslim Status, Dharmic Identity, Birth Markers) promoted out of the catch-all "Other categories" lump into explicit listings with their full trait inventory. Section order matches in-game file order. Trimmed Other categories to the unevaluated sections.
+- Individual sympathy decision labels renamed to match the vanilla in-game trait display names: Christendom → Christian, Indian → Eastern, Islam → Muslim, Judaism → Israelite, Pagans → Pagan, Zoroastrians → Mazdan. Decisions reordered in the menu to alphabetical by new name.
+
+### Fixed
+- Individual `add_sympathy_X` decisions now strip Zealous explicitly for tooltip parity.
+
 ## [0.10.2] - 2026-06-27
 
 ### Added

@@ -10881,6 +10881,64 @@ decisions = {
   }
 
   ## --- Sympathy --- ##
+  add_all_sympathies = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { has_all_sympathy_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_sympathy_mutex_effect = yes
+      if = { limit = { NOT = { trait = sympathy_christendom }    NOT = { religion_group = christian } }         add_trait = sympathy_christendom    }
+      if = { limit = { NOT = { trait = sympathy_indian }         NOT = { religion_group = indian_group } }      add_trait = sympathy_indian         }
+      if = { limit = { NOT = { trait = sympathy_islam }          NOT = { religion_group = muslim } }            add_trait = sympathy_islam          }
+      if = { limit = { NOT = { trait = sympathy_judaism }        NOT = { religion_group = jewish_group } }      add_trait = sympathy_judaism        }
+      if = { limit = { NOT = { trait = sympathy_pagans }         NOT = { religion_group = pagan_group } }       add_trait = sympathy_pagans         }
+      if = { limit = { NOT = { trait = sympathy_zoroastrianism } NOT = { religion_group = zoroastrian_group } } add_trait = sympathy_zoroastrianism }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_all_sympathies = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      has_any_sympathy_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_sympathy_traits_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   remove_sympathy_christendom = {
     potential = {
       ai = no
@@ -10922,6 +10980,7 @@ decisions = {
     }
 
     effect = {
+      if = { limit = { trait = zealous } remove_trait = zealous }
       add_trait = sympathy_christendom
     }
 
@@ -10975,60 +11034,8 @@ decisions = {
     }
 
     effect = {
+      if = { limit = { trait = zealous } remove_trait = zealous }
       add_trait = sympathy_indian
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  remove_sympathy_islam = {
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_religious_markers
-      trait = sympathy_islam
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      remove_trait = sympathy_islam
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  add_sympathy_islam = {
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_religious_markers
-      NOT = { trait = sympathy_islam }
-      NOT = { religion_group = muslim }
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      add_trait = sympathy_islam
     }
 
     revoke_allowed = {
@@ -11081,60 +11088,8 @@ decisions = {
     }
 
     effect = {
+      if = { limit = { trait = zealous } remove_trait = zealous }
       add_trait = sympathy_judaism
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  remove_sympathy_pagans = {
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_religious_markers
-      trait = sympathy_pagans
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      remove_trait = sympathy_pagans
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  add_sympathy_pagans = {
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_religious_markers
-      NOT = { trait = sympathy_pagans }
-      NOT = { religion_group = pagan_group }
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      add_trait = sympathy_pagans
     }
 
     revoke_allowed = {
@@ -11187,7 +11142,116 @@ decisions = {
     }
 
     effect = {
+      if = { limit = { trait = zealous } remove_trait = zealous }
       add_trait = sympathy_zoroastrianism
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sympathy_islam = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = sympathy_islam
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sympathy_islam
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sympathy_islam = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = sympathy_islam }
+      NOT = { religion_group = muslim }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = { limit = { trait = zealous } remove_trait = zealous }
+      add_trait = sympathy_islam
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_sympathy_pagans = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      trait = sympathy_pagans
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = sympathy_pagans
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_sympathy_pagans = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_religious_markers
+      NOT = { trait = sympathy_pagans }
+      NOT = { religion_group = pagan_group }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = { limit = { trait = zealous } remove_trait = zealous }
+      add_trait = sympathy_pagans
     }
 
     revoke_allowed = {

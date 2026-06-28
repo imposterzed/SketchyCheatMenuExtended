@@ -128,3 +128,17 @@ clear_lifestyle_mutex_effect = {
   # hedonist / seducer / seductress all oppose celibate; drop celibate to keep all three
   if = { limit = { trait = celibate } remove_trait = celibate }
 }
+
+clear_sympathy_traits_effect = {
+  if = { limit = { trait = sympathy_christendom }    remove_trait = sympathy_christendom    }
+  if = { limit = { trait = sympathy_indian }         remove_trait = sympathy_indian         }
+  if = { limit = { trait = sympathy_islam }          remove_trait = sympathy_islam          }
+  if = { limit = { trait = sympathy_judaism }        remove_trait = sympathy_judaism        }
+  if = { limit = { trait = sympathy_pagans }         remove_trait = sympathy_pagans         }
+  if = { limit = { trait = sympathy_zoroastrianism } remove_trait = sympathy_zoroastrianism }
+}
+
+clear_sympathy_mutex_effect = {
+  # sympathies oppose zealous
+  if = { limit = { trait = zealous } remove_trait = zealous }
+}

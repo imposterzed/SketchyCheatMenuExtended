@@ -30,11 +30,25 @@ Paired add/remove decisions for 274 traits, organized by category.
 
 **Personality** — Positive: Ambitious, Brave, Brawny, Zealous, Erudite, Gregarious, Groomed, Honest, Just, Shrewd, Trusting. Negative: Content, Craven, Frail, Cynical, Shy, Uncouth, Deceitful, Arbitrary, Dull, Paranoid, Cruel, Stubborn. `Add All Positive` / `Remove All Positive` / `Add All Negative` / `Remove All Negative`.
 
+**Health & Congenital** — Fair, Genius, Quick, Strong, Giant, Lefthanded, Scarred, Scarred Mid, Scarred High, Freckles, Freckles 2, Freckles 3, Freckles 4, Freckles 5, Fat, Malnourished, Clubfooted, Dwarf, Harelip, Hunchback, Imbecile, Inbred, Lisp, Slow, Stutter, Ugly, Weak, Blinded, Depressed, Disfigured, Drunkard, Incapable, Infirm, Lover's Pox, Lunatic, Maimed, Mangled, One-Eyed, One-Handed, One-Legged, Possessed, Severely Injured, Sick Incapable, Stressed, Wounded. `Remove Defects` and `Remove Diseases` cover the 11 birth defects and disease cluster respectively.
+
 **Lifestyles** — Administrator, Architect, Celibate, Duelist, Falconer, Game Master, Gardener, Hedonist, Hunter, Impaler, Master Schemer, Master Seducer, Master Seductress, Mystic, Poet, Renowned Physician, Scholar, Faqih, Socializer, Strategist, Theologian. `Add All` / `Remove All`.
+
+**Religious Markers & Doctrine** — Hajjaj, Indian Pilgrim, Pilgrim, Reincarnation, Saoshyant, Saoshyant Descendant, Sympathy for Christian Religions, Sympathy for Eastern Religions, Sympathy for Israelite Religions, Sympathy for Mazdan Religions, Sympathy for Muslim Religions, Sympathy for Pagan Religions, Haemophiliac, Haemophant, Haemoarch, Syncretist, Spiritualist, Militant, Tribalist, Bad Priest (Aztec / Christian / Muslim / Norse / Tengri / Zoroastrian), Excommunicated. `Add All Sympathies` / `Remove All Sympathies`.
+
+**Ordained Clergy** — Monk, Nun, Bhikkhu, Bhikkhuni, Sanyasi, Sanyasini, Muni, Aryika.
+
+**Christian Status** — Crowned by Pope, Crowned by Bishop, Crowned by Priest, Crowned by Myself, Baptized by Pope, Baptized by Patriarch, Baptized by Bishop, Baptized by Satan, Beatified.
+
+**Muslim Status** — Ashari, Mutazilite, Decadent, Hafiz, Mirza, Sayyid.
+
+**Dharmic Identity** — Brahmin, Kshatriya, Vaishya, Shaivist, Shaktist, Smartist, Vaishnavist, Mahayana, Theravada, Vajrayana.
+
+**Birth Markers** — Bastard, Legit Bastard, Born in the Purple, Child of Concubine, Child of Consort, Twin.
 
 **Childhood** — Affectionate, Brooding, Conscientious, Curious, Fussy, Haughty, Idolizer, Indolent, Playful, Rowdy, Timid, Willful. `Add All` / `Remove All`.
 
-Other categories: beauty / physique, combat / leadership, warriors, holy war rewards, warrior lodge, chinese imperial, raiding, religious markers & doctrine, ordained clergy, christian status, muslim status, dharmic identity, birth markers, zodiac, kinslayer, memes.
+Other categories: combat / leadership, warriors, holy war rewards, warrior lodge, chinese imperial, raiding, zodiac, kinslayer, memes.
 
 Vassal and Dynasty submenus carry separate bulk decisions that apply virtues or remove sins across many characters at once.
 

@@ -194,3 +194,73 @@ has_all_lifestyle_traits_trigger = {
   }
   has_seducer_trait_trigger = yes
 }
+
+has_any_sympathy_trait_trigger = {
+  OR = {
+    trait = sympathy_christendom
+    trait = sympathy_indian
+    trait = sympathy_islam
+    trait = sympathy_judaism
+    trait = sympathy_pagans
+    trait = sympathy_zoroastrianism
+  }
+}
+
+has_all_sympathy_traits_trigger = {
+  trigger_if = {
+    limit = { religion_group = christian }
+    trait = sympathy_indian
+    trait = sympathy_islam
+    trait = sympathy_judaism
+    trait = sympathy_pagans
+    trait = sympathy_zoroastrianism
+  }
+  trigger_else_if = {
+    limit = { religion_group = muslim }
+    trait = sympathy_christendom
+    trait = sympathy_indian
+    trait = sympathy_judaism
+    trait = sympathy_pagans
+    trait = sympathy_zoroastrianism
+  }
+  trigger_else_if = {
+    limit = { religion_group = indian_group }
+    trait = sympathy_christendom
+    trait = sympathy_islam
+    trait = sympathy_judaism
+    trait = sympathy_pagans
+    trait = sympathy_zoroastrianism
+  }
+  trigger_else_if = {
+    limit = { religion_group = jewish_group }
+    trait = sympathy_christendom
+    trait = sympathy_indian
+    trait = sympathy_islam
+    trait = sympathy_pagans
+    trait = sympathy_zoroastrianism
+  }
+  trigger_else_if = {
+    limit = { religion_group = pagan_group }
+    trait = sympathy_christendom
+    trait = sympathy_indian
+    trait = sympathy_islam
+    trait = sympathy_judaism
+    trait = sympathy_zoroastrianism
+  }
+  trigger_else_if = {
+    limit = { religion_group = zoroastrian_group }
+    trait = sympathy_christendom
+    trait = sympathy_indian
+    trait = sympathy_islam
+    trait = sympathy_judaism
+    trait = sympathy_pagans
+  }
+  trigger_else = {
+    trait = sympathy_christendom
+    trait = sympathy_indian
+    trait = sympathy_islam
+    trait = sympathy_judaism
+    trait = sympathy_pagans
+    trait = sympathy_zoroastrianism
+  }
+}
