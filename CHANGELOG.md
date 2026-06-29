@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.2] - 2026-06-29
+
+### Added
+- **Obligation Laws max-endpoint decisions** — `Max Tax` / `Max Levy` shortcuts for Noble, Iqta, Burgher, Church, and Tribal Obligations jump the slider directly to either endpoint in one click.
+- 10 new GFX sprite entries in `cheats_menu_intrigue_laws_c_obligation.gfx`.
+
+### Fixed
+- `Shift Iqta Obligations Toward Tax` no longer leaves the Heavy Levy state lingering when stepping down from the top (vanilla iqta law mutex-chain quirk).
+
 ## [0.11.1] - 2026-06-28
 
 ### Added

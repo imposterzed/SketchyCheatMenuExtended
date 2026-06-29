@@ -62,6 +62,72 @@ decisions = {
 
   ## --- Noble Obligations --- ##
 
+  set_obligations_feudal_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_feudal_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_feudal_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_feudal_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_feudal_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_feudal_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   cycle_obligations_feudal_toward_tax = {
     potential = {
       ai = no
@@ -203,6 +269,75 @@ decisions = {
 
   ## --- Iqta Obligations --- ##
 
+  set_obligations_iqta_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = tax_levy_law_iqta_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        hidden_tooltip = {
+          revoke_law = tax_levy_law_iqta_8
+        }
+        add_law = tax_levy_law_iqta_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_iqta_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = tax_levy_law_iqta_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_iqta_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   cycle_obligations_iqta_toward_tax = {
     potential = {
       ai = no
@@ -237,6 +372,9 @@ decisions = {
         if = {
           limit = { has_law = tax_levy_law_iqta_8 }
           add_law = tax_levy_law_iqta_7
+          hidden_tooltip = {
+            revoke_law = tax_levy_law_iqta_8
+          }
         }
         else_if = {
           limit = { has_law = tax_levy_law_iqta_7 }
@@ -343,6 +481,70 @@ decisions = {
   }
 
   ## --- Burgher Obligations --- ##
+
+  set_obligations_republic_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_republic_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_republic_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_republic_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_republic_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_republic_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
 
   cycle_obligations_republic_toward_tax = {
     potential = {
@@ -482,6 +684,72 @@ decisions = {
   }
 
   ## --- Church Obligations --- ##
+
+  set_obligations_theocracy_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { has_theocracy_contract_block_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_theocracy_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_theocracy_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_theocracy_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { has_theocracy_contract_block_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_theocracy_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_theocracy_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
 
   cycle_obligations_theocracy_toward_tax = {
     potential = {
@@ -623,6 +891,70 @@ decisions = {
   }
 
   ## --- Tribal Obligations --- ##
+
+  set_obligations_tribal_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_tribal_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_tribal_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_tribal_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_tribal_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_tribal_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
 
   cycle_obligations_tribal_toward_tax = {
     potential = {

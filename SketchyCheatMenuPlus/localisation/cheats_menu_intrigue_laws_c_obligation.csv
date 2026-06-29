@@ -36,3 +36,33 @@ cycle_obligations_tribal_toward_tax_desc;Steps tribal vassal obligations one lev
 
 cycle_obligations_tribal_toward_levy;----Shift Tribal Obligations Toward Levy;;;;;;;;;;;;;x
 cycle_obligations_tribal_toward_levy_desc;Steps tribal vassal obligations one level toward levy focus.;;;;;;;;;;;;;x
+
+set_obligations_feudal_max_tax;----Set Noble Obligations: Max Tax;;;;;;;;;;;;;x
+set_obligations_feudal_max_tax_desc;Jumps noble vassal obligations directly to the maximum tax focus.;;;;;;;;;;;;;x
+
+set_obligations_feudal_max_levy;----Set Noble Obligations: Max Levy;;;;;;;;;;;;;x
+set_obligations_feudal_max_levy_desc;Jumps noble vassal obligations directly to the maximum levy focus.;;;;;;;;;;;;;x
+
+set_obligations_iqta_max_tax;----Set Iqta Obligations: Max Tax;;;;;;;;;;;;;x
+set_obligations_iqta_max_tax_desc;Jumps iqta vassal obligations directly to the maximum tax focus.;;;;;;;;;;;;;x
+
+set_obligations_iqta_max_levy;----Set Iqta Obligations: Max Levy;;;;;;;;;;;;;x
+set_obligations_iqta_max_levy_desc;Jumps iqta vassal obligations directly to the maximum levy focus.;;;;;;;;;;;;;x
+
+set_obligations_republic_max_tax;----Set Burgher Obligations: Max Tax;;;;;;;;;;;;;x
+set_obligations_republic_max_tax_desc;Jumps burgher vassal obligations directly to the maximum tax focus.;;;;;;;;;;;;;x
+
+set_obligations_republic_max_levy;----Set Burgher Obligations: Max Levy;;;;;;;;;;;;;x
+set_obligations_republic_max_levy_desc;Jumps burgher vassal obligations directly to the maximum levy focus.;;;;;;;;;;;;;x
+
+set_obligations_theocracy_max_tax;----Set Church Obligations: Max Tax;;;;;;;;;;;;;x
+set_obligations_theocracy_max_tax_desc;Jumps church vassal obligations directly to the maximum tax focus.;;;;;;;;;;;;;x
+
+set_obligations_theocracy_max_levy;----Set Church Obligations: Max Levy;;;;;;;;;;;;;x
+set_obligations_theocracy_max_levy_desc;Jumps church vassal obligations directly to the maximum levy focus.;;;;;;;;;;;;;x
+
+set_obligations_tribal_max_tax;----Set Tribal Obligations: Max Tax;;;;;;;;;;;;;x
+set_obligations_tribal_max_tax_desc;Jumps tribal vassal obligations directly to the maximum tax focus.;;;;;;;;;;;;;x
+
+set_obligations_tribal_max_levy;----Set Tribal Obligations: Max Levy;;;;;;;;;;;;;x
+set_obligations_tribal_max_levy_desc;Jumps tribal vassal obligations directly to the maximum levy focus.;;;;;;;;;;;;;x

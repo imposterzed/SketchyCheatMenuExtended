@@ -139,17 +139,17 @@ Set realm laws on your primary title via cheat-menu shortcuts.
 
 ### Obligation Laws
 
-Shift vassal-contract obligations toward tax or toward levy via cheat-menu shortcuts. Each cycles a 9-state slider (`_0` Heavily Tax Focused → `_4` Balanced → `_8` Heavily Levy Focused) one step per click; hides at boundaries.
+Shift vassal-contract obligations toward tax or levy.
 
-**Noble Obligations** — castle-tier vassal contract (non-Muslim).
+**Noble Obligations** — `Shift Toward Tax` / `Shift Toward Levy` / `Max Tax` / `Max Levy`.
 
-**Iqta Obligations** — castle-tier vassal contract (Muslim).
+**Iqta Obligations** — `Shift Toward Tax` / `Shift Toward Levy` / `Max Tax` / `Max Levy`.
 
-**Burgher Obligations** — city-tier vassal contract.
+**Burgher Obligations** — `Shift Toward Tax` / `Shift Toward Levy` / `Max Tax` / `Max Levy`.
 
-**Church Obligations** — temple-tier vassal contract.
+**Church Obligations** — `Shift Toward Tax` / `Shift Toward Levy` / `Max Tax` / `Max Levy`.
 
-**Tribal Obligations** — tribal-tier vassal contract.
+**Tribal Obligations** — `Shift Toward Tax` / `Shift Toward Levy` / `Max Tax` / `Max Levy`.
 
 ### Council Laws
 

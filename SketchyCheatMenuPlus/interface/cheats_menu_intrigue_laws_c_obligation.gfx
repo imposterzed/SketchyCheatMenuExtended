@@ -57,4 +57,44 @@ spriteTypes = {
     name = "GFX_cycle_obligations_tribal_toward_levy"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
+  spriteType = {
+    name = "GFX_set_obligations_feudal_max_tax"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_obligations_feudal_max_levy"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_obligations_iqta_max_tax"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_obligations_iqta_max_levy"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_obligations_republic_max_tax"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_obligations_republic_max_levy"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_obligations_theocracy_max_tax"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_obligations_theocracy_max_levy"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_obligations_tribal_max_tax"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_obligations_tribal_max_levy"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
 }
