@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.0] - 2026-06-29
+
+### Added
+- **Proper4KUI Patch sub-mod** (`SketchyCheatMenuPlusProper4KUIPatch`) — companion mod that swaps in the 50×50 hi-res icon variant when [Proper 4K UI Project](https://steamcommunity.com/sharedfiles/filedetails/?id=3054987840) is also loaded.
+
+### Changed
+- Section-toggle decisions (`Show X` / `Hide X` plus the master enable/disable toggles) show the mod's decision icon, replacing the placeholder.
+- Individual and bulk decisions no longer show an icon.
+
 ## [0.11.2] - 2026-06-29
 
 ### Added

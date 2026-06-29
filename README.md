@@ -208,6 +208,8 @@ Documents/Paradox Interactive/Crusader Kings II/mod/
 
 …then enable **Sketchy Cheat Menu Plus** in the launcher.
 
+**Proper4KUI users:** also install the **Sketchy Cheat Menu Plus - Proper4KUI Patch** companion sub-mod for the hi-res decision icon, sized to match Proper4KUI's larger UI. Vanilla players don't need it.
+
 ## Compatibility
 
 Sketchy Cheat Menu Plus is a content mod that doesn't overwrite base-game files, so it should work alongside vanilla and most other mods as the original Sketchy Cheat Menu did.

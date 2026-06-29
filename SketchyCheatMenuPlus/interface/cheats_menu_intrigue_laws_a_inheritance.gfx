@@ -2,11 +2,6 @@
 ##                Sketchy Cheat Menu Plus                 ##
 ##           Inheritance Laws Sub-Menu Sprites            ##
 ############################################################
-##                                                        ##
-## Every sprite below points at the same                  ##
-## decision_icon_cheats.dds red-box placeholder.          ##
-##                                                        ##
-############################################################
 
 spriteTypes = {
   spriteType = {
@@ -15,102 +10,6 @@ spriteTypes = {
   }
   spriteType = {
     name = "GFX_hide_inheritance_laws"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_elective_gavelkind"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_feudal_elective"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_eldership"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_gavelkind"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_turkish_succession"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_primogeniture"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_seniority"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_tanistry"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_ultimogeniture"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_true_cognatic_succession"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_agnatic_succession"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_cognatic_succession"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_enatic_succession"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_enatic_cognatic_succession"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_open_elective"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_nomad_succession"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_patrician_elective"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_true_cognatic_succession_hidden"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_agnatic_succession_hidden"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_cognatic_succession_hidden"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_enatic_succession_hidden"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_enatic_cognatic_succession_hidden"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_byzantine_elective"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succ_hre_elective"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
 }

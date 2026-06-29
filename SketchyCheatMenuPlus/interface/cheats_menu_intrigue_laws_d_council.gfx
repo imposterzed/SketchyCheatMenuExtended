@@ -2,11 +2,6 @@
 ##                Sketchy Cheat Menu Plus                 ##
 ##              Council Laws Sub-Menu Sprites             ##
 ############################################################
-##                                                        ##
-## Every sprite below points at the same                  ##
-## decision_icon_cheats.dds red-box placeholder.          ##
-##                                                        ##
-############################################################
 
 spriteTypes = {
   spriteType = {
@@ -15,78 +10,6 @@ spriteTypes = {
   }
   spriteType = {
     name = "GFX_hide_council_laws"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_law_voting_abolish"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_law_voting_empower"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_war_voting_ruler"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_war_voting_council"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_grant_title_voting_ruler"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_grant_title_voting_council"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_revoke_title_voting_ruler"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_revoke_title_voting_council"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_imprison_voting_ruler"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_imprison_voting_council"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_banish_voting_ruler"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_banish_voting_council"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_execution_voting_ruler"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_execution_voting_council"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succession_voting_limited"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_succession_voting_full"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_council_all_ruler"
-    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
-  }
-  spriteType = {
-    name = "GFX_set_council_all_council"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
 }
