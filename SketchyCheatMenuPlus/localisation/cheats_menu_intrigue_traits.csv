@@ -1144,6 +1144,12 @@ remove_dynasty_sins_desc;Dynasty & Spouses: Remove All Sins;;;;;;;;;;;;;x
 add_dynasty_genetics;--------Dynasty: Add Good Congenital Traits;;;;;;;;;;;;;x
 add_dynasty_genetics_desc;Dynasty & Spouses: Add All Good Congenital Traits;;;;;;;;;;;;;x
 
+add_all_cheat_traits;--------Add All Cheat Traits;;;;;;;;;;;;;x
+add_all_cheat_traits_desc;Adds every Cheat Trait the character is missing.;;;;;;;;;;;;;x
+
+remove_all_cheat_traits;--------Remove All Cheat Traits;;;;;;;;;;;;;x
+remove_all_cheat_traits_desc;Strips every Cheat Trait the character holds.;;;;;;;;;;;;;x
+
 add_beloved;--------Add Beloved;;;;;;;;;;;;;x
 add_beloved_desc;Add Beloved;;;;;;;;;;;;;x
 

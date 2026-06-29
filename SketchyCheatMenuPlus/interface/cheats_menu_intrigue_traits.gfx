@@ -300,4 +300,12 @@ spriteTypes = {
     name = "GFX_remove_all_chinese_imperial"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
+  spriteType = {
+    name = "GFX_add_all_cheat_traits"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_remove_all_cheat_traits"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
 }

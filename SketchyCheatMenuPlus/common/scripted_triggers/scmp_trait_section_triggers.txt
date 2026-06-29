@@ -357,3 +357,23 @@ has_all_chinese_imperial_traits_trigger = {
   NOT = { trait = kow_tow_completed_tier_1 }
   NOT = { trait = kow_tow_completed_tier_2 }
 }
+
+has_any_cheat_trait_trigger = {
+  OR = {
+    trait = beloved
+    trait = immortal
+    trait = builder
+    trait = mastermind
+    trait = landlord
+    trait = conspirator
+  }
+}
+
+has_all_cheat_traits_trigger = {
+  trait = beloved
+  trait = immortal
+  trait = builder
+  trait = mastermind
+  trait = landlord
+  trait = conspirator
+}

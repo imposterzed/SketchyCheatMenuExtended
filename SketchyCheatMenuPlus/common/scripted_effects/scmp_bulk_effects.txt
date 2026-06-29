@@ -182,3 +182,12 @@ clear_chinese_imperial_traits_effect = {
   if = { limit = { trait = levy_coordinator } remove_trait = levy_coordinator }
   clear_kowtow_traits_effect = yes
 }
+
+clear_cheat_traits_effect = {
+  if = { limit = { trait = beloved }     remove_trait = beloved     }
+  if = { limit = { trait = immortal }    remove_trait = immortal    }
+  if = { limit = { trait = builder }     remove_trait = builder     }
+  if = { limit = { trait = mastermind }  remove_trait = mastermind  }
+  if = { limit = { trait = landlord }    remove_trait = landlord    }
+  if = { limit = { trait = conspirator } remove_trait = conspirator }
+}

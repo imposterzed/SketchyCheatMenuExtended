@@ -110,6 +110,63 @@ decisions = {
     }
   }
 
+  add_all_cheat_traits = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_cheat_traits
+      NOT = { has_all_cheat_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = { limit = { NOT = { trait = beloved } }     add_trait = beloved     }
+      if = { limit = { NOT = { trait = immortal } }    add_trait = immortal    }
+      if = { limit = { NOT = { trait = builder } }     add_trait = builder     }
+      if = { limit = { NOT = { trait = mastermind } }  add_trait = mastermind  }
+      if = { limit = { NOT = { trait = landlord } }    add_trait = landlord    }
+      if = { limit = { NOT = { trait = conspirator } } add_trait = conspirator }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_all_cheat_traits = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_cheat_traits
+      has_any_cheat_trait_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clear_cheat_traits_effect = yes
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   remove_beloved = {
     potential = {
       ai = no

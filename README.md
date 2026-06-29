@@ -24,6 +24,8 @@ Right-click any character to:
 
 Paired add/remove decisions for 274 traits, organized by category.
 
+**Cheat Traits** — Beloved, Immortal, Master Builder, Master Commander, Master Landowner, Master Plotter. `Add All` / `Remove All`.
+
 **Virtues** — Chaste, Temperate, Kind, Charitable, Patient, Diligent, Humble. `Add All` / `Remove All`.
 
 **Sins** — Lustful, Greedy, Slothful, Gluttonous, Wroth, Proud, Envious. `Add All` / `Remove All`.
@@ -58,11 +60,19 @@ Paired add/remove decisions for 274 traits, organized by category.
 
 **Birth Markers** — Bastard, Legit Bastard, Born in the Purple, Child of Concubine, Child of Consort, Twin.
 
+**Zodiac** — Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius, Pisces.
+
 **Childhood** — Affectionate, Brooding, Conscientious, Curious, Fussy, Haughty, Idolizer, Indolent, Playful, Rowdy, Timid, Willful. `Add All` / `Remove All`.
 
-Other categories: zodiac, kinslayer, memes.
+**Kinslayer** — Kinslayer, Familial Kinslayer, Dynastic Kinslayer, Tribal Kinslayer.
 
-Vassal and Dynasty submenus carry separate bulk decisions that apply virtues or remove sins across many characters at once.
+**Misc Traits** — Augustus, Heresiarch, Peasant Leader, Cannibal, Eunuch, Homosexual.
+
+**Memes** — Cat, Horse.
+
+**Vassal Traits** — Content, Trusting, Honest. `Add All Virtues` / `Remove All Sins` applied across the player's vassals.
+
+**Dynasty & Spouse Traits** — Content, Trusting, Honest. `Add All Virtues` / `Remove All Sins` / `Add Good Congenital Traits` applied across the player's dynasty and spouses.
 
 ### Spawning
 
