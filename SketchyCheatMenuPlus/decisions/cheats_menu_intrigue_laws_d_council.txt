@@ -60,6 +60,90 @@ decisions = {
     }
   }
 
+  set_council_all_ruler = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      has_any_council_voting_law_at_state_1_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = { limit = { has_law = law_voting_power_1            scmp_council_law_tier_1_eligible_trigger = yes } add_law = law_voting_power_0          }
+        if = { limit = { has_law = war_voting_power_1            scmp_council_law_tier_1_eligible_trigger = yes } add_law = war_voting_power_0          }
+        if = { limit = { has_law = grant_title_voting_power_1    scmp_council_law_tier_2_eligible_trigger = yes } add_law = grant_title_voting_power_0  }
+        if = { limit = { has_law = revoke_title_voting_power_1   scmp_council_law_tier_2_eligible_trigger = yes } add_law = revoke_title_voting_power_0 }
+        if = { limit = { has_law = imprison_voting_power_1       scmp_council_law_tier_3_eligible_trigger = yes } add_law = imprison_voting_power_0     }
+        if = { limit = { has_law = banish_voting_power_1         scmp_council_law_tier_3_eligible_trigger = yes } add_law = banish_voting_power_0       }
+        if = { limit = { has_law = execution_voting_power_1      scmp_council_law_tier_3_eligible_trigger = yes } add_law = execution_voting_power_0    }
+        if = {
+          limit = {
+            has_law = succession_voting_power_1
+            ROOT = { is_feudal = yes higher_real_tier_than = DUKE holy_order = no }
+          }
+          add_law = succession_voting_power_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_council_all_council = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      has_any_council_voting_law_at_state_0_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = { limit = { has_law = law_voting_power_0            scmp_council_law_tier_1_eligible_trigger = yes } add_law = law_voting_power_1          }
+        if = { limit = { has_law = war_voting_power_0            scmp_council_law_tier_1_eligible_trigger = yes } add_law = war_voting_power_1          }
+        if = { limit = { has_law = grant_title_voting_power_0    scmp_council_law_tier_2_eligible_trigger = yes } add_law = grant_title_voting_power_1  }
+        if = { limit = { has_law = revoke_title_voting_power_0   scmp_council_law_tier_2_eligible_trigger = yes } add_law = revoke_title_voting_power_1 }
+        if = { limit = { has_law = imprison_voting_power_0       scmp_council_law_tier_3_eligible_trigger = yes } add_law = imprison_voting_power_1     }
+        if = { limit = { has_law = banish_voting_power_0         scmp_council_law_tier_3_eligible_trigger = yes } add_law = banish_voting_power_1       }
+        if = { limit = { has_law = execution_voting_power_0      scmp_council_law_tier_3_eligible_trigger = yes } add_law = execution_voting_power_1    }
+        if = {
+          limit = {
+            has_law = succession_voting_power_0
+            ROOT = { is_feudal = yes higher_real_tier_than = DUKE holy_order = no }
+          }
+          add_law = succession_voting_power_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   ## --- Council Power --- ##
 
   set_law_voting_abolish = {

@@ -171,6 +171,8 @@ Toggle 8 council voting powers between ruler and council on your primary title v
 
 **Council Authority** — Limited, Full.
 
+`Set All Voting Laws: Ruler` / `Set All Voting Laws: Council` flip every applicable law.
+
 ## Requirements
 
 ### Base game

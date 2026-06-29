@@ -7,6 +7,12 @@ show_council_laws_desc;Show the council voting power cheat menu.;;;;;;;;;;;;;x
 hide_council_laws;Hide Council Laws;;;;;;;;;;;;;x
 hide_council_laws_desc;Hide the council voting power cheat menu.;;;;;;;;;;;;;x
 
+set_council_all_ruler;----Set All Voting Laws: Ruler;;;;;;;;;;;;;x
+set_council_all_ruler_desc;Sets every applicable council voting law to the ruler side. Council Authority becomes Limited.;;;;;;;;;;;;;x
+
+set_council_all_council;----Set All Voting Laws: Council;;;;;;;;;;;;;x
+set_council_all_council_desc;Sets every applicable council voting law to the council side. Council Authority becomes Full.;;;;;;;;;;;;;x
+
 set_law_voting_abolish;----Set Council Power: Abolish;;;;;;;;;;;;;x
 set_law_voting_abolish_desc;Sets Council Power to "Abolish".;;;;;;;;;;;;;x
 

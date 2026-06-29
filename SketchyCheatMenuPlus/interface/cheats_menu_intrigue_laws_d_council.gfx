@@ -81,4 +81,12 @@ spriteTypes = {
     name = "GFX_set_succession_voting_full"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
+  spriteType = {
+    name = "GFX_set_council_all_ruler"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_set_council_all_council"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
 }

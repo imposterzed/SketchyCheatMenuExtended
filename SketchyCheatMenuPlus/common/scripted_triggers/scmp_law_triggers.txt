@@ -116,3 +116,64 @@ has_scmp_council_law_eligible_government_trigger = {
     }
   }
 }
+
+# Council Power + War – tribal_org_1+ OR feudal
+scmp_council_law_tier_1_eligible_trigger = {
+  OR = {
+    ROOT = { is_tribal = no }
+    has_law = tribal_organization_1
+    has_law = tribal_organization_2
+    has_law = tribal_organization_3
+    has_law = tribal_organization_4
+  }
+}
+
+# Grant Titles + Revoke Titles – tribal_org_2+ OR feudal
+scmp_council_law_tier_2_eligible_trigger = {
+  OR = {
+    ROOT = { is_tribal = no }
+    has_law = tribal_organization_2
+    has_law = tribal_organization_3
+    has_law = tribal_organization_4
+  }
+}
+
+# Imprison + Banish + Execute – tribal_org_3+ OR feudal
+scmp_council_law_tier_3_eligible_trigger = {
+  OR = {
+    ROOT = { is_tribal = no }
+    has_law = tribal_organization_3
+    has_law = tribal_organization_4
+  }
+}
+
+# Bulk-decision visibility – at least one voting law in the target state
+has_any_council_voting_law_at_state_1_trigger = {
+  primary_title = {
+    OR = {
+      has_law = law_voting_power_1
+      has_law = war_voting_power_1
+      has_law = grant_title_voting_power_1
+      has_law = revoke_title_voting_power_1
+      has_law = imprison_voting_power_1
+      has_law = banish_voting_power_1
+      has_law = execution_voting_power_1
+      has_law = succession_voting_power_1
+    }
+  }
+}
+
+has_any_council_voting_law_at_state_0_trigger = {
+  primary_title = {
+    OR = {
+      has_law = law_voting_power_0
+      has_law = war_voting_power_0
+      has_law = grant_title_voting_power_0
+      has_law = revoke_title_voting_power_0
+      has_law = imprison_voting_power_0
+      has_law = banish_voting_power_0
+      has_law = execution_voting_power_0
+      has_law = succession_voting_power_0
+    }
+  }
+}

@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.11.0] - 2026-06-28
+
+### Added
+- **Bulk Council Laws decisions** — `Set All Voting Laws: Ruler` and `Set All Voting Laws: Council` flip every applicable council voting law on the player's primary title in one click. Each per-law flip respects its tribal-organization tier gate (Council Power / War — tier 1+; Grant / Revoke Titles — tier 2+; Imprisonment / Banishment / Execution — tier 3+) and the feudal-KING+ gate on Council Authority.
+- 5 new scripted_triggers in `scmp_law_triggers.txt` (3 tier-eligibility helpers + 2 decision visibility triggers).
+- 2 new GFX sprite entries in `cheats_menu_intrigue_laws_d_council.gfx`.
+
+### Changed
+- README Council Laws section: added bulk-decision callout.
+
 ## [0.10.5] - 2026-06-28
 
 ### Added
