@@ -113,4 +113,20 @@ spriteTypes = {
     name = "GFX_set_administration_imperial"
     texturefile = "gfx\\interface\\decision_icon_cheats.dds"
   }
+  spriteType = {
+    name = "GFX_max_crown_authority"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_max_centralization"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_max_tribal_organization"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_max_status_of_women"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
 }

@@ -61,6 +61,37 @@ decisions = {
 
   ## --- Crown Authority --- ##
 
+  max_crown_authority = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      NOT = { has_dlc = "Conclave" }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      NOT = { primary_title = { has_law = crown_authority_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = crown_authority_4
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   cycle_crown_authority_up = {
     potential = {
       ai = no
@@ -405,6 +436,35 @@ decisions = {
 
   ## --- Centralization --- ##
 
+  max_centralization = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      higher_real_tier_than = COUNT
+      NOT = { government = nomadic_government }
+      NOT = { primary_title = { has_law = centralization_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = centralization_4
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
   cycle_centralization_up = {
     potential = {
       ai = no
@@ -500,6 +560,34 @@ decisions = {
   }
 
   ## --- Tribal Organization --- ##
+
+  max_tribal_organization = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      is_tribal = yes
+      NOT = { primary_title = { has_law = tribal_organization_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tribal_organization_4
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
 
   cycle_tribal_organization_up = {
     potential = {
@@ -694,6 +782,40 @@ decisions = {
   }
 
   ## --- Status of Women --- ##
+
+  max_status_of_women = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      NOT = { government = order_government }
+      NOR = {
+        has_status_of_women_religion_block_trigger = yes
+        has_game_rule = { name = gender value = historical }
+        has_game_rule = { name = gender value = all }
+      }
+      NOT = { primary_title = { has_law = status_of_women_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = status_of_women_4
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
 
   cycle_status_of_women_up = {
     potential = {

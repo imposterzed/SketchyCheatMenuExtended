@@ -117,7 +117,7 @@ Set inheritance laws on your primary title via cheat-menu shortcuts.
 
 Set realm laws on your primary title via cheat-menu shortcuts.
 
-**Crown Authority** — Min, Low, Medium, High, Max.
+**Crown Authority** — Min, Low, Medium, High, Max. `Max Crown Authority`.
 
 **Investiture** — Free, Papal.
 
@@ -125,13 +125,13 @@ Set realm laws on your primary title via cheat-menu shortcuts.
 
 **Vassal War Declaration** — Allowed, External, Illegal.
 
-**Centralization** — Min, Low, Medium, High, Max.
+**Centralization** — Min, Low, Medium, High, Max. `Max Centralization`.
 
-**Tribal Organization** — Min, Low, Medium, High, Max.
+**Tribal Organization** — Min, Low, Medium, High, Max. `Max Tribal Organization`.
 
 **Viceroyalty** — None, Kingdoms, Duchies.
 
-**Status of Women** — Tradition, Marginal, Significant, Notable, Full.
+**Status of Women** — Tradition, Marginal, Significant, Notable, Full. `Max Status of Women`.
 
 **Revoke Title** — None, Allowed, Religious.
 

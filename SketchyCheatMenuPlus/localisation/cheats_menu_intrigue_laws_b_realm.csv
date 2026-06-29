@@ -77,3 +77,15 @@ set_administration_late_desc;Sets Administration to Late (mid-feudal transitiona
 
 set_administration_imperial;----Set Administration: Imperial;;;;;;;;;;;;;x
 set_administration_imperial_desc;Sets Administration to Imperial (centralized imperial bureaucracy).;;;;;;;;;;;;;x
+
+max_crown_authority;----Max Crown Authority;;;;;;;;;;;;;x
+max_crown_authority_desc;Sets Crown Authority directly to the highest tier (Max).;;;;;;;;;;;;;x
+
+max_centralization;----Max Centralization;;;;;;;;;;;;;x
+max_centralization_desc;Sets Centralization directly to the highest tier (Max).;;;;;;;;;;;;;x
+
+max_tribal_organization;----Max Tribal Organization;;;;;;;;;;;;;x
+max_tribal_organization_desc;Sets Tribal Organization directly to the highest tier (Max).;;;;;;;;;;;;;x
+
+max_status_of_women;----Max Status of Women;;;;;;;;;;;;;x
+max_status_of_women_desc;Sets Status of Women directly to the highest tier (Max).;;;;;;;;;;;;;x
