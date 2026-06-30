@@ -82,7 +82,7 @@ disable_quick_move;----Disable Quick Move;;;;;;;;;;;;;x
 disable_quick_move_desc;Disables quick move.;;;;;;;;;;;;;x
 
 enable_triple_levies;----Enable Triple Levies;;;;;;;;;;;;;x
-enable_triple_levies_desc;Triples the levy size..;;;;;;;;;;;;;x
+enable_triple_levies_desc;Triples the levy size.;;;;;;;;;;;;;x
 
 disable_triple_levies;----Disable Triple Levies;;;;;;;;;;;;;x
 disable_triple_levies_desc;Disables triple levies.;;;;;;;;;;;;;x

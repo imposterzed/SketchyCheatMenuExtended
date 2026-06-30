@@ -1,17 +1,14 @@
-immortal;Immortal;;;;;;;;;;;;;x
-immortal_desc;This character is immortal, they no longer age and cannot die of natural causes.;;;;;;;;;;;;;x
-
 beloved;Beloved;;;;;;;;;;;;;x
-beloved_desc;This character is beloved by all.;;;;;;;;;;;;;x
+beloved_desc;This [GetGirlWomanBoyMan] is universally beloved. None can resist [GetHerHis] charm.;;;;;;;;;;;;;x
 
 landlord;Master Landowner;;;;;;;;;;;;;x
-landlord_desc;...;;;;;;;;;;;;;x
+landlord_desc;This [GetGirlWomanBoyMan] is master of vast estates, drawing immense tax revenue from [GetHerHis] lands.;;;;;;;;;;;;;x
 
 conspirator;Master Plotter;;;;;;;;;;;;;x
-conspirator_desc;...;;;;;;;;;;;;;x
+conspirator_desc;This [GetGirlWomanBoyMan] is a cunning schemer. Plots succeed with ease, and [GetHerHis] enemies find themselves arrested or worse.;;;;;;;;;;;;;x
 
 mastermind;Master Commander;;;;;;;;;;;;;x
-mastermind_desc;...;;;;;;;;;;;;;x
+mastermind_desc;This [GetGirlWomanBoyMan] is a peerless military commander, mastering every facet of warfare.;;;;;;;;;;;;;x
 
 builder;Master Builder;;;;;;;;;;;;;x
-builder_desc;...;;;;;;;;;;;;;x
+builder_desc;This [GetGirlWomanBoyMan] can raise mighty fortresses overnight. Construction is swift and nearly free.;;;;;;;;;;;;;x

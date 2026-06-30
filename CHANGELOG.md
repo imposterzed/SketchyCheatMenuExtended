@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.1] - 2026-06-30
+
+### Added
+- **Proper4KUI Patch trait icons** (`SketchyCheatMenuPlusProper4KUIPatch/gfx/traits/`) — 43×43 hi-res variants of the 5 SCMP-custom cheat trait icons.
+
+### Changed
+- Redesigned 5 SCMP-custom cheat trait icons (Beloved, Master Builder, Master Commander, Master Landowner, Master Plotter), preserving Sketchy 2019's gold-ring + dark-purple-disk framework.
+- Trait descriptions filled in (previously `...`) with sex-aware getters.
+- Removed redundant `immortal` / `immortal_desc` overrides from `traits.csv`.
+- `triple_levies` modifier icon changed from `13` to `1` — `13` rendered as Military on vanilla but Prestige on CleanSlate due to CleanSlate's reindexed strip. `1` (Martial / crossed swords) renders consistently on both stacks.
+- `triple_levies` description rewritten with sex-aware getter.
+
+### Fixed
+- 5 SCMP-custom trait DDS files were 24×25 (Sketchy 2019 off-by-one); resaved at 24×24.
+- `enable_triple_levies` description double-period typo.
+
 ## [0.12.0] - 2026-06-29
 
 ### Added
