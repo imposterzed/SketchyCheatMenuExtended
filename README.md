@@ -1,6 +1,31 @@
-# Sketchy Cheat Menu Plus
+<p align="center">
+  <img src="docs/banner.jpg" alt="Sketchy Cheat Menu Plus" width="100%" />
+</p>
 
-A fork of [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=608738995) by [Sketchy](https://steamcommunity.com/id/sketchy77) (upstream last updated 2019-10-19).
+A fork of [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=608738995) by [Sketchy](https://steamcommunity.com/id/sketchy77) — please go rate and favorite his mod.
+
+<p align="center">
+  <a href="docs/enable-cheats.jpg"><img src="docs/thumbs/enable-cheats.jpg" height="200" alt="Right-click your portrait to enable cheats" /></a>
+  <a href="docs/cheat-decisions.jpg"><img src="docs/thumbs/cheat-decisions.jpg" height="200" alt="Decisions panel overview" /></a>
+  <a href="docs/cheat-decisions-cheats.jpg"><img src="docs/thumbs/cheat-decisions-cheats.jpg" height="200" alt="Core cheats" /></a>
+</p>
+<p align="center">
+  <a href="docs/cheat-decisions-government.jpg"><img src="docs/thumbs/cheat-decisions-government.jpg" height="200" alt="Government and succession laws" /></a>
+  <a href="docs/cheat-decisions-laws.jpg"><img src="docs/thumbs/cheat-decisions-laws.jpg" height="200" alt="Gender succession and realm laws" /></a>
+  <a href="docs/cheat-decisions-laws-2.jpg"><img src="docs/thumbs/cheat-decisions-laws-2.jpg" height="200" alt="Obligation and council laws" /></a>
+</p>
+<p align="center">
+  <a href="docs/cheat-decisions-traits.jpg"><img src="docs/thumbs/cheat-decisions-traits.jpg" height="200" alt="Trait toggles, part 1" /></a>
+  <a href="docs/cheat-decisions-traits-2.jpg"><img src="docs/thumbs/cheat-decisions-traits-2.jpg" height="200" alt="Trait toggles, part 2" /></a>
+  <a href="docs/cheat-decisions-bulk.jpg"><img src="docs/thumbs/cheat-decisions-bulk.jpg" height="200" alt="Bulk operations" /></a>
+</p>
+<p align="center">
+  <a href="docs/cheat-decisions-court.jpg"><img src="docs/thumbs/cheat-decisions-court.jpg" height="200" alt="Vassal and Dynasty traits" /></a>
+  <a href="docs/build-menu.jpg"><img src="docs/thumbs/build-menu.jpg" height="200" alt="Settlement build menu" /></a>
+  <a href="docs/traits-icons-big.jpg"><img src="docs/thumbs/traits-icons-big.jpg" height="200" alt="Custom trait icons" /></a>
+</p>
+
+<p align="center"><sub><em>Screenshots taken with the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3054987840">Proper 4K UI Project</a> mod enabled.</em></sub></p>
 
 ## What it does
 
