@@ -11,4 +11,41 @@
 777777 = {
   name = "Outcast"
   used_for_random = no
+
+  coat_of_arms = {
+    template = 3
+    layer = {
+      texture = 0
+      texture_internal = 42
+      emblem = 0
+      color = 5
+      color = 7
+      color = 5
+    }
+    layer = {
+      texture = 0
+      texture_internal = 43
+      emblem = 0
+      color = 5
+      color = 7
+      color = 5
+    }
+    layer = {
+      texture = 0
+      texture_internal = 43
+      emblem = 0
+      color = 5
+      color = 7
+      color = 5
+    }
+    layer = {
+      texture = 0
+      texture_internal = 42
+      emblem = 0
+      color = 5
+      color = 7
+      color = 5
+    }
+    religion = "catholic"
+  }
 }
