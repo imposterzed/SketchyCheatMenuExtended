@@ -10,9 +10,14 @@ A fork of [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetail
   <a href="docs/cheat-decisions-cheats.jpg"><img src="docs/thumbs/cheat-decisions-cheats.jpg" height="200" alt="Core cheats" /></a>
 </p>
 <p align="center">
-  <a href="docs/cheat-decisions-government.jpg"><img src="docs/thumbs/cheat-decisions-government.jpg" height="200" alt="Government and succession laws" /></a>
-  <a href="docs/cheat-decisions-laws.jpg"><img src="docs/thumbs/cheat-decisions-laws.jpg" height="200" alt="Gender succession and realm laws" /></a>
-  <a href="docs/cheat-decisions-laws-2.jpg"><img src="docs/thumbs/cheat-decisions-laws-2.jpg" height="200" alt="Obligation and council laws" /></a>
+  <a href="docs/cheat-decisions-government-realm.jpg"><img src="docs/thumbs/cheat-decisions-government-realm.jpg" height="200" alt="Government and realm laws" /></a>
+  <a href="docs/cheat-decisions-obligation.jpg"><img src="docs/thumbs/cheat-decisions-obligation.jpg" height="200" alt="Obligation laws" /></a>
+  <a href="docs/cheat-decisions-council.jpg"><img src="docs/thumbs/cheat-decisions-council.jpg" height="200" alt="Council laws" /></a>
+</p>
+<p align="center">
+  <a href="docs/title-menu.jpg"><img src="docs/thumbs/title-menu.jpg" height="200" alt="Title menu, part 1" /></a>
+  <a href="docs/title-menu-2.jpg"><img src="docs/thumbs/title-menu-2.jpg" height="200" alt="Title menu, part 2" /></a>
+  <a href="docs/cheat-decisions-spawn.jpg"><img src="docs/thumbs/cheat-decisions-spawn.jpg" height="200" alt="Character spawn menu" /></a>
 </p>
 <p align="center">
   <a href="docs/cheat-decisions-traits.jpg"><img src="docs/thumbs/cheat-decisions-traits.jpg" height="200" alt="Trait toggles, part 1" /></a>
@@ -22,7 +27,7 @@ A fork of [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetail
 <p align="center">
   <a href="docs/cheat-decisions-court.jpg"><img src="docs/thumbs/cheat-decisions-court.jpg" height="200" alt="Vassal and Dynasty traits" /></a>
   <a href="docs/build-menu.jpg"><img src="docs/thumbs/build-menu.jpg" height="200" alt="Settlement build menu" /></a>
-  <a href="docs/traits-icons-big.jpg"><img src="docs/thumbs/traits-icons-big.jpg" height="200" alt="Custom trait icons" /></a>
+  <a href="docs/trait-icons.jpg"><img src="docs/thumbs/trait-icons.jpg" height="200" alt="Custom trait icons" /></a>
 </p>
 
 <p align="center"><sub><em>Screenshots taken with the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3054987840">Proper 4K UI Project</a> mod enabled.</em></sub></p>
@@ -76,10 +81,10 @@ Everything in the section above also works on other characters — plus:
 
 ### Right-click a title
 
-- **Add Claim**
-- **Take Title**
-- **Succession Law: Primogeniture / Gavelkind / Elective Gavelkind / Seniority / Ultimogeniture / Tanistry / Elective / Open** — Duke+ only.
-- **Gender Law: Agnatic / Agnatic-Cognatic / Absolute Cognatic / Enatic / Enatic-Cognatic** — Duke+ only.
+- **Add Claim** — hidden on titles you already hold.
+- **Take Title** — hidden on titles you already hold.
+- **Succession Law: Eldership / Elective Gavelkind / Elective Monarchy / Elective Republic (Open Elective) / Gavelkind / Imperial Elective / Nomad Succession / Open / Patrician Elective / Primogeniture / Princely Elective / Seniority / Tanistry / Ultimogeniture** — Eldership requires Holy Fury, Nomad Succession requires Horse Lords, Patrician Elective requires The Republic.
+- **Gender Law: Agnatic / Agnatic-Cognatic / Absolute Cognatic / Enatic-Cognatic / Enatic** — on Iqta, Holy Order, and Merchant Republic sources, these carry "(Hidden)" suffix — the engine applies the law but the Inheritance UI doesn't show gender on those governments.
 
 ### Intrigue menu decisions
 
@@ -110,13 +115,6 @@ Accessed via the Decisions panel (Intrigue tab) once cheats are enabled. Each su
 - **Change to Iqta** — from Tribal (Muslim) or Nomadic (Destroy Horde) sources.
 - **Change to Tribal** — from Feudal / Iqta / Monastic Feudal / Chinese Imperial / Nomadic (Destroy Horde) sources.
 - **Change to Nomadic** — from Feudal / Tribal / Iqta / Monastic Feudal / Order / Chinese Imperial sources. Horse Lords.
-
-#### Inheritance Laws
-
-Applies to your primary title.
-
-- **Set Succession: Byzantine Elective / Eldership / Elective Gavelkind / Elective Monarchy / Gavelkind / Nomadic / Open / Open Elective / Patrician Elective / Primogeniture / Princely Elective / Seniority / Tanistry / Ultimogeniture** — Eldership requires Holy Fury, Nomadic requires Horse Lords, Patrician Elective requires The Republic.
-- **Set Gender: Agnatic / Agnatic-Cognatic / Absolute Cognatic / Enatic / Enatic-Cognatic** — on Iqta, Holy Order, and Merchant Republic sources, these carry "(Hidden)" suffix — the engine applies the law but the Inheritance UI doesn't show gender on those govs.
 
 #### Realm Laws
 
@@ -208,15 +206,15 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
   - Crown Authority is hidden **with** Conclave (the Conclave-only realm laws replace it).
   - Stays: **Child of Concubine** and **Child of Consort** birth markers, and the 12 Childhood trait toggles.
 - **Holy Fury**
-  - Hidden: **Tribal Kinslayer**, **Grievously Scarred**, and **Horrifically Scarred** trait toggles, **Set Succession: Eldership**, and the Holy Fury-only settlement-upgrade branches: bloodline buildings (Oppressive Fortifications / Special Fortifications / Monumental Shrines / Planned Infrastructure), Hellenic deity shrines, and Great Pillars.
-  - Stays: the **Kinslayer** / **Familial Kinslayer** / **Dynastic Kinslayer** trait toggles, the 9 **Warrior Lodge** traits, **Sea King** / **Sea Queen**, the 12 **Zodiac** traits, the **Syncretist** / **Spiritualist** / **Militant** / **Tribalist** pagan-branch traits, and **Set Succession: Elective Monarchy**.
+  - Hidden: **Tribal Kinslayer**, **Grievously Scarred**, and **Horrifically Scarred** trait toggles, **Succession Law: Eldership**, and the Holy Fury-only settlement-upgrade branches: bloodline buildings (Oppressive Fortifications / Special Fortifications / Monumental Shrines / Planned Infrastructure), Hellenic deity shrines, and Great Pillars.
+  - Stays: the **Kinslayer** / **Familial Kinslayer** / **Dynastic Kinslayer** trait toggles, the 9 **Warrior Lodge** traits, **Sea King** / **Sea Queen**, the 12 **Zodiac** traits, the **Syncretist** / **Spiritualist** / **Militant** / **Tribalist** pagan-branch traits, and **Succession Law: Elective Monarchy**.
 - **Horse Lords**
-  - Hidden: **Change to Nomadic**, **Change to Feudalism (Destroy Horde)**, **Change to Iqta (Destroy Horde)**, **Change to Tribal (Destroy Horde)**, **Set Succession: Nomadic**, **Convert To Nomad**, and **Build Nomad**.
+  - Hidden: **Change to Nomadic**, **Change to Feudalism (Destroy Horde)**, **Change to Iqta (Destroy Horde)**, **Change to Tribal (Destroy Horde)**, **Succession Law: Nomad Succession**, **Convert To Nomad**, and **Build Nomad**.
   - Stays: the **Horse** trait toggle.
 - **Jade Dragon**
   - Stays: the 4 **Chinese Commander** trait toggles (Way of the Dog / Dragon / Leopard / Tiger) and the 3 **Kowtow Complete** trait toggles (Tier I / II / III).
 - **Legacy of Rome**
-  - Stays: **Set Succession: Byzantine Elective** and the **Eunuch** trait toggle.
+  - Stays: **Succession Law: Imperial Elective** and the **Eunuch** trait toggle.
 - **Monks and Mystics**
   - Hidden: **Add 5k Society Points** and **Increase Society Rank** (both require society membership, which needs Monks and Mystics).
   - Stays: the **Mystic** trait toggle.
@@ -234,7 +232,7 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
   - Hidden: **Build Hospital** and **Fully Upgrade Hospital**.
   - Stays: the **Renowned Physician** trait toggle, **Create A Skilled Physician** courtier spawn, the 6 limb-loss trait toggles (**One-Eyed** / **One-Handed** / **One-Legged** / **Disfigured** / **Mangled** / **Severely Injured**), and the **Sick Incapable** trait toggle.
 - **The Republic**
-  - Hidden: **Set Succession: Patrician Elective**, **Build Trade Post**, the trade post **Fully Upgrade** decision, and the Merchant Republic Arsenal branch inside the city **Fully Upgrade**.
+  - Hidden: **Succession Law: Patrician Elective**, **Build Trade Post**, the trade post **Fully Upgrade** decision, and the Merchant Republic Arsenal branch inside the city **Fully Upgrade**.
 - **Way of Life**
   - Hidden: **Get A Favor** and **Clear Your Focus**.
   - Stays: all 21 **Lifestyles** trait toggles.
@@ -266,6 +264,8 @@ Full support. This mod ships with `dependencies = { "CleanSlate" }` declared, so
 Trait IDs are auto-adapted. CleanSlate renames several traits and sets a `cleanslate_active` global flag at startup; when that flag is present, this mod's trait-toggle decisions use CleanSlate's trait names instead of vanilla's.
 
 Aztec culture and building IDs are also auto-adapted. CleanSlate renames the Aztec culture and its cultural building IDs; the `convert_*` strip helpers and the `upgrade_castle` / `upgrade_tribal` culture-aware adds pick the matching ID set under each stack.
+
+`Elective Republic` displays as `Open Elective` on CleanSlate.
 
 The `triple_levies` cheat modifier icon matches on both vanilla and CleanSlate stacks.
 

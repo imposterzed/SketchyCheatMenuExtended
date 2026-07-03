@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.13.0] - 2026-07-03
+
+### Added
+- **6 new succession decisions in the right-click title menu** — Eldership, Imperial Elective, Nomad Succession, Open Elective, Patrician Elective, Princely Elective.
+- **Hidden gender-succession variants** — mirror the 5 existing gender laws with variants gated to Iqta / Holy Order / Merchant Republic sources, where vanilla's Inheritance UI doesn't display gender. Engine still applies the law.
+- **`make_open_elective_vanilla`** — stack-variant of `make_open_elective` displaying "Elective Republic" (vanilla loc) on non-CleanSlate stacks. CleanSlate uses `make_open_elective` for the "Open Elective" label.
+
+### Changed
+- **Right-click title menu consolidated** — all 25 law-switch decisions now live on `title_decisions` with `filter = owned`; the intrigue-menu Inheritance Laws sub-section removed.
+- **Effect switched from `succession = X` / `gender_succ = X` to `add_law = X`** on the 13 pre-existing law-switch decisions.
+- **Tier gate removed** — `higher_real_tier_than = COUNT` dropped. Succession + gender laws now settable at count and barony tier too.
+- **`make_elective` label** — "Elective" → "Elective Monarchy" to match vanilla loc.
+- **Confirmation popup tightened** — every `add_law` wrapped in `hidden_tooltip` so the popup shows the description only. All 25 `_desc` strings rewritten with player-facing gameplay descriptions.
+- **Succession decisions ordered alphabetically per in-game menu**; gender variants reordered male-to-female.
+
+### Removed
+- **Intrigue-menu Inheritance Laws sub-section** — `cheats_menu_intrigue_laws_a_inheritance.txt` / `.gfx` / `.csv` and the `show_inheritance_laws` / `hide_inheritance_laws` toggle. Content merged into the right-click title menu.
+
+### Fixed
+- **`Add Claim` / `Take Title`** now hidden on titles you already hold (previous `NOT = { owns = ROOT }` gate was silently non-firing).
+
 ## [0.12.5] - 2026-07-02
 
 ### Changed
