@@ -758,7 +758,6 @@ settlement_decisions = {
     from_potential = {
       ai = no
       has_character_flag = cheats_enabled
-      has_dlc = "Conclave"
     }
     potential = {
       is_capital = yes
@@ -785,7 +784,6 @@ settlement_decisions = {
     from_potential = {
       ai = no
       has_character_flag = cheats_enabled
-      has_dlc = "The Republic"
     }
     potential = {
       is_capital = yes

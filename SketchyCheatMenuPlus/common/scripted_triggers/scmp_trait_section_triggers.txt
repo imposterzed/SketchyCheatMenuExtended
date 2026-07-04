@@ -348,14 +348,16 @@ has_any_chinese_imperial_trait_trigger = {
   }
 }
 
-has_all_chinese_imperial_traits_trigger = {
+has_all_chinese_commander_traits_trigger = {
   trait = logistics_expert
   trait = master_of_flame
   trait = sapper
   trait = levy_coordinator
+}
+
+has_all_chinese_imperial_traits_trigger = {
+  has_all_chinese_commander_traits_trigger = yes
   trait = kow_tow_completed_tier_3
-  NOT = { trait = kow_tow_completed_tier_1 }
-  NOT = { trait = kow_tow_completed_tier_2 }
 }
 
 has_any_cheat_trait_trigger = {

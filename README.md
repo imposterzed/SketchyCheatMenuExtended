@@ -72,7 +72,7 @@ Everything in the section above also works on other characters — plus:
 #### County capital only
 - **Build Castle / Temple / City / Tribal / Nomad** — new holding in an empty slot.
 - **Build Hospital** — The Reaper's Due.
-- **Build Fort** — Conclave.
+- **Build Fort**.
 - **Build Trade Post** — The Republic.
 - **Fully Upgrade Hospital** — The Reaper's Due.
 
@@ -172,7 +172,7 @@ Paired add/remove decisions per trait, organized by category.
 - **Warrior Lodge** — Aeneator, Fearsome, Forest Ambusher, Marauder, Mountain Guardian, Pillar of the Plains, Scorcher, Shield of the Tundra, Spirit Warrior.
 - **Chinese Imperial** — Way of the Dog, Way of the Dragon, Way of the Leopard, Way of the Tiger, Kowtow Complete (Tier I), Kowtow Complete (Tier II), Kowtow Complete (Tier III). `Add All` / `Remove All`.
 - **Raiding** — Viking, Pirate, Ravager, Sea King, Sea Queen.
-- **Lifestyles** — Administrator, Architect, Celibate, Duelist, Falconer, Game Master, Gardener, Hedonist, Hunter, Impaler, Master Schemer, Master Seducer, Master Seductress, Mystic, Poet, Renowned Physician, Scholar, Faqih, Socializer, Strategist, Theologian. `Add All` / `Remove All`.
+- **Lifestyles** — Administrator, Architect, Celibate, Duelist, Falconer, Faqih, Game Master, Gardener, Hedonist, Hunter, Impaler, Master Schemer, Master Seducer, Master Seductress, Mystic, Poet, Renowned Physician, Scholar, Socializer, Strategist, Theologian. `Add All` / `Remove All`.
 - **Religious Markers & Doctrine** — Hajjaj, Indian Pilgrim, Pilgrim, Reincarnation, Saoshyant, Saoshyant Descendant, Sympathy for Christian Religions, Sympathy for Eastern Religions, Sympathy for Israelite Religions, Sympathy for Mazdan Religions, Sympathy for Muslim Religions, Sympathy for Pagan Religions, Haemophiliac, Haemophant, Haemoarch, Syncretist, Spiritualist, Militant, Tribalist, Bad Priest (Aztec / Christian / Muslim / Norse / Tengri / Zoroastrian), Excommunicated. `Add All Sympathies` / `Remove All Sympathies`.
 - **Ordained Clergy** — Monk, Nun, Bhikkhu, Bhikkhuni, Sanyasi, Sanyasini, Muni, Aryika.
 - **Christian Status** — Crowned by Pope, Crowned by Bishop, Crowned by Priest, Crowned by Myself, Baptized by Pope, Baptized by Patriarch, Baptized by Bishop, Baptized by Satan, Beatified.
@@ -199,42 +199,45 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
 
 - **Charlemagne**
   - Hidden: the **Viceroyalty** realm law.
-  - Stays: the **Augustus** trait toggle.
 - **Conclave**
-  - Hidden: **Take As Concubine**, **Build Fort**, the 8 Council Laws, 5 Obligation Laws families, and the Controlled Realm Inheritance / Vassal War Declaration / Status of Women / Revoke Title realm laws.
+  - Hidden: the 8 Council Laws, 5 Obligation Laws families, and the Controlled Realm Inheritance / Vassal War Declaration / Status of Women / Revoke Title realm laws.
   - Administration collapses from (Feudal / Late / Imperial) to Feudal ↔ Imperial.
   - Crown Authority is hidden **with** Conclave (the Conclave-only realm laws replace it).
-  - Stays: **Child of Concubine** and **Child of Consort** birth markers, and the 12 Childhood trait toggles.
+  - Stays: **Child of Concubine** and **Child of Consort** birth markers, the 12 Childhood trait toggles, and **Get A Favor**.
 - **Holy Fury**
-  - Hidden: **Tribal Kinslayer**, **Grievously Scarred**, and **Horrifically Scarred** trait toggles, **Succession Law: Eldership**, and the Holy Fury-only settlement-upgrade branches: bloodline buildings (Oppressive Fortifications / Special Fortifications / Monumental Shrines / Planned Infrastructure), Hellenic deity shrines, and Great Pillars.
-  - Stays: the **Kinslayer** / **Familial Kinslayer** / **Dynastic Kinslayer** trait toggles, the 9 **Warrior Lodge** traits, **Sea King** / **Sea Queen**, the 12 **Zodiac** traits, the **Syncretist** / **Spiritualist** / **Militant** / **Tribalist** pagan-branch traits, and **Succession Law: Elective Monarchy**.
+  - Hidden: bloodline buildings (Oppressive Fortifications / Special Fortifications / Monumental Shrines / Planned Infrastructure), Hellenic deity shrines, and Great Pillars — all require bloodlines or province flags earned via Holy Fury events.
+  - Hidden if Monks and Mystics is also off: **Add 5k Society Points** and **Increase Society Rank** (both require society membership).
+  - Stays: the **Kinslayer** / **Familial Kinslayer** / **Dynastic Kinslayer** / **Tribal Kinslayer** trait toggles, the **Grievously Scarred** / **Horrifically Scarred** trait toggles, the 9 **Warrior Lodge** traits, **Sea King** / **Sea Queen**, the 12 **Zodiac** traits, the **Syncretist** / **Spiritualist** / **Militant** / **Tribalist** pagan-branch traits, the **Haemophiliac** / **Haemophant** / **Haemoarch** bloodthirsty-gods traits, **Succession Law: Elective Monarchy**, and **Succession Law: Eldership**.
 - **Horse Lords**
-  - Hidden: **Change to Nomadic**, **Change to Feudalism (Destroy Horde)**, **Change to Iqta (Destroy Horde)**, **Change to Tribal (Destroy Horde)**, **Succession Law: Nomad Succession**, **Convert To Nomad**, and **Build Nomad**.
-  - Stays: the **Horse** trait toggle.
+  - Hidden: **Change to Nomadic**, **Change to Feudalism (Destroy Horde)**, **Change to Iqta (Destroy Horde)**, **Change to Tribal (Destroy Horde)**, **Convert To Nomad**, and **Build Nomad**.
+  - Stays: **Succession Law: Nomad Succession** and the **Horse** trait toggle.
 - **Jade Dragon**
-  - Stays: the 4 **Chinese Commander** trait toggles (Way of the Dog / Dragon / Leopard / Tiger) and the 3 **Kowtow Complete** trait toggles (Tier I / II / III).
+  - Hidden: **Add 5k Grace** and the 3 **Kowtow Complete** trait toggles (Tier I / II / III) (all involve the Grace resource, which needs Jade Dragon).
+  - Stays: the 4 **Chinese Commander** trait toggles (Way of the Dog / Dragon / Leopard / Tiger).
 - **Legacy of Rome**
-  - Stays: **Succession Law: Imperial Elective** and the **Eunuch** trait toggle.
+  - Stays: **Succession Law: Imperial Elective** and the **Eunuch** / **Augustus** trait toggles.
 - **Monks and Mystics**
-  - Hidden: **Add 5k Society Points** and **Increase Society Rank** (both require society membership, which needs Monks and Mystics).
+  - Hidden if Holy Fury is also off: **Add 5k Society Points** and **Increase Society Rank** (both require society membership).
   - Stays: the **Mystic** trait toggle.
 - **Rajas of India**
-  - Hidden: the 6 **Dharmic Ordained Clergy** trait toggles, the 10 **Dharmic Identity** trait toggles, **Indian Pilgrim**, and **Kailash Guardian** — all require a Dharmic religion (Hindu / Buddhist / Jain), which needs Rajas of India.
+  - Hidden: the 6 **Dharmic Ordained Clergy** trait toggles, the 10 **Dharmic Identity** trait toggles, and **Indian Pilgrim** — all require a Dharmic religion (Hindu / Buddhist / Jain), which needs Rajas of India.
   - Stays: the **War Elephant Leader** trait toggle.
+- **Sons of Abraham**
+  - Hidden: the **Kanai** trait toggle (requires a Jewish religion; works with bookmark, but console errors).
 - **Sunset Invasion**
-  - Hidden: the **Eagle Knight** and **Bad Priest (Aztec)** trait toggles — both require Aztec religion, which needs Sunset Invasion.
-  - Stays: the 3 **Bloodthirsty Gods** trait toggles (Haemophiliac / Haemophant / Haemoarch).
+  - Hidden: the **Eagle Knight** / **Sun Warrior** / **Bad Priest (Aztec)** trait toggles (all require Aztec religion, which needs Sunset Invasion or console).
 - **Sword of Islam**
-  - Stays: **Change to Iqta**. The government swap works without Sword of Islam, but Iqta's Muslim-specific mechanics (polygamy, decadence, peasant revolts) still require the DLC.
+  - Hidden: **Change to Iqta**, the **Bad Priest (Muslim)**, **Faqih** lifestyle, **Muslim Status** (Ashari / Mutazilite / Mirza / Sayyid / Hafiz / Decadent) trait toggles (all require a Muslim religion, which needs Sword of Islam).
 - **The Old Gods**
-  - Stays: **Change to Tribal** and the **Viking** / **Pirate** / **Ravager** trait toggles. The government swap works without The Old Gods, but tribal-specific gameplay (retinues, prestige raiding, Adopt Feudalism path) still require the DLC.
+  - Stays: **Change to Tribal** and the **Viking** / **Pirate** / **Ravager** / **Sea King** / **Sea Queen** trait toggles. The government swap works without The Old Gods, but tribal-specific gameplay (retinues, prestige raiding, Adopt Feudalism path) still require the DLC.
 - **The Reaper's Due**
   - Hidden: **Build Hospital** and **Fully Upgrade Hospital**.
   - Stays: the **Renowned Physician** trait toggle, **Create A Skilled Physician** courtier spawn, the 6 limb-loss trait toggles (**One-Eyed** / **One-Handed** / **One-Legged** / **Disfigured** / **Mangled** / **Severely Injured**), and the **Sick Incapable** trait toggle.
 - **The Republic**
-  - Hidden: **Succession Law: Patrician Elective**, **Build Trade Post**, the trade post **Fully Upgrade** decision, and the Merchant Republic Arsenal branch inside the city **Fully Upgrade**.
+  - Hidden: the Merchant Republic Arsenal branch inside the city **Fully Upgrade** (requires an MR-owned capital; MRs aren't playable without The Republic).
+  - Stays: **Succession Law: Patrician Elective**, **Build Trade Post**, and the trade post **Fully Upgrade** decision.
 - **Way of Life**
-  - Hidden: **Get A Favor** and **Clear Your Focus**.
+  - Hidden: **Clear Your Focus**.
   - Stays: all 21 **Lifestyles** trait toggles.
 
 ## Installation

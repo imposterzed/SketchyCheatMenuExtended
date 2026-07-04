@@ -3744,7 +3744,6 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_health
-      has_dlc = "Holy Fury"
       NOT = { trait = scarred_mid }
     }
 
@@ -3798,7 +3797,6 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_health
-      has_dlc = "Holy Fury"
       NOT = { trait = scarred_high }
     }
 
@@ -8745,6 +8743,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_chinese_commander
+      has_dlc = "Jade Dragon"
       NOT = { has_all_chinese_imperial_traits_trigger = yes }
     }
 
@@ -8760,6 +8759,36 @@ decisions = {
       if = { limit = { trait = kow_tow_completed_tier_1 } remove_trait = kow_tow_completed_tier_1 }
       if = { limit = { trait = kow_tow_completed_tier_2 } remove_trait = kow_tow_completed_tier_2 }
       if = { limit = { NOT = { trait = kow_tow_completed_tier_3 } } add_trait = kow_tow_completed_tier_3 }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_all_chinese_imperial_vanilla = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_chinese_commander
+      NOT = { has_dlc = "Jade Dragon" }
+      NOT = { has_all_chinese_commander_traits_trigger = yes }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = { limit = { NOT = { trait = logistics_expert } } add_trait = logistics_expert }
+      if = { limit = { NOT = { trait = master_of_flame } }  add_trait = master_of_flame  }
+      if = { limit = { NOT = { trait = sapper } }           add_trait = sapper           }
+      if = { limit = { NOT = { trait = levy_coordinator } } add_trait = levy_coordinator }
     }
 
     revoke_allowed = {
@@ -9039,6 +9068,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_chinese_commander
+      has_dlc = "Jade Dragon"
       NOT = { trait = kow_tow_completed_tier_1 }
     }
 
@@ -9092,6 +9122,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_chinese_commander
+      has_dlc = "Jade Dragon"
       NOT = { trait = kow_tow_completed_tier_2 }
     }
 
@@ -9145,6 +9176,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_chinese_commander
+      has_dlc = "Jade Dragon"
       NOT = { trait = kow_tow_completed_tier_3 }
     }
 
@@ -9249,10 +9281,6 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_raiding
-      OR = {
-        religion = norse_pagan
-        religion = norse_pagan_reformed
-      }
       NOT = { trait = viking }
     }
 
@@ -9884,6 +9912,63 @@ decisions = {
 
     effect = {
       add_trait = falconer
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  remove_faqih = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_lifestyle
+      trait = faqih
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      remove_trait = faqih
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  add_faqih = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = traits_enabled
+      has_character_flag = show_lifestyle
+      religion_group = muslim
+      NOT = { trait = faqih }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      if = {
+        limit = { trait = scholar }
+        remove_trait = scholar
+      }
+      add_trait = faqih
     }
 
     revoke_allowed = {
@@ -10531,63 +10616,6 @@ decisions = {
         remove_trait = faqih
       }
       add_trait = scholar
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  remove_faqih = {
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_lifestyle
-      trait = faqih
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      remove_trait = faqih
-    }
-
-    revoke_allowed = {
-      always = no
-    }
-
-    ai_will_do = {
-      factor = 0
-    }
-  }
-
-  add_faqih = {
-    potential = {
-      ai = no
-      has_character_flag = cheats_enabled
-      has_character_flag = traits_enabled
-      has_character_flag = show_lifestyle
-      religion_group = muslim
-      NOT = { trait = faqih }
-    }
-
-    allow = {
-      always = yes
-    }
-
-    effect = {
-      if = {
-        limit = { trait = scholar }
-        remove_trait = scholar
-      }
-      add_trait = faqih
     }
 
     revoke_allowed = {
@@ -16171,10 +16199,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_kinslayer
-      OR = {
-        NOT = { has_dlc = "Holy Fury" }
-        is_tribal = no
-      }
+      is_tribal = no
       NOT = { trait = kinslayer }
     }
 
@@ -16228,10 +16253,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_kinslayer
-      OR = {
-        NOT = { has_dlc = "Holy Fury" }
-        is_tribal = no
-      }
+      is_tribal = no
       NOT = { trait = familial_kinslayer }
     }
 
@@ -16285,10 +16307,7 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_kinslayer
-      OR = {
-        NOT = { has_dlc = "Holy Fury" }
-        is_tribal = no
-      }
+      is_tribal = no
       NOT = { trait = dynastic_kinslayer }
     }
 
@@ -16342,7 +16361,6 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_kinslayer
-      has_dlc = "Holy Fury"
       is_tribal = yes
       NOT = { trait = tribal_kinslayer }
     }

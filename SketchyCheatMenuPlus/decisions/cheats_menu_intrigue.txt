@@ -163,6 +163,7 @@ decisions = {
       ai = no
       has_character_flag = cheats_enabled
       has_character_flag = show_cheats
+      has_dlc = "Jade Dragon"
     }
 
     allow = {

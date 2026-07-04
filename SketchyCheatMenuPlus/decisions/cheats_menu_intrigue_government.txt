@@ -114,6 +114,10 @@ decisions = {
     }
 
     effect = {
+      # Route through tribal first to prevent game-over on some nomad rulers.
+      hidden_tooltip = {
+        set_government_type = tribal_government
+      }
       set_government_type = feudal_government
     }
   }
@@ -150,6 +154,10 @@ decisions = {
     }
 
     effect = {
+      # Route through tribal first to prevent game-over on some nomad rulers.
+      hidden_tooltip = {
+        set_government_type = tribal_government
+      }
       set_iqta_government_effect = yes
     }
   }

@@ -151,8 +151,20 @@ targetted_decisions = {
       has_character_flag = cheats_enabled
       ai = no
       age >= 12
-      NOT = { is_married = yes }
-      NOT = { is_married_matrilineally = yes }
+      OR = {
+        AND = {
+          NOT = { is_married = yes }
+          NOT = { is_married_matrilineally = yes }
+        }
+        AND = {
+          is_female = no
+          OR = {
+            religion_group = muslim
+            has_religion_feature = religion_harems
+          }
+          num_of_spouses < 4
+        }
+      }
     }
     potential = {
       ai = yes
@@ -524,7 +536,6 @@ targetted_decisions = {
 
     from_potential = {
       has_character_flag = cheats_enabled
-      has_dlc = "Way of Life"
       ai = no
       NOT = { holds_favor_on = ROOT }
     }
@@ -550,10 +561,10 @@ targetted_decisions = {
 
     from_potential = {
       has_character_flag = cheats_enabled
-      has_dlc = "Conclave"
       ai = no
       age >= 12
       has_concubinage = yes
+      num_of_consorts < 3
     }
     potential = {
       ai = yes
@@ -1466,6 +1477,7 @@ targetted_decisions = {
       ai = no
       has_character_flag = cheats_enabled
       has_dlc = "Way of Life"
+      has_focus = yes
     }
     allow = {
       always = yes
@@ -1486,6 +1498,7 @@ targetted_decisions = {
     potential = {
       ai = no
       has_character_flag = cheats_enabled
+      has_ambition = yes
     }
     allow = {
       always = yes

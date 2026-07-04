@@ -21,7 +21,6 @@ trade_post_decisions = {
     from_potential = {
       ai = no
       has_character_flag = cheats_enabled
-      has_dlc = "The Republic"
     }
     potential = {
       NOT = {

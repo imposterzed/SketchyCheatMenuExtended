@@ -71,10 +71,10 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_eldership }
       is_titular = no
       temporary = no
-      has_dlc = "Holy Fury"
     }
     allow = {
       always = yes
@@ -95,6 +95,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_elective_gavelkind }
       is_titular = no
       temporary = no
@@ -118,6 +119,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_feudal_elective }
       is_titular = no
       temporary = no
@@ -144,6 +146,7 @@ title_decisions = {
       NOT = { has_global_flag = cleanslate_active }
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_open_elective }
       is_titular = no
       temporary = no
@@ -167,6 +170,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_gavelkind }
       is_titular = no
       temporary = no
@@ -190,6 +194,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_byzantine_elective }
       is_titular = no
       temporary = no
@@ -213,10 +218,10 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_nomad_succession }
       is_titular = no
       temporary = no
-      has_dlc = "Horse Lords"
     }
     allow = {
       always = yes
@@ -237,6 +242,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_turkish_succession }
       is_titular = no
       temporary = no
@@ -263,6 +269,7 @@ title_decisions = {
       has_global_flag = cleanslate_active
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_open_elective }
       is_titular = no
       temporary = no
@@ -286,10 +293,10 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_patrician_elective }
       is_titular = no
       temporary = no
-      has_dlc = "The Republic"
     }
     allow = {
       always = yes
@@ -310,6 +317,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_primogeniture }
       is_titular = no
       temporary = no
@@ -333,6 +341,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_hre_elective }
       is_titular = no
       temporary = no
@@ -356,6 +365,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_seniority }
       is_titular = no
       temporary = no
@@ -379,6 +389,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_tanistry }
       is_titular = no
       temporary = no
@@ -402,6 +413,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = succ_ultimogeniture }
       is_titular = no
       temporary = no
@@ -427,6 +439,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = agnatic_succession }
       is_titular = no
       temporary = no
@@ -457,6 +470,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = cognatic_succession }
       is_titular = no
       temporary = no
@@ -487,6 +501,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = true_cognatic_succession }
       is_titular = no
       temporary = no
@@ -517,6 +532,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = enatic_cognatic_succession }
       is_titular = no
       temporary = no
@@ -547,6 +563,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = enatic_succession }
       is_titular = no
       temporary = no
@@ -581,6 +598,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = agnatic_succession }
       is_titular = no
       temporary = no
@@ -624,6 +642,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = cognatic_succession }
       is_titular = no
       temporary = no
@@ -667,6 +686,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = true_cognatic_succession }
       is_titular = no
       temporary = no
@@ -710,6 +730,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = enatic_cognatic_succession }
       is_titular = no
       temporary = no
@@ -753,6 +774,7 @@ title_decisions = {
       has_character_flag = cheats_enabled
     }
     potential = {
+      has_holder = yes
       NOT = { has_law = enatic_succession }
       is_titular = no
       temporary = no

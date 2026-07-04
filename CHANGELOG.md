@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.14.0] - 2026-07-04
+
+### Changed
+- **Faqih** moved to alphabetical position in Lifestyle Traits.
+
+### Fixed
+- **Build Fort** Conclave gate removed — fort holding type works in current base game patch.
+- **Grievously Scarred / Horrifically Scarred** Holy Fury gate removed — trait works in current base game patch.
+- **Kinslayer** — `add_tribal_kinslayer` Holy Fury gate removed (trait works in current base game patch); non-tribal variants hide on tribal.
+- **Succession Law: Eldership** Holy Fury gate removed — succession law works in current base game patch.
+- **Succession Law: Nomad Succession** Horse Lords gate removed — succession law works in current base game patch.
+- **Succession Law: Patrician Elective** The Republic gate removed — succession law works in current base game patch.
+- **Build Trade Post** and **Fully Upgrade** (trade post) The Republic gate removed — trade post holding type + buildings work in current base game patch.
+- **Get A Favor** Way of Life gate removed — certain favors work in current base game patch.
+- **Add 5k Grace** and **Kowtow Complete (Tier I / II / III)** toggles now hidden without Jade Dragon (all involve the Grace resource).
+- **Add All Chinese Imperial** no longer grants Kowtow Tier III without Jade Dragon.
+- **Marry Them** now stays visible for polygamous male rulers (Muslim / reformed-pagan polygamy) with fewer than 4 spouses — previously hid after any marriage.
+- **Take As Concubine** — Conclave gate removed (concubinage works via religion or government); decision now hides at the consort cap (3).
+- **Viking** trait toggle religion gate removed — trait works on any character (matches the Pirate / Ravager / Sea King / Sea Queen convention).
+- **Right-click succession / gender law decisions** now hide on titles with no holder.
+- **Destroy Horde** (`set_feudal_nomad` / `set_iqta_nomad`) no longer causes game-over on some nomad rulers — the transition now cascades through tribal briefly to flush the horde structure.
+- **Clear Focus / Clear Ambition** now hide when the character has no focus / ambition set.
+
 ## [0.13.0] - 2026-07-03
 
 ### Added

@@ -972,6 +972,8 @@ hide_chinese_commander_desc;Hide Chinese Imperial;;;;;;;;;;;;;x
 
 add_all_chinese_imperial;--------Add All Chinese Imperial;;;;;;;;;;;;;x
 add_all_chinese_imperial_desc;Adds the four commander traits and Kowtow Complete (Tier III). Tier III replaces Tier I or Tier II if present.;;;;;;;;;;;;;x
+add_all_chinese_imperial_vanilla;--------Add All Chinese Imperial;;;;;;;;;;;;;x
+add_all_chinese_imperial_vanilla_desc;Grants all 4 Chinese Commander traits (Way of the Dog / Dragon / Leopard / Tiger).;;;;;;;;;;;;;x
 
 remove_all_chinese_imperial;--------Remove All Chinese Imperial;;;;;;;;;;;;;x
 remove_all_chinese_imperial_desc;Strips every commander trait and Kowtow Complete tier the character holds.;;;;;;;;;;;;;x
