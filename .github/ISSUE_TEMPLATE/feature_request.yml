@@ -1,0 +1,46 @@
+name: Feature request
+description: Suggest a new feature or enhancement for Sketchy Cheat Menu Plus.
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees:
+  - imposterzed
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! Two quick fields help me understand what you're proposing and why.
+
+        For bugs, please use the **Bug report** template instead. For mod-vs-mod conflicts, use **Compatibility issue**.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: One-line description of the feature.
+      placeholder: "Right-click decision to grant an existing bloodline"
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this valuable?
+      description: What does the player gain that vanilla or current Sketchy Cheat Menu Plus doesn't already provide? A specific use-case helps a lot.
+      placeholder: |
+        I want to build a specific bloodline dynasty (e.g. inspire commanders) without having to trigger the acquisition event chain. A right-click Bloodlines sub-menu would let me set it up at the start of my playthrough.
+    validations:
+      required: true
+
+  - type: textarea
+    id: design
+    attributes:
+      label: How might it work in-game?
+      description: Optional — your imagined design. Decision? Event? Tweak to existing? Helps figure out if it fits the existing architecture.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: |
+        References to similar mods, related ideas, edge cases, screenshots.
+        *You can drag-and-drop or paste screenshots directly into this field.*

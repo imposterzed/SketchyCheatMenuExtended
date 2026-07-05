@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.14.3] - 2026-07-05
+
+### Added
+- **Community files for public-release prep** — `CONTRIBUTING.md`, `SUPPORT.md`, `CODE_OF_CONDUCT.md` (Contributor Covenant v2.1), and `SECURITY.md`.
+- **Issue templates** in `.github/ISSUE_TEMPLATE/` — bug / compat / feature forms plus a `config.yml` routing users to Discussions and the Paradox CK2 forums.
+
 ## [0.14.2] - 2026-07-04
 
 ### Changed
