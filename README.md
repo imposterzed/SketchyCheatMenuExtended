@@ -132,9 +132,10 @@ Applies to your primary title.
 
 #### Obligation Laws
 
-Applies to your primary title. All 5 families require Conclave.
+Applies to your primary title.
 
-- **Noble / Iqta / Burgher / Church / Tribal Obligations** — Shift Toward Tax, Shift Toward Levy, Max Tax, Max Levy.
+- **Noble / Iqta / Burgher / Church / Tribal Obligations** — Shift Toward Tax, Shift Toward Levy, Max Tax, Max Levy. Conclave.
+- **Feudal / Iqta / City / Church / Tribal Obligations** — Shift Levies Higher / Lower, Shift Tax Higher / Lower per family, Set All Max / Min Levies / Tax. Without Conclave.
 
 #### Council Laws
 
@@ -200,7 +201,8 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
 - **Charlemagne**
   - Hidden: the **Viceroyalty** realm law.
 - **Conclave**
-  - Hidden: the 8 Council Laws, 5 Obligation Laws families, and the Controlled Realm Inheritance / Vassal War Declaration / Status of Women / Revoke Title realm laws.
+  - Hidden: the 8 Council Laws and the Controlled Realm Inheritance / Vassal War Declaration / Status of Women / Revoke Title realm laws.
+  - The 5 Obligation Laws families switch to their vanilla 4-state form.
   - Administration collapses from (Feudal / Late / Imperial) to Feudal ↔ Imperial.
   - Crown Authority is hidden **with** Conclave (the Conclave-only realm laws replace it).
   - Stays: **Child of Concubine** and **Child of Consort** birth markers, the 12 Childhood trait toggles, and **Get A Favor**.

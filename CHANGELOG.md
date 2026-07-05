@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.14.1] - 2026-07-04
+
+### Added
+- **Vanilla obligation cheats** — 20 per-family cycles + 4 cross-family bulks that surface when Conclave is disabled. Covers Feudal / Iqta / City / Church / Tribal contract + tax laws.
+
+### Changed
+- **Obligation Laws sub-menu** opens on either DLC configuration; Conclave form surfaces with Conclave on, vanilla form with Conclave off.
+- **5 Conclave-form `Shift ... Toward Tax` potentials compacted** from `OR = { has_law = X_1 ... X_8 }` enumeration to `NOT = { has_law = X_0 }`. Script-side equivalent.
+
 ## [0.14.0] - 2026-07-04
 
 ### Changed

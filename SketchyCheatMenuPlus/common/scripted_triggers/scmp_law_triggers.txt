@@ -89,9 +89,8 @@ has_scmp_realm_law_eligible_government_trigger = {
 }
 
 # Eligible for Obligation Laws sub-menu
-# Universal vanilla floor across all 5 vassal-contract families.
+# Universal floor across all 5 vassal-contract families.
 has_scmp_obligation_law_eligible_government_trigger = {
-  has_dlc = "Conclave"
   OR = {
     NOT = { real_tier = baron }
     is_patrician = yes

@@ -66,3 +66,77 @@ set_obligations_tribal_max_tax_desc;Jumps tribal vassal obligations directly to 
 
 set_obligations_tribal_max_levy;----Set Tribal Obligations: Max Levy;;;;;;;;;;;;;x
 set_obligations_tribal_max_levy_desc;Jumps tribal vassal obligations directly to the maximum levy focus.;;;;;;;;;;;;;x
+
+
+cycle_obligations_vanilla_feudal_contract_up;----Shift Feudal Levies Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_feudal_contract_up_desc;Steps feudal vassal obligations one level toward maximum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_feudal_contract_down;----Shift Feudal Levies Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_feudal_contract_down_desc;Steps feudal vassal obligations one level toward minimum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_feudal_tax_up;----Shift Feudal Tax Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_feudal_tax_up_desc;Steps feudal vassal obligations one level toward maximum tax.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_feudal_tax_down;----Shift Feudal Tax Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_feudal_tax_down_desc;Steps feudal vassal obligations one level toward minimum tax.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_iqta_contract_up;----Shift Iqta Levies Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_iqta_contract_up_desc;Steps iqta vassal obligations one level toward maximum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_iqta_contract_down;----Shift Iqta Levies Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_iqta_contract_down_desc;Steps iqta vassal obligations one level toward minimum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_iqta_tax_up;----Shift Iqta Tax Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_iqta_tax_up_desc;Steps iqta vassal obligations one level toward maximum tax.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_iqta_tax_down;----Shift Iqta Tax Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_iqta_tax_down_desc;Steps iqta vassal obligations one level toward minimum tax.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_city_contract_up;----Shift City Levies Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_city_contract_up_desc;Steps city vassal obligations one level toward maximum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_city_contract_down;----Shift City Levies Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_city_contract_down_desc;Steps city vassal obligations one level toward minimum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_city_tax_up;----Shift City Tax Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_city_tax_up_desc;Steps city vassal obligations one level toward maximum tax.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_city_tax_down;----Shift City Tax Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_city_tax_down_desc;Steps city vassal obligations one level toward minimum tax.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_temple_contract_up;----Shift Church Levies Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_temple_contract_up_desc;Steps church vassal obligations one level toward maximum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_temple_contract_down;----Shift Church Levies Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_temple_contract_down_desc;Steps church vassal obligations one level toward minimum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_temple_tax_up;----Shift Church Tax Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_temple_tax_up_desc;Steps church vassal obligations one level toward maximum tax.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_temple_tax_down;----Shift Church Tax Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_temple_tax_down_desc;Steps church vassal obligations one level toward minimum tax.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_tribal_contract_up;----Shift Tribal Levies Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_tribal_contract_up_desc;Steps tribal vassal obligations one level toward maximum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_tribal_contract_down;----Shift Tribal Levies Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_tribal_contract_down_desc;Steps tribal vassal obligations one level toward minimum levies.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_tribal_tax_up;----Shift Tribal Tax Higher;;;;;;;;;;;;;x
+cycle_obligations_vanilla_tribal_tax_up_desc;Steps tribal vassal obligations one level toward maximum tax.;;;;;;;;;;;;;x
+
+cycle_obligations_vanilla_tribal_tax_down;----Shift Tribal Tax Lower;;;;;;;;;;;;;x
+cycle_obligations_vanilla_tribal_tax_down_desc;Steps tribal vassal obligations one level toward minimum tax.;;;;;;;;;;;;;x
+
+set_obligations_all_max_levies;----Set All Obligations: Max Levies;;;;;;;;;;;;;x
+set_obligations_all_max_levies_desc;Sets every Levies vassal obligation to maximum.;;;;;;;;;;;;;x
+
+set_obligations_all_min_levies;----Set All Obligations: Min Levies;;;;;;;;;;;;;x
+set_obligations_all_min_levies_desc;Sets every Levies vassal obligation to minimum.;;;;;;;;;;;;;x
+
+set_obligations_all_max_tax;----Set All Obligations: Max Tax;;;;;;;;;;;;;x
+set_obligations_all_max_tax_desc;Sets every Tax vassal obligation to maximum.;;;;;;;;;;;;;x
+
+set_obligations_all_min_tax;----Set All Obligations: Min Tax;;;;;;;;;;;;;x
+set_obligations_all_min_tax_desc;Sets every Tax vassal obligation to minimum.;;;;;;;;;;;;;x
+
