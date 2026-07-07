@@ -1,0 +1,37 @@
+-- SCME - Ruler Designer sub-mod
+-- Zeroes every NRulerDesigner cost so the designer is unrestricted.
+-- Non-cost fields (BASE_ATTRIB, BASE_AGE, BASE_FERTILITY, BASE_HEALTH,
+-- MAX_AGE) are left at vanilla defaults.
+
+NDefines.NRulerDesigner.COST_ATTRIB = 0.0
+NDefines.NRulerDesigner.COST_SON = 0.0
+NDefines.NRulerDesigner.COST_DAUGHTER = 0.0
+NDefines.NRulerDesigner.COST_MARRIED = 0.0
+NDefines.NRulerDesigner.COST_FERTILITY = 0.0
+NDefines.NRulerDesigner.COST_HEALTH = 0.0
+NDefines.NRulerDesigner.COST_COMBAT_RATING = 0.0
+NDefines.NRulerDesigner.COST_MONTHLY_PRESTIGE = 0.0
+NDefines.NRulerDesigner.COST_MONTHLY_PIETY = 0.0
+NDefines.NRulerDesigner.COST_MONTHLY_WEALTH = 0.0
+NDefines.NRulerDesigner.COST_GLOBAL_TAX = 0.0
+NDefines.NRulerDesigner.COST_CHURCH_OPINION = 0.0
+NDefines.NRulerDesigner.COST_SPOUCE_OPINION = 0.0
+NDefines.NRulerDesigner.COST_SEXAPPEAL_OPINION = 0.0
+NDefines.NRulerDesigner.COST_DYNASTY_OPINION = 0.0
+NDefines.NRulerDesigner.COST_VASSAL_OPINION = 0.0
+NDefines.NRulerDesigner.COST_LIEGE_OPINION = 0.0
+NDefines.NRulerDesigner.COST_INFIDEL_OPINION = 0.0
+NDefines.NRulerDesigner.COST_OPPOSITE_TRAIT_OPINION = 0.0
+NDefines.NRulerDesigner.COST_SAME_TRAIT_OPINION = 0.0
+NDefines.NRulerDesigner.COST_SAME_RELIGION_OPINION = 0.0
+NDefines.NRulerDesigner.COST_AMBITION_OPINION = 0.0
+NDefines.NRulerDesigner.COST_TRIBAL_OPINION = 0.0
+NDefines.NRulerDesigner.COST_UNREFORMED_TRIBAL_OPINION = 0.0
+NDefines.NRulerDesigner.COST_GENERAL_OPINION = 0.0
+NDefines.NRulerDesigner.COST_MUSLIM_OPINION = 0.0
+NDefines.NRulerDesigner.COST_JEWISH_OPINION = 0.0
+NDefines.NRulerDesigner.COST_CHRISTIAN_OPINION = 0.0
+NDefines.NRulerDesigner.COST_ZOROASTRIAN_OPINION = 0.0
+NDefines.NRulerDesigner.COST_MORALE_OFFENCE = 0.0
+NDefines.NRulerDesigner.COST_MORALE_DEFENCE = 0.0
+NDefines.NRulerDesigner.COST_DEFENCE = 0.0

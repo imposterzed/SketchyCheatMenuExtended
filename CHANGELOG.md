@@ -6,6 +6,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.14.6] - 2026-07-07
+
+### Added
+- **Ruler Designer sub-mod** — optional `SketchyCheatMenuExtendedRulerDesigner` that zeroes the `NRulerDesigner` cost defines.
+- **Sub-mod thumbnails.**
+- **Inner `descriptor.mod`** for Debug and Proper4KUI Patch sub-mods.
+- **README Sub-mods section** — consolidates Proper4KUI Patch, Ruler Designer, and Debug install info under Installation.
+
+### Changed
+- **5 SCME-custom cheat traits** (Master Commander, Master Builder, Master Landowner, Master Plotter, Beloved) — now selectable in the Ruler Designer.
+
 ## [0.14.5] - 2026-07-07
 
 ### Added

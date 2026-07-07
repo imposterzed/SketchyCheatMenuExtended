@@ -277,7 +277,13 @@ Documents/Paradox Interactive/Crusader Kings II/mod/
 
 …then enable **Sketchy Cheat Menu Extended** in the launcher.
 
-**Proper4KUI users:** also install the **Sketchy Cheat Menu Extended - Proper4KUI Patch** companion sub-mod for hi-res versions of the decision icon and the 5 SCME-custom cheat trait icons, sized to match Proper4KUI's larger UI. Vanilla players don't need it.
+### Sub-mods
+
+Three optional companion sub-mods ship alongside the base mod. Install each the same way as the base mod: drop the folder and `.mod` file into `mod/`, then enable in the launcher.
+
+- **Sketchy Cheat Menu Extended - Proper4KUI Patch** — hi-res versions of the decision icon and the 5 SCME-custom cheat trait icons, sized to match Proper4KUI's larger UI.
+- **Sketchy Cheat Menu Extended - Ruler Designer** — makes the Ruler Designer effectively free. Pick any attributes, starting conditions, and most traits without spending points. A handful of traits (some Lifestyles, Poet, Falconer, Stutter) keep their vanilla point cost.
+- **Sketchy Cheat Menu Extended - Debug** — console `SCMED.*` events for reaching hard-to-test states like the dynasty 777777 "Outcast" label and Holy Fury bloodlines.
 
 ## Compatibility
 
@@ -329,7 +335,7 @@ CK2's static parser validates every trait ID in a trigger context — both `scri
 
 ### Dev/test events
 
-Hard-to-reach paths (e.g., verifying the dynasty 777777 "Outcast" label, granting Holy Fury bloodlines for `upgrade_X` testing) have console-grant helpers in a sibling sub-mod, **Sketchy Cheat Menu Extended - Debug**. Enable it in the launcher alongside SCME to use the `SCMED.*` events — e.g. `event SCMED.1 <charID>` assigns the target to dynasty 777777; `event SCMED.2`–`SCMED.5 <charID>` grant the 4 Holy Fury building-related bloodlines. The base mod doesn't ship these events.
+The **Sketchy Cheat Menu Extended - Debug** sub-mod (see [Sub-mods](#sub-mods)) ships `SCMED.*` console events for hard-to-reach paths. `event SCMED.1 <charID>` assigns the target to dynasty 777777. `event SCMED.2` through `SCMED.5` grant the 4 Holy Fury building-related bloodlines.
 
 ## Development
 

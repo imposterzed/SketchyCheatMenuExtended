@@ -5,14 +5,14 @@
 ##                                                        ##
 ## Five custom traits granted only via the cheat menu.    ##
 ## Icons live in ../../interface/cheat_traits.gfx.        ##
-## customizer = no / random = no scopes them out of Ruler ##
-## Designer and random-character generation.              ##
+## customizer = yes lists them in the Ruler Designer.     ##
+## random = no keeps them out of random generation.       ##
 ##                                                        ##
 ############################################################
 
 # Universal combat trait: boosts every command modifier slot.
 mastermind = {
-  customizer = no
+  customizer = yes
   random = no
   combat_rating = 100
   leader = yes
@@ -35,7 +35,7 @@ mastermind = {
 
 # Instant, near-free construction (-100% build time, -99% cost).
 builder = {
-  customizer = no
+  customizer = yes
   random = no
   build_time_modifier = -1
   build_cost_modifier = -0.99
@@ -45,7 +45,7 @@ builder = {
 
 # Massive direct rule (+100 demesne size) and tax flood.
 landlord = {
-  customizer = no
+  customizer = yes
   random = no
 
   demesne_size = 100
@@ -54,7 +54,7 @@ landlord = {
 
 # Plots and arrests both succeed (+10 plot power / arrest chance).
 conspirator = {
-  customizer = no
+  customizer = yes
   random = no
 
   plot_power_modifier = 10
@@ -63,7 +63,7 @@ conspirator = {
 
 # Everyone loves you (+10000 opinion from all characters).
 beloved = {
-  customizer = no
+  customizer = yes
   random = no
 
   general_opinion = 10000
