@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.jpg" alt="Sketchy Cheat Menu Plus" width="100%" />
+  <img src="docs/scme-banner.jpg" alt="Sketchy Cheat Menu Extended" width="100%" />
 </p>
 
 A fork of [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=608738995) by [Sketchy](https://steamcommunity.com/id/sketchy77) — please go rate and favorite his mod.
@@ -34,7 +34,7 @@ A fork of [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetail
 
 ## What it does
 
-Sketchy Cheat Menu Plus adds a comprehensive in-game cheat menu. Right-click your own portrait and pick **Enable Cheats** to turn it on; **Disable Cheats** when done. AI characters never see these decisions.
+Sketchy Cheat Menu Extended adds a comprehensive in-game cheat menu. Right-click your own portrait and pick **Enable Cheats** to turn it on; **Disable Cheats** when done. AI characters never see these decisions.
 
 ### Right-click your character
 
@@ -106,7 +106,7 @@ Accessed via the Decisions panel (Intrigue tab) once cheats are enabled. Each su
 - **Lower Threat Level** — resets threat to zero.
 - **Revoke all Vassal Titles**
 - **Kill All Courtiers** — kills every non-family courtier.
-- **Cheat Trait Cleaner** — strips the 5 SCMP-custom cheat traits and Immortal from any non-player character.
+- **Cheat Trait Cleaner** — strips the 5 SCME-custom cheat traits and Immortal from any non-player character.
 
 #### Government
 
@@ -244,19 +244,19 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
 
 ## Installation
 
-**Manual install:** drop `SketchyCheatMenuPlus/` and `SketchyCheatMenuPlus.mod` into:
+**Manual install:** drop `SketchyCheatMenuExtended/` and `SketchyCheatMenuExtended.mod` into:
 
 ```
 Documents/Paradox Interactive/Crusader Kings II/mod/
 ```
 
-…then enable **Sketchy Cheat Menu Plus** in the launcher.
+…then enable **Sketchy Cheat Menu Extended** in the launcher.
 
-**Proper4KUI users:** also install the **Sketchy Cheat Menu Plus - Proper4KUI Patch** companion sub-mod for hi-res versions of the decision icon and the 5 SCMP-custom cheat trait icons, sized to match Proper4KUI's larger UI. Vanilla players don't need it.
+**Proper4KUI users:** also install the **Sketchy Cheat Menu Extended - Proper4KUI Patch** companion sub-mod for hi-res versions of the decision icon and the 5 SCME-custom cheat trait icons, sized to match Proper4KUI's larger UI. Vanilla players don't need it.
 
 ## Compatibility
 
-Sketchy Cheat Menu Plus is a content mod that doesn't overwrite base-game files, so it should work alongside vanilla and most other mods as the original Sketchy Cheat Menu did.
+Sketchy Cheat Menu Extended is a content mod that doesn't overwrite base-game files, so it should work alongside vanilla and most other mods as the original Sketchy Cheat Menu did.
 
 ### Sketchy Cheat Menu
 
@@ -290,8 +290,8 @@ Historically incompatible with Sketchy Cheat Menu; not verified for this fork.
 
 Two flags let other mods detect this mod and the characters it spawns:
 
-- **Mod** — Sketchy Cheat Menu Plus sets the global flag `scmp_active` at `on_startup` (on new games and on every save load). Check for it with `has_global_flag = scmp_active` — the same way this mod detects CleanSlate's `cleanslate_active`.
-- **Spawned Character** — Each character spawned via the menu's spawn decisions is tagged with a per-character flag — `scmp_spawned_child`, `scmp_spawned_sibling`, `scmp_spawned_wife`, `scmp_spawned_vassal`, `scmp_spawned_marshal`, `scmp_spawned_spymaster`, `scmp_spawned_steward`, `scmp_spawned_chancellor`, `scmp_spawned_priest`, `scmp_spawned_commander`, or `scmp_spawned_physician` — so you can match them with `has_character_flag`.
+- **Mod** — Sketchy Cheat Menu Extended sets the global flag `scme_active` at `on_startup` (on new games and on every save load). Check for it with `has_global_flag = scme_active` — the same way this mod detects CleanSlate's `cleanslate_active`.
+- **Spawned Character** — Each character spawned via the menu's spawn decisions is tagged with a per-character flag — `scme_spawned_child`, `scme_spawned_sibling`, `scme_spawned_wife`, `scme_spawned_vassal`, `scme_spawned_marshal`, `scme_spawned_spymaster`, `scme_spawned_steward`, `scme_spawned_chancellor`, `scme_spawned_priest`, `scme_spawned_commander`, or `scme_spawned_physician` — so you can match them with `has_character_flag`.
 
 ### error.log notes
 
@@ -299,7 +299,7 @@ CK2's static parser validates every trait ID in a trigger context — both `scri
 
 ### Dev/test events
 
-Hard-to-reach paths (e.g., verifying the dynasty 777777 "Outcast" label, granting Holy Fury bloodlines for `upgrade_X` testing) have console-grant helpers in a sibling sub-mod, **Sketchy Cheat Menu Plus - Debug**. Enable it in the launcher alongside SCMP to use the `SCMPD.*` events — e.g. `event SCMPD.1 <charID>` assigns the target to dynasty 777777; `event SCMPD.2`–`SCMPD.5 <charID>` grant the 4 Holy Fury building-related bloodlines. The base mod doesn't ship these events.
+Hard-to-reach paths (e.g., verifying the dynasty 777777 "Outcast" label, granting Holy Fury bloodlines for `upgrade_X` testing) have console-grant helpers in a sibling sub-mod, **Sketchy Cheat Menu Extended - Debug**. Enable it in the launcher alongside SCME to use the `SCMED.*` events — e.g. `event SCMED.1 <charID>` assigns the target to dynasty 777777; `event SCMED.2`–`SCMED.5 <charID>` grant the 4 Holy Fury building-related bloodlines. The base mod doesn't ship these events.
 
 ## Development
 

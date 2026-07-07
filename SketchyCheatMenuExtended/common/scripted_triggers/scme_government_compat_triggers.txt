@@ -1,0 +1,26 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##              Government Rename Triggers                ##
+############################################################
+
+# Iqta
+is_iqta_government_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    government = muslim_feudal_government
+  }
+  trigger_else = {
+    government = muslim_government
+  }
+}
+
+# Monastic Feudal
+is_monastic_feudal_government_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    government = monastic_feudal_government
+  }
+  trigger_else = {
+    government = theocratic_feudal_government
+  }
+}

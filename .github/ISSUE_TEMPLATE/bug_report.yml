@@ -1,5 +1,5 @@
 name: Bug report
-description: Report something not working as expected in Sketchy Cheat Menu Plus.
+description: Report something not working as expected in Sketchy Cheat Menu Extended.
 title: "[Bug]: "
 labels: ["bug"]
 assignees:
@@ -27,11 +27,11 @@ body:
   - type: checkboxes
     id: mod-stack
     attributes:
-      label: Mods loaded alongside Sketchy Cheat Menu Plus
+      label: Mods loaded alongside Sketchy Cheat Menu Extended
       description: Check all that apply.
       options:
         - label: CleanSlate
-        - label: Proper4KUI (with the Sketchy Cheat Menu Plus - Proper4KUI Patch)
+        - label: Proper4KUI (with the Sketchy Cheat Menu Extended - Proper4KUI Patch)
         - label: Other mods (please list them in the description)
         - label: None — vanilla CK2 only
 
@@ -63,8 +63,8 @@ body:
       label: Log snippets
       description: |
         Logs live at `Documents/Paradox Interactive/Crusader Kings II/logs/`.
-        - Paste any lines from **`error.log`** that mention Sketchy Cheat Menu Plus or the mod's files.
-        - For "something isn't appearing" bugs (decision missing, section missing), also check **`setup.log`** — search for `cheats_menu` / `scmp` and paste the lines you find (or note that there are none, which is itself diagnostic).
+        - Paste any lines from **`error.log`** that mention Sketchy Cheat Menu Extended or the mod's files.
+        - For "something isn't appearing" bugs (decision missing, section missing), also check **`setup.log`** — search for `cheats_menu` / `scme` and paste the lines you find (or note that there are none, which is itself diagnostic).
       render: text
 
   - type: textarea

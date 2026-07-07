@@ -1,0 +1,10 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                 Cheat Opinion Modifiers                ##
+############################################################
+
+# +1000 ruler opinion lasting 100 years.
+opinion_cheat_loyal = {
+  opinion = 1000
+  months = 1200
+}

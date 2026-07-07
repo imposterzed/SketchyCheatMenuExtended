@@ -1,0 +1,15 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##               Government Rename Effects                ##
+############################################################
+
+# Iqta
+set_iqta_government_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    set_government_type = muslim_feudal_government
+  }
+  else = {
+    set_government_type = muslim_government
+  }
+}

@@ -1,0 +1,654 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                  Trait Rename Effects                  ##
+############################################################
+
+# Physique
+add_physique_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = brawny
+  }
+  else = {
+    add_trait = robust
+  }
+}
+remove_physique_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = brawny }
+      remove_trait = brawny
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = robust }
+      remove_trait = robust
+    }
+  }
+}
+
+# Feeble
+add_feeble_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = frail
+  }
+  else = {
+    add_trait = feeble
+  }
+}
+remove_feeble_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = frail }
+      remove_trait = frail
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = feeble }
+      remove_trait = feeble
+    }
+  }
+}
+
+# Beauty
+add_beauty_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = attractive
+  }
+  else = {
+    add_trait = fair
+  }
+}
+remove_beauty_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = attractive }
+      remove_trait = attractive
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = fair }
+      remove_trait = fair
+    }
+  }
+}
+
+# Fat
+add_fat_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = fat
+  }
+  else = {
+    add_trait = is_fat
+  }
+}
+remove_fat_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = fat }
+      remove_trait = fat
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = is_fat }
+      remove_trait = is_fat
+    }
+  }
+}
+
+# Malnourished
+add_malnourished_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = malnourished
+  }
+  else = {
+    add_trait = is_malnourished
+  }
+}
+remove_malnourished_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = malnourished }
+      remove_trait = malnourished
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = is_malnourished }
+      remove_trait = is_malnourished
+    }
+  }
+}
+
+# Schemer
+add_schemer_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = master_schemer
+  }
+  else = {
+    add_trait = schemer
+  }
+}
+remove_schemer_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = master_schemer }
+      remove_trait = master_schemer
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = schemer }
+      remove_trait = schemer
+    }
+  }
+}
+
+# Seducer (sex-aware)
+add_seducer_trait_effect = {
+  if = {
+    limit = { is_female = yes }
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      add_trait = master_seductress
+    }
+    else = {
+      add_trait = seductress
+    }
+  }
+  else = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      add_trait = master_seducer
+    }
+    else = {
+      add_trait = seducer
+    }
+  }
+}
+remove_seducer_trait_effect = {
+  if = {
+    limit = { is_female = yes }
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      if = {
+        limit = { trait = master_seductress }
+        remove_trait = master_seductress
+      }
+    }
+    else = {
+      if = {
+        limit = { trait = seductress }
+        remove_trait = seductress
+      }
+    }
+  }
+  else = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      if = {
+        limit = { trait = master_seducer }
+        remove_trait = master_seducer
+      }
+    }
+    else = {
+      if = {
+        limit = { trait = seducer }
+        remove_trait = seducer
+      }
+    }
+  }
+}
+
+# Gamer
+add_gamer_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = game_master
+  }
+  else = {
+    add_trait = gamer
+  }
+}
+remove_gamer_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = game_master }
+      remove_trait = game_master
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = gamer }
+      remove_trait = gamer
+    }
+  }
+}
+
+# Direct Leader
+add_direct_leader_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = direct_leader
+  }
+  else = {
+    add_trait = experimenter
+  }
+}
+remove_direct_leader_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = direct_leader }
+      remove_trait = direct_leader
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = experimenter }
+      remove_trait = experimenter
+    }
+  }
+}
+
+# Battlefield Terrain Master
+add_battlefield_terrain_master_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = battlefield_terrain_master
+  }
+  else = {
+    add_trait = narrow_flank_leader
+  }
+}
+remove_battlefield_terrain_master_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = battlefield_terrain_master }
+      remove_trait = battlefield_terrain_master
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = narrow_flank_leader }
+      remove_trait = narrow_flank_leader
+    }
+  }
+}
+
+# Desert Terrain
+add_desert_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = desert_expert
+  }
+  else = {
+    add_trait = desert_terrain_leader
+  }
+}
+remove_desert_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = desert_expert }
+      remove_trait = desert_expert
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = desert_terrain_leader }
+      remove_trait = desert_terrain_leader
+    }
+  }
+}
+
+# Flat Terrain
+add_flat_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = flat_terrain_expert
+  }
+  else = {
+    add_trait = flat_terrain_leader
+  }
+}
+remove_flat_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = flat_terrain_expert }
+      remove_trait = flat_terrain_expert
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = flat_terrain_leader }
+      remove_trait = flat_terrain_leader
+    }
+  }
+}
+
+# Jungle Terrain
+add_jungle_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = jungle_expert
+  }
+  else = {
+    add_trait = jungle_terrain_leader
+  }
+}
+remove_jungle_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = jungle_expert }
+      remove_trait = jungle_expert
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = jungle_terrain_leader }
+      remove_trait = jungle_terrain_leader
+    }
+  }
+}
+
+# Mountain Terrain
+add_mountain_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = mountain_expert
+  }
+  else = {
+    add_trait = mountain_terrain_leader
+  }
+}
+remove_mountain_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = mountain_expert }
+      remove_trait = mountain_expert
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = mountain_terrain_leader }
+      remove_trait = mountain_terrain_leader
+    }
+  }
+}
+
+# Rough Terrain
+add_rough_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = rough_terrain_expert
+  }
+  else = {
+    add_trait = rough_terrain_leader
+  }
+}
+remove_rough_terrain_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = rough_terrain_expert }
+      remove_trait = rough_terrain_expert
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = rough_terrain_leader }
+      remove_trait = rough_terrain_leader
+    }
+  }
+}
+
+# Cannibal
+add_cannibal_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = cannibal
+  }
+  else = {
+    add_trait = cannibal_trait
+  }
+}
+remove_cannibal_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = cannibal }
+      remove_trait = cannibal
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = cannibal_trait }
+      remove_trait = cannibal_trait
+    }
+  }
+}
+
+# Raiding
+add_seaking_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = sea_king
+  }
+  else = {
+    add_trait = seaking
+  }
+}
+remove_seaking_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = sea_king }
+      remove_trait = sea_king
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = seaking }
+      remove_trait = seaking
+    }
+  }
+}
+
+# Holy War Veterans
+add_eagle_warrior_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = eagle_knight
+  }
+  else = {
+    add_trait = eagle_warrior
+  }
+}
+remove_eagle_warrior_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = eagle_knight }
+      remove_trait = eagle_knight
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = eagle_warrior }
+      remove_trait = eagle_warrior
+    }
+  }
+}
+
+add_romuvas_own_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = hound_of_dievas
+  }
+  else = {
+    add_trait = romuvas_own
+  }
+}
+remove_romuvas_own_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = hound_of_dievas }
+      remove_trait = hound_of_dievas
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = romuvas_own }
+      remove_trait = romuvas_own
+    }
+  }
+}
+
+add_shaddai_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = kanai
+  }
+  else = {
+    add_trait = shaddai
+  }
+}
+remove_shaddai_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = kanai }
+      remove_trait = kanai
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = shaddai }
+      remove_trait = shaddai
+    }
+  }
+}
+
+add_tengri_warrior_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = skylord
+  }
+  else = {
+    add_trait = tengri_warrior
+  }
+}
+remove_tengri_warrior_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = skylord }
+      remove_trait = skylord
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = tengri_warrior }
+      remove_trait = tengri_warrior
+    }
+  }
+}
+
+add_ukkos_shield_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    add_trait = ukkos_hammer
+  }
+  else = {
+    add_trait = ukkos_shield
+  }
+}
+remove_ukkos_shield_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = ukkos_hammer }
+      remove_trait = ukkos_hammer
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = ukkos_shield }
+      remove_trait = ukkos_shield
+    }
+  }
+}
+
+# Martial Cleric (tier-2 learning)
+# Only the remove side is used (by the 5 set_<X>_education decisions).
+remove_martial_cleric_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = dutiful_cleric }
+      remove_trait = dutiful_cleric
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = martial_cleric }
+      remove_trait = martial_cleric
+    }
+  }
+}
+
+# Seducer (strict - sex-agnostic, used by mutex wraps)
+remove_seducer_strict_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = master_seducer }
+      remove_trait = master_seducer
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = seducer }
+      remove_trait = seducer
+    }
+  }
+}
+
+# Seductress (strict - sex-agnostic, used by mutex wraps)
+remove_seductress_strict_trait_effect = {
+  if = {
+    limit = { has_global_flag = cleanslate_active }
+    if = {
+      limit = { trait = master_seductress }
+      remove_trait = master_seductress
+    }
+  }
+  else = {
+    if = {
+      limit = { trait = seductress }
+      remove_trait = seductress
+    }
+  }
+}

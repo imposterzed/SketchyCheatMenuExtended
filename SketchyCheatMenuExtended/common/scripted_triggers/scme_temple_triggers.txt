@@ -1,0 +1,113 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                Temple Building Triggers                ##
+############################################################
+
+## --- Special-building presence checks --- ##
+
+# Returns yes when every applicable special-buildings family is
+# at top tier.
+
+# temple: bloodline / religion / province-modifier conditional
+has_temple_special_buildings_trigger = {
+  # Monumental Shrines (HF monumental bloodline)
+  trigger_if = {
+    limit = {
+      owner = {
+        OR = {
+          any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+          any_liege = {
+            any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+          }
+        }
+      }
+    }
+    has_building = tp_monumental_shrines_4
+  }
+
+  # Saint Shrine (province tomb modifier)
+  trigger_if = {
+    limit = {
+      location = {
+        OR = {
+          has_province_modifier = tomb_of_a_saint
+          has_province_modifier = pillaged_tomb_of_a_saint
+        }
+      }
+    }
+    has_building = tp_saint_shrine
+  }
+
+  # Hellenic deity shrines (matches the dedication title flag).
+  # Mirrors the helper's owner-Hellenic gate so the trigger only
+  # asserts shrine presence when the shrine could actually be visible.
+  trigger_if = {
+    limit = {
+      owner = {
+        OR = {
+          religion = hellenic_pagan
+          religion = hellenic_pagan_reformed
+        }
+      }
+    }
+    trigger_if = {
+      limit = { has_title_flag = flag_dedicated_to_aphrodite }
+      has_building = tp_shrine_aphrodite
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_apollo }
+      has_building = tp_shrine_apollo
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_ares }
+      has_building = tp_shrine_ares
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_arthemis }
+      has_building = tp_shrine_arthemis
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_athena }
+      has_building = tp_shrine_athena
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_demeter }
+      has_building = tp_shrine_demeter
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_ephaestus }
+      has_building = tp_shrine_ephaestus
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_hades }
+      has_building = tp_shrine_hades
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_hermes }
+      has_building = tp_shrine_hermes
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_hestia }
+      has_building = tp_shrine_hestia
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_poseidon }
+      has_building = tp_shrine_poseidon
+    }
+
+    trigger_else_if = {
+      limit = { has_title_flag = flag_dedicated_to_zeus }
+      has_building = tp_shrine_zeus
+    }
+  }
+}

@@ -1,0 +1,768 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##              Cheats Menu - Council Laws                ##
+############################################################
+##                                                        ##
+## Right-click on self decisions for setting council      ##
+## voting power laws. show_council_laws /                 ##
+## hide_council_laws is the local toggle. Master          ##
+## cheats_enabled toggle lives in cheats_menu.txt.        ##
+##                                                        ##
+############################################################
+
+decisions = {
+  show_council_laws = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      NOT = { has_character_flag = show_council_laws }
+      has_scme_council_law_eligible_government_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_council_laws
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_council_laws = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_council_laws
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_council_all_ruler = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      has_any_council_voting_law_at_state_1_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = { limit = { has_law = law_voting_power_1            scme_council_law_tier_1_eligible_trigger = yes } add_law = law_voting_power_0          }
+        if = { limit = { has_law = war_voting_power_1            scme_council_law_tier_1_eligible_trigger = yes } add_law = war_voting_power_0          }
+        if = { limit = { has_law = grant_title_voting_power_1    scme_council_law_tier_2_eligible_trigger = yes } add_law = grant_title_voting_power_0  }
+        if = { limit = { has_law = revoke_title_voting_power_1   scme_council_law_tier_2_eligible_trigger = yes } add_law = revoke_title_voting_power_0 }
+        if = { limit = { has_law = imprison_voting_power_1       scme_council_law_tier_3_eligible_trigger = yes } add_law = imprison_voting_power_0     }
+        if = { limit = { has_law = banish_voting_power_1         scme_council_law_tier_3_eligible_trigger = yes } add_law = banish_voting_power_0       }
+        if = { limit = { has_law = execution_voting_power_1      scme_council_law_tier_3_eligible_trigger = yes } add_law = execution_voting_power_0    }
+        if = {
+          limit = {
+            has_law = succession_voting_power_1
+            ROOT = { is_feudal = yes higher_real_tier_than = DUKE holy_order = no }
+          }
+          add_law = succession_voting_power_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_council_all_council = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      has_any_council_voting_law_at_state_0_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = { limit = { has_law = law_voting_power_0            scme_council_law_tier_1_eligible_trigger = yes } add_law = law_voting_power_1          }
+        if = { limit = { has_law = war_voting_power_0            scme_council_law_tier_1_eligible_trigger = yes } add_law = war_voting_power_1          }
+        if = { limit = { has_law = grant_title_voting_power_0    scme_council_law_tier_2_eligible_trigger = yes } add_law = grant_title_voting_power_1  }
+        if = { limit = { has_law = revoke_title_voting_power_0   scme_council_law_tier_2_eligible_trigger = yes } add_law = revoke_title_voting_power_1 }
+        if = { limit = { has_law = imprison_voting_power_0       scme_council_law_tier_3_eligible_trigger = yes } add_law = imprison_voting_power_1     }
+        if = { limit = { has_law = banish_voting_power_0         scme_council_law_tier_3_eligible_trigger = yes } add_law = banish_voting_power_1       }
+        if = { limit = { has_law = execution_voting_power_0      scme_council_law_tier_3_eligible_trigger = yes } add_law = execution_voting_power_1    }
+        if = {
+          limit = {
+            has_law = succession_voting_power_0
+            ROOT = { is_feudal = yes higher_real_tier_than = DUKE holy_order = no }
+          }
+          add_law = succession_voting_power_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Council Power --- ##
+
+  set_law_voting_abolish = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_1
+          has_law = tribal_organization_2
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = law_voting_power_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = law_voting_power_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_law_voting_empower = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_1
+          has_law = tribal_organization_2
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = law_voting_power_0 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = law_voting_power_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- War Declaration --- ##
+
+  set_war_voting_ruler = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_1
+          has_law = tribal_organization_2
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = war_voting_power_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = war_voting_power_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_war_voting_council = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_1
+          has_law = tribal_organization_2
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = war_voting_power_0 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = war_voting_power_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Grant Titles --- ##
+
+  set_grant_title_voting_ruler = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_2
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = grant_title_voting_power_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = grant_title_voting_power_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_grant_title_voting_council = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_2
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = grant_title_voting_power_0 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = grant_title_voting_power_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Revoke Titles --- ##
+
+  set_revoke_title_voting_ruler = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_2
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = revoke_title_voting_power_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = revoke_title_voting_power_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_revoke_title_voting_council = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_2
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = revoke_title_voting_power_0 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = revoke_title_voting_power_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Imprisonment --- ##
+
+  set_imprison_voting_ruler = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = imprison_voting_power_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = imprison_voting_power_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_imprison_voting_council = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = imprison_voting_power_0 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = imprison_voting_power_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Banishment --- ##
+
+  set_banish_voting_ruler = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = banish_voting_power_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = banish_voting_power_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_banish_voting_council = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = banish_voting_power_0 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = banish_voting_power_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Execution --- ##
+
+  set_execution_voting_ruler = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = execution_voting_power_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = execution_voting_power_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_execution_voting_council = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = baron
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+          }
+        }
+      }
+      primary_title = { has_law = execution_voting_power_0 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = execution_voting_power_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Council Authority --- ##
+
+  set_succession_voting_limited = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = DUKE
+      is_feudal = yes
+      holy_order = no
+      primary_title = { has_law = succession_voting_power_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succession_voting_power_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_succession_voting_full = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_council_laws
+      has_dlc = "Conclave"
+      higher_real_tier_than = DUKE
+      is_feudal = yes
+      holy_order = no
+      primary_title = { has_law = succession_voting_power_0 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = succession_voting_power_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+}

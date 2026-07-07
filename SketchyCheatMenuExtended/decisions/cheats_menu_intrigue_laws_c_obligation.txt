@@ -1,0 +1,2320 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##              Cheats Menu - Obligation Laws             ##
+############################################################
+##                                                        ##
+## Right-click on self decisions for setting vassal       ##
+## obligation laws. show_obligation_laws /                ##
+## hide_obligation_laws is the local toggle. Master       ##
+## cheats_enabled toggle lives in cheats_menu.txt.        ##
+##                                                        ##
+############################################################
+
+decisions = {
+  show_obligation_laws = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      NOT = { has_character_flag = show_obligation_laws }
+      has_scme_obligation_law_eligible_government_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_obligation_laws
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_obligation_laws = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_obligation_laws
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Noble Obligations --- ##
+
+  set_obligations_feudal_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_feudal_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_feudal_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_feudal_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_feudal_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_feudal_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_feudal_toward_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_feudal_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_feudal_8 }
+          add_law = tax_levy_law_feudal_7
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_7 }
+          add_law = tax_levy_law_feudal_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_6 }
+          add_law = tax_levy_law_feudal_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_5 }
+          add_law = tax_levy_law_feudal_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_4 }
+          add_law = tax_levy_law_feudal_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_3 }
+          add_law = tax_levy_law_feudal_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_2 }
+          add_law = tax_levy_law_feudal_1
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_1 }
+          add_law = tax_levy_law_feudal_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_feudal_toward_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_feudal_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_feudal_7 }
+          add_law = tax_levy_law_feudal_8
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_6 }
+          add_law = tax_levy_law_feudal_7
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_5 }
+          add_law = tax_levy_law_feudal_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_4 }
+          add_law = tax_levy_law_feudal_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_3 }
+          add_law = tax_levy_law_feudal_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_2 }
+          add_law = tax_levy_law_feudal_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_1 }
+          add_law = tax_levy_law_feudal_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_feudal_0 }
+          add_law = tax_levy_law_feudal_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Iqta Obligations --- ##
+
+  set_obligations_iqta_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = tax_levy_law_iqta_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        hidden_tooltip = {
+          revoke_law = tax_levy_law_iqta_8
+        }
+        add_law = tax_levy_law_iqta_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_iqta_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = tax_levy_law_iqta_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_iqta_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_iqta_toward_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = tax_levy_law_iqta_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_iqta_8 }
+          add_law = tax_levy_law_iqta_7
+          hidden_tooltip = {
+            revoke_law = tax_levy_law_iqta_8
+          }
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_7 }
+          add_law = tax_levy_law_iqta_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_6 }
+          add_law = tax_levy_law_iqta_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_5 }
+          add_law = tax_levy_law_iqta_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_4 }
+          add_law = tax_levy_law_iqta_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_3 }
+          add_law = tax_levy_law_iqta_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_2 }
+          add_law = tax_levy_law_iqta_1
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_1 }
+          add_law = tax_levy_law_iqta_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_iqta_toward_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = tax_levy_law_iqta_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_iqta_7 }
+          add_law = tax_levy_law_iqta_8
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_6 }
+          add_law = tax_levy_law_iqta_7
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_5 }
+          add_law = tax_levy_law_iqta_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_4 }
+          add_law = tax_levy_law_iqta_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_3 }
+          add_law = tax_levy_law_iqta_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_2 }
+          add_law = tax_levy_law_iqta_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_1 }
+          add_law = tax_levy_law_iqta_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_iqta_0 }
+          add_law = tax_levy_law_iqta_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Burgher Obligations --- ##
+
+  set_obligations_republic_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_republic_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_republic_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_republic_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_republic_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_republic_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_republic_toward_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_republic_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_republic_8 }
+          add_law = tax_levy_law_republic_7
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_7 }
+          add_law = tax_levy_law_republic_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_6 }
+          add_law = tax_levy_law_republic_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_5 }
+          add_law = tax_levy_law_republic_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_4 }
+          add_law = tax_levy_law_republic_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_3 }
+          add_law = tax_levy_law_republic_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_2 }
+          add_law = tax_levy_law_republic_1
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_1 }
+          add_law = tax_levy_law_republic_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_republic_toward_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_republic_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_republic_7 }
+          add_law = tax_levy_law_republic_8
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_6 }
+          add_law = tax_levy_law_republic_7
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_5 }
+          add_law = tax_levy_law_republic_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_4 }
+          add_law = tax_levy_law_republic_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_3 }
+          add_law = tax_levy_law_republic_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_2 }
+          add_law = tax_levy_law_republic_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_1 }
+          add_law = tax_levy_law_republic_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_republic_0 }
+          add_law = tax_levy_law_republic_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Church Obligations --- ##
+
+  set_obligations_theocracy_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { has_theocracy_contract_block_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_theocracy_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_theocracy_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_theocracy_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { has_theocracy_contract_block_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_theocracy_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_theocracy_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_theocracy_toward_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { has_theocracy_contract_block_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_theocracy_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_theocracy_8 }
+          add_law = tax_levy_law_theocracy_7
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_7 }
+          add_law = tax_levy_law_theocracy_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_6 }
+          add_law = tax_levy_law_theocracy_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_5 }
+          add_law = tax_levy_law_theocracy_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_4 }
+          add_law = tax_levy_law_theocracy_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_3 }
+          add_law = tax_levy_law_theocracy_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_2 }
+          add_law = tax_levy_law_theocracy_1
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_1 }
+          add_law = tax_levy_law_theocracy_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_theocracy_toward_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { has_theocracy_contract_block_trigger = yes }
+      NOT = { primary_title = { has_law = tax_levy_law_theocracy_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_theocracy_7 }
+          add_law = tax_levy_law_theocracy_8
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_6 }
+          add_law = tax_levy_law_theocracy_7
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_5 }
+          add_law = tax_levy_law_theocracy_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_4 }
+          add_law = tax_levy_law_theocracy_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_3 }
+          add_law = tax_levy_law_theocracy_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_2 }
+          add_law = tax_levy_law_theocracy_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_1 }
+          add_law = tax_levy_law_theocracy_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_theocracy_0 }
+          add_law = tax_levy_law_theocracy_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Tribal Obligations --- ##
+
+  set_obligations_tribal_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_tribal_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_tribal_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_tribal_max_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_tribal_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tax_levy_law_tribal_8
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_tribal_toward_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_tribal_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_tribal_8 }
+          add_law = tax_levy_law_tribal_7
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_7 }
+          add_law = tax_levy_law_tribal_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_6 }
+          add_law = tax_levy_law_tribal_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_5 }
+          add_law = tax_levy_law_tribal_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_4 }
+          add_law = tax_levy_law_tribal_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_3 }
+          add_law = tax_levy_law_tribal_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_2 }
+          add_law = tax_levy_law_tribal_1
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_1 }
+          add_law = tax_levy_law_tribal_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_tribal_toward_levy = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      has_dlc = "Conclave"
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = tax_levy_law_tribal_8 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tax_levy_law_tribal_7 }
+          add_law = tax_levy_law_tribal_8
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_6 }
+          add_law = tax_levy_law_tribal_7
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_5 }
+          add_law = tax_levy_law_tribal_6
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_4 }
+          add_law = tax_levy_law_tribal_5
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_3 }
+          add_law = tax_levy_law_tribal_4
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_2 }
+          add_law = tax_levy_law_tribal_3
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_1 }
+          add_law = tax_levy_law_tribal_2
+        }
+        else_if = {
+          limit = { has_law = tax_levy_law_tribal_0 }
+          add_law = tax_levy_law_tribal_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Vanilla Bulk Endpoints --- ##
+
+  set_obligations_all_max_levies = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      OR = {
+        AND = {
+          NOT = { is_iqta_contract_eligible_trigger = yes }
+          NOT = { primary_title = { has_law = feudal_contract_3 } }
+        }
+        AND = {
+          is_iqta_contract_eligible_trigger = yes
+          NOT = { primary_title = { has_law = iqta_contract_3 } }
+        }
+        NOT = { primary_title = { has_law = city_contract_3 } }
+        NOT = { primary_title = { has_law = temple_contract_3 } }
+        AND = {
+          OR = {
+            is_tribal = no
+            primary_title = {
+              OR = {
+                has_law = tribal_organization_3
+                has_law = tribal_organization_4
+              }
+            }
+          }
+          NOT = { primary_title = { has_law = tribal_contract_3 } }
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      # Feudal (non-Muslim)
+      if = {
+        limit = { NOT = { is_iqta_contract_eligible_trigger = yes } }
+        primary_title = {
+          add_law = feudal_contract_3
+        }
+      }
+      # Iqta (Muslim)
+      if = {
+        limit = { is_iqta_contract_eligible_trigger = yes }
+        primary_title = {
+          add_law = iqta_contract_3
+        }
+      }
+      # City (all religions)
+      primary_title = {
+        add_law = city_contract_3
+      }
+      # Church (all religions)
+      primary_title = {
+        add_law = temple_contract_3
+      }
+      # Tribal (tribal holders gated on tribal_org_3+)
+      if = {
+        limit = {
+          OR = {
+            is_tribal = no
+            primary_title = {
+              OR = {
+                has_law = tribal_organization_3
+                has_law = tribal_organization_4
+              }
+            }
+          }
+        }
+        primary_title = {
+          add_law = tribal_contract_3
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_all_min_levies = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      OR = {
+        AND = {
+          NOT = { is_iqta_contract_eligible_trigger = yes }
+          NOT = { primary_title = { has_law = feudal_contract_0 } }
+        }
+        AND = {
+          is_iqta_contract_eligible_trigger = yes
+          NOT = { primary_title = { has_law = iqta_contract_0 } }
+        }
+        NOT = { primary_title = { has_law = city_contract_0 } }
+        NOT = { primary_title = { has_law = temple_contract_0 } }
+        AND = {
+          OR = {
+            is_tribal = no
+            primary_title = {
+              OR = {
+                has_law = tribal_organization_3
+                has_law = tribal_organization_4
+              }
+            }
+          }
+          NOT = { primary_title = { has_law = tribal_contract_0 } }
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      # Feudal (non-Muslim)
+      if = {
+        limit = { NOT = { is_iqta_contract_eligible_trigger = yes } }
+        primary_title = {
+          add_law = feudal_contract_0
+        }
+      }
+      # Iqta (Muslim)
+      if = {
+        limit = { is_iqta_contract_eligible_trigger = yes }
+        primary_title = {
+          add_law = iqta_contract_0
+        }
+      }
+      # City (all religions)
+      primary_title = {
+        add_law = city_contract_0
+      }
+      # Church (all religions)
+      primary_title = {
+        add_law = temple_contract_0
+      }
+      # Tribal (tribal holders gated on tribal_org_3+)
+      if = {
+        limit = {
+          OR = {
+            is_tribal = no
+            primary_title = {
+              OR = {
+                has_law = tribal_organization_3
+                has_law = tribal_organization_4
+              }
+            }
+          }
+        }
+        primary_title = {
+          add_law = tribal_contract_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_all_max_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      OR = {
+        AND = {
+          NOT = { is_iqta_contract_eligible_trigger = yes }
+          NOT = { primary_title = { has_law = feudal_tax_3 } }
+        }
+        AND = {
+          is_iqta_contract_eligible_trigger = yes
+          NOT = { primary_title = { has_law = iqta_tax_3 } }
+        }
+        NOT = { primary_title = { has_law = city_tax_3 } }
+        NOT = { primary_title = { has_law = temple_tax_3 } }
+        AND = {
+          OR = {
+            is_tribal = no
+            primary_title = {
+              OR = {
+                has_law = tribal_organization_3
+                has_law = tribal_organization_4
+              }
+            }
+          }
+          NOT = { primary_title = { has_law = tribal_tax_3 } }
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      # Feudal (non-Muslim)
+      if = {
+        limit = { NOT = { is_iqta_contract_eligible_trigger = yes } }
+        primary_title = {
+          add_law = feudal_tax_3
+        }
+      }
+      # Iqta (Muslim)
+      if = {
+        limit = { is_iqta_contract_eligible_trigger = yes }
+        primary_title = {
+          add_law = iqta_tax_3
+        }
+      }
+      # City (all religions)
+      primary_title = {
+        add_law = city_tax_3
+      }
+      # Church (all religions)
+      primary_title = {
+        add_law = temple_tax_3
+      }
+      # Tribal (tribal holders gated on tribal_org_3+)
+      if = {
+        limit = {
+          OR = {
+            is_tribal = no
+            primary_title = {
+              OR = {
+                has_law = tribal_organization_3
+                has_law = tribal_organization_4
+              }
+            }
+          }
+        }
+        primary_title = {
+          add_law = tribal_tax_3
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_obligations_all_min_tax = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      OR = {
+        AND = {
+          NOT = { is_iqta_contract_eligible_trigger = yes }
+          NOT = { primary_title = { has_law = feudal_tax_0 } }
+        }
+        AND = {
+          is_iqta_contract_eligible_trigger = yes
+          NOT = { primary_title = { has_law = iqta_tax_0 } }
+        }
+        NOT = { primary_title = { has_law = city_tax_0 } }
+        NOT = { primary_title = { has_law = temple_tax_0 } }
+        AND = {
+          OR = {
+            is_tribal = no
+            primary_title = {
+              OR = {
+                has_law = tribal_organization_3
+                has_law = tribal_organization_4
+              }
+            }
+          }
+          NOT = { primary_title = { has_law = tribal_tax_0 } }
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      # Feudal (non-Muslim)
+      if = {
+        limit = { NOT = { is_iqta_contract_eligible_trigger = yes } }
+        primary_title = {
+          add_law = feudal_tax_0
+        }
+      }
+      # Iqta (Muslim)
+      if = {
+        limit = { is_iqta_contract_eligible_trigger = yes }
+        primary_title = {
+          add_law = iqta_tax_0
+        }
+      }
+      # City (all religions)
+      primary_title = {
+        add_law = city_tax_0
+      }
+      # Church (all religions)
+      primary_title = {
+        add_law = temple_tax_0
+      }
+      # Tribal (tribal holders gated on tribal_org_3+)
+      if = {
+        limit = {
+          OR = {
+            is_tribal = no
+            primary_title = {
+              OR = {
+                has_law = tribal_organization_3
+                has_law = tribal_organization_4
+              }
+            }
+          }
+        }
+        primary_title = {
+          add_law = tribal_tax_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Vanilla Feudal Obligations --- ##
+
+  cycle_obligations_vanilla_feudal_contract_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = feudal_contract_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = feudal_contract_2 }
+          add_law = feudal_contract_3
+        }
+        else_if = {
+          limit = { has_law = feudal_contract_1 }
+          add_law = feudal_contract_2
+        }
+        else_if = {
+          limit = { has_law = feudal_contract_0 }
+          add_law = feudal_contract_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_feudal_contract_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = feudal_contract_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = feudal_contract_3 }
+          add_law = feudal_contract_2
+        }
+        else_if = {
+          limit = { has_law = feudal_contract_2 }
+          add_law = feudal_contract_1
+        }
+        else_if = {
+          limit = { has_law = feudal_contract_1 }
+          add_law = feudal_contract_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_feudal_tax_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = feudal_tax_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = feudal_tax_2 }
+          add_law = feudal_tax_3
+        }
+        else_if = {
+          limit = { has_law = feudal_tax_1 }
+          add_law = feudal_tax_2
+        }
+        else_if = {
+          limit = { has_law = feudal_tax_0 }
+          add_law = feudal_tax_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_feudal_tax_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { is_iqta_contract_eligible_trigger = yes }
+      NOT = { primary_title = { has_law = feudal_tax_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = feudal_tax_3 }
+          add_law = feudal_tax_2
+        }
+        else_if = {
+          limit = { has_law = feudal_tax_2 }
+          add_law = feudal_tax_1
+        }
+        else_if = {
+          limit = { has_law = feudal_tax_1 }
+          add_law = feudal_tax_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Vanilla Iqta Obligations --- ##
+
+  cycle_obligations_vanilla_iqta_contract_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = iqta_contract_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = iqta_contract_2 }
+          add_law = iqta_contract_3
+        }
+        else_if = {
+          limit = { has_law = iqta_contract_1 }
+          add_law = iqta_contract_2
+        }
+        else_if = {
+          limit = { has_law = iqta_contract_0 }
+          add_law = iqta_contract_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_iqta_contract_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = iqta_contract_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = iqta_contract_3 }
+          add_law = iqta_contract_2
+        }
+        else_if = {
+          limit = { has_law = iqta_contract_2 }
+          add_law = iqta_contract_1
+        }
+        else_if = {
+          limit = { has_law = iqta_contract_1 }
+          add_law = iqta_contract_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_iqta_tax_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = iqta_tax_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = iqta_tax_2 }
+          add_law = iqta_tax_3
+        }
+        else_if = {
+          limit = { has_law = iqta_tax_1 }
+          add_law = iqta_tax_2
+        }
+        else_if = {
+          limit = { has_law = iqta_tax_0 }
+          add_law = iqta_tax_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_iqta_tax_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      is_iqta_contract_eligible_trigger = yes
+      NOT = { primary_title = { has_law = iqta_tax_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = iqta_tax_3 }
+          add_law = iqta_tax_2
+        }
+        else_if = {
+          limit = { has_law = iqta_tax_2 }
+          add_law = iqta_tax_1
+        }
+        else_if = {
+          limit = { has_law = iqta_tax_1 }
+          add_law = iqta_tax_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Vanilla City Obligations --- ##
+
+  cycle_obligations_vanilla_city_contract_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = city_contract_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = city_contract_2 }
+          add_law = city_contract_3
+        }
+        else_if = {
+          limit = { has_law = city_contract_1 }
+          add_law = city_contract_2
+        }
+        else_if = {
+          limit = { has_law = city_contract_0 }
+          add_law = city_contract_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_city_contract_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = city_contract_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = city_contract_3 }
+          add_law = city_contract_2
+        }
+        else_if = {
+          limit = { has_law = city_contract_2 }
+          add_law = city_contract_1
+        }
+        else_if = {
+          limit = { has_law = city_contract_1 }
+          add_law = city_contract_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_city_tax_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = city_tax_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = city_tax_2 }
+          add_law = city_tax_3
+        }
+        else_if = {
+          limit = { has_law = city_tax_1 }
+          add_law = city_tax_2
+        }
+        else_if = {
+          limit = { has_law = city_tax_0 }
+          add_law = city_tax_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_city_tax_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = city_tax_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = city_tax_3 }
+          add_law = city_tax_2
+        }
+        else_if = {
+          limit = { has_law = city_tax_2 }
+          add_law = city_tax_1
+        }
+        else_if = {
+          limit = { has_law = city_tax_1 }
+          add_law = city_tax_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Vanilla Church Obligations --- ##
+
+  cycle_obligations_vanilla_temple_contract_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = temple_contract_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = temple_contract_2 }
+          add_law = temple_contract_3
+        }
+        else_if = {
+          limit = { has_law = temple_contract_1 }
+          add_law = temple_contract_2
+        }
+        else_if = {
+          limit = { has_law = temple_contract_0 }
+          add_law = temple_contract_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_temple_contract_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = temple_contract_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = temple_contract_3 }
+          add_law = temple_contract_2
+        }
+        else_if = {
+          limit = { has_law = temple_contract_2 }
+          add_law = temple_contract_1
+        }
+        else_if = {
+          limit = { has_law = temple_contract_1 }
+          add_law = temple_contract_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_temple_tax_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = temple_tax_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = temple_tax_2 }
+          add_law = temple_tax_3
+        }
+        else_if = {
+          limit = { has_law = temple_tax_1 }
+          add_law = temple_tax_2
+        }
+        else_if = {
+          limit = { has_law = temple_tax_0 }
+          add_law = temple_tax_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_temple_tax_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      NOT = { primary_title = { has_law = temple_tax_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = temple_tax_3 }
+          add_law = temple_tax_2
+        }
+        else_if = {
+          limit = { has_law = temple_tax_2 }
+          add_law = temple_tax_1
+        }
+        else_if = {
+          limit = { has_law = temple_tax_1 }
+          add_law = temple_tax_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Vanilla Tribal Obligations --- ##
+
+  cycle_obligations_vanilla_tribal_contract_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+            has_law = tribal_organization_3
+            has_law = tribal_organization_4
+          }
+        }
+      }
+      NOT = { primary_title = { has_law = tribal_contract_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tribal_contract_2 }
+          add_law = tribal_contract_3
+        }
+        else_if = {
+          limit = { has_law = tribal_contract_1 }
+          add_law = tribal_contract_2
+        }
+        else_if = {
+          limit = { has_law = tribal_contract_0 }
+          add_law = tribal_contract_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_tribal_contract_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+            has_law = tribal_organization_3
+            has_law = tribal_organization_4
+          }
+        }
+      }
+      NOT = { primary_title = { has_law = tribal_contract_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tribal_contract_3 }
+          add_law = tribal_contract_2
+        }
+        else_if = {
+          limit = { has_law = tribal_contract_2 }
+          add_law = tribal_contract_1
+        }
+        else_if = {
+          limit = { has_law = tribal_contract_1 }
+          add_law = tribal_contract_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_tribal_tax_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+            has_law = tribal_organization_3
+            has_law = tribal_organization_4
+          }
+        }
+      }
+      NOT = { primary_title = { has_law = tribal_tax_3 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tribal_tax_2 }
+          add_law = tribal_tax_3
+        }
+        else_if = {
+          limit = { has_law = tribal_tax_1 }
+          add_law = tribal_tax_2
+        }
+        else_if = {
+          limit = { has_law = tribal_tax_0 }
+          add_law = tribal_tax_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_obligations_vanilla_tribal_tax_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_obligation_laws
+      NOT = { has_dlc = "Conclave" }
+      OR = {
+        NOT = { real_tier = baron }
+        is_patrician = yes
+      }
+      OR = {
+        is_tribal = no
+        primary_title = {
+          OR = {
+            has_law = tribal_organization_3
+            has_law = tribal_organization_4
+          }
+        }
+      }
+      NOT = { primary_title = { has_law = tribal_tax_0 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tribal_tax_3 }
+          add_law = tribal_tax_2
+        }
+        else_if = {
+          limit = { has_law = tribal_tax_2 }
+          add_law = tribal_tax_1
+        }
+        else_if = {
+          limit = { has_law = tribal_tax_1 }
+          add_law = tribal_tax_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+}

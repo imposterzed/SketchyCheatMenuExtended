@@ -1,0 +1,156 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                Culture Compat Triggers                 ##
+############################################################
+
+## --- Stack-aware ladder-gate triggers --- ##
+
+# Each `is_X_ladder_culture_trigger` returns yes when the holding's
+# location culture matches the X ladder's gate on the active stack.
+# Used by add_castle_culture_buildings_effect / has_castle_culture_buildings_trigger
+# and (forthcoming) the tribal-culture helpers.
+
+# CleanSlate renames frankish -> french on this ladder.
+is_frank_norman_german_ladder_culture_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      culture = french
+      culture = occitan
+      culture = norman
+      culture = german
+      culture = breton
+      culture = outremer
+    }
+  }
+  trigger_else = {
+    OR = {
+      culture = frankish
+      culture = occitan
+      culture = norman
+      culture = german
+      culture = breton
+      culture = outremer
+    }
+  }
+}
+
+# CleanSlate renames old_frankish -> frankish on this ladder.
+is_germanic_ladder_culture_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      culture = frankish
+      culture = lombard
+    }
+  }
+  trigger_else = {
+    OR = {
+      culture = old_frankish
+      culture = lombard
+    }
+  }
+}
+
+# CleanSlate widens to culture_group = altaic catch-all + adds jurchen.
+is_altaic_ladder_culture_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      AND = {
+        culture_group = altaic
+        NOT = { culture = jurchen }
+      }
+      culture_group = iranian
+    }
+  }
+  trigger_else = {
+    OR = {
+      culture = turkish
+      culture = pecheneg
+      culture = cuman
+      culture = khazar
+      culture = bolghar
+      culture = avar
+      culture = karluk
+      culture = kirghiz
+      culture = uyghur
+      culture = mongol
+      culture = khitan
+      culture_group = iranian
+    }
+  }
+}
+
+# CleanSlate drops the `_arabic` suffix on these cultures.
+is_arabic_ladder_culture_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      culture = bedouin
+      culture = levantine
+      culture = egyptian
+    }
+  }
+  trigger_else = {
+    OR = {
+      culture = bedouin_arabic
+      culture = levantine_arabic
+      culture = egyptian_arabic
+    }
+  }
+}
+
+# CleanSlate renames old_saxon -> anglo_saxon on this ladder.
+is_north_germanic_ladder_culture_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      culture_group = north_germanic
+      culture = saxon
+      culture = anglo_saxon
+      culture = frisian
+    }
+  }
+  trigger_else = {
+    OR = {
+      culture_group = north_germanic
+      culture = saxon
+      culture = old_saxon
+      culture = frisian
+    }
+  }
+}
+
+# CleanSlate drops the `_arabic` suffix on these cultures.
+is_moors_ladder_culture_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      culture = andalusian
+      culture = berber
+    }
+  }
+  trigger_else = {
+    OR = {
+      culture = andalusian_arabic
+      culture = maghreb_arabic
+    }
+  }
+}
+
+# Animal cultures (cat / dog / bear / etc.) exist only in CleanSlate;
+# the vanilla building scaffold loads but no character uses them.
+is_animal_ladder_culture_trigger = {
+  has_global_flag = cleanslate_active
+  OR = {
+    culture_group = bear_group
+    culture_group = cat_group
+    culture_group = dog_group
+    culture_group = dragon_group
+    culture_group = duck_group
+    culture_group = elephant_group
+    culture_group = hedgehog_group
+    culture_group = horse_group
+  }
+}

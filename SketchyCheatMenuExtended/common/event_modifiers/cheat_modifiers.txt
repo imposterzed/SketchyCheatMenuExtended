@@ -1,0 +1,10 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                  Cheat Event Modifiers                 ##
+############################################################
+
+# icon = 1 (Martial / crossed swords) – same frame in vanilla and CleanSlate.
+triple_levies = {
+  global_levy_size = 3
+  icon = 1
+}

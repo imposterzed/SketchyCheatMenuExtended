@@ -1,5 +1,5 @@
 name: Compatibility issue
-description: Report a conflict between Sketchy Cheat Menu Plus and another mod (overhaul, total conversion, etc.).
+description: Report a conflict between Sketchy Cheat Menu Extended and another mod (overhaul, total conversion, etc.).
 title: "[Compat]: "
 labels: ["compat"]
 assignees:
@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        This template is for **mod-vs-mod conflicts** — typically when a large overhaul that uses `replace_path` (HIP, AGOT, etc.) suppresses Sketchy Cheat Menu Plus's content.
+        This template is for **mod-vs-mod conflicts** — typically when a large overhaul that uses `replace_path` (HIP, AGOT, etc.) suppresses Sketchy Cheat Menu Extended's content.
 
         For bugs that aren't caused by another mod, please use the **Bug report** template instead.
 
@@ -39,7 +39,7 @@ body:
     id: description
     attributes:
       label: What's missing or broken?
-      description: What does Sketchy Cheat Menu Plus do (or fail to do) when this other mod is loaded? Be as specific as you can.
+      description: What does Sketchy Cheat Menu Extended do (or fail to do) when this other mod is loaded? Be as specific as you can.
       placeholder: |
         With <conflicting mod> loaded, the `Cheats Enable` decision doesn't appear when I right-click my character, and none of the sub-menus surface. With <conflicting mod> disabled, everything appears and works normally.
     validations:
@@ -52,7 +52,7 @@ body:
       description: |
         Helps me triage. Check whichever applies. Skip if neither fits and explain in the description.
       options:
-        - label: Sketchy Cheat Menu Plus works correctly when the conflicting mod is disabled (i.e., I've confirmed it's not a separate bug).
+        - label: Sketchy Cheat Menu Extended works correctly when the conflicting mod is disabled (i.e., I've confirmed it's not a separate bug).
         - label: The conflicting mod is a total conversion (e.g., AGOT, Elder Kings, After the End) — toggling it off isn't a meaningful test.
 
   - type: textarea
@@ -61,8 +61,8 @@ body:
       label: Log snippets
       description: |
         Logs live at `Documents/Paradox Interactive/Crusader Kings II/logs/`.
-        - **`setup.log`** is usually the key diagnostic for compat issues. Search for `cheats_menu` / `scmp` — if you find lines like `Decisions loaded decisions/cheats_menu.txt`, the mod's content IS loading and the conflict is something else. If you find nothing, the conflicting mod is suppressing the mod's files (most commonly via `replace_path`).
-        - Also paste any lines from **`error.log`** that mention Sketchy Cheat Menu Plus or the mod's files.
+        - **`setup.log`** is usually the key diagnostic for compat issues. Search for `cheats_menu` / `scme` — if you find lines like `Decisions loaded decisions/cheats_menu.txt`, the mod's content IS loading and the conflict is something else. If you find nothing, the conflicting mod is suppressing the mod's files (most commonly via `replace_path`).
+        - Also paste any lines from **`error.log`** that mention Sketchy Cheat Menu Extended or the mod's files.
       render: text
 
   - type: textarea

@@ -1,0 +1,16 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                   On Startup Actions                   ##
+############################################################
+##                                                        ##
+## Sets the scme_active global flag at game start.        ##
+## Other mods can use it to detect this mod is loaded.    ##
+##                                                        ##
+############################################################
+
+# Runs on every game start and save load.
+on_startup = {
+  effect = {
+    set_global_flag = scme_active
+  }
+}

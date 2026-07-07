@@ -1,0 +1,228 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                Cheats Menu - Government                ##
+############################################################
+##                                                        ##
+## Right-click on self decisions for changing the         ##
+## player's government type and independence status.      ##
+## show_government / hide_government is the local         ##
+## visibility toggle. Master cheats_enabled toggle lives  ##
+## in cheats_menu.txt.                                    ##
+##                                                        ##
+## Conversion decisions opt-in gate to source            ##
+## governments where the engine accepts the conversion.  ##
+##                                                        ##
+############################################################
+
+decisions = {
+  show_government = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      NOT = { has_character_flag = show_government }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_government
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_government = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_government
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_government
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  # Makes the player independent by setting their liege to
+  # themselves (set_defacto_liege = THIS). CK2 idiom.
+  become_independent = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_government
+      independent = no
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_defacto_liege = THIS
+    }
+  }
+
+  set_feudal = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_government
+      NOT = { religion_group = muslim }
+      government = tribal_government
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_government_type = feudal_government
+    }
+  }
+
+  set_feudal_nomad = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_government
+      NOT = { religion_group = muslim }
+      government = nomadic_government
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      # Route through tribal first to prevent game-over on some nomad rulers.
+      hidden_tooltip = {
+        set_government_type = tribal_government
+      }
+      set_government_type = feudal_government
+    }
+  }
+
+  set_iqta = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_government
+      religion_group = muslim
+      government = tribal_government
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_iqta_government_effect = yes
+    }
+  }
+
+  set_iqta_nomad = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_government
+      religion_group = muslim
+      government = nomadic_government
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      # Route through tribal first to prevent game-over on some nomad rulers.
+      hidden_tooltip = {
+        set_government_type = tribal_government
+      }
+      set_iqta_government_effect = yes
+    }
+  }
+
+  set_nomadic = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_government
+      has_dlc = "Horse Lords"
+      OR = {
+        government = feudal_government
+        government = tribal_government
+        is_iqta_government_trigger = yes
+        is_monastic_feudal_government_trigger = yes
+        government = order_government
+        government = chinese_imperial_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_government_type = nomadic_government
+    }
+  }
+
+  set_tribal = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_government
+      OR = {
+        government = feudal_government
+        is_iqta_government_trigger = yes
+        is_monastic_feudal_government_trigger = yes
+        government = chinese_imperial_government
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_government_type = tribal_government
+    }
+  }
+
+  set_tribal_nomad = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_government
+      government = nomadic_government
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_government_type = tribal_government
+    }
+  }
+}

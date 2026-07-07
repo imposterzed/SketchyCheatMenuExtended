@@ -1,0 +1,129 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                  Affliction Triggers                   ##
+############################################################
+##                                                        ##
+## Five presence checks split by category (Health /       ##
+## Diseases / Symptoms / Maimed / Special), plus an       ##
+## orchestrator that returns yes if any category fires.   ##
+##                                                        ##
+############################################################
+
+# Health: general status states (mental, drunkard, wounds, battle scars).
+has_any_health_trait_trigger = {
+  OR = {
+    trait = depressed
+    trait = drunkard
+    trait = incapable
+    trait = infirm
+    trait = lunatic
+    trait = possessed
+    trait = stressed
+    trait = wounded
+    trait = scarred
+    trait = scarred_mid
+    trait = scarred_high
+    trait = maimed
+  }
+}
+
+# Diseases: named illnesses plus the 8 CleanSlate-renamed epidemics.
+has_any_disease_trait_trigger = {
+  OR = {
+    # Shared (same ID in vanilla and CleanSlate)
+    trait = ill
+    trait = leper
+    trait = pneumonic
+    trait = sickly
+    trait = cancer
+    trait = dancing_plague
+    trait = scurvy
+    trait = rabies
+    trait = gout
+    trait = food_poisoning
+    trait = dysentery
+    trait = flu
+
+    has_any_renamed_disease_trigger = yes
+  }
+}
+
+# Renamed-epidemic helper. Split from has_any_disease_trait_trigger
+# because trigger_if can't sit directly inside an OR block.
+has_any_renamed_disease_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      trait = consumption
+      trait = slow_fever
+      trait = camp_fever
+      trait = aztec_disease
+      trait = bubonic_plague
+      trait = measles
+      trait = smallpox
+      trait = great_pox
+    }
+  }
+  trigger_else = {
+    OR = {
+      trait = has_tuberculosis
+      trait = has_typhoid_fever
+      trait = has_typhus
+      trait = has_aztec_disease
+      trait = has_bubonic_plague
+      trait = has_measles
+      trait = has_small_pox
+      trait = syphilitic
+    }
+  }
+}
+
+# Symptoms: transient minor conditions.
+has_any_symptom_trait_trigger = {
+  OR = {
+    trait = abdominal_pain
+    trait = chest_pain
+    trait = cough
+    trait = cramps
+    trait = diarrhea
+    trait = fatigue
+    trait = fever
+    trait = headache
+    trait = infection
+    trait = malaise
+    trait = rash
+    trait = vomiting
+  }
+}
+
+# Maimed: permanent battle injuries.
+has_any_maimed_trait_trigger = {
+  OR = {
+    trait = disfigured
+    trait = mangled
+    trait = one_eyed
+    trait = one_handed
+    trait = one_legged
+    trait = severely_injured
+  }
+}
+
+# Special: blindness, hidden severe-illness, STDs.
+has_any_special_trait_trigger = {
+  OR = {
+    trait = blinded
+    trait = sick_incapable
+    trait = lovers_pox
+  }
+}
+
+# Orchestrator: true if any category fires.
+has_any_affliction_trigger = {
+  OR = {
+    has_any_health_trait_trigger = yes
+    has_any_disease_trait_trigger = yes
+    has_any_symptom_trait_trigger = yes
+    has_any_maimed_trait_trigger = yes
+    has_any_special_trait_trigger = yes
+  }
+}

@@ -1,0 +1,1152 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                Cheats Menu - Realm Laws                ##
+############################################################
+##                                                        ##
+## Right-click on self decisions for setting realm laws.  ##
+## show_realm_laws / hide_realm_laws is the local toggle. ##
+## Master cheats_enabled toggle lives in cheats_menu.txt. ##
+##                                                        ##
+############################################################
+
+decisions = {
+  show_realm_laws = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      NOT = { has_character_flag = show_realm_laws }
+      has_scme_realm_law_eligible_government_trigger = yes
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      set_character_flag = show_realm_laws
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  hide_realm_laws = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      clr_character_flag = show_realm_laws
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Crown Authority --- ##
+
+  max_crown_authority = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      NOT = { has_dlc = "Conclave" }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      NOT = { primary_title = { has_law = crown_authority_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = crown_authority_4
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_crown_authority_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      NOT = { has_dlc = "Conclave" }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      NOT = { primary_title = { has_law = crown_authority_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = crown_authority_3 }
+          add_law = crown_authority_4
+        }
+        else_if = {
+          limit = { has_law = crown_authority_2 }
+          add_law = crown_authority_3
+        }
+        else_if = {
+          limit = { has_law = crown_authority_1 }
+          add_law = crown_authority_2
+        }
+        else = {
+          add_law = crown_authority_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_crown_authority_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      NOT = { has_dlc = "Conclave" }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      primary_title = {
+        OR = {
+          has_law = crown_authority_1
+          has_law = crown_authority_2
+          has_law = crown_authority_3
+          has_law = crown_authority_4
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = crown_authority_4 }
+          add_law = crown_authority_3
+        }
+        else_if = {
+          limit = { has_law = crown_authority_3 }
+          add_law = crown_authority_2
+        }
+        else_if = {
+          limit = { has_law = crown_authority_2 }
+          add_law = crown_authority_1
+        }
+        else_if = {
+          limit = { has_law = crown_authority_1 }
+          add_law = crown_authority_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Investiture --- ##
+
+  set_investiture_free = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      OR = {
+        religion = catholic
+        religion = fraticelli
+      }
+      NOT = { rightful_religious_head_scope = { character = ROOT } }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      NOT = { primary_title = { has_law = investiture_law_1 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = investiture_law_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_investiture_papal = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      OR = {
+        religion = catholic
+        religion = fraticelli
+      }
+      NOT = { rightful_religious_head_scope = { character = ROOT } }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      primary_title = { has_law = investiture_law_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = investiture_law_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Controlled Realm Inheritance --- ##
+
+  set_realm_inheritance_illegal = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      is_republic = no
+      NOT = { government = order_government }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      NOT = { primary_title = { has_law = out_of_realm_inheritance_law_1 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = out_of_realm_inheritance_law_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_realm_inheritance_free = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      is_republic = no
+      NOT = { government = order_government }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      primary_title = { has_law = out_of_realm_inheritance_law_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = out_of_realm_inheritance_law_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Vassal War Declaration --- ##
+
+  set_vassal_wars_allowed = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      is_republic = no
+      is_theocracy = no
+      NOT = { government = order_government }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      primary_title = { has_law = vassal_wars_law_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = vassal_wars_law_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_vassal_wars_external = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      is_republic = no
+      is_theocracy = no
+      NOT = { government = order_government }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      primary_title = { NOT = { has_law = vassal_wars_law_1 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = vassal_wars_law_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_vassal_wars_illegal = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      is_republic = no
+      is_theocracy = no
+      NOT = { government = order_government }
+      NOT = { government = tribal_government }
+      NOT = { government = nomadic_government }
+      independent = yes
+      primary_title = { has_law = vassal_wars_law_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = vassal_wars_law_2
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Centralization --- ##
+
+  max_centralization = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      higher_real_tier_than = COUNT
+      NOT = { government = nomadic_government }
+      NOT = { primary_title = { has_law = centralization_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = centralization_4
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_centralization_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      higher_real_tier_than = COUNT
+      NOT = { government = nomadic_government }
+      NOT = { primary_title = { has_law = centralization_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = centralization_3 }
+          add_law = centralization_4
+        }
+        else_if = {
+          limit = { has_law = centralization_2 }
+          add_law = centralization_3
+        }
+        else_if = {
+          limit = { has_law = centralization_1 }
+          add_law = centralization_2
+        }
+        else = {
+          add_law = centralization_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_centralization_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      higher_real_tier_than = COUNT
+      NOT = { government = nomadic_government }
+      primary_title = {
+        OR = {
+          has_law = centralization_1
+          has_law = centralization_2
+          has_law = centralization_3
+          has_law = centralization_4
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = centralization_4 }
+          add_law = centralization_3
+        }
+        else_if = {
+          limit = { has_law = centralization_3 }
+          add_law = centralization_2
+        }
+        else_if = {
+          limit = { has_law = centralization_2 }
+          add_law = centralization_1
+        }
+        else_if = {
+          limit = { has_law = centralization_1 }
+          add_law = centralization_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Tribal Organization --- ##
+
+  max_tribal_organization = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      is_tribal = yes
+      NOT = { primary_title = { has_law = tribal_organization_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = tribal_organization_4
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_tribal_organization_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      is_tribal = yes
+      NOT = { primary_title = { has_law = tribal_organization_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tribal_organization_3 }
+          add_law = tribal_organization_4
+        }
+        else_if = {
+          limit = { has_law = tribal_organization_2 }
+          add_law = tribal_organization_3
+        }
+        else_if = {
+          limit = { has_law = tribal_organization_1 }
+          add_law = tribal_organization_2
+        }
+        else = {
+          add_law = tribal_organization_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_tribal_organization_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      is_tribal = yes
+      primary_title = {
+        OR = {
+          has_law = tribal_organization_1
+          has_law = tribal_organization_2
+          has_law = tribal_organization_3
+          has_law = tribal_organization_4
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = tribal_organization_4 }
+          add_law = tribal_organization_3
+        }
+        else_if = {
+          limit = { has_law = tribal_organization_3 }
+          add_law = tribal_organization_2
+        }
+        else_if = {
+          limit = { has_law = tribal_organization_2 }
+          add_law = tribal_organization_1
+        }
+        else_if = {
+          limit = { has_law = tribal_organization_1 }
+          add_law = tribal_organization_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Viceroyalty --- ##
+
+  set_viceroyalty_none = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Charlemagne"
+      higher_real_tier_than = KING
+      is_feudal = yes
+      independent = yes
+      primary_title = {
+        OR = {
+          has_law = vice_royalty_1
+          has_law = vice_royalty_2
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = vice_royalty_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_viceroyalty_kingdoms = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Charlemagne"
+      higher_real_tier_than = KING
+      is_feudal = yes
+      independent = yes
+      NOT = { primary_title = { has_law = vice_royalty_1 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = vice_royalty_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_viceroyalty_duchies = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Charlemagne"
+      higher_real_tier_than = KING
+      is_feudal = yes
+      independent = yes
+      NOT = { primary_title = { has_law = vice_royalty_2 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = vice_royalty_2
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Status of Women --- ##
+
+  max_status_of_women = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      NOT = { government = order_government }
+      NOR = {
+        has_status_of_women_religion_block_trigger = yes
+        has_game_rule = { name = gender value = historical }
+        has_game_rule = { name = gender value = all }
+      }
+      NOT = { primary_title = { has_law = status_of_women_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = status_of_women_4
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_status_of_women_up = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      NOT = { government = order_government }
+      NOR = {
+        has_status_of_women_religion_block_trigger = yes
+        has_game_rule = { name = gender value = historical }
+        has_game_rule = { name = gender value = all }
+      }
+      NOT = { primary_title = { has_law = status_of_women_4 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = status_of_women_3 }
+          add_law = status_of_women_4
+        }
+        else_if = {
+          limit = { has_law = status_of_women_2 }
+          add_law = status_of_women_3
+        }
+        else_if = {
+          limit = { has_law = status_of_women_1 }
+          add_law = status_of_women_2
+        }
+        else = {
+          add_law = status_of_women_1
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  cycle_status_of_women_down = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      NOT = { government = order_government }
+      NOR = {
+        has_status_of_women_religion_block_trigger = yes
+        has_game_rule = { name = gender value = historical }
+        has_game_rule = { name = gender value = all }
+      }
+      primary_title = {
+        OR = {
+          has_law = status_of_women_1
+          has_law = status_of_women_2
+          has_law = status_of_women_3
+          has_law = status_of_women_4
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_law = status_of_women_4 }
+          add_law = status_of_women_3
+        }
+        else_if = {
+          limit = { has_law = status_of_women_3 }
+          add_law = status_of_women_2
+        }
+        else_if = {
+          limit = { has_law = status_of_women_2 }
+          add_law = status_of_women_1
+        }
+        else_if = {
+          limit = { has_law = status_of_women_1 }
+          add_law = status_of_women_0
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Revoke Title --- ##
+
+  set_revoke_title_none = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      NOT = { government = nomadic_government }
+      NOT = { government = confucian_bureaucracy }
+      primary_title = { has_law = revoke_title_law_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = revoke_title_law_0
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_revoke_title_allowed = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      NOT = { government = nomadic_government }
+      NOT = { government = confucian_bureaucracy }
+      NOT = { primary_title = { has_law = revoke_title_law_1 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = revoke_title_law_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_revoke_title_religious = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      NOT = { government = nomadic_government }
+      NOT = { government = confucian_bureaucracy }
+      NOT = { has_revoke_title_religious_block_trigger = yes }
+      primary_title = { has_law = revoke_title_law_1 }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = revoke_title_law_2
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  ## --- Administration --- ##
+
+  set_administration_feudal = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      is_theocracy = no
+      is_tribal = no
+      is_nomadic = no
+      is_republic = no
+      OR = {
+        # Conclave path: stepwise hub via Late
+        AND = {
+          has_dlc = "Conclave"
+          primary_title = { has_law = ze_administration_laws_1 }
+        }
+        # Base-game path: emperor + independent + feudal, binary toggle from Imperial
+        AND = {
+          NOT = { has_dlc = "Conclave" }
+          higher_real_tier_than = KING
+          independent = yes
+          is_feudal = yes
+          primary_title = { has_law = imperial_administration }
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_dlc = "Conclave" }
+          add_law = ze_administration_laws_0
+        }
+        else = {
+          add_law = feudal_administration
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_administration_late = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      has_dlc = "Conclave"
+      is_theocracy = no
+      is_tribal = no
+      is_nomadic = no
+      is_republic = no
+      NOT = { primary_title = { has_law = ze_administration_laws_1 } }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        add_law = ze_administration_laws_1
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+  set_administration_imperial = {
+    potential = {
+      ai = no
+      has_character_flag = cheats_enabled
+      has_character_flag = show_realm_laws
+      is_theocracy = no
+      is_tribal = no
+      is_nomadic = no
+      is_republic = no
+      OR = {
+        # Conclave path: stepwise hub via Late
+        AND = {
+          has_dlc = "Conclave"
+          primary_title = { has_law = ze_administration_laws_1 }
+        }
+        # Base-game path: emperor + independent + feudal, binary toggle from Feudal/default
+        AND = {
+          NOT = { has_dlc = "Conclave" }
+          higher_real_tier_than = KING
+          independent = yes
+          is_feudal = yes
+          NOT = { primary_title = { has_law = imperial_administration } }
+        }
+      }
+    }
+
+    allow = {
+      always = yes
+    }
+
+    effect = {
+      primary_title = {
+        if = {
+          limit = { has_dlc = "Conclave" }
+          add_law = ze_administration_laws_2
+        }
+        else = {
+          add_law = imperial_administration
+        }
+      }
+    }
+
+    revoke_allowed = {
+      always = no
+    }
+
+    ai_will_do = {
+      factor = 0
+    }
+  }
+}

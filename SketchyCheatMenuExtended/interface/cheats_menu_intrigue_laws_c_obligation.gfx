@@ -1,0 +1,15 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##            Obligation Laws Sub-Menu Sprites            ##
+############################################################
+
+spriteTypes = {
+  spriteType = {
+    name = "GFX_show_obligation_laws"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_obligation_laws"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+}

@@ -15,7 +15,7 @@ The mod ships ~900 decisions across ~20 sub-menus (self cheats, character
 cheats, mind control, government changes, inheritance / realm / obligation
 / council laws, trait toggles for ~274 traits, settlement upgrades,
 character spawning, etc.). A companion Debug sub-mod
-(`SketchyCheatMenuPlusDebug`) ships `event SCMPD.*` console events for
+(`SketchyCheatMenuExtendedDebug`) ships `event SCMED.*` console events for
 hard-to-reach test paths.
 
 The user-facing summary lives in `README.md`. Version history is in
@@ -59,14 +59,14 @@ their `.mod` file to claim shared folders like `common/traits` and
 `common/dynasties`. Without a `dependencies` hint in this mod's `.mod`
 file, the overhaul silently suppresses our content in those folders.
 
-`SketchyCheatMenuPlus.mod` already declares `dependencies = { "CleanSlate" }`
-because SCMP is designed for CleanSlate compatibility. If you add
+`SketchyCheatMenuExtended.mod` already declares `dependencies = { "CleanSlate" }`
+because SCME is designed for CleanSlate compatibility. If you add
 content in folders that other overhauls also replace, add those
 overhauls to the dependencies list the same way.
 
 ### 4. Section-toggle flag pattern
 
-Every SCMP decision except `Enable Cheats` itself gates on
+Every SCME decision except `Enable Cheats` itself gates on
 `has_character_flag = cheats_enabled` in its `potential`. That's the
 master switch. Sub-menu decisions also gate on a section-specific
 `show_<section>` flag (roughly 35 of them, one per sub-menu — grep
@@ -88,8 +88,8 @@ set/clear `cheats_enabled`.
 ## Repo layout
 
 ```
-SketchyCheatMenuPlus.mod                            top-level mod descriptor
-SketchyCheatMenuPlus/                               base mod content
+SketchyCheatMenuExtended.mod                            top-level mod descriptor
+SketchyCheatMenuExtended/                               base mod content
   descriptor.mod                                    inner descriptor (mirror)
   sketchycheatmenu.jpg                              mod thumbnail
   decisions/cheats_menu*.txt                        one file per sub-menu
@@ -102,10 +102,10 @@ SketchyCheatMenuPlus/                               base mod content
   gfx/traits/*.dds                                  custom trait icons (24×24)
   interface/*.gfx                                   sprite registrations
   localisation/*.csv                                Win-1252 loc strings
-SketchyCheatMenuPlusDebug.mod                       debug sub-mod descriptor
-SketchyCheatMenuPlusDebug/                          SCMPD.* events for testing
-SketchyCheatMenuPlusProper4KUIPatch.mod             hi-res patch descriptor
-SketchyCheatMenuPlusProper4KUIPatch/                50×50 icons + 43×43 traits
+SketchyCheatMenuExtendedDebug.mod                       debug sub-mod descriptor
+SketchyCheatMenuExtendedDebug/                          SCMED.* events for testing
+SketchyCheatMenuExtendedProper4KUIPatch.mod             hi-res patch descriptor
+SketchyCheatMenuExtendedProper4KUIPatch/                50×50 icons + 43×43 traits
 docs/                                               README banner, gallery, thumbs
 CHANGELOG.md                                        version history (Keep a Changelog)
 README.md                                           user-facing docs
@@ -133,9 +133,9 @@ edge cases as explicit questions in your handoff.
 
 For hard-to-reach scenarios (assigning a character to a specific
 dynasty, granting an out-of-reach bloodline, applying a specific
-province modifier), the Debug sub-mod ships `event SCMPD.<N>` events
+province modifier), the Debug sub-mod ships `event SCMED.<N>` events
 reachable from the console when both mods are loaded. Enable
-`SketchyCheatMenuPlus - Debug` alongside the base mod in the launcher to
+`SketchyCheatMenuExtended - Debug` alongside the base mod in the launcher to
 make these events available.
 
 ## Adding graphics
@@ -143,11 +143,11 @@ make these events available.
 Graphics ship in two places, matching the dual-mod pattern:
 
 - **Base mod:**
-  - Decision icons: `SketchyCheatMenuPlus/gfx/interface/*.dds` at **28×28**.
-  - Custom trait icons: `SketchyCheatMenuPlus/gfx/traits/*.dds` at **24×24**.
+  - Decision icons: `SketchyCheatMenuExtended/gfx/interface/*.dds` at **28×28**.
+  - Custom trait icons: `SketchyCheatMenuExtended/gfx/traits/*.dds` at **24×24**.
 - **Proper4KUI Patch (optional):**
-  - `SketchyCheatMenuPlusProper4KUIPatch/gfx/interface/*.dds` at **50×50**.
-  - `SketchyCheatMenuPlusProper4KUIPatch/gfx/traits/*.dds` at **43×43**.
+  - `SketchyCheatMenuExtendedProper4KUIPatch/gfx/interface/*.dds` at **50×50**.
+  - `SketchyCheatMenuExtendedProper4KUIPatch/gfx/traits/*.dds` at **43×43**.
 
 **Always ship the base-resolution version.** A graphic that only exists
 in the P4KUI Patch is invisible to players without P4KUI installed — the
@@ -235,7 +235,7 @@ holder's religion.
   the vanilla script is an invaluable reference (same syntax as the
   mod). Common locations:
   - Steam: `C:\Program Files (x86)\Steam\steamapps\common\Crusader Kings II\`
-  - GOG: `C:\Games\GOG Galaxy\Crusader Kings II\`
+  - GOG: `C:\Program Files (x86)\GOG Galaxy\Games\Crusader Kings II\`
 
   Key folders:
   - `decisions/` — vanilla decision patterns

@@ -1,4 +1,4 @@
-# Contributing to Sketchy Cheat Menu Plus
+# Contributing to Sketchy Cheat Menu Extended
 
 Thanks for your interest in contributing! This document covers bug
 reports, feature requests, and code contributions.
@@ -39,7 +39,7 @@ loop:
 
 1. Copy or junction the mod into your CK2 mod directory
    (`Documents/Paradox Interactive/Crusader Kings II/mod/`).
-2. Launch CK2 with Sketchy Cheat Menu Plus enabled.
+2. Launch CK2 with Sketchy Cheat Menu Extended enabled.
 3. Check `logs/error.log` for any lines mentioning the mod's files —
    clean = parse OK.
 4. Load a save or new game. Right-click your character → **Cheats
@@ -76,8 +76,8 @@ Open the console with `~`.
 
 ### Debug event sub-mod
 
-The sibling `SketchyCheatMenuPlusDebug` sub-mod (opt-in via the
-launcher) exposes the `SCMPD.*` event family for hard-to-reach test
+The sibling `SketchyCheatMenuExtendedDebug` sub-mod (opt-in via the
+launcher) exposes the `SCMED.*` event family for hard-to-reach test
 setups — bloodline grants, religion conversions, province modifier
 applications, title-flag setters. Load it when your test needs one of
 those.

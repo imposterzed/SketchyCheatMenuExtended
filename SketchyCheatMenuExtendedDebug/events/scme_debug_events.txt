@@ -1,0 +1,380 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                      Debug Events                      ##
+############################################################
+##                                                        ##
+## Dev/test events for hard-to-reach paths. Never wired   ##
+## to a decision or on_action – fire from the in-game     ##
+## console:                                               ##
+##   event SCMED.<id> <charID>                            ##
+##                                                        ##
+## Each event is a one-shot, no event_target deps,        ##
+## hide_window so it fires silently.                      ##
+##                                                        ##
+############################################################
+
+namespace = SCMED
+
+
+# SCMED.1 – Assign the target character to dynasty 777777
+# ("Outcast"). Used to verify the dynasty rename displays
+# correctly, since no in-mod decision actually assigns
+# characters to dynasty 777777 (disown_them reverts to the
+# other parent's dynasty).
+#
+# Console:  event SCMED.1 <charID>
+character_event = {
+  id = SCMED.1
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    dynasty = 777777
+  }
+}
+
+# SCMED.2 – Grant the HF blood-building bloodline (carries
+# bloodline_blood_building flag, gate for ca_oppressive_fortifications).
+# Tests v0.9.1 add_castle_special_buildings_effect's Oppressive branch.
+# Stack-aware: CleanSlate drops the `_01` suffix from bloodline IDs.
+#
+# Console:  event SCMED.2 <charID>
+character_event = {
+  id = SCMED.2
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      if = {
+        limit = { is_female = yes }
+        create_bloodline = {
+          type = hybrid_murder_builder_bloodline
+          inheritance = matrilineal
+        }
+      }
+      else = {
+        create_bloodline = { type = hybrid_murder_builder_bloodline }
+      }
+    }
+    else = {
+      if = {
+        limit = { is_female = yes }
+        create_bloodline = {
+          type = hybrid_murder_builder_bloodline_01
+          inheritance = matrilineal
+        }
+      }
+      else = {
+        create_bloodline = { type = hybrid_murder_builder_bloodline_01 }
+      }
+    }
+  }
+}
+
+# SCMED.3 – Grant the HF castellan bloodline (carries
+# bloodline_castellan flag, gate for ca_special_fortifications).
+# Tests v0.9.1 add_castle_special_buildings_effect's Special Forts branch.
+# Stack-aware: CleanSlate drops the `_01` suffix from bloodline IDs.
+#
+# Console:  event SCMED.3 <charID>
+character_event = {
+  id = SCMED.3
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      if = {
+        limit = { is_female = yes }
+        create_bloodline = {
+          type = pure_castellan_bloodline
+          inheritance = matrilineal
+        }
+      }
+      else = {
+        create_bloodline = { type = pure_castellan_bloodline }
+      }
+    }
+    else = {
+      if = {
+        limit = { is_female = yes }
+        create_bloodline = {
+          type = pure_castellan_bloodline_01
+          inheritance = matrilineal
+        }
+      }
+      else = {
+        create_bloodline = { type = pure_castellan_bloodline_01 }
+      }
+    }
+  }
+}
+
+# SCMED.4 – Grant the HF architect bloodline (carries
+# bloodline_architect flag, gate for ct_planned_infrastructure).
+# Tests v0.9.1 add_city_special_buildings_effect's Planned Infra branch.
+# Stack-aware: CleanSlate drops the `_01` suffix from bloodline IDs.
+#
+# Console:  event SCMED.4 <charID>
+character_event = {
+  id = SCMED.4
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      if = {
+        limit = { is_female = yes }
+        create_bloodline = {
+          type = pure_architect_bloodline
+          inheritance = matrilineal
+        }
+      }
+      else = {
+        create_bloodline = { type = pure_architect_bloodline }
+      }
+    }
+    else = {
+      if = {
+        limit = { is_female = yes }
+        create_bloodline = {
+          type = pure_architect_bloodline_01
+          inheritance = matrilineal
+        }
+      }
+      else = {
+        create_bloodline = { type = pure_architect_bloodline_01 }
+      }
+    }
+  }
+}
+
+# SCMED.5 – Grant the HF monumental bloodline (carries
+# bloodline_monumental flag, gate for tp_monumental_shrines).
+# Tests v0.9.1 add_temple_special_buildings_effect's Monumental branch.
+# Stack-aware: CleanSlate drops the `_01` suffix from bloodline IDs.
+#
+# Console:  event SCMED.5 <charID>
+character_event = {
+  id = SCMED.5
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      if = {
+        limit = { is_female = yes }
+        create_bloodline = {
+          type = pure_monumental_bloodline
+          inheritance = matrilineal
+        }
+      }
+      else = {
+        create_bloodline = { type = pure_monumental_bloodline }
+      }
+    }
+    else = {
+      if = {
+        limit = { is_female = yes }
+        create_bloodline = {
+          type = pure_monumental_bloodline_01
+          inheritance = matrilineal
+        }
+      }
+      else = {
+        create_bloodline = { type = pure_monumental_bloodline_01 }
+      }
+    }
+  }
+}
+
+# SCMED.6 – Dedicate the temple in this province to Zeus.
+# Sets flag_dedicated_to_zeus on the temple title; gate for
+# tp_shrine_zeus in v0.9.1's Hellenic branch of
+# add_temple_special_buildings_effect.
+#
+# Console:  event SCMED.6 <provinceID>
+province_event = {
+  id = SCMED.6
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    random_province_holding = {
+      limit = { holding_type = temple }
+      save_event_target_as = scoped_temple_barony
+    }
+    event_target:scoped_temple_barony = {
+      set_title_flag = flag_dedicated_to_zeus
+    }
+  }
+}
+
+# SCMED.7 – Dedicate the temple in this province to Apollo.
+#
+# Console:  event SCMED.7 <provinceID>
+province_event = {
+  id = SCMED.7
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    random_province_holding = {
+      limit = { holding_type = temple }
+      save_event_target_as = scoped_temple_barony
+    }
+    event_target:scoped_temple_barony = {
+      set_title_flag = flag_dedicated_to_apollo
+    }
+  }
+}
+
+# SCMED.8 – Dedicate the temple in this province to Aphrodite.
+#
+# Console:  event SCMED.8 <provinceID>
+province_event = {
+  id = SCMED.8
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    random_province_holding = {
+      limit = { holding_type = temple }
+      save_event_target_as = scoped_temple_barony
+    }
+    event_target:scoped_temple_barony = {
+      set_title_flag = flag_dedicated_to_aphrodite
+    }
+  }
+}
+
+# SCMED.9 – Add the tomb_of_a_saint province modifier
+# (gate for tp_saint_shrine in v0.9.1). Permanent (duration = -1).
+# Replaces vanilla HF.40099, which CleanSlate removed.
+#
+# Console:  event SCMED.9 <provinceID>
+province_event = {
+  id = SCMED.9
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    add_province_modifier = {
+      name = tomb_of_a_saint
+      duration = -1
+    }
+  }
+}
+
+# SCMED.10 – Set this province's culture to coptic. Used to
+# test the CleanSlate-only ca_culture_coptic ladder added in
+# the v0.9.1 amend.
+#
+# Console:  event SCMED.10 <provinceID>
+province_event = {
+  id = SCMED.10
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    culture = coptic
+  }
+}
+
+# SCMED.11 – Set this province's culture to arberian.
+# Tests CleanSlate-only ca_culture_arberian ladder.
+#
+# Console:  event SCMED.11 <provinceID>
+province_event = {
+  id = SCMED.11
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    culture = arberian
+  }
+}
+
+# SCMED.12 – Set this province's culture to jurchen.
+# Tests CleanSlate-only ca_culture_altaic_jurchen ladder.
+#
+# Console:  event SCMED.12 <provinceID>
+province_event = {
+  id = SCMED.12
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    culture = jurchen
+  }
+}
+
+# SCMED.13 – Set this province's culture to han.
+# Tests CleanSlate-only ca_culture_chinese_han ladder.
+#
+# Console:  event SCMED.13 <provinceID>
+province_event = {
+  id = SCMED.13
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    culture = han
+  }
+}
+
+# SCMED.14 – Set this province's culture to roman.
+# Tests CleanSlate-only ca_culture_roman ladder.
+#
+# Console:  event SCMED.14 <provinceID>
+province_event = {
+  id = SCMED.14
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    culture = roman
+  }
+}
+
+# SCMED.15 – Set this province's culture to cat (one of the
+# CleanSlate animal cultures). Tests CleanSlate-only
+# ca_culture_animal ladder.
+#
+# Console:  event SCMED.15 <provinceID>
+province_event = {
+  id = SCMED.15
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    culture = cat
+  }
+}
+
+# SCMED.16 – Set this province's culture to nahua (CleanSlate
+# Aztec rename; vanilla equivalent is `nahuatl`). Tests the
+# stack-aware Aztec tribal helper added in v0.9.2.
+#
+# Console:  event SCMED.16 <provinceID>
+province_event = {
+  id = SCMED.16
+  hide_window = yes
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = { has_global_flag = cleanslate_active }
+      culture = nahua
+    }
+    else = {
+      culture = nahuatl
+    }
+  }
+}
+

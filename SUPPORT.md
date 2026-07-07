@@ -1,6 +1,6 @@
 # Getting Support
 
-Looking for help with Sketchy Cheat Menu Plus? Here's where to go.
+Looking for help with Sketchy Cheat Menu Extended? Here's where to go.
 
 ## Bug reports
 
@@ -31,6 +31,6 @@ recommendations, gameplay questions, and general modding chat.
 
 ## CK2 modding community
 
-For broader CK2 modding questions not specific to Sketchy Cheat Menu Plus,
+For broader CK2 modding questions not specific to Sketchy Cheat Menu Extended,
 the [Paradox CK2 forums](https://forum.paradoxplaza.com/forum/forums/crusader-kings-ii.749/)
 remain the long-standing community space.

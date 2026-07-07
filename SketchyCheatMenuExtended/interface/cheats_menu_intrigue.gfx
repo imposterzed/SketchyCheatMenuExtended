@@ -1,0 +1,15 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                   Cheats Menu Sprites                  ##
+############################################################
+
+spriteTypes = {
+  spriteType = {
+    name = "GFX_show_cheats"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+  spriteType = {
+    name = "GFX_hide_cheats"
+    texturefile = "gfx\\interface\\decision_icon_cheats.dds"
+  }
+}

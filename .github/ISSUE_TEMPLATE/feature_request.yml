@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest a new feature or enhancement for Sketchy Cheat Menu Plus.
+description: Suggest a new feature or enhancement for Sketchy Cheat Menu Extended.
 title: "[Feature]: "
 labels: ["enhancement"]
 assignees:
@@ -25,7 +25,7 @@ body:
     id: why
     attributes:
       label: Why is this valuable?
-      description: What does the player gain that vanilla or current Sketchy Cheat Menu Plus doesn't already provide? A specific use-case helps a lot.
+      description: What does the player gain that vanilla or current Sketchy Cheat Menu Extended doesn't already provide? A specific use-case helps a lot.
       placeholder: |
         I want to build a specific bloodline dynasty (e.g. inspire commanders) without having to trigger the acquisition event chain. A right-click Bloodlines sub-menu would let me set it up at the start of my playthrough.
     validations:

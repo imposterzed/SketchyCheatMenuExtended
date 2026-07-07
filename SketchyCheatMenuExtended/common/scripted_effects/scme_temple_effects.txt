@@ -1,0 +1,189 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                Temple Building Helpers                 ##
+############################################################
+
+## --- Strip helpers --- ##
+
+# convert_to leaves the old holding's buildings on the slot,
+# which leads to the game freezing. Strip every building of
+# the source type before converting.
+
+# Intentionally ungated to prevent orphans: CK2 culture-shift
+# mechanics (chancellor "Spread Culture", court-culture jobs,
+# etc.) leave prior cultures' buildings on the holding even
+# after the active culture changes.
+
+strip_temple_buildings_effect = {
+  remove_building = tp_barracks_1
+  remove_building = tp_barracks_2
+  remove_building = tp_barracks_3
+  remove_building = tp_barracks_4
+  remove_building = tp_barracks_5
+  remove_building = tp_barracks_6
+  remove_building = tp_elite_barracks_1
+  remove_building = tp_elite_barracks_2
+  remove_building = tp_elite_barracks_3
+  remove_building = tp_elite_barracks_4
+  remove_building = tp_elite_barracks_5
+  remove_building = tp_elite_barracks_6
+  remove_building = tp_great_pillar_norse
+  remove_building = tp_monastery_1
+  remove_building = tp_monastery_2
+  remove_building = tp_monastery_3
+  remove_building = tp_monastery_4
+  remove_building = tp_monastery_5
+  remove_building = tp_monastery_6
+  remove_building = tp_monumental_shrines_1
+  remove_building = tp_monumental_shrines_2
+  remove_building = tp_monumental_shrines_3
+  remove_building = tp_monumental_shrines_4
+  remove_building = tp_saint_shrine
+  remove_building = tp_school_1
+  remove_building = tp_school_2
+  remove_building = tp_shipyard_1
+  remove_building = tp_shipyard_2
+  remove_building = tp_shipyard_3
+  remove_building = tp_shipyard_4
+  remove_building = tp_shrine_aphrodite
+  remove_building = tp_shrine_apollo
+  remove_building = tp_shrine_ares
+  remove_building = tp_shrine_arthemis
+  remove_building = tp_shrine_athena
+  remove_building = tp_shrine_demeter
+  remove_building = tp_shrine_ephaestus
+  remove_building = tp_shrine_hades
+  remove_building = tp_shrine_hermes
+  remove_building = tp_shrine_hestia
+  remove_building = tp_shrine_poseidon
+  remove_building = tp_shrine_zeus
+  remove_building = tp_town_1
+  remove_building = tp_town_2
+  remove_building = tp_town_3
+  remove_building = tp_town_4
+  remove_building = tp_town_5
+  remove_building = tp_town_6
+  remove_building = tp_wall_1
+  remove_building = tp_wall_2
+  remove_building = tp_wall_3
+  remove_building = tp_wall_4
+  remove_building = tp_wall_5
+  remove_building = tp_wall_q_1
+  remove_building = tp_wall_q_2
+  remove_building = tp_wall_q_3
+  remove_building = tp_wall_q_4
+  remove_building = tp_wall_q_5
+}
+
+## --- Add helpers --- ##
+
+# Add only the buildings whose vanilla potential applies
+# to avoid bloating saves with inactive entries.
+
+# temple: bloodline / religion / province-modifier conditional
+add_temple_special_buildings_effect = {
+  # Monumental Shrines (HF monumental bloodline)
+  if = {
+    limit = {
+      owner = {
+        OR = {
+          any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+          any_liege = {
+            any_owned_bloodline = { has_bloodline_flag = bloodline_monumental }
+          }
+        }
+      }
+    }
+    add_building = tp_monumental_shrines_1
+    add_building = tp_monumental_shrines_2
+    add_building = tp_monumental_shrines_3
+    add_building = tp_monumental_shrines_4
+  }
+
+  # Saint Shrine (province tomb modifier)
+  if = {
+    limit = {
+      location = {
+        OR = {
+          has_province_modifier = tomb_of_a_saint
+          has_province_modifier = pillaged_tomb_of_a_saint
+        }
+      }
+    }
+    add_building = tp_saint_shrine
+  }
+
+  # Hellenic deity shrines (one per dedication title flag; vanilla
+  # sets exactly one flag per temple via the dedication event chain).
+  # Owner must be Hellenic â€” tp_shrine_X lacks a self-keep clause,
+  # so without a Hellenic owner the building hides in UI.
+  if = {
+    limit = {
+      owner = {
+        OR = {
+          religion = hellenic_pagan
+          religion = hellenic_pagan_reformed
+        }
+      }
+    }
+    if = {
+      limit = { has_title_flag = flag_dedicated_to_aphrodite }
+      add_building = tp_shrine_aphrodite
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_apollo }
+      add_building = tp_shrine_apollo
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_ares }
+      add_building = tp_shrine_ares
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_arthemis }
+      add_building = tp_shrine_arthemis
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_athena }
+      add_building = tp_shrine_athena
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_demeter }
+      add_building = tp_shrine_demeter
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_ephaestus }
+      add_building = tp_shrine_ephaestus
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_hades }
+      add_building = tp_shrine_hades
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_hermes }
+      add_building = tp_shrine_hermes
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_hestia }
+      add_building = tp_shrine_hestia
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_poseidon }
+      add_building = tp_shrine_poseidon
+    }
+
+    else_if = {
+      limit = { has_title_flag = flag_dedicated_to_zeus }
+      add_building = tp_shrine_zeus
+    }
+  }
+}
