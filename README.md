@@ -32,6 +32,31 @@ A fork of [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetail
 
 <p align="center"><sub><em>Screenshots taken with the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3054987840">Proper 4K UI Project</a> mod enabled.</em></sub></p>
 
+## What is new
+
+Compared to [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=608738995), this fork adds:
+
+- **Traits**
+  - ~100+ new individual add / remove decisions
+  - Bulk add / remove for each section
+- **Holdings**
+  - Build Castle / Temple / City / Tribal / Nomad on empty slots
+  - Build Hospital, Fort, and Trade Post
+  - Convert holdings to Tribal or Nomad
+  - Upgrade Nomad and Trade Post
+  - Full upgrades rounded out across every holding type
+- **Government & laws**
+  - Change **Government** type
+  - Set **Realm Laws**, **Obligation Laws**, and **Council Laws**
+  - Additional Succession law options
+- **Compatibility**
+  - CleanSlate — auto-detects and adapts to renamed IDs
+  - Proper 4K UI Project — supported via a companion patch sub-mod
+  - DLC — decisions gate on their DLC where applicable and provide alternative or hide cleanly when it's missing
+- **Bug fix sweep and UX polish**
+  - Bug fixes across the mod
+  - Decisions with no valid effect hide from the menu instead of running silently
+
 ## What it does
 
 Sketchy Cheat Menu Extended adds a comprehensive in-game cheat menu. Right-click your own portrait and pick **Enable Cheats** to turn it on; **Disable Cheats** when done. AI characters never see these decisions.
@@ -283,6 +308,11 @@ Depends on CleanSlate, as does this mod. Historically OK with Sketchy Cheat Menu
 ### AGOT (A Game of Thrones)
 
 Historically incompatible with Sketchy Cheat Menu; not verified for this fork.
+
+## Community
+
+- **[GitHub Issues](https://github.com/imposterzed/SketchyCheatMenuExtended/issues/new/choose)** — structured templates for bug reports, compatibility issues, and feature requests.
+- **[GitHub Discussions](https://github.com/imposterzed/SketchyCheatMenuExtended/discussions)** — general questions and discussion.
 
 ## For modders
 
