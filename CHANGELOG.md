@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [0.14.7] - 2026-07-08
+
+### Fixed
+- **Add Crowned by Pope / Prince-Bishop / Priest** and their Remove counterparts now recognize the Ruler Designer's `_rd` trait variants.
+- **Add Crowned by Pope** and **Add Baptized by Pope** — Add now binds the Pope, so the tooltips resolve correctly. Gated to Catholic, Fraticelli, Miaphysite, Monophysite.
+- **Add Crowned by Prince-Bishop** and **Add Baptized by Prince-Bishop** — Add now binds a Duke-tier theocratic vassal (or Cardinal, antipope claimant), so the tooltips resolve correctly. Gated to the nine Christian religions with a Pope or Patriarch. Disabled when no such vassal is in the realm.
+- **Add Baptized by Patriarch** — Add now binds the Patriarch, so the tooltips resolve correctly. Gated to Orthodox, Nestorian, Paulician, Monothelite, Iconoclast.
+- **Add Baptized by Satan** — Add now binds the Satanists Grand Master, so the tooltips resolve correctly. Hidden without Monks and Mystics.
+
 ## [0.14.6] - 2026-07-07
 
 ### Added

@@ -12707,7 +12707,10 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
-      trait = crowned_by_pope
+      OR = {
+        trait = crowned_by_pope
+        trait = crowned_by_pope_rd
+      }
     }
 
     allow = {
@@ -12715,7 +12718,8 @@ decisions = {
     }
 
     effect = {
-      remove_trait = crowned_by_pope
+      if = { limit = { trait = crowned_by_pope }    remove_trait = crowned_by_pope    }
+      if = { limit = { trait = crowned_by_pope_rd } remove_trait = crowned_by_pope_rd }
     }
 
     revoke_allowed = {
@@ -12733,17 +12737,33 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
-      religion_group = christian
-      NOT = { trait = crowned_by_pope }
+      NOR = {
+        trait = crowned_by_pope
+        trait = crowned_by_pope_rd
+      }
+      OR = {
+        religion = catholic
+        religion = fraticelli
+        religion = miaphysite
+        religion = monophysite
+      }
     }
 
     allow = {
-      always = yes
+      custom_tooltip = {
+        text = SCME_TT_POPE_ALIVE
+        religion_head = { always = yes }
+      }
     }
 
     effect = {
       clear_coronation_traits_effect = yes
-      add_trait = crowned_by_pope
+      hidden_tooltip = {
+        religion_head = { save_event_target_as = scme_priest_target }
+        save_persistent_event_target = { name = coronation_priest_per scope = event_target:scme_priest_target }
+      }
+      custom_tooltip = { text = tooltip_gain_crowned_by_pope }
+      hidden_tooltip = { add_trait = crowned_by_pope }
     }
 
     revoke_allowed = {
@@ -12761,7 +12781,10 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
-      trait = crowned_by_bishop
+      OR = {
+        trait = crowned_by_bishop
+        trait = crowned_by_bishop_rd
+      }
     }
 
     allow = {
@@ -12769,7 +12792,8 @@ decisions = {
     }
 
     effect = {
-      remove_trait = crowned_by_bishop
+      if = { limit = { trait = crowned_by_bishop }    remove_trait = crowned_by_bishop    }
+      if = { limit = { trait = crowned_by_bishop_rd } remove_trait = crowned_by_bishop_rd }
     }
 
     revoke_allowed = {
@@ -12787,17 +12811,55 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
-      religion_group = christian
-      NOT = { trait = crowned_by_bishop }
+      NOR = {
+        trait = crowned_by_bishop
+        trait = crowned_by_bishop_rd
+      }
+      OR = {
+        religion = catholic
+        religion = fraticelli
+        religion = orthodox
+        religion = miaphysite
+        religion = monophysite
+        religion = nestorian
+        religion = paulician
+        religion = monothelite
+        religion = iconoclast
+      }
     }
 
     allow = {
-      always = yes
+      trigger_if = {
+        limit = {
+          OR = {
+            religion = catholic
+            religion = fraticelli
+          }
+        }
+        custom_tooltip = {
+          text = SCME_TT_PRINCE_BISHOP_AVAILABLE
+          any_realm_lord = { scme_is_prince_bishop_candidate_trigger = yes }
+        }
+      }
+      trigger_else = {
+        custom_tooltip = {
+          text = SCME_TT_BISHOP_AVAILABLE
+          any_realm_lord = { scme_is_prince_bishop_candidate_trigger = yes }
+        }
+      }
     }
 
     effect = {
       clear_coronation_traits_effect = yes
-      add_trait = crowned_by_bishop
+      hidden_tooltip = {
+        random_realm_lord = {
+          limit = { scme_is_prince_bishop_candidate_trigger = yes }
+          save_event_target_as = scme_priest_target
+        }
+        save_persistent_event_target = { name = coronation_priest_per scope = event_target:scme_priest_target }
+      }
+      custom_tooltip = { text = tooltip_gain_crowned_by_bishop }
+      hidden_tooltip = { add_trait = crowned_by_bishop }
     }
 
     revoke_allowed = {
@@ -12815,7 +12877,10 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
-      trait = crowned_by_priest
+      OR = {
+        trait = crowned_by_priest
+        trait = crowned_by_priest_rd
+      }
     }
 
     allow = {
@@ -12823,7 +12888,8 @@ decisions = {
     }
 
     effect = {
-      remove_trait = crowned_by_priest
+      if = { limit = { trait = crowned_by_priest }    remove_trait = crowned_by_priest    }
+      if = { limit = { trait = crowned_by_priest_rd } remove_trait = crowned_by_priest_rd }
     }
 
     revoke_allowed = {
@@ -12842,7 +12908,10 @@ decisions = {
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
       religion_group = christian
-      NOT = { trait = crowned_by_priest }
+      NOR = {
+        trait = crowned_by_priest
+        trait = crowned_by_priest_rd
+      }
     }
 
     allow = {
@@ -12950,17 +13019,30 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
-      religion_group = christian
       NOT = { trait = baptized_by_pope }
+      OR = {
+        religion = catholic
+        religion = fraticelli
+        religion = miaphysite
+        religion = monophysite
+      }
     }
 
     allow = {
-      always = yes
+      custom_tooltip = {
+        text = SCME_TT_POPE_ALIVE
+        religion_head = { always = yes }
+      }
     }
 
     effect = {
       clear_baptism_traits_effect = yes
-      add_trait = baptized_by_pope
+      hidden_tooltip = {
+        religion_head = { save_event_target_as = scme_priest_target }
+        save_persistent_event_target = { name = baptizing_pope_per scope = event_target:scme_priest_target }
+      }
+      custom_tooltip = { text = tooltip_gain_baptized_by_pope }
+      hidden_tooltip = { add_trait = baptized_by_pope }
     }
 
     revoke_allowed = {
@@ -13004,17 +13086,31 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
-      religion_group = christian
       NOT = { trait = baptized_by_patriarch }
+      OR = {
+        religion = orthodox
+        religion = nestorian
+        religion = paulician
+        religion = monothelite
+        religion = iconoclast
+      }
     }
 
     allow = {
-      always = yes
+      custom_tooltip = {
+        text = SCME_TT_PATRIARCH_ALIVE
+        religion_head = { always = yes }
+      }
     }
 
     effect = {
       clear_baptism_traits_effect = yes
-      add_trait = baptized_by_patriarch
+      hidden_tooltip = {
+        religion_head = { save_event_target_as = scme_priest_target }
+        save_persistent_event_target = { name = baptizing_pope_per scope = event_target:scme_priest_target }
+      }
+      custom_tooltip = { text = tooltip_gain_baptized_by_patriach }
+      hidden_tooltip = { add_trait = baptized_by_patriarch }
     }
 
     revoke_allowed = {
@@ -13058,17 +13154,52 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
-      religion_group = christian
       NOT = { trait = baptized_by_bishop }
+      OR = {
+        religion = catholic
+        religion = fraticelli
+        religion = orthodox
+        religion = miaphysite
+        religion = monophysite
+        religion = nestorian
+        religion = paulician
+        religion = monothelite
+        religion = iconoclast
+      }
     }
 
     allow = {
-      always = yes
+      trigger_if = {
+        limit = {
+          OR = {
+            religion = catholic
+            religion = fraticelli
+          }
+        }
+        custom_tooltip = {
+          text = SCME_TT_PRINCE_BISHOP_AVAILABLE
+          any_realm_lord = { scme_is_prince_bishop_candidate_trigger = yes }
+        }
+      }
+      trigger_else = {
+        custom_tooltip = {
+          text = SCME_TT_BISHOP_AVAILABLE
+          any_realm_lord = { scme_is_prince_bishop_candidate_trigger = yes }
+        }
+      }
     }
 
     effect = {
       clear_baptism_traits_effect = yes
-      add_trait = baptized_by_bishop
+      hidden_tooltip = {
+        random_realm_lord = {
+          limit = { scme_is_prince_bishop_candidate_trigger = yes }
+          save_event_target_as = scme_priest_target
+        }
+        save_persistent_event_target = { name = baptizing_bishop_per scope = event_target:scme_priest_target }
+      }
+      custom_tooltip = { text = tooltip_gain_baptized_by_bishop }
+      hidden_tooltip = { add_trait = baptized_by_bishop }
     }
 
     revoke_allowed = {
@@ -13112,17 +13243,33 @@ decisions = {
       has_character_flag = cheats_enabled
       has_character_flag = traits_enabled
       has_character_flag = show_christian_status
+      has_dlc = "Mystics"
       religion_group = christian
       NOT = { trait = baptized_by_satan }
     }
 
     allow = {
-      always = yes
+      custom_tooltip = {
+        text = SCME_TT_SATANIST_GRANDMASTER_EXISTS
+        the_satanists = {
+          any_society_member = { is_society_grandmaster = yes }
+        }
+      }
     }
 
     effect = {
       clear_baptism_traits_effect = yes
-      add_trait = baptized_by_satan
+      hidden_tooltip = {
+        the_satanists = {
+          random_society_member = {
+            limit = { is_society_grandmaster = yes }
+            save_event_target_as = scme_satanist_target
+          }
+        }
+        save_persistent_event_target = { name = baptizing_satanist_per scope = event_target:scme_satanist_target }
+      }
+      custom_tooltip = { text = tooltip_gain_baptized_by_satan }
+      hidden_tooltip = { add_trait = baptized_by_satan }
     }
 
     revoke_allowed = {

@@ -1,0 +1,25 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                   Religion Triggers                    ##
+############################################################
+
+# Character holds a Cardinal religious title.
+scme_is_cardinal_trigger = {
+  OR = {
+    has_minor_title = title_cardinal
+    has_minor_title = title_fraticelli_cardinal
+  }
+}
+
+# Duke-tier theocratic vassal, Cardinal, or antipope claimant in realm.
+scme_is_prince_bishop_candidate_trigger = {
+  NOT = { block_general_event_trigger = yes }
+  is_theocracy = yes
+  religion = ROOT
+  controls_religion = no
+  OR = {
+    higher_real_tier_than = BARON
+    scme_is_cardinal_trigger = yes
+    scme_is_antipope_trigger = yes
+  }
+}

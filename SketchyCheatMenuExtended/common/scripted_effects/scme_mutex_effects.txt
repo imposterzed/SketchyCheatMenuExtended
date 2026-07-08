@@ -121,10 +121,13 @@ clear_pagan_branch_traits_effect = {
 }
 
 clear_coronation_traits_effect = {
-  if = { limit = { trait = crowned_by_priest }  remove_trait = crowned_by_priest  }
-  if = { limit = { trait = crowned_by_bishop }  remove_trait = crowned_by_bishop  }
-  if = { limit = { trait = crowned_by_pope }    remove_trait = crowned_by_pope    }
-  if = { limit = { trait = crowned_by_myself }  remove_trait = crowned_by_myself  }
+  if = { limit = { trait = crowned_by_priest }     remove_trait = crowned_by_priest     }
+  if = { limit = { trait = crowned_by_priest_rd }  remove_trait = crowned_by_priest_rd  }
+  if = { limit = { trait = crowned_by_bishop }     remove_trait = crowned_by_bishop     }
+  if = { limit = { trait = crowned_by_bishop_rd }  remove_trait = crowned_by_bishop_rd  }
+  if = { limit = { trait = crowned_by_pope }       remove_trait = crowned_by_pope       }
+  if = { limit = { trait = crowned_by_pope_rd }    remove_trait = crowned_by_pope_rd    }
+  if = { limit = { trait = crowned_by_myself }     remove_trait = crowned_by_myself     }
 }
 
 clear_baptism_traits_effect = {

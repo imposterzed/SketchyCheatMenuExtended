@@ -1,0 +1,21 @@
+############################################################
+##              Sketchy Cheat Menu Extended               ##
+##                Religion Compat Triggers                ##
+############################################################
+
+# CleanSlate renamed k_papal_state to k_papacy.
+scme_is_antipope_trigger = {
+  trigger_if = {
+    limit = { has_global_flag = cleanslate_active }
+    OR = {
+      has_claim = k_papacy
+      has_claim = d_fraticelli
+    }
+  }
+  trigger_else = {
+    OR = {
+      has_claim = k_papal_state
+      has_claim = d_fraticelli
+    }
+  }
+}

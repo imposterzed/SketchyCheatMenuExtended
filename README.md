@@ -244,6 +244,7 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
 - **Legacy of Rome**
   - Stays: **Succession Law: Imperial Elective** and the **Eunuch** / **Augustus** trait toggles.
 - **Monks and Mystics**
+  - Hidden: **Add Baptized by Satan** (requires the Satanists society).
   - Hidden if Holy Fury is also off: **Add 5k Society Points** and **Increase Society Rank** (both require society membership).
   - Stays: the **Mystic** trait toggle.
 - **Rajas of India**

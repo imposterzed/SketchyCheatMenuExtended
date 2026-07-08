@@ -1638,6 +1638,11 @@ show_christian_status_desc;Show Christian Status;;;;;;;;;;;;;x
 
 hide_christian_status;----Hide Christian Status;;;;;;;;;;;;;x
 hide_christian_status_desc;Hide Christian Status;;;;;;;;;;;;;x
+SCME_TT_POPE_ALIVE;The Pope is alive.;;;;;;;;;;;;;x
+SCME_TT_PATRIARCH_ALIVE;The Patriarch is alive.;;;;;;;;;;;;;x
+SCME_TT_PRINCE_BISHOP_AVAILABLE;A Prince-Bishop, Cardinal, or antipope claimant is in your realm.;;;;;;;;;;;;;x
+SCME_TT_BISHOP_AVAILABLE;A senior Bishop is in your realm.;;;;;;;;;;;;;x
+SCME_TT_SATANIST_GRANDMASTER_EXISTS;The Grand Master of [GetLucifersOwnSocietyName] exists.;;;;;;;;;;;;;x
 add_crowned_by_bishop;--------Add Crowned by Prince-Bishop;;;;;;;;;;;;;x
 add_crowned_by_bishop_desc;Add Crowned by Prince-Bishop;;;;;;;;;;;;;x
 
