@@ -28,9 +28,6 @@ decisions = {
       set_character_flag = traits_enabled
       clr_character_flag = traits_disabled
     }
-    revoke_allowed = {
-      always = no
-    }
 
     ai_will_do = {
       factor = 0
@@ -49,9 +46,6 @@ decisions = {
     effect = {
       clr_character_flag = traits_enabled
       set_character_flag = traits_disabled
-    }
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -76,10 +70,6 @@ decisions = {
       set_character_flag = show_cheat_traits
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -99,10 +89,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_cheat_traits
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -127,10 +113,6 @@ decisions = {
       add_all_cheat_traits_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -151,10 +133,6 @@ decisions = {
 
     effect = {
       clear_cheat_traits_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -179,10 +157,6 @@ decisions = {
       remove_trait = beloved
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -203,10 +177,6 @@ decisions = {
 
     effect = {
       add_trait = beloved
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -231,10 +201,6 @@ decisions = {
       remove_trait = immortal
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -255,10 +221,6 @@ decisions = {
 
     effect = {
       add_trait = immortal
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -283,10 +245,6 @@ decisions = {
       remove_trait = builder
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -307,10 +265,6 @@ decisions = {
 
     effect = {
       add_trait = builder
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -335,10 +289,6 @@ decisions = {
       remove_trait = mastermind
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -359,10 +309,6 @@ decisions = {
 
     effect = {
       add_trait = mastermind
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -387,10 +333,6 @@ decisions = {
       remove_trait = landlord
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -411,10 +353,6 @@ decisions = {
 
     effect = {
       add_trait = landlord
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -439,10 +377,6 @@ decisions = {
       remove_trait = conspirator
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -463,10 +397,6 @@ decisions = {
 
     effect = {
       add_trait = conspirator
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -491,10 +421,6 @@ decisions = {
       set_character_flag = show_virtues
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -514,10 +440,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_virtues
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -542,10 +464,6 @@ decisions = {
       add_all_virtues_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -568,10 +486,6 @@ decisions = {
       clear_virtue_traits_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -592,10 +506,6 @@ decisions = {
 
     effect = {
       remove_trait = chaste
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -624,10 +534,6 @@ decisions = {
       add_trait = chaste
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -648,10 +554,6 @@ decisions = {
 
     effect = {
       remove_trait = temperate
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -680,10 +582,6 @@ decisions = {
       add_trait = temperate
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -704,10 +602,6 @@ decisions = {
 
     effect = {
       remove_trait = kind
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -740,10 +634,6 @@ decisions = {
       add_trait = kind
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -764,10 +654,6 @@ decisions = {
 
     effect = {
       remove_trait = charitable
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -796,10 +682,6 @@ decisions = {
       add_trait = charitable
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -820,10 +702,6 @@ decisions = {
 
     effect = {
       remove_trait = patient
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -852,10 +730,6 @@ decisions = {
       add_trait = patient
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -876,10 +750,6 @@ decisions = {
 
     effect = {
       remove_trait = diligent
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -908,10 +778,6 @@ decisions = {
       add_trait = diligent
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -932,10 +798,6 @@ decisions = {
 
     effect = {
       remove_trait = humble
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -964,10 +826,6 @@ decisions = {
       add_trait = humble
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -990,10 +848,6 @@ decisions = {
       set_character_flag = show_sins
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1013,10 +867,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_sins
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1041,10 +891,6 @@ decisions = {
       add_all_sins_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1067,10 +913,6 @@ decisions = {
       clear_sin_traits_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1091,10 +933,6 @@ decisions = {
 
     effect = {
       remove_trait = lustful
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1123,10 +961,6 @@ decisions = {
       add_trait = lustful
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1147,10 +981,6 @@ decisions = {
 
     effect = {
       remove_trait = greedy
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1179,10 +1009,6 @@ decisions = {
       add_trait = greedy
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1203,10 +1029,6 @@ decisions = {
 
     effect = {
       remove_trait = slothful
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1235,10 +1057,6 @@ decisions = {
       add_trait = slothful
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1259,10 +1077,6 @@ decisions = {
 
     effect = {
       remove_trait = gluttonous
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1291,10 +1105,6 @@ decisions = {
       add_trait = gluttonous
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1315,10 +1125,6 @@ decisions = {
 
     effect = {
       remove_trait = wroth
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1347,10 +1153,6 @@ decisions = {
       add_trait = wroth
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1371,10 +1173,6 @@ decisions = {
 
     effect = {
       remove_trait = proud
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1403,10 +1201,6 @@ decisions = {
       add_trait = proud
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1427,10 +1221,6 @@ decisions = {
 
     effect = {
       remove_trait = envious
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1459,10 +1249,6 @@ decisions = {
       add_trait = envious
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1485,10 +1271,6 @@ decisions = {
       set_character_flag = show_personality
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1508,10 +1290,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_personality
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1536,10 +1314,6 @@ decisions = {
       add_positive_personality_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1560,10 +1334,6 @@ decisions = {
 
     effect = {
       clear_positive_personality_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1588,10 +1358,6 @@ decisions = {
       add_negative_personality_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1614,10 +1380,6 @@ decisions = {
       clear_negative_personality_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1638,10 +1400,6 @@ decisions = {
 
     effect = {
       remove_trait = ambitious
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1670,10 +1428,6 @@ decisions = {
       add_trait = ambitious
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1694,10 +1448,6 @@ decisions = {
 
     effect = {
       remove_trait = content
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1726,10 +1476,6 @@ decisions = {
       add_trait = content
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1750,10 +1496,6 @@ decisions = {
 
     effect = {
       remove_trait = brave
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1782,10 +1524,6 @@ decisions = {
       add_trait = brave
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1806,10 +1544,6 @@ decisions = {
 
     effect = {
       remove_trait = craven
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1838,10 +1572,6 @@ decisions = {
       add_trait = craven
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1862,10 +1592,6 @@ decisions = {
 
     effect = {
       remove_physique_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1895,10 +1621,6 @@ decisions = {
       add_physique_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1919,10 +1641,6 @@ decisions = {
 
     effect = {
       remove_trait = sturdy
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1949,10 +1667,6 @@ decisions = {
       add_trait = sturdy
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1973,10 +1687,6 @@ decisions = {
 
     effect = {
       remove_feeble_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2006,10 +1716,6 @@ decisions = {
       add_feeble_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2030,10 +1736,6 @@ decisions = {
 
     effect = {
       remove_trait = cynical
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2062,10 +1764,6 @@ decisions = {
       add_trait = cynical
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2086,10 +1784,6 @@ decisions = {
 
     effect = {
       remove_trait = zealous
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2146,10 +1840,6 @@ decisions = {
       add_trait = zealous
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2170,10 +1860,6 @@ decisions = {
 
     effect = {
       remove_trait = erudite
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2198,10 +1884,6 @@ decisions = {
       add_trait = erudite
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2222,10 +1904,6 @@ decisions = {
 
     effect = {
       remove_trait = gregarious
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2254,10 +1932,6 @@ decisions = {
       add_trait = gregarious
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2278,10 +1952,6 @@ decisions = {
 
     effect = {
       remove_trait = shy
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2310,10 +1980,6 @@ decisions = {
       add_trait = shy
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2334,10 +2000,6 @@ decisions = {
 
     effect = {
       remove_trait = groomed
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2366,10 +2028,6 @@ decisions = {
       add_trait = groomed
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2390,10 +2048,6 @@ decisions = {
 
     effect = {
       remove_trait = uncouth
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2422,10 +2076,6 @@ decisions = {
       add_trait = uncouth
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2446,10 +2096,6 @@ decisions = {
 
     effect = {
       remove_trait = honest
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2478,10 +2124,6 @@ decisions = {
       add_trait = honest
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2502,10 +2144,6 @@ decisions = {
 
     effect = {
       remove_trait = deceitful
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2534,10 +2172,6 @@ decisions = {
       add_trait = deceitful
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2558,10 +2192,6 @@ decisions = {
 
     effect = {
       remove_trait = just
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2590,10 +2220,6 @@ decisions = {
       add_trait = just
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2614,10 +2240,6 @@ decisions = {
 
     effect = {
       remove_trait = arbitrary
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2646,10 +2268,6 @@ decisions = {
       add_trait = arbitrary
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2670,10 +2288,6 @@ decisions = {
 
     effect = {
       remove_trait = shrewd
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2702,10 +2316,6 @@ decisions = {
       add_trait = shrewd
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2726,10 +2336,6 @@ decisions = {
 
     effect = {
       remove_trait = dull
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2758,10 +2364,6 @@ decisions = {
       add_trait = dull
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2782,10 +2384,6 @@ decisions = {
 
     effect = {
       remove_trait = trusting
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2814,10 +2412,6 @@ decisions = {
       add_trait = trusting
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2838,10 +2432,6 @@ decisions = {
 
     effect = {
       remove_trait = paranoid
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2870,10 +2460,6 @@ decisions = {
       add_trait = paranoid
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2894,10 +2480,6 @@ decisions = {
 
     effect = {
       remove_trait = cruel
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2926,10 +2508,6 @@ decisions = {
       add_trait = cruel
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -2950,10 +2528,6 @@ decisions = {
 
     effect = {
       remove_trait = stubborn
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -2978,10 +2552,6 @@ decisions = {
       add_trait = stubborn
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3004,10 +2574,6 @@ decisions = {
       set_character_flag = show_education
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3027,10 +2593,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_education
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3059,10 +2621,6 @@ decisions = {
       add_trait = grey_eminence
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3084,10 +2642,6 @@ decisions = {
     effect = {
       clear_education_traits_effect = yes
       add_trait = brilliant_strategist
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3113,10 +2667,6 @@ decisions = {
       add_trait = midas_touched
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3138,10 +2688,6 @@ decisions = {
     effect = {
       clear_education_traits_effect = yes
       add_trait = elusive_shadow
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3167,10 +2713,6 @@ decisions = {
       add_trait = mastermind_theologian
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3193,10 +2735,6 @@ decisions = {
       set_character_flag = show_health
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3216,10 +2754,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_health
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3256,10 +2790,6 @@ decisions = {
       clear_birth_defects_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3282,10 +2812,6 @@ decisions = {
       remove_all_afflictions_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3306,10 +2832,6 @@ decisions = {
 
     effect = {
       remove_beauty_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3338,10 +2860,6 @@ decisions = {
       add_beauty_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3362,10 +2880,6 @@ decisions = {
 
     effect = {
       remove_trait = genius
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3391,10 +2905,6 @@ decisions = {
       add_trait = genius
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3415,10 +2925,6 @@ decisions = {
 
     effect = {
       remove_trait = quick
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3444,10 +2950,6 @@ decisions = {
       add_trait = quick
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3468,10 +2970,6 @@ decisions = {
 
     effect = {
       remove_trait = strong
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3500,10 +2998,6 @@ decisions = {
       add_trait = strong
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3524,10 +3018,6 @@ decisions = {
 
     effect = {
       remove_trait = giant
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3556,10 +3046,6 @@ decisions = {
       add_trait = giant
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3580,10 +3066,6 @@ decisions = {
 
     effect = {
       remove_trait = lefthanded
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3608,10 +3090,6 @@ decisions = {
       add_trait = lefthanded
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3632,10 +3110,6 @@ decisions = {
 
     effect = {
       remove_trait = scarred
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3661,10 +3135,6 @@ decisions = {
       add_trait = scarred
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3685,10 +3155,6 @@ decisions = {
 
     effect = {
       remove_trait = scarred_mid
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3714,10 +3180,6 @@ decisions = {
       add_trait = scarred_mid
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3738,10 +3200,6 @@ decisions = {
 
     effect = {
       remove_trait = scarred_high
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3765,10 +3223,6 @@ decisions = {
     effect = {
       clear_scarred_variant_traits_effect = yes
       add_trait = scarred_high
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3797,10 +3251,6 @@ decisions = {
       add_trait = freckles
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3821,10 +3271,6 @@ decisions = {
 
     effect = {
       add_trait = freckles_2
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3849,10 +3295,6 @@ decisions = {
       add_trait = freckles_3
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3873,10 +3315,6 @@ decisions = {
 
     effect = {
       add_trait = freckles_4
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3901,10 +3339,6 @@ decisions = {
       add_trait = freckles_5
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3927,10 +3361,6 @@ decisions = {
       remove_trait = freckles_5
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -3951,10 +3381,6 @@ decisions = {
 
     effect = {
       remove_fat_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -3980,10 +3406,6 @@ decisions = {
       add_fat_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4004,10 +3426,6 @@ decisions = {
 
     effect = {
       remove_malnourished_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4033,10 +3451,6 @@ decisions = {
       add_malnourished_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4057,10 +3471,6 @@ decisions = {
 
     effect = {
       remove_trait = clubfooted
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4085,10 +3495,6 @@ decisions = {
       add_trait = clubfooted
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4109,10 +3515,6 @@ decisions = {
 
     effect = {
       remove_trait = dwarf
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4141,10 +3543,6 @@ decisions = {
       add_trait = dwarf
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4165,10 +3563,6 @@ decisions = {
 
     effect = {
       remove_trait = harelip
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4193,10 +3587,6 @@ decisions = {
       add_trait = harelip
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4217,10 +3607,6 @@ decisions = {
 
     effect = {
       remove_trait = hunchback
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4245,10 +3631,6 @@ decisions = {
       add_trait = hunchback
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4269,10 +3651,6 @@ decisions = {
 
     effect = {
       remove_trait = imbecile
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4298,10 +3676,6 @@ decisions = {
       add_trait = imbecile
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4322,10 +3696,6 @@ decisions = {
 
     effect = {
       remove_trait = inbred
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4350,10 +3720,6 @@ decisions = {
       add_trait = inbred
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4374,10 +3740,6 @@ decisions = {
 
     effect = {
       remove_trait = lisp
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4402,10 +3764,6 @@ decisions = {
       add_trait = lisp
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4426,10 +3784,6 @@ decisions = {
 
     effect = {
       remove_trait = slow
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4455,10 +3809,6 @@ decisions = {
       add_trait = slow
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4479,10 +3829,6 @@ decisions = {
 
     effect = {
       remove_trait = stutter
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4507,10 +3853,6 @@ decisions = {
       add_trait = stutter
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4531,10 +3873,6 @@ decisions = {
 
     effect = {
       remove_trait = ugly
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4560,10 +3898,6 @@ decisions = {
       add_trait = ugly
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4584,10 +3918,6 @@ decisions = {
 
     effect = {
       remove_trait = weak
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4616,10 +3946,6 @@ decisions = {
       add_trait = weak
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4640,10 +3966,6 @@ decisions = {
 
     effect = {
       remove_trait = blinded
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4668,10 +3990,6 @@ decisions = {
       add_trait = blinded
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4692,10 +4010,6 @@ decisions = {
 
     effect = {
       remove_trait = depressed
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4720,10 +4034,6 @@ decisions = {
       add_trait = depressed
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4744,10 +4054,6 @@ decisions = {
 
     effect = {
       remove_trait = disfigured
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4772,10 +4078,6 @@ decisions = {
       add_trait = disfigured
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4796,10 +4098,6 @@ decisions = {
 
     effect = {
       remove_trait = drunkard
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4824,10 +4122,6 @@ decisions = {
       add_trait = drunkard
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4848,10 +4142,6 @@ decisions = {
 
     effect = {
       remove_trait = incapable
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4876,10 +4166,6 @@ decisions = {
       add_trait = incapable
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4900,10 +4186,6 @@ decisions = {
 
     effect = {
       remove_trait = infirm
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4928,10 +4210,6 @@ decisions = {
       add_trait = infirm
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -4952,10 +4230,6 @@ decisions = {
 
     effect = {
       remove_trait = lovers_pox
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -4980,10 +4254,6 @@ decisions = {
       add_trait = lovers_pox
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5004,10 +4274,6 @@ decisions = {
 
     effect = {
       remove_trait = lunatic
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5032,10 +4298,6 @@ decisions = {
       add_trait = lunatic
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5056,10 +4318,6 @@ decisions = {
 
     effect = {
       remove_trait = maimed
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5088,10 +4346,6 @@ decisions = {
       add_trait = maimed
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5112,10 +4366,6 @@ decisions = {
 
     effect = {
       remove_trait = mangled
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5140,10 +4390,6 @@ decisions = {
       add_trait = mangled
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5164,10 +4410,6 @@ decisions = {
 
     effect = {
       remove_trait = one_eyed
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5192,10 +4434,6 @@ decisions = {
       add_trait = one_eyed
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5216,10 +4454,6 @@ decisions = {
 
     effect = {
       remove_trait = one_handed
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5244,10 +4478,6 @@ decisions = {
       add_trait = one_handed
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5268,10 +4498,6 @@ decisions = {
 
     effect = {
       remove_trait = one_legged
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5296,10 +4522,6 @@ decisions = {
       add_trait = one_legged
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5320,10 +4542,6 @@ decisions = {
 
     effect = {
       remove_trait = possessed
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5348,10 +4566,6 @@ decisions = {
       add_trait = possessed
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5372,10 +4586,6 @@ decisions = {
 
     effect = {
       remove_trait = severely_injured
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5400,10 +4610,6 @@ decisions = {
       add_trait = severely_injured
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5424,10 +4630,6 @@ decisions = {
 
     effect = {
       remove_trait = sick_incapable
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5452,10 +4654,6 @@ decisions = {
       add_trait = sick_incapable
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5476,10 +4674,6 @@ decisions = {
 
     effect = {
       remove_trait = stressed
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5504,10 +4698,6 @@ decisions = {
       add_trait = stressed
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5528,10 +4718,6 @@ decisions = {
 
     effect = {
       remove_trait = wounded
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5560,10 +4746,6 @@ decisions = {
       add_trait = wounded
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5586,10 +4768,6 @@ decisions = {
       set_character_flag = show_leadership
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5609,10 +4787,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_leadership
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5637,10 +4811,6 @@ decisions = {
       add_all_leadership_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5661,10 +4831,6 @@ decisions = {
 
     effect = {
       clear_leadership_traits_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5689,10 +4855,6 @@ decisions = {
       remove_trait = aggressive_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5713,10 +4875,6 @@ decisions = {
 
     effect = {
       add_trait = aggressive_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5741,10 +4899,6 @@ decisions = {
       remove_battlefield_terrain_master_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5765,10 +4919,6 @@ decisions = {
 
     effect = {
       add_battlefield_terrain_master_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5793,10 +4943,6 @@ decisions = {
       remove_trait = defensive_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5817,10 +4963,6 @@ decisions = {
 
     effect = {
       add_trait = defensive_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5845,10 +4987,6 @@ decisions = {
       remove_direct_leader_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5869,10 +5007,6 @@ decisions = {
 
     effect = {
       add_direct_leader_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5897,10 +5031,6 @@ decisions = {
       remove_trait = flanker
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5921,10 +5051,6 @@ decisions = {
 
     effect = {
       add_trait = flanker
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -5949,10 +5075,6 @@ decisions = {
       remove_trait = holy_warrior
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -5973,10 +5095,6 @@ decisions = {
 
     effect = {
       add_trait = holy_warrior
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6001,10 +5119,6 @@ decisions = {
       remove_trait = inspiring_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6025,10 +5139,6 @@ decisions = {
 
     effect = {
       add_trait = inspiring_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6053,10 +5163,6 @@ decisions = {
       remove_trait = organizer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6077,10 +5183,6 @@ decisions = {
 
     effect = {
       add_trait = organizer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6105,10 +5207,6 @@ decisions = {
       remove_trait = siege_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6129,10 +5227,6 @@ decisions = {
 
     effect = {
       add_trait = siege_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6157,10 +5251,6 @@ decisions = {
       remove_trait = trickster
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6181,10 +5271,6 @@ decisions = {
 
     effect = {
       add_trait = trickster
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6209,10 +5295,6 @@ decisions = {
       remove_trait = unyielding_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6233,10 +5315,6 @@ decisions = {
 
     effect = {
       add_trait = unyielding_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6261,10 +5339,6 @@ decisions = {
       remove_trait = winter_soldier
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6285,10 +5359,6 @@ decisions = {
 
     effect = {
       add_trait = winter_soldier
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6313,10 +5383,6 @@ decisions = {
       remove_trait = cavalry_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6337,10 +5403,6 @@ decisions = {
 
     effect = {
       add_trait = cavalry_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6365,10 +5427,6 @@ decisions = {
       remove_trait = heavy_infantry_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6389,10 +5447,6 @@ decisions = {
 
     effect = {
       add_trait = heavy_infantry_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6417,10 +5471,6 @@ decisions = {
       remove_trait = light_foot_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6441,10 +5491,6 @@ decisions = {
 
     effect = {
       add_trait = light_foot_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6469,10 +5515,6 @@ decisions = {
       remove_trait = war_elephant_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6493,10 +5535,6 @@ decisions = {
 
     effect = {
       add_trait = war_elephant_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6521,10 +5559,6 @@ decisions = {
       remove_desert_terrain_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6545,10 +5579,6 @@ decisions = {
 
     effect = {
       add_desert_terrain_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6573,10 +5603,6 @@ decisions = {
       remove_flat_terrain_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6597,10 +5623,6 @@ decisions = {
 
     effect = {
       add_flat_terrain_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6625,10 +5647,6 @@ decisions = {
       remove_jungle_terrain_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6649,10 +5667,6 @@ decisions = {
 
     effect = {
       add_jungle_terrain_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6677,10 +5691,6 @@ decisions = {
       remove_mountain_terrain_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6701,10 +5711,6 @@ decisions = {
 
     effect = {
       add_mountain_terrain_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6729,10 +5735,6 @@ decisions = {
       remove_rough_terrain_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6753,10 +5755,6 @@ decisions = {
 
     effect = {
       add_rough_terrain_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6781,10 +5779,6 @@ decisions = {
       set_character_flag = show_warriors
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6804,10 +5798,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_warriors
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6832,10 +5822,6 @@ decisions = {
       add_all_warriors_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6856,10 +5842,6 @@ decisions = {
 
     effect = {
       clear_warriors_traits_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6884,10 +5866,6 @@ decisions = {
       remove_trait = adventurer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6908,10 +5886,6 @@ decisions = {
 
     effect = {
       add_trait = adventurer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6936,10 +5910,6 @@ decisions = {
       remove_trait = berserker
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -6960,10 +5930,6 @@ decisions = {
 
     effect = {
       add_trait = berserker
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -6988,10 +5954,6 @@ decisions = {
       remove_trait = gladiator
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7014,10 +5976,6 @@ decisions = {
       add_trait = gladiator
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7038,10 +5996,6 @@ decisions = {
 
     effect = {
       remove_trait = shieldmaiden
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7067,10 +6021,6 @@ decisions = {
       add_trait = shieldmaiden
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7093,10 +6043,6 @@ decisions = {
       remove_trait = varangian
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7117,10 +6063,6 @@ decisions = {
 
     effect = {
       add_trait = varangian
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7146,10 +6088,6 @@ decisions = {
       set_character_flag = show_holy_war_rewards
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7169,10 +6107,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_holy_war_rewards
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7195,10 +6129,6 @@ decisions = {
 
     effect = {
       remove_trait = ares_own
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7228,10 +6158,6 @@ decisions = {
       add_trait = ares_own
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7252,10 +6178,6 @@ decisions = {
 
     effect = {
       remove_trait = crusader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7282,10 +6204,6 @@ decisions = {
       add_trait = crusader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7306,10 +6224,6 @@ decisions = {
 
     effect = {
       remove_trait = crusader_king
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7337,10 +6251,6 @@ decisions = {
       add_trait = crusader_king
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7361,10 +6271,6 @@ decisions = {
 
     effect = {
       remove_trait = crusader_queen
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7392,10 +6298,6 @@ decisions = {
       add_trait = crusader_queen
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7416,10 +6318,6 @@ decisions = {
 
     effect = {
       remove_eagle_warrior_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7446,10 +6344,6 @@ decisions = {
       add_eagle_warrior_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7470,10 +6364,6 @@ decisions = {
 
     effect = {
       remove_trait = sun_warrior
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7500,10 +6390,6 @@ decisions = {
       add_trait = sun_warrior
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7524,10 +6410,6 @@ decisions = {
 
     effect = {
       remove_trait = gondi_shahansha
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7554,10 +6436,6 @@ decisions = {
       add_trait = gondi_shahansha
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7578,10 +6456,6 @@ decisions = {
 
     effect = {
       remove_romuvas_own_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7611,10 +6485,6 @@ decisions = {
       add_romuvas_own_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7635,10 +6505,6 @@ decisions = {
 
     effect = {
       remove_trait = kailash_guardian
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7665,10 +6531,6 @@ decisions = {
       add_trait = kailash_guardian
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7689,10 +6551,6 @@ decisions = {
 
     effect = {
       remove_shaddai_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7719,10 +6577,6 @@ decisions = {
       add_shaddai_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7743,10 +6597,6 @@ decisions = {
 
     effect = {
       remove_trait = mujahid
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7773,10 +6623,6 @@ decisions = {
       add_trait = mujahid
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7797,10 +6643,6 @@ decisions = {
 
     effect = {
       remove_trait = nyames_shield
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7830,10 +6672,6 @@ decisions = {
       add_trait = nyames_shield
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7854,10 +6692,6 @@ decisions = {
 
     effect = {
       remove_trait = peruns_chosen
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7887,10 +6721,6 @@ decisions = {
       add_trait = peruns_chosen
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7911,10 +6741,6 @@ decisions = {
 
     effect = {
       remove_tengri_warrior_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -7944,10 +6770,6 @@ decisions = {
       add_tengri_warrior_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -7968,10 +6790,6 @@ decisions = {
 
     effect = {
       remove_ukkos_shield_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8001,10 +6819,6 @@ decisions = {
       add_ukkos_shield_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8025,10 +6839,6 @@ decisions = {
 
     effect = {
       remove_trait = valhalla_bound
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8058,10 +6868,6 @@ decisions = {
       add_trait = valhalla_bound
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8085,10 +6891,6 @@ decisions = {
       set_character_flag = show_warrior_lodge
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8108,10 +6910,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_warrior_lodge
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8134,10 +6932,6 @@ decisions = {
 
     effect = {
       remove_trait = hellenic_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8166,10 +6960,6 @@ decisions = {
       add_trait = hellenic_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8190,10 +6980,6 @@ decisions = {
 
     effect = {
       remove_trait = norse_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8222,10 +7008,6 @@ decisions = {
       add_trait = norse_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8246,10 +7028,6 @@ decisions = {
 
     effect = {
       remove_trait = baltic_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8278,10 +7056,6 @@ decisions = {
       add_trait = baltic_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8302,10 +7076,6 @@ decisions = {
 
     effect = {
       remove_trait = tengri_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8334,10 +7104,6 @@ decisions = {
       add_trait = tengri_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8358,10 +7124,6 @@ decisions = {
 
     effect = {
       remove_trait = bon_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8387,10 +7149,6 @@ decisions = {
       add_trait = bon_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8411,10 +7169,6 @@ decisions = {
 
     effect = {
       remove_trait = slavic_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8443,10 +7197,6 @@ decisions = {
       add_trait = slavic_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8467,10 +7217,6 @@ decisions = {
 
     effect = {
       remove_trait = zun_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8499,10 +7245,6 @@ decisions = {
       add_trait = zun_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8523,10 +7265,6 @@ decisions = {
 
     effect = {
       remove_trait = finnish_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8555,10 +7293,6 @@ decisions = {
       add_trait = finnish_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8579,10 +7313,6 @@ decisions = {
 
     effect = {
       remove_trait = west_african_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8611,10 +7341,6 @@ decisions = {
       add_trait = west_african_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8637,10 +7363,6 @@ decisions = {
       set_character_flag = show_chinese_commander
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8660,10 +7382,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_chinese_commander
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8689,10 +7407,6 @@ decisions = {
       add_all_chinese_imperial_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8716,10 +7430,6 @@ decisions = {
       add_all_chinese_imperial_vanilla_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8740,10 +7450,6 @@ decisions = {
 
     effect = {
       clear_chinese_imperial_traits_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8769,10 +7475,6 @@ decisions = {
       remove_trait = logistics_expert
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8793,10 +7495,6 @@ decisions = {
 
     effect = {
       add_trait = logistics_expert
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8821,10 +7519,6 @@ decisions = {
       remove_trait = master_of_flame
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8845,10 +7539,6 @@ decisions = {
 
     effect = {
       add_trait = master_of_flame
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8873,10 +7563,6 @@ decisions = {
       remove_trait = sapper
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8897,10 +7583,6 @@ decisions = {
 
     effect = {
       add_trait = sapper
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8925,10 +7607,6 @@ decisions = {
       remove_trait = levy_coordinator
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -8949,10 +7627,6 @@ decisions = {
 
     effect = {
       add_trait = levy_coordinator
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -8976,10 +7650,6 @@ decisions = {
 
     effect = {
       remove_trait = kow_tow_completed_tier_1
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9006,10 +7676,6 @@ decisions = {
       add_trait = kow_tow_completed_tier_1
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9030,10 +7696,6 @@ decisions = {
 
     effect = {
       remove_trait = kow_tow_completed_tier_2
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9060,10 +7722,6 @@ decisions = {
       add_trait = kow_tow_completed_tier_2
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9084,10 +7742,6 @@ decisions = {
 
     effect = {
       remove_trait = kow_tow_completed_tier_3
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9114,10 +7768,6 @@ decisions = {
       add_trait = kow_tow_completed_tier_3
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9138,10 +7788,6 @@ decisions = {
 
     effect = {
       set_character_flag = show_raiding
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9165,10 +7811,6 @@ decisions = {
       clr_character_flag = show_raiding
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9189,10 +7831,6 @@ decisions = {
 
     effect = {
       remove_trait = viking
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9218,10 +7856,6 @@ decisions = {
       add_trait = viking
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9242,10 +7876,6 @@ decisions = {
 
     effect = {
       remove_trait = pirate
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9271,10 +7901,6 @@ decisions = {
       add_trait = pirate
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9295,10 +7921,6 @@ decisions = {
 
     effect = {
       remove_trait = ravager
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9324,10 +7946,6 @@ decisions = {
       add_trait = ravager
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9348,10 +7966,6 @@ decisions = {
 
     effect = {
       remove_seaking_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9378,10 +7992,6 @@ decisions = {
       add_seaking_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9402,10 +8012,6 @@ decisions = {
 
     effect = {
       remove_trait = sea_queen
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9432,10 +8038,6 @@ decisions = {
       add_trait = sea_queen
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9458,10 +8060,6 @@ decisions = {
       set_character_flag = show_lifestyle
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9481,10 +8079,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_lifestyle
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9509,10 +8103,6 @@ decisions = {
       add_all_lifestyles_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9533,10 +8123,6 @@ decisions = {
 
     effect = {
       clear_lifestyle_traits_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9561,10 +8147,6 @@ decisions = {
       remove_trait = administrator
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9585,10 +8167,6 @@ decisions = {
 
     effect = {
       add_trait = administrator
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9613,10 +8191,6 @@ decisions = {
       remove_trait = architect
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9639,10 +8213,6 @@ decisions = {
       add_trait = architect
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9663,10 +8233,6 @@ decisions = {
 
     effect = {
       remove_trait = celibate
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9697,10 +8263,6 @@ decisions = {
       add_trait = celibate
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9721,10 +8283,6 @@ decisions = {
 
     effect = {
       remove_trait = duelist
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9749,10 +8307,6 @@ decisions = {
       add_trait = duelist
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9773,10 +8327,6 @@ decisions = {
 
     effect = {
       remove_trait = falconer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9801,10 +8351,6 @@ decisions = {
       add_trait = falconer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9825,10 +8371,6 @@ decisions = {
 
     effect = {
       remove_trait = faqih
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9858,10 +8400,6 @@ decisions = {
       add_trait = faqih
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9882,10 +8420,6 @@ decisions = {
 
     effect = {
       remove_gamer_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9910,10 +8444,6 @@ decisions = {
       add_gamer_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9934,10 +8464,6 @@ decisions = {
 
     effect = {
       remove_trait = gardener
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -9962,10 +8488,6 @@ decisions = {
       add_trait = gardener
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -9986,10 +8508,6 @@ decisions = {
 
     effect = {
       remove_trait = hedonist
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10018,10 +8536,6 @@ decisions = {
       add_trait = hedonist
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10042,10 +8556,6 @@ decisions = {
 
     effect = {
       remove_trait = hunter
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10070,10 +8580,6 @@ decisions = {
       add_trait = hunter
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10094,10 +8600,6 @@ decisions = {
 
     effect = {
       remove_trait = impaler
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10122,10 +8624,6 @@ decisions = {
       add_trait = impaler
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10146,10 +8644,6 @@ decisions = {
 
     effect = {
       remove_schemer_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10174,10 +8668,6 @@ decisions = {
       add_schemer_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10199,10 +8689,6 @@ decisions = {
 
     effect = {
       remove_seducer_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10233,10 +8719,6 @@ decisions = {
       add_seducer_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10258,10 +8740,6 @@ decisions = {
 
     effect = {
       remove_seducer_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10292,10 +8770,6 @@ decisions = {
       add_seducer_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10316,10 +8790,6 @@ decisions = {
 
     effect = {
       remove_trait = mystic
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10344,10 +8814,6 @@ decisions = {
       add_trait = mystic
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10368,10 +8834,6 @@ decisions = {
 
     effect = {
       remove_trait = poet
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10396,10 +8858,6 @@ decisions = {
       add_trait = poet
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10420,10 +8878,6 @@ decisions = {
 
     effect = {
       remove_trait = physician
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10448,10 +8902,6 @@ decisions = {
       add_trait = physician
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10472,10 +8922,6 @@ decisions = {
 
     effect = {
       remove_trait = scholar
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10505,10 +8951,6 @@ decisions = {
       add_trait = scholar
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10529,10 +8971,6 @@ decisions = {
 
     effect = {
       remove_trait = socializer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10557,10 +8995,6 @@ decisions = {
       add_trait = socializer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10581,10 +9015,6 @@ decisions = {
 
     effect = {
       remove_trait = strategist
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10609,10 +9039,6 @@ decisions = {
       add_trait = strategist
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10633,10 +9059,6 @@ decisions = {
 
     effect = {
       remove_trait = theologian
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10661,10 +9083,6 @@ decisions = {
       add_trait = theologian
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10687,10 +9105,6 @@ decisions = {
       set_character_flag = show_religious_markers
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10710,10 +9124,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_religious_markers
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10739,10 +9149,6 @@ decisions = {
       remove_trait = hajjaj
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10766,10 +9172,6 @@ decisions = {
       add_trait = hajjaj
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10790,10 +9192,6 @@ decisions = {
 
     effect = {
       remove_trait = indian_pilgrim
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10819,10 +9217,6 @@ decisions = {
       add_trait = indian_pilgrim
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10843,10 +9237,6 @@ decisions = {
 
     effect = {
       remove_trait = pilgrim
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10872,10 +9262,6 @@ decisions = {
       add_trait = pilgrim
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10897,10 +9283,6 @@ decisions = {
 
     effect = {
       remove_trait = reincarnation
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10925,10 +9307,6 @@ decisions = {
       add_trait = reincarnation
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -10949,10 +9327,6 @@ decisions = {
 
     effect = {
       remove_trait = saoshyant
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -10977,10 +9351,6 @@ decisions = {
       add_trait = saoshyant
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11003,10 +9373,6 @@ decisions = {
       remove_trait = saoshyant_descendant
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11027,10 +9393,6 @@ decisions = {
 
     effect = {
       add_trait = saoshyant_descendant
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11056,10 +9418,6 @@ decisions = {
       add_all_sympathies_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11082,10 +9440,6 @@ decisions = {
       clear_sympathy_traits_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11106,10 +9460,6 @@ decisions = {
 
     effect = {
       remove_trait = sympathy_christendom
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11136,10 +9486,6 @@ decisions = {
       add_trait = sympathy_christendom
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11160,10 +9506,6 @@ decisions = {
 
     effect = {
       remove_trait = sympathy_indian
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11190,10 +9532,6 @@ decisions = {
       add_trait = sympathy_indian
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11214,10 +9552,6 @@ decisions = {
 
     effect = {
       remove_trait = sympathy_judaism
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11244,10 +9578,6 @@ decisions = {
       add_trait = sympathy_judaism
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11268,10 +9598,6 @@ decisions = {
 
     effect = {
       remove_trait = sympathy_zoroastrianism
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11298,10 +9624,6 @@ decisions = {
       add_trait = sympathy_zoroastrianism
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11322,10 +9644,6 @@ decisions = {
 
     effect = {
       remove_trait = sympathy_islam
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11352,10 +9670,6 @@ decisions = {
       add_trait = sympathy_islam
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11376,10 +9690,6 @@ decisions = {
 
     effect = {
       remove_trait = sympathy_pagans
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11406,10 +9716,6 @@ decisions = {
       add_trait = sympathy_pagans
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11431,10 +9737,6 @@ decisions = {
 
     effect = {
       remove_trait = bloodthirsty_gods_1
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11460,10 +9762,6 @@ decisions = {
       add_trait = bloodthirsty_gods_1
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11484,10 +9782,6 @@ decisions = {
 
     effect = {
       remove_trait = bloodthirsty_gods_2
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11513,10 +9807,6 @@ decisions = {
       add_trait = bloodthirsty_gods_2
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11537,10 +9827,6 @@ decisions = {
 
     effect = {
       remove_trait = bloodthirsty_gods_3
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11566,10 +9852,6 @@ decisions = {
       add_trait = bloodthirsty_gods_3
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11590,10 +9872,6 @@ decisions = {
 
     effect = {
       remove_trait = pagan_branch_1
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11619,10 +9897,6 @@ decisions = {
       add_trait = pagan_branch_1
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11643,10 +9917,6 @@ decisions = {
 
     effect = {
       remove_trait = pagan_branch_2
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11672,10 +9942,6 @@ decisions = {
       add_trait = pagan_branch_2
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11696,10 +9962,6 @@ decisions = {
 
     effect = {
       remove_trait = pagan_branch_3
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11725,10 +9987,6 @@ decisions = {
       add_trait = pagan_branch_3
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11749,10 +10007,6 @@ decisions = {
 
     effect = {
       remove_trait = pagan_branch_4
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11778,10 +10032,6 @@ decisions = {
       add_trait = pagan_branch_4
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11803,10 +10053,6 @@ decisions = {
 
     effect = {
       remove_trait = bad_priest_aztec
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11832,10 +10078,6 @@ decisions = {
       add_trait = bad_priest_aztec
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11856,10 +10098,6 @@ decisions = {
 
     effect = {
       remove_trait = bad_priest_christian
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11885,10 +10123,6 @@ decisions = {
       add_trait = bad_priest_christian
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11909,10 +10143,6 @@ decisions = {
 
     effect = {
       remove_trait = bad_priest_muslim
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11938,10 +10168,6 @@ decisions = {
       add_trait = bad_priest_muslim
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -11962,10 +10188,6 @@ decisions = {
 
     effect = {
       remove_trait = bad_priest_norse
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -11994,10 +10216,6 @@ decisions = {
       add_trait = bad_priest_norse
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12018,10 +10236,6 @@ decisions = {
 
     effect = {
       remove_trait = bad_priest_tengri
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12050,10 +10264,6 @@ decisions = {
       add_trait = bad_priest_tengri
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12074,10 +10284,6 @@ decisions = {
 
     effect = {
       remove_trait = bad_priest_zoroastrian
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12103,10 +10309,6 @@ decisions = {
       add_trait = bad_priest_zoroastrian
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12129,10 +10331,6 @@ decisions = {
       remove_trait = excommunicated
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12153,10 +10351,6 @@ decisions = {
 
     effect = {
       add_trait = excommunicated
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12182,10 +10376,6 @@ decisions = {
       set_character_flag = show_ordained_clergy
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12205,10 +10395,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_ordained_clergy
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12231,10 +10417,6 @@ decisions = {
 
     effect = {
       remove_trait = monk
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12261,10 +10443,6 @@ decisions = {
       add_trait = monk
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12285,10 +10463,6 @@ decisions = {
 
     effect = {
       remove_trait = nun
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12315,10 +10489,6 @@ decisions = {
       add_trait = nun
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12339,10 +10509,6 @@ decisions = {
 
     effect = {
       remove_trait = bhikkhu
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12369,10 +10535,6 @@ decisions = {
       add_trait = bhikkhu
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12393,10 +10555,6 @@ decisions = {
 
     effect = {
       remove_trait = bhikkhuni
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12423,10 +10581,6 @@ decisions = {
       add_trait = bhikkhuni
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12447,10 +10601,6 @@ decisions = {
 
     effect = {
       remove_trait = sanyasi
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12477,10 +10627,6 @@ decisions = {
       add_trait = sanyasi
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12501,10 +10647,6 @@ decisions = {
 
     effect = {
       remove_trait = sanyasini
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12531,10 +10673,6 @@ decisions = {
       add_trait = sanyasini
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12555,10 +10693,6 @@ decisions = {
 
     effect = {
       remove_trait = muni
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12585,10 +10719,6 @@ decisions = {
       add_trait = muni
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12609,10 +10739,6 @@ decisions = {
 
     effect = {
       remove_trait = aryika
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12639,10 +10765,6 @@ decisions = {
       add_trait = aryika
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12666,10 +10788,6 @@ decisions = {
       set_character_flag = show_christian_status
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12689,10 +10807,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_christian_status
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12720,10 +10834,6 @@ decisions = {
     effect = {
       if = { limit = { trait = crowned_by_pope }    remove_trait = crowned_by_pope    }
       if = { limit = { trait = crowned_by_pope_rd } remove_trait = crowned_by_pope_rd }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12766,10 +10876,6 @@ decisions = {
       hidden_tooltip = { add_trait = crowned_by_pope }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12794,10 +10900,6 @@ decisions = {
     effect = {
       if = { limit = { trait = crowned_by_bishop }    remove_trait = crowned_by_bishop    }
       if = { limit = { trait = crowned_by_bishop_rd } remove_trait = crowned_by_bishop_rd }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12862,10 +10964,6 @@ decisions = {
       hidden_tooltip = { add_trait = crowned_by_bishop }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12890,10 +10988,6 @@ decisions = {
     effect = {
       if = { limit = { trait = crowned_by_priest }    remove_trait = crowned_by_priest    }
       if = { limit = { trait = crowned_by_priest_rd } remove_trait = crowned_by_priest_rd }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12923,10 +11017,6 @@ decisions = {
       add_trait = crowned_by_priest
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -12947,10 +11037,6 @@ decisions = {
 
     effect = {
       remove_trait = crowned_by_myself
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -12977,10 +11063,6 @@ decisions = {
       add_trait = crowned_by_myself
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13002,10 +11084,6 @@ decisions = {
 
     effect = {
       remove_trait = baptized_by_pope
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13045,10 +11123,6 @@ decisions = {
       hidden_tooltip = { add_trait = baptized_by_pope }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13069,10 +11143,6 @@ decisions = {
 
     effect = {
       remove_trait = baptized_by_patriarch
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13113,10 +11183,6 @@ decisions = {
       hidden_tooltip = { add_trait = baptized_by_patriarch }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13137,10 +11203,6 @@ decisions = {
 
     effect = {
       remove_trait = baptized_by_bishop
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13202,10 +11264,6 @@ decisions = {
       hidden_tooltip = { add_trait = baptized_by_bishop }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13226,10 +11284,6 @@ decisions = {
 
     effect = {
       remove_trait = baptized_by_satan
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13272,10 +11326,6 @@ decisions = {
       hidden_tooltip = { add_trait = baptized_by_satan }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13297,10 +11347,6 @@ decisions = {
 
     effect = {
       remove_trait = beatified
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13326,10 +11372,6 @@ decisions = {
       add_trait = beatified
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13353,10 +11395,6 @@ decisions = {
       set_character_flag = show_muslim_status
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13376,10 +11414,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_muslim_status
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13402,10 +11436,6 @@ decisions = {
 
     effect = {
       remove_trait = ashari
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13435,10 +11465,6 @@ decisions = {
       add_trait = ashari
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13459,10 +11485,6 @@ decisions = {
 
     effect = {
       remove_trait = mutazilite
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13492,10 +11514,6 @@ decisions = {
       add_trait = mutazilite
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13516,10 +11534,6 @@ decisions = {
 
     effect = {
       remove_trait = decadent
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13549,10 +11563,6 @@ decisions = {
       add_trait = decadent
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13573,10 +11583,6 @@ decisions = {
 
     effect = {
       remove_trait = hafiz
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13602,10 +11608,6 @@ decisions = {
       add_trait = hafiz
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13626,10 +11628,6 @@ decisions = {
 
     effect = {
       remove_trait = mirza
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13659,10 +11657,6 @@ decisions = {
       add_trait = mirza
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13683,10 +11677,6 @@ decisions = {
 
     effect = {
       remove_trait = sayyid
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13716,10 +11706,6 @@ decisions = {
       add_trait = sayyid
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13743,10 +11729,6 @@ decisions = {
       set_character_flag = show_dharmic_identity
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13766,10 +11748,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_dharmic_identity
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13793,10 +11771,6 @@ decisions = {
 
     effect = {
       remove_trait = brahmin
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13823,10 +11797,6 @@ decisions = {
       add_trait = brahmin
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13847,10 +11817,6 @@ decisions = {
 
     effect = {
       remove_trait = kshatriya
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13877,10 +11843,6 @@ decisions = {
       add_trait = kshatriya
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13901,10 +11863,6 @@ decisions = {
 
     effect = {
       remove_trait = vaishya
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13931,10 +11889,6 @@ decisions = {
       add_trait = vaishya
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -13956,10 +11910,6 @@ decisions = {
 
     effect = {
       remove_trait = shaivist_hindu
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -13986,10 +11936,6 @@ decisions = {
       add_trait = shaivist_hindu
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14010,10 +11956,6 @@ decisions = {
 
     effect = {
       remove_trait = shaktist_hindu
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14040,10 +11982,6 @@ decisions = {
       add_trait = shaktist_hindu
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14064,10 +12002,6 @@ decisions = {
 
     effect = {
       remove_trait = smartist_hindu
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14094,10 +12028,6 @@ decisions = {
       add_trait = smartist_hindu
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14118,10 +12048,6 @@ decisions = {
 
     effect = {
       remove_trait = vaishnavist_hindu
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14148,10 +12074,6 @@ decisions = {
       add_trait = vaishnavist_hindu
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14173,10 +12095,6 @@ decisions = {
 
     effect = {
       remove_trait = mahayana_buddhist
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14203,10 +12121,6 @@ decisions = {
       add_trait = mahayana_buddhist
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14227,10 +12141,6 @@ decisions = {
 
     effect = {
       remove_trait = theravada_buddhist
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14257,10 +12167,6 @@ decisions = {
       add_trait = theravada_buddhist
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14281,10 +12187,6 @@ decisions = {
 
     effect = {
       remove_trait = vajrayana_buddhist
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14311,10 +12213,6 @@ decisions = {
       add_trait = vajrayana_buddhist
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14335,10 +12233,6 @@ decisions = {
 
     effect = {
       set_character_flag = show_birth_markers
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14362,10 +12256,6 @@ decisions = {
       clr_character_flag = show_birth_markers
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14386,10 +12276,6 @@ decisions = {
 
     effect = {
       remove_trait = bastard
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14418,10 +12304,6 @@ decisions = {
       add_trait = bastard
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14442,10 +12324,6 @@ decisions = {
 
     effect = {
       remove_trait = legit_bastard
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14474,10 +12352,6 @@ decisions = {
       add_trait = legit_bastard
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14498,10 +12372,6 @@ decisions = {
 
     effect = {
       remove_trait = born_in_the_purple
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14526,10 +12396,6 @@ decisions = {
       add_trait = born_in_the_purple
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14550,10 +12416,6 @@ decisions = {
 
     effect = {
       remove_trait = child_of_consort
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14582,10 +12444,6 @@ decisions = {
       add_trait = child_of_consort
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14606,10 +12464,6 @@ decisions = {
 
     effect = {
       remove_trait = child_of_consort_male
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14638,10 +12492,6 @@ decisions = {
       add_trait = child_of_consort_male
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14662,10 +12512,6 @@ decisions = {
 
     effect = {
       remove_trait = twin
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14690,10 +12536,6 @@ decisions = {
       add_trait = twin
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14714,10 +12556,6 @@ decisions = {
 
     effect = {
       set_character_flag = show_zodiac
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14741,10 +12579,6 @@ decisions = {
       clr_character_flag = show_zodiac
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14765,10 +12599,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_aries
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14794,10 +12624,6 @@ decisions = {
       add_trait = zodiac_aries
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14818,10 +12644,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_taurus
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14847,10 +12669,6 @@ decisions = {
       add_trait = zodiac_taurus
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14871,10 +12689,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_gemini
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14900,10 +12714,6 @@ decisions = {
       add_trait = zodiac_gemini
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14924,10 +12734,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_cancer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -14953,10 +12759,6 @@ decisions = {
       add_trait = zodiac_cancer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -14977,10 +12779,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_leo
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15006,10 +12804,6 @@ decisions = {
       add_trait = zodiac_leo
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15030,10 +12824,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_virgo
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15059,10 +12849,6 @@ decisions = {
       add_trait = zodiac_virgo
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15083,10 +12869,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_libra
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15112,10 +12894,6 @@ decisions = {
       add_trait = zodiac_libra
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15136,10 +12914,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_scorpio
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15165,10 +12939,6 @@ decisions = {
       add_trait = zodiac_scorpio
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15189,10 +12959,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_sagittarius
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15218,10 +12984,6 @@ decisions = {
       add_trait = zodiac_sagittarius
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15242,10 +13004,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_capricorn
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15271,10 +13029,6 @@ decisions = {
       add_trait = zodiac_capricorn
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15295,10 +13049,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_aquarius
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15324,10 +13074,6 @@ decisions = {
       add_trait = zodiac_aquarius
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15348,10 +13094,6 @@ decisions = {
 
     effect = {
       remove_trait = zodiac_pisces
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15377,10 +13119,6 @@ decisions = {
       add_trait = zodiac_pisces
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15404,10 +13142,6 @@ decisions = {
       set_character_flag = show_childhood
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15427,10 +13161,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_childhood
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15456,10 +13186,6 @@ decisions = {
       add_all_childhood_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15482,10 +13208,6 @@ decisions = {
       clear_childhood_traits_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15506,10 +13228,6 @@ decisions = {
 
     effect = {
       remove_trait = affectionate
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15535,10 +13253,6 @@ decisions = {
       add_trait = affectionate
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15559,10 +13273,6 @@ decisions = {
 
     effect = {
       remove_trait = brooding
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15588,10 +13298,6 @@ decisions = {
       add_trait = brooding
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15612,10 +13318,6 @@ decisions = {
 
     effect = {
       remove_trait = conscientious
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15641,10 +13343,6 @@ decisions = {
       add_trait = conscientious
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15665,10 +13363,6 @@ decisions = {
 
     effect = {
       remove_trait = curious
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15694,10 +13388,6 @@ decisions = {
       add_trait = curious
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15718,10 +13408,6 @@ decisions = {
 
     effect = {
       remove_trait = fussy
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15747,10 +13433,6 @@ decisions = {
       add_trait = fussy
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15771,10 +13453,6 @@ decisions = {
 
     effect = {
       remove_trait = haughty
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15800,10 +13478,6 @@ decisions = {
       add_trait = haughty
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15824,10 +13498,6 @@ decisions = {
 
     effect = {
       remove_trait = idolizer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15853,10 +13523,6 @@ decisions = {
       add_trait = idolizer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15877,10 +13543,6 @@ decisions = {
 
     effect = {
       remove_trait = indolent
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15906,10 +13568,6 @@ decisions = {
       add_trait = indolent
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15930,10 +13588,6 @@ decisions = {
 
     effect = {
       remove_trait = playful
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -15959,10 +13613,6 @@ decisions = {
       add_trait = playful
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -15983,10 +13633,6 @@ decisions = {
 
     effect = {
       remove_trait = rowdy
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16016,10 +13662,6 @@ decisions = {
       add_trait = rowdy
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16040,10 +13682,6 @@ decisions = {
 
     effect = {
       remove_trait = timid
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16073,10 +13711,6 @@ decisions = {
       add_trait = timid
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16097,10 +13731,6 @@ decisions = {
 
     effect = {
       remove_trait = willful
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16126,10 +13756,6 @@ decisions = {
       add_trait = willful
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16150,10 +13776,6 @@ decisions = {
 
     effect = {
       set_character_flag = show_kinslayer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16177,10 +13799,6 @@ decisions = {
       clr_character_flag = show_kinslayer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16201,10 +13819,6 @@ decisions = {
 
     effect = {
       remove_trait = kinslayer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16231,10 +13845,6 @@ decisions = {
       add_trait = kinslayer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16255,10 +13865,6 @@ decisions = {
 
     effect = {
       remove_trait = familial_kinslayer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16285,10 +13891,6 @@ decisions = {
       add_trait = familial_kinslayer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16309,10 +13911,6 @@ decisions = {
 
     effect = {
       remove_trait = dynastic_kinslayer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16339,10 +13937,6 @@ decisions = {
       add_trait = dynastic_kinslayer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16363,10 +13957,6 @@ decisions = {
 
     effect = {
       remove_trait = tribal_kinslayer
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16393,10 +13983,6 @@ decisions = {
       add_trait = tribal_kinslayer
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16419,10 +14005,6 @@ decisions = {
       set_character_flag = show_misc
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16442,10 +14024,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_misc
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16470,10 +14048,6 @@ decisions = {
       remove_trait = augustus
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16494,10 +14068,6 @@ decisions = {
 
     effect = {
       add_trait = augustus
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16522,10 +14092,6 @@ decisions = {
       remove_trait = heresiarch
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16546,10 +14112,6 @@ decisions = {
 
     effect = {
       add_trait = heresiarch
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16574,10 +14136,6 @@ decisions = {
       remove_trait = peasant_leader
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16598,10 +14156,6 @@ decisions = {
 
     effect = {
       add_trait = peasant_leader
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16626,10 +14180,6 @@ decisions = {
       remove_cannibal_trait_effect = yes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16650,10 +14200,6 @@ decisions = {
 
     effect = {
       add_cannibal_trait_effect = yes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16678,10 +14224,6 @@ decisions = {
       remove_trait = eunuch
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16702,10 +14244,6 @@ decisions = {
 
     effect = {
       add_trait = eunuch
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16730,10 +14268,6 @@ decisions = {
       remove_trait = homosexual
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16754,10 +14288,6 @@ decisions = {
 
     effect = {
       add_trait = homosexual
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16782,10 +14312,6 @@ decisions = {
       set_character_flag = show_memes
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16805,10 +14331,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_memes
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16833,10 +14355,6 @@ decisions = {
       remove_trait = cat
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16857,10 +14375,6 @@ decisions = {
 
     effect = {
       add_trait = cat
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16885,10 +14399,6 @@ decisions = {
       remove_trait = horse
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16909,10 +14419,6 @@ decisions = {
 
     effect = {
       add_trait = horse
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16937,10 +14443,6 @@ decisions = {
       set_character_flag = show_vassal
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -16960,10 +14462,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_vassal
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -16998,10 +14496,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -17034,10 +14528,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -17068,10 +14558,6 @@ decisions = {
           add_trait = honest
         }
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -17120,10 +14606,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -17170,10 +14652,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -17197,10 +14675,6 @@ decisions = {
       set_character_flag = show_dynasty
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -17220,10 +14694,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_dynasty
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -17257,10 +14727,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -17292,10 +14758,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -17325,10 +14787,6 @@ decisions = {
           add_trait = honest
         }
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -17380,10 +14838,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -17428,10 +14882,6 @@ decisions = {
           add_trait = patient
         }
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {

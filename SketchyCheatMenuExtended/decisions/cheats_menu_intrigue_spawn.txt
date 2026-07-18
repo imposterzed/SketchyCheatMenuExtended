@@ -34,9 +34,6 @@ decisions = {
       set_character_flag = cspawn_enabled
       clr_character_flag = cspawn_disabled
     }
-    revoke_allowed = {
-      always = no
-    }
 
     ai_will_do = {
       factor = 0
@@ -55,9 +52,6 @@ decisions = {
     effect = {
       clr_character_flag = cspawn_enabled
       set_character_flag = cspawn_disabled
-    }
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -83,10 +77,6 @@ decisions = {
       set_character_flag = show_spawn_child
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -106,10 +96,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_spawn_child
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -645,10 +631,6 @@ decisions = {
       set_character_flag = show_spawn_sibling
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -668,10 +650,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_spawn_sibling
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1346,10 +1324,6 @@ decisions = {
       set_character_flag = show_spawn_courtier
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1369,10 +1343,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_spawn_courtier
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {

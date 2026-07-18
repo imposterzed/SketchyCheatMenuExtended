@@ -27,10 +27,6 @@ decisions = {
       set_character_flag = show_council_laws
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -49,10 +45,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_council_laws
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -93,10 +85,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -133,10 +121,6 @@ decisions = {
           add_law = succession_voting_power_1
         }
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -177,10 +161,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -215,10 +195,6 @@ decisions = {
       primary_title = {
         add_law = law_voting_power_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -259,10 +235,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -297,10 +269,6 @@ decisions = {
       primary_title = {
         add_law = war_voting_power_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -340,10 +308,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -377,10 +341,6 @@ decisions = {
       primary_title = {
         add_law = grant_title_voting_power_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -420,10 +380,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -457,10 +413,6 @@ decisions = {
       primary_title = {
         add_law = revoke_title_voting_power_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -499,10 +451,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -535,10 +483,6 @@ decisions = {
       primary_title = {
         add_law = imprison_voting_power_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -577,10 +521,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -613,10 +553,6 @@ decisions = {
       primary_title = {
         add_law = banish_voting_power_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -655,10 +591,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -693,10 +625,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -726,10 +654,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -755,10 +679,6 @@ decisions = {
       primary_title = {
         add_law = succession_voting_power_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {

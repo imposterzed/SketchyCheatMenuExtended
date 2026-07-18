@@ -112,7 +112,6 @@ targetted_decisions = {
       ROOT = { remove_all_afflictions_effect = yes }
     }
 
-    revoke_allowed = { always = no }
     ai_will_do = { factor = 0 }
   }
 
@@ -140,7 +139,6 @@ targetted_decisions = {
       }
     }
 
-    revoke_allowed = { always = no }
     ai_will_do = { factor = 0 }
   }
 
@@ -194,9 +192,6 @@ targetted_decisions = {
         add_spouse_matrilineal = FROM
       }
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -220,9 +215,6 @@ targetted_decisions = {
     }
     effect = {
       remove_spouse = spouse
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -250,9 +242,6 @@ targetted_decisions = {
     effect = {
       impregnate = FROM
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -274,9 +263,6 @@ targetted_decisions = {
     effect = {
       imprison = FROM
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -297,9 +283,6 @@ targetted_decisions = {
     }
     effect = {
       death = { death_reason = death_murder_unknown killer = FROM }
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -350,9 +333,6 @@ targetted_decisions = {
         }
       }
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -397,9 +377,6 @@ targetted_decisions = {
           move_character = FROM
         }
       }
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -450,9 +427,6 @@ targetted_decisions = {
     effect = {
       religion = FROM
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -475,9 +449,6 @@ targetted_decisions = {
     effect = {
       culture = FROM
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -498,9 +469,6 @@ targetted_decisions = {
     }
     effect = {
       set_graphical_culture = FROM
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -523,9 +491,6 @@ targetted_decisions = {
     effect = {
       back_plot = FROM
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -547,9 +512,6 @@ targetted_decisions = {
     }
     effect = {
       FROM = { add_favor = ROOT }
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -581,9 +543,6 @@ targetted_decisions = {
     effect = {
       FROM = { add_consort = ROOT }
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -605,9 +564,6 @@ targetted_decisions = {
     }
     effect = {
       add_friend = FROM
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -631,9 +587,6 @@ targetted_decisions = {
     effect = {
       remove_friend = FROM
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -655,9 +608,6 @@ targetted_decisions = {
     }
     effect = {
       add_rival = FROM
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -681,9 +631,6 @@ targetted_decisions = {
     effect = {
       remove_rival = FROM
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -705,9 +652,6 @@ targetted_decisions = {
     }
     effect = {
       add_lover = FROM
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -735,9 +679,6 @@ targetted_decisions = {
       change_stewardship = 70
       set_character_flag = stats_increased
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -763,9 +704,6 @@ targetted_decisions = {
       change_learning = -70
       change_stewardship = -70
       clr_character_flag = stats_increased
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -796,7 +734,6 @@ targetted_decisions = {
       }
     }
 
-    revoke_allowed = { always = no }
     ai_will_do = { factor = 0 }
   }
 
@@ -819,9 +756,6 @@ targetted_decisions = {
       change_stewardship = -70
       clr_character_flag = stats_increased
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -843,9 +777,6 @@ targetted_decisions = {
     effect = {
       remove_nickname = yes
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -864,9 +795,6 @@ targetted_decisions = {
     }
     effect = {
       remove_nickname = yes
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -889,9 +817,6 @@ targetted_decisions = {
     }
     effect = {
       abdicate_to = FROM
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -917,9 +842,6 @@ targetted_decisions = {
     effect = {
       set_defacto_liege = FROM
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -944,9 +866,6 @@ targetted_decisions = {
       any_dynasty_member = {
         death = { death_reason = death_murder_unknown killer = FROM }
       }
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -977,9 +896,6 @@ targetted_decisions = {
       add_beauty_trait_effect = yes
       add_trait = strong
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -1001,9 +917,6 @@ targetted_decisions = {
     }
     effect = {
       remove_all_afflictions_effect = yes
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0
@@ -1636,9 +1549,6 @@ targetted_decisions = {
     effect = {
       add_trait = immortal
     }
-    revoke_allowed = {
-      always = no
-    }
     ai_will_do = {
       factor = 0
     }
@@ -1660,9 +1570,6 @@ targetted_decisions = {
     }
     effect = {
       remove_trait = immortal
-    }
-    revoke_allowed = {
-      always = no
     }
     ai_will_do = {
       factor = 0

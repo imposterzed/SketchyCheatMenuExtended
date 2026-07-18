@@ -26,10 +26,6 @@ decisions = {
       set_character_flag = show_realm_laws
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -48,10 +44,6 @@ decisions = {
 
     effect = {
       clr_character_flag = show_realm_laws
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -81,10 +73,6 @@ decisions = {
       primary_title = {
         add_law = crown_authority_4
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -126,10 +114,6 @@ decisions = {
           add_law = crown_authority_1
         }
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -181,10 +165,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -218,10 +198,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -251,10 +227,6 @@ decisions = {
       primary_title = {
         add_law = investiture_law_0
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -288,10 +260,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -319,10 +287,6 @@ decisions = {
       primary_title = {
         add_law = out_of_realm_inheritance_law_0
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -357,10 +321,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -389,10 +349,6 @@ decisions = {
       primary_title = {
         add_law = vassal_wars_law_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -425,10 +381,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -454,10 +406,6 @@ decisions = {
       primary_title = {
         add_law = centralization_4
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -497,10 +445,6 @@ decisions = {
           add_law = centralization_1
         }
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -550,10 +494,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -578,10 +518,6 @@ decisions = {
       primary_title = {
         add_law = tribal_organization_4
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -620,10 +556,6 @@ decisions = {
           add_law = tribal_organization_1
         }
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -672,10 +604,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -710,10 +638,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -741,10 +665,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -770,10 +690,6 @@ decisions = {
       primary_title = {
         add_law = vice_royalty_2
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -806,10 +722,6 @@ decisions = {
       primary_title = {
         add_law = status_of_women_4
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -854,10 +766,6 @@ decisions = {
           add_law = status_of_women_1
         }
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -912,10 +820,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -944,10 +848,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -972,10 +872,6 @@ decisions = {
       primary_title = {
         add_law = revoke_title_law_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1003,10 +899,6 @@ decisions = {
       primary_title = {
         add_law = revoke_title_law_2
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1058,10 +950,6 @@ decisions = {
       }
     }
 
-    revoke_allowed = {
-      always = no
-    }
-
     ai_will_do = {
       factor = 0
     }
@@ -1088,10 +976,6 @@ decisions = {
       primary_title = {
         add_law = ze_administration_laws_1
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
@@ -1139,10 +1023,6 @@ decisions = {
           add_law = imperial_administration
         }
       }
-    }
-
-    revoke_allowed = {
-      always = no
     }
 
     ai_will_do = {
