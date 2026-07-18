@@ -52,8 +52,6 @@ raise_rel_authority_desc;Raises religious authority to 100%.;;;;;;;;;;;;;x
 revoke_all_titles;----Revoke all Vassal Titles;;;;;;;;;;;;;x
 revoke_all_titles_desc;Revokes all Vassal titles.;;;;;;;;;;;;;x
 
-cheat_lower_threat_level;Threat Level Lowered;;;;;;;;;;;;;x
-
 lower_threat_level;----Lower Threat Level;;;;;;;;;;;;;x
 lower_threat_level_desc;Lower Threat Level;;;;;;;;;;;;;x
 

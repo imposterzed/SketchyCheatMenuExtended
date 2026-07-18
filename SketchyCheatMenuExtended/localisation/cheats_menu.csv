@@ -154,9 +154,6 @@ clear_your_focus_desc;Cancel your current focus, allowing you to set a new one.;
 clear_your_ambition;Clear Your Ambition;;;;;;;;;;;;;x
 clear_your_ambition_desc;Cancel your current ambition, allowing you to set a new one.;;;;;;;;;;;;;x
 
-clear_your_ambition;Clear Your Ambition;;;;;;;;;;;;;x
-clear_your_ambition_desc;Cancel your current ambition, allowing you to set a new one.;;;;;;;;;;;;;x
-
 make_immortal;Make Immortal;;;;;;;;;;;;;x
 make_immortal_desc;Make them immortal like you.;;;;;;;;;;;;;x
 

@@ -363,8 +363,11 @@ decisions = {
       hidden_tooltip = {
         set_character_flag = quick_move
         capital_holding = {
-          add_building = ca_quick_move
-          add_building = tb_quick_move
+          if = { limit = { holding_type = castle } add_building = ca_quick_move }
+          if = { limit = { holding_type = city }   add_building = ci_quick_move }
+          if = { limit = { holding_type = tribal } add_building = tb_quick_move }
+          if = { limit = { holding_type = nomad }  add_building = no_quick_move }
+          if = { limit = { holding_type = temple } add_building = tp_quick_move }
         }
       }
     }
@@ -386,8 +389,11 @@ decisions = {
       hidden_tooltip = {
         clr_character_flag = quick_move
         capital_holding = {
-          remove_building = ca_quick_move
-          remove_building = tb_quick_move
+          if = { limit = { has_building = ca_quick_move } remove_building = ca_quick_move }
+          if = { limit = { has_building = ci_quick_move } remove_building = ci_quick_move }
+          if = { limit = { has_building = tb_quick_move } remove_building = tb_quick_move }
+          if = { limit = { has_building = no_quick_move } remove_building = no_quick_move }
+          if = { limit = { has_building = tp_quick_move } remove_building = tp_quick_move }
         }
       }
     }
@@ -657,15 +663,15 @@ decisions = {
         limit = {
           NOT = { real_tier = baron }
           is_nomadic = no
+          is_patrician = no
         }
         any_demesne_title = {
           limit = {
-            is_patrician = no
             mercenary = no
             holy_order = no
             is_landless_type_title = no
           }
-          gain_title = FROM
+          gain_title = ROOT
         }
       }
     }
@@ -686,7 +692,7 @@ decisions = {
       ROOT = {
         change_infamy = {
           value = -10000
-          localisation = Cheated
+          localisation = CHEAT
         }
       }
     }
@@ -722,7 +728,7 @@ decisions = {
             is_father = ROOT
           }
         }
-        death = { death_reason = death_murder_unknown killer = FROM }
+        death = { death_reason = death_murder_unknown killer = ROOT }
       }
     }
   }

@@ -272,7 +272,7 @@ targetted_decisions = {
       always = yes
     }
     effect = {
-      IMPRISON = FROM
+      imprison = FROM
     }
     revoke_allowed = {
       always = no
@@ -1175,7 +1175,7 @@ targetted_decisions = {
           has_character_flag = mind_controlled
         }
         ROOT = {
-          IMPRISON = PREV
+          imprison = PREV
         }
       }
     }

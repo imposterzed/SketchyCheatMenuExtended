@@ -1,3 +1,6 @@
 ca_quick_move;Cheat: Quick Move;;;;;;;;;;;;;x
 tb_quick_move;Cheat: Quick Move;;;;;;;;;;;;;x
 ci_quick_move;Cheat: Quick Move;;;;;;;;;;;;;x
+no_quick_move;Cheat: Quick Move;;;;;;;;;;;;;x
+tp_quick_move;Cheat: Quick Move;;;;;;;;;;;;;x
+ca_quick_move_desc;All units can move provinces in 1 day.;;;;;;;;;;;;;x

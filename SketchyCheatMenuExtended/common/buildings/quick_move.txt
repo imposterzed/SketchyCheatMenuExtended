@@ -13,18 +13,20 @@ castle = {
   ca_quick_move = {
     desc = ca_quick_move_desc
     potential = {
-      owner = {
+      FROM = {
         has_character_flag = cheats_enabled
         ai = no
+        is_capital = ROOT_FROMFROM
       }
     }
     trigger = {
-      owner = {
+      FROM = {
         has_character_flag = cheats_enabled
         ai = no
+        is_capital = ROOT_FROMFROM
       }
     }
-    build_cost = 1
+    gold_cost = 0
     build_time = 1
     global_movement_speed = 1000
   }
@@ -34,18 +36,20 @@ tribal = {
   tb_quick_move = {
     desc = ca_quick_move_desc
     potential = {
-      owner = {
+      FROM = {
         has_character_flag = cheats_enabled
         ai = no
+        is_capital = ROOT_FROMFROM
       }
     }
     trigger = {
-      owner = {
+      FROM = {
         has_character_flag = cheats_enabled
         ai = no
+        is_capital = ROOT_FROMFROM
       }
     }
-    build_cost = 1
+    gold_cost = 0
     build_time = 1
     global_movement_speed = 1000
   }
@@ -55,18 +59,66 @@ city = {
   ci_quick_move = {
     desc = ca_quick_move_desc
     potential = {
-      owner = {
+      FROM = {
         has_character_flag = cheats_enabled
         ai = no
+        is_capital = ROOT_FROMFROM
       }
     }
     trigger = {
-      owner = {
+      FROM = {
         has_character_flag = cheats_enabled
         ai = no
+        is_capital = ROOT_FROMFROM
       }
     }
-    build_cost = 1
+    gold_cost = 0
+    build_time = 1
+    global_movement_speed = 1000
+  }
+}
+
+nomad = {
+  no_quick_move = {
+    desc = ca_quick_move_desc
+    potential = {
+      FROM = {
+        has_character_flag = cheats_enabled
+        ai = no
+        is_capital = ROOT_FROMFROM
+      }
+    }
+    trigger = {
+      FROM = {
+        has_character_flag = cheats_enabled
+        ai = no
+        is_capital = ROOT_FROMFROM
+      }
+    }
+    gold_cost = 0
+    build_time = 1
+    global_movement_speed = 1000
+  }
+}
+
+temple = {
+  tp_quick_move = {
+    desc = ca_quick_move_desc
+    potential = {
+      FROM = {
+        has_character_flag = cheats_enabled
+        ai = no
+        is_capital = ROOT_FROMFROM
+      }
+    }
+    trigger = {
+      FROM = {
+        has_character_flag = cheats_enabled
+        ai = no
+        is_capital = ROOT_FROMFROM
+      }
+    }
+    gold_cost = 0
     build_time = 1
     global_movement_speed = 1000
   }

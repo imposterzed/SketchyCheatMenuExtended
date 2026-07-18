@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-07-18
+
+### Added
+- **Enable Quick Move** now covers city, nomad, and temple capitals.
+- In-game description for the Quick Move building.
+
+### Changed
+- **Quick Move** buildings visible only in the capital's build menu.
+- **Enable Quick Move**: adds only the variant matching your capital's holding type.
+- **Lower Threat Level**: label reads "CHEAT" in threat tooltip (matches console `infamy`).
+- Validator compliance fixes (effect scopes, casing).
+
+### Removed
+- Cleaned up duplicate and orphan localisation entries.
+
 ## [1.0.1] - 2026-07-18
 
 ### Changed
