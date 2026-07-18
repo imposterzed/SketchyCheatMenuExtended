@@ -59,7 +59,7 @@ Compared to [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedeta
 
 ## What it does
 
-Sketchy Cheat Menu Extended adds a comprehensive in-game cheat menu. Right-click your own portrait and pick **Enable Cheats** to turn it on; **Disable Cheats** when done. AI characters never see these decisions.
+Sketchy Cheat Menu Extended adds a comprehensive in-game cheat menu. Right-click your own portrait and pick **Enable Cheats** to turn it on. Pick **Disable Cheats** when done. AI characters never see these decisions.
 
 ### Right-click your character
 
@@ -74,12 +74,12 @@ Sketchy Cheat Menu Extended adds a comprehensive in-game cheat menu. Right-click
 
 ### Right-click another character
 
-Everything in the section above also works on other characters — plus:
+Everything in the section above also works on other characters, plus:
 
 - **Mind control**
   1. **Enable Mind Control** on your own portrait.
   2. **Control Mind** on any character to possess them.
-  3. `Mind Control:` decisions then appear on any character — force the possessed target to imprison, marry, impregnate, vassalize, become their lover / friend / rival, or abdicate.
+  3. `Mind Control:` decisions then appear on any character. Force the possessed target to imprison, marry, impregnate, vassalize, become their lover / friend / rival, or abdicate.
 - **Dynasty and marriage** — **Adopt Them**, **Disown Them**, **Join Their Dynasty**, **Exterminate Dynasty**, **Marry Them**, **End Marriage**, **Take As Concubine**, **Impregnate Them**.
 - **Elimination** — **Kill Them**, **Imprison Them**.
 - **Subjugation** — **Abdicate To Me**, **Vassalize Them**, **Move Them** into your court.
@@ -102,14 +102,14 @@ Everything in the section above also works on other characters — plus:
 - **Fully Upgrade Hospital** — The Reaper's Due.
 
 #### Trade post
-- **Fully Upgrade** — adds every trade-post building.
+- **Fully Upgrade** — adds every trade post building.
 
 ### Right-click a title
 
 - **Add Claim** — hidden on titles you already hold.
 - **Take Title** — hidden on titles you already hold.
 - **Succession Law: Eldership / Elective Gavelkind / Elective Monarchy / Elective Republic (Open Elective) / Gavelkind / Imperial Elective / Nomad Succession / Open / Patrician Elective / Primogeniture / Princely Elective / Seniority / Tanistry / Ultimogeniture** — Eldership requires Holy Fury, Nomad Succession requires Horse Lords, Patrician Elective requires The Republic.
-- **Gender Law: Agnatic / Agnatic-Cognatic / Absolute Cognatic / Enatic-Cognatic / Enatic** — on Iqta, Holy Order, and Merchant Republic sources, these carry "(Hidden)" suffix — the engine applies the law but the Inheritance UI doesn't show gender on those governments.
+- **Gender Law: Agnatic / Agnatic-Cognatic / Absolute Cognatic / Enatic-Cognatic / Enatic** — on Iqta, Holy Order, and Merchant Republic sources, these carry "(Hidden)" suffix. The engine applies the law but the Inheritance UI doesn't show gender on those governments.
 
 ### Intrigue menu decisions
 
@@ -124,14 +124,14 @@ Accessed via the Decisions panel (Intrigue tab) once cheats are enabled. Each su
 - **Spawn Fleet** — 1k galleys.
 - **Convert Realm To Your Culture / Religion / Ethnicity**
 - **World Culture / Religion / Ethnicity** — convert every province on the map to yours.
-- **Enable / Disable Quick Move** — toggle near-instant army movement.
+- **Enable / Disable Quick Move** — armies move almost instantly.
 - **Enable / Disable Triple Levies**
 - **Reveal Realm Plots**
 - **Raise Religious Authority** — maxes your religion's moral authority.
 - **Lower Threat Level** — resets threat to zero.
 - **Revoke all Vassal Titles**
 - **Kill All Courtiers** — kills every non-family courtier.
-- **Cheat Trait Cleaner** — strips the 5 SCME-custom cheat traits and Immortal from any non-player character.
+- **Cheat Trait Cleaner** — strips SCME's 5 custom cheat traits and Immortal from any non-player character.
 
 #### Government
 
@@ -227,14 +227,14 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
   - Hidden: the **Viceroyalty** realm law.
 - **Conclave**
   - Hidden: the 8 Council Laws and the Controlled Realm Inheritance / Vassal War Declaration / Status of Women / Revoke Title realm laws.
-  - The 5 Obligation Laws families switch to their vanilla 4-state form.
+  - The 5 Obligation Laws families switch to their vanilla form (4 states).
   - Administration collapses from (Feudal / Late / Imperial) to Feudal ↔ Imperial.
-  - Crown Authority is hidden **with** Conclave (the Conclave-only realm laws replace it).
+  - Crown Authority is hidden **with** Conclave (Conclave's own realm laws replace it).
   - Stays: **Child of Concubine** and **Child of Consort** birth markers, the 12 Childhood trait toggles, and **Get A Favor**.
 - **Holy Fury**
-  - Hidden: bloodline buildings (Oppressive Fortifications / Special Fortifications / Monumental Shrines / Planned Infrastructure), Hellenic deity shrines, and Great Pillars — all require bloodlines or province flags earned via Holy Fury events.
+  - Hidden: bloodline buildings (Oppressive Fortifications / Special Fortifications / Monumental Shrines / Planned Infrastructure), Hellenic deity shrines, and Great Pillars. All require bloodlines or province flags earned via Holy Fury events.
   - Hidden if Monks and Mystics is also off: **Add 5k Society Points** and **Increase Society Rank** (both require society membership).
-  - Stays: the **Kinslayer** / **Familial Kinslayer** / **Dynastic Kinslayer** / **Tribal Kinslayer** trait toggles, the **Grievously Scarred** / **Horrifically Scarred** trait toggles, the 9 **Warrior Lodge** traits, **Sea King** / **Sea Queen**, the 12 **Zodiac** traits, the **Syncretist** / **Spiritualist** / **Militant** / **Tribalist** pagan-branch traits, the **Haemophiliac** / **Haemophant** / **Haemoarch** bloodthirsty-gods traits, **Succession Law: Elective Monarchy**, and **Succession Law: Eldership**.
+  - Stays: the **Kinslayer** / **Familial Kinslayer** / **Dynastic Kinslayer** / **Tribal Kinslayer** trait toggles, the **Grievously Scarred** / **Horrifically Scarred** trait toggles, the 9 **Warrior Lodge** traits, **Sea King** / **Sea Queen**, the 12 **Zodiac** traits, the **Syncretist** / **Spiritualist** / **Militant** / **Tribalist** pagan branch traits, the **Haemophiliac** / **Haemophant** / **Haemoarch** Bloodthirsty Gods traits, **Succession Law: Elective Monarchy**, and **Succession Law: Eldership**.
 - **Horse Lords**
   - Hidden: **Change to Nomadic**, **Change to Feudalism (Destroy Horde)**, **Change to Iqta (Destroy Horde)**, **Change to Tribal (Destroy Horde)**, **Convert To Nomad**, and **Build Nomad**.
   - Stays: **Succession Law: Nomad Succession** and the **Horse** trait toggle.
@@ -248,21 +248,21 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
   - Hidden if Holy Fury is also off: **Add 5k Society Points** and **Increase Society Rank** (both require society membership).
   - Stays: the **Mystic** trait toggle.
 - **Rajas of India**
-  - Hidden: the 6 **Dharmic Ordained Clergy** trait toggles, the 10 **Dharmic Identity** trait toggles, and **Indian Pilgrim** — all require a Dharmic religion (Hindu / Buddhist / Jain), which needs Rajas of India.
+  - Hidden: the 6 **Dharmic Ordained Clergy** trait toggles, the 10 **Dharmic Identity** trait toggles, and **Indian Pilgrim**. All require a Dharmic religion (Hindu / Buddhist / Jain), which needs Rajas of India.
   - Stays: the **War Elephant Leader** trait toggle.
 - **Sons of Abraham**
-  - Hidden: the **Kanai** trait toggle (requires a Jewish religion; works with bookmark, but console errors).
+  - Hidden: the **Kanai** trait toggle (requires a Jewish religion. Works with bookmark, but console errors).
 - **Sunset Invasion**
   - Hidden: the **Eagle Knight** / **Sun Warrior** / **Bad Priest (Aztec)** trait toggles (all require Aztec religion, which needs Sunset Invasion or console).
 - **Sword of Islam**
   - Hidden: **Change to Iqta**, the **Bad Priest (Muslim)**, **Faqih** lifestyle, **Muslim Status** (Ashari / Mutazilite / Mirza / Sayyid / Hafiz / Decadent) trait toggles (all require a Muslim religion, which needs Sword of Islam).
 - **The Old Gods**
-  - Stays: **Change to Tribal** and the **Viking** / **Pirate** / **Ravager** / **Sea King** / **Sea Queen** trait toggles. The government swap works without The Old Gods, but tribal-specific gameplay (retinues, prestige raiding, Adopt Feudalism path) still require the DLC.
+  - Stays: **Change to Tribal** and the **Viking** / **Pirate** / **Ravager** / **Sea King** / **Sea Queen** trait toggles. The government swap works without The Old Gods, but tribal gameplay (retinues, prestige raiding, Adopt Feudalism path) still requires the DLC.
 - **The Reaper's Due**
   - Hidden: **Build Hospital** and **Fully Upgrade Hospital**.
   - Stays: the **Renowned Physician** trait toggle, **Create A Skilled Physician** courtier spawn, the 6 limb-loss trait toggles (**One-Eyed** / **One-Handed** / **One-Legged** / **Disfigured** / **Mangled** / **Severely Injured**), and the **Sick Incapable** trait toggle.
 - **The Republic**
-  - Hidden: the Merchant Republic Arsenal branch inside the city **Fully Upgrade** (requires an MR-owned capital; MRs aren't playable without The Republic).
+  - Hidden: the Merchant Republic Arsenal branch inside the city **Fully Upgrade** (requires a Merchant Republic capital. MRs aren't playable without The Republic).
   - Stays: **Succession Law: Patrician Elective**, **Build Trade Post**, and the trade post **Fully Upgrade** decision.
 - **Way of Life**
   - Hidden: **Clear Your Focus**.
@@ -282,13 +282,13 @@ Documents/Paradox Interactive/Crusader Kings II/mod/
 
 Three optional companion sub-mods ship alongside the base mod. Install each the same way as the base mod: drop the folder and `.mod` file into `mod/`, then enable in the launcher.
 
-- **Sketchy Cheat Menu Extended - Proper4KUI Patch** — hi-res versions of the decision icon and the 5 SCME-custom cheat trait icons, sized to match Proper4KUI's larger UI.
+- **Sketchy Cheat Menu Extended - Proper4KUI Patch** — hi-res versions of the decision icon and the 5 SCME custom cheat trait icons, sized to match Proper4KUI's larger UI.
 - **Sketchy Cheat Menu Extended - Ruler Designer** — makes the Ruler Designer effectively free. Pick any attributes, starting conditions, and most traits without spending points. A handful of traits (some Lifestyles, Poet, Falconer, Stutter) keep their vanilla point cost.
 - **Sketchy Cheat Menu Extended - Debug** — console `SCMED.*` events for reaching hard-to-test states like the dynasty 777777 "Outcast" label and Holy Fury bloodlines.
 
 ## Compatibility
 
-Sketchy Cheat Menu Extended is a content mod that doesn't overwrite base-game files, so it should work alongside vanilla and most other mods as the original Sketchy Cheat Menu did.
+Sketchy Cheat Menu Extended is a content mod that doesn't overwrite vanilla files, so it should work alongside vanilla and most other mods as the original Sketchy Cheat Menu did.
 
 ### Sketchy Cheat Menu
 
@@ -298,23 +298,23 @@ Save-compatible with Sketchy Cheat Menu. All inherited data (custom traits, the 
 
 Full support. This mod ships with `dependencies = { "CleanSlate" }` declared, so it works with CleanSlate enabled and on plain vanilla.
 
-Trait IDs are auto-adapted. CleanSlate renames several traits and sets a `cleanslate_active` global flag at startup; when that flag is present, this mod's trait-toggle decisions use CleanSlate's trait names instead of vanilla's.
+Trait IDs are auto-adapted. CleanSlate renames several traits and sets a `cleanslate_active` global flag at startup. When that flag is present, this mod's trait decisions use CleanSlate's names instead of vanilla's.
 
-Aztec culture and building IDs are also auto-adapted. CleanSlate renames the Aztec culture and its cultural building IDs; the `convert_*` strip helpers and the `upgrade_castle` / `upgrade_tribal` culture-aware adds pick the matching ID set under each stack.
+Aztec culture and building IDs are also auto-adapted. CleanSlate renames the Aztec culture and its cultural building IDs. The `convert_*` strip helpers and the `upgrade_castle` / `upgrade_tribal` culture-aware adds pick the matching ID set under each stack.
 
 `Elective Republic` displays as `Open Elective` on CleanSlate.
 
 The `triple_levies` cheat modifier icon matches on both vanilla and CleanSlate stacks.
 
-**CleanSlate users — make sure you're on the latest version from [GitHub](https://github.com/ck2plus/CleanSlate)** — the startup flag is a recent addition. Without it, the mod uses vanilla IDs throughout, so trait-toggle and Aztec-building operations silently fail on a CleanSlate stack.
+**CleanSlate users — make sure you're on the latest version from [GitHub](https://github.com/ck2plus/CleanSlate)** — the startup flag is a recent addition. Without it, the mod uses vanilla IDs throughout, so trait decisions and Aztec building operations silently fail on a CleanSlate stack.
 
 ### CK2+ (CK2Plus)
 
-Depends on CleanSlate, as does this mod. Historically OK with Sketchy Cheat Menu; not verified for this fork.
+Depends on CleanSlate, as does this mod. Historically OK with Sketchy Cheat Menu. Not verified for this fork.
 
 ### AGOT (A Game of Thrones)
 
-Historically incompatible with Sketchy Cheat Menu; not verified for this fork.
+Historically incompatible with Sketchy Cheat Menu. Not verified for this fork.
 
 ## Community
 
@@ -327,16 +327,16 @@ Historically incompatible with Sketchy Cheat Menu; not verified for this fork.
 
 Two flags let other mods detect this mod and the characters it spawns:
 
-- **Mod** — Sketchy Cheat Menu Extended sets the global flag `scme_active` at `on_startup` (on new games and on every save load). Check for it with `has_global_flag = scme_active` — the same way this mod detects CleanSlate's `cleanslate_active`.
-- **Spawned Character** — Each character spawned via the menu's spawn decisions is tagged with a per-character flag — `scme_spawned_child`, `scme_spawned_sibling`, `scme_spawned_wife`, `scme_spawned_vassal`, `scme_spawned_marshal`, `scme_spawned_spymaster`, `scme_spawned_steward`, `scme_spawned_chancellor`, `scme_spawned_priest`, `scme_spawned_commander`, or `scme_spawned_physician` — so you can match them with `has_character_flag`.
+- **Mod** — Sketchy Cheat Menu Extended sets the global flag `scme_active` at `on_startup` (on new games and on every save load). Check for it with `has_global_flag = scme_active`. This is the same way this mod detects CleanSlate's `cleanslate_active`.
+- **Spawned Character** — Each character spawned via the menu's spawn decisions is tagged with a per-character flag: `scme_spawned_child`, `scme_spawned_sibling`, `scme_spawned_wife`, `scme_spawned_vassal`, `scme_spawned_marshal`, `scme_spawned_spymaster`, `scme_spawned_steward`, `scme_spawned_chancellor`, `scme_spawned_priest`, `scme_spawned_commander`, or `scme_spawned_physician`, so you can match them with `has_character_flag`.
 
 ### error.log notes
 
-CK2's static parser validates every trait ID in a trigger context — both `scripted_trigger` bodies and `limit = { ... }` blocks inside scripted_effects. The CleanSlate compat triggers deliberately reference both vanilla and CleanSlate trait IDs across branches so the runtime picks the right one — but the parser flags the inactive branch's IDs as "unknown trait" warnings (~67 on either stack). These are cosmetic; runtime gating on `has_global_flag = cleanslate_active` ensures only the active stack's IDs are evaluated.
+CK2's static parser validates every trait ID in a trigger context — both `scripted_trigger` bodies and `limit = { ... }` blocks inside scripted_effects. The CleanSlate compat triggers deliberately reference both vanilla and CleanSlate trait IDs across branches so the runtime picks the right one. The parser flags the inactive branch's IDs as "unknown trait" warnings (~67 on either stack). These are cosmetic. Runtime gating on `has_global_flag = cleanslate_active` ensures only the active stack's IDs are evaluated.
 
 ### Dev/test events
 
-The **Sketchy Cheat Menu Extended - Debug** sub-mod (see [Sub-mods](#sub-mods)) ships `SCMED.*` console events for hard-to-reach paths. `event SCMED.1 <charID>` assigns the target to dynasty 777777. `event SCMED.2` through `SCMED.5` grant the 4 Holy Fury building-related bloodlines.
+The **Sketchy Cheat Menu Extended - Debug** sub-mod (see [Sub-mods](#sub-mods)) ships `SCMED.*` console events for hard-to-reach paths. `event SCMED.1 <charID>` assigns the target to dynasty 777777. `event SCMED.2` through `SCMED.5` grant the 4 Holy Fury bloodlines tied to buildings.
 
 ## Development
 
@@ -344,8 +344,8 @@ The mod's script and localisation files (`.txt`, `.csv`) are stored in git as **
 
 For contributors:
 
-- **Accented localisation edits must be saved as Windows-1252,** not UTF-8 — a UTF-8 save corrupts accents.
-- A UTF-8/LF editor may flag files as needing CRLF reconciliation; run `git add --renormalize .` before committing.
+- **Accented localisation edits must be saved as Windows-1252,** not UTF-8. A UTF-8 save corrupts accents.
+- A UTF-8/LF editor may flag files as needing CRLF reconciliation. Run `git add --renormalize .` before committing.
 
 ## Credit & License
 
