@@ -270,6 +270,8 @@ The mod works without any DLC. Some cheats are tied to DLC systems and behave di
 
 ## Installation
 
+**Steam Workshop** (recommended): [**Sketchy Cheat Menu Extended**](https://steamcommunity.com/sharedfiles/filedetails/?id=3766898052).
+
 **Manual install:** drop `SketchyCheatMenuExtended/` and `SketchyCheatMenuExtended.mod` into:
 
 ```
@@ -282,8 +284,8 @@ Documents/Paradox Interactive/Crusader Kings II/mod/
 
 Three optional companion sub-mods ship alongside the base mod. Install each the same way as the base mod: drop the folder and `.mod` file into `mod/`, then enable in the launcher.
 
-- **Sketchy Cheat Menu Extended - Proper4KUI Patch** — hi-res versions of the decision icon and the 5 SCME custom cheat trait icons, sized to match Proper4KUI's larger UI.
-- **Sketchy Cheat Menu Extended - Ruler Designer** — makes the Ruler Designer effectively free. Pick any attributes, starting conditions, and most traits without spending points. A handful of traits (some Lifestyles, Poet, Falconer, Stutter) keep their vanilla point cost.
+- **Sketchy Cheat Menu Extended - Proper4KUI Patch** — [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3766910406). Hi-res versions of the decision icon and the 5 SCME custom cheat trait icons, sized to match Proper4KUI's larger UI.
+- **Sketchy Cheat Menu Extended - Ruler Designer** — [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3766917479). Makes the Ruler Designer effectively free. Pick any attributes, starting conditions, and most traits without spending points. A handful of traits (some Lifestyles, Poet, Falconer, Stutter) keep their vanilla point cost.
 - **Sketchy Cheat Menu Extended - Debug** — console `SCMED.*` events for reaching hard-to-test states like the dynasty 777777 "Outcast" label and Holy Fury bloodlines.
 
 ## Compatibility
@@ -318,6 +320,8 @@ Historically incompatible with Sketchy Cheat Menu. Not verified for this fork.
 
 ## Community
 
+- **[Steam Workshop Discussions](https://steamcommunity.com/workshop/filedetails/discussions/3766898052)** — Workshop discussion tab.
+- **[Paradox Forums thread](https://forum.paradoxplaza.com/forum/threads/mod-sketchy-cheat-menu-extended.1935255/)** — announcement thread.
 - **[GitHub Issues](https://github.com/imposterzed/SketchyCheatMenuExtended/issues/new/choose)** — structured templates for bug reports, compatibility issues, and feature requests.
 - **[GitHub Discussions](https://github.com/imposterzed/SketchyCheatMenuExtended/discussions)** — general questions and discussion.
 
