@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-07-18
+
+### Changed
+- Renamed `scme_section_triggers.txt` to `scme_section_religion_triggers.txt` for clarity.
+
 ## [1.0.3] - 2026-07-18
 
 ### Removed
