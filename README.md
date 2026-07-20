@@ -34,6 +34,12 @@ A fork of [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetail
 
 ## What is new
 
+Latest release: **v1.1.0**
+
+- **Fixed broken .mod file** — should fix the mod not showing up in the launcher after subscribing.
+- **Enable Quick Move** now covers city, nomad, and temple capitals.
+- **Quick Move** buildings visible only in the capital's build menu.
+
 Compared to [Sketchy Cheat Menu](https://steamcommunity.com/sharedfiles/filedetails/?id=608738995), this fork adds:
 
 - **Traits**

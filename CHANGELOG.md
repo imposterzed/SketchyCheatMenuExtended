@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-07-20
+
+Public release. Base mod, Proper4KUI Patch, and Ruler Designer.
+
+### Fixed
+- Subscribing on Steam Workshop now shows the mod in the launcher.
+
 ## [1.0.4] - 2026-07-18
 
 ### Changed
